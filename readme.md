@@ -1,5 +1,22 @@
 # Azhao 知识库
 
+## index
+
+[[day](doc/day.202007.md)]
+[[2020/06](doc/day.202006.md)]
+
+### 学习
+
+[[doc/ai/ai.udemy]]
+
+### 分类
+
+安全
+
+容器安全 [[doc/sec/sec.container]]
+
+人工智能安全 [[doc/sec/sec.ai]]
+
 ## 开始
 
 1. 本知识库基于github账号和vscode,详见 [Foam documentation workspace](https://foambubble.github.io/foam)
