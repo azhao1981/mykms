@@ -7,15 +7,15 @@
 
 ### 学习
 
-[[doc/ai/ai.udemy]]
+[ai.udemy](doc/ai/ai.udemy.md)
 
 ### 分类
 
 安全
 
-容器安全 [[doc/sec/sec.container]]
+[容器安全](doc/sec/sec.container.md)
 
-人工智能安全 [[doc/sec/sec.ai]]
+[人工智能安全](doc/sec/sec.ai)
 
 ## 开始
 
