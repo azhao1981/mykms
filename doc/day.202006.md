@@ -76,7 +76,7 @@ https://github.com/joeycastillo/The-Open-Book
 https://github.com/keithnull/TeachYourselfCS-CN/blob/master/TeachYourselfCS-CN.md
 
 谷歌出口的安全扫描工具
-Tsunami is a general purpose network security scanner with an extensible plugin system for detecting high severity vulnerabilities with high confidence.
+Tsunami is a general purpose network security scanner with an extensible plugin system for detecting high severity vulnerabilities with high confidence.与其他漏洞扫描程序不同，Tsunami旨在查找包含数十万个设备的大型网络中的漏洞。
 https://github.com/google/tsunami-security-scanner
 nmap 7.8
 ncrask <https://nmap.org/ncrack/>
@@ -260,8 +260,7 @@ https://www.kitploit.com/2020/06/evilpdf-embedding-executable-files-in.html
 Attacker-Group-Predictor：一款利用 MITRE ATT&CK 矩阵从使用的攻击技术和软件预测攻击组织的工具
 https://www.kitploit.com/2020/06/attacker-group-predictor-tool-to.html
 
-InQL Scanner v2：Burp 结合 GraphQL 的安全测试插件
-https://blog.doyensec.com/2020/06/11/inql-scanner-v2.html
+
 
 绕过WAF运行命令执行漏洞的方法大全
 https://www.anquanke.com/post/id/208398

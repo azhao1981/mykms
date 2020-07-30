@@ -2,12 +2,15 @@
 
 ## index
 
-[[day](doc/day.202007.md)]
+[[2020/07](doc/day.202007.md)]
 [[2020/06](doc/day.202006.md)]
 
 ### 学习
 
 [ai.udemy](doc/ai/ai.udemy.md)
+[ai.anaconda](doc/ai/ai.anaconda.md)
+[ai.ali](doc/ai/ai.ali.md)
+[ai.dev](doc/ai/ai.dev.md)
 
 ### 分类
 
@@ -16,6 +19,10 @@
 [容器安全](doc/sec/sec.container.md)
 
 [人工智能安全](doc/sec/sec.ai)
+
+[win10开发技巧](doc/win10/win.dev.tip.md)
+
+[linux开发技巧](doc/linux/linux.dev.tip.md)
 
 ## 开始
 

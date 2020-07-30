@@ -1,5 +1,13 @@
 # Inbox
 
+Download macOS Catalina Image file for Virtualbox and VMWare
+https://isoriver.com/macos-catalina-image-file-virtualbox-vmware/
+现在linode上是在这里下载
+The extraction password is: intoguide.com
+
+双系统保姆级小新讲解目前最详细的黑苹果双系统安装教程原创作品
+https://www.bilibili.com/video/BV1HJ411i77a/?spm_id_from=333.788.videocard.4
+
 - 在这里写下随笔，之后再分类
 - 符号很有用，但自由格式也不错
 - 把突然冒出的 idea记录下来，然后把他忘记，继续工作

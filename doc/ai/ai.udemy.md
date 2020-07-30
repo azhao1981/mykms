@@ -90,3 +90,7 @@ Full Connection 完全连接
 
 Gradient-based Learning Applied to Document Recognition
 http://yann.lecun.com/exdb/publis/pdf/lecun-01a.pdf
+
+Introduction to Convolutional neural networks
+http://cs.nju.edu.cn/wujx/paper/CNN.pdf
+https://cs.nju.edu.cn/wujx/

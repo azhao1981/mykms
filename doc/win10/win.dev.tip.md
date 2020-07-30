@@ -1,0 +1,430 @@
+# win10 程序员使用和开发技巧
+
+## 下载 ghost,可以不用 u 盘
+
+## DNS
+
+Windows 10怎么设置IP地址与DNS怎么设置
+https://jingyan.baidu.com/article/1612d50058aa86e20e1eee96.html
+
+设置->网络和 internet->状态->更改适配器选项->WLAN->属性->IPv4
+
+## 全屏
+
+电视接主机时会超过屏幕,是因为电视有一个超行扫描,只显示95%,如mooka上的 画面->全真,能解决
+
+为什么以前不用每次都改?
+
+https://www.jdbbs.com/thread-4706251-1-1.html
+
+好像先开电脑后开显示器就可以
+
+## hosts
+
+`c:\windows\System32\drivers\etc\hosts`
+
+## 市场安装位置,你并不希望把什么东西都装到 C 盘
+
+菜单->设置->系统设置->系统->存储-> 更改新内容的保存位置
+
+## win10安装工具
+
+1 火绒安全  https://www.huorong.cn/
+2 xunlei极速 https://dl.pconline.com.cn/download/355664.html
+3 360卫士，但不开机启动
+4 按键修改
+  alt->ctl
+5 v2ray： 要下载v2ray-core
+6 屏幕测试 https://screen.51240.com/			
+7 默认安装目录
+https://jingyan.baidu.com/article/ca00d56c501598e99eebcf9a.html
+搜索： 保存位置	
+8 安装wsl+linux
+https://www.daniao.org/5258.html
+控制面板→卸载程序→启用或关闭windows功能→勾选上适用于Linux的windows子系统
+商店 搜索linux debian下载
+9 改	源
+https://mirror.tuna.tsinghua.edu.cn/help/debian/
+
+10 vxbox
+VT-x is not available
+https://blog.csdn.net/imilano/article/details/83038682
+管理员 cmd
+bcdedit 
+bcdedit /set hypervisorlaunchtype off
+重启
+11 ubuntu 分辨率
+setting/display
+华为屏为3：2
+vxbox虚拟屏幕为200%
+12 win10切屏
+http://www.xitongcheng.com/jiaocheng/win10_article_46450.html
+任务视图/新建桌面
+http://down.52pk.com/zhishi/52202.shtml
+win+ctl+d 新建
+win+ctl 左右
+13 nexus
+14 vscode 中文乱码
+https://blog.csdn.net/gongxun1994/article/details/80356031
+15 vxbox mac,未完成
+https://techbland.com/download-macos-catalina-10-15-virtualbox-image-file/
+
+https://www.youtube.com/watch?v=QhwUQ2ydJJw
+https://www.intoguide.com/install-macos-catalina-virtualbox-windows-pc/
+
+http://download2158.mediafire.com/avakm97f3uwg/vbd0mu5viuz8htc/macOS+Catalina+Final+Version+by+Geekrar.rar
+http://download2338.mediafire.com/fa2g0t77fjjg/hrl9ymq1mz4rlxw/Catalina+Virtual+Disk+Image+by+Intoguide.rar
+
+16 ctrl+c 结束进程问题
+https://blog.csdn.net/LEON1741/article/details/78140639
+使用 ctrl+z
+ctrl+\ 应该也好用
+
+17 下代码
+1 vbox 文件夹共享
+2 取项目名称
+3 下载脚本
+4 去重 个人空间和udesk空间一样，用udesk空间
+
+cn.archive.ubuntu.com
+
+18 ubuntu 换源
+deb http://mirrors.163.com/ubuntu/ bionic main restricted universe multiverse
+deb http://mirrors.163.com/ubuntu/ bionic-security main restricted universe multiverse
+deb http://mirrors.163.com/ubuntu/ bionic-updates main restricted universe multiverse
+deb http://mirrors.163.com/ubuntu/ bionic-proposed main restricted universe multiverse
+deb http://mirrors.163.com/ubuntu/ bionic-backports main restricted universe multiverse
+deb-src http://mirrors.163.com/ubuntu/ bionic main restricted universe multiverse
+deb-src http://mirrors.163.com/ubuntu/ bionic-security main restricted universe multiverse
+deb-src http://mirrors.163.com/ubuntu/ bionic-updates main restricted universe multiverse
+deb-src http://mirrors.163.com/ubuntu/ bionic-proposed main restricted universe multiverse
+deb-src http://mirrors.163.com/ubuntu/ bionic-backports main restricted universe multiverse
+
+19 vscode 移动到行前行层 Fn + 左右键
+上下行交换 alt+上下
+windows版本基本常用快捷键
+https://www.ucamc.com/e-learning/computer-skills/317-vscode-windows-%E7%89%88%E6%9C%AC%E5%9F%BA%E6%9C%AC%E5%B8%B8%E7%94%A8%E5%BF%AB%E6%8D%B7%E9%8D%B5
+复制行  alt+ shift+ 下
+万能： keyboard shortcuts,找
+打开浏览器
+修改系统的默认应用 搜索“默认应用” -> 浏览器
+
+20 ubuntu 时区 右上角，ubuntu->account setting / date&time
+21 查看温度
+22 x k8s
+1 用centos当宿主机
+ssh centos@10.0.2.5
+2 安装k8s
+3 打包等
+4 api-gw
+
+23 win10 git vscode
+https://blog.csdn.net/toyijiu/article/details/87828373
+安装git后重启vscode即可
+
+24 debian buster
+
+```bash
+cat >/etc/apt/sources.list<<'EOF'
+deb http://mirrors.aliyun.com/debian/ buster main non-free contrib
+deb-src http://mirrors.aliyun.com/debian/ buster main non-free contrib
+deb http://mirrors.aliyun.com/debian-security buster/updates main
+deb-src http://mirrors.aliyun.com/debian-security buster/updates main
+deb http://mirrors.aliyun.com/debian/ buster-updates main non-free contrib
+deb-src http://mirrors.aliyun.com/debian/ buster-updates main non-free contrib
+deb http://mirrors.aliyun.com/debian/ buster-backports main non-free contrib
+deb-src http://mirrors.aliyun.com/debian/ buster-backports main non-free contrib
+EOF
+
+deb http://deb.debian.org/debian buster main
+deb http://deb.debian.org/debian buster-updates main
+deb http://security.debian.org/debian-security/ buster/updates main
+deb http://ftp.debian.org/debian buster-backports main
+```
+
+25 sudo apt install openssh-client
+
+vsbox 需要加 host-only
+ssh centos@192.168.56.101
+   chmod 600 .ssh/authorized_keys
+   chmod 700 .ssh
+  https://blog.csdn.net/u011396718/article/details/80976271
+
+centos kubernate
+https://www.profiq.com/kubernetes-cluster-setup-using-virtual-machines/
+
+kubernetes安装（国内环境）
+https://zhuanlan.zhihu.com/p/46341911
+master
+etcd-master
+kube-apiserver
+kube-controller-manager
+kube-dns
+control plane (calico, fannel)
+kube-proxy
+kube-scheduler
+
+镜像下载： <https://www.osboxes.org/ubuntu-server/>
+
+桌面版 <https://www.linuxvmimages.com/images/ubuntu-1804/>
+
+导入 .vdi
+<https://blog.csdn.net/wh62592855/article/details/6703923>
+Username: osboxes
+Password: osboxes.org
+Root Account Password: osboxes.org
+启动网卡：
+ls /sys/class/net
+看到有lo外的另外一块卡，如 enp0s17
+sudo dhclient enp0s17
+ifconfig
+能看到网卡已经起来
+再ping 114.114.114.114 已经成功
+ping www.baidu.com 说明dns也已经ok
+没有自动启动
+
+apt install network-manager
+
+https://help.ubuntu.com/community/NetworkConfigurationCommandLine/Automatic
+Ubuntu 16.04通过网络配置工具NetworkManager设置IP、网关、DNS和查看IP、网关、DNS
+https://www.cnblogs.com/EasonJim/p/8072298.html
+
+换源
+
+从光盘安装
+https://linuxhint.com/install_ubuntu_virtualbox_2004/
+
+kubeadm kubelet kube-cni
+1. 添加源
+2. 下 docker,kubeadm,kubelet,kubernetes-cni
+3. 关swap
+4. 获取镜像列表，从国内获取
+5. 初始化环境
+6. 配置授权信息，kube-apiserver
+7. 添加网络插件
+8. 单节点，设置master节点也可以运行pod(默认策略是master不运行)
+9. 部署其他插件
+
+2019最新k8s集群搭建教程 (centos k8s 搭建)
+https://juejin.im/post/5cb7dde9f265da034d2a0dba
+在CentOS上部署kubernetes集群
+https://jimmysong.io/kubernetes-handbook/practice/install-kubernetes-on-centos.html
+使用kubeadm 部署 Kubernetes(国内环境)
+https://juejin.im/post/5b8a4536e51d4538c545645c
+安装并设置 kubectl
+https://kubernetes.io/zh/docs/tasks/tools/install-kubectl/
+
+26 剪贴板管理
+27 vs code支持 ruby
+ruby
+rails
+Solargraph  有问题，wsl无法安装,而且不知道wsl安装完成后有没有用
+
+28 Anaconda python vscode
+https://www.zhihu.com/question/58033789/answer/254673663
+第一次没有用管理员身份
+
+29 wsl mount u 盘
+
+http://blog.sciencenet.cn/blog-2410131-1094877.html
+
+1. 新建文件夹e
+sudo mkdir /mnt/e
+2. 挂载盘符e
+sudo mount -t drvfs e: /mnt/e
+
+3.大功告成。进入/mnt/e即可与windows下一摸一样。
+4.弹出移动硬盘，这样才能在windows下正常弹出，否则是会一直占用的。
+sudo umount /mnt/e
+
+30 win10 alt-tab ,改ctl-tab
+31 win10.ubuntu.输入法
+
+sudo apt-get install fcitx-table-wubi
+
+32 fish theme
+
+omf install nelsonjchen
+
+
+33 这个可以研究一下
+
+https://github.com/microsoft/PowerToys
+
+34 win10 wsl ssh-add
+error: Could not open a connection to your authentication agent.
+eval "$(ssh-agent -s)"
+ssh-add
+https://github.com/Microsoft/WSL/issues/3183
+
+原因就是ssh-agent 没有开
+
+35. win10.wsl.ping 
+
+error ping: socket: Operation not permitted
+sudo chmod u+s /bin/ping
+
+36. win10.virtualbox.centos.hostname
+
+sudo hostname master001
+如果只这样，重启就恢复了
+
+sudo hostnamectl set-hostname master001.k8s.local --static
+
+重启就没有问题了
+https://www.itcoder.tech/posts/how-to-change-hostname-on-centos-8/
+
+cat <<EOF > /etc/yum.repos.d/kubernetes.repo
+[kubernetes]
+name=Kubernetes
+baseurl=https://mirrors.aliyun.com/kubernetes/yum/repos/kubernetes-el7-x86_64/
+enabled=1
+gpgcheck=1
+repo_gpgcheck=1
+gpgkey=https://mirrors.aliyun.com/kubernetes/yum/doc/yum-key.gpg https://mirrors.aliyun.com/kubernetes/yum/doc/rpm-package-key.gpg
+EOF
+
+37 win10 快捷键
+
+恢复，然后把win,和ctrl键换一下
+
+38 win10 which node
+
+<https://superuser.com/questions/207707/what-is-windows-equivalent-of-the-which-command-in-unix-is-there-an-equivale>
+terminal
+where.exe node
+gcm node
+
+39 ubuntu vscode 空格
+
+解决VSCODE空格距离极小的方案
+https://blog.csdn.net/kellncy/article/details/90345506
+https://github.com/tonsky/FiraCode
+'Fira Code'
+
+40 ubuntu.vscode tab 长度
+tab size
+
+41 ubuntu.ssh-agent
+
+Add user ssh-agent as daemon to Ubuntu 18.04LTS server
+https://gist.github.com/magnetikonline/b6255da90606fe9c5c25d3333c98c90d
+
+42. ubuntu.ssh no bash
+
+ssh 执行的是 ~/.bash_profile,需要在里面加：
+[[ -f ~/.bashrc ]] && . ~/.bashrc
+
+43. windows.vscode.在新tab中打开
+
+enablePreview: false
+
+44。 windows 应用跑到屏外
+桌面->右键->显示管理->显示大小->去设置->修改分辨率，不要保存，能看到这个应用了
+http://www.xitongcheng.com/jiaocheng/win10_article_43428.html
+
+45 windows.vscode.多行选择
+
+ctrl+alt 上下
+Alt+Shift+I => Ctrl+Shift+L 
+
+
+46 windows.office.正在更新
+
+https://jingyan.baidu.com/article/1612d500632fcba30e1eeed2.html
+开始——运行，输入services.msc——找到将Microsoft Office即点即用服务——禁用——设为自动——重新启动
+
+47 windows.wsl.d盘
+
+把你的子系统(WSL)搬到非系统盘	
+https://cloud.tencent.com/developer/article/1594940
+https://github.com/DDoSolitary/LxRunOffline
+LxRunOffline 使用教程 - WSL 自定义安装、备份
+https://p3terx.com/archives/manage-wsl-with-lxrunoffline.html
+
+```bash
+LxRunOffline.exe list
+wsl -l
+wsl -t Debian
+.\LxRunOffline.exe m -n Debian -d D:\os\debian
+```
+
+或者看： https://blog.csdn.net/fleaxin/article/details/88587081
+安装时不安装在c盘上，但不如安装后再移动
+
+48 windows.vscode.dev.wsl
+使用适用于 Linux 的 Windows 子系统的 Visual Studio Code 入门
+https://docs.microsoft.com/zh-cn/windows/wsl/tutorials/wsl-vscode
+1）安装
+2）添加到路径
+3）安扩展 
+remote development
+4) wsl 里安装
+   sudo apt-get install wget ca-certificates
+5) 
+https://code.visualstudio.com/docs/remote/wsl
+
+49 windows.wsl.complete 慢
+
+https://github.com/spencerwooo/dowww/issues/17
+
+关于提升WSL速度——https://gist.github.com/noelbundick/9c804a710eb76e1d6a234b14abf42a52，把*.ps1文本执行一下就好了。
+
+关于WSL2：就算把Windows系统更新到Build 1903，也要等到六月底，需要WSL2在Windows Store上架了才能有的用。
+
+关闭“实时监控”是多大个事儿？
+【还没好好尝试】继上面帖子，这个回复看起来靠谱？ ==> 还没进行的尝试——用LxRunOffline来在某个目录下装好另一个WSL，再就比较打开/compile速度了？
+
+50 wsl 默认目录
+
+51 wsl.jupyter
+
+jupyter lab --no-browser
+jupyter --no-browser
+
+利器|JupyterLab 数据分析必备IDE完全指南
+https://zhuanlan.zhihu.com/p/67959768
+
+
+52 windows.port.ps
+netstat -nao | findstr 3389
+-o            显示拥有的与每个连接关联的进程 ID。
+-a            显示所有连接和侦听端口。
+-n            以数字形式显示地址和端口号。
+
+windows查看进程线程的命令pslist
+https://www.cnblogs.com/AmilyWilly/p/9090020.html
+
+  TCP    127.0.0.1:55980        0.0.0.0:0              LISTENING       14356
+tasklist | findstr 14356
+
+直接显示: 任务管理器/右键->pid
+
+53 echo %PROCESSOR_ARCHITECTURE%
+这个只能在cmd里执行，不能在terminal里
+
+54 net session 发生系统错误5，是因为需要用管理员打开
+net start命令发生系统错误5和错误1058的解决方法
+https://blog.csdn.net/ymq267/article/details/84885027
+
+55 wmic startup command,caption
+
+56 windows.wsl.git.pull > windows.vsbox.linux.git.pull
+使用 vsbox 装Linux pull会有问题，有的文件不能生成，但 wsl 可以
+
+57 windows.vscode.粘贴图片  插件：paste image
+
+安装插件
+
+![](images/2020-07-30-11-35-59.png)
+
+配置插件
+
+![](images/2020-07-30-11-37-42.png)
+
+![](images/2020-07-30-11-39-24.png)
+
+使用：
+
+1) 任意截图软件到剪贴板
+2) ctrl+shift+p -> paste Image 或 快捷键 Ctrl+Alt+V
