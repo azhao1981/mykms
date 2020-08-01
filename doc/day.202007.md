@@ -1,9 +1,15 @@
 # 202007
 
+## 20200801
+Rails 5.0.1 - Remote Code Execution
+https://www.exploit-db.com/exploits/48716
+
 ## 20200730
 
-xray 长亭科技 tomcat ghostcat 扫描
-https://www.chaitin.cn/zh/ghostcat
+Linux应急响应姿势浅谈
+http://3ms.huawei.com/hi/group/2034125/file_10823427.html?for_statistic_from=my_group_file
+干货 | 黑客入侵？这里有详细的应急排查手册！
+https://www.leiphone.com/news/201706/oCidY2C8IPHt82mF.html
 
 CVE-2020-1362 漏洞分析
 https://www.anquanke.com/post/id/212011
@@ -14,15 +20,15 @@ https://www.anquanke.com/post/id/211602
 挖掘VirtualBox漏洞，以3个CVE为例
 https://www.anquanke.com/post/id/212096
 
-
-
 通过ZAT结合机器学习进行威胁检测（二）
 https://www.freebuf.com/geek/244688.html
 
 ## 20200729
-游侠安全网
-http://www.youxia.org/
+
+游侠安全网 http://www.youxia.org/
+
 [渗透测试员必备！Top 10免费黑客工具](https://yq.aliyun.com/articles/214082?spm=a2c4e.11153940.0.0.2858172cUTUpWp)
+
 [阿里安全](https://developer.aliyun.com/group/security?spm=a2c4e.11153940.0.0.69887f88OduaIs#/?_k=a1bv2e)
 
 [代码审计思路讨论](https://www.freebuf.com/articles/web/222877.html)

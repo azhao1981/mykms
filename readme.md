@@ -5,26 +5,23 @@
 [[2020/07](doc/day.202007.md)]
 [[2020/06](doc/day.202006.md)]
 
-### 学习
+### **分类**
 
-[ai.udemy](doc/ai/ai.udemy.md)
-[ai.anaconda](doc/ai/ai.anaconda.md)
-[ai.ali](doc/ai/ai.ali.md)
-[ai.dev](doc/ai/ai.dev.md)
+#### AI
 
-### 分类
+[ai.udemy](doc/ai/ai.udemy.md) |
+[ai.anaconda](doc/ai/ai.anaconda.md) |
+[ai.ali](doc/ai/ai.ali.md) |
+[ai.dev](doc/ai/ai.dev.md) |
 
-安全
+#### **安全**
 
-[容器安全](doc/sec/sec.container.md)
+| [容器安全](doc/sec/sec.container.md)
+| [人工智能安全](doc/sec/sec.ai)
+| [win10开发技巧](doc/win10/win.dev.tip.md)
+| [linux开发技巧](doc/linux/linux.dev.tip.md)
 
-[人工智能安全](doc/sec/sec.ai)
-
-[win10开发技巧](doc/win10/win.dev.tip.md)
-
-[linux开发技巧](doc/linux/linux.dev.tip.md)
-
-## 开始
+## 关于
 
 1. 本知识库基于github账号和vscode,详见 [Foam documentation workspace](https://foambubble.github.io/foam)
 2. 你可以使用 "Use this template" button at [foam-template](https://github.com/foambubble/foam-template/generate) 来创建你自己的知识库。

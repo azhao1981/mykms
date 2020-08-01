@@ -80,9 +80,7 @@ mvn sonar:sonar \
 
 ### sonar-scanner
 
-sonar-scanner -Dsonar.projectKey=udesk_im -Dsonar.sources=. -Dsonar.dependencyCheck.reportPath=$PWD/dependency-check-report.xml -Dsonar.dependencyCheck.htmlReportPath=$PWD/dependency-check-report.html   -Dsonar.login=f9e590edfd03f474eb1fa04ae8610342349decc8
-sonar-scanner -Dsonar.projectKey=udesk_proj -Dsonar.sources=. -Dsonar.dependencyCheck.reportPath=$PWD/dependency-check-report.xml -Dsonar.dependencyCheck.htmlReportPath=$PWD/dependency-check-report.html   -Dsonar.login=f9e590edfd03f474eb1fa04ae8610342349decc8
-sonar-scanner -Dsonar.projectKey=udesk-fever-framework_1.0.x -Dsonar.sources=. -Dsonar.dependencyCheck.reportPath=$PWD/dependency-check-report.xml -Dsonar.dependencyCheck.htmlReportPath=$PWD/dependency-check-report.html
+sonar-scanner -Dsonar.projectKey=xxx -Dsonar.sources=. -Dsonar.dependencyCheck.reportPath=$PWD/dependency-check-report.xml -Dsonar.dependencyCheck.htmlReportPath=$PWD/dependency-check-report.html   -Dsonar.login=f9e590edfd03f474eb1fa04ae8610342349decc8
 
 https://github.com/jacoco/jacoco
 
