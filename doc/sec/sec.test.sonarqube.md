@@ -1,26 +1,35 @@
 # sonarQube 最佳实践
 
-https://owasp.org/www-community/Source_Code_Analysis_Tools
-[FindSecBugs](https://find-sec-bugs.github.io/)
-https://github.com/find-sec-bugs/find-sec-bugs/wiki/Sonar-Qube-Tutorial
-adminstrator/marketplace/ FindBugs
+## 引用
 
-通用格式
+https://owasp.org/www-community/Source_Code_Analysis_Tools
+
+[FindSecBugs](https://find-sec-bugs.github.io/)
+
+https://github.com/find-sec-bugs/find-sec-bugs/wiki/Sonar-Qube-Tutorial
+ adminstrator/marketplace/ FindBugs
+
+如果需要加入 brakeman的结果，使用 通用格式
 https://docs.sonarqube.org/latest/analysis/generic-issue/
+
 更多第三方
 https://docs.sonarqube.org/latest/analysis/external-issues/
 
+## index
 
-中文
-阿里 p3c
-sonar-scanner
-安全插件
-dependency-check
-项目加 maven 组件
++ 中文
++ 阿里 p3c
++ sonar-scanner
++ 安全插件
++ dependency-check
++ 项目加 maven 组件
 
 ## brakeman
 
+只有jenkins的插件
+
 https://plugins.jenkins.io/brakeman/
+
 https://github.com/jenkinsci/brakeman-plugin
 
 ## shellcheck
@@ -75,7 +84,7 @@ mvn compile
 mvn dependency:copy-dependencies --fail-never -l "$projectdir/zz-maven-dependency-$k.log"
 
 mvn sonar:sonar \
-  -Dsonar.projectKey=udesk-fever-framework_1.0.x \
+  -Dsonar.projectKey=xxx \
 
 
 ### sonar-scanner
