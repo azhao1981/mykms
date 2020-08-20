@@ -24,6 +24,10 @@ https://docs.sonarqube.org/latest/analysis/external-issues/
 + dependency-check
 + 项目加 maven 组件
 
+## updates
+
+./sonarshell.sh udesk_react ssh://git@git.flyudesk.com:9876/udesk/udesk_react.git
+
 ## brakeman
 
 只有jenkins的插件

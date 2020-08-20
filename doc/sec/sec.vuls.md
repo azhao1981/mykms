@@ -29,3 +29,6 @@ https://www.anquanke.com/post/id/199351
 
 CVE-2020-1938 : Tomcat-Ajp 协议漏洞分析
 https://www.anquanke.com/post/id/199448
+
+[Google Search XSS漏洞分析](https://www.anquanke.com/post/id/213422)
+sanitize

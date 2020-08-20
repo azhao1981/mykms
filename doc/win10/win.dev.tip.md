@@ -428,3 +428,76 @@ https://blog.csdn.net/ymq267/article/details/84885027
 
 1) 任意截图软件到剪贴板
 2) ctrl+shift+p -> paste Image 或 快捷键 Ctrl+Alt+V
+
+58 win10.版本
+
+CMD/ winver
+
+59 win10.family.sandbox
+
+[win10家庭版如何安装Windows Sandbox](https://blog.csdn.net/ls1300005/article/details/100030720)
+
+[Windows 10 打开Windows Sandbox提示找不到虚拟机监控程序，请启用虚拟机监控程序支持](https://answers.microsoft.com/zh-hans/windows/forum/all/windows-10-%E6%89%93%E5%BC%80windows/286f8a35-6a74-433c-b00f-bcd03812d180)
+
+[Windows 10 打开Windows Sandbox提示找不到虚拟机监控程序，请启用虚拟机监控程序支持](https://blog.csdn.net/qq_37504892/article/details/106827713)
+
+
+```
+我找到也有同样的问题,出现这个问题的时候,我的hyper-v也用不了
+1.卸载 windwos Sandbox
+2.重启
+3.打开命令提示符(管理员) 执行下面
+     bcdedit /set hypervisorlaunchtype Auto
+4.卸载 hyper-v
+5.重启
+6.安装 hyper-v
+7.重启,发现hyper-v可以运行
+8.安装windwos Sandbox
+9.重启, 发现可以用Sandbox
+```
+
+59 win10.excel.表头
+
+[你会做excel表头吗？Excel表头的7种做法送给你！](https://www.chinaacc.com/kuaijishiwu/zzjn/zh20191218084600.shtml)
+
+[Excel模板](https://ibaotu.com/excle/)
+
+60 win10.system.hyper-v
+
+[Win10家庭版中使用Hyper-V](https://zhuanlan.zhihu.com/p/51939654)
+
+[官方：安装 hyper-v](https://docs.microsoft.com/en-us/virtualization/hyper-v-on-windows/quick-start/enable-hyper-v)
+
+```bash
+pushd "%~dp0"
+dir /b %SystemRoot%\servicing\Packages\*Hyper-V*.mum >hyper-v.txt
+for /f %%i in ('findstr /i . hyper-v.txt 2^>nul') do dism /online /norestart /add-package:"%SystemRoot%\servicing\Packages\%%i"
+del hyper-v.txt
+Dism /online /enable-feature /featurename:Microsoft-Hyper-V-All /LimitAccess /ALL
+```
+
+61 wsl.python.langage-server
+
+https://github.com/microsoft/python-language-server/issues/1698
+
+```
+Basically from https://github.com/microsoft/python-language-server/blob/master/CONTRIBUTING.md
+
+Open Python extension sources folder in VS Code (there is Open Extensions Folder command)
+Open Python extension folder
+Create languageServer folder in the extension folder.
+Rename .nupkg to .zip
+Unzip contents with folders to languageServer
+In VS Code set setting python.downloadLanguageServer to false.
+In VS Code set setting python.jediEnabled to false.
+```
+
+62 wsl.dev https://dowww.spencerwoo.com/
+Dev on Windows with WSL
+
+63 wsl.awesome
+https://github.com/sirredbeard/Awesome-WSL
+https://awesomeopensource.com/projects/wsl
+
+64 idea
+https://tech.souyunku.com/?p=15076

@@ -75,11 +75,7 @@ https://github.com/joeycastillo/The-Open-Book
 自学计算机中文版
 https://github.com/keithnull/TeachYourselfCS-CN/blob/master/TeachYourselfCS-CN.md
 
-谷歌出口的安全扫描工具
-Tsunami is a general purpose network security scanner with an extensible plugin system for detecting high severity vulnerabilities with high confidence.与其他漏洞扫描程序不同，Tsunami旨在查找包含数十万个设备的大型网络中的漏洞。
-https://github.com/google/tsunami-security-scanner
-nmap 7.8
-ncrask <https://nmap.org/ncrack/>
+
 
 远程工作
 https://dev.to/caroso1222/best-sites-to-land-top-remote-jobs-100k-year-4n04?utm_source=digest_mailer&utm_medium=email&utm_campaign=digest_email
@@ -127,8 +123,7 @@ https://github.com/jackzhenguo/python-small-examples
 ok https://hluk.github.io/CopyQ/
 http://1clipboard.io/
 
-手工打造基于ATT&CK矩阵的EDR系统
-https://www.freebuf.com/articles/system/239107.html
+
 挖洞经验 | 头像上传构造存储型XSS技术分析
 https://www.freebuf.com/vuls/237969.html
 
@@ -206,8 +201,7 @@ https://www.anquanke.com/post/id/208450
 
 从SDL到DevSecOps：始终贯穿开发生命周期的安全
 https://www.freebuf.com/vuls/240074.html
-一文详解云上容器ATT&CK矩阵|容器安全
-https://www.freebuf.com/articles/container/240139.html
+
 JAVA代码审计之SSM框架与示例
 https://www.freebuf.com/vuls/237474.html
 Java反序列化系列ysoserial Hibernate1
@@ -257,8 +251,7 @@ https://www.freebuf.com/articles/database/237069.html
 EvilPDF：一款把恶意文件嵌入在 PDF 中的工具
 https://www.kitploit.com/2020/06/evilpdf-embedding-executable-files-in.html
 
-Attacker-Group-Predictor：一款利用 MITRE ATT&CK 矩阵从使用的攻击技术和软件预测攻击组织的工具
-https://www.kitploit.com/2020/06/attacker-group-predictor-tool-to.html
+
 
 
 
@@ -315,8 +308,7 @@ https://github.com/KuroLabs/stegcloak
 A curated list of awesome warez and piracy links| 盗版?
 https://github.com/Igglybuff/awesome-piracy
 
-🔥 🔥 Instantly generate REST & GraphQL APIs on any Database (Supports : MySQL, PostgreSQL, MsSQL, SQLite, MariaDB) https://xgenecloud.com| 这种东西好像也没有什么卵用
-https://github.com/xgenecloud/xgenecloud
+
 
 web-IED
 https://github.com/eclipse-theia/theia
@@ -448,8 +440,7 @@ http://www.nsfocus.net/vulndb/46867
 Apache Kylin远程命令执行漏洞（CVE-2020-1956）
 http://www.nsfocus.net/vulndb/46860
 
-Cowrie蜜罐的Docker部署过程及Elasticsearch+Kibana可视化
-https://www.freebuf.com/articles/network/236525.html
+
 
 看我如何制造漏洞绕过安全软件来加入自启动
 https://www.freebuf.com/sectool/235741.html
@@ -565,8 +556,7 @@ https://www.freebuf.com/sectool/236088.html
 SMB RPC类漏洞攻防对抗系列：利用SMB_COM_WRITE_ANX分割PRC流量特征
 https://www.freebuf.com/vuls/235800.html
 
-Elemental：一款功能强大的MITRE ATT&CK威胁库
-https://www.freebuf.com/articles/network/235740.html
+
 
 沙箱逃逸纪实：深入分析CVE-2019-0880
 https://www.anquanke.com/post/id/207048

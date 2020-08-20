@@ -1,10 +1,5 @@
 # 202007
 
-## 20200801
-
-Rails 5.0.1 - Remote Code Execution
-https://www.exploit-db.com/exploits/48716
-
 ## 20200730
 
 Linux应急响应姿势浅谈
@@ -569,8 +564,7 @@ https://www.freebuf.com/articles/web/241998.html
 https://www.freebuf.com/vuls/239430.html
 Beholder：一款监控端口变化的系统
 https://www.freebuf.com/sectool/239311.html
-全端口蜜罐的部署过程与数据分析
-https://www.freebuf.com/articles/network/240041.html
+
 Gartner新兴技术趋势之大众化 | 由技术驱动的行为**趋势**
 https://www.freebuf.com/articles/neopoints/242369.html
 Gartner客户交互的AutoML关键供应商
@@ -674,9 +668,6 @@ https://dev.to/chaoocharles/i-created-a-responsive-portfolio-website-using-pure-
 https://dev.to/aumayeung/more-ways-to-level-up-as-a-developer-4kj2
 
 ## 20200701
-
-Goby内测版1.7.186发布 | 开放插件市场，共享社区力量
-https://nosec.org/home/detail/4491.html
 
 OpenSSH 安全漏洞
 http://www.cnnvd.org.cn/web/xxk/ldxqById.tag?CNNVD=CNNVD-202006-1822

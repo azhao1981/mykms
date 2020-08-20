@@ -1,0 +1,41 @@
+# index
+
+[attck](sec.attck.md)
+
+
+Web 安全总结(面试必备良药)
+https://juejin.im/post/5dca1b376fb9a04a9f11c82e
+
+命令行系列:
+
+https://github.com/jlevy/the-art-of-command-line/blob/master/README-zh.md
+https://github.com/dylanaraps/pure-sh-bible
+
+30秒学习系列:
+
++ [中文/js](https://github.com/jackerjay/30-seconds-of-code-zh)
++ [py](https://github.com/30-seconds/30-seconds-of-python)
+
+https://github.com/blaCCkHatHacEEkr/PENTESTING-BIBLE
+The-Hacker-Playbook-3-Translation：《The Hacker Playbook 3》中文翻译版（渗透测试实战红队第三版）
+https://github.com/Snowming04/The-Hacker-Playbook-3-Translation
+
+[[思路/技术]渗透测试红队资料超全集锦](https://www.lshack.cn/772/)
+
+一个专门扫描破解的项目
+https://github.com/yeyintminthuhtut/Awesome-Red-Teaming
+一个红队资料集锦（非工具）
+https://www.lshack.cn/774/
+一个中文的安全 WIKI
+https://github.com/euphrat1ca/security_w1k1
+
+有价值的 库 https://github.com/starnightcyber/Miscellaneous
+> https://github.com/starnightcyber/Miscellaneous/tree/master/基线检查&加固
+> https://www.freebuf.com/sectool/237396.html
+
+有等级分类安全公告: <https://www.csa.gov.sg/singcert/alerts/sb-2020-006>
+
+一个纯白的黑客网站，一直在努力，apt的路上，更精彩！|不错的内容
+https://www.lshack.cn
+靶机中心
+https://www.lshack.cn/802/
