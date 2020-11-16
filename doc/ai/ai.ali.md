@@ -46,9 +46,62 @@ tf.train.Batch(tensor, batch_size, num_threads = 1,..)
 tf.train.QueueRunner()
 tf.train.start_queue_runners(sess=None, coord=None)
 
+![](images/2020-08-24-00-07-34.png)
+![](images/2020-08-24-00-07-57.png)
+读取图片1
+![](images/2020-08-23-23-51-36.png)
+![](images/2020-08-24-00-01-58.png)
+![](images/2020-08-24-00-04-00.png)
+![](images/2020-08-24-00-05-58.png)
+![](images/2020-08-24-00-10-45.png)
+![](images/2020-08-24-00-11-12.png)
+
+二进制
+
+CIFIR10
+
+![](images/2020-08-24-23-47-28.png)
+![](images/2020-08-24-23-58-03.png)
+![](images/2020-08-27-08-19-14.png)
+![](images/2020-08-27-08-22-23.png)
+![](images/2020-08-27-08-23-06.png)
+![](images/2020-08-27-08-25-55.png)
+![](images/2020-08-27-08-32-08.png)
+![](images/2020-08-27-08-34-38.png)
+![](images/2020-08-27-08-36-28.png)
+转置
+![](images/2020-08-27-23-10-05.png)
+
+![](images/2020-08-27-23-13-58.png)
+
+TFRecord
+![](images/2020-08-28-08-19-58.png)
+![](images/2020-08-28-08-21-55.png)
+![](images/2020-08-28-08-26-44.png)
+![](images/2020-08-28-08-28-49.png)
+
+![](images/2020-08-28-08-31-01.png)
+![](images/2020-08-28-08-32-45.png)
+![](images/2020-08-28-08-36-02.png)
+![](images/2020-08-28-08-37-05.png)
+![](images/2020-08-28-08-38-53.png)
+![](images/2020-08-28-08-39-30.png)
+![](images/2020-08-28-08-41-37.png)
+![](images/2020-08-28-08-42-54.png)
+CIFAR-10数据集说明
+
+https://www.cnblogs.com/Jerry-Dong/p/8109938.html
+
+斯坦福大学的 CS231n（全称：面向视觉识别的卷积神经网络）
+https://blog.csdn.net/weixin_42247762/article/details/80467503
+http://cs231n.stanford.edu/
+
+TensorFlow官方教程：https://www.tensorflow.org/tutorials/
+
+斯坦福大学TensorFlow教程及示例代码：https://web.stanford.edu/class/cs20si/2017/
+
+适合初学者的TensorFlow示例代码：https://github.com/aymericdamien/TensorFlow-Examples
 
 
-
-
-
-dfd
+PAI
+![](images/2020-09-03-08-21-42.png)

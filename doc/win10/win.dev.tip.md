@@ -23,26 +23,37 @@ https://www.jdbbs.com/thread-4706251-1-1.html
 
 `c:\windows\System32\drivers\etc\hosts`
 
-## 市场安装位置,你并不希望把什么东西都装到 C 盘
+## 
 
-菜单->设置->系统设置->系统->存储-> 更改新内容的保存位置
+
 
 ## win10安装工具
 
 1 火绒安全  https://www.huorong.cn/
+
 2 xunlei极速 https://dl.pconline.com.cn/download/355664.html
+
 3 360卫士，但不开机启动
+
 4 按键修改
   alt->ctl
+
 5 v2ray： 要下载v2ray-core
-6 屏幕测试 https://screen.51240.com/			
+
+6 屏幕测试 https://screen.51240.com/
+			
 7 默认安装目录
+市场安装位置,你并不希望把什么东西都装到 C 盘
+
 https://jingyan.baidu.com/article/ca00d56c501598e99eebcf9a.html
 搜索： 保存位置	
+菜单->设置->系统设置->系统->存储-> 更改新内容的保存位置
+
 8 安装wsl+linux
 https://www.daniao.org/5258.html
 控制面板→卸载程序→启用或关闭windows功能→勾选上适用于Linux的windows子系统
 商店 搜索linux debian下载
+
 9 改	源
 https://mirror.tuna.tsinghua.edu.cn/help/debian/
 
@@ -501,3 +512,62 @@ https://awesomeopensource.com/projects/wsl
 
 64 idea
 https://tech.souyunku.com/?p=15076
+
+65 win10.terminal.show.var
+
+echo $Env:GOPATH
+ load
+https://superuser.com/questions/1216658/path-environment-variable-windows-10-echo-path-on-command-prompt-shows-only
+
+66 win10.vscode.java.debug
+
+c:\Users\azhao\.vscode\extensions\vscjava.vscode-java-debug-0.28.0\scripts\launcher.bat "D:\Program Files\jdk11.0.7_10\bin\java.exe" -Dfile.encoding=UTF-8 -cp C:\Users\azhao\AppData\Roaming\Code\User\workspaceStorage\15700788065de6fc84c912303f81579a\redhat.java\jdt_ws\hello_97c407ba\bin Hello 
+-bash: c:Usersazhao.vscodeextensionsvscjava.vscode-java-debug-0.28.0scriptslauncher.bat: command not found
+原因是用了wsl为默认的terminal
+需要改成cmd
+https://github.com/microsoft/vscode-java-debug/issues/708
+
+terminal.select debug shell
+
+https://stackoverflow.com/questions/44435697/vscode-change-default-terminal
+
+单独设置
+.vscode/settings.json
+
+```json
+{
+  // wsl
+  "terminal.integrated.shell.windows": "C:\\WINDOWS\\System32\\bash.exe",
+  // cmd
+  "terminal.integrated.shell.windows": "C:\\Windows\\System32\\cmd.exe",
+}
+```
+
+67 win10.cmd.exit
+exit
+
+68 win10.store.代码 0x80131505
+可能是开了v2ray之类又没有设置好造成,需要关闭网络代理
+设置/网络和internet,代理,都打开再关闭一下
+
+69 win10.wsl.ubuntu.ssh
+
++ error: could not load host key: /etc/ssh/ssh_host_rsa_key
+https://blog.csdn.net/zhangpeterx/article/details/95810789
+
+```bash
+sudo apt remove openssh-server
+sudo apt install openssh-server
+cat xxx > ~/.ssh/authorized_keys
+# 这步一定要
+chmod 600 ~/.ssh/authorized_keys
+```
+
++ [apt update 163源](https://blog.csdn.net/xiangxianghehe/article/details/80112149)
+
+70 win10.wsl.open.browser
+https://xbuba.com/questions/52691835
+alias chrome="/mnt/c/Program Files/Google/Chrome/Application/chrome.exe"
+但我认为这个更好
+alias open='cmd.exe /C start'
+71 驱动

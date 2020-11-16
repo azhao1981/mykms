@@ -2,6 +2,9 @@
 
 ## index
 
+[[2020/11](doc/day.202011.md)]
+[[2020/10](doc/day.202010.md)]
+[[2020/09](doc/day.202009.md)]
 [[2020/08](doc/day.202008.md)]
 [[2020/07](doc/day.202007.md)]
 [[2020/06](doc/day.202006.md)]
@@ -21,12 +24,17 @@
 | [容器安全](doc/sec/sec.container.md)
 | [人工智能安全](doc/sec/sec.ai)
 | [蜜罐](sec/sec.honeypots.md)
+| [蜜罐](sec/sec.windows.md)
 
 #### **开发**
 
 | [win10开发技巧](doc/win10/win.dev.tip.md)
 | [linux开发技巧](doc/linux/linux.dev.tip.md)
+| [黑苹果](doc/mac/mac.black.md)
 | [sqlite](dev/db.sqlite.md)
+| [java](dev/java/java.index.md)
+| [python](dev/python/python.index.md)
+| [frontend](dev/frontend/frontend.index.md)
 
 ## 关于
 

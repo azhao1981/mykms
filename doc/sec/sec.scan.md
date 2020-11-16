@@ -93,6 +93,7 @@ https://slidelegend.com/nessus-compliance-checks-tenable-support-portal_59b25812
 beta版本
 https://cn.gobies.org/goby-win-x64-1.7.186.zip
 https://cn.gobies.org/goby-win-x64-1.7.192.zip
+https://wws.lanzous.com/i4oLFg1n1md 密码: 74o3
 
 依赖: [npcap](https://nmap.org/npcap/#download)
 
@@ -200,6 +201,8 @@ docker pull vimagick/hydra
 
 hydra -L users.txt -P password.txt -vV -o ssh.log -e ns IP ssh
 ```
+
+### [SQLmap](./sec.scan.sqlmap.md)
 
 ### h-scan
 
@@ -397,8 +400,6 @@ Agent-less vulnerability scanner for Linux, FreeBSD, Container Image, Running Co
 [脏牛](https://github.com/dirtycow/dirtycow.github.io)
 + http://bobao.360.cn/learning/detail/3123.html
 
-[利用物联网的 DDOS 工具](https://github.com/jgamblin/Mirai-Source-Code)
-https://krebsonsecurity.com/2016/10/source-code-for-iot-botnet-mirai-released/
-http://bobao.360.cn/news/detail/3678.html
 
-[DDOS analysis](https://github.com/pavel-odintsov/fastnetmon)
+Faster Nmap Scanning with Rust
+https://github.com/RustScan/RustScan

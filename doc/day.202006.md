@@ -206,8 +206,7 @@ JAVA代码审计之SSM框架与示例
 https://www.freebuf.com/vuls/237474.html
 Java反序列化系列ysoserial Hibernate1
 https://www.freebuf.com/vuls/235130.html
-Fastjson68版本绕过autotype原理及利用场景分析
-https://www.freebuf.com/vuls/240392.html
+
 
 ## 2020-06-17
 
@@ -509,8 +508,7 @@ https://www.freebuf.com/sectool/233010.html
 网络隐匿之道：减少痕迹、伪装迷惑
 https://www.freebuf.com/articles/others-articles/235873.html
 
-如何优雅的进行Google Hacking
-https://www.heibai.org/post/984.html
+
 
 研发：认识反射型攻击放大效果
 https://cloud.tencent.com/developer/article/1355323
@@ -518,17 +516,12 @@ https://cloud.tencent.com/developer/article/1355323
 信息收集-旅行记（下）
 https://zhuanlan.zhihu.com/p/103774755
 
-Google hacking 谷歌黑客 谷歌黑客语法
-https://www.ddosi.com/b88/
+
 
 【干货分享】XSS攻击进阶篇——那些年我们看不懂的XSS
 http://blog.nsfocus.net/xss-advance/
 
-http://blog.nsfocus.net/inventory-ddos-errors/
-构建僵尸网络最核心的工作是获取僵尸节点，介绍几种常见的获取僵尸节点的方法：
-利用搜索引擎获取僵尸节点。仅仅利用搜索引擎就可以获取大量现成的或者几乎现成的僵尸节点。黑客经常使用Google Hacking技术和shodan搜索引擎获取僵尸节点。
-任何一个人在搜索引擎之中搜索关键字“googlehacking backdoor”
-“shodan backdoor”都会获得很多这方面的资料，按照这些资料在加上基本的计算机知识就可以获得一些僵尸节点。
+
 
 ## 2020-06-03
 

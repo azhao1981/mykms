@@ -1,34 +1,30 @@
 # 常见漏洞
 
-## Tomcat
+## 资源
+常见漏洞扫描器测试平台
+http://demo.aisec.cn/
+在线平台,看起来没有收费
+http://www.aisec.cn/aiscanner
 
-### tomcat ghostcat Tomcat-Ajp
+## rails
 
-AJP Connector，它使用的是 AJP 协议（Apache Jserv Protocol）是定向包协议。
-因为性能原因，使用二进制格式来传输可读性文本，它能降低 HTTP 请求的处理成本，因此主要在需要集群、反向代理的场景被使用。
+[[CVE-2020-15169] Potential XSS vulnerability in Action View](https://groups.google.com/g/rubyonrails-security/c/b-C9kSGXYrc)
+> https://sourcegraph.com/github.com/rails/rails/-/compare/v5.2.4.3...v5.2.4.4
+> https://sourcegraph.com/github.com/rails/rails@404ad9e8acf8ab45ae2314050131a00e57e63b40/-/blob/actionview/lib/action_view/helpers/translation_helper.rb#L77
 
-https://github.com/hypn0s/AJPy
+rails new rails_vuls --webpack=react
+rails g controller hello index
 
-[POC](https://github.com/0nise/CVE-2020-1938)
+```erb
+<h1>Home#index</h1>
+<% untrusted_user_controlled_string = params[:a] %>
+<%# The welcome_html translation is not defined for the current locale: %>
+<%= t("welcome_html", default: untrusted_user_controlled_string) %>
+<%= t("welcome_html_safe", default: t(untrusted_user_controlled_string)) %>
 
-[tenable Nessus: CVE-2020-1938: Ghostcat](https://zh-cn.tenable.com/blog/cve-2020-1938-ghostcat-apache-tomcat-ajp-file-readinclusion-vulnerability-cnvd-2020-10487?tns_redirect=true)
-
-[Apache Tomcat - AJP 'Ghostcat File Read/Inclusion](https://www.exploit-db.com/exploits/48143)
-
-xray 长亭科技 tomcat ghostcat 扫描
-https://www.chaitin.cn/zh/ghostcat
-
-CVE-2020-1938：Apache Tomcat服务器任意文件读取/包含漏洞通告
-https://www.anquanke.com/post/id/199351
-
-CVE-2020-1938 : Tomcat-Ajp 协议漏洞分析
-https://www.anquanke.com/post/id/199448
-
-CVE-2020-1938：Apache Tomcat服务器任意文件读取/包含漏洞通告
-https://www.anquanke.com/post/id/199351
-
-CVE-2020-1938 : Tomcat-Ajp 协议漏洞分析
-https://www.anquanke.com/post/id/199448
-
-[Google Search XSS漏洞分析](https://www.anquanke.com/post/id/213422)
-sanitize
+<% untrusted_user_controlled_string2 = params[:b] %>
+<%# Neither the title.html translation nor the missing.html translation is defined for the current locale: %>
+<%= t("title.html", default: [:"missing.html", untrusted_user_controlled_string2]) %>
+```
+http://localhost:3000/home/index?a=%3Cscript%3Ealert(2)%3C/script%3E
+http://localhost:3000/home/index?b=%3Cscript%3Ealert(2)%3C/script%3E

@@ -4,6 +4,11 @@
 
 ![](./images/ml-engineer.png)
 
+### 教学
+
+人工智能社区
+https://www.captainbed.net/zhanghan/
+
 ### ML 平台
 #### TensorFlow
 现在学这个 
