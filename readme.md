@@ -36,6 +36,10 @@
 | [python](dev/python/python.index.md)
 | [frontend](dev/frontend/frontend.index.md)
 
+#### **宝库**
+
+| [awesome](dev/awesome/awesome.index.md)
+
 ## 关于
 
 1. 本知识库基于github账号和vscode,详见 [Foam documentation workspace](https://foambubble.github.io/foam)
