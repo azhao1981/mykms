@@ -571,3 +571,15 @@ alias chrome="/mnt/c/Program Files/Google/Chrome/Application/chrome.exe"
 但我认为这个更好
 alias open='cmd.exe /C start'
 71 驱动
+360驱动大师
+
+72 exfat 格式，三个系统都支持的格式
+
+sudo apt-get install exfat-utils //亲测有效,不需重启
+可以支持 linux的权限
+
+Mac,Windows和Linux系统都能读写移动硬盘的方法
+https://blog.csdn.net/shendl/article/details/108996844
+Mac Windows Linux大一统文件系统格式：exfat(支持4G以上文件)
+https://blog.csdn.net/u010164190/article/details/105704097
+

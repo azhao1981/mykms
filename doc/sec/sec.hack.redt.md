@@ -79,3 +79,30 @@ https://www.freebuf.com/articles/network/249377.html
 
 提权过程也很顺利，直接利用ms15-051添加用户得到服务器权限
 
+
+红队
+
+
+分享 | 红队和蓝队资料汇总
+https://www.freebuf.com/sectool/245234.html
+国外红队常用的21种资源
+https://www.freebuf.com/geek/226811.html
+
+## [cobaltStrike](https://www.cobaltstrike.com/) 深蓝打击
+
+一键辅助抓取360安全浏览器密码的CobaltStrike脚本
+https://github.com/hayasec/360SafeBrowsergetpass
+MSF sleep与CobaltStrike sleep
+https://www.anquanke.com/post/id/216363
+内网渗透实验：基于Cobaltstrike的一系列实验
+https://www.freebuf.com/vuls/224507.html
+
+Cobalt Strike is software for Adversary Simulations and **Red Team** Operations.
+CobaltStrike's source code
+https://github.com/Freakboy/CobaltStrike
+
+红队测试从0到1 - PART 1
+https://xz.aliyun.com/t/2742
+
+CobaltStrike：红队作战的最佳框架。有很多令人惊叹的功能，你在其他任何地方都找不到。向创造这个高超工具的rsmudge致敬！当然，好的东西通常都不是免费的，它的价格为3500美元/年。
+powershell Empire：这是另一个伟大的工具，可用于创建有效载荷和后期利用。Empire是一个纯粹的powershell后利用代理，建立在加密安全通信和灵活的架构之上。并且它是开源的，完全免费！感谢@ harmj0y，@ sixdub，@ enigma0x3等人创造了这么棒的工具。

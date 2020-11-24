@@ -460,8 +460,7 @@ http://www.nsfocus.net/vulndb/48530
 ![](images/2020-09-07-09-16-45.png)
 MaskProcessor：一款功能强大的高性能字典生成器
 https://www.freebuf.com/articles/database/245053.html
-MSF sleep与CobaltStrike sleep
-https://www.anquanke.com/post/id/216363
+
 
 WebKit JIT漏洞分析及利用Part1
 https://www.anquanke.com/post/id/216352

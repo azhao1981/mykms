@@ -14,3 +14,12 @@ https://skryukov.github.io/rails/activeadmin/2020/09/29/an-unofficial-active-adm
 https://www.honeybadger.io/blog/ruby-rails-view-caching/
 
 https://longliveruby.com/articles/rails-alternatives-ruby-web-frameworks
+
+## code
+
+### string
+```
+str=<<END_OF_STRING
+  a string
+  END_OF_STRING
+```

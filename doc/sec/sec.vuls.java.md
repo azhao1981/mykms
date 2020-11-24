@@ -101,3 +101,7 @@ https://www.anquanke.com/post/id/199448
 
 [Google Search XSS漏洞分析](https://www.anquanke.com/post/id/213422)
 sanitize
+
+### xstream
+XStream反序列化CVE-2020-26217漏洞分析
+https://www.anquanke.com/post/id/222830

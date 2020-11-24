@@ -1,26 +1,223 @@
 # 202011
 
+## 20201123
+
+[TailorScan内网扫描工具](https://github.com/uknowsec/TailorScan)
+
+[fastjson在一些特殊场景下的漏洞挖掘与利用](https://www.anquanke.com/post/id/222946)
+
+[隐秘的角落——基于某款游戏利用的反射攻击分析](https://security.tencent.com/index.php/blog/msg/169)
+
+[一种针对Webpack等前端打包工具构建的网站的自动化测试思路（附开源项目）](https://mp.weixin.qq.com/s/0YDXUbJuKue01H9w35xf-A)
+
+[Linux透明代理在红队渗透中的应用](https://payloads.online/archivers/2020-11-13/1)
+
+[高级的MSSQL注入技巧](https://xz.aliyun.com/t/8513)
+
+[红队测试之Linux提权小结](https://www.freebuf.com/articles/web/254452.html)
+
+[Python 源码混淆与加密](https://mp.weixin.qq.com/s/LmxdXRjMCOIisQzCISBoGw)
+
+[探索先进自动化漏洞挖掘技术中的不足](https://mp.weixin.qq.com/s/1q_YCJoyCREtgU3X2_0uqQ)
+
+[跨平台C2-Mythic不明觉厉教程](https://mp.weixin.qq.com/s?__biz=MzUyMDgzMDMyMg==&mid=2247483957&idx=1&sn=c95fd190bed241ec0541131922670496)
+
+[利用电子邮件中的HTML注入](https://mp.weixin.qq.com/s?__biz=MzIzMTQ4NzE2Ng==&mid=2247485725&idx=1&sn=69fda84d7f1e2fa97c050cbf6817a68f)
+
+[监听445端口抓v2数据](https://xz.aliyun.com/t/8543)
+
+[安全测试工具 InQL Scanner](https://blog.doyensec.com//2020/11/19/inql-scanner-v3.html)
+
+[Kirenenko：动态符号执行分析工具](https://chengyusong.github.io/fuzzing/2020/11/18/kirenenko.html)
+
+[浅谈OWASP IoT TOP10与物联网安全开发生命周期](https://vipread.com/library/topic/3244)
+
+[浅谈 Android 的安全启动和完整性保护](https://evilpan.com/2020/11/14/android-secure-boot/)
+
+[macOS版本的本地提权漏洞分析](https://sec-in.com/article/698)
+
+
+神经工程与脑机接口信息安全 全景图 V0.1
+https://www.anquanke.com/post/id/223008
+sshd 后门分析与团伙归类
+https://www.anquanke.com/post/id/223061
+
+记一次糟心的内网靶场实战
+https://www.freebuf.com/articles/web/253060.html
+
+h2csmuggler：一款隐蔽性极强的HTTP2明文通信工具
+https://www.freebuf.com/articles/web/253001.html
+
+CVE-2020-14882 WebLogic越权绕过登录分析
+https://www.freebuf.com/articles/web/253446.html
+CVE-2020-14882 Weblogic Console远程代码执行漏洞分析
+https://www.freebuf.com/vuls/253852.html
+
+关于Magspoof这个设备的制作者是一位在Youtube著名的硬件黑客samy kamker的项目，是以教育为目的而在github上开源的项目，这个项目可以通过一个简单的编程完成磁条卡的模拟，这里是项目地址https://github.com/samyk/magspoof  
+Magspoof：一个模拟磁条卡设备的制作与测试
+https://www.freebuf.com/geek/253697.html
+
+【FreeBuf字幕组】Hacker101白帽进阶之路：BurpSuite进阶功能（下）
+https://www.freebuf.com/video/255359.html
+
+挖洞经验 | 构造User-Agent请求头内容实现LFI到RCE提权
+https://www.freebuf.com/articles/web/253102.html
+
+应该是这个网站,只有这个才有
+https://www.vehicleduty.com/pages/contact.php
+此服务器无法证明它是www.vehicleduty.com；其安全证书来自shortener.secureserver.net。出现此问题的原因可能是配置有误或您的连接被拦截了。
+
+google: Get in touch with automasters, we'll be glad to hear from you
+
+如何使用Django开发OpenRASP报警接收Web应用
+https://www.freebuf.com/articles/web/253832.html
+
+渗透测试之通过代码审计打点
+https://www.freebuf.com/articles/web/253104.html
+
+Nagios XI命令注入漏洞（CVE-2020-5791）
+http://www.nsfocus.net/vulndb/50710
+
+Jenkins| 又有一大波新的
+http://www.nsfocus.net/index.php?os=&type_id=&keyword=Jenkins&act=sec_bug&submit=+
+
+## 20201120
+
+https://standardebooks.org/
+
+[Tailwind CSS v2.0](https://blog.tailwindcss.com/tailwindcss-v2)
+https://tailwindcss.com/
+
+https://dev.to/nghiemthu/master-css-grid-with-5-layouts-in-17-minutes-3phf
+https://dev.to/sylwiavargas/5-ways-to-refactor-if-else-statements-in-js-functions-208e
+https://dev.to/rahxuls/the-ultimate-and-free-javascript-resources-278i
+https://dev.to/sewinter/10-ways-to-speed-up-react-development-3111
+https://dev.to/dailydotdev/should-you-start-a-blog-as-a-developer-2j8d
+
+http://www.cnnvd.org.cn/web/xxk/ldxqById.tag?CNNVD=CNNVD-202011-1656
+GitLab 安全漏洞
+GitLab EE 12.10之后版本存在安全漏洞，攻击者可利用该漏洞可以在未来安排大量的发布，当发布日期到来时，当所有的发布被同时处理时，攻击者可利用该漏洞会拒绝对GitLab EE 12.10+实例的服务。
+以下产品及版本受到影响：12.10版本至13.3.9之前版本, 13.3.9版本至13.4.5之前版本, 13.4.5版本至13.5.2之前版本。
+Gitlab 12.9.0 - Arbitrary File Read (Authenticated)
+https://www.exploit-db.com/exploits/49076
+
+https://dxysrc.vulbox.com/
+https://security.58.com/
+
+
+开发一款基于MitmProxy的被动式漏洞扫描工具 会员
+https://www.freebuf.com/sectool/253025.html
+https://github.com/kafroc/MossbackScanner
+[1] https://www.mitmproxy.org/
+[2] https://github.com/swisskyrepo/PayloadsAllTheThings
+
+不安全的中间件——Tomcat
+https://www.anquanke.com/post/id/223002
+
+https://www.anquanke.com/post/id/222830
+XStream反序列化CVE-2020-26217漏洞分析
+
+CVE-2020-13671: Drupal 远程代码执行漏洞
+https://cert.360.cn/warning/detail?id=6339ee63ba8474528c75686e000b8006
+## 20201119
+cookie+ip+隐私
+https://www.lexology.com/library/detail.aspx?g=400aaed8-f23c-49d8-b2e2-00cf5332afcd
+
+【安全通报】Apache Unomi 远程代码执行漏洞（CVE -2020-13942 ）
+https://nosec.org/home/detail/4611.html
+
+【安全通报】思科安全管理器反序列化漏洞（CVE-2020-27131）
+https://nosec.org/home/detail/4610.html
+
+记一次授权测试到顺手挖一个0day
+https://www.anquanke.com/post/id/222849
+
+从XXE到AWS密钥泄露
+https://www.anquanke.com/post/id/222679
+
+从CVE-2020-1048到CVE-2020-17001：Windows打印机模块中多个提权漏洞分析
+https://www.anquanke.com/post/id/222730
+
+从零开始学习各种常见未授权访问漏洞
+https://www.freebuf.com/vuls/254160.html
+
+如何使用Django开发OpenRASP报警接收Web应用
+https://www.freebuf.com/articles/web/253832.html
+
+NERVE：一款专为渗透测试设计的多功能网络安全&漏洞利用引擎
+https://www.freebuf.com/articles/network/253232.html
+
+## 20201118
+
+破解Excel工作表保护密码
+https://zhuanlan.zhihu.com/p/37996638
+
+Excel表格密码保护的解除方法
+https://gist.github.com/parano/1868242
+
+神技 破解EXCEL工作表保护密码
+https://www.mr-wu.cn/crack-excel-workbook-protection/
+
+源海拾贝 | Bluetooth-LE Security：Method, Tools and Stack
+https://www.anquanke.com/post/id/222622
+
+攻守道：流量分析的刀光剑影（下）
+https://www.freebuf.com/articles/web/253605.html
+
+基于OpenResty的WAF原理与实践
+https://www.freebuf.com/articles/web/254124.html
+
+An automation bot for free Udemy courses for chrome, The bot is looking for Udemy coupons from the site udemyfreebies. The current default categories are IT and Software and Development its can be changed manually. All the courses by default are obviously free, are over 4.2 stars, and rated by more the 200 people can be changed manually as well.
+https://github.com/dimakiss/udemy_bot
+App Testing At Scale How Bitnami Tests Thousands Of Release Per Month PDF
+https://static.sched.com/hosted_files/kccncna20/fe/App%20Testing%20at%20Scale%20-%20How%20Bitnami%20Tests%20Thousands%20of%20Release%20Per%20Month.pdf
+
+WordPress Plugin Buddypress 6.2.0 - Persistent Cross-Site Scripting
+https://www.exploit-db.com/exploits/49061
+Microsoft Internet Explorer 11 - Use-After-Free
+https://www.exploit-db.com/exploits/49062
+Apache Struts 2.5.20 - Double OGNL evaluation
+https://www.exploit-db.com/exploits/49068
+
+## 20201117
+
+【安全通报】XStream <1.4.14 远程代码执行高危漏洞（CVE-2020-26217）
+https://nosec.org/home/detail/4607.html
+http://x-stream.github.io/changes.html
+The types java.lang.ProcessBuilder and javax.imageio.ImageIO$ContainsFilter are now part of the default blacklist and the deserialization of XML containing one of the two types will fail. You will must enable these types by explicit configuration, if you need them.
+CVE-2020-26217：XStream 远程代码执行漏洞通告
+https://www.anquanke.com/post/id/222666
+
+
+【安全通报】Citrix XenMobile 目录遍历漏洞（CVE-2020-8209）
+https://nosec.org/home/detail/4609.html
+
+手把手教你入门内网渗透之二
+https://www.anquanke.com/post/id/222269
+
+Java安全编码之CSRF
+https://www.anquanke.com/post/id/222284
+
+警惕！你的业务系统可能已经成为黑产违法犯罪的凶器| 要对短信接口做渗透测试和要求
+https://www.freebuf.com/articles/es/252876.html
+
+数据安全怎么做：个人信息保护法解读
+https://www.freebuf.com/articles/compliance/253713.html
+
+企业安全建设之安全合规检查
+https://www.freebuf.com/articles/compliance/243807.html
+
 ## 20201116
 
-
-Cobalt Strike is software for Adversary Simulations and **Red Team** Operations.
-CobaltStrike's source code
-https://github.com/Freakboy/CobaltStrike
+https://dev.to/nghiemthu/master-flexbox-in-12-minutes-with-most-common-use-cases-3e1g
+https://dev.to/sidthesloth92/story-of-how-i-built-my-portfolio-and-blog-using-dev-to-and-nextjs-3j85
+https://dev.to/vivekagent47/7-git-tricks-that-changed-my-life-3aj3
 
 30 days of Python programming challenge is a step by step guide to learn Python programming language in 30 days.
 https://github.com/Asabeneh/30-Days-Of-Python
 
 💯 Materials to help you rock your next coding interview
 https://github.com/yangshun/tech-interview-handbook
-
-🛁 Clean Code concepts adapted for JavaScript
-https://github.com/ryanmcdermott/clean-code-javascript
-
-`A long list of (advanced) JavaScript questions, and their explanations ✨ | JS 进阶问题，有中文
-https://github.com/lydiahallie/javascript-questions
-
-⚡️ Simple, Modular & Accessible UI Components for your React Applications
-https://github.com/chakra-ui/chakra-ui
 
 k0s is yet another Kubernetes distro. Yes. But we do some of the things pretty different from other distros out there.
 k0s - Zero Friction Kubernetes

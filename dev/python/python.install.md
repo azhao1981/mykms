@@ -103,7 +103,7 @@ pyenv global 3.8 # 设置全局的 Python => ~/.pyenv/version
 pyenv local 2.7.3 # 生成 =>  ./.python-version
 
 pyenv shell pypy-2.2.1
-pyenv virtualenv 3.8.5 3.8
+pyenv virtualenv 3.8.6 3.8
 
 pyenv virtualenvs
 pyenv versions

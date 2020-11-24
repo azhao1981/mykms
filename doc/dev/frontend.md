@@ -7,6 +7,16 @@
 
 [对微前端的11个错误认识](https://www.infoq.cn/article/eSR6Ykh2lfhzeRpKWijj)
 
+## vscode
+
+https://my.oschina.net/SZQing/blog/4336306
+
+https://github.com/imcodingideas/vscode-fundamentals
+https://medium.com/@thoamsy/%E4%BD%BF%E7%94%A8-vs-code-%E6%90%AD%E5%BB%BA%E4%B8%80%E4%B8%AA%E5%BE%88%E7%88%BD%E7%9A%84%E5%89%8D%E7%AB%AF%E7%8E%AF%E5%A2%83-2d393ba5cc45
+https://blog.csdn.net/qq_32842925/article/details/88846723
+https://zhuanlan.zhihu.com/p/57389333
+https://my.oschina.net/SZQing/blog/4336306
+
 ## nodejs
 
 ### 系统安装
