@@ -57,6 +57,59 @@ M1：平台使用不当
 [M2：数据存储不安全](https://owasp.org/www-project-mobile-top-10/2016-risks/m2-insecure-data-storage)
   当攻击者拿到丢失或被偷的设备，可以在设备上安装恶意软件或是重打包软件。
   使用计算机联接设备拿到第三方应用的目录，可以获取相关的敏感信息
+  Rooting或jailbreaking会让这些数据更脆弱
+  开发者应该意识到攻击者会能拿到这些数据
+  身份盗窃；
+  侵犯隐私；
+  欺诈；
+  声誉受损；
+  外部策略违规(PCI)；或者
+  物质损失。
+  业务影响
+  特定应用/业务
+
+  不安全的数据存储包括
+  SQL databases;
+  Log files;
+  XML data stores ou manifest files;
+  Binary data stores;
+  Cookie stores;
+  SD card;
+  Cloud synced.
+  意外的数据泄露包括
+  The OS;
+  Frameworks;
+  Compiler environment;
+  New hardware.
+  Rooted or Jailbroken devices
+  移动开发通常不注意或不明确规定的
+  The way the OS caches data, images, key-presses, logging, and buffers;
+  The way the development framework caches data, images, key-presses, logging, and buffers;
+  The way or amount of data ad, analytic, social, or enablement frameworks cache data, images, key-presses, logging, and buffers.
+  解决：
+  对移动应用，OS，平台，框架进行威胁建模，以了解他们怎么处理这些 资产
+  最重要的是要了解下面这些是怎么处理的：
+    URL caching (both request and response);
+    Keyboard press caching;
+    Copy/Paste buffer caching;
+    Application backgrounding;
+    中间数据 Intermediate data
+    Logging;
+    HTML5 data storage;
+    Browser cookie objects;
+    Analytics data sent to 3rd parties.
+
+    [igoat](https://github.com/OWASP/igoat) | 故意做成有这些问题的app
+    [iGoat](https://github.com/OWASP/iGoat-Swift)
+    OWASP iGoat（Swift） - 一个适用于iOS的骇人听闻的Swift应用程序.zip,OWASP iGoat (Swift) - A Damn Vulnerable Swift Application for iOS
+    [iGoat – 故意不安全的iOS应用程序](http://www.secwk.com/2020/08/03/18801/)
+  
+  [OWASP OWASP iOS Developer Cheat Sheet](https://wiki.owasp.org/index.php/IOS_Developer_Cheat_Sheet)
+  [External](https://owasp.org/www-project-mobile-top-10/2016-risks/m2-insecure-data-storage)
+    Google Androids Developer Security Topics 1
+    Google Androids Developer Security Topics 2
+    Apple’s Introduction to Secure Coding
+    Fortify On Demand Blog - Exploring The OWASP Mobile Top 10: Insecure Data Storage
 M3：通信不安全
 M4：不安全的身份验证
 M5：加密不足
