@@ -266,41 +266,4 @@ https://www.ruanyifeng.com/blog/2014/05/oauth_2_0.html
 
 ### APP安全
 
-[惊人的测试结果：1780个流行的Android应用程序全都违反加密规则](https://www.freebuf.com/news/249192.html)
-
-[Crylogger](https://github.com/lucapiccolboni/crylogger) 
-一开源代码动态分析工具Crylogger，可以用来检测哪些Android应用程序存在加密漏洞。
-
-2007的一个paper, [26条加密规则](https://arxiv.org/abs/2007.01061) 
-
-badly derived 严重的派生
-
-```
-R-01 Don’t use broken hash functions (SHA1, MD2, MD5, ..) [8]
-R-02 Don’t use broken encryption alg. (RC2, DES, IDEA ..) [8]
-R-03 Don’t use the operation mode ECB with > 1 data block [5]
-R-04 † Don’t use the operation mode CBC (client/server scenarios) [12]
-R-05 Don’t use a static (= constant) key for encryption [5]
-R-06 † Don’t use a “badly-derived” key for encryption [5]
-R-07 Don’t use a static (= constant) initialization vector (IV) [5]
-R-08 † Don’t use a “badly-derived” initialization vector (IV) [5]
-R-09 † Don’t reuse the initialization vector (IV) and key pairs [46]
-R-10 Don’t use a static (= constant) salt for key derivation [5]
-R-11 † Don’t use a short salt (< 64 bits) for key derivation [14]
-R-12 † Don’t use the same salt for different purposes [46]
-R-13 Don’t use < 1000 iterations(迭代) for key derivation(派生) [14]
-ID Rule Description Ref.
-R-14 † Don’t use a weak password (score < 3) [47]
-R-15 † Don’t use a NIST-black-listed password [48]
-R-16 Don’t reuse a password multiple times [48]
-R-17 Don’t use a static (= constant) seed for PRNG [49]
-R-18 Don’t use an unsafe PRNG (java.util.Random) [49]
-R-19 Don’t use a short key (< 2048 bits) for RSA [13]
-R-20 † Don’t use the textbook (raw) algorithm for RSA [50]
-R-21 † Don’t use the padding PKCS1-v1.5 for RSA [51]
-R-22 Don’t use HTTP URL connections (use HTTPS) [16]
-R-23 Don’t use a static (= constant) password for store [48]
-R-24 Don’t verify host names in SSL in trivial ways [16]
-R-25 Don’t verify certificates in SSL in trivial ways(微不足道的方式) [16]
-R-26 Don’t manually change the hostname verifier [16]
-```
+[android](/doc\sec\sec.app.android.md)

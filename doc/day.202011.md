@@ -1,4 +1,35 @@
 # 202011
+## 20201124
+
+
+
+
+[WebLogic UniversalExtrac tor 反序列化漏洞（CVE-2020-14645）的复现和分析](https://www.anquanke.com/post/id/223445)
+
+[HackTheBox-Dyplesher靶机渗透笔记](https://www.anquanke.com/post/id/223355)
+
+HackTheBox 靶机Dyplesher
+[HackTheBox](https://www.hackthebox.eu/invite)
+[渗透测试在线练习平台：Hack The Box](https://zhuanlan.zhihu.com/p/98483328)
+HackTheBox 实战
+https://www.aqniukt.com/course/12553
+
+探索先进自动化漏洞挖掘技术中的不足
+https://mp.weixin.qq.com/s/1q_YCJoyCREtgU3X2_0uqQ
+
+浅谈企业敏感数据分类分级发展现状及思考
+https://www.freebuf.com/articles/database/254780.html
+
+零基础入门PWN
+https://www.kanxue.com/book-brief-57.htm
+
+https://github.com/xuanhun/HackingResource
+
+那些有趣/实用的 Chrome 扩展神器
+https://mp.weixin.qq.com/s/zl-7LJeiFG_W15D4IlF1jA
+
+视频下载神器：支持腾讯/优酷/爱奇艺/b站/微博等全网视频
+https://mp.weixin.qq.com/s?__biz=MzIyMjg2ODExMA==&mid=2247487784&idx=1&sn=f41890470c54c150bfa02144f21899a5&chksm=e827b6c9df503fdf841f3912e90c6f0ddc8bdfcc4a8d470783c7bd82c0b5d27b3a4171a60b21&scene=132#wechat_redirect
 
 ## 20201123
 

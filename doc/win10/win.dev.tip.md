@@ -583,3 +583,22 @@ https://blog.csdn.net/shendl/article/details/108996844
 Mac Windows Linux大一统文件系统格式：exfat(支持4G以上文件)
 https://blog.csdn.net/u010164190/article/details/105704097
 
+73 win10.wsl2.docker
+
+apt install docker
+Setting up wmdocker (1.5-2) ...
+Setting up docker (1.5-2) ...
+Processing triggers for man-db (2.8.5-2) ...
+sudo: docker: command not found
+
+[Win10 WSL2 安装Docker](https://www.jianshu.com/p/a20c2d58eaac)
+> 这个好像更细一些
+> 更新 Win10 到2004版本
+
+[Windows使用WSL2安装Docker](https://www.jianshu.com/p/c27255ede45f)
+
+wsl --set-default-version 2
+WSL 2 需要更新其内核组件。有关信息，请访问 https://aka.ms/wsl2kernel
+有关与 WSL 2 的主要区别的信息，请访问 https://aka.ms/wsl2
+
+[更新 WSL 2 Linux 内核](https://docs.microsoft.com/zh-cn/windows/wsl/wsl2-kernel)

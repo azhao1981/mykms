@@ -47,8 +47,7 @@ https://ddosecrets.com/data/asia/
 某租车系统Java代码审计之后台注入漏洞分析
 https://www.freebuf.com/vuls/238175.html
 
-云WAF如何防止敏感信息泄漏
-https://www.freebuf.com/articles/web/239300.html
+
 
 Ligolo：一款专为渗透测试人员设计的反向隧道
 https://www.freebuf.com/articles/network/238998.html
@@ -249,13 +248,6 @@ https://www.freebuf.com/articles/database/237069.html
 
 EvilPDF：一款把恶意文件嵌入在 PDF 中的工具
 https://www.kitploit.com/2020/06/evilpdf-embedding-executable-files-in.html
-
-
-
-
-
-绕过WAF运行命令执行漏洞的方法大全
-https://www.anquanke.com/post/id/208398
 
 实战笔记—滑动验证码攻防对抗
 https://www.freebuf.com/articles/web/238038.html

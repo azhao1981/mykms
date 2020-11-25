@@ -19,6 +19,10 @@ https://github.com/GitHubDaily/GitHubDaily
 [科技爱好者周刊](https://github.com/ruanyf/weekly)
 [阮一峰的网络日志](http://www.ruanyifeng.com/blog/)
 
+https://github.com/sbilly/awesome-security
+https://github.com/Hack-with-Github/Free-Security-eBooks
+https://github.com/qazbnm456/awesome-web-security
+
 ## [分享 GitHub 上有趣、入门级的开源项目](https://github.com/521xueweihan/HelloGitHub)
 
 32、GitHub-Chinese-Top-Charts：每周更新一次的 GitHub 中文项目排行榜

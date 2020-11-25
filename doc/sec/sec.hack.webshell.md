@@ -35,8 +35,7 @@ https://tools.kali.org/maintaining-access/weevely
 
 ### [蚁剑](https://github.com/AntSwordProject)
 
-蚁剑改造过WAF系列（一）
-https://xz.aliyun.com/t/7735
+
 
 [WebShell工具:中国蚁剑AntSword](http://kjol.cc/webshell-antsword.html)
 

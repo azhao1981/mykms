@@ -3,6 +3,9 @@
 CVE-2020-16898：Windows TCP/IP远程执行代码漏洞通告
 https://www.anquanke.com/post/id/219495
 
+Windows主机漏洞扫描工具
+https://www.freebuf.com/sectool/229655.html
+
 ## ＭＢＳＡ Microsoft Baseline Security Analyzer
 
 或最常见的MBSA是一种易于使用的工具，可帮助您根据Microsoft安全建议确定计算机的安全状态。

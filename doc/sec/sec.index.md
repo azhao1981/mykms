@@ -84,3 +84,6 @@ https://www.lshack.cn/802/
 
 https://danielmiessler.com/blog/no-moving-your-ssh-port-isnt-security-by-obscurity/
 
+https://github.com/sbilly/awesome-security
+https://github.com/Hack-with-Github/Free-Security-eBooks
+https://github.com/qazbnm456/awesome-web-security

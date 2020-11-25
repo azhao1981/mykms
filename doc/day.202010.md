@@ -115,13 +115,7 @@ GitLab身份验证不当漏洞（CVE-2020-13303）
 http://www.nsfocus.net/vulndb/50296
 ## 20201105
 
-https://www.hackinn.com/search/?keyword=all
 
-https://github.com/sbilly/awesome-security
-https://github.com/SpiderLabs/ModSecurity
-https://github.com/ashishb/android-security-awesome
-https://github.com/qazbnm456/awesome-web-security
-https://github.com/Hack-with-Github/Free-Security-eBooks
 
 google:site:hackerone.com sql-injection
 https://github.com/spring-projects/spring-security
@@ -144,9 +138,7 @@ https://github.com/developer-resources/frontend-development
 https://github.com/erluxman/awesomefluttertips
 https://github.com/hoffstadt/DearPyGui
 
-移动安全框架（MobSF）是一种自动、一体化的移动应用（Android / iOS / Windows）静态和动态分析的测试，恶意软件分析和安全评估框架。
-https://mobsf.github.io/docs/#/zh-cn/
-https://github.com/MobSF/Mobile-Security-Framework-MobSF
+
 
 赏金$10000的GitHub漏洞：通过开放重定向接管GitHub Gist账户|没怎么看懂
 https://www.anquanke.com/post/id/220963
@@ -194,9 +186,6 @@ https://github.com/AMAI-GmbH/AI-Expert-Roadmap
 
 Comprehensive Python Cheatsheet
 https://github.com/gto76/python-cheatsheet
-
-A curated list of Android Security materials and resources For Pentesters and Bug Hunters
-https://github.com/saeidshirazi/awesome-android-security
 
 ## 20201030
 
@@ -491,9 +480,7 @@ https://portswigger.net/web-security/csrf
 https://portswigger.net/web-security/ssrf
 https://portswigger.net/support/using-burp-to-test-for-cross-site-request-forgery
 
-https://www.jxwaf.com/
-Siem落地方案之JXWAF+ELK
-https://www.freebuf.com/articles/es/250983.html
+
 
 [JDBC MySQL任意文件读取中的一些坑](https://www.freebuf.com/articles/web/251626.html)
 
@@ -739,8 +726,7 @@ https://www.freebuf.com/sectool/245701.html
 https://www.freebuf.com/articles/system/250501.html
 Nmap流量特征修改
 https://www.freebuf.com/articles/others-articles/250028.html
-WAF代码剖析之初识openresty
-https://www.freebuf.com/articles/web/251429.html
+
 
 论敏感数据发现能力对企业重要性
 https://www.freebuf.com/articles/database/251055.html

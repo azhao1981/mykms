@@ -20,12 +20,7 @@ http://speedle.io/
 CAPA：自动识别恶意软件行为
 https://www.freebuf.com/sectool/244831.html
 
-JXWAF(锦衣盾)是一款开源web应用防火墙
-https://github.com/jx-sec/jxwaf
-Jxwaf安装部署使用方案
-https://www.freebuf.com/articles/es/242689.html
-jxwaf性能测试报告
-https://www.freebuf.com/articles/es/246648.html
+
 
 无线电侧信道攻击利用（TempestSdr）复现：监听显示器显示内容
 https://www.freebuf.com/articles/wireless/246842.html
@@ -67,13 +62,11 @@ https://docs.djangoproject.com/en/2.1/ref/csrf/
 
 [一个黑客写的开源情报方法和工具：在线情报实用指南](https://mp.weixin.qq.com/s/4VCiU1Oi94rKX9uCJ8YkbA)
 
-[基于WAF日志的扫描器检测实践](https://www.freebuf.com/articles/network/247466.html)
 
 [微信互联网平民创业（初稿）](https://github.com/xiaolai/everyones-guide-for-starting-up-on-wechat-network)
 
 https://github.com/loveunk/Deep-learning-books
 
-https://github.com/0xInfection/Awesome-WAF
 https://github.com/drduh/macOS-Security-and-Privacy-Guide/blob/master/README-cn.md
 The ultimate WinRM shell for hacking/pentesting
 https://github.com/Hackplayers/evil-winrm
@@ -171,11 +164,7 @@ https://idiosyncratic-ruby.com/74-super-snakes.html
 
 [基于安卓设备的Hacking](https://www.freebuf.com/articles/others-articles/246679.html)
 
-[甲方自研分布式WAF落地全程实录](https://www.freebuf.com/articles/es/245977.html)
-https://openresty.org/cn/
-Web应用程序防火墙(ngx_lua_waf或X-WAF)产品
-这个好像还是一个nginx的CVE连动的
-https://hackerone.com/reports/513236
+
 
 ## 20200820
 
@@ -358,8 +347,7 @@ https://www.smashingmagazine.com/2011/07/email-newsletters-worth-subscribing-to/
 https://news.ycombinator.com/
 https://hndex.org/
 
-https://googleprojectzero.blogspot.com/2020/08/exploiting-android-messengers-part-3.html?m=1
-CVE-2020-6514
+
 
 微软的js包，设计
 https://www.fast.design/docs/introduction/
@@ -518,7 +506,7 @@ https://serverfault.com/questions/83856/allow-scp-but-not-actual-login-using-ssh
 
 [NIDS(suricata)中的ICMP隐蔽隧道检测](https://www.freebuf.com/articles/es/243486.html)
 
-[waf绕过拍了拍你](https://www.anquanke.com/post/id/212272)
+
 
 [物联网安全之MQTT协议安全](https://www.anquanke.com/post/id/212335)
 

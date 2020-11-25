@@ -54,8 +54,7 @@ https://oss.console.aliyun.com/bucket/oss-cn-hangzhou/staging-udesk/object?keywo
 
 现代化SOAR的产品化落地（一）
 https://www.anquanke.com/post/id/211837
-Android应用程序渗透测试
-https://book.hacktricks.xyz/mobile-apps-pentesting/android-app-pentesting
+
 Quiver-用于管理所有工具以进行赏金和渗透测试的工具
 https://www.kitploit.com/2020/07/quiver-tool-to-manage-all-of-your-tools.html
 tracer跟踪工具
@@ -171,8 +170,6 @@ Write a little bit of Ruby, define your deck’s stats, then compile your game i
 Nexus Repository Manager 2.x命令注入漏洞 (CVE-2019-5475) 两次绕过
 https://www.freebuf.com/vuls/242500.html
 
-Jxwaf安装部署使用方案
-https://www.freebuf.com/articles/es/242689.html
 
 无线安全实战基础篇
 https://www.freebuf.com/articles/wireless/243445.html
@@ -201,8 +198,7 @@ https://www.freebuf.com/articles/network/243153.html
 https://www.freebuf.com/articles/network/241403.html
 Apache Kylin远程命令执行漏洞报告（CVE-2020-13925）
 https://www.freebuf.com/vuls/243541.html
-WAF Bypass之wesbhell上传jsp与tomcat
-https://www.anquanke.com/post/id/210630
+
 Apache Solr反序列化远程代码执行漏洞分析（CVE-2019-0192）
 https://www.anquanke.com/post/id/210866
 
@@ -627,8 +623,7 @@ https://github.com/react-hook-form/react-hook-form/blob/master/docs/README.zh-CN
 
 Instant messaging platform. Backend in Go. Clients: Swift iOS, Java Android, JS webapp, scriptable command line; chatbots
 https://github.com/tinode/chat
-渗透圣经
-https://github.com/blaCCkHatHacEEkr/PENTESTING-BIBLE
+
 Ultimate Go study guide
 This repo contains my notes on learning Go and computer systems
 https://github.com/hoanhan101/ultimate-go
@@ -675,24 +670,6 @@ https://www.freebuf.com/articles/neopoints/240962.html
 
 战略论坛 | 网络安全人才培养体系构建分析研究
 https://mp.weixin.qq.com/s/k5BbuLPZiHkKkTJKCYCvaQ
-
-ModSecurity OWASP核心规则集的两种配置模式
-https://www.freebuf.com/articles/web/237521.html
-https://github.com/coreruleset/coreruleset
-https://github.com/SpiderLabs/ModSecurity
-https://www.modsecurity.org/
-ModSecurity is an open source, cross-platform web application firewall (WAF) module
-
-异常评分模式（默认）和独自控制模式
-异常评分模式/协同检测模式
-当检测到威胁时，不会阻断请求,向下匹配，每个匹配成功的规则都会增加”异常分数”，
-在对请求数据检测结束时，以及对返回数据检测结束时，都会对异常分数的总和进行判断，如果大于设置的阈值，才会进行阻断动作，并向客户端返回403代码，
-审计日志中也会记录此次访问中所有匹配成功的规则信息。
-由于每次请求都会匹配所有规则，因此在高并发情况下，效率相对较低，服务器资源占用较高，但误报率相对较低；
-
-独自控制模式
-V2版本规则集的默认模式，它的工作方式是，只要有一条规则匹配成功，便拦截此次访问，审计日志中也只会记录第一次检测到威胁的规则信息。
-检测到一次威胁就直接阻断请求，因此在高并发情况下，效率相对较高，服务器资源占用较小，但误报率相对较高。除此之外该模式还有一个优点，即可以通过全局配置，设置当访问被拦截后，跳转到自定义的提示页面。
 
 
 https://gitee.com/OSCYuanChuangHui/ai_learning

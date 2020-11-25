@@ -420,10 +420,7 @@ java 安全开发之 spring boot Thymeleaf 模板注入
 https://paper.seebug.org/1332/
 https://paper.seebug.org/1332/
 
-如何简单的打造过WAF的蚁剑
-https://mp.weixin.qq.com/s/jigMkw2v1gEN7MLHpKC7RA
-OpenRASP学习笔记
-https://www.anquanke.com/post/id/216886
+
 
 windows10安装ubuntu双系统教程（绝对史上最详细）
 https://zhuanlan.zhihu.com/p/71588449
@@ -521,8 +518,7 @@ https://www.freebuf.com/articles/es/247532.html
 七夕-带你玩转 Linux Shellcode
 https://www.anquanke.com/post/id/216207
 
-通过Metasploit远程控制Android设备
-https://www.freebuf.com/articles/network/247629.html
+
 
 ## 20200902
 
