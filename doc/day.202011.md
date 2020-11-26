@@ -1,8 +1,27 @@
 # 202011
+
+## 20201126
+
+插件分享 | 带来新入口点及应用场景的Database Asset
+https://nosec.org/home/detail/4614.html
+
+Mongodb Server 授权问题漏洞
+http://www.cnnvd.org.cn/web/xxk/ldxqById.tag?CNNVD=CNNVD-202011-1867
+
+构造一个CodeDB来探索全新的白盒静态扫描方案
+https://www.freebuf.com/articles/network/253624.html
+
+技术分享 | 有趣的OpenSSH会话解密
+https://www.freebuf.com/articles/network/254807.html
+
+等保涉及的PostgreSQL数据库（下）
+https://www.freebuf.com/articles/system/254280.html
+
+内网渗透测试：域内权限维持思路总结
+https://www.freebuf.com/articles/web/252963.html
+手把手教你入门内网渗透之三
+https://www.anquanke.com/post/id/223095
 ## 20201124
-
-
-
 
 [WebLogic UniversalExtrac tor 反序列化漏洞（CVE-2020-14645）的复现和分析](https://www.anquanke.com/post/id/223445)
 

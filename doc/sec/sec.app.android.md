@@ -27,6 +27,13 @@ M9: Reverse Engineering
 M10: Extraneous Functionality   
 
 M1：平台使用不当
+  滥用平台功能，不使用平台安全控制，
+  包括： Android intents, platform permissions, misuse of TouchID, the Keychain ，或其它的安全控制功能
+  [Android Intent 教程](https://www.cnblogs.com/zhchoutai/p/8391977.html)
+  [Android Intent用法总结](https://www.jianshu.com/p/67d99a82509b) Android intents是不同应用间交流的功能
+  Touch ID是苹果公司的一种指纹识别技术
+  [iOS密码管理Keychain的使用](https://www.jianshu.com/p/6c2265a82f72)
+
   请求太多权限
   解决： Secure coding and configuration practices must be used on server-side of the mobile application. 
   移动端对应的服务端必须使用安全的编码和配置实践
