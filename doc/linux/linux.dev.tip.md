@@ -63,10 +63,12 @@ http://www.embeddedlinux.org.cn/emb-linux/entry-level/201701/09-6112.html
 ### nginx as download
 
 <https://miopas.github.io/2018/07/21/nginx-file-server/>
+user root;
+或是给目录权限
 
 ```config
   location /dl {
-      alias /var/www/html; 	# 文件存放目录，注意要以 '/' 结尾；
+      alias /root/udemy-dl/; 	# 文件存放目录，注意要以 '/' 结尾；
       index index.html;  		    # 如果文件存放目录有 index.html，会跳转到 index.html；
       autoindex on;               # 自动列出目录下的文件；
       autoindex_exact_size off;   # 文件大小按 G、M 的格式显示，而不是 Bytes；

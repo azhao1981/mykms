@@ -1,5 +1,57 @@
 # 202011
 
+## 20201130
+Elasticsearch Kibana代码注入漏洞（CVE-2020-7013）
+http://www.nsfocus.net/vulndb/50990
+
+CTF中的SQLite总结Cheat Sheet
+https://www.anquanke.com/post/id/222625
+甲方安全建设：信息安全与事件管理实施（连载2）
+https://www.anquanke.com/post/id/223555
+等保2.0系列安全计算环境之数据完整性、保密性测评
+https://www.freebuf.com/articles/compliance/254810.html
+
+你眼中的ATT&CK vs 我眼中的ATT&CK（一）
+https://www.freebuf.com/articles/es/256041.html
+
+威胁检查分析与数据管理实践之基于入侵检测对HTTP流量的分析 会员
+https://www.freebuf.com/articles/web/251671.html
+
+## 20201127
+Oracle MySQL Server InnoDB组件拒绝服务漏洞（CVE-2020-14568）
+http://www.nsfocus.net/vulndb/50928
+
+Oracle MySQL Server Audit Plug-in组件拒绝服务漏洞（CVE-2020-14591）
+http://www.nsfocus.net/vulndb/50927
+
+Oracle MySQL Server InnoDB组件拒绝服务漏洞（CVE-2020-14623）
+http://www.nsfocus.net/vulndb/50926
+
+IOT漏洞研究（二）Web服务
+https://www.freebuf.com/articles/terminal/254258.html
+
+PHP绕过禁用函数漏洞的原理与利用分析
+https://www.freebuf.com/articles/network/253489.html
+
+网络安全视角下的《个人信息保护法》
+https://www.freebuf.com/articles/neopoints/253951.html
+
+企业安全体系架构分析：抗DDoS解决方案
+https://www.freebuf.com/articles/es/253129.html
+
+DNSMon：用DNS数据进行威胁发现
+https://www.anquanke.com/post/id/223703
+
+ThinkPHP5.0.x RCE分析与利用
+https://www.anquanke.com/post/id/222672
+
+CVE-2020-28948/28949：Drupal任意PHP代码执行漏洞通告
+https://www.anquanke.com/post/id/223848
+
+
+企业安全建设从合规开始
+https://www.anquanke.com/post/id/222626
+
 ## 20201126
 
 插件分享 | 带来新入口点及应用场景的Database Asset

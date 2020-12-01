@@ -78,7 +78,7 @@ curl -L https://raw.githubusercontent.com/yyuu/pyenv-installer/master/bin/pyenv-
 export ver=3.8.6
 export ver=3.7.9
 wget http://mirrors.sohu.com/python/$ver/Python-$ver.tar.xz -P ~/.pyenv/cache/; pyenv install $ver
-
+pyenv install 3.8.6
 # 手动下载
 https://www.python.org/ftp/python/3.7.2/Python-3.7.2.tar.xz
 cp Python-3.7.2.tar.xz ~/.pyenv/cache/
