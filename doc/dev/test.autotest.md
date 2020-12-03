@@ -1,3 +1,6 @@
+https://www.udemy.com/course/pytest_allure/
+Pytest and Allure 测试框架教程和应用
+最好的自动化框架
 
 
 Robot/AutoIT/Sikuli----覆盖Selenium WebDriver不能自动化测试的功能
