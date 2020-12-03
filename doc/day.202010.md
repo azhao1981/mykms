@@ -544,9 +544,7 @@ https://github.com/hashicorp/waypoint
 A prompt theme engine for any shell.
 https://github.com/JanDeDobbeleer/oh-my-posh3
 
-WPScan is a free, for non-commercial use, black box WordPress security scanner written for security professionals and blog maintainers to test the security of their WordPress websites.
-能不能做一个自动扫描工具
-https://github.com/wpscanteam/wpscan
+
 
 Elastic APM agent for Ruby| 形成结果放es里?
 https://github.com/elastic/apm-agent-ruby
@@ -740,8 +738,7 @@ https://www.freebuf.com/articles/web/251083.html
 Permission-Manager：一款针对Kubernete的RBAC与用户管理工具
 https://www.freebuf.com/sectool/244690.html
 
-WordPress Email Subscribers & Newsletters SQL注入漏洞（CVE-2020-5768）
-http://www.nsfocus.net/vulndb/49449
+
 
 [CVE-2020-8264] Possible XSS Vulnerability in Action Pack in Development Mode
 https://groups.google.com/g/rubyonrails-security/c/yQzUVfv42jk

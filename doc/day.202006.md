@@ -563,14 +563,7 @@ https://www.freebuf.com/articles/es/235883.html
 挖洞经验 | 用多态图片实现谷歌学术网站（Google Scholar）XSS漏洞触发
 https://www.freebuf.com/vuls/236182.html
 
-WordPress Real-Time Find and Replace插件代码执行漏洞（CVE-2020-13641）
-http://www.nsfocus.net/vulndb/46809
 
-WordPress SiteOrigin Page Builder插件代码执行漏洞（CVE-2020-13643）
-http://www.nsfocus.net/vulndb/46808
-
-WordPress SiteOrigin Page Builder插件代码执行漏洞（CVE-2020-13642）
-http://www.nsfocus.net/vulndb/46807
 
 Bypass JEP290
 https://nosec.org/home/detail/4468.html

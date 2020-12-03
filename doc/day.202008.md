@@ -425,7 +425,6 @@ https://securitytrails.com/
 
 [【FreeBuf字幕组】Hacker101白帽进阶之路-Cookie篡改技术和安全架构评审|视频](https://www.freebuf.com/video/245576.html)
 
-https://securityaffairs.co/wordpress/106782/security/nodejs-express-fileupload-module-flaw.html
 
 [安全研究 | Nginx反向代理钓鱼](https://www.freebuf.com/articles/web/243404.html)
 

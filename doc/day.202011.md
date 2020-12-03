@@ -274,8 +274,7 @@ https://github.com/dimakiss/udemy_bot
 App Testing At Scale How Bitnami Tests Thousands Of Release Per Month PDF
 https://static.sched.com/hosted_files/kccncna20/fe/App%20Testing%20at%20Scale%20-%20How%20Bitnami%20Tests%20Thousands%20of%20Release%20Per%20Month.pdf
 
-WordPress Plugin Buddypress 6.2.0 - Persistent Cross-Site Scripting
-https://www.exploit-db.com/exploits/49061
+
 Microsoft Internet Explorer 11 - Use-After-Free
 https://www.exploit-db.com/exploits/49062
 Apache Struts 2.5.20 - Double OGNL evaluation

@@ -194,8 +194,6 @@ https://github.com/florinpop17/app-ideas
 https://www.bootcdn.cn/
 http://www.staticfile.org/
 
-WordPress 任意文件上传漏洞 (CVE-2020-24948)
-http://www.nsfocus.net/vulndb/48929
 
 [dom4j远程代码执行漏洞(CVE-2018-1000632)](http://www.nsfocus.net/vulndb/48907)
 > 2018？ 更新
