@@ -1,5 +1,28 @@
 # 202012
 
+## 1204
+
+HTTP协议攻击方法汇总（上）| http2.0
+https://www.anquanke.com/post/id/224321
+
+云迁移安全（五）：云平台安全建设实践
+https://www.freebuf.com/articles/es/253776.html
+
+“The Tie Between Ruby and Rust.”
+https://github.com/danielpclark/rutie
+
+Modern encryption for Ruby and Rails
+数据加密！
+https://github.com/ankane/lockbox
+
+https://stackoverflow.com/questions/2232/how-to-call-shell-commands-from-ruby
+多租户
+https://blog.appsignal.com/2020/12/02/building-a-multi-tenant-ruby-on-rails-app-with-subdomains.html
+https://avdi.codes/why-you-shouldnt-inherit-from-rubys-core-classes-and-what-to-do-instead/
+
+https://dev.to/simonholdorf/7-pieces-of-advice-to-be-a-successful-software-engineer-12fj
+https://dev.to/claudiobonfati/netflix-intro-animation-pure-css-1m0c
+
 ## 1203
 
 新手漏洞挖掘经验分享
