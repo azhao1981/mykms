@@ -585,11 +585,13 @@ https://blog.csdn.net/u010164190/article/details/105704097
 
 73 win10.wsl2.docker
 
-apt install docker
-Setting up wmdocker (1.5-2) ...
-Setting up docker (1.5-2) ...
-Processing triggers for man-db (2.8.5-2) ...
-sudo: docker: command not found
+https://blog.imfing.com/2020/05/upgrade-to-windows-wsl-2/
+管理员打开 terminal
+dism.exe /online /enable-feature /featurename:VirtualMachinePlatform /all /norestart
+之后便可以将 WSL 2 设置为默认的版本：
+wsl --set-default-version  2
+如果你之前安装过了 WSL 1，可以用命令 wsl -l -v 查看所有已安装的发行版，并将它的 WSL 版本切换为 2：
+wsl --set-version <distribution name> <versionNumber>
 
 [Win10 WSL2 安装Docker](https://www.jianshu.com/p/a20c2d58eaac)
 > 这个好像更细一些
