@@ -55,8 +55,22 @@ Performance Practices
 Have you ever asked yourself what you need to have or test in your web application before launching it? The Front-End Checklist repository has you covered!
 https://github.com/thedaviddias/Front-End-Checklist
 
-NW.js is an app runtime based on Chromium and node.js. You can write native apps in HTML and JavaScript with NW.js. It also lets you call Node.js modules directly from the DOM and enables a new way of writing native applications with all Web technologies.
+NW.js is an app runtime based on Chromium and node.js. 
+You can write native apps in HTML and JavaScript with NW.js. 
+It also lets you call Node.js modules directly from the DOM and enables a new way of writing native applications with all Web technologies.
 https://github.com/nwjs/nw.js
+https://npm.taobao.org/mirrors/nwjs/v0.50.1/
+
+一次编码，处处运行，使用nw js & Cordova编写跨平台App
+https://www.bilibili.com/video/BV1Es411r7QL?from=search&seid=3150421117816289008
+
+打包： Enigma VirtualBox
+https://www.bilibili.com/video/BV1op4y167Dq?from=search&seid=3150421117816289008
+https://www.bilibili.com/video/BV1op4y167Dq?p=2
+copy /b nw.exe+app.nw app.exe
+这个例子比较简单清楚
+Eletron
+https://www.bilibili.com/video/BV12t411e7sQ/?spm_id_from=333.788.videocard.4
 
 https://alvarotrigo.com/fullPage/zh/
 fullPage.js by Alvaro Trigo is a simple and easy-to-use library that lets you create SPA (Single Page Applications) and landscape sliders. It’s available for Vue, React and Angular and is fully responsive for mobile devices.

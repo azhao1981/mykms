@@ -285,26 +285,6 @@ masscan -n -v -Pn -p 1-65535 61.156.109.241-61.156.109.246 -oX /root/Desktop/61.
 ### [中间人攻击工具](https://github.com/evilsocket/bettercap)
 
 
-### 知识库和安全知识普及
-[checklist](https://github.com/FallibleInc/security-guide-for-developers)
-https://github.com/brunofacca/zen-rails-security-checklist
-https://www.sqreen.com/checklists/saas-cto-security-checklist
-[Ruby常见安全问题](https://www.sitepoint.com/common-rails-security-pitfalls-and-their-solutions/)
-[python常见安全问题](https://hackernoon.com/10-common-security-gotchas-in-python-and-how-to-avoid-them-e19fbe265e03)
-[免费 Top 100 Hacking & Security E-Books](https://github.com/yeahhub/Hacking-Security-Ebooks)
-[HTML5 Security Cheatsheet](https://github.com/cure53/H5SC)
-[Front-end security and Cross-Site Scripting (XSS) for Ruby on Rails developers](http://molily.de/xss/)
-[Authentication for Rails API](https://zhuanlan.zhihu.com/p/20818699)
-[Secure Tips Learn From Rails 还是header相关](http://hooopo.logdown.com/posts/144057-d22fb477)
-[浅析白盒安全审计中的XSS Fliter](http://www.freebuf.com/articles/web/30201.html)
-[Rails 不安全的默认配置 —— 需要了解的13个安全陷阱](http://www.oschina.net/translate/rails-insecure-defaults?cmp&p=2)
-[中文guides](http://guides.ruby-china.org/security.html)
-[網路安全/rails圣经](https://ihower.tw/rails/security.html)
-
-[github 的安全相关](https://github.com/showcases/security)
-+ <https://github.com/trimstray/the-book-of-secret-knowledge#hackingpenetration-testing-toc>
-+ <https://github.com/Hack-with-Github/Awesome-Hacking>
-
 ## 其它工具
 
 ### [aws 上可以用的安全工具集合](https://github.com/toniblyx/my-arsenal-of-aws-security-tools)
@@ -403,3 +383,140 @@ Agent-less vulnerability scanner for Linux, FreeBSD, Container Image, Running Co
 
 Faster Nmap Scanning with Rust
 https://github.com/RustScan/RustScan
+
+## 静态扫描
+### [Fortify SCA(Source Code Analysis)](/doc/sec/sec.scan.SAST.fortify.md)
+
+### Gosec：Go语言源码安全分析工具
+https://www.freebuf.com/sectool/179549.html
+
+### Gryffin
+https://github.com/yahoo/gryffin
+
+Gryffin 是雅虎开发的一个大规模 Web 安全扫描平台。它不是另外一个扫描器，其主要目的是为了解决两个特定的问题 —— 覆盖率和伸缩性。
+该平台采用 Go 语言开发，依赖：
+
+### 静态代码扫描原理|商用
+
+https://studygolang.com/articles/26117
+
+
+2. Checkmarx CxSuite
+
+网址：https://www.checkmarx.com/
+3. Coverity
+
+网址：https://scan.coverity.com/
+
+#### Checkmarx
+
+再厉害的语法语义扫描器也避免不了误报
+最大难点在于扫描器根本无法识别过滤函数的有效性
+
+所以决定采用基于正则表达式的代码扫描器，我们可以扫一些代码规范类的问题
+不规范函数、SQL语句拼接、redis和MongoDB未授权访问、数据库连接信息硬编码、DEBUG 模式未关闭、fastjson远程代码执行漏洞的特定代码等等
+checkmarx源代码安全扫描工具破解版 最新版
+http://www.downcc.com/soft/286207.html
+用户名/密码：Public/Public@123!@1qaz
+
+管理员用户：
+
+用户名：admin@cx
+
+默认密码：admin
+
+提示：个人密码可以在“我的配置”的菜单列表中修改。
+#### iast
+
+对于漏洞类型的代码可以交给运行态代码检测工具**iast**去发现
+iast 的缺点就是需要依靠第三方测试流量可能面临覆盖面不全的尴尬境地，所以需要结合静态代码使用。
+
+#### [Cobra](http://cobra.feei.cn/)
+
+一款源代码安全审计工具，支持检测多种开发语言源代码中的大部分显著的安全问题和漏洞。
+https://github.com/WhaleShark-Team/cobra
+
+```bash
+brew install grep findutils flex phantomjs
+brew cask install phantomjs
+git clone https://github.com/WhaleShark-Team/cobra.git && cd cobra
+pip install -r requirements.txt
+python cobra.py --help
+```
+
+#### VCG：一种用于C++、C语言、VB、PHP、Java和PL/SQL的自动代码安全审查工具。
+
+https://sourceforge.net/projects/visualcodegrepp/
+
+#### Find Security Bugs 用于Java Web应用程序的安全审计
+
+https://find-sec-bugs.github.io/
+
+[Find-Sec-Bugs 静态代码安全审计神器](https://www.anquanke.com/post/id/154476)
+
+插件介绍：Find-Sec-Bugs 是一款本地 bug 扫描插件 “FindBugs-IDEA” 的 Java 安全漏洞规则扩展库，它支持在多种主流 IDE 环境进行安装：Eclipse, IntelliJ, Android Studio 和 NetBeans。
+
+#### dependency-check
+
+这个已经和 SonarQ 结合了,有不错的效果
+
+第三方包依赖检查 [SDL建设-三方依赖库扫描](https://www.cnblogs.com/he1m4n6a/p/9230888.html)
+
+https://techbeacon.com/app-dev-testing/13-tools-checking-security-risk-open-source-dependencies
+> https://owasp.org/www-project-dependency-check/
+
+#### codeql
+
+github: https://github.com/github/codeql
+
+镜像: https://gitee.com/mirrors/CodeQL
+
+工作区:
+https://github.com/github/vscode-codeql-starter/
+https://gitee.com/bsamli4/vscode-codeql-starter
+
+可执行文件:
+https://github.com/github/codeql-cli-binaries/releases
+
+[GitHub开源代码分析引擎CodeQL](https://www.cnbeta.com/articles/tech/916951.htm)
+> <https://securitylab.github.com/tools/codeql>
+
+[代码分析引擎 CodeQL 初体验/用法](https://www.anquanke.com/post/id/193171)
+[代码分析引擎 CodeQL 初体验](https://paper.seebug.org/1078/)
+
+[如何利用CodeQL挖掘CVE-2020-10199](https://www.anquanke.com/post/id/202987)
+CodeQL 若干问题思考及 CVE-2019-3560 审计详解
+https://lenny233.github.io/2020/02/20/codql-and-cve-2019-3560/
+[使用codeql 挖掘 ofcms](https://www.anquanke.com/post/id/203674)
+
+Codeql分析Vulnerability-GoApp
+https://www.freebuf.com/articles/web/253491.html
+
+使用 CodeQL 挖掘 CVE-2020-9297
+https://xz.aliyun.com/t/7979
+
+[通过GitHub官方白帽工具，我找出了10个0day==>CodeQL](https://zhuanlan.zhihu.com/p/92769710)
+
+CodeQL：“查询”你的下一个漏洞
+https://www.anquanke.com/post/id/212305
+
+[在线工具,有例子](https://lgtm.com/query/rule:1823453799/lang:java/)
+
+VS Code
+
+[教程]*https://help.semmle.com/codeql/codeql-cli/procedures/get-started.html*
+[中文教程](https://www.geekmeta.com/article/1245122.html)
+
+相关:
+https://github.com/topics/lgtm
+https://github.com/topics/semmle-ql
+
+[CICD-代码审计](https://www.cnblogs.com/chanix/p/12744478.html)
+
+https://gitee.com/mirrors/Vuls
+https://gitee.com/mirrors/tsunami-security-scanner
+
+
+GitHub推出官方代码扫描工具，免费查找漏洞
+
+https://www.secrss.com/articles/26026

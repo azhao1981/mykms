@@ -549,8 +549,7 @@ https://www.anquanke.com/post/id/207048
 从零开始学习fuzzing之理解代码覆盖的重要性
 https://www.anquanke.com/post/id/207307
 
-fortify规则库解密之旅
-https://nosec.org/home/detail/4470.html
+
 
 http://jira.flyudesk.com/browse/IM-7110
 

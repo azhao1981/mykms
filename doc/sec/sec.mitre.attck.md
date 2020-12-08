@@ -1,5 +1,35 @@
 # ATT&CK
 
+攻防最前线：ATT&CK模型解读
+https://www.freebuf.com/articles/ics-articles/254809.html
+EDR 即 Endpoint Detection and Response (终端**探测与响应**)
+EPP（ Endpoint Protection Platform）
+三种网络攻击模型：
+
+高抽象模型：Lockheed Martin 的 Cyber Kill Chain 模型、Microsft 的 STRIDE 模型等
+  Reconnaissance（侦查）→Weaponization（武器化）→ Delivery（传输）→Exploitation（挖掘）
+  → Installation（植入）→ C2 : Command & Control（命令和控制）
+  → Actions on Objectives（操作目标）
+中抽象模型：Mitre 的 ATT&CK 模型
+低抽象模型：漏洞数据集、恶意软件数据集等
+Reconnaissiance
+Weaponization
+Delivery
+Exploitation
+Installation
+Command & Control
+Action on Objectives
+
+Enterprise 和 Mobile
+Key objects
+  Tactics TAXXXX
+    Initial Access（ID : TA 0001)
+    Execution（ID : TA 0002）
+  Techniques TXXXX
+  Groups ID：GXXXX
+    整理了一些世界上著名的黑客组织（Groups）https://attack.mitre.org/groups/
+  Software ID：SXXXX
+    Software即攻击者经常用的软件，包括工具、组件和恶意软件 https://attack.mitre.org/software/
 
 从知识盒子进入学习
 https://zhishihezi.net/box/91c93f609d9dd7b7ca15e0ad2ad520d8

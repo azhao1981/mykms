@@ -544,5 +544,4 @@ https://www.exploit-db.com/exploits/46585
 Ruby On Rails - DoubleTap Development Mode secret_key_base Remote Code Execution (Metasploit)
 https://www.exploit-db.com/exploits/46785
 
-CodeQL：“查询”你的下一个漏洞
-https://www.anquanke.com/post/id/212305
+

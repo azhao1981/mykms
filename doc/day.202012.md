@@ -1,5 +1,58 @@
 # 202012
 
+## 1208
+Goby插件分享 | 可对前端打包器所构建的网站进行一键扫描的Packer Fuzzer
+https://nosec.org/home/detail/4615.html
+
+ZIP已知明文攻击深入利用
+https://www.freebuf.com/articles/network/255145.html
+https://pan.baidu.com/s/1Ya9t4KKN656OVyDFry9caw nhtg
+
+私有云安全：容器安全设计实践 会员
+https://www.freebuf.com/articles/container/254307.html
+
+Java程序恶意行为监控组件
+https://www.freebuf.com/sectool/256099.html
+
+12月7日每日安全热点 - 红队中易被攻击的一些重点系统漏洞整理
+https://www.anquanke.com/post/id/224839
+https://github.com/r0eXpeR/redteam_vul
+
+安全事件周报（11.30-12.06）
+https://www.anquanke.com/post/id/224891
+
+CVE-2016-0638——WebLogic反序列化初探
+https://www.anquanke.com/post/id/224343
+通过社交媒体中的内容进行网络安全事件检测
+https://www.anquanke.com/post/id/223787
+
+
+
+## 1207
+Windows主机入侵痕迹排查办法
+https://www.freebuf.com/articles/system/255107.html
+深入浅出低功耗蓝牙（BLE）协议栈（上）
+https://www.freebuf.com/articles/wireless/248558.html
+深入浅出低功耗蓝牙(BLE)协议栈（中）| 理论篇：BLE协议栈详解
+https://www.freebuf.com/articles/wireless/255085.html
+年度安全漏洞&年度最佳安全开源项目 | WitAwards 2020评选火热进行中
+https://www.freebuf.com/fevents/256731.html
+Safety：如何检测已安装依赖组件中的已知安全漏洞
+https://www.freebuf.com/vuls/254105.html
+
+
+私有云安全：容器安全设计实践
+https://www.freebuf.com/articles/container/254307.html
+
+利用Outlook创建基于邮件的持久化后门
+https://www.anquanke.com/post/id/223632
+
+Chromium 83 - Full CSP Bypass
+https://www.exploit-db.com/exploits/49195
+
+Zabbix 5.0.0 - Stored XSS via URL Widget Iframe
+https://www.exploit-db.com/exploits/49202
+
 ## 1204
 
 HTTP协议攻击方法汇总（上）| http2.0

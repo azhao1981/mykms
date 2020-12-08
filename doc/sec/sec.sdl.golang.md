@@ -59,16 +59,3 @@ https://cloud.tencent.com/developer/article/1398007
 Hacking-With-Golang
 https://github.com/re4lity/Hacking-With-Golang
 
-### 静态代码扫描原理|商用
-
-https://studygolang.com/articles/26117
-1. Fortify SCA(Source Code Analysis)
-
-网址：http://www.fortify.net/
-
-2. Checkmarx CxSuite
-
-网址：https://www.checkmarx.com/
-3. Coverity
-
-网址：https://scan.coverity.com/

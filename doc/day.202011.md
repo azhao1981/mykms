@@ -337,8 +337,7 @@ https://www.freebuf.com/articles/ics-articles/254809.html
 挖洞经验 | 开放重定向漏洞导致的账户劫持
 https://www.freebuf.com/articles/web/252415.html
 
-Codeql分析Vulnerability-GoApp
-https://www.freebuf.com/articles/web/253491.html
+
 
 WebLogic未授权访问及命令执行分析（CVE-2020-1488214883）
 https://www.freebuf.com/vuls/254408.html

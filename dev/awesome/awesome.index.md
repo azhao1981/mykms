@@ -205,3 +205,23 @@ https://github.com/tabler/tabler-icons
 https://github.com/hantmac/Mastering_Go_ZH_CN
 29、A-Philosophy-of-Software-Design-zh：《软件设计的哲学》中文翻译。在线阅读
 https://github.com/gdut-yy/A-Philosophy-of-Software-Design-zh
+
+
+[checklist](https://github.com/FallibleInc/security-guide-for-developers)
+https://github.com/brunofacca/zen-rails-security-checklist
+https://www.sqreen.com/checklists/saas-cto-security-checklist
+[Ruby常见安全问题](https://www.sitepoint.com/common-rails-security-pitfalls-and-their-solutions/)
+[python常见安全问题](https://hackernoon.com/10-common-security-gotchas-in-python-and-how-to-avoid-them-e19fbe265e03)
+[免费 Top 100 Hacking & Security E-Books](https://github.com/yeahhub/Hacking-Security-Ebooks)
+[HTML5 Security Cheatsheet](https://github.com/cure53/H5SC)
+[Front-end security and Cross-Site Scripting (XSS) for Ruby on Rails developers](http://molily.de/xss/)
+[Authentication for Rails API](https://zhuanlan.zhihu.com/p/20818699)
+[Secure Tips Learn From Rails 还是header相关](http://hooopo.logdown.com/posts/144057-d22fb477)
+[浅析白盒安全审计中的XSS Fliter](http://www.freebuf.com/articles/web/30201.html)
+[Rails 不安全的默认配置 —— 需要了解的13个安全陷阱](http://www.oschina.net/translate/rails-insecure-defaults?cmp&p=2)
+[中文guides](http://guides.ruby-china.org/security.html)
+[網路安全/rails圣经](https://ihower.tw/rails/security.html)
+
+[github 的安全相关](https://github.com/showcases/security)
++ <https://github.com/trimstray/the-book-of-secret-knowledge#hackingpenetration-testing-toc>
++ <https://github.com/Hack-with-Github/Awesome-Hacking>

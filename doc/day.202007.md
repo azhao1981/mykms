@@ -218,8 +218,7 @@ https://www.anquanke.com/post/id/209972
 Metasploit Framework Handbook (一)
 https://www.anquanke.com/post/id/209966
 
-使用 CodeQL 挖掘 CVE-2020-9297
-https://xz.aliyun.com/t/7979
+
 
 CVE-2020-0787 本地提权漏洞简要分析
 https://www.anquanke.com/post/id/209451
@@ -270,9 +269,7 @@ https://www.anquanke.com/post/id/210407
 
 ## 20200713
 
-谈谈我眼中的黑灰产威胁情报
-https://www.freebuf.com/articles/neopoints/242980.html
-> 为什么要作，应该有什么产出，黑灰产注册示例
+
 
 ## 20200711
 
