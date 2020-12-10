@@ -1,5 +1,41 @@
 # 202012
 
+## 1210
+前端无秘密：看我如何策反JS为我所用（上） 会员
+https://www.freebuf.com/articles/web/256807.html
+
+技术研究 | Docker安全实践分享
+https://www.freebuf.com/articles/container/255054.html
+Windows常见提权总结
+https://www.freebuf.com/articles/system/254836.html
+使用GIT和CI跟踪Windows更新
+https://www.anquanke.com/post/id/224332
+[15个漏洞详情，FireEye被盗网络武器库分析](https://www.freebuf.com/vuls/257129.html)
+
+[以红队视角看FireEye武器泄漏事件](https://www.freebuf.com/news/257194.html)
+
+出于谨慎考虑，为了协助防范这些工具被公开的风险，FireEye 已发布识别这些工具的OpenIOC，Yara，Snort和ClamAV检测规则，以尽量减少丢失这些工具的潜在影响。具体规则详见：
+由于担忧攻击者利用这些窃取的自定义渗透测试工具对其他目标发起攻击，FireEye现在在其GitHub帐户上共享IOC和应对措施，帮助其他公司检测黑客是否使用了FireEye的任何被盗工具来破坏其网络。
+https://github.com/fireeye/red_team_tool_countermeasures
+
+GRAT2：一款功能强大的命令&控制（C2）工具
+https://www.freebuf.com/sectool/254051.html
+
+反序列化漏洞汇总
+https://www.anquanke.com/post/id/224769
+内含POC丨漏洞复现之S2-061（CVE-2020-17530）
+https://www.anquanke.com/post/id/225252
+
+## 1209
+Gitlab 安全漏洞
+http://www.cnnvd.org.cn/web/xxk/ldxqById.tag?CNNVD=CNNVD-202012-442
+Gitlab CE/EE 跨站脚本漏洞
+http://www.cnnvd.org.cn/web/xxk/ldxqById.tag?CNNVD=CNNVD-202012-439
+
+https://www.anquanke.com/post/id/225142
+CVE-2020-1971：OpenSSL 拒绝服务漏洞通告
+
+
 ## 1208
 Goby插件分享 | 可对前端打包器所构建的网站进行一键扫描的Packer Fuzzer
 https://nosec.org/home/detail/4615.html
@@ -25,8 +61,6 @@ CVE-2016-0638——WebLogic反序列化初探
 https://www.anquanke.com/post/id/224343
 通过社交媒体中的内容进行网络安全事件检测
 https://www.anquanke.com/post/id/223787
-
-
 
 ## 1207
 Windows主机入侵痕迹排查办法
