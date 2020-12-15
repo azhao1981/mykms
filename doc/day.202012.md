@@ -1,8 +1,110 @@
 # 202012
 
+## 1215
+微服务中台技术解析之分布式事务方案和实践
+https://www.infoq.cn/article/0x8XMK4XgDTF98kTDNhD
+
+https://weex.apache.org/zh/
+Weex 致力于使开发者能基于通用跨平台的 Web 开发语言和开发经验，来构建 Android、iOS 和 Web 应用。简单来说，在集成了 WeexSDK 之后，你可以使用 JavaScript 语言和前端开发经验来开发移动应用。
+
+FireEye 红队失窃工具大揭秘之：分析复现 Confluence路径穿越漏洞 (CVE-2019-3398)
+https://www.anquanke.com/post/id/225452
+
+FireEye 红队失窃工具大揭秘之：分析复现 Confluence路径穿越漏洞 (CVE-2019-3398)
+https://www.anquanke.com/post/id/225452
+Confluence 6.6.1
+
+CVE-2016-3510——WebLogic反序列化初探
+https://www.anquanke.com/post/id/224593
+
+Windows权限维持技巧之隐藏服务
+https://www.freebuf.com/articles/system/254838.html
+
+GB∕T 30276-2020 信息安全技术 网络安全漏洞管理规范
+http://c.gb688.cn/bzgk/gb/showGb?type=online&hcno=7EF97931115A518655DCD136653CBD74
+https://www.wangan.com/docs/gbt30276-2020
+
+一起典型DDoS事件的应急处置
+https://www.freebuf.com/articles/web/255342.html
+
+https://www.exploit-db.com/exploits/49257
+Gitlab 11.4.7 - Remote Code Execution
+8.13.6 
+
+CVE-2020-26258/26259：XStream 反序列化漏洞通告
+https://www.anquanke.com/post/id/225489
+
+## 1214
+
+https://dev.to/ravimengar/a-git-cheatsheet-of-commands-every-developer-should-use-38ma?utm_source=digest_mailer&utm_medium=email&utm_campaign=digest_email
+https://dev.to/kais_blog/14-awesome-javascript-array-tips-you-should-know-about-1d0m?utm_source=digest_mailer&utm_medium=email&utm_campaign=digest_email
+https://dev.to/blessingartcreator/8-useful-javascript-tricks-you-didn-t-know-in-4-minutes-3npb?utm_source=digest_mailer&utm_medium=email&utm_campaign=digest_email
+
+[Jenkins 2.235.3 - 'Description' Stored XSS](https://www.exploit-db.com/exploits/49237)
+
+分析: Restrict project naming 功能是对任务(job/item) 命令的限制
+前提: 可以进 /configure 来进行配置
+那么问题是: 都谁有权限进 /configure
+
+Version: <= 2.251 and <= LTS 2.235.3
+整正的代码: https://github.com/jenkinsci/jenkins/pull/4918/commits/7529ce8905910849e890b7e26d6563e0d56189d2
+
+1. 进入 http://xxx.com/configure
+配置 [] Restrict project naming
+Pattern: .*    to  ^TEST.* 
+Description: GX1h4ck <img src=a onerror=alert(1)>  
+2. 进入 http://xxx.com/view/all/newJob
+在name中敲任意字符,触发
+
+[Jenkins 2.235.3 - 'tooltip' Stored Cross-Site Scripting](https://www.exploit-db.com/exploits/49232)
+
+
+[Goby内测版1.8.230 | RDP爆破来了！(文末有福利)](https://nosec.org/home/detail/4620.html)
+
+[如何保护你的密码：应用侧数据库&redis密码加密实践| java](https://www.freebuf.com/articles/database/255263.html) 
+https://github.com/ulisesbocchio/jasypt-spring-boot
+
+前端JavaScript渗透测试步步为营
+https://www.freebuf.com/vuls/255640.html
+
+SSHD后门分析与团伙归类报告
+https://www.freebuf.com/articles/network/255302.html
+
+记一次阿里云主机泄露Access Key到Getshell
+https://www.freebuf.com/articles/web/255717.html
+
+内网渗透之主机出网OR不出网隧道搭建
+https://www.freebuf.com/articles/web/255801.html
+
+记一次不出网的渗透测试
+https://www.freebuf.com/articles/web/255840.html
+
+自己动手搭建信息安全可视化平台（一）现状及服务器资产统计模块 会员
+https://www.freebuf.com/articles/es/255882.html
+
+https://www.anquanke.com/post/id/224828
+ZenTaoPMS v12.4.2后台GETSHELL分析与利用
+禅道11.5  
+
+基于Docker集群的分布式OpenVAS（GVM）
+https://www.anquanke.com/post/id/225301
+
+## 1211
+细说渗透江湖之披荆斩棘
+https://www.freebuf.com/articles/web/254916.html
+
+https://goby.cowtransfer.com/s/097147112a1a4c
+https://github.com/gobysec/GobyVuls
+
+https://sourcegraph.com/github.com/git/git/-/compare/v2.17.4...v2.17.5?visible=9
+https://cve.mitre.org/cgi-bin/cvekey.cgi?keyword=git
+https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2020-5260
+
 ## 1210
 前端无秘密：看我如何策反JS为我所用（上） 会员
 https://www.freebuf.com/articles/web/256807.html
+前端无秘密：看我如何策反JS为我所用（下） 会员
+https://www.freebuf.com/articles/web/256846.html
 
 技术研究 | Docker安全实践分享
 https://www.freebuf.com/articles/container/255054.html

@@ -379,7 +379,6 @@ https://dev.to/mizadmehr/missed-frontend-vulnerabilities-1-css-is-not-as-safe-as
 security
 
 https://dev.to/rfitz/tailwind-react-setup-and-design-patterns-f7o
-https://tailwindcss.com/docs/installation
 
 https://dev.to/nickbulljs/5-techniques-i-use-to-manage-stress-as-a-software-engineer-2o2n
 缓解压力的五种方法

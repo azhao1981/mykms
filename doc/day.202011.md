@@ -187,8 +187,7 @@ http://www.nsfocus.net/index.php?os=&type_id=&keyword=Jenkins&act=sec_bug&submit
 
 https://standardebooks.org/
 
-[Tailwind CSS v2.0](https://blog.tailwindcss.com/tailwindcss-v2)
-https://tailwindcss.com/
+
 
 https://dev.to/nghiemthu/master-css-grid-with-5-layouts-in-17-minutes-3phf
 https://dev.to/sylwiavargas/5-ways-to-refactor-if-else-statements-in-js-functions-208e

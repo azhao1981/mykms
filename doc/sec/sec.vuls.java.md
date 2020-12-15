@@ -1,5 +1,8 @@
 # java 漏洞
 
+https://www.upguard.com/blog/top-10-java-vulnerabilities-and-how-to-fix-them
+https://snyk.io/blog/162-security-vulnerabilities-disclosed-in-javas-top-10-libraries-including-jackson-spring-and-jetty/
+
 ## Fastjson
 
 <!-- 
@@ -46,8 +49,19 @@ https://github.com/mrknow001/fastjson_rec_exploit/archive/master.zip
 + [x] Struts2 真的落后了吗? 是 https://github.com/apache/struts/releases 基本不更新了
 + [ ] 现在流行的又是什么? Spring+SpringMVC+Mybatis
 
-Struts2-059 远程代码执行漏洞（CVE-2019-0230）分析
-https://www.anquanke.com/post/id/216629
+Apache Struts 官方披 露S2-061 远程代码执行漏洞（ CVE-2020-17530 ）。
+当开发人员强制使用OGNL解析时，某些特殊的TAG属性可能会被双重解析，进而导致远程代码执行。
+
+参考链接： https://cwiki.apache.org/confluence/display/WW/S2-061
+
+[内含POC丨漏洞复现之S2-061（CVE-2020-17530）](https://www.anquanke.com/post/id/225252)
+[Struts2 S2-061漏洞分析(CVE-2020-17530)](https://mp.weixin.qq.com/s/RD2HTMn-jFxDIs4-X95u6g)
+
+
+https://struts.apache.org/#
+https://struts.apache.org/announce#a20201208
+
+[Struts2-059 远程代码执行漏洞（CVE-2019-0230）分析](https://www.anquanke.com/post/id/216629)
 
 Struts 2.3.24
 https://archive.apache.org/dist/struts/2.3.24/struts-2.3.24-all.zip
@@ -60,8 +74,7 @@ central.maven.org 这个域名已经没有了
 https://stackoverflow.com/questions/62075914/intellij-create-sample-struts-web-project-with-java-then-show-this-error
 because: "Beginning January 15, 2020, The Central Repository will no longer support communication over HTTP" (https://blog.sonatype.com/central-repository-moving-to-https)
 
-Struts2入门这一篇就够了
-https://juejin.im/post/6844903573545811982
+[Struts2入门这一篇就够了](https://juejin.im/post/6844903573545811982)
 
 ## fastjson
 

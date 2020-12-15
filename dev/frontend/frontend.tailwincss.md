@@ -4,6 +4,8 @@ https://tailwindcss.com/
 
 https://www.tailwindcss.cn/
 
+[Tailwind CSS v2.0](https://blog.tailwindcss.com/tailwindcss-v2)
+
 30分钟学习TailwindCSS
 
 http://zhaima.tech/post/tailwindcss%E5%85%A5%E9%97%A8%E6%95%99%E7%A8%8B
@@ -37,3 +39,12 @@ npm install tailwindcss postcss autoprefixer
 npx tailwindcss init
 
 怪了,到 npm run build 的时侯就没有找到 postcss
+
+https://tailwindcss.com/docs/installation
+
+## rails
+
+https://rubyyagi.com/tailwindcss2-rails6/
+
+
+https://rubyyagi.com/tailwindcss2-rails6/
