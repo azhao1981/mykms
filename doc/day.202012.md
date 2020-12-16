@@ -1,5 +1,32 @@
 # 202012
 
+## 1216
+
+https://dev.to/shahinsha/how-to-make-vim-a-python-ide-best-ide-for-python-23e1
+https://dev.to/llldar/migrate-to-typescript-the-advance-guide-1df6
+https://dev.to/joshcarvel/properly-understanding-the-dom-2cg0
+https://dev.to/abdisalan_js/how-one-developer-recreated-airdrop-using-just-javascript-2403
+https://github.com/RobinLinus/snapdrop
+
+ZeroMQ拒绝服务漏洞（CVE-2020-15166）
+http://www.nsfocus.net/vulndb/51487
+Lua任意代码执行漏洞（CVE-2020-15888）| 攻击nginx 网关?
+http://www.nsfocus.net/vulndb/51477
+Kubernetes信息泄露漏洞（CVE-2020-8564）
+http://www.nsfocus.net/vulndb/51475
+
+利用SolarWinds供应链后门的全球入侵行动
+https://nosec.org/home/detail/4622.html
+
+AMNESIA：33 多个TCP/IP开源代码库漏洞通告
+https://www.anquanke.com/post/id/225662
+
+记一次有趣的反渗透分析实战
+https://www.anquanke.com/post/id/224822
+
+ActiveDirectoryEnumeration：一个通过LDAP实现活动目录枚举的脚本集
+https://www.freebuf.com/articles/web/254792.html
+
 ## 1215
 微服务中台技术解析之分布式事务方案和实践
 https://www.infoq.cn/article/0x8XMK4XgDTF98kTDNhD
