@@ -604,3 +604,10 @@ WSL 2 需要更新其内核组件。有关信息，请访问 https://aka.ms/wsl2
 有关与 WSL 2 的主要区别的信息，请访问 https://aka.ms/wsl2
 
 [更新 WSL 2 Linux 内核](https://docs.microsoft.com/zh-cn/windows/wsl/wsl2-kernel)
+
+74 windows.vscode.terminal 命令行快捷键优化
+
+Terminal > integrated > send key to shell 打开，光标在命令行的时候会先发给命令行
+
+但打开后不能用 Ctrl + c ctrl+ v ,双击选中就是复制，右键粘贴
+

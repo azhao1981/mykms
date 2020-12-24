@@ -1,6 +1,174 @@
 # 202012
 
+## 1224
+Java 安全编码审计，第 2 部分：平台，表达式，数值运算及其他| 这个好，需要研究学习一下
+http://www.liuhaihua.cn/archives/370846.html
+
+基于Java的Android逆向工程及程序保护教程
+https://www.bilibili.com/video/av412998483/
+
+Java安全之Shiro 550反序列化漏洞分析
+https://www.anquanke.com/post/id/225442
+
+以CVE-2020-8840为例分析Jackson漏洞
+https://www.anquanke.com/post/id/226006
+SolarWinds供应链攻击相关域名生成算法破解
+https://www.anquanke.com/post/id/226408
+
+命令执行底层原理探究-PHP（一）
+https://www.anquanke.com/post/id/226292
+
+浅谈Forrester零信任架构评估的7个技术维度
+https://www.anquanke.com/post/id/226062
+
+## 1223
+
+[登录点经验之谈|登录模块的攻击方法](https://www.freebuf.com/articles/web/256235.html)
+
+[Supervisord远程命令执行漏洞复现（CVE-2017-11610）](https://www.anquanke.com/post/id/225451)
+
+## 1222
+
+https://www.driftingruby.com/episodes/from-editor-to-ide
+https://pganalyze.com/blog/materialized-views-ruby-rails
+https://www.codewithjason.com/dockerize-rails-application/
+
+Docker Docs Docker image访问控制不当漏洞（CVE-2020-35467）
+http://www.nsfocus.net/vulndb/51610
+
+F5 BIG-IP跨站脚本执行漏洞（CVE-2020-5950）
+http://www.nsfocus.net/vulndb/51620
+
+ATT&CK框架详解
+https://www.freebuf.com/articles/network/254613.html
+TODO： doc to att&ck 结构
+Struts2 S2-061 远程命令执行漏洞（CVE-2020-17530）复现
+https://www.freebuf.com/vuls/258472.html
+CVE-2017-3248——WebLogic反序列化初探
+https://www.anquanke.com/post/id/225137
+HTTP协议攻击方法汇总（下）
+https://www.anquanke.com/post/id/225955
+
+## 1221
+某众测平台入驻邀请码获取
+https://www.anquanke.com/post/id/225868
+1 burpsuite 密码爆破
+
+
+FastJson<=1.2.68RCE原理详细分析
+https://www.anquanke.com/post/id/225439
+企业数据安全建设的思考与总结
+https://www.freebuf.com/articles/database/257969.html
+
+新挖矿木马LoggerMiner感染Docker容器
+https://www.freebuf.com/articles/system/254998.html
+
+如何使用Hetty对HTTP进行安全研究审计
+https://www.freebuf.com/articles/web/258188.html
+https://github.com/dstotijn/hetty | MIT
+Docker化自动采集&模拟恶意软件环境
+https://www.freebuf.com/articles/system/255918.html
+
+应急响应之如何发现隐藏的Webshell后门
+https://www.freebuf.com/vuls/256214.html
+基于AI的暗网流量检测识别效果专题研究
+https://www.freebuf.com/articles/network/256840.html
+
+某安全会年度最佳安全开源项目
+MesaTEE 安全计算平台|百度安全
+https://anquan.baidu.com/product/mesatee
+an open source universal secure computing platform, making computation on privacy-sensitive data safe and simple
+https://github.com/apache/incubator-teaclave
+https://medium.com/baiduxlab/mesatee-open-source-released-a-framework-for-universal-secure-computing-27211ed85ae9
+[百度开源MesaTEE：高性能的隐私保护通用安全计算](https://www.secrss.com/articles/12110)
+
+## 1219
+
+https://github.com/r0ysue/r0capture
+https://github.com/solutions-architecture-patterns
+https://github.com/PeterL1n/BackgroundMattingV2 绿布合成
+https://github.com/tiangolo/fastapi
+新的压缩工具|但好像不成熟,大于一定数据就too large
+https://github.com/facebook/zstd
+像react那样用 组件
+https://github.com/github/view_component
+
+Next-gen identity server (think Auth0, Okta, KeyCloak) with ORY-hardened authentication, MFA, FIDO2, profile management, identity schemas, social sign in, registration, account recovery, service-to-service and IoT auth. Can work as an OAuth2 / OpenID Connect Provider. Golang, headles, API-only - without templating or theming headaches.
+https://github.com/ory/kratos#what-is-ory-kratos
+
+A tool for secrets management, encryption as a service, and privileged access management
+https://github.com/hashicorp/vault
+
+
+## 1218
+Webshell免杀的一些思考
+https://www.freebuf.com/articles/web/253710.html
+sqlmap源码简析（一）
+https://www.freebuf.com/articles/network/232047.html
+Tomcat容器攻防笔记之隐匿行踪
+https://www.anquanke.com/post/id/225027
+Vulhub漏洞系列：Discuz! 6.x7.x 全局变量防御绕过-命令执行
+https://www.freebuf.com/articles/network/228883.html
+Lil-Pwny：一款基于Python的多功能活动目录密码审计工具
+https://www.freebuf.com/articles/web/253227.html
+
+SolarWinds Orion Platform跨站脚本执行漏洞（CVE-2020-13169）| 是否就是最近被利用的那个
+http://www.nsfocus.net/vulndb/51551
+
+Nxlog Community Edition 2.10.2150 - DoS (Poc)
+https://www.exploit-db.com/exploits/49283
+这个是现在官方的最高版本,说明可以使用DOS攻击
+https://nxlog.co
+https://nxlog.co/products/nxlog-community-edition/download
+NXLog是一种多平台日志管理工具，可帮助轻松识别安全风险，违反策略或分析服务器日志，操作系统日志和应用程序日志中的操作问题。
+从概念上讲，NXLog与syslog-ng或Rsyslog类似，但不仅限于UNIX和syslog。
+它支持不同的平台，日志源和格式，因此NXLog可用于实现集中式，可伸缩的日志记录系统。
+
+Content Management System 1.0 - 'First Name' Stored XSS
+https://www.exploit-db.com/exploits/49271
+Content Management System 1.0 - 'email' SQL Injection
+https://www.exploit-db.com/exploits/49272
+Content Management System 1.0 - 'id' SQL Injection
+https://www.exploit-db.com/exploits/49273
+一个开源代码网站共享的内容管理器,可能并没有很多人用
+https://www.sourcecodester.com/php/14625/content-management-system-using-phpmysqli-source-code.html
+Customer Support System 1.0 - "First Name" & "Last Name" Stored XSS
+https://www.exploit-db.com/exploits/49275
+Customer Support System 1.0 - 'id' SQL Injection
+https://www.exploit-db.com/exploits/49276
+Online Tours & Travels Management System 1.0 - "id" SQL Injection
+https://www.exploit-db.com/exploits/49277
+Interview Management System 1.0 - 'id' SQL Injection
+https://www.exploit-db.com/exploits/49279
+Interview Management System 1.0 - Stored XSS in Add New Question
+https://www.exploit-db.com/exploits/49278
+https://www.sourcecodester.com/ 开源代码分享网站
+
+## 1217
+CVE-2020-5902:F5 BIG-IP RCE分析研究|有个下载的账号密码
+https://xz.aliyun.com/t/8008
+
+F5 BIG-IP远程代码执行漏洞(CVE-2020-5902)分析
+https://www.freebuf.com/vuls/255252.html
+https://support.f5.com/csp/article/K52145254
+
+https://www.freebuf.com/articles/others-articles/256448.html
+数据安全探索与实践
+
+https://linuxhint.com/top_vulnerability_scanning_tools/
+https://cirt.net/Nikto2
+https://www.openvas.org/
+
+Upgrading OpenSSL on Linux for Connect 3.7.1
+https://www.ibm.com/support/pages/upgrading-openssl-linux-connect-371
+openssl 1.0.2x 并没有开放在大众用户,2020/01/01后的两个版本都只能"高级用户"能得到
+https://github.com/openssl/openssl/issues/13664
+
 ## 1216
+
+https://www.exploit-db.com/exploits/49263
+GitLab 11.4.7 - Remote Code Execution (Authenticated)
+
 
 https://dev.to/shahinsha/how-to-make-vim-a-python-ide-best-ide-for-python-23e1
 https://dev.to/llldar/migrate-to-typescript-the-advance-guide-1df6
@@ -58,8 +226,7 @@ https://www.exploit-db.com/exploits/49257
 Gitlab 11.4.7 - Remote Code Execution
 8.13.6 
 
-CVE-2020-26258/26259：XStream 反序列化漏洞通告
-https://www.anquanke.com/post/id/225489
+
 
 ## 1214
 
@@ -88,8 +255,7 @@ Description: GX1h4ck <img src=a onerror=alert(1)>
 
 [Goby内测版1.8.230 | RDP爆破来了！(文末有福利)](https://nosec.org/home/detail/4620.html)
 
-[如何保护你的密码：应用侧数据库&redis密码加密实践| java](https://www.freebuf.com/articles/database/255263.html) 
-https://github.com/ulisesbocchio/jasypt-spring-boot
+
 
 前端JavaScript渗透测试步步为营
 https://www.freebuf.com/vuls/255640.html

@@ -107,13 +107,11 @@ https://logging.apache.org/log4j/2.x/maven-artifacts.html
 
 https://logging.apache.org/log4j/2.x/download.html
 
-idea配置log4j
-https://blog.csdn.net/qq_32253371/article/details/92977180
+[idea配置log4j](https://blog.csdn.net/qq_32253371/article/details/92977180)
 
-idea如何添加log4j日志？
-https://jingyan.baidu.com/article/e4d08ffd90002a0fd3f60d59.html
+[idea如何添加log4j日志？](https://jingyan.baidu.com/article/e4d08ffd90002a0fd3f60d59.html)
 
-
+[IDEA2020.3破解，IDEA2020.3破解教程，IDEA激活码_持续更新](https://tech.souyunku.com/?p=15076)
 
 ### JavaFX
 
@@ -325,6 +323,9 @@ Java project management in VS Code
 https://code.visualstudio.com/docs/java/java-project
 
 https://code.visualstudio.com/docs/java/java-build
+
+[如何保护你的密码：应用侧数据库&redis密码加密实践| java](https://www.freebuf.com/articles/database/255263.html) 
+https://github.com/ulisesbocchio/jasypt-spring-boot
 
 ## Gradle
 

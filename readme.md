@@ -36,6 +36,8 @@
 | [python](dev/python/python.index.md)
 | [frontend](dev/frontend/frontend.index.md)
 | [k8s](/doc/ops/k8s.readme.md)
+| [codereview](/doc/dev/codereview.md)
+
 #### **宝库**
 
 | [awesome](dev/awesome/awesome.index.md)

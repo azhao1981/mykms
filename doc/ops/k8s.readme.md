@@ -38,3 +38,9 @@ https://www.infoq.cn/article/LxLEO1J772DKdx5Z6mef
 https://www.infoq.cn/article/x14tVB7izIDJpJHeoEuJ
 podman
 moby
+
+## k0s
+https://www.mirantis.com/blog/how-to-set-up-k0s-kubernetes-a-quick-and-dirty-guide/
+https://github.com/k0sproject/k0s/blob/main/docs/create-cluster.md
+https://github.com/k0sproject/k0s
+https://gitee.com/mirrors/k0s
