@@ -6,6 +6,14 @@ http://www.liuhaihua.cn/archives/370846.html
 
 基于Java的Android逆向工程及程序保护教程
 https://www.bilibili.com/video/av412998483/
+Android Reverse Engineering |《安卓逆向工程》原版 俄文课程
+https://www.bilibili.com/video/av670493819/
+软件安全 安卓/IOS逆向工程实践
+https://www.bilibili.com/video/av55115326/
+【Kali】(第十一集)工具使用--逆向工程之查看android安装包apk源代码
+https://www.bilibili.com/video/av41682740/
+Android逆向反编译代码注入之注入思路和步骤
+https://www.bilibili.com/s/video/BV13t4y1D7Y3
 
 Java安全之Shiro 550反序列化漏洞分析
 https://www.anquanke.com/post/id/225442
