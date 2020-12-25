@@ -8,8 +8,7 @@ https://www.cntofu.com/book/41/security/security-gms-provider.md
 https://www.cntofu.com/book/32/index.html
 安卓应用安全指南 
 https://www.cntofu.com/book/26/index.html
-安卓逆向系列教程
-https://www.cntofu.com/book/37/index.html
+
 Android 混淆--反编译工具具体使用步骤
 https://blog.csdn.net/yiranyinger/article/details/105715398
 

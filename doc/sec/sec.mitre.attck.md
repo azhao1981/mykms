@@ -71,7 +71,6 @@ https://www.freebuf.com/articles/es/223972.html
 https://www.freebuf.com/sectool/244702.html
 工具运行的结果如下，它显示了当前样本的恶意行为，以及对应的ATT&CK向量，如：混淆绕过、系统信息探测、C&C连接、持久化驻留等。
 
-
 ## navigator
 
 https://gitee.com/azhao-1981/attack-navigator

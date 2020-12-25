@@ -113,6 +113,8 @@ https://logging.apache.org/log4j/2.x/download.html
 
 [IDEA2020.3破解，IDEA2020.3破解教程，IDEA激活码_持续更新](https://tech.souyunku.com/?p=15076)
 
+[Java为什么要设置环境变量、JAVA_HOME](https://blog.csdn.net/u010297957/article/details/51334951)
+
 ### JavaFX
 
 ### java.maven

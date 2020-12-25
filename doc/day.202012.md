@@ -1,33 +1,27 @@
 # 202012
+## 1225
+
+[Nosqli：一款功能强大的NoSql注入命令行接口工具](https://www.freebuf.com/articles/database/256392.html)
+
+[如何使用N1QLMap来利用N1QL注入漏洞并从Couchbase数据库中提取数据](https://www.freebuf.com/articles/database/257101.html)
+
+[一起钓鱼邮件的应急响应](https://www.freebuf.com/articles/system/256049.html)
+
+[GitLab 11.4.7 - RCE (Authenticated)](https://www.exploit-db.com/exploits/49334)
+
+[Avaya WebLM XML外部实体注入漏洞（CVE-2020-7032）](http://www.nsfocus.net/vulndb/51781)
+
+[D-Link DSL-2888A任意命令执行漏洞（CVE-2020-24581）](http://www.nsfocus.net/vulndb/51799)
+
+[D-Link DSR-250任意命令执行漏洞（CVE-2020-25759）](http://www.nsfocus.net/vulndb/51794)
+
+[D-Link DSL-2888A身份验证绕过漏洞（CVE-2020-24579）](http://www.nsfocus.net/vulndb/51796)
 
 ## 1224
-Java 安全编码审计，第 2 部分：平台，表达式，数值运算及其他| 这个好，需要研究学习一下
-http://www.liuhaihua.cn/archives/370846.html
 
-基于Java的Android逆向工程及程序保护教程
-https://www.bilibili.com/video/av412998483/
-Android Reverse Engineering |《安卓逆向工程》原版 俄文课程
-https://www.bilibili.com/video/av670493819/
-软件安全 安卓/IOS逆向工程实践
-https://www.bilibili.com/video/av55115326/
-【Kali】(第十一集)工具使用--逆向工程之查看android安装包apk源代码
-https://www.bilibili.com/video/av41682740/
-Android逆向反编译代码注入之注入思路和步骤
-https://www.bilibili.com/s/video/BV13t4y1D7Y3
+[命令执行底层原理探究-PHP（一）](https://www.anquanke.com/post/id/226292)
 
-Java安全之Shiro 550反序列化漏洞分析
-https://www.anquanke.com/post/id/225442
-
-以CVE-2020-8840为例分析Jackson漏洞
-https://www.anquanke.com/post/id/226006
-SolarWinds供应链攻击相关域名生成算法破解
-https://www.anquanke.com/post/id/226408
-
-命令执行底层原理探究-PHP（一）
-https://www.anquanke.com/post/id/226292
-
-浅谈Forrester零信任架构评估的7个技术维度
-https://www.anquanke.com/post/id/226062
+[浅谈Forrester零信任架构评估的7个技术维度](https://www.anquanke.com/post/id/226062)
 
 ## 1223
 
@@ -62,9 +56,6 @@ https://www.anquanke.com/post/id/225955
 https://www.anquanke.com/post/id/225868
 1 burpsuite 密码爆破
 
-
-FastJson<=1.2.68RCE原理详细分析
-https://www.anquanke.com/post/id/225439
 企业数据安全建设的思考与总结
 https://www.freebuf.com/articles/database/257969.html
 
@@ -120,9 +111,6 @@ https://www.freebuf.com/articles/network/228883.html
 Lil-Pwny：一款基于Python的多功能活动目录密码审计工具
 https://www.freebuf.com/articles/web/253227.html
 
-SolarWinds Orion Platform跨站脚本执行漏洞（CVE-2020-13169）| 是否就是最近被利用的那个
-http://www.nsfocus.net/vulndb/51551
-
 Nxlog Community Edition 2.10.2150 - DoS (Poc)
 https://www.exploit-db.com/exploits/49283
 这个是现在官方的最高版本,说明可以使用DOS攻击
@@ -177,7 +165,6 @@ https://github.com/openssl/openssl/issues/13664
 https://www.exploit-db.com/exploits/49263
 GitLab 11.4.7 - Remote Code Execution (Authenticated)
 
-
 https://dev.to/shahinsha/how-to-make-vim-a-python-ide-best-ide-for-python-23e1
 https://dev.to/llldar/migrate-to-typescript-the-advance-guide-1df6
 https://dev.to/joshcarvel/properly-understanding-the-dom-2cg0
@@ -210,12 +197,7 @@ https://www.infoq.cn/article/0x8XMK4XgDTF98kTDNhD
 https://weex.apache.org/zh/
 Weex 致力于使开发者能基于通用跨平台的 Web 开发语言和开发经验，来构建 Android、iOS 和 Web 应用。简单来说，在集成了 WeexSDK 之后，你可以使用 JavaScript 语言和前端开发经验来开发移动应用。
 
-FireEye 红队失窃工具大揭秘之：分析复现 Confluence路径穿越漏洞 (CVE-2019-3398)
-https://www.anquanke.com/post/id/225452
 
-FireEye 红队失窃工具大揭秘之：分析复现 Confluence路径穿越漏洞 (CVE-2019-3398)
-https://www.anquanke.com/post/id/225452
-Confluence 6.6.1
 
 CVE-2016-3510——WebLogic反序列化初探
 https://www.anquanke.com/post/id/224593
@@ -313,13 +295,7 @@ Windows常见提权总结
 https://www.freebuf.com/articles/system/254836.html
 使用GIT和CI跟踪Windows更新
 https://www.anquanke.com/post/id/224332
-[15个漏洞详情，FireEye被盗网络武器库分析](https://www.freebuf.com/vuls/257129.html)
 
-[以红队视角看FireEye武器泄漏事件](https://www.freebuf.com/news/257194.html)
-
-出于谨慎考虑，为了协助防范这些工具被公开的风险，FireEye 已发布识别这些工具的OpenIOC，Yara，Snort和ClamAV检测规则，以尽量减少丢失这些工具的潜在影响。具体规则详见：
-由于担忧攻击者利用这些窃取的自定义渗透测试工具对其他目标发起攻击，FireEye现在在其GitHub帐户上共享IOC和应对措施，帮助其他公司检测黑客是否使用了FireEye的任何被盗工具来破坏其网络。
-https://github.com/fireeye/red_team_tool_countermeasures
 
 GRAT2：一款功能强大的命令&控制（C2）工具
 https://www.freebuf.com/sectool/254051.html

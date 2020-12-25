@@ -123,3 +123,7 @@ CVE-2020-26259 只要（运行 XStream 服务的）进程有足够的权限，�
 CVE-2020-26258 运行 XStream 的服务在反序列化数据时，攻击者构造特定的 XML/JSON 请求，可以造成服务端请求伪造。
 
 [20201119 XStream反序列化CVE-2020-26217漏洞分析](https://www.anquanke.com/post/id/222830)
+[剖析xmlDecoder反序列化](https://www.anquanke.com/post/id/226575)
+[Java安全之Shiro 550反序列化漏洞分析](https://www.anquanke.com/post/id/225442)
+[以CVE-2020-8840为例分析Jackson漏洞](https://www.anquanke.com/post/id/226006)
+[FastJson<=1.2.68RCE原理详细分析](https://www.anquanke.com/post/id/225439)
