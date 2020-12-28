@@ -1,5 +1,6 @@
 # android 逆向工程
 
+
 [基于Java的Android逆向工程及程序保护教程](https://www.bilibili.com/video/av412998483/)
 
 [Android Reverse Engineering |《安卓逆向工程》原版 俄文课程](https://www.bilibili.com/video/av670493819/)
@@ -18,3 +19,13 @@
 
 安卓逆向系列教程
 https://www.cntofu.com/book/37/readme.html
+
+Python爬虫之app逆向 frida javascript api手册
+https://www.cnblogs.com/Eeyhan/p/13414629.html
+
+https://frida.re/docs/home/
+
+[原创] sktrace：基于 Frida Stalker 的 trace 工具 
+
+https://bbs.pediy.com/thread-264680.htm
+看雪精华很多关于 Frida 的文档，可参考

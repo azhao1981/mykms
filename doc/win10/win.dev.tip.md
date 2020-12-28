@@ -611,3 +611,6 @@ Terminal > integrated > send key to shell 打开，光标在命令行的时候�
 
 但打开后不能用 Ctrl + c ctrl+ v ,双击选中就是复制，右键粘贴
 
+75 windows.vscode.python.env
+ ctrl+shift+p  python select interpreter
+ 

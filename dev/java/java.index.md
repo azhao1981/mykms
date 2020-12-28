@@ -132,6 +132,11 @@ https://www.runoob.com/maven/maven-creating-project.html
 
 mvn archetype:generate "-DgroupId=com.weiz.hello" "-DartifactId=HelloMaven" "-DarchetypeArtifactId=maven-archetype-quickstart" "-DinteractiveMode=false"
 
+maven.windows
+
+Maven的安装配置与使用（windows+idea）
+https://segmentfault.com/a/1190000022205888
+
 ## roadmap 技术树
 
 java 安装
