@@ -613,4 +613,11 @@ Terminal > integrated > send key to shell 打开，光标在命令行的时候�
 
 75 windows.vscode.python.env
  ctrl+shift+p  python select interpreter
- 
+
+76 windows.powershell.script
+
+ERROR: 无法加载文件，因为在此系统上禁止运行脚本
+
+管理员身份打开PowerShell: set-ExecutionPolicy RemoteSigned
+https://blog.csdn.net/qq_42572477/article/details/1
+

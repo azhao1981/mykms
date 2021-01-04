@@ -41,7 +41,10 @@ https://www.secrss.com/articles/8270
    [WebKnight](https://www.aqtronix.com/?PageID=99)
    [Shadow Daemon](https://shadowd.zecure.org/overview/introduction/)
    [JXWAF(基于OpenResty) ](https://github.com/jx-sec/jxwaf)
-
+[mRuby 使用 ngx_mruby 打造简易 WAF](https://ruby-china.org/topics/29834)
+好像不如 openresty
+[OpenResty 环境问题漏洞](http://www.cnnvd.org.cn/web/xxk/ldxqById.tag?CNNVD=CNNVD-202004-615)
+apigw openresty 安全漏洞 http://confluence.flyudesk.com/pages/viewpage.action?pageId=65571687
 
 云WAF接收到请求，也是通过Internet的方式请求真实的Web服务器，国内有：
 [百度云加速](https://su.baidu.com/)，

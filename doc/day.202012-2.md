@@ -1,5 +1,76 @@
 # 202012 
 
+## 20201231
+[Docker从入门到放弃](https://www.freebuf.com/articles/system/180142.html)
+
+5.CISA发布基于PowerShell的工具来检测Azure，Microsoft 365中的恶意活动
+网络安全和基础设施安全局（CISA）发布了一种工具 [Sparrow](https://github.com/cisagov/Sparrow)，
+用于检测Azure / Microsoft 365环境中的潜在恶意活动
+
+[CVE-2020-2555——Coherence反序列化初探](https://www.anquanke.com/post/id/226270)
+
+[ssrf知识点总结](https://www.anquanke.com/post/id/226240)
+
+[Lilly：通过检索Favicon哈希值，使用被动侦察来找到CDN / WAF背后的真实IP](https://github.com/Dheerajmadhukar/Lilly)
+
+[Wynis：审核Windows安全的最佳实战](https://github.com/Sneakysecdoggo/Wynis)
+
+[vulmap：Web漏洞扫描和验证工具](https://github.com/zhzyker/vulmap)
+
+[通过MITER ATT＆CK发现APT攻击](https://documents.trendmicro.com/assets/white_papers/wp-finding-APTX-attributing-attacks-via-MITRE-TTPs.pdf)
+
+[使用QEMU-USER在X86上运行ARM二进制程序](https://azeria-labs.com/arm-on-x86-qemu-user/)
+
+[测试您的红队基础架构](https://www.mdsec.co.uk/2020/02/testing-your-redteam-infrastructure/)
+
+## 20201230
+
+[一些攻防演练后的总结与思考](https://www.freebuf.com/articles/es/257003.html)
+
+[Cobaltstrike免杀从源码级到落地思维转变](https://www.freebuf.com/articles/web/258988.html)
+
+[企业安全建设之无线安全|办公室安全](https://www.freebuf.com/articles/wireless/250975.html)
+
+? 某员工甲在工作环境使用wifi A
+如果自建一个wifi，也叫A，那甲在经过A时，会自动连上吗？如果这个wifi可以记录登录的“密码”，那是不是就可以获取“密码”了
+
+[关于Python病毒样本的分析方法](https://www.anquanke.com/post/id/226721)
+
+[v8的JIT边界检查（CheckBounds）消除的利用](https://www.anquanke.com/post/id/226065)
+
+[近期基于Redis蜜罐捕获的恶意挖矿活动](https://www.freebuf.com/articles/system/256715.html)
+
+HFish蜜罐
+
+## 20201229
+
+XXL-JOB 跨站脚本漏洞
+http://www.cnnvd.org.cn/web/xxk/ldxqById.tag?CNNVD=CNNVD-202012-1604
+
+应急响应之 Linux 下进程隐藏
+https://www.anquanke.com/post/id/226285
+
+Java安全之初探weblogic T3协议漏洞
+https://www.anquanke.com/post/id/226070
+
+Json Web Token 2020 攻击指南
+https://www.anquanke.com/post/id/225947
+
+CVE-2020-26217/26259 Xstream远程代码执行/任意文件删除漏洞分析
+https://xz.aliyun.com/t/8694
+
+cobalt strike笔记-listener利用手法和分析
+https://mp.weixin.qq.com/s?__biz=MzUyMTA0MjQ4NA==&mid=2247499650&idx=1&sn=9754656a2f0ed04ba46e32e91174c7e6
+
+【工具篇】-EHole(棱洞)-红队重点攻击系统指纹探测工具
+https://mp.weixin.qq.com/s?__biz=MzUyMTA0MjQ4NA==&mid=2247499650&idx=2&sn=d29f0b3baf344b9775e3023dfb1ac708
+
+【工具篇】-EHole(棱洞)-红队重点攻击系统指纹探测工具
+https://mp.weixin.qq.com/s?__biz=MzUyMTA0MjQ4NA==&mid=2247499650&idx=2&sn=d29f0b3baf344b9775e3023dfb1ac708
+
+蓝军攻防演练思路探讨
+https://www.freebuf.com/articles/network/256580.html
+
 ## 20201228
 
 [深入分析ImageMagick的Shell注入漏洞](https://www.anquanke.com/post/id/226346)

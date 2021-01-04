@@ -174,8 +174,6 @@ https://sourceforge.net/projects/strongkey/
 https://www.secrss.com/articles/11755
 https://square.github.io/keywhiz/
 
-KLMS over KMIP是一款优秀且易于使用的密钥管理解决方案。 这是一个用Java编写的开源解决方案。请参阅以下链接以供参考。 http://www.ibm.com/developerworks/library/se-kmip4j/
-
 [【安全通报】Jenkins Jetty组件漏洞风险通告（CVE-2019-17638）](https://nosec.org/home/detail/4533.html)
 
 [Elasticsearch 安全漏洞](http://www.cnnvd.org.cn/web/xxk/ldxqById.tag?CNNVD=CNNVD-202008-939)
