@@ -85,6 +85,7 @@ bash <(curl -L https://raw.githubusercontent.com/v2fly/fhs-install-v2ray/master/
 bash ./install-release.sh
 
 客户端 https://github.com/Dr-Incognito/V2Ray-Desktop
+
 这个有点问题，加密方法不太对，但支持 Trojan
 https://github.com/Qv2ray/Qv2ray/releases
 
@@ -137,6 +138,44 @@ https://github.com/i5g5vip/winXray
 Xray专属客户端winXray使用教程
 https://v2xtls.org/xray%e4%b8%93%e5%b1%9e%e5%ae%a2%e6%88%b7%e7%ab%afwinxray%e4%bd%bf%e7%94%a8%e6%95%99%e7%a8%8b/
 
+### 是否可以让 virtualBox 直接走 trojan之类的代理？
+
+应用程序走 Socks5
+全局配置有一个“代理”
+
+看一下这个
+Routing traffic through OpenVPN using a local SOCKS proxy
+https://kiljan.org/2017/11/15/routing-traffic-through-openvpn-using-a-local-socks-proxy/
+
+以下都没有解决问题
+windows完全代理配置(包括UWP,应用商店,系统更新)
+https://zhuanlan.zhihu.com/p/113108221
+
+https://github.com/NetchX/Netch/blob/master/docs/README.zh-CN.md
+Netch 是一款 Windows 平台的开源游戏加速工具，Netch 可以实现类似 SocksCap64 那样的进程代理，也可以实现 SSTap 那样的全局 TUN/TAP 代理，和 Shadowsocks-Windows 那样的本地 Socks5，HTTP 和系统代理
+
+双虚拟机隔离上网完整教程
+https://bitmingw.com/2017/09/10/double-vm-isolated-network/
+这里有一个tor linux代理的
+
+Windows全局代理软件Proxifier
+https://ff120.github.io/2016/06/12/%E5%B7%A5%E5%85%B7%E7%9A%84%E4%BD%BF%E7%94%A8/Windows%E5%85%A8%E5%B1%80%E4%BB%A3%E7%90%86%E8%BD%AF%E4%BB%B6Proxifier/
+
+curl cip.cc
+curl myip.ipip.net
+
+Acquire::socks::Proxy "socks://username:pass@myProxyAddress:port/";
+
+socks://127.0.0.1:1081
+
+VPN connection with VirtualBox
+https://superuser.com/questions/529910/vpn-connection-with-virtualbox
+
+
+curl –socks5 localhost:9050 google.com
+https://github.com/rtsundland/openvpn-socks
+curl -x socks5://localhost:1080/ github.com
+
 ## 参考
 
 [V2Ray配置生成器 - int main()](https://intmainreturn0.com/v2ray-config-gen/)
@@ -157,4 +196,5 @@ Mellow 是一个基于规则的全局透明代理工具，可以运行在 Window
 [Xray教程](https://tlanyan.me/xray-tutorial/)
 
 [V2Ray客户端](https://tlanyan.me/v2ray-clients-download/)
+
 
