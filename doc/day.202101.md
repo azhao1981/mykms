@@ -1,5 +1,47 @@
 # 202101
 
+## 0105
+
+[全球超过十万个Zyxel设备被曝存在后门](https://www.freebuf.com/news/259672.html)
+[CVE-2020-29583：zyxel 默认凭据漏洞通告](https://www.anquanke.com/post/id/227395)
+zyfwp
+PrOw!aN_fXp
+https://www.shodan.io/search?query=USG+FLEX
+https://www.zoomeye.org/searchResult?q=zyxel
+https://www.zdnet.com/article/backdoor-account-discovered-in-more-than-100000-zyxel-firewalls-vpn-gateways/
+
+[红蓝对抗之Linux内网渗透](https://www.freebuf.com/articles/network/257603.html)
+
+包含一些容器安全的内容，值得研究
+
+门罗币挖矿僵尸网络PGMiner瞄准PostgreSQL
+https://www.freebuf.com/news/257686.html
+企业FRP安全实践
+https://www.freebuf.com/articles/network/257772.html
+
+基于静态和动态分析的Android应用漏洞挖掘方法
+https://www.anquanke.com/post/id/221581
+DNSMon：用DNS数据进行威胁发现（2）
+https://www.anquanke.com/post/id/227326
+你可能不知道的挖洞小技巧系列之OAuth 2.0
+https://www.anquanke.com/post/id/227242
+CVE-2020-35728：FasterXML jackson-databind 2.x RCE漏洞|POC
+https://github.com/Al1ex/CVE-2020-35728
+Dubbo 2.7.8多个远程代码执行漏洞
+https://xz.aliyun.com/t/8917
+AMNESIA:33 检测工具
+https://github.com/Forescout/project-memoria-detector
+CVE-2020-15257-host模式容器逃逸漏洞分析
+https://xz.aliyun.com/t/8925
+https://www.ehackingnews.com/2021/01/2010-2020-decade-roundup-10-most.html
+2010-2020 Decade Roundup: 10 Most Frequently Occurred Security Vulnerabilities
+CVE-2020-15257-host模式容器逃逸漏洞分析
+https://xz.aliyun.com/t/8925
+
+1月1日每日安全热点 - 2020年新增的十大最重要CVE
+https://www.anquanke.com/post/id/227296
+
+
 ## 0104
 
 [私有云安全：纵深防御设计实践](https://www.freebuf.com/articles/network/256296.html)
