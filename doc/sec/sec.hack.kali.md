@@ -198,3 +198,58 @@ Mellow 是一个基于规则的全局透明代理工具，可以运行在 Window
 [V2Ray客户端](https://tlanyan.me/v2ray-clients-download/)
 
 
+https://u.tools/
+
+[ditto](https://cfhcable.dl.sourceforge.net/project/ditto-cp/Ditto/3.23.124.0/DittoPortable_64bit_3_23_124_0.zip) 
+
+Ditto - 开源免费的 Windows 剪贴板增强工具神器 (方便复制粘贴多条历史记录)
+https://www.iplaysoft.com/ditto.html
+
+优秀免费代理软件 SocksCap64 v4.7 中文版
+https://www.19ri.com/sockscap64.html
+https://www.lanzous.com/i6gk2cb
+
+其实就是一个代理软件，与Linux下的proxychains、Windows中的Proxfier类似。
+
+How To Setup Proxychains In Kali Linux - #2 - Change Your IP
+https://www.youtube.com/watch?v=FtFTh-KVjsA
+这个比较新
+learning hacking? DON'T make this mistake!! (hide yourself with Kali Linux and ProxyChains)
+https://www.youtube.com/watch?v=qsA8zREbt6g
+
+NetworkChuck 
+https://www.youtube.com/channel/UC9x0AN7BWHpCDHSm9NiJFJQ
+HackerSploit 
+https://www.youtube.com/channel/UC0ZTPkdxlAKf-V33tqXwi3Q
+Null Byte
+https://www.youtube.com/channel/UCgTNupxATBfWmfehv21ym-g
+freeCodeCamp.org  | 有很多教程，好东西
+https://www.youtube.com/channel/UC8butISFwT-Wl7EV0hUK0BQ
+
+https://github.com/haad/proxychains
+https://github.com/rofl0r/proxychains-ng
+一次解决所有代理问题
+https://guangchuangyu.github.io/cn/2018/09/proxychains/
+
+
+https://linuxhint.com/proxychains-tutorial/
+
+The Top 10 Things to Do After Installing Kali Linux on Your Computer [Tutorial]
+
+https://www.youtube.com/watch?v=8VL0K0rFgxw
+1:28 - Install Git
+2:40 - Configure Bash Aliases
+4:28 - Create a New Low Privileged User
+6:20 - Install a Terminal Multiplexer
+7:30 - Install Your Favorite Hacking Tools
+9:40 - Install Latest Version of Tor
+11:31 - Configure File Sharing with Syncthing
+13:38 - Install a Code Editor
+16:21 - Clone Rubber Ducky Encoder
+18:56 - Change Default Password & SSH Keys
+
+How to be anonymous on the web? Tor, Dark net, Whonix, Tails, Linux
+https://www.youtube.com/watch?v=_393maHbHWc
+
+Linux for Ethical Hackers (Kali Linux Tutorial)
+https://www.youtube.com/watch?v=lZAoFs75_cs&list=RDCMUC8butISFwT-Wl7EV0hUK0BQ&start_radio=1&t=2
