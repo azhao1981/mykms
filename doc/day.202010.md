@@ -534,8 +534,7 @@ https://github.com/iawia002/annie
 A highly extensible Git implementation in pure Go.
 https://github.com/go-git/go-git
 
-A tool for secrets management, encryption as a service, and privileged access management
-https://github.com/hashicorp/vault
+
 
 A tool to build, deploy, and release any application on any platform.
 https://github.com/hashicorp/waypoint

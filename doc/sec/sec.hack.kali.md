@@ -205,11 +205,17 @@ https://u.tools/
 Ditto - 开源免费的 Windows 剪贴板增强工具神器 (方便复制粘贴多条历史记录)
 https://www.iplaysoft.com/ditto.html
 
-优秀免费代理软件 SocksCap64 v4.7 中文版
+
+## tor 匿名网络 中继
+
+需要建立一个Tor中继网桥,公共tor还是太慢了
+tor 
+
+优秀免费代理软件 SocksCap64 v4.7 中文版|没有成功
 https://www.19ri.com/sockscap64.html
 https://www.lanzous.com/i6gk2cb
 
-其实就是一个代理软件，与Linux下的proxychains、Windows中的Proxfier类似。
+其实就是一个代理软件，与Linux下的 proxychains、Windows中的Proxfier类似。
 
 How To Setup Proxychains In Kali Linux - #2 - Change Your IP
 https://www.youtube.com/watch?v=FtFTh-KVjsA
@@ -253,3 +259,72 @@ https://www.youtube.com/watch?v=_393maHbHWc
 
 Linux for Ethical Hackers (Kali Linux Tutorial)
 https://www.youtube.com/watch?v=lZAoFs75_cs&list=RDCMUC8butISFwT-Wl7EV0hUK0BQ&start_radio=1&t=2
+
+### tor 中继网桥
+
+主要为解决tor中国速度慢的问题
+
+[使用闲置的小机搭建Tor网桥|这个应该比较符合](https://www.skoilly.cn/?p=126)
+
+[Tor网络中搭建私人网桥](https://www.jianshu.com/p/04afdf2ac417)
+https://community.torproject.org/relay/setup/bridge/
+还有不同的IPs运营商的支持情况
+https://gitlab.torproject.org/legacy/trac/-/wikis/doc/GoodBadISPs
+
+分三种情况
+Bridges
+Relay
+Exit  大多数IPS都不支持 Exit-Relays 因为很容易被投诉并封锁
+
+成为对抗互联网追踪的志愿者：如何搭建 Tor（洋葱网络）节点
+https://zhuanlan.zhihu.com/p/34358838
+
+Tor.cn 不能直接使用从网站上获取的网桥信息，以下是把网页上获取的网桥直接放到手动输入里得到结果
+1/6/21, 03:01:51.956 [NOTICE] Closing no-longer-configured Socks listener on 127.0.0.1:9150
+1/6/21, 03:01:51.956 [NOTICE] DisableNetwork is set. Tor will not make or accept non-control network connections. Shutting down all existing connections.
+1/6/21, 03:01:52.640 [NOTICE] Delaying directory fetches: DisableNetwork is set.
+1/6/21, 03:02:03.125 [NOTICE] DisableNetwork is set. Tor will not make or accept non-control network connections. Shutting down all existing connections.
+1/6/21, 03:02:03.125 [NOTICE] Switching to guard context "bridges" (was using "default")
+1/6/21, 03:02:03.125 [NOTICE] DisableNetwork is set. Tor will not make or accept non-control network connections. Shutting down all existing connections.
+1/6/21, 03:02:03.126 [NOTICE] DisableNetwork is set. Tor will not make or accept non-control network connections. Shutting down all existing connections.
+1/6/21, 03:02:03.126 [NOTICE] Opening Socks listener on 127.0.0.1:9150
+1/6/21, 03:02:03.126 [NOTICE] Opened Socks listener on 127.0.0.1:9150
+1/6/21, 03:02:25.116 [WARN] Proxy Client: unable to connect to 45.59.126.23:443 ("general SOCKS server failure")
+
+TOR浏览器的新网桥-snowflake
+https://www.igfw.net/archives/14055
+然后在我们的Google chrome或者Firefox浏览器里安装运行Snowflake扩展并开启，
+下载地址：https://snowflake.torproject.org/
+选择 snowflfake 
+
+使用obfsproxy4连接Tor网桥来翻墙（自行在vps上搭建tor bridge.
+https://briteming.blogspot.com/2017/05/obfs4tor.html
+浏览器加固
+
+首先是打上Privacy Badger和HTTPS Everywhere插件，来自大名鼎鼎的 EFF 也就是电子前哨基金会。
+
+1：Privacy Badger中文名隐私獾，主要是限制各类商业trackers，此插件还能关闭WebRTC，插件安装后，点击设置标志然后勾选“阻止 WebRTC 泄露本地 IP 地址”即可。插件下载页面：
+
+https://privacybadger.org/
+
+2：使用HTTPS Everywhere插件强制https连接，tor上可以防止蜜罐窥探到访问内容：
+
+https://www.eff.org/https-everywhere
+
+3：Neat URL此插件能清除URL内的parameters，防止类似Google Analytics的分析流量，项目地址：
+
+https://github.com/Smile4ever/Neat-URL
+
+4：还有一个很野蛮的加固浏览器方法，此方法会严重影响浏览器易用性，严重警告，大家酌情添加，下面是项目地址：
+
+https://github.com/pyllyukko/user.js
+
+简单点讲就是下载user.js文件放入火狐 [firefox directory]\Data\profile\ 文件夹里，重启即可。
+
+浏览器加固就先讲这么多，其它还有阻止部分Javascript APIs生成指纹乃至直接禁用JS脚本，删除不安全的根证书等老生常谈的话题就不展开了.)
+
+Debian10搭建Tor网桥（入口节点）
+https://lala.im/7105.html
+
+提取 Tor 并搭建 Tor Bridge |　从tor browser 中提取 tor代理
+https://imzlp.me/posts/11177/

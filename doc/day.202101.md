@@ -1,5 +1,47 @@
 # 202101
 
+## 0107
+声明：CVE-2019-9193 不是安全漏洞
+http://117.78.49.126/article_101_10000077
+Postgresql 渗透利用总结
+https://cloud.tencent.com/developer/article/1668989
+https://www.jianshu.com/p/875902ea7df6
+Mybatis 框架下 SQL 注入攻击的 3 种方式，真是防不胜防
+这些FastJson漏洞已经人尽皆知的事情（安全角度）
+https://www.freebuf.com/articles/web/258948.html
+
+赵彦的CISO闪电战｜两年甲方安全修炼之路
+https://www.freebuf.com/articles/es/200024.html
+基于Bash Shell的一个审计脚本
+https://www.freebuf.com/articles/web/257631.html
+安全运营之SOAR：架构雏形
+https://www.freebuf.com/articles/es/256988.html
+基于套接字的模糊测试技术，第1部分：FTP服务器（下）
+https://www.anquanke.com/post/id/227121
+CVE-2020-17518/17519：Apache Flink 目录遍历漏洞
+https://www.anquanke.com/post/id/227630
+Apache Flink 多个漏洞分析
+https://www.anquanke.com/post/id/227668
+
+密钥管理服务Vault部署与应用介绍
+
+https://www.secrss.com/articles/11755
+
+## 0106
+
+Terrascan：一款功能强大的代码合规性跨基础设施检测工具|看不出怎么用？？
+https://www.freebuf.com/articles/web/256898.html
+OnionSearch：一款针对洋葱域名的URL搜索脚本
+https://www.freebuf.com/articles/web/256896.html
+App安全检测实践基础：客户端程序安全（一）
+https://www.freebuf.com/articles/terminal/255712.html
+DevSecOps建设之白盒篇
+https://www.freebuf.com/articles/es/259762.html
+基于套接字的模糊测试技术，第1部分：FTP服务器（上）
+https://www.anquanke.com/post/id/227120
+hackme：2 靶机攻略
+https://www.anquanke.com/post/id/227330
+
 ## 0105
 
 [全球超过十万个Zyxel设备被曝存在后门](https://www.freebuf.com/news/259672.html)

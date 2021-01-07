@@ -95,8 +95,7 @@ https://github.com/github/view_component
 Next-gen identity server (think Auth0, Okta, KeyCloak) with ORY-hardened authentication, MFA, FIDO2, profile management, identity schemas, social sign in, registration, account recovery, service-to-service and IoT auth. Can work as an OAuth2 / OpenID Connect Provider. Golang, headles, API-only - without templating or theming headaches.
 https://github.com/ory/kratos#what-is-ory-kratos
 
-A tool for secrets management, encryption as a service, and privileged access management
-https://github.com/hashicorp/vault
+
 
 
 ## 1218
