@@ -62,9 +62,7 @@ https://www.freebuf.com/articles/database/257969.html
 新挖矿木马LoggerMiner感染Docker容器
 https://www.freebuf.com/articles/system/254998.html
 
-如何使用Hetty对HTTP进行安全研究审计
-https://www.freebuf.com/articles/web/258188.html
-https://github.com/dstotijn/hetty | MIT
+
 Docker化自动采集&模拟恶意软件环境
 https://www.freebuf.com/articles/system/255918.html
 
