@@ -621,3 +621,19 @@ ERROR: 无法加载文件，因为在此系统上禁止运行脚本
 管理员身份打开PowerShell: set-ExecutionPolicy RemoteSigned
 https://blog.csdn.net/qq_42572477/article/details/1
 
+77 windows.ports
+
+[Windows下如何查看某个端口被谁占用](https://www.runoob.com/w3cnote/windows-finds-port-usage.html)
+
+netstat -ano | findstr LIST
+
+http://www.nirsoft.net/ | 自由软件的一个网站
+
+[currPort](http://www.nirsoft.net/utils/cports.html#DownloadLinks)
+https://docs.microsoft.com/zh-cn/sysinternals/downloads/tcpview
+
+78 缓存
++ 磁盘清理
++ 微软商店 wsreset.ext
++ DNS 管理员cmd ipconfig/flush DNS
+

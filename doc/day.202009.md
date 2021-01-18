@@ -364,23 +364,7 @@ GitLab 跨站脚本执行漏洞（CVE-2020-13269）
 http://www.nsfocus.net/vulndb/48688
 GitLab（企业版和社区版）12.10版本至13.0.1版本中存在跨站脚本执行漏洞。攻击者可利用该漏洞在静态站点编辑器上执行任意Javascript代码。
 
-FasterXML jackson-databind远程代码执行漏洞
-http://www.nsfocus.net/vulndb/48648
-FasterXML jackson-databind 2.x<=Version <2.9.10.5
-CVE(CAN) ID: CVE-2020-14061
 
-http://www.nsfocus.net/vulndb/48653
-FasterXML jackson-databind >=2.9.0
-FasterXML jackson-databind <2.8.11.5
-CVE(CAN) ID: CVE-2019-14893
-
-http://www.nsfocus.net/vulndb/48650
-FasterXML jackson-databind 2.x<=Version <2.9.10.5
-CVE(CAN) ID: CVE-2020-14062
-
-http://www.nsfocus.net/vulndb/48649
-FasterXML jackson-databind 2.x<=Version <2.9.10.5
-CVE(CAN) ID: CVE-2020-14060
 
 ## 20200910
 🎨 Diagram as Code for prototyping cloud system architectures
@@ -462,8 +446,7 @@ https://www.anquanke.com/post/id/216352
 Netty拒绝服务漏洞（CVE-2020-11612）
 http://www.nsfocus.net/vulndb/48468
 
-FasterXML jackson-databind代码注入漏洞（CVE-2020-8840）
-http://www.nsfocus.net/vulndb/48472
+
 
 Struts2-059 远程代码执行漏洞（CVE-2019-0230）分析
 https://nosec.org/home/detail/4556.html

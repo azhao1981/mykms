@@ -1,6 +1,160 @@
 # 202101
 
+## 0118
+https://github.com/darklotuskdb/CISCO-CVE-2020-3452-Scanner-Exploiter
+
+JuiceFS 开源，分布式文件系统
+https://www.oschina.net/news/126469/juicefs-open-source
+
+应急响应之Linux下进程隐藏
+https://www.freebuf.com/articles/network/258510.html
+
+WAF绕过拍了拍你
+https://www.freebuf.com/articles/web/259027.html
+
+Python @函数装饰器及用法（超级详细）
+http://c.biancheng.net/view/2270.html
+初学者必知的Python中优雅的用法
+https://www.runoob.com/w3cnote/python-start-skill.html
+Python函数*args与**kwargs的用法
+https://blog.csdn.net/u010758410/article/details/71727822
+
+蠕虫病毒“incaseformat”来袭，中毒重启20秒后狂删电脑文件
+https://nosec.org/home/detail/4650.html
+
+Nacos 1.4.1 修复指定特殊 UA 可绕过所有鉴权的安全漏洞
+https://www.oschina.net/news/126592/nacos-1-4-1-released
+https://www.secrss.com/articles/28723
+
+[重要通知｜JumpServer漏洞通知及修复方案](https://blog.fit2cloud.com/?p=1761)
+> [参考](/doc\vuls\vuls.jumpserver.md)
+
+## 0116
+
+https://ververica.cn/developers/flink-training-course3/
+https://github.com/flink-china/flink-training-course
+【Apache Flink 实战&运维教程】第3阶段 第5课-Flink 实时数仓的应用
+https://www.bilibili.com/video/av66782142
+https://flink.apache.org
+
+flink 提交任务可执行漏洞现在是还存在的
++ 先看一下原来的漏洞描述,看一下changelog
+  + https://flink.apache.org/zh/security.html
+  + 这么看是已经修改的，但没有修改完全，并且1.12.0又回来了
+During a security analysis of Flink, I noticed that Flink allows for remote code execution, is this an issue?
+Apache Flink is a framework for executing user-supplied code in clusters. Users can submit code to Flink processes, which will be executed unconditionally, without any attempts to limit what code can run. Starting other processes, establishing network connections or accessing and modifying local files is possible.
+Historically, we’ve received numerous remote code execution vulnerability reports, which we had to reject, as this is by design.
+[Apache Flink CVE-2020-17518/17519 漏洞分析](https://www.anquanke.com/post/id/228507)
+
+## 0115
+
+Linux流程分析——从开机那一刻开始
+https://www.anquanke.com/post/id/227940
+
+
+程序员vs聊天|TODO：能不能有一个signal的？国内连不上
+https://github.com/Ademking/vsChat
+实时数据后台
+https://stackshare.io/h2o-wave
+https://github.com/h2oai/wave
+
+两个直播系统| + signal? MIT
+owncast 有聊天功能
+https://github.com/owncast/owncast?ref=stackshare
+https://stackshare.io/owncast?utm_source=weekly_digest&utm_medium=email&utm_campaign=01132021&utm_content=new_tool
+lightspeed 更像讲座直播
+https://github.com/GRVYDEV/Project-Lightspeed?ref=stackshare
+https://stackshare.io/lightspeed-project?utm_source=weekly_digest&utm_medium=email&utm_campaign=01132021&utm_content=new_tool
+开源 图标 MIT
+https://gitlab.com/SUSE-UIUX/eos-icons
+https://stackshare.io/eos-icons?utm_source=weekly_digest&utm_medium=email&utm_campaign=01132021&utm_content=popular_tool
+
+sqlite -> 图
+https://stackshare.io/simple-graph?utm_source=weekly_digest&utm_medium=email&utm_campaign=01132021&utm_content=popular_tool
+https://github.com/dpapathanasiou/simple-graph?ref=stackshare
+
+codepen like 开源 MIT
+https://stackshare.io/codeswing?utm_source=weekly_digest&utm_medium=email&utm_campaign=01132021&utm_content=new_tool
+https://github.com/codespaces-contrib/codeswing?ref=stackshare
+https://codepen.io/
+
+
+静态网页搜索
+https://stackshare.io/stork-search?utm_source=weekly_digest&utm_medium=email&utm_campaign=01132021&utm_content=new_tool
+https://github.com/jameslittle230/stork?ref=stackshare
+omniauth 终于解决 CVE-2015-9284
+https://github.com/omniauth/omniauth/releases/tag/v2.0.0
+https://github.com/cookpad/omniauth-rails_csrf_protection
+
+网页粉笔画
+https://dev.to/baweaver/ruby-3-pattern-matching-applied-poker-4b9d
+
+google cloud 函数支持ruby
+https://cloud.google.com/functions/docs/quickstart-ruby
+aws 的 ruby lambda
+https://www.honeybadger.io/blog/ruby-aws-lambda/
+Jets: The Ruby Serverless Framework
+https://rubyonjets.com/
+纯ruby代码高亮
+https://github.com/rouge-ruby/rouge
+
+怎么在没有单元测试情况下进行rails升级
+https://www.fastruby.io/blog/rails/upgrade/testing/how-to-upgrade-rails-without-tests.html
+
+rails react 表格
+https://boringrails.com/articles/responsive-tables-stimulus-intersection-observer/
+常见技术债
+https://nextlinklabs.com/insights/most-common-technical-debt-in-rails-projects
+## 0114
+
+Erlang Cookie - Remote Code Execution|看下是否会影响ejabberd
+https://www.exploit-db.com/exploits/49418
+https://insinuator.net/2017/10/erlang-distribution-rce-and-a-cookie-bruteforcer/
+
+渗透测试之地基钓鱼篇：Ink和Mp3伪装钓鱼
+https://www.freebuf.com/articles/web/258916.html
+渗透测试之地基流量加密篇：OpenSSL、Metasploit、Cobalt strike三种方式进... 会员
+https://www.freebuf.com/articles/web/259222.html
+
+一部手机失窃引发的后续思考,如何提高我的个人账号安全?
+https://www.anquanke.com/post/id/227949
+
+## 0113
+
+如何对iOS蓝牙执行基于覆盖引导的模糊测试
+https://www.freebuf.com/articles/system/258055.html
+https://frida.re/
+
+金融行业安全体系建设咨询实践
+https://www.freebuf.com/articles/es/258300.html
+如何基于AutomationML工程数据自动识别安全风险
+https://www.freebuf.com/articles/system/257947.html
+甲方安全人员必备的几个“救命”技能
+https://www.freebuf.com/articles/neopoints/258323.html
+Windows主机日志分析办法与思路
+https://www.freebuf.com/articles/neopoints/258131.html
+关于PDD员工发帖溯源联想到的相关技术与实现
+https://www.freebuf.com/articles/es/260549.html
+Shiro权限绕过漏洞详细分析
+https://www.anquanke.com/post/id/226899
+Shiro反序列化的检测与利用
+https://www.anquanke.com/post/id/227090
+Apache-Solr-RCE深入利用
+https://www.anquanke.com/post/id/227557
+初探 Python Flask+Jinja2 SSTI
+https://www.anquanke.com/post/id/226900
+可对内置暴力破解进行字典替换的Dictionary Config
+https://www.anquanke.com/post/id/228229
+
+powershell在主机中是否存在安全隐患
+https://www.anquanke.com/post/id/227942
+## 0112
+
+https://zhuanlan.zhihu.com/p/101420781
+云原生安全-更安全的密文管理 Vault on ACK
+
 ## 0111
+
 CDN 2021 完全攻击指南 （一）
 https://www.anquanke.com/post/id/227818
 1 ping 反查ip,看结果是否有大量不相关的域名存在,如果 baidu.com 对 182.61.200.7 https://tools.ipip.net/ipdomain.php 可以看到很多别的
@@ -178,8 +332,7 @@ DNSMon：用DNS数据进行威胁发现（2）
 https://www.anquanke.com/post/id/227326
 你可能不知道的挖洞小技巧系列之OAuth 2.0
 https://www.anquanke.com/post/id/227242
-CVE-2020-35728：FasterXML jackson-databind 2.x RCE漏洞|POC
-https://github.com/Al1ex/CVE-2020-35728
+
 Dubbo 2.7.8多个远程代码执行漏洞
 https://xz.aliyun.com/t/8917
 AMNESIA:33 检测工具

@@ -143,7 +143,24 @@ https://v2xtls.org/xray%e4%b8%93%e5%b1%9e%e5%ae%a2%e6%88%b7%e7%ab%afwinxray%e4%b
 应用程序走 Socks5
 全局配置有一个“代理”
 
-看一下这个
+
+### vpn
+
+https://github.com/wireguard
+https://github.com/wgredlong/WireGuard
+用 WireGuard 科学上网
+
+Panzerkampfwagen VI Tiger, [18.01.21 10:48]
+kali openvpn 不能连上 https://www.vpnbook.com/ 里的vpn，大家有什么办法吗？
+Panzerkampfwagen VI Tiger, [18.01.21 10:48]
+加个代理？我用proxychains好像也上不去
+Thor Luo Bing-, [18.01.21 10:53]
+open vpn已经被深度检测系统给拦截了
+Thor Luo Bing-, [18.01.21 10:54]
+可以使用 wire gurad vpn
+Thor Luo Bing-, [18.01.21 10:54]
+该工具已经进入了linux内核之中，只需一个配置文件就能用。
+
 Routing traffic through OpenVPN using a local SOCKS proxy
 https://kiljan.org/2017/11/15/routing-traffic-through-openvpn-using-a-local-socks-proxy/
 

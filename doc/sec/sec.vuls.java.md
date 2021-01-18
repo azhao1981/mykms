@@ -26,7 +26,6 @@ fastjson.20200325.md
 
 [fastjson<=1.2.62远程代码执行漏洞通告](https://www.anquanke.com/post/id/199527)
 
-[CVE-2020-8840: FasterXML/jackson-databind 远程代码执行漏洞通告](https://www.anquanke.com/post/id/199519)
 
 访问地址: 118.193.36.37:43170
 
@@ -127,3 +126,40 @@ CVE-2020-26258 运行 XStream 的服务在反序列化数据时，攻击者构�
 [Java安全之Shiro 550反序列化漏洞分析](https://www.anquanke.com/post/id/225442)
 [以CVE-2020-8840为例分析Jackson漏洞](https://www.anquanke.com/post/id/226006)
 [FastJson<=1.2.68RCE原理详细分析](https://www.anquanke.com/post/id/225439)
+
+### jackson-databind
+
+这个有记录，但没有评分
+https://cve.mitre.org/cgi-bin/cvekey.cgi?keyword=jackson-databind+2.8.7
+有评分，但不全
+https://www.cvedetails.com/vulnerability-list/vendor_id-15866/product_id-42991/Fasterxml-Jackson-databind.html
+
+http://www.nsfocus.net/index.php?os=&type_id=&keyword=jackson-databind&act=sec_bug&submit=+
+
+Jackson反序列化漏洞（ CVE-2020-36188 ）从通告到POC
+https://www.anquanke.com/post/id/227943
+
+FasterXML jackson-databind远程代码执行漏洞
+http://www.nsfocus.net/vulndb/48648
+FasterXML jackson-databind 2.x<=Version <2.9.10.5
+CVE(CAN) ID: CVE-2020-14061
+
+http://www.nsfocus.net/vulndb/48653
+FasterXML jackson-databind >=2.9.0
+FasterXML jackson-databind <2.8.11.5
+CVE(CAN) ID: CVE-2019-14893
+
+http://www.nsfocus.net/vulndb/48650
+FasterXML jackson-databind 2.x<=Version <2.9.10.5
+CVE(CAN) ID: CVE-2020-14062
+
+http://www.nsfocus.net/vulndb/48649
+FasterXML jackson-databind 2.x<=Version <2.9.10.5
+CVE(CAN) ID: CVE-2020-14060
+
+CVE-2020-35728：FasterXML jackson-databind 2.x RCE漏洞|POC
+https://github.com/Al1ex/CVE-2020-35728
+[CVE-2020-8840: FasterXML/jackson-databind 远程代码执行漏洞通告](https://www.anquanke.com/post/id/199519)
+
+从Java RMI反序列化到内网沦陷
+https://www.anquanke.com/post/id/228569
