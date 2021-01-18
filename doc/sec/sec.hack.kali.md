@@ -181,6 +181,83 @@ https://ff120.github.io/2016/06/12/%E5%B7%A5%E5%85%B7%E7%9A%84%E4%BD%BF%E7%94%A8
 curl cip.cc
 curl myip.ipip.net
 
+vpnbook
+k8VBRa6
+
+https://superuser.com/questions/608897/openvpn-through-socks-proxy-on-linux
+https://kiljan.org/2017/11/15/routing-traffic-through-openvpn-using-a-local-socks-proxy/
+
+这样是可以连上的
+proxychains openvpn ./vpnbook-us2-tcp443.ovpn
+解决：
+proxychains openvpn ./vpnbook-us2-udp25000.ovpn
+好像得用这个，可能是proxy用的是udp,所以上面也得用udp，反正是可以了
+
+https://github.com/AleWong
+
+但只要一发命令，就会出错
+curl cip.cc
+
+|S-chain|-<>-127.0.0.1:51837-<><>-4.2.2.2:53-<><>-OK
+|DNS-response|: us2.vpnbook.com does not exist
+Mon Jan 18 12:35:34 2021 RESOLVE: Cannot resolve host address: us2.vpnbook.com:443 (Unknown error)
+Mon Jan 18 12:35:34 2021 Could not determine IPv4/IPv6 protocol
+Mon Jan 18 12:35:34 2021 SIGUSR1[soft,init_instance] received, process restarting
+Mon Jan 18 12:35:34 2021 Restart pause, 5 second(s)
+Mon Jan 18 12:35:39 2021 WARNING: No server certificate verification method has been enabled.  See http://openvpn.net/howto.html#mitm for more info.
+Mon Jan 18 12:35:39 2021 NOTE: --fast-io is disabled since we are not using UDP
+Mon Jan 18 12:35:39 2021 TCP/UDP: Preserving recently used remote address: [AF_INET]198.7.58.147:443
+Mon Jan 18 12:35:39 2021 Socket Buffers: R=[131072->131072] S=[16384->16384]
+Mon Jan 18 12:35:39 2021 Attempting to establish TCP connection with [AF_INET]198.7.58.147:443 [nonblock]
+|S-chain|-<>-127.0.0.1:51837-<><>-198.7.58.147:443-<><>-OK
+Mon Jan 18 12:35:39 2021 TCP connection established with [AF_INET]198.7.58.147:443
+Mon Jan 18 12:35:39 2021 TCP_CLIENT link local: (not bound)
+Mon Jan 18 12:35:39 2021 TCP_CLIENT link remote: [AF_INET]198.7.58.147:443
+Mon Jan 18 12:35:49 2021 Connection reset, restarting [-1]
+Mon Jan 18 12:35:49 2021 SIGUSR1[soft,connection-reset] received, process restarting
+Mon Jan 18 12:35:49 2021 Restart pause, 5 second(s)
+Mon Jan 18 12:35:54 2021 WARNING: No server certificate verification method has been enabled.  See http://openvpn.net/howto.html#mitm for more info.
+Mon Jan 18 12:35:54 2021 NOTE: --fast-io is disabled since we are not using UDP
+
+这里是使用 openvpn 的 proxy-socks 模式：
+openvpn --socks-proxy 127.0.0.1 51837  ./vpnbook-us2-tcp443.ovpn
+Mon Jan 18 12:41:20 2021 disabling NCP mode (--ncp-disable) because not in P2MP client or server mode
+Options error: You must define TUN/TAP device (--dev)
+Use --help for more information.
+
+modinfo tun
+lsmod | grep tun
+modprobe tun
+echo 1 > /proc/sys/net/ipv4/ip_forward
+
+官方文档：
+https://community.openvpn.net/openvpn/wiki/Openvpn24ManPage?__cf_chl_jschl_tk__=c7d3555de32067a8e4497196dde6c69850303a2f-1610991994-0-AdUl4pwh_MKXyy-Qb_igTnc99qaCGvwSN1_z9spOERwUTVO_YH0dvsh2urrAaV8DvOxk1keFsNR7Pg6nuIr0Qojvv9PDVENW-0qg2Iv_PqnMgSTBGTAt6sYSVO71g3TlQjJ_hLQaYuM_Ln41A9XIauk22Xi7ASn4vqaMg98CeWuX7YLp0zfwpQ3MTKbn3gtvm0SB9TpSk0rGh9JbJTbAzKrqjCZakzMq6Cx0GErEQWp7IZWLYMeaFA4EdWZUzBdxTo97lNO2BHsfu4625DiECfg0BF3zgBhMHe9TxVvN6avx1-SCs3Z0eAMbMyt4-Oy2OI1mzxv6ttpBJjQ-u3GgJno
+
+在计算机网络中，TUN与TAP是操作系统内核中的虚拟网络设备。不同于普通靠硬件网络适配器实现的设备，这些虚拟的网络设备全部用软件实现，并向运行于操作系统上的软件提供与硬件的网络设备完全相同的功能。
+TAP等同于一个以太网设备，它操作第二层数据包如以太网数据帧。TUN模拟了网络层设备，操作第三层数据包比如IP数据封包。
+操作系统通过TUN/TAP设备向绑定该设备的用户空间的程序发送数据，反之，用户空间的程序也可以像操作硬件网络设备那样，通过TUN/TAP设备发送数据。在后种情况下，TUN/TAP设备向操作系统的网络栈投递（或“注入”）数据包，从而模拟从外部接受数据的过程。
+TUN/TAP被用于：
+虚拟私有网络
+OpenVPN
+
+ openvpn --socks-proxy 127.0.0.1 51837 --dev tun0 ./vpnbook-us2-tcp443.ovpn
+root@kali:/home/kali/桌面/App/vpn#  openvpn --socks-proxy 127.0.0.1:1081 ./vpnbook-us2-tcp443.ovpn
+Mon Jan 18 11:55:51 2021 disabling NCP mode (--ncp-disable) because not in P2MP client or server mode
+Options error: You must define TUN/TAP device (--dev)
+Use --help for more information.
+这篇应该和答案很近了：
+OpenVPN 安装配置资料总结和整理
+http://blog.mr-zrz.com/openvpn-%E5%AE%89%E8%A3%85%E9%85%8D%E7%BD%AE%E8%B5%84%E6%96%99%E6%80%BB%E7%BB%93%E5%92%8C%E6%95%B4%E7%90%86.html
+https://my.oschina.net/propagator/blog/824915
+利用OpenVPN实现局域网内多台机器共享上网
+
+https://blog.lopygo.com/2020/2020-03-06-openvpn-over-ss/
+这个blog的主题不错
+https://github.com/iissnan/hexo-theme-next
+
+关于TUN/TAP网卡二三事以及物理网卡Ring buffer
+https://blog.csdn.net/dog250/article/details/80414228
+
 Acquire::socks::Proxy "socks://username:pass@myProxyAddress:port/";
 
 socks://127.0.0.1:1081
