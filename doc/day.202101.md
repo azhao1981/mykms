@@ -1,5 +1,30 @@
 # 202101
 
+## 0119
+Git Lfs 代码问题漏洞
+http://www.cnnvd.org.cn/web/xxk/ldxqById.tag?CNNVD=CNNVD-202101-1302
+https://github.com/git-lfs/git-lfs/commit/fc664697ed2c2081ee9633010de0a7f9debea72a
+
+GitLab 安全漏洞
+http://www.cnnvd.org.cn/web/xxk/ldxqById.tag?CNNVD=CNNVD-202101-1296
+GitLab 访问控制错误漏洞|高危
+http://www.cnnvd.org.cn/web/xxk/ldxqById.tag?CNNVD=CNNVD-202101-1294
+Gitlab Nuget Api 安全漏洞
+http://www.cnnvd.org.cn/web/xxk/ldxqById.tag?CNNVD=CNNVD-202101-1295
+
+Nacos 1.4.1 修复指定特殊 UA 可绕过所有鉴权的安全漏洞
+https://www.oschina.net/news/126592/nacos-1-4-1-released
+https://www.secrss.com/articles/28723
+
+基于抽象语法树和深度学习的高效漏洞检测方法
+https://www.anquanke.com/post/id/221892
+
+唯快不破的分块传输绕WAF
+https://www.freebuf.com/articles/web/259377.html
+
+自己动手编写远控工具及检测思路
+https://www.freebuf.com/articles/network/258664.html
+
 ## 0118
 https://github.com/darklotuskdb/CISCO-CVE-2020-3452-Scanner-Exploiter
 
@@ -22,9 +47,7 @@ https://blog.csdn.net/u010758410/article/details/71727822
 蠕虫病毒“incaseformat”来袭，中毒重启20秒后狂删电脑文件
 https://nosec.org/home/detail/4650.html
 
-Nacos 1.4.1 修复指定特殊 UA 可绕过所有鉴权的安全漏洞
-https://www.oschina.net/news/126592/nacos-1-4-1-released
-https://www.secrss.com/articles/28723
+
 
 [重要通知｜JumpServer漏洞通知及修复方案](https://blog.fit2cloud.com/?p=1761)
 > [参考](/doc\vuls\vuls.jumpserver.md)
