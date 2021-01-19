@@ -3,33 +3,38 @@
 ## 安装
 
 建议使用 virtual box 安装
+
 ### virtual box
- 主页 https://www.virtualbox.org/
- 下载页 https://www.virtualbox.org/wiki/Downloads
+ [主页](https://www.virtualbox.org/) 
 
- 下载 主程序 https://download.virtualbox.org/virtualbox/6.1.16/VirtualBox-6.1.16-140961-Win.exe
- 下载  扩展包 https://download.virtualbox.org/virtualbox/6.1.16/Oracle_VM_VirtualBox_Extension_Pack-6.1.16.vbox-extpack
+ [下载页](https://www.virtualbox.org/wiki/Downloads) 
 
- 安装 virtualbox
- 安装扩展包
- 创建全局 NatNetwork
+ 下载 [主程序](https://download.virtualbox.org/virtualbox/6.1.16/VirtualBox-6.1.16-140961-Win.exe) 
+
+ 下载  [扩展包](https://download.virtualbox.org/virtualbox/6.1.16/Oracle_VM_VirtualBox_Extension_Pack-6.1.16.vbox-extpack) 
+
+ + 安装 virtualbox
+ + 双击安装扩展包
+ + 创建一个全局 NatNetwork
 
 ### 下载 kali
 
 [下载页](https://www.offensive-security.com/kali-linux-vm-vmware-virtualbox-image-download/) 
+
 下载 [virtualBox 镜像 ](https://images.kali.org/virtual-images/kali-linux-2020.4-vbox-amd64.ova)
 或下载 udemy 学习的镜像 https://drive.google.com/file/d/1pJrSknW0X0nkFFWYsaA37EqN9NA9Fsdd/view
 
-导入镜像
-选择重新生成mac地址
-2C4G
-如果是高清屏，打开后右下角，虚拟显示器 缩放200%
++ 导入镜像
++ 选择重新生成mac地址
++ 2C4G
++ 如果是高清屏，打开后右下角，虚拟显示器 缩放200%
 
 ### kali 中文
 
 [2020年kali最新国内更新源/etc/apt/sources.list](https://blog.csdn.net/SouthWind0/article/details/108405281)
 
 /etc/apt/sources.list
+
 ```bash
 deb http://mirrors.aliyun.com/kali kali-rolling main non-free contrib
 deb-src http://mirrors.aliyun.com/kali kali-rolling main non-free contrib
@@ -59,29 +64,45 @@ https://developer.microsoft.com/en-us/microsoft-edge/tools/vms/
 
 ## 匿名网络隐藏自己
 
-tor
+### tor
+
 下载： https://dist.torproject.org/torbrowser/10.0.7/tor-browser-linux64-10.0.7_zh-CN.tar.xz
+
 解压后直接使用
+
 注意需要科学上网下载，或看一下迅雷之类是否可以
-打开必须使用 非root 用户，如kali
-打开后选择配置 勾选“我所在的国家对Tor进行了审查”
-选择 meek-azure
-确定 开始连接
+
++ 打开必须使用 非root 用户，如kali
++ 打开后选择配置 勾选“我所在的国家对Tor进行了审查”
+    选择 meek-azure
+    确定 开始连接
++ 如果不行，先科学上网，选代理
++ 要经常上，保证获取最新入口
 
 Tor 使用 duckduckgo.com 所为搜索引擎
+
 特点是不会暴漏隐私
+
 Tor速度很慢，但可以正常访问，并且不可以访问 google.com
+
 也基本不能访问国内网站
+
 搜索 what is my ip  点击一个进去可以看到自己的ip是国外的一个ip
 
-### v2ray
+### v2ray 科学上网
 
+```bash
+# /etc/hosts
 151.101.8.133   raw.githubusercontent.com
+```
+
 curl: (35) OpenSSL SSL_connect: Connection reset by peer in connection to raw.githubusercontent.com:443
 kali curl: (35)
 
 bash <(curl -L https://raw.githubusercontent.com/v2fly/fhs-install-v2ray/master/install-release.sh)
+
 暂时无法解决，直接下载
+
 bash ./install-release.sh
 
 客户端 https://github.com/Dr-Incognito/V2Ray-Desktop
@@ -90,7 +111,6 @@ bash ./install-release.sh
 https://github.com/Qv2ray/Qv2ray/releases
 
 [Debian/Ubuntu/Deepin Qv2ray 使用指南](https://linger.ink/2020/linux-qv2ray-usage)
-
 
 在Ubuntu上安装图形化v2Ray客户端Qv2Ray （2020年7月更新）
 https://medium.com/@eleveninstrangerthings/%E5%9C%A8ubuntu%E4%B8%8A%E5%AE%89%E8%A3%85%E5%9B%BE%E5%BD%A2%E5%8C%96v2ray%E5%AE%A2%E6%88%B7%E7%AB%AFqv2ray-d0f690b7c519
@@ -129,74 +149,63 @@ linux Trojan-Qt5 （这个可以用）
 把上面一键安装后产生的config.json 导入就可以
 
 ### windows
-
 Xray / V2Ray( vmess/vless )、Shadowsocks、Trojan 通用客户端（Windows），可自动维持稳定上网 - 代理服务器异常自动切换，并提供一键部署代理服务端工具，使用 aardio 编写，绿色便携版免安装仅5MB、不需要.Net等外部运行库。
 
 https://github.com/i5g5vip/winXray
+
 绿色版本，把上面的Trojan-Qt5 的shard 一下，右键主页 导入 “自剪帖板。。。”
+
 这个很棒，有很多可以用的免费的资源
-Xray专属客户端winXray使用教程
-https://v2xtls.org/xray%e4%b8%93%e5%b1%9e%e5%ae%a2%e6%88%b7%e7%ab%afwinxray%e4%bd%bf%e7%94%a8%e6%95%99%e7%a8%8b/
 
-### 是否可以让 virtualBox 直接走 trojan之类的代理？
+[Xray专属客户端winXray使用教程](https://v2xtls.org/xray%e4%b8%93%e5%b1%9e%e5%ae%a2%e6%88%b7%e7%ab%afwinxray%e4%bd%bf%e7%94%a8%e6%95%99%e7%a8%8b/)
 
-应用程序走 Socks5
-全局配置有一个“代理”
+### 免费 [vpnbook](https://www.vpnbook.com/)
 
+注：如果你用的是自己的vps,那么还是不安全的，使用公共免费的vpn 资料，在大众里浑水摸鱼。
 
-### vpn
+但国内是不能直接用 OpenVPN,考虑一下
 
-https://github.com/wireguard
-https://github.com/wgredlong/WireGuard
-用 WireGuard 科学上网
++ 使用别的收费或加密的vpn，如 [wireguard](https://github.com/wireguard)
+  [用 WireGuard 科学上网](https://github.com/wgredlong/WireGuard)
++ 使用 proxychains ，通过科学上网的socks5,再上 OpenVPN
+  + 不建议使用  openvpn的自带的 proxy-socks模式，不太好用
+  + vpnbook 选udp的才行，不知道是不是我的v2ray选udp模式的原因
 
-Panzerkampfwagen VI Tiger, [18.01.21 10:48]
-kali openvpn 不能连上 https://www.vpnbook.com/ 里的vpn，大家有什么办法吗？
-Panzerkampfwagen VI Tiger, [18.01.21 10:48]
-加个代理？我用proxychains好像也上不去
-Thor Luo Bing-, [18.01.21 10:53]
-open vpn已经被深度检测系统给拦截了
-Thor Luo Bing-, [18.01.21 10:54]
-可以使用 wire gurad vpn
-Thor Luo Bing-, [18.01.21 10:54]
-该工具已经进入了linux内核之中，只需一个配置文件就能用。
+引用
 
-Routing traffic through OpenVPN using a local SOCKS proxy
-https://kiljan.org/2017/11/15/routing-traffic-through-openvpn-using-a-local-socks-proxy/
+[Routing traffic through OpenVPN using a local SOCKS proxy](https://kiljan.org/2017/11/15/routing-traffic-through-openvpn-using-a-local-socks-proxy/)
 
-以下都没有解决问题
-windows完全代理配置(包括UWP,应用商店,系统更新)
-https://zhuanlan.zhihu.com/p/113108221
+[windows完全代理配置(包括UWP,应用商店,系统更新)](https://zhuanlan.zhihu.com/p/113108221)
 
-https://github.com/NetchX/Netch/blob/master/docs/README.zh-CN.md
 Netch 是一款 Windows 平台的开源游戏加速工具，Netch 可以实现类似 SocksCap64 那样的进程代理，也可以实现 SSTap 那样的全局 TUN/TAP 代理，和 Shadowsocks-Windows 那样的本地 Socks5，HTTP 和系统代理
+https://github.com/NetchX/Netch/blob/master/docs/README.zh-CN.md
 
-双虚拟机隔离上网完整教程
-https://bitmingw.com/2017/09/10/double-vm-isolated-network/
+[双虚拟机隔离上网完整教程](https://bitmingw.com/2017/09/10/double-vm-isolated-network/)
 这里有一个tor linux代理的
 
-Windows全局代理软件Proxifier
-https://ff120.github.io/2016/06/12/%E5%B7%A5%E5%85%B7%E7%9A%84%E4%BD%BF%E7%94%A8/Windows%E5%85%A8%E5%B1%80%E4%BB%A3%E7%90%86%E8%BD%AF%E4%BB%B6Proxifier/
+[Windows全局代理软件Proxifier](https://ff120.github.io/2016/06/12/%E5%B7%A5%E5%85%B7%E7%9A%84%E4%BD%BF%E7%94%A8/Windows%E5%85%A8%E5%B1%80%E4%BB%A3%E7%90%86%E8%BD%AF%E4%BB%B6Proxifier/)
+
+在命令行测试一下是ip是不是已经走国外了
 
 curl cip.cc
 curl myip.ipip.net
 
+账号和密码：
 vpnbook
 k8VBRa6
 
 https://superuser.com/questions/608897/openvpn-through-socks-proxy-on-linux
 https://kiljan.org/2017/11/15/routing-traffic-through-openvpn-using-a-local-socks-proxy/
 
-这样是可以连上的
+这样是可以连上的，但执行命令报 Cannot resolve host address: us2.vpnbook.com:443
 proxychains openvpn ./vpnbook-us2-tcp443.ovpn
+
 解决：
 proxychains openvpn ./vpnbook-us2-udp25000.ovpn
 好像得用这个，可能是proxy用的是udp,所以上面也得用udp，反正是可以了
 
+一些rce的
 https://github.com/AleWong
-
-但只要一发命令，就会出错
-curl cip.cc
 
 |S-chain|-<>-127.0.0.1:51837-<><>-4.2.2.2:53-<><>-OK
 |DNS-response|: us2.vpnbook.com does not exist
@@ -220,6 +229,7 @@ Mon Jan 18 12:35:54 2021 WARNING: No server certificate verification method has 
 Mon Jan 18 12:35:54 2021 NOTE: --fast-io is disabled since we are not using UDP
 
 这里是使用 openvpn 的 proxy-socks 模式：
+
 openvpn --socks-proxy 127.0.0.1 51837  ./vpnbook-us2-tcp443.ovpn
 Mon Jan 18 12:41:20 2021 disabling NCP mode (--ncp-disable) because not in P2MP client or server mode
 Options error: You must define TUN/TAP device (--dev)
@@ -291,14 +301,12 @@ Mellow 是一个基于规则的全局透明代理工具，可以运行在 Window
 
 [V2Ray客户端](https://tlanyan.me/v2ray-clients-download/)
 
-
 https://u.tools/
 
 [ditto](https://cfhcable.dl.sourceforge.net/project/ditto-cp/Ditto/3.23.124.0/DittoPortable_64bit_3_23_124_0.zip) 
 
 Ditto - 开源免费的 Windows 剪贴板增强工具神器 (方便复制粘贴多条历史记录)
 https://www.iplaysoft.com/ditto.html
-
 
 ## tor 匿名网络 中继
 
@@ -422,3 +430,69 @@ https://lala.im/7105.html
 
 提取 Tor 并搭建 Tor Bridge |　从tor browser 中提取 tor代理
 https://imzlp.me/posts/11177/
+
+## telegram signal darknet
+
+### google voice
+
+通过淘宝买一个google voice ，以注册 telegram 和 signal
+
+### telegram
+
+### signal
+
+### darknet
+
+tor: hidden wiki
+
+
+## 收集信息
+
+### nmap
+
+nmap -v -sn  10.10.0.0/24
+
+10.10.0.10
+10.10.0.30
+10.10.0.34
+10.10.0.50
+10.10.0.54
+10.10.0.62
+10.10.0.82
+10.10.0.86
+10.10.0.90
+10.10.0.102
+10.10.0.122
+10.10.0.118
+10.10.0.142
+
+## wiki
+可用例子
+alfa awus036NH 2000mw 2w 802.11g/n
+
+goole: usb wifi adapter compatiable with kali linux
+
+https://www.wirelesshack.org/best-kali-linux-compatible-usb-adapter-dongles.html
+Most Popular Kali Linux Pen Testing Wireless Chipsets.
+Atheros AR9271
+Ralink RT3070
+Ralink RT3572
+Ralink RT5572
+Realtek RTL8812AU
+Ralink RT5370N
+
+需要支持 packet inject 和 monitor mode
+
+Compatible Chipsets
+Atheros AR9271
+Ralink RT3070
+Ralink RT3572
+Ralink RT5572
+Realtek RTL8812AU
+Ralink RT5370N
+
+https://null-byte.wonderhowto.com/how-to/buy-best-wireless-network-adapter-for-wi-fi-hacking-2019-0178550/
+
+https://www.amazon.com/Alfa-AWUS036NH-802-11g-Wireless-Long-Range/dp/B003YIFHJY/ref=sr_1_3?crid=3AXPJZJ3XKWS&keywords=awus036nh&qid=1553021468&s=gateway&sprefix=awus0%2Caps%2C370&sr=8-3
+
+https://tr.aliexpress.com/item/Ralink-RT3070-150Mbps-Mini-150M-USB-2-0-WiFi-Wireless-network-card-wi-fi-Wlan-802/32334002552.html
