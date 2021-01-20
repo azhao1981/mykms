@@ -1,5 +1,131 @@
 # 202101
 
+## 0120
+
+Curated papers, articles, and blogs on data science & machine learning in production. ⚙️
+https://github.com/eugeneyan/applied-ml
+🏆 A ranked list of awesome machine learning Python libraries. Updated weekly.
+https://github.com/ml-tooling/best-of-ml-python
+6、fyne：一款 Go 语言跨平台 UI 库。想用 Go 写图形界面应用的小伙伴，快速上手：
+https://github.com/fyne-io/fyne
+11、x-spreadsheet：基于 JavaScript 实现的轻量级 Web 电子表格库。它功能齐全，包含表格的基本操作和函数等，还有详细的中文文档，在线尝试
+https://github.com/myliang/x-spreadsheet
+12、h5-Dooring：一款功能齐全的 H5 页面可视化配置平台。让你通过可视化的方式制作出 H5 页面，技术栈以 React 为主，后台采用 Node.js 实现。虽然网上有很多这种工具，但本项目免费开源、功能齐全值得一试
+https://github.com/MrXujiang/h5-Dooring
+14、tui.image-editor：功能齐全的图片编辑器。支持图片剪裁、旋转、涂鸦等功能，实现了 Vue 和 React 封装的组件，便于整合进你的项目
+https://github.com/nhn/tui.image-editor
+19、python-patterns：Python 设计模式和使用场景的集合
+https://github.com/faif/python-patterns
+21、15-minute-apps：基于 PyQt 框架写的小型桌面应用程序的集合。想用 Python 写桌面应用的小伙伴，这个项目应该可以帮到你。比如写个扫雷游戏：
+https://github.com/learnpyqt/15-minute-apps
+25、bat：替代 cat 的命令行工具。你还在命令行用 cat 查看文件吗？那你就 out 啦！今天推荐的 bat 它不仅支持语法高亮，还能展示 Git 的改动。macOS 下安装命令：brew install bat 相信你用过 bat 后就不会再想用回 cat 了
+https://github.com/chinanf-boy/bat-zh
+26、Web-Dev-For-Beginners：微软开源的 Web 开发教程。该教程共有 24 节课，但目前只有英文版
+https://github.com/microsoft/Web-Dev-For-Beginners
+
+29、sql-style-guide：一份 SQL 语句编写风格建议。比如：
+https://github.com/mattm/sql-style-guide
+30、pure-bash-bible：该书有好多复制就能用的 bash 函数，我愿称其为 bash 的“奇技淫巧”。比如把字母转为大写的函数：
+https://github.com/dylanaraps/pure-bash-bible
+1、ucore：清华大学操作系统课程，配套实验项目。推荐给有计算机结构原理、C 和汇编、数据结构基础并对操作系统感兴趣的同学，项目中包含教学视频、练习题、实验指导书等
+https://github.com/kiukotsu/ucore
+3、ContextMenuManager：一个纯粹的 Windows 右键菜单管理程序。功能：
+https://github.com/BluePointLilac/ContextMenuManager
+7、inlets：基于 Go 实现的免费内网穿透服务，即将本地服务暴露到公网。如果觉得之前的内网穿透工具不好用、还贵的话，可以试试这个项目，使用说明
+https://github.com/inlets/inlets/blob/master/README_CN.md#%E5%BC%80%E5%A7%8B%E4%BD%BF%E7%94%A8
+https://github.com/inlets/inlets
+8、syncthing：一个采用 Go 语言编写的免费、跨平台的文件同步工具。它不需要安装，只需要下载对应系统的压缩包解压后就可以直接运行和使用。拥有命令行、Web 和桌面程序多种操作模式，同时支持内网和互联网的文件同步，可以用来搭建私有网盘。又一个代替付费网盘的选择，如果考虑到昂贵的宽费用。可以把 syncthing 做为局域网下手机、电视和电脑共享文件的开源解决方案
+https://github.com/syncthing/syncthing
+10、go-zero：一个可靠的 Go 语言 Web 和 RPC 框架。就算是 Go 新手基于该框架，也可以快速写出高性能可扩展的微服务。示例代码：
+https://hellogithub.com/periodical/statistics/click/?target=https://github.com/tal-tech/go-zero
+
+11、Mindustry：一款 Java 编写的免费沙盒塔防游戏。支持多平台：Windows、Linux、macOS、Android
+
+https://github.com/Anuken/Mindustry
+12、fiction_house：一个基于 SpringBoot 实现的小说和漫画在线阅读网站。网站功能齐全、资源丰富，同时支持 Web、安卓、微信小程序多平台。服务端分为网站和管理后台，采用 SpringBoot、MyBatis、MySQL、Redis 等技术实现，可当作 Java 新手实战项目学习
+https://hellogithub.com/periodical/statistics/click/?target=https://github.com/201206030/fiction_house
+13、AdminLTE：基于 Bootstrap 4.5 和 jQuery 的管理后台模板
+https://hellogithub.com/periodical/statistics/click/?target=https://github.com/ColorlibHQ/AdminLTE
+14、blockly：不会编程也可以写代码，通过拖拽模块自动生成代码的 Web 编辑器。谷歌开源的一个可视化编程的前端项目，支持自动生成：Python、JavaScript、PHP 等编程语言的代码，在线尝试的地址网络不好，可以通过 npm install blockly 安装后使用和学习
+https://hellogithub.com/periodical/statistics/click/?target=https://github.com/google/blockly
+15、screenity：一个强大的屏幕录制和标注的 Chrome 插件。特性：
+🎥 可以录制任何应用的内容，包含“色相头”
+✏️ 在屏幕上的任何地方，添加文本和箭头等注释
+👀 突出你的点击操作、光标
+💾 支持导出为 mp4、gif 等常用格式
+✂️ 修剪或删除录像
+https://hellogithub.com/periodical/statistics/click/?target=https://github.com/alyssaxuu/screenity
+17、piano：基于 Omi 和 Omi Snippets 构建的钢琴应用。你不需要懂乐理知识，仅用键盘即可弹奏简单而熟悉的音乐，也借此项目感谢音乐和编程的陪伴！也致敬各位奋斗于 996 的代码家和打工人，音乐不曾辜负任何人，正如 Leehom Wang 歌曲中唱到：如果世界太危险，只有音乐最安全，带着我进梦里面，让歌词都实现！上面这段是作者写的推荐语，我本来想从项目的角度再夸下这个项目，但我放弃了。虽然我之前推荐过的那个钢琴项目弹的比这个要好听，但我更喜欢这个项目。因为我从他的项目中感受到满满敬意和“爱”，致敬每一位奋斗的“代码家”，HG 爱你们。在线尝试，示例代码：
+https://github.com/Wscats/piano
+http://wscats.gitee.io/piano/build/
+
+23、python-cheatsheet：全面且实用的 Python 备忘录。这个东西特别适合我这个上了年纪的人，比如：忘记怎么用 Python 写正则、要搞个进度条忘记库的名字和基本用法、用 pandas 处理数据忘记方法需要的参数等等。正当我觉得自己需要“回炉重学”的时候发现了这个项目，有了它上面的问题都可以找到拿来即用的代码片段。我又是那个快乐的 Pythoneer 了，示例代码：
+https://github.com/gto76/python-cheatsheet
+25、winapps：一个让你在 Linux (Ubuntu/Fedora) 系统里使用 Windows 办公软件的项目。支持 Microsoft Excel、Word、PowerPoint、Adobe Photoshop 等
+https://hellogithub.com/periodical/statistics/click/?target=https://github.com/Fmstrat/winapps
+26、Front-End-Interview-Notebook：一份非拼凑、优秀的前端面试复习笔记。以提问方式发出问题，并给出了作者的答案，内容涵盖：HTML、CSS、JS、算法、计算机网络等方面。作者拿到了很多大厂 offer，然后把这些东西总结整理下来送给准备面试、换工作的前端小伙伴
+https://hellogithub.com/periodical/statistics/click/?target=https://github.com/CavsZhouyou/Front-End-Interview-Notebook
+28、CopyTranslator：支持网页和 PDF 的划词翻译工具。有了它就可以解决阅读 PDF 文件时，要翻译大段内容情况下的乱码、换行、翻译不准的问题
+https://hellogithub.com/periodical/statistics/click/?target=https://github.com/CopyTranslator/CopyTranslator
+29、styleguide：谷歌的代码风格指南。每个大型项目都有自己的代码风格，当代码的风格统一时将更容易被理解。本项目是谷歌项目的代码风格说明，包含：C++、C#、Swift、Python、Java 等语言
+https://hellogithub.com/periodical/statistics/click/?target=https://github.com/google/styleguide
+30、upptime：一个免费开源的网站正常运行时间（uptime）监控服务。之所没有任何费用是因为实现方法都是完全基于 GitHub 提供的免费服务，比如：使用 GitHub 的 Action 每隔 5 分钟访问一次目标网站，获取网站最新的状态。然后通过 GitHub Issues 记录和报告异常，最后在 GitHub Pages 上可视化展示网站的运行状态。就很“绿色无公害”，我特别喜欢
+https://github.com/upptime/upptime
+32、EasyOCR：支持多种语言的即用型的 Python OCR 库，包括中文、日文、韩文等。示例代码：
+https://hellogithub.com/periodical/statistics/click/?target=https://github.com/JaidedAI/EasyOCR
+31、examples：关于视觉、本文等方面的 PyTorch 的示例集合。包含：使用 Convnets 的图像分类（MNIST）、生成对抗网络（DCGAN）等
+https://github.com/pytorch/examples
+33、DeepLearningProject：哈佛大学开源的深度学习教程
+https://github.com/Spandan-Madan/DeepLearningProject
+
+A Hex Editor for Reverse Engineers, Programmers and people that value their eye sight when working at 3 AM.
+https://github.com/WerWolv/ImHex
+
+JSON DataSet for macOS mapped to MITRE ATT&CK Tactics.
+https://github.com/sbousseaden/macOS-ATTACK-DATASET
+
+React Hooks — 👍
+https://github.com/streamich/react-use
+
+https://github.com/rails/tailwindcss-rails
+
+WASM-powered frontend build tool. Fast, lightweight, unbundled ESM. ✌️
+https://github.com/snowpackjs/snowpack
+https://www.snowpack.dev/
+Collection of 5000+ publicly available IPTV channels from all over the world
+https://github.com/iptv-org/iptv
+Roadmap to becoming a data engineer in 2021
+https://github.com/datastacktv/data-engineer-roadmap
+
+Distributed compute platform implemented in Rust, using Apache Arrow memory model.
+https://github.com/ballista-compute/ballista
+
+BigBountyRecon tool utilises 58 different techniques using various Google dorks and open source tools to expedite the process of initial reconnaissance on the target organisation.
+https://github.com/Viralmaniar/BigBountyRecon
+
+Comprehensive language-agnostic guidelines on variables naming.
+https://github.com/kettanaito/naming-cheatsheet
+
+https://svelte.dev/ | 看起来不错
+Cybernetically enhanced web apps
+https://github.com/sveltejs/svelte
+
+Android terminal and Linux environment - packages repository.
+https://github.com/termux/termux-packages
+https://termux.com/
+
+A modern file explorer that pushes the boundaries of the platform.
+https://github.com/files-community/Files
+
+https://www.freebuf.com/vuls/258637.html
+CVE-2020-8554：Kubernetes的中间人漏洞
+
+Watcher：一款基于Django开发的开源网络威胁捕捉平台
+https://www.freebuf.com/articles/web/258963.html
+
+CVE-2020-2883——WebLogic反序列化初探
+https://www.anquanke.com/post/id/227604
+
 ## 0119
 Git Lfs 代码问题漏洞
 http://www.cnnvd.org.cn/web/xxk/ldxqById.tag?CNNVD=CNNVD-202101-1302
@@ -46,11 +172,6 @@ https://blog.csdn.net/u010758410/article/details/71727822
 
 蠕虫病毒“incaseformat”来袭，中毒重启20秒后狂删电脑文件
 https://nosec.org/home/detail/4650.html
-
-
-
-[重要通知｜JumpServer漏洞通知及修复方案](https://blog.fit2cloud.com/?p=1761)
-> [参考](/doc\vuls\vuls.jumpserver.md)
 
 ## 0116
 

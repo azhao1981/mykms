@@ -3,15 +3,20 @@
 
 开源堡垒机 JumpServer 远程命令执行漏洞风险提示
 
-## 
-官方解决通知：
+## 资讯
+
+[官方解决通知](https://github.com/jumpserver/jumpserver/blob/master/README.md)
+
 [重要通知｜JumpServer漏洞通知及修复方案](https://blog.fit2cloud.com/?p=1761)
 
-https://github.com/jumpserver/jumpserver/blob/master/README.md
+## 代码原理分析
 
-+ 原理
+[分析：Jumpserver 任意命令执行漏洞分析报告](https://www.anquanke.com/post/id/229074)
+wss://jump.flyudesk.com/socket.io/
+read_log_file
 
 https://sourcegraph.com/github.com/jumpserver/jumpserver/-/compare/v2.6.1...v2.6.2?visible=6
+
 
 gitee.com
 

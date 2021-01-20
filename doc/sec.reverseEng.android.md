@@ -29,3 +29,8 @@ https://frida.re/docs/home/
 
 https://bbs.pediy.com/thread-264680.htm
 看雪精华很多关于 Frida 的文档，可参考
+
+反编译
+[三分钟上手JEB脚本开发](https://www.anquanke.com/post/id/228981)
+
+[[原创]分享3个Jeb脚本（GotoClass、FastXposed、FastFrida）](https://bbs.pediy.com/thread-259457.htm) 

@@ -53,3 +53,10 @@ snip & paste
 
 搜索
 [Everything](https://www.voidtools.com/zh-cn/)
+
+文件管理
+[files 开源免费](https://github.com/files-community/Files)
+A modern file explorer that pushes the boundaries of the platform.
+
+drawio-desktop UML等画图工具
+https://github.com/jgraph/drawio-desktop/releases
