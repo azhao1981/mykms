@@ -166,3 +166,25 @@ DefaultTimeoutStopSec=10s
 systemctl daemon-reload
 ```
 
+## awk
+
+awk 字符串处理函数,split(s,a,fs)是我最需要的
+https://www.jianshu.com/p/b259703e0951
+
+如何把 '[' ']' 用awk 分开？
+echo '[dfdf]' | awk -F'[[\\]]' '{print $2}'
+
+注意： 第一个 '[' 不需要 '\['
+如果是： echo '[dfdf]' | awk -F'[\[\\]]' '{print $2}'
+会报错： awk: warning: escape sequence `\[' treated as plain `['
+但是执行是正确的，warning 表示会自己净化成 [
+而 ] 需要进行两次 \\,不然就会报错，而且执行结果也是错误的
+echo '[dfdf]' | awk -F'[[\]]' '{print $2}'
+awk: warning: escape sequence `\]' treated as plain `]'
+
+如果是 . 也需要进行两次转义
+echo  '[ 1316.299650] ' | awk -F '[[\\.]' '{print $2}'
+
+## ruby
+
+https://stackoverflow.com/questions/17096935/how-to-get-piped-input-to-ruby-e-on-command-line

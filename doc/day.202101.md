@@ -1,5 +1,20 @@
 # 202101
 
+## 0121
+https://dev.to/orkhanjafarovr/11-javascript-tips-and-tricks-to-code-like-a-superhero-vol-2-mp6
+https://dev.to/killianfrappartdev/instant-messaging-app-made-with-react-typescript-node-socket-io-27pc
+https://softchris.github.io/books/react/
+
+https://blog.sqreen.com/remote-code-execution-rce-explained
+https://blog.sqreen.com/types-of-cross-site-scripting-xss
+https://blog.sqreen.com/apidays-2019-rasp-for-apis-and-microservices/
+https://blog.sqreen.com/how-to-build-a-waf-at-the-application-layer/
+
+2020年最新 851计算机&算法课程链接: https://pan.baidu.com/s/1I3WDi-OR-rNrNz98Jdn8IA 提取码: 74f9
+引流菌：2020全网爆粉特训营链接: https://pan.baidu.com/s/1wqvjcmx71ARsBTN5usNbig 提取码: r8e1
+前端React项目教程（企业级实战开发）链接: https://pan.baidu.com/s/1DmLdU_ImnTeQz-xWBA0UHg 提取码: 0o46
+从零开始学 Kubernetes（K8S）链接: https://pan.baidu.com/s/13PLzpFnaIEjfrvOsw85hsQ 提取码: i3e9
+
 ## 0120
 
 Curated papers, articles, and blogs on data science & machine learning in production. ⚙️

@@ -1,6 +1,31 @@
 # 容器安全
 
+安全容器的概念：
+现在容器的问题
+docker daemon的权限必须是root，这还是偏向管理方便，而不是安全
+比如我需要安装一个 redis，默认是安全的
+那么我应该是：
++ 使用redis用户来运行容器
++ 控制端口为xxx
++ 文件只能访问在某个范围内
+
+[私有云安全：容器产品架构设计实践](https://www.freebuf.com/articles/network/259775.html)
+这篇和参考文档中的文章，基本就可以构成一个相对完整的框架了
+Docker安全入门与实战（二）
+https://zhuanlan.zhihu.com/p/43671129
+
+https://www.cisecurity.org/benchmark/docker/
+Github仓库：https://github.com/docker/docker-bench-security.git
+https://www.cisecurity.org/benchmark/kubernetes/
+Github仓库：https://github.com/aquasecurity/kube-bench
+Kubernetes的管理平台Rancher、Kubeoperator等已经支持集成kube-bench
+ ./kube-bench <master|node>
+ Cilium 是一个内核层的 API 感知网络和安全工具，它专注于解决安全网络连接，与 Docker、Kubernetes 等 Linux 容器平台有良好的兼容性，增加了安全可视化以及控制逻辑。
+
+Github仓库：https://github.com/cilium/cilium
+
 ## tools
+
 ### [dagda](https://github.com/eliasgranderubio/dagda)
 
 Dagda 会针对容器镜像中已知的漏洞、特洛伊、病毒、恶意软件和其它恶意威胁进行静态分析。
