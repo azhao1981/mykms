@@ -188,3 +188,23 @@ echo  '[ 1316.299650] ' | awk -F '[[\\.]' '{print $2}'
 ## ruby
 
 https://stackoverflow.com/questions/17096935/how-to-get-piped-input-to-ruby-e-on-command-line
+
+## 以下是讲解得很好的命令使用
+
+每天学习一个命令：netstat 查看本地监听端口
+http://einverne.github.io/post/2017/01/netstat.html
+
+每天学习一个命令：traceroute 查看路由信息
+http://einverne.github.io/post/2017/06/traceroute.html
+
+每天学习一个命令：iperf 测量带宽
+http://einverne.github.io/post/2017/11/iperf.html
+
+每天学习一个命令: mtr 查看路由网络连通性
+http://einverne.github.io/post/2017/11/mtr-usage.html
+
+每天学习一个命令：curl 命令行下载工具
+http://einverne.github.io/post/2017/12/curl-usage.html
+
+Linux 下显示网络流量
+http://einverne.github.io/post/2018/02/linux-show-network-traffic.html

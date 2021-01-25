@@ -466,7 +466,7 @@ nmap -v -sn  10.10.0.0/24
 10.10.0.118
 10.10.0.142
 
-## wiki
+## wifi
 可用例子
 alfa awus036NH 2000mw 2w 802.11g/n
 
@@ -474,45 +474,33 @@ goole: usb wifi adapter compatiable with kali linux
 
 https://www.wirelesshack.org/best-kali-linux-compatible-usb-adapter-dongles.html
 Most Popular Kali Linux Pen Testing Wireless Chipsets.
-Atheros AR9271
-Ralink RT3070
-Ralink RT3572
-Ralink RT5572
-Realtek RTL8812AU
-Ralink RT5370N
-
 需要支持 packet inject 和 monitor mode
-Compatible Chipsets
 Atheros AR9271
 Ralink RT3070
 Ralink RT3572
 Ralink RT5572
 Realtek RTL8812AU
-Ralink RT5370N  20左右
+Ralink RT5370N 20左右
 
-https://www.mzbky.com/
-
-现在
-EP-N8508GS
+现在 EP-N8508GS 不可用
 
 https://null-byte.wonderhowto.com/how-to/buy-best-wireless-network-adapter-for-wi-fi-hacking-2019-0178550/
 
 AWUS036NH 
 https://www.amazon.com/Alfa-AWUS036NH-802-11g-Wireless-Long-Range/dp/B003YIFHJY/ref=sr_1_3?crid=3AXPJZJ3XKWS&keywords=awus036nh&qid=1553021468&s=gateway&sprefix=awus0%2Caps%2C370&sr=8-3
 
-RT3070
-https://tr.aliexpress.com/item/Ralink-RT3070-150Mbps-Mini-150M-USB-2-0-WiFi-Wireless-network-card-wi-fi-Wlan-802/32334002552.html
 感觉都有点老
 求完美支持kali的（支持监听、注入）usb无线网卡?若高频大功率更好
 https://www.zhihu.com/question/22333630
-推荐的是TP-LINK 的WN722N ，国内电商可以买到. 实测在 Kali 里面可用。
+推荐的是TP-LINK 的 WN722N ，国内电商可以买到. 实测在 Kali 里面可用。
+  TP-LINK 722N 不支持linux ,千万别买， 在kali上面无法识别，今天我买了一个，到货了，试了各种方法都没用，打算退货
+  确认：有几个店写明了不支持 kali linux
 强烈推荐RLT8187L，功率高，兼容性好
 其次是Ralink3070功率较低，兼容差，但连接上以后网络稳定，适合日常使用
-TL-WN821N ver:5.0亲测kali无反应另外还有一个办法是在lib/modules/xxx-kali-xxx/kernal/drivers/net/wireless 文件夹下查看有哪些支持网卡的驱动，再进行有针对性的选购 目前在某东看见 网件的一款WNA1100貌似满足要求，东西正在配送中， 到手再说。
+TL-WN821N ver:5.0亲测kali无反应另外还有一个办法是在 lib/modules/xxx-kali-xxx/kernal/drivers/net/wireless 文件夹下查看有哪些支持网卡的驱动，再进行有针对性的选购 目前在某东看见 网件的一款WNA1100貌似满足要求，东西正在配送中， 到手再说。
 ALFA AWUSO36H啊，美亚买吧，国内淘宝的都是坑爹的货。??
 用AWUS036ACH，2017.3版本刚支持，这个设备支持IEEE的最新标准，也就是abgn的。
 我用的是rtl8187L的在淘宝上搜就可以了
-TP-LINK 722N 不支持linux ,千万别买， 在kali上面无法识别，今天我买了一个，到货了，试了各种方法都没用，打算退货
 
 2019年最适用于kali linux无线渗透测试网卡推荐暨wifi破解网卡
 https://www.mzbky.com/56.html
@@ -522,7 +510,7 @@ https://shop307204092.taobao.com/
 黑色双天线Ralink RT3070（大功率）
 黑色雷达天线Ralink RT3070（大功率）12dbi雷达天线
   像这个 https://detail.tmall.com/item.htm?spm=a230r.1.14.19.208241feclMmul&id=612354885973&ns=1&abbucket=15
-  https://detail.tmall.com/item.htm?spm=a230r.1.14.4.ce0c5431kp2hNm&id=612354885973&ns=1&abbucket=15
+  但tb上没有标明芯片类型，也没写支持linux
 黑色Ralink RT5572 300M（5g双频）
 黑色Ralink RT5572 6dbi天线（5g双频）
 黑色Ralink RT5370

@@ -1,6 +1,70 @@
 # 202101
 
+## 0125
+
+https://www.mindspore.cn/
+https://gitee.com/openeuler/kernel
+https://gitee.com/monksoul/Furion
+https://gitee.com/jeecg/jeecg-boot
+低代码平台
+https://github.com/chanan/BlazorStrap
+https://gitee.com/LongbowEnterprise/BootstrapBlazor
+https://gitee.com/ubml
+
+[域名为什么被运营商劫持到127.0.0.1](https://www.dns.com/supports/1574.html)
+https://www.boce.com/
+[DNS劫持原理操作详jie](https://zhuanlan.zhihu.com/p/40283290)
+
+[CVE-2020-26233：GIT命令行工具远程代码执行漏洞分析](https://www.freebuf.com/vuls/261442.html)
+
+[Directory/File, DNS and VHost busting tool written in Go](https://github.com/OJ/gobuster)
+
+[windows 计划任务隐藏新姿势分享](https://paper.seebug.org/1464/)
+
+[千帆过尽，洗净铅华 —404年终总结 ZoomEye篇](https://paper.seebug.org/1462/)
+
+[CVE-2021-1648 windows10 splwow64 权限提升分析](https://paper.seebug.org/1463/)
+
+网络安全运营能力建设思路（三） |人员组织建设
+https://www.freebuf.com/articles/es/257243.html
+## 0123
+
+网安图书馆：文档。
+https://github.com/WilsonHuha/cbr-doc
+https://github.com/WilsonHuha/cbr-doc/blob/master/posts/cc/%E9%BB%91%E4%BA%A7_post_sort_by_cc_cnt.md
+
 ## 0122
+[Packer-Fuzzer](https://github.com/rtcatc/Packer-Fuzzer)
+https://twitter.com/drivertomtt/status/1352217101855936513
+[可对前端打包器所构建的网站进行一键扫描的Packer Fuzzer](https://www.anquanke.com/post/id/225308)
+https://github.com/TomAPU/poc_and_exp/tree/master/Packer-Fuzzer-RCE
+
+Vulmap：一款功能强大的Web漏洞扫描和验证工具
+https://www.freebuf.com/vuls/258939.html
+python vulmap.py -u http://xxx.club
+
+H5页面漏洞挖掘之路（加密篇）
+https://www.freebuf.com/articles/web/259046.html
+全网弱口令系统一把梭
+https://www.freebuf.com/sectool/261050.html
+源海拾贝 | ZoomEye-python 使用说明
+https://www.anquanke.com/post/id/229284
+
+白名单，被谁绕过了？
+https://www.anquanke.com/post/id/228916
+
+[emp3r0r - Linux下的进程注入和持久化](https://www.anquanke.com/post/id/229096)
+  [linux post-exploitation framework made by linux user](https://github.com/jm33-m0/emp3r0r)
+  理论上我们只需要一个dd和procfs即可将代码注入一个进程，相关工具 [Cexigua](https://github.com/AonCyberLabs/Cexigua) 
+  https://www.commandlinux.com/man-page/man5/procfs.5.html
+  [emp3r0r：Linux用户打造的Linux后渗透框架](https://www.freebuf.com/sectool/259079.html)
+  [Empire](https://github.com/BC-SECURITY/empire) is a PowerShell and Python 3.x post-exploitation framework. 
+
+Pyattck - A Python Module To Interact With The Mitre ATT&CK Framework
+https://www.kitploit.com/2019/07/pyattck-python-module-to-interact-with.html
+
+https://hackernoon.com/im-32-and-spent-200k-on-biohacking-became-calmer-thinner-extroverted-healthier-happier-2a2e846ae113
+
 https://www.mzbky.com/3193.html
 12月份GitHub上热门的开源项目
 
