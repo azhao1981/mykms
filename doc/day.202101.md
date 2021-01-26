@@ -1,5 +1,28 @@
 # 202101
 
+## 0126
+如何利用SambaV3漏洞，“永恒之黑”干掉Win10？
+https://mp.weixin.qq.com/s/01cWjpHtAVrgFugyDxFPQQ
+Shiro反序列化漏洞详细分析
+https://www.anquanke.com/post/id/228889
+
+2020年Kali渗透教程/网络安全/kali/Linux/黑客/web安全/信息安全/白帽黑客
+https://www.bilibili.com/video/BV1Kt411u73T?from=search&seid=13905889619028018688
+
+零基础学kali系列，从安装到大神
+https://www.bilibili.com/video/BV1S7411g7pr?from=search&seid=13905889619028018688
+
+非官方对TOP的最新看法，和对TOP10新
+https://lab.wallarm.com/owasp-top-10-2021-proposal-based-on-a-statistical-data/
+Vulners.com 
+https://cheatsheetseries.owasp.org/assets/Server_Side_Request_Forgery_Prevention_Cheat_Sheet_SSRF_Bible.pdf
+https://github.com/w181496/Web-CTF-Cheatsheet
+https://www.hackerone.com/top-ten-vulnerabilities
+https://krebsonsecurity.com/2019/08/what-we-can-learn-from-the-capital-one-hack/
+
+https://medium.com/@abhiii/a-beginners-road-map-on-ethical-hacking-8aa83f01dbd1
+https://github.com/sundowndev/hacker-roadmap
+
 ## 0125
 
 https://www.mindspore.cn/
