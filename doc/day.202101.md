@@ -1,6 +1,52 @@
 # 202101
 
+## 0127
+
+https://telegra.ph/11-Best-Wi-Fi-Hacking-Apps-For-Android-01-26
+https://vypersquad.blogspot.com/2021/01/best-websites-to-test-your-hacking.html
+自建onion网站
+https://johnrosen1.com/2021/01/24/onion/
+
+emp3r0r：dropper和ELF加密壳
+https://www.freebuf.com/sectool/260282.html
+
+记一次略坑的应急响应事件
+https://www.freebuf.com/articles/web/259677.html
+
+pe对系统密码进行更改处理
+对系统计划任务、进程运行、主引导区记录等多个项目进行完整检查
+3.排查定时任务，并且跟现场工作人员核对，未发现其他非工作人员创建的定时任务
+4.排查系统防火墙，日志审核策略及日志留存情况，并将日志做导出备份处理：
+5.跟主机安全负责人、网络负责人及该主机使用方做相关询问得出以下信息：
+1.基于该主机自身情况进行分析
+（1）调查该主机自身感染病毒木马情况：人工分析未发现系统感染恶意病毒木马特征，无可疑账户、克隆账户、可疑计划任务，未发现入侵现象。
+2）系统日志分析情况：对近期系统登录成功与失败日志进行排查
+（3）使用logparse进行日志分析：
+
+​Windows域关系学习攻略
+https://www.anquanke.com/post/id/229454
+
+ysoserial 结构分析与使用
+https://www.anquanke.com/post/id/229108
+ysoserial这款工具，堪称为“java反序列利用神器”
+
+Java安全之ysoserial-JRMP模块分析（一）
+https://www.anquanke.com/post/id/228918
+
+01/23-01/25的全球疑似殭屍電腦IP清單在 https://filebin.ca/5pa6XClXi76n ，MD5是79a16459680b043ba02be1e302df69c3
+附加一個可整出排序後純IP清單的shell script， zombie_csv_to_ip.sh；執行方式如下：
+< 210125_zombie_ip.csv sh zombie_csv_to_ip.sh > /tmp/tmp1.txt
+純IP清單會存到/tmp/tmp1.txt中
+
+Cybersecurity focused forum
+http://torigonsn3d63cldhr76mkfdzo3tndnl2tftiek55i2vilscufer6ryd.onion/
+
+https://github.com/sunfall-cell/-
+不错的 github
+https://github.com/ckjbug/Hacking
+
 ## 0126
+
 如何利用SambaV3漏洞，“永恒之黑”干掉Win10？
 https://mp.weixin.qq.com/s/01cWjpHtAVrgFugyDxFPQQ
 Shiro反序列化漏洞详细分析
