@@ -523,3 +523,44 @@ Kali系统中20个超好用黑客渗透工具，你知道几个？
 https://www.cnblogs.com/wjw-zm/p/11695688.html
 Kali Linux上的10种最佳渗透测试工具
 https://zhuanlan.zhihu.com/p/103684132
+
+### kali wifi 安装
+
+这里以  Realtek RTL8812AU 为例
+
+virtualbox 选择虚拟机->设置->usb设备
+1 启动usb控制器 选3.0
+2 添加 Realtek 802.11n Nic
+
+virtualbox 选择虚拟机->设置->网络
+改网络1为桥接网络，选 Realtek 802.11n Nic
+
+### change mac
+ifconfig wlan0 down
+macchanger --help
+
+macchanger --random wlan0
+ifconfig wlan0 up
+
+### 监听模式
+sudo airmon-ng start wlan0
+ifconfig
+iwconfig
+sudo airmon-ng stop wlan0mon
+
+或使用 ifconfig
+ifconfig wlan0 down
+ifconfig wlan0 mode monitor
+ifconfig wlan0 up
+iwconfig
+ifconfig wlan0 mode managed
+
+service network-manager restart
+
+虫海围城
+末世之暗黑召唤师
+随身带着星际争霸
+虫临暗黑
+黑暗血时代
+异世之虫族无敌
+星际游轮
