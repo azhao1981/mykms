@@ -1,5 +1,33 @@
 # 202101
 
+## 0128
+
+域用户密码爆破研究
+https://www.anquanke.com/post/id/229954
+如何快速将防守单位打出局
+https://www.anquanke.com/post/id/229945
+
+跨站WebSocket劫持漏洞的研究与防御方法
+https://www.anquanke.com/post/id/229486
+
+Dnsmasq 缓冲区错误漏洞
+http://www.cnnvd.org.cn/web/xxk/ldxqById.tag?CNNVD=CNNVD-202101-1570
+高危?可获权限?本地53可以提权?
+
+致我心中的 “散装”（开源）SIEM（一） 会员
+https://www.freebuf.com/articles/es/257347.html
+Wazuh：如何对异构数据进行关联告警
+https://www.freebuf.com/sectool/230505.html
+
+APT追踪：当黑客不讲武德，安全专家也容易被骗
+https://www.freebuf.com/news/262086.html
+JSMon：一款针对JavaScript脚本的监控工具
+https://www.freebuf.com/articles/web/258221.html
+Egregor勒索软件简要分析报告
+https://www.freebuf.com/articles/database/258970.html
+
+
+
 ## 0127
 
 https://telegra.ph/11-Best-Wi-Fi-Hacking-Apps-For-Android-01-26
