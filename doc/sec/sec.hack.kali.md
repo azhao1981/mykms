@@ -556,11 +556,15 @@ iwconfig
 ifconfig wlan0 mode managed
 
 service network-manager restart
+service network-manager stop
+service wpa_supplicant stop
+https://askubuntu.com/questions/565515/problem-with-mon0-interface
+sudo stop network-manager
+echo "manual" | sudo tee /etc/init/network-manager.override
 
-虫海围城
-末世之暗黑召唤师
-随身带着星际争霸
-虫临暗黑
-黑暗血时代
-异世之虫族无敌
-星际游轮
+    588 wpa_supplicant
+https://mlog.club/article/4237988
+怕我会vbwq不行
+oot@kali:/home/kali# iw dev wlan0 set type monitor
+
+这里卡死了
