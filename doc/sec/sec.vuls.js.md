@@ -54,6 +54,12 @@ PHP 5.3.3
 [WEB安全漏洞之javascript版本漏洞](https://blog.csdn.net/Agonie_25/article/details/90370004)
 > 不同的工具扫描的情况也不同，比如在项目中，我们把jqeury版本升级到v1.11.0， webinspect 没有扫描出漏洞，但是 AWVS 则扫出了漏洞。
 
+https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2020-28488
+[jQuery UI 1.12.1 - Denial of Service (DoS)](https://www.exploit-db.com/exploits/49489)
+<https://www.secfree.com/vul-156965.html>
+jquery-ui 存在安全漏洞，该漏洞源于当“dialog”被多次注入到HTML标签中时，浏览器和应用程序崩溃。
+崩溃的是本地浏览器,攻击的方法可以是注入后,造成对方的网页在客户前面看起来"不好用"
+
 ## 其它资源
 
 爬虫 JavaScript 篇[Web 漏洞扫描器]

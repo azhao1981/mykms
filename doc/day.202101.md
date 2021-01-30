@@ -1,5 +1,31 @@
 # 202101
 
+## 0129
+
+技术分享：渗透测试中的MSSQL横向活动研究
+https://www.anquanke.com/post/id/229873
+
+Linux通过栈溢出进行提权实战（dpwwn03）
+https://www.freebuf.com/articles/web/259673.html
+
+stackoverflow 一次入侵应急响应
+https://stackoverflow.blog/2021/01/25/a-deeper-dive-into-our-may-2019-security-incident/
+
+网络安全运营能力建设思路（四）
+https://www.freebuf.com/articles/es/257769.html
+
+【FreeBuf字幕组】Hacker101白帽进阶之路：移动应用安全速成讲解（一）
+https://www.freebuf.com/articles/262216.html
+
+一波jenkins漏洞
+http://www.nsfocus.net/index.php?act=sec_bug
+
+Metasploit Framework 6.0.11 - msfvenom APK template command injection
+https://www.exploit-db.com/exploits/49491
+
+为被动扫描器量身打造一款爬虫 - LSpider
+https://paper.seebug.org/1473/
+
 ## 0128
 
 域用户密码爆破研究
@@ -25,8 +51,6 @@ JSMon：一款针对JavaScript脚本的监控工具
 https://www.freebuf.com/articles/web/258221.html
 Egregor勒索软件简要分析报告
 https://www.freebuf.com/articles/database/258970.html
-
-
 
 ## 0127
 

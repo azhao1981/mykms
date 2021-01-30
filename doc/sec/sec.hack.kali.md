@@ -58,6 +58,28 @@ dpkg-reconfigure locales
 reboot
 ```
 
+kali2020设置时区
+https://segmentfault.com/a/1190000022649311
+
+```bash
+#修改时区为上海
+sudo timedatectl set-timezone "Asia/Shanghai"    #修改时区为上海
+#使用和设置协调世界时间
+sudo timedatectl set-timezone UTC    
+#将硬件时钟设置为协调世界时（UTC）
+sudo timedatectl set-local-rtc 0    
+ 
+#重启ntp时间同步服务，等待时间更新，一般需要3~6秒
+sudo service ntp restart    
+sleep 10s
+ 
+#将系统时间写入到硬件时钟，防止重启系统后更改失效
+sudo hwclock -w    
+
+显示时间状态
+sudo timedatectl status
+```
+
 ### 下载win10 镜像
 
 https://developer.microsoft.com/en-us/microsoft-edge/tools/vms/
@@ -535,7 +557,14 @@ virtualbox 选择虚拟机->设置->usb设备
 virtualbox 选择虚拟机->设置->网络
 改网络1为桥接网络，选 Realtek 802.11n Nic
 
+
+wmware版本
+[kali linux下安装rtl8812au（Realtek RTL8812AU）网卡驱动方法与操作步骤](https://www.mzbky.com/248.html)
+
+apt install realtek-rtl88xxau-dkms
+
 ### change mac
+
 ifconfig wlan0 down
 macchanger --help
 
@@ -543,6 +572,7 @@ macchanger --random wlan0
 ifconfig wlan0 up
 
 ### 监听模式
+
 sudo airmon-ng start wlan0
 ifconfig
 iwconfig
@@ -550,7 +580,7 @@ sudo airmon-ng stop wlan0mon
 
 或使用 ifconfig
 ifconfig wlan0 down
-ifconfig wlan0 mode monitor
+iwconfig wlan0 mode monitor
 ifconfig wlan0 up
 iwconfig
 ifconfig wlan0 mode managed
@@ -558,6 +588,19 @@ ifconfig wlan0 mode managed
 service network-manager restart
 service network-manager stop
 service wpa_supplicant stop
+
+如果是2020.4版本:
+service NetworkManager stop
+service wpa_supplicant stop
+
+airmon-ng start wlan0
+airodump-ng wlan0
+
+[rtl8812au kali linux下监听wifi方法与步骤](https://www.mzbky.com/458.html)
+
+NOTE: 要用wmware, vbox会卡死在 `airmon-ng start wlan0` , 不知道是卡的问题,还是vbox?还是kali版本问题?
+
+vbox 的问题:
 https://askubuntu.com/questions/565515/problem-with-mon0-interface
 sudo stop network-manager
 echo "manual" | sudo tee /etc/init/network-manager.override
@@ -568,3 +611,29 @@ https://mlog.club/article/4237988
 oot@kali:/home/kali# iw dev wlan0 set type monitor
 
 这里卡死了
+
+[wifite自动化Wi-Fi渗透（RTL8812AU）](https://www.mzbky.com/3345.html)
+
+https://github.com/aircrack-ng/rtl8812au
+
+[kali linux下安装rtl8812au（Realtek RTL8812AU）网卡驱动方法与操作步骤](https://www.mzbky.com/248.html)
+
+apt update
+apt upgrade
+
+apt install realtek-rtl88xxau-dkms
+apt dist-upgrade
+
+vbox: 使用 2020.4 并且 upgrade
+sudo apt-get install dkms
+apt install realtek-rtl88xxau-dkms
+apt dist-upgrade
+
+### 高清屏设置
+
+[最新版 Kali 2020.3 高DPI 缩放，桌面文字太小怎么调？](https://blog.csdn.net/vanarrow/article/details/108893868)
+
+### 破解wifi
+
+[使用Kali Linux 暴力破解wifi密码详细步骤](https://www.mzbky.com/327.html)
+

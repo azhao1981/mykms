@@ -39,9 +39,9 @@ element
   不用手机号
 [matrix](https://matrix.org/docs/projects/bridge/mautrix-telegram)
 telegram
-  https://signal.org/download/
-  https://signal.org/android/apk/
+  
 
 signal
-
+https://signal.org/download/
+  https://signal.org/android/apk/
 漏洞收购平台 zerodium
