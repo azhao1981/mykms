@@ -1,5 +1,96 @@
 # 202101
 
+## 0201
+
+
+https://github.com/go-delve/delve
+5、delve：一款 Go 语言的调试工具。如果你还在像我一样用 fmt.Println 调试 go 的代码，就试试这个工具吧。万星的开源项目可不是开玩笑的，它上手简单并且支持多种方式调用，助你快速找到 Bug
+7、JustAuth：帮你搞定第三方登陆的 Java 开源组件。使用简单、接入方便，帮你随心所欲地接入第三方登陆，让登陆变得简单。目前已经支持十多个平台，还在持续扩充中
+https://github.com/justauth/JustAuth
+💯 小而全而美的第三方登录开源组件。目前已支持Github、Gitee、微博、钉钉、百度、Coding、腾讯云开发者平台、OSChina、支付宝、QQ、微信、淘宝、Google、Facebook、抖音、领英、小米、微软、今日头条、Teambition、StackOverflow、Pinterest、人人、华为、企业微信、酷家乐、Gitlab、美团、饿了么和推特等第三方平台的授权登录。 Login, so easy!
+
+8、java-design-patterns：设计模式 Java 的最佳实践，出自开源社区大佬们之手。作为有梦想和追求的 Java 程序员，当然需要会一些设计模式啦。这个项目虽然是英文的但是先看代码和图，尝试理解含义那么英文描述也就能猜得八九不离十了。不要让英语作为你不努力的借口，努力变强吧！在线阅读
+https://github.com/iluwatar/java-design-patterns
+
+11、Anki-Android：高效学习神器 Anki 安卓客户端。
+Anki 是一个帮助学习的记忆卡片软件，卡片正面是问题背面是答案，然后根据记忆公式帮你复习和记牢。
+下载地址 如果下载后不会用的话，本文点赞过 100 我出一份小白教程给大家上手这个神器
+https://github.com/ankidroid/Anki-Android
+
+12、cloudbase-framework：腾讯开源的云原生一体化部署工具。一键将项目部署上云，不限制框架和语言
+https://github.com/Tencent/cloudbase-framework
+
+
+13、newbee-mall-vue3-app：基于 Vue 3.0 技术栈的电商网站前端开源项目。它麻雀虽小五脏俱全，包含模块：首页、类型分类、搜索、地址管理、登录注册等等，该有的基本上都有涉及到。对新手友好，在熟悉 Vue 3.x 的朋友也可以来看看
+https://github.com/newbee-ltd/newbee-mall-vue3-app
+14、X6：AntV 旗下的图编辑引擎。提供了开箱即用的交互组件和简单易用的节点定制能力，从而能够快速完成流程图、DAG 图、ER 图等图应用。示例代码：
+https://github.com/antvis/X6
+
+19、Zappa：Python 无服务框架，功能即服务（serverless）。你知道 serverless 是什么吗？不懂的老铁扣 1 🤝 我摊牌了我不懂这个玩意儿。直到我看到了 Zappa 这个项目，然后我的脑海里就几个字：甩手掌柜。用它开发完功能，几个命令打包上传到云服务平台，然后就不用管啦！不仅程序员喜欢它，老板也喜欢因为能够降低服务器成本（省钱）。来感受下“知识”的力量吧
+https://github.com/Miserlou/Zappa
+
+20、streamlit：能够快速地把数据制作成可视化、交互页面的 Python 框架。分分钟让你的数据变成图表，并且该项目提供免费的共享服务平台帮你的项目上线，方便数据的共享和讨论
+https://github.com/streamlit/streamlit
+
+22、xonsh：支持 Python 赋能的 shell。如果你不会编写 shell 脚本，但是会 Python。那通过这个项目可以让你混用 shell 命令和 Python 语法，高效快速地完成你想要的功能
+🐚 Python-powered, cross-platform, Unix-gazing shell
+https://github.com/xonsh/xonsh
+
+23、spree：基于 Ruby on Rails 实现的大而全的电子商城开源项目。功能齐全项目结构清晰：
+https://github.com/spree/spree
+
+27、game-programmer：游戏程序员的学习路径图。一位游戏开发大神开源的项目，希望能够帮助向往游戏开发的你 or 你的孩子，走上游戏开发这条“不归路”。中文
+https://github.com/miloyip/game-programmer
+https://miloyip.github.io/game-programmer/game-programmer-zh-cn.svg
+
+31、awesome-seo：有关 Google SEO 和流量变现资料的项目。该项目是作者学习 SEO 过程中整理的权威资料，推荐给有个人网站的小伙伴们
+https://github.com/madawei2699/awesome-seo
+32、makeaplan_public：使用 Flutter 和 Go 开发的「制定计划 APP」。帮助用户记录和追踪自己的计划，辅助用户完成自己的目标。手机端用的是 Flutter 后端用 Go 实现，服务器和客户端通过 ProtoBuffer+grpc 进行通信。可作为学习 Flutter 和 Go 的实战项目
+https://github.com/DuanJiaNing/makeaplan_public
+33、free-font：免费可商用的字体集合。这个项目收录的都是免费可商用的字体，并且仔细地标记出了商用时是否需要获取授权等细节
+https://github.com/wordshub/free-font
+大概是2020年最全的免费可商用字体，这里收录的商免字体都能找到明确的授权出处，可以放心使用，持续更新中...
+
+34、DeepLearning-500-questions：《深度学习 500 问》AI 工程师面试知识点的书籍。内容涵盖深度学习的知识点及各大公司常见的笔试题
+https://github.com/scutan90/DeepLearning-500-questions
+
+35、nanodet：移动端的轻量级 Anchor-Free 目标检测模型。具有体积小（1.8 MB）、速度快（10.23 ms）、便于训练（硬件要求低）、部署简单（安卓示例）等优点
+https://github.com/RangiLyu/nanodet
+
+一文打尽 Linux/Windows 端口复用实战
+https://www.anquanke.com/post/id/230090
+
+应急响应之入侵排查
+https://www.freebuf.com/articles/system/260724.html
+勒索软件解密工具集
+腾讯哈勃：https://habo.qq.com/tool
+
+Apache Log4j反序列化详细分析
+https://www.anquanke.com/post/id/229489
+初识智能网联汽车安全
+https://www.anquanke.com/post/id/230212
+
+IoT漏洞研究（五）APP应用 会员
+https://www.freebuf.com/articles/terminal/258586.html
+安全基线指南：一本修炼IoT安全设备的“武功秘籍”
+https://www.freebuf.com/articles/terminal/262016.html
+
+巧用SSH转发功能深入穿透内网
+https://www.freebuf.com/articles/web/259949.html
+
+如何通过pDNS寻找SUNBURST后门的受害者
+https://www.freebuf.com/articles/system/260081.html
+SolarWinds Orion
+
+网络安全运营能力建设思路（五） 会员
+https://www.freebuf.com/articles/es/258191.html
+
+如何使用Teler进行实时HTTP入侵检测
+https://www.freebuf.com/articles/web/258057.html
+
+红队基操系列：流量代理、免杀钓鱼
+https://www.freebuf.com/articles/network/259639.html
+
 ## 0129
 
 技术分享：渗透测试中的MSSQL横向活动研究

