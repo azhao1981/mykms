@@ -76,8 +76,16 @@ $ make
     4) Debian 10.0 (Buster) - sudo 1.8.27, libc-2.28
 另外的一个，不知道用法：
 问题: 现在看 只有上面的版本可用
+
+https://github.com/blasty/CVE-2021-3156
+
 这个版本不行,应该是参数不对
 Welcome to Ubuntu 18.04.2 LTS (GNU/Linux 4.15.0-52-generic x86_64)
+
+使用 Ubuntu 18.04.5 
+18.04.2 不可以
+18.04.4 可以 
+18.04.5 可以
 
 其它有视频可以完成的:
 

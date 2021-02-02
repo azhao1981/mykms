@@ -208,3 +208,21 @@ http://einverne.github.io/post/2017/12/curl-usage.html
 
 Linux 下显示网络流量
 http://einverne.github.io/post/2018/02/linux-show-network-traffic.html
+
+## 终端样式
+
+[linux如何去掉目录背景颜色](https://blog.csdn.net/weixin_41010198/article/details/88816329)
+
+```bash
+echo "OTHER_WRITABLE 01;34" >> $HOME/.dir_colors
+eval `dircolors $HOME/.dir_colors`
+source ~/.bashrc
+```
+
+https://www.runoob.com/linux/linux-comm-dircolors.html
+
+https://github.com/arcticicestudio/nord-dircolors
+
+https://github.com/seebi/dircolors-solarized
+
+

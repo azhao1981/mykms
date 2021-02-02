@@ -1,7 +1,29 @@
 # 202101
 
-## 0201
+## 0202
 
+1. Google公开了Libgcrypt加密库中的严重漏洞，影响了许多项目
+GNU Privacy Guard（GnuPG）的Libgcrypt加密软件中的一个“严重”漏洞，可能使攻击者可以将任意数据写入目标计算机，从而可能导致远程执行代码。
+[Google Discloses Severe Bug in Libgcrypt Encryption Library—Impacting Many Projects](https://thehackernews.com/2021/01/google-discloses-severe-bug-in.html)
+
+CDK:一款针对容器场景的多功能渗透工具
+https://paper.seebug.org/1474/
+WordPress 5.0.0 - Image Remote Code Execution
+https://www.exploit-db.com/exploits/49512
+
+安全运营之SOAR：蓄势待发 会员
+https://www.freebuf.com/articles/security-management/260780.html
+
+CobalStrike 4.0 生成后门几种方式 及 主机上线后基础操作
+https://www.anquanke.com/post/id/230099
+
+浅谈溯源思维
+https://www.anquanke.com/post/id/229474
+
+基于智能手机的近源渗透测试案例分享（二）——“点到为止”的测试成都某消防部门
+https://www.anquanke.com/post/id/230001
+
+## 0201
 
 https://github.com/go-delve/delve
 5、delve：一款 Go 语言的调试工具。如果你还在像我一样用 fmt.Println 调试 go 的代码，就试试这个工具吧。万星的开源项目可不是开玩笑的，它上手简单并且支持多种方式调用，助你快速找到 Bug
