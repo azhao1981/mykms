@@ -1,5 +1,29 @@
 # 202101
 
+## 0203
+
+端口和识别列表
+https://www.iana.org/assignments/service-names-port-numbers/service-names-port-numbers.xhtml
+nmap top 1000 包括哪些端口
+https://nullsec.us/top-1-000-tcp-and-udp-ports-nmap-default/
+
+str = "3,5-10,90"
+b = str.split(',').map{|i| i.include?("-") ? (k,m = i.split("-"); (k.to_i..m.to_i).to_a) : i.to_i }.flatten
+b.include?(3456)  false
+b.include?(80) true
+
+基于机器学习的Web管理后台识别方法探索
+https://www.freebuf.com/articles/network/261009.html
+
+手动打造Snort+barnyard2+BASE可视化报警平台
+https://www.freebuf.com/articles/network/260175.html
+
+FreeBuf甲方群话题讨论 | 甲方安全量化指标&安全培训有效开展
+https://www.freebuf.com/articles/neopoints/262688.html
+
+CVE-2020-24581 D-Link DSL-2888A 远程命令执行漏洞分析
+https://www.anquanke.com/post/id/229323
+
 ## 0202
 
 1. Google公开了Libgcrypt加密库中的严重漏洞，影响了许多项目
@@ -8,6 +32,7 @@ GNU Privacy Guard（GnuPG）的Libgcrypt加密软件中的一个“严重”漏�
 
 CDK:一款针对容器场景的多功能渗透工具
 https://paper.seebug.org/1474/
+
 WordPress 5.0.0 - Image Remote Code Execution
 https://www.exploit-db.com/exploits/49512
 
