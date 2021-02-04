@@ -29,6 +29,12 @@
 + 2C4G
 + 如果是高清屏，打开后右下角，虚拟显示器 缩放200%
 
+### kali 网络
+开了两个网络，一个nat network+host only.
+但是开机后，只有一个打开，一个自动关闭，需要打开：
+https://superuser.com/questions/678893/cant-access-internet-in-kali-virtualbox
+ sudo dhclient eth0
+
 ### kali 中文
 
 [2020年kali最新国内更新源/etc/apt/sources.list](https://blog.csdn.net/SouthWind0/article/details/108405281)
