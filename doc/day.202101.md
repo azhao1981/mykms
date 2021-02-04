@@ -1,5 +1,49 @@
 # 202101
 
+## 0204
+
+漏洞分析 - Kong未授权访问漏洞(CVE-2020-11710)
+https://xz.aliyun.com/t/7631
+
+https://cve.mitre.org/cgi-bin/cvekey.cgi?keyword=kong
+https://www.anquanke.com/vul/id/2277092
+Docker Image kong 默认配置问题漏洞
+
+漏洞复现: Apache Druid 远程代码执行漏洞 (CVE-2021-25646)
+https://paper.seebug.org/1476/
+8888端口
+https://nosec.org/home/detail/4667.html
+【安全通报】Apache Druid 远程代码执行漏洞 (CVE-2021-25646)
+
+Sudo 1.9.5p1 - 'Baron Samedit ' Heap-Based Buffer Overflow Privilege Escalation (2)
+https://www.exploit-db.com/exploits/49522
+Sudo 1.9.5p1 - 'Baron Samedit ' Heap-Based Buffer Overflow Privilege Escalation (1)
+https://www.exploit-db.com/exploits/49521
+
+
+挖洞经验 | 用Shodan发现IBM泄露日志信息并接管其第三方应用服务
+https://www.freebuf.com/articles/web/260305.html
+TODO：在 tomcat中查找日志
+
+Linux通过第三方应用提权实战总结
+https://www.freebuf.com/articles/system/261271.html
+
+自动化集成信息收集工具：infoscaner
+https://www.freebuf.com/sectool/262391.html
+
+1. Trickbot恶意软件利用Masscan映射受害者的本地网络
+Trickbot恶意软件已通过网络侦察模块升级，该模块名为masrv，使用开源的Masscan工具，可让Trickbot在感染受害者的计算机后对本地网络进行迅速的扫描。目前这个模块被部署为Windows DLL文件，处于测试阶段，Trickbot背后的操作人员在测试这个网络映射功是否能提升感染的设备数量、增加恶意软件感染效率。[外刊-阅读原文]
+https://www.bleepingcomputer.com/news/security/trickbot-malware-now-maps-victims-networks-using-masscan
+
+记一次生Windows下的应急过程
+https://www.freebuf.com/articles/paper/261016.html
+
+Docker容器的漏洞分析与安全研究
+https://www.anquanke.com/post/id/229487
+
+Windows Installer 本地权限提升漏洞通告
+https://www.anquanke.com/post/id/230954
+
 ## 0203
 
 端口和识别列表
@@ -239,8 +283,7 @@ https://github.com/ckjbug/Hacking
 
 如何利用SambaV3漏洞，“永恒之黑”干掉Win10？
 https://mp.weixin.qq.com/s/01cWjpHtAVrgFugyDxFPQQ
-Shiro反序列化漏洞详细分析
-https://www.anquanke.com/post/id/228889
+
 
 2020年Kali渗透教程/网络安全/kali/Linux/黑客/web安全/信息安全/白帽黑客
 https://www.bilibili.com/video/BV1Kt411u73T?from=search&seid=13905889619028018688
@@ -621,10 +664,7 @@ Windows主机日志分析办法与思路
 https://www.freebuf.com/articles/neopoints/258131.html
 关于PDD员工发帖溯源联想到的相关技术与实现
 https://www.freebuf.com/articles/es/260549.html
-Shiro权限绕过漏洞详细分析
-https://www.anquanke.com/post/id/226899
-Shiro反序列化的检测与利用
-https://www.anquanke.com/post/id/227090
+
 Apache-Solr-RCE深入利用
 https://www.anquanke.com/post/id/227557
 初探 Python Flask+Jinja2 SSTI

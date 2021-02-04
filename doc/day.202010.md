@@ -593,7 +593,6 @@ https://www.infoq.cn/article/RBGUviK2cgXoEQYbO451
 
 [CloudBees Jenkins跨站脚本执行漏洞（CVE-2020-2220）](http://www.nsfocus.net/vulndb/49596)
 
-[【安全通报】Shiro & Nexus Repository Manger 2/3 权限验证绕过漏洞（CVE-2020-13933）](https://nosec.org/home/detail/4591.html)
 
 ## 20201016
 

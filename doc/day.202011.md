@@ -327,8 +327,7 @@ https://github.com/k0sproject/k0s
 https://github.com/microsoft/Web-Dev-For-Beginners
 https://dev.to/azure/announcing-a-free-curriculum-web-development-for-beginners-142k
 
-Apache Shiro权限绕过漏洞CVE-2020-11989分析
-https://www.anquanke.com/post/id/222489
+
 
 网络攻击前沿：ATT&CK 模型一览
 https://www.freebuf.com/articles/ics-articles/254809.html

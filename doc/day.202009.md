@@ -109,7 +109,6 @@ magnet:?xt=urn:btih:3D8B16242B56A3AAFB8DA7B5FC83EF993EBCF35B&dn=Microsoft leaked
 
 [Jenkins Script Security 插件 安全漏洞](http://www.cnnvd.org.cn/web/xxk/ldxqById.tag?CNNVD=CNNVD-202009-1359)
 
-[Apache Shiro权限绕过漏洞CVE-2020-1957](https://www.freebuf.com/vuls/249112.html)
 
 [Hacking All The Cars - Tesla 远程API分析与利用（上）](https://www.anquanke.com/post/id/218396)
 
@@ -153,8 +152,7 @@ Atlassian Jira 4.12.0版本之前存在安全漏洞。该漏洞源于Jira Server
 
 ## 20200922
 
-Apache Shiro 权限绕过漏洞CVE-2020-11989
-https://www.freebuf.com/vuls/249380.html
+
 
 ATT&CK战术入门与案例解析​
 https://www.anquanke.com/post/id/218143
@@ -452,12 +450,7 @@ Struts2-059 远程代码执行漏洞（CVE-2019-0230）分析
 https://nosec.org/home/detail/4556.html
 ## 20200904
 
-shiro < 1.6.0的认证绕过漏洞分析(CVE-2020-13933)
-https://www.anquanke.com/post/id/214964
-https://start.spring.io/
 
-Shiro 权限绕过 CVE-2020-13933分析
-https://www.anquanke.com/post/id/216096
 
 ## 20200903
 
@@ -512,8 +505,7 @@ https://www.anquanke.com/post/id/216270
 从Webshell的视角谈攻防对抗
 https://www.freebuf.com/articles/network/247359.html
 
-一款检测Shiro反序列化的Burp插件
-https://www.freebuf.com/sectool/244886.html
+
 
 ## 20200901
 
