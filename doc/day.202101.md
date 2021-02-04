@@ -1,6 +1,16 @@
 # 202101
 
 ## 0204
+https://www.cnblogs.com/zsmumu/p/13389816.html
+Win10 各种端口占用问题的解决办法
+windows socket initialization fail解决方法
+https://blog.csdn.net/netcliff/article/details/6724353
+
+netsh int ipv4 show dynamicport tcp
+netsh int ipv4 show excludedport tcp
+netsh int ipv4 set dynamicport tcp start=49152 num=16384
+
+netsh winsock reset
 
 漏洞分析 - Kong未授权访问漏洞(CVE-2020-11710)
 https://xz.aliyun.com/t/7631
