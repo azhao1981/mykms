@@ -120,7 +120,6 @@ https://www.cnvd.org.cn/
 
 [Go二进制文件逆向分析从基础到进阶——综述](https://www.anquanke.com/post/id/214940)
 
-[shiro < 1.6.0的认证绕过漏洞分析(CVE-2020-13933)](https://www.anquanke.com/post/id/214964)
 
 [利用 ZoomEye 追踪多种 Redteam C&C 后渗透攻击框架](https://www.anquanke.com/post/id/214897)
 
@@ -195,18 +194,7 @@ https://square.github.io/keywhiz/
 
 ## 20200819
 
-【安全通报】Apache Shiro < 1.6.0 权限绕过漏洞（CVE-2020-13933）
-https://nosec.org/home/detail/4531.html
-【安全风险通告】Shiro又爆高危漏洞，Apache Shiro身份验证绕过漏洞安全风险通告
-https://mp.weixin.qq.com/s?__biz=MzU5NDgxODU1MQ==&mid=2247488670&idx=1&sn=e520554f545a6783994a9bc8100249ac
-https://sourcegraph.com/github.com/apache/shiro/-/compare/shiro-root-1.5.3...shiro-root-1.6.0
-http://shiro.apache.org/10-minute-tutorial.html
-git clone https://github.com/apache/shiro.git
-git checkout shiro-root-1.6.0 -b shiro-root-1.6.0
 
-gitee 镜像
-https://gitee.com/projects/check_project_duplicate?import_url=https%3A%2F%2Fgithub.com%2Fapache%2Fshiro
-需要登录
 
 ## 20200818
 
@@ -260,7 +248,6 @@ webuser   2666  2.5  1.5 779544 127636 ?       Sl   17:56   0:02 puma 3.12.4 (un
 
 [CVE-2019-0230：Apache Strusts2 远程代码执行漏洞通告](https://www.anquanke.com/post/id/214104)
 
-[Shiro-550 PoC 编写日记](https://www.anquanke.com/post/id/213751)
 
 ## 20200813
 
@@ -332,7 +319,6 @@ nmap 7.8
 ncrask <https://nmap.org/ncrack/>
 [Tsunami：一款功能强大的通用网络安全扫描工具](https://www.freebuf.com/articles/network/244588.html)
 
-[Java反序列化：Apache-Shiro复现分析](https://www.freebuf.com/articles/network/245019.html)
 
 [基于Kali的Snort配置和入侵检测测试](https://www.freebuf.com/sectool/243790.html)
 
