@@ -1,5 +1,97 @@
 # 202101
 
+## 0205
+https://medium.com/@mylesb/exploiting-a-wordpress-website-with-metasploit-ffa6f4e31e09
+https://www.exploit-db.com/docs/english/45556-wordpress-penetration-testing-using-wpscan-and-metasploit.pdf
+
+MySQL口令扫描渗透测试攻略
+https://xz.aliyun.com/t/1652
+https://github.com/rootphantomer/Blasting_dictionary
+mysql 案例 ~ mysql安全渗透测试
+https://www.cnblogs.com/danhuangpai/p/10905655.html
+
+https://www.hackingarticles.in/penetration-testing-on-mysql-port-3306/
+https://medium.com/@irfaanshakeel/mysql-pentesting-using-metasploit-framework-7c800e6209d7
+
+https://github.com/danielmiessler/SecLists/blob/master/Passwords/Common-Credentials/10-million-password-list-top-10000.txt
+https://gitee.com/azhao-1981/SecLists
+https://tools.kali.org/password-attacks/seclists
+ls -lh /usr/share/seclists/
+
+set pass_file "/usr/share/seclists/Passwords/Common-Credentials/10-million-password-list-top-1000.txt"
+
+SecLists is the security tester's companion. 
+It's a collection of multiple types of lists used during security assessments, collected in one place. List types include usernames, passwords, URLs, sensitive data patterns, fuzzing payloads, web shells, and many more.
+https://github.com/danielmiessler/SecLists
+
+https://www.offensive-security.com/metasploit-unleashed/
+https://www.exploit-db.com/google-hacking-database
+https://geekwire.eu/ghdb/
+https://geekwire.eu/category/security/pentest/
+
+https://www.freebuf.com/sectool/141544.html
+[信息收集工具recon-ng详细使用教程](https://geekwire.eu/recon-ng-v5-tutorial/)
+
+[Exploit-database使用新手指南](https://www.freebuf.com/sectool/139685.html)
+
+[大学霸 Kali Linux 安全渗透教程](https://wizardforcel.gitbooks.io/daxueba-kali-linux-tutorial/content/index.html)
+[4.7 其他信息收集手段](https://wizardforcel.gitbooks.io/daxueba-kali-linux-tutorial/content/23.html)
+
+[国产 | Viper：开源的图形化内网渗透工具 - 安装及入门](https://www.anquanke.com/post/id/230287)
+https://github.com/FunnyWolf/Viper
+
+[Ary自动渗透工具使用体验](https://www.freebuf.com/sectool/260698.html)
+
+空间测绘
+https://beta.shodan.io
+  [空间测绘系列之 - Shodan 云监测功能分析](https://attacker.cc/)
+  https://www.shodan.io/store/member#16.720385051693988/3.515625/3/satellite/hash:77172915
+    $49 的会员？
+https://censys.io/ 学术 开源
+  https://github.com/censys
+  https://github.com/hrbrmstr/censys
+  [网络空间搜索引擎全方位评测](https://www.freebuf.com/sectool/129211.html)
+https://fofa.so/ 300 1000 +企业会员 终身
+  [工具的使用 | 网络空间搜索引擎Fofa的简单使用](https://my.oschina.net/u/4580734/blog/4363050)
+https://www.zoomeye.org/
+  有相关漏洞
+
+sonar，binaryedge，shadowserver，expanse，
+[sonar](https://www.rapid7.com/research/project-sonar/)
+
+
+以后要开源的：
+https://github.com/TideSec/Tide
+  https://github.com/knownsec/Pocsuite
+  https://github.com/knownsec/pocsuite3
+  https://pocsuite.org/
+  Pocsuite3 是知道创宇404实验室打造的一款开源的远程漏洞测试框架
+  TODO：细看，知识
+Tide 安装团队
+http://www.tidesec.net/
+  TODO: 深看
+应急响应Wiki
+https://www.yuque.com/tidesec/emergency
+https://github.com/tide-emergency/yingji
+
+网络空间测绘的生与死
+https://zhuanlan.zhihu.com/p/92490432
+https://zhuanlan.zhihu.com/p/92930581
+https://www.anquanke.com/post/id/194548
+https://www.secrss.com/articles/16624
+  TODO：细看
+http://www.hackdig.com/08/hack-115447.htm
+
+插件分享 | 可调用Goby API直接进行漏洞检测的Goby_exp
+https://nosec.org/home/detail/4675.html
+Goby 内测版1.8.237 | ICON测绘功能来了
+https://nosec.org/home/detail/4661.html
+
+内网渗透之Windows持久化后门总结
+https://mp.weixin.qq.com/s/VZdCSqbLxJqHsyyCX9Q22A
+使用Kettle模型清洗全国弱口令Top 1000 金币
+https://www.freebuf.com/articles/database/134276.html
+
 ## 0204
 https://www.cnblogs.com/zsmumu/p/13389816.html
 Win10 各种端口占用问题的解决办法
@@ -48,8 +140,7 @@ https://www.bleepingcomputer.com/news/security/trickbot-malware-now-maps-victims
 记一次生Windows下的应急过程
 https://www.freebuf.com/articles/paper/261016.html
 
-Docker容器的漏洞分析与安全研究
-https://www.anquanke.com/post/id/229487
+
 
 Windows Installer 本地权限提升漏洞通告
 https://www.anquanke.com/post/id/230954
