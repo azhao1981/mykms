@@ -1,6 +1,132 @@
 # 202101
 
+## 0209
+
+https://github.com/laike9m/Cyberbrain
+还不知道怎么用
+
+聊聊APT的溯源分析
+https://www.anquanke.com/post/id/231012
+
+CVE-2021-3156调试分析|sudo
+https://www.anquanke.com/post/id/231077
+CSP常见配置及绕过姿势
+https://www.freebuf.com/articles/web/260535.html
+Metasploit 的 payload 特征
+https://www.anquanke.com/post/id/231002
+Tomcat容器攻防笔记之URI解析特性利用
+https://www.anquanke.com/post/id/230238
+
+红队测试之Windows提权小结
+https://www.freebuf.com/articles/system/263139.html
+
+## 0208
+
+Apache Shiro 两种姿势绕过认证分析（CVE-2020-17523）
+https://paper.seebug.org/1478/
+
+
+
+[Jumpserver-RCE复现及报警规则](https://www.freebuf.com/vuls/261199.html)
+
+如何使用Falco检测漏洞CVE-2020-8554
+https://www.freebuf.com/vuls/258937.html
+
+SharpMapExec：针对网络渗透测试高级瑞士Knife
+https://www.freebuf.com/articles/web/261281.html
+邮件钓鱼入门到入土
+https://www.freebuf.com/articles/web/260391.html
+
+技术分享：一种新的滥用缓存密钥规范化的缓存投毒技术
+https://www.freebuf.com/articles/web/260622.html
+
+免费 office online
+https://www.microsoft.com/zh-cn/microsoft-365/free-office-online-for-the-web
+
+挖洞经验 | Microsoft Forms未授权获取他人邮箱信息漏洞
+https://www.freebuf.com/articles/web/260603.html
+
+YouTube (https://www.youtube.com/watch?v=8LQYgnSx3lI)
+DEF CON 27: The WiFi Kraken with D4rkm4tter - Hak5 2602
+Hak5 -- Cyber Security Education, Inspiration, News & Community since 2005:
+
+旧手机搭建服务器的教程
+https://play.google.com/store/apps/details?id=com.icecoldapps.serversultimate
+
+sudo apt policy sudo
+
+https://discord.com/
+https://github.com/discordjs/discord.js
+
+INFO-SPIDER 是一个集众多数据源于一身的爬虫工具箱🧰，旨在安全快捷的帮助用户拿回自己的数据，工具代码开源，流程透明。支持数据源包括GitHub、QQ邮箱、网易邮箱、阿里邮箱、新浪邮箱、Hotmail邮箱、Outlook邮箱、京东、淘宝、支付宝、中国移动、中国联通、中国电信、知乎、哔哩哔哩、网易云音乐、QQ好友、QQ群、生成朋友圈相册、浏览器浏览历史、12306、博客园、CSDN博客、开源中国博客、简书。
+https://github.com/kangvcar/InfoSpider
+
+https://github.com/google/googletest
+
+Lab Materials for MIT 6.S191: Introduction to Deep Learning
+https://github.com/aamini/introtodeeplearning
+
+## 0207
+
+https://uniapp.dcloud.io/
+https://umijs.org/
+http://docs.fe.flyudesk.com/
+http://yfiles.fe.flyudesk.com/
+
+https://huajiakeji.com/android/2019-08/2883.html
+Scrcpy - 开源免费投屏控制软件
+
+## 0206
+https://www.random.org/
+在线密码生成器：
+https://www.ssh.com/iam/password/generator
+https://www.random.org/strings/?num=1&len=20&digits=on&upperalpha=on&loweralpha=on&unique=on&format=plain&rnd=new
+很干净的生成密码的在线工具，没有后端请求
+https://passwordsgenerator.net/
+
+https://www.ssh.com/ssh/keygen/#what-is-ssh-keygen?
+
+推荐： ssh-keygen -t rsa -b 4096 -f xxx
+ssh-keygen -t dsa
+ssh-keygen -t ecdsa -b 521
+ssh-keygen -t ed25519
+
+git加密：
+使用 git-secret 对仓库中的文件进行加密
+https://tautcony.xyz/2020/03/07/git-secret/
+缺点： 基于 bash 和 GPG 的工具，所以 Windows 显然就无缘了
+Git加密存储文件 _|按这个文章，windows也是可以用的
+https://www.mikesay.com/2020/12/16/git-encrypt-file-in-repository/
+
+[git 加密_4个用于Git加密的秘密管理工具](https://blog.csdn.net/cumo3681/article/details/107390566)
+  https://opensource.com/article/19/2/secrets-management-tools-git
+  https://github.com/AGWA/git-crypt
+    [在 git-ops 中使用 git-crypt 保护敏感数据](http://generalthink.github.io/2020/03/01/use-git-crypt/)
+  https://github.com/StackExchange/blackbox
+  https://github.com/mozilla/sops
+  https://github.com/elasticdog/transcrypt
+加密git远端版本库
+http://blog.linjunhalida.com/blog/encrypted-git-repo/
+
+设置加密的git仓库
+https://qastack.cn/superuser/1162907/setting-up-an-encrypted-git-repository
+git在推/拉时加密/解密远程存储库文件
+https://www.thinbug.com/q/2456954
+
 ## 0205
+加密软件
+https://www.veracrypt.fr/en/Home.html
+https://www.veracrypt.fr/en/Downloads.html
+VeraCrypt - 最佳免费开源跨平台的文件加密工具 (支持U盘加密/硬盘分区加密)
+https://www.iplaysoft.com/veracrypt.html
+
+java的
+https://github.com/cryptomator/cryptomator
+
+Ventoy – 开源 U 盘启动盘制作工具，支持启动多个系统，还能当普通 U 盘保存文件[Win/Linux]
+https://www.appinn.com/ventoy/
+https://github.com/ventoy/Ventoy/releases
+
 https://medium.com/@mylesb/exploiting-a-wordpress-website-with-metasploit-ffa6f4e31e09
 https://www.exploit-db.com/docs/english/45556-wordpress-penetration-testing-using-wpscan-and-metasploit.pdf
 

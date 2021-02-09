@@ -218,3 +218,17 @@ https://github.com/Al1ex/CVE-2020-35728
 
 从Java RMI反序列化到内网沦陷
 https://www.anquanke.com/post/id/228569
+
+## Skywalking
+
+attack: Enterprise> Persistent> Server Software Component> Web Shell
+
+[【安全通报】Skywalking 远程代码执行漏洞](https://nosec.org/home/detail/4678.html)
+
+
+[【漏洞预警】Apache Skywalking GraphQL 注入与远程代码执行漏洞](https://help.aliyun.com/noticelist/articleid/1060803348.html?spm=5176.2020520154.sas.27.7dad5lTv5lTvEE)
+
+Skywalking历史上存在两次sql注入漏洞，CVE-2020-9483、CVE-2020-13921
+修复建议
+升级Apache Skywalking 到最新的 v8.4.0 版本。
+将默认H2数据库替换为其它支持的数据库。

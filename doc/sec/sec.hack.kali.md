@@ -552,6 +552,10 @@ https://www.cnblogs.com/wjw-zm/p/11695688.html
 Kali Linux上的10种最佳渗透测试工具
 https://zhuanlan.zhihu.com/p/103684132
 
+这个看起来比较新了
+The Alfa AWUS036ACH, AWUS1900, and AWUS036AC can run with monitor mode and injection support on Kali Linux 2020.3. These products use the Realtek RTL8812AU and Realtek RTL8814AU chipsets respectively. But Github changed the driver package on October 9th 2020 with a change description of "Makefile: simplify DKMS install/removal" and so the install process is different than in past versions. 
+https://www.youtube.com/watch?v=mVDbQtnivpM&ab_channel=RoklandTechnologies
+
 ### kali wifi 安装
 
 这里以  Realtek RTL8812AU 为例
