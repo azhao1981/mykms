@@ -823,3 +823,12 @@ https://github.com/byt3bl33d3r/MITMf
 
 Win10 C盘扩容？试试这两种方法！
 https://www.disktool.cn/content-center/extend-volume-c-with-ease.html
+
+## routersploit
+
+https://tools.kali.org/exploitation-tools/routersploit
+https://github.com/threat9/routersploit
+https://www.youtube.com/watch?v=fgau-Dx_34o&ab_channel=LoiLiangYang
+
+use scanners/routers/router_scan
+show options
