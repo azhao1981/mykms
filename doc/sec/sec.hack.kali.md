@@ -818,8 +818,14 @@ arp -a
 局域网 ARP 欺骗原理详解
 https://segmentfault.com/a/1190000009562333
 
-google mitmf github
+google: mitmf github
 https://github.com/byt3bl33d3r/MITMf
+python mitmf.py -i eth0 --arp --spoof --gateway 10.0.2.1 --target 10.0.2.4
+
+git clone git@gitee.com:azhao-1981/MITMf.git
+
+作者已经不更新而且，有更好的选择：
+https://github.com/bettercap/bettercap
 
 Win10 C盘扩容？试试这两种方法！
 https://www.disktool.cn/content-center/extend-volume-c-with-ease.html
