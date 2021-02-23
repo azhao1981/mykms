@@ -1,6 +1,20 @@
 # 202102
 
-## 0222 
+## 0223
+
+内网渗透测试：MySql的利用与提权思路总结
+https://www.freebuf.com/articles/network/261917.html
+
+活动作品20210221 肉鸡侦测实况 (侦测到4300多个肉鸡)
+https://www.bilibili.com/video/BV16b4y1R7v5
+
+知悉、预防、修复：谷歌提出开源软件漏洞治理框架
+https://www.freebuf.com/articles/network/263996.html
+
+打工人眼中攻防演练蓝军那些人那些事儿（一）
+https://www.freebuf.com/articles/network/261597.html
+
+## 0222
 
 Skywalking 远程代码执行漏洞分析
 https://paper.seebug.org/1485/
@@ -12,8 +26,12 @@ https://paper.seebug.org/1484/
 https://paper.seebug.org/1482/
 
 CVE-2021-3156 sudo heap-based bufoverflow 复现&分析
-
 https://www.anquanke.com/post/id/231408
+SUDO漏洞提权实战（CVE-2021-3156 POC）
+https://www.anquanke.com/post/id/231420
+
+
+
 分析SolarWinds Orion平台的另外三个漏洞
 https://www.anquanke.com/post/id/231451
 
