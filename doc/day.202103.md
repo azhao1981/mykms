@@ -2,6 +2,18 @@
 
 ## 20210301
 
+An updated version of the classic "Basic Computer Games" book, with well-written examples in a variety of common programming languages
+https://github.com/coding-horror/basic-computer-games
+A curated and opinionated list of resources for Chief Technology Officers, with the emphasis on startups
+https://github.com/kuchin/awesome-cto
+Universal Radio Hacker: Investigate Wireless Protocols Like A Boss
+https://github.com/jopohl/urh
+
+Manually curated collection of resources for frontend web developers.
+https://github.com/dypsilon/frontend-dev-bookmarks
+
+https://github.com/vitejs/awesome-vite
+
 [如何使用OpenCVE在本地进行CVE漏洞探究](https://www.freebuf.com/sectool/262676.html)
 https://github.com/opencve/opencve
 
