@@ -830,6 +830,27 @@ https://github.com/bettercap/bettercap
 Win10 C盘扩容？试试这两种方法！
 https://www.disktool.cn/content-center/extend-volume-c-with-ease.html
 
+### http server
+service apache2 start
+
+### DNS
+
+MITMf/*.conf
+python mitmf.py -i eth0 --arp --spoof --gateway 10.0.2.1 --target 10.0.2.4 --dns
+
+### bettercap
+
+apt install bettercap
+bettercap -iface eth0
+help
+help net.probe
+net.probe on
+net.show
+
+help arp.spoof
+set arp.spoof.fullduplex true
+set arp.spoof.targets true
+arp.spoof on
 ## routersploit
 
 https://tools.kali.org/exploitation-tools/routersploit

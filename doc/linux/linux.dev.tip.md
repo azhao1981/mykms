@@ -225,4 +225,10 @@ https://github.com/arcticicestudio/nord-dircolors
 
 https://github.com/seebi/dircolors-solarized
 
+## 终端.技巧
+
+ctrl +　Ｋ 删除光标后面的字符 
+ctrl + u 删除光标前面的字符
+ctrl + y 把删除的内容粘贴
+sudo　!! 上一命令加上sudo 执行
 
