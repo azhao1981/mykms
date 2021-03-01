@@ -640,3 +640,6 @@ https://docs.microsoft.com/zh-cn/sysinternals/downloads/tcpview
 79 vs code 插件离线安全
 
 如果在脱机环境中工作或反复看到此错误，请尝试从 https://github.com/microsoft/vscode-cpptools/releases 下载预包含了所有依赖项的扩展版本，然后使用 VS Code 中的“从 VSIX 安装”命令来安装它。
+
+80 win.desktop 桌面切换
+ctrl + win+ <- / ->

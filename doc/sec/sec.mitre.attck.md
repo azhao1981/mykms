@@ -7,6 +7,8 @@ ATT&CK 框架图中文翻译版 原为安恒奖品，自我二次翻译，修改
 https://github.com/NomadCN112/Chinese-translation-ATT-CK-framework
 http://vulhub.org.cn/attack
 
+[基于ATT&CK的完整信息搜集技巧PRE-Matrix（上）](https://www.freebuf.com/articles/network/261703.html)
+
 攻防最前线：ATT&CK模型解读
 https://www.freebuf.com/articles/ics-articles/254809.html
 EDR 即 Endpoint Detection and Response (终端**探测与响应**)

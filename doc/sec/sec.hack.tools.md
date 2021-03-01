@@ -28,6 +28,7 @@ textme
 talkatone
 
 ## 加密聊天
+
 viber
 silence
   不需要注册登录
@@ -45,3 +46,41 @@ signal
 https://signal.org/download/
   https://signal.org/android/apk/
 漏洞收购平台 zerodium
+
+Burp Suite :-https://portswigger.net/burp
+ZAP Proxy :-https://www.owasp.org/index.php/OWASP_Zed_Attack_Proxy_Project
+Knockpy:-https://github.com/nahamsec/HostileSubBruteforcer
+HostileSubBruteforcer:-https://github.com/aboul3la/Sublist3r
+Sublist3r:-https://github.com/aboul3la/Sublist3r
+crt.sh:-https://crt.sh
+IPV4info.com :-http://ipv4info.com
+SecLists:-https://github.com/danielmiessler/SecLists
+xss hunter:-https://xsshunter.com
+sqlmap:-http://sqlmap.org 
+Nmap 
+Eyewitness 
+Shodan 
+Censys
+ What CMS 
+BuiltWith 
+Nikto 
+Recon-ng 
+GitRob 
+CyberChef 
+OnlineHashCrack.com 
+idb 
+Wireshark 
+Bucket Finder 
+Race the Web 
+Google Dorks 
+JD GUI 
+Mobile Security Framework Ysoserial 
+Firefox Plugins 
+FoxyProxy 
+User Agent Switcher 
+Firebug 
+Hackbar 
+Websecurify 
+Cookie Manager+ CONTENTS XSS Me 
+OffsecExploit-db Search 
+Wappalyzer
