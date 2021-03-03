@@ -54,16 +54,19 @@ pwk2.0
 平常看到好的渗透hacking工具和多领域效率工具的集合
 https://github.com/taielab/awesome-hacking-lists
 
+WebRTC TURN协议初识及turnserver实践
+https://zhuanlan.zhihu.com/p/71025431
+
 利用Slack的TURN服务器访问Slack内部网络
 https://www.freebuf.com/vuls/233854.html
 TURN server allows TCP and UDP proxying to internal network, localhost and meta-data services
 https://hackerone.com/reports/333419
 https://news.ycombinator.com/item?id=22804290
 https://www.rtcsec.com/post/2020/04/how-we-abused-slacks-turn-servers-to-gain-access-to-internal-services/
-WebRTC TURN协议初识及turnserver实践
-https://zhuanlan.zhihu.com/p/71025431
+
 Turnserver服务器搭建
 https://developer.aliyun.com/article/670085
+
 
 
 https://www.exploit-db.com/exploits/49585
@@ -78,9 +81,6 @@ https://www.freebuf.com/articles/database/260626.html
 https://www.freebuf.com/articles/system/261866.html
 
 ## 0224
-
-Vite和Webpack的核心差异
-https://mp.weixin.qq.com/s/2jOl93Aqx0Rprxbf3BLV4w
 
 API, CLI & Web App for analyzing & finding a person's profile across 350+ social media websites (Detections are updated regularly)
 https://github.com/qeeqbox/social-analyzer
@@ -162,10 +162,7 @@ https://dev.to/alexsergey/project-structure-repository-and-folders-review-of-app
 https://dev.to/kieran6roberts/ditch-the-dreaded-div-semantic-html-elements-we-should-use-instead-1k60
 https://dev.to/akinghill/start-using-prettier-the-right-way-59kg
 
-https://cn.vitejs.dev/
-https://gitee.com/mirrors/ViteJS
-Vite 2.0 发布了
-https://zhuanlan.zhihu.com/p/351147547
+
 
 用于代替etr 前端多平台
 https://tauri.studio/en/
