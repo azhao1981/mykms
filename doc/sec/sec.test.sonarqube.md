@@ -26,8 +26,6 @@ https://docs.sonarqube.org/latest/analysis/external-issues/
 
 ## updates
 
-./sonarshell.sh udesk_react ssh://git@git.flyudesk.com:9876/udesk/udesk_react.git
-
 ## brakeman
 
 只有jenkins的插件
@@ -78,6 +76,7 @@ http://www.mianhuage.com/913.html
 https://nvd.nist.gov/vuln/data-feeds
 
 ### jenv maven
+
 https://github.com/jenv/jenv/issues/232
 https://www.codenong.com/30602633/
 jenv enable-plugin maven
@@ -89,7 +88,6 @@ mvn dependency:copy-dependencies --fail-never -l "$projectdir/zz-maven-dependenc
 
 mvn sonar:sonar \
   -Dsonar.projectKey=xxx \
-
 
 ### sonar-scanner
 
