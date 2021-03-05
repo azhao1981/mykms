@@ -1,5 +1,43 @@
 # 202103
 
+## 20210305
+
+开源社区大学，计算机科学自学的免费材料集合仓库。该项目不仅包含了学习的视频，还有学习计划和时间安排，同时这些课程大多来自国际知名大学。唯一不足的点是材料都是英文的，我想了想还是决定推荐给大家，毕竟学好英语也是编程路上必经之路
+https://github.com/ossu/computer-science
+
+基于 G2Plot 封装的 Python3 可视化库。G2Plot 是蚂蚁集团开源的一个基于图表分类学的可视分析图表库，内置 25+ 常见图表类型。该库是 Python 对 G2Plot 的封装，体验良好，开箱即用
+https://github.com/hustcc/PyG2Plot
+
+美观且便捷的 JavaScript 测试框架 Jest 的图形界面工具。遵循“不写测试的项目，不是好项目”的原则，测试是一定要写的。如果有一个赏心悦目的测试运行界面，应该能略微减轻写单元测试时，痛苦的心情吧
+https://github.com/Raathigesh/majestic
+
+封装 Apple/Mac 接口的 Go 库。用它仅在 80 行代码内就能写出个 macOS 菜单栏「番茄时钟」应用，查看源码
+https://github.com/progrium/macdriver
+
+基于 Go 的开源实时性能分析平台。仅需在源码中添加几行代码，pyroscope 就能帮你找出代码的性能问题、CPU 使用过高的原因，还有丰富的图表和调用树展示。支持 Go、Python、Ruby 编程语言，中文说明
+https://github.com/pyroscope-io/pyroscope/blob/main/translations/README.ch.md
+https://github.com/pyroscope-io/pyroscope
+
+基于gin+vue搭建的后台管理系统框架，集成jwt鉴权，权限管理，动态路由，分页封装，多点登录拦截，资源权限，上传下载，代码生成器，表单生成器，通用工作流等基础功能，五分钟一套CURD前后端代码，目前已支持VUE3，欢迎issue和pr~
+https://github.com/flipped-aurora/gin-vue-admin
+
+Rails Best Practices I
+https://www.youtube.com/watch?v=vw7PlBvLq9k
+
+🌟 Ruby Style Guide, with linter & automatic code fixer
+https://github.com/testdouble/standard
+
+https://learn.vonage.com/blog/2021/02/02/build-a-text-to-speech-application-with-hanami/
+https://gorails.com/episodes/rails-subdomain-cookies
+https://github.com/piotrmurach/strings-truncation 用于句子过长截断
+https://github.com/markets/invisible_captcha
+https://rive.app/
+
+渗透测试之地基免杀篇：MSF-loader底层分析免杀过360
+https://www.freebuf.com/articles/web/261686.html
+
+dnsmap weixin.qq.com 
+dnscan.py —domain weixin.qq.com域名
 ## 20210304
 安全建设的原则
 https://www.freebuf.com/articles/network/263146.html
