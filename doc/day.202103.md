@@ -1,5 +1,25 @@
 # 202103
 
+## 20210308
+https://github.com/kp300/shotdroid
+ShotDroid is a pentesting tool for android. There are 3 tools that have their respective functions, Get files from Android directory, internal and external storage, Android Keylogger + Reverse Shell and Take a webcam shot of the face from the front camera of the phone and PC.
+https://reconshell.com/advanced-mssql-injection-tricks/
+https://console.huaweicloud.com/ssa/?region=cn-north-4#/ssa/vulnerabilityManagement/emergencyVulnerability
+https://github.com/tone-row/flowchart-fun
+https://gitee.com/mirrors_trending/flowchart-fun
+https://flowchart.fun/?utm_source=hackernewsletter&utm_medium=email&utm_term=fav
+
+基于数据运营安全的个人信息保护
+https://www.freebuf.com/articles/neopoints/264566.html
+浅谈2021年网络系统流行架构
+https://www.freebuf.com/articles/network/265401.html
+记一次Vulnstack靶场内网渗透（四）
+https://www.freebuf.com/articles/network/263069.html
+持续风险监测体系实践：基于ATT&CK的APT高频技术分析
+https://www.freebuf.com/articles/network/263141.html
+一道shiro反序列化题目引发的思考
+https://www.anquanke.com/post/id/231488
+
 ## 20210305
 
 开源社区大学，计算机科学自学的免费材料集合仓库。该项目不仅包含了学习的视频，还有学习计划和时间安排，同时这些课程大多来自国际知名大学。唯一不足的点是材料都是英文的，我想了想还是决定推荐给大家，毕竟学好英语也是编程路上必经之路

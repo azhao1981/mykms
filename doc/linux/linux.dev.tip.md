@@ -232,3 +232,7 @@ ctrl + u 删除光标前面的字符
 ctrl + y 把删除的内容粘贴
 sudo　!! 上一命令加上sudo 执行
 
+## 输出重定向
+
+Shell重定向 ＆>file、2>&1、1>&2 、/dev/null的区别
+https://blog.csdn.net/u011630575/article/details/52151995
