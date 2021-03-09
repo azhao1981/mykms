@@ -42,12 +42,19 @@ https://superuser.com/questions/678893/cant-access-internet-in-kali-virtualbox
 /etc/apt/sources.list
 
 ```bash
+# 在北京比阿里快 https://mirrors.ustc.edu.cn/help/kali.html
+deb https://mirrors.ustc.edu.cn/kali kali-rolling main non-free contrib
+deb-src https://mirrors.ustc.edu.cn/kali kali-rolling main non-free contrib
+
 deb http://mirrors.aliyun.com/kali kali-rolling main non-free contrib
 deb-src http://mirrors.aliyun.com/kali kali-rolling main non-free contrib
 ```
 
 ```bash
 apt update
+apt upgrade -y
+apt-get dist-upgrade -y
+apt-get clean
 
 # 如果使用udemy 版本，需要自己那建 kali用户
 adduser kali
@@ -61,6 +68,7 @@ kali    ALL=(ALL:ALL) ALL
 apt install xfonts-intl-chinese ttf-wqy-microhei -y
 dpkg-reconfigure locales
 # 选择 en_US.utf-8 zh_CN.utf-8
+apt upgrade -y
 reboot
 ```
 
@@ -851,6 +859,9 @@ help arp.spoof
 set arp.spoof.fullduplex true
 set arp.spoof.targets true
 arp.spoof on
+net.sniff on
+caplets.show
+hstshijack/hstshijack
 ## routersploit
 
 https://tools.kali.org/exploitation-tools/routersploit
@@ -859,3 +870,17 @@ https://www.youtube.com/watch?v=fgau-Dx_34o&ab_channel=LoiLiangYang
 
 use scanners/routers/router_scan
 show options
+kali
+
+
+
+
+LINUX
+ sha256sum /path/to/file
+MAC
+ shasum -a 256 /path/to/file
+WINDOWS
+CMD
+ CertUtil -hashfile C:\path\to\file SHA256
+Powershell
+ Get-FileHash C:\path\to\file -Algorithm SHA256
