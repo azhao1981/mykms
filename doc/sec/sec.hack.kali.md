@@ -873,7 +873,7 @@ show options
 kali
 
 
-
+### check md5/sha2
 
 LINUX
  sha256sum /path/to/file
@@ -884,3 +884,43 @@ CMD
  CertUtil -hashfile C:\path\to\file SHA256
 Powershell
  Get-FileHash C:\path\to\file -Algorithm SHA256
+
+### apt install docker.io
+
+TIPS:
+docker ps
+kali会自动提示你安装！！
+kali源上也有docker，并不用自己加官方的源
+
+docker -v
+
+#### 镜像
+
+国内的 Docker Hub 镜像加速器，由国内教育机构与各大云服务商提供的镜像加速服务
+https://gist.github.com/azhao1981/ec4f7c9994538ff611d17da246a50b33
+
+Dockerized 实践 https://github.com/y0ngb1n/dockerized
+
+建议使用科大：
+https://mirrors.ustc.edu.cn/help/dockerhub.html
+
+```bash
+vim /etc/docker/daemon.json
+{
+  "registry-mirrors": ["https://docker.mirrors.ustc.edu.cn/"]
+}
+# 重启
+sudo systemctl restart docker
+# 检查
+docker info 
+Registry Mirrors:
+    https://docker.mirrors.ustc.edu.cn/
+# 没测
+$ docker rmi mysql:8.0.23
+$ time docker pull mysql:8.0.23
+```
+
+[配置 Docker 镜像站](https://www.daocloud.io/mirror)
+```bash
+curl -sSL https://get.daocloud.io/daotools/set_mirror.sh | sh -s http://f1361db2.m.daocloud.io
+```

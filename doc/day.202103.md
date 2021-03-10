@@ -1,5 +1,13 @@
 # 202103
 
+## 20210310
+FreeBuf甲方群：从攻防演练看网络安全新态势
+https://www.freebuf.com/articles/neopoints/265101.html
+漏洞威胁分析报告（上册）- 不同视角下的漏洞威胁
+https://paper.seebug.org/1498/
+全网最详细IDE插件开发之代码审计
+https://www.freebuf.com/articles/web/263340.html
+
 ## 20210309
 https://www.seafile.com/home/
 Seafile 是一款开源的企业云盘，注重可靠性和性能。支持 Windows, Mac, Linux, iOS, Android 平台。支持文件同步或者直接挂载到本地访问。
