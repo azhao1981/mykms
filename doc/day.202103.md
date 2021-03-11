@@ -1,5 +1,49 @@
 # 202103
 
+## 20210311
+
+未知的未知：九大模糊测试工具
+https://www.aqniu.com/tools-tech/65203.html
+Fuzzing技术总结（Brief Surveys on Fuzz Testing）
+https://zhuanlan.zhihu.com/p/43432370
+关于Fuzz工具的那些事儿 金币
+https://www.freebuf.com/sectool/76861.html
+
+https://nvd.nist.gov/vuln/search/results?form_type=Basic&results_type=overview&query=xxl-job&search_type=all
+https://www.anquanke.com/vul?s=xxl-job
+xxl-job2.2.0 信息泄露漏洞
+https://www.anquanke.com/vul/id/2143850
+
+https://sec.nmask.cn/article_content?a_id=d99ecb0acc2aadf2e0646edc0a433987
+Xxl Job 2.0.2未授权远程代码执行漏洞
+
+https://www.exploit-db.com/exploits/49633
+Atlassian JIRA 8.11.1 - User Enumeration
+JIRA v7.6.1
+JIRA v6.3.10
+Vulnerable versions: version < 7.13.16,  8.0.0 ≤ version < 8.5.7, 8.6.0 ≤ version < 8.12.0
+结论： 6.x是有问题，但好像7.6.1没问题，结果是错的
+
+https://www.exploit-db.com/exploits/49629
+Golden FTP Server 4.70 - 'PASS' Buffer Overflow (2)
+https://www.zoomeye.org/searchResult?q=app%3A%22Golden%20ftpd%22
+https://www.goldenftpserver.com/download.html
+最新版本是 5.0，4.70是前一个版本
+
+Netty 安全漏洞
+CVE编号： CVE-2021-21295
+http://www.cnnvd.org.cn/web/xxk/ldxqById.tag?CNNVD=CNNVD-202103-713
+https://github.com/netty/netty/commit/89c241e3b1795ff257af4ad6eadc616cb2fb3dc4
+
+IBM WebSphere Application Server 路径遍历漏洞
+http://www.cnnvd.org.cn/web/xxk/ldxqById.tag?CNNVD=CNNVD-202103-702
+redhat AMQ 安全漏洞
+http://www.cnnvd.org.cn/web/xxk/ldxqById.tag?CNNVD=CNNVD-202103-720
+
+
+打工人眼中攻防演练蓝军那些人那些事儿（四）
+https://www.freebuf.com/articles/network/261612.html
+
 ## 20210310
 FreeBuf甲方群：从攻防演练看网络安全新态势
 https://www.freebuf.com/articles/neopoints/265101.html

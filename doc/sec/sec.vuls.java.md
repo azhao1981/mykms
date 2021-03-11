@@ -3,6 +3,25 @@
 https://www.upguard.com/blog/top-10-java-vulnerabilities-and-how-to-fix-them
 https://snyk.io/blog/162-security-vulnerabilities-disclosed-in-javas-top-10-libraries-including-jackson-spring-and-jetty/
 
+## java
+https://www.cvedetails.com/vulnerability-list/vendor_id-93/product_id-19117/Oracle-JRE.html
+https://cve.mitre.org/cgi-bin/cvekey.cgi?keyword=java
+https://www.cvedetails.com/vulnerability-list/vendor_id-93/product_id-19116/version_id-168996/Oracle-JDK-1.8.0.html
+
+## spring
+
+https://spring.io/projects/spring-boot
+https://start.spring.io/
+
+Spring Boot干货系列：（一）优雅的入门篇
+http://tengj.top/2017/02/26/springboot1/
+
+SpringMVC、SpringFramework与SpringBoot简单介绍
+https://segmentfault.com/a/1190000021986315
+
+Spring和SpringBoot比较，解惑区别
+https://www.jianshu.com/p/ffe5ebe17c3a
+
 ## Fastjson
 
 <!-- 
