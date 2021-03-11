@@ -872,6 +872,9 @@ use scanners/routers/router_scan
 show options
 kali
 
+https tracking
+arp table tracking
+xarp etc
 
 ### check md5/sha2
 
@@ -924,3 +927,10 @@ $ time docker pull mysql:8.0.23
 ```bash
 curl -sSL https://get.daocloud.io/daotools/set_mirror.sh | sh -s http://f1361db2.m.daocloud.io
 ```
+
+
+## system hacking
+### zenmap
+apt-get install alien dpkg-dev debhelper build-essential -y
+alien xxx.rpm
+dpkg -i xxx.deb
