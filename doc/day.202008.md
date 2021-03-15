@@ -123,26 +123,6 @@ https://www.cnvd.org.cn/
 
 [利用 ZoomEye 追踪多种 Redteam C&C 后渗透攻击框架](https://www.anquanke.com/post/id/214897)
 
-[如何编写一份专业的渗透测试报告](https://www.anquanke.com/post/id/215031)
-目标确认
-信息收集
-漏洞发现
-漏洞利用
-权限维持内网渗透
-目标获取痕迹清理
-编写文档输出报告
-
-概述、漏洞摘要、渗透利用、测试结果、安全建议
-特别注意的是：
-漏洞描述切忌不可过于简单，一笔带过；
-在安全建议部分避免提出没有实际意义的安全建议，比如加强安全意识；
-太多复杂的专业术语，比如绕狗、x站等等；
-报告结构混乱不堪。
-https://github.com/juliocesarfort/public-pentesting-reports
-http://www.doc88.com/p-7912041629982.html
-https://finsenty54.github.io/2019/03/28/penetration-test-report-interpretation/
-https://max.book118.com/html/2017/0613/114524057.shtm
-https://zhishihezi.net/
 
 ## 20200821
 

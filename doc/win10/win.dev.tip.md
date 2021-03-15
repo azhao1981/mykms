@@ -643,3 +643,13 @@ https://docs.microsoft.com/zh-cn/sysinternals/downloads/tcpview
 
 80 win.desktop 桌面切换
 ctrl + win+ <- / ->
+
+80 vs code 大小写转换
+
+默认没有快捷键
+Transform to Uppercase - editor.action.transformToUppercase
+Transform to Lowercase - editor.action.transformToLowercase
+修改： file / preference / keyboard shortcuts
+Uppercase ctl + k ctl + u
+Lowercase ctl + k ctl + l
+https://www.zhihu.com/question/48779613

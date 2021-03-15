@@ -228,7 +228,7 @@ curl myip.ipip.net
 
 账号和密码：
 vpnbook
-k8VBRa6
+4dK5esN
 
 https://superuser.com/questions/608897/openvpn-through-socks-proxy-on-linux
 https://kiljan.org/2017/11/15/routing-traffic-through-openvpn-using-a-local-socks-proxy/
@@ -928,9 +928,11 @@ $ time docker pull mysql:8.0.23
 curl -sSL https://get.daocloud.io/daotools/set_mirror.sh | sh -s http://f1361db2.m.daocloud.io
 ```
 
-
 ## system hacking
 ### zenmap
 apt-get install alien dpkg-dev debhelper build-essential -y
 alien xxx.rpm
 dpkg -i xxx.deb
+
+## phoneinfoga 查找电话相关的信息
+https://github.com/sundowndev/PhoneInfoga

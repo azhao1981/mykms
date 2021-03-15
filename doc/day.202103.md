@@ -1,5 +1,44 @@
 # 202103
 
+## 20210315
+
+[Apache Flink CVE-2020-17518、17519 漏洞分析](https://paper.seebug.org/1505/)
+
+Shiro [反序列化漏洞利用工具编写思路](https://paper.seebug.org/1503/)
+
+[红蓝对抗开源远控：BlueShell](https://www.freebuf.com/sectool/264813.html)
+
+https://simms-teach.com/ 不错的教程
+https://simms-teach.com/2016-fall/docs/cis76/cis76lesson01.pdf
+https://simms-teach.com/2017-fall/docs/cis76/cis76lesson14.pdf
+https://simms-teach.com/2017-fall/docs/cis76/cis76lesson06.pdf
+
+https://github.com/zheng-yanan/art-of-hacking/find/master
+MetasploitCheatsheet2.0.pdf
+NmapCheatSheetv1.1.pdf
+https://github.com/The-Art-of-Hacking/h4cker
+
+同上资源有
+https://github.com/rewardone/OSCPRepo/find/master
+https://github.com/rewardone/OSCPRepo
+
+https://gist.github.com/geekspeed/677e56c8c1ad8f9f092d9bebda6be6e9
+
+## 20210314
+
+企业网络安全管理
+https://github.com/OpenCTI-Platform/opencti
+https://www.opencti.io/en/
+docker 安装
+https://www.notion.so/Using-Docker-03d5c0592b9d4547800cc9f4ff7be2b8
+
+## 20210312
+
+各类收藏的网络信息安全/黑客攻防/渗透测试等书籍
+https://www.cnhackteam.org/topic/1062/
+
+https://dev.to/doctolib/learn-about-ractors-and-build-a-mini-sidekiq-3ba2
+
 ## 20210311
 
 未知的未知：九大模糊测试工具
