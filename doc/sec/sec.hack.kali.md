@@ -936,3 +936,9 @@ dpkg -i xxx.deb
 
 ## phoneinfoga 查找电话相关的信息
 https://github.com/sundowndev/PhoneInfoga
+
+## instagram hack brute force
+crunch 7 8 xy123 -o instaworldlist
+
+https://github.com/Bitwise-01/Instagram-
+https://github.com/0xfff0800/Brute-force-Instagram-2021
