@@ -653,3 +653,26 @@ Transform to Lowercase - editor.action.transformToLowercase
 Uppercase ctl + k ctl + u
 Lowercase ctl + k ctl + l
 https://www.zhihu.com/question/48779613
+
+81 MinGW-w64
+
+MinGW 环境变量的配置
+https://blog.csdn.net/Flood_Dragon/article/details/12363705
+
+https://zhuanlan.zhihu.com/p/76613134
+MinGW-w64安装教程——著名C/C++编译器GCC的Windows版本
+
+http://mingw-w64.org/doku.php
+
+path
+2)、新建 LIBRARY_PATH 变量，如果有的话，在值中加入D:\MinGW \lib，这是标准库的位置。
+3)、新建 C_INCLUDEDE_PATH 变量，值设为D\MinGW\include。
+4)、新建 CPLUS_INCLUDE_PATH 变量，值为
+  D:\MinGW\include\c++\3.4.5;
+  D:\MinGW\include\c++\3.4.5;
+  D:\MinGW\include\c++\3.4.5\backward;
+  D:\MinGW\include
+  。
+
+
+
