@@ -1,5 +1,46 @@
 # 202103
 
+## 20210317
+
+A proposed standard that allows websites to define security policies.
+https://github.com/securitytxt/security-txt
+https://securitytxt.org/
+
+GitLab 搜索利器，代码搜索工具 Kooder 发布
+https://gitee.com/koode/kooder
+https://www.oschina.net/news/132535/gitee-release-kooder?from=20210314
+
+CVE-2020-14645——WebLogic反序列化
+https://www.anquanke.com/post/id/231425
+
+https://github.com/sibears/IDAGolangHelper
+https://www.hex-rays.com/products/ida/
+
+逆向工具：
+https://github.com/horsicq/DIE-engine/releases
+
+App安全检测实践基础：客户端程序安全（一） 会员
+https://www.freebuf.com/articles/terminal/255712.html
+App安全检测实践基础：组件安全（二） 会员
+https://www.freebuf.com/articles/terminal/256189.html
+App安全检测实践基础：组件安全（三）
+https://www.freebuf.com//256193.html
+
+记一次Vulnstack靶场内网渗透（五）
+https://www.freebuf.com/articles/network/263723.html
+searchsploit thinkphp
+
+红队中易被攻击的一些重点系统漏洞整理
+https://github.com/r0eXpeR/redteam_vul
+
+简历买卖、人脸收集，“3.15”揭露的隐私问题只是冰山一角
+https://www.freebuf.com/articles/neopoints/266348.html
+企业可以参考GDPR，CCPA，ISO27701，个人信息安全法，网络安全法，并且需要从组织，流程，人员，技术四个方面来考虑。
+组织方面：加强隐私合规团队能力建设，梳理隐私和鬼团队权威。
+流程方面：明确好全员指责与责任，定义清晰指责边界。
+人员方面：加强组织安全文化建设，重视安全意识教育。
+技术方面：使用代码扫描，渗透测试，隐私合规检测技术保证软件安全；使用数据发现，数据流动监测，行为审计，DLP技术保证数据安全。
+
 ## 20210316
 
 java代码混淆(使用 ProGuard maven插件)
@@ -159,8 +200,6 @@ https://simms-teach.com/2017-fall/docs/cis76/cis76lesson06.pdf
 
 https://github.com/zheng-yanan/art-of-hacking/find/master
 MetasploitCheatsheet2.0.pdf
-NmapCheatSheetv1.1.pdf
-https://github.com/The-Art-of-Hacking/h4cker
 
 同上资源有
 https://github.com/rewardone/OSCPRepo/find/master
@@ -191,6 +230,21 @@ CONNECTOR_IMPORT_FILE_STIX_ID=ChangeMe # Valid UUIDv4
 CONNECTOR_IMPORT_FILE_PDF_OBSERVABLES_ID=ChangeMe # Valid UUIDv4
 ```
 
+OpenCTI的使用方法
+https://www.jianshu.com/p/d609f40c01e8
+实战化ATT&CK™：威胁情报
+https://zhuanlan.zhihu.com/p/79480347
+用于威胁情报分析的虚拟机
+https://www.freebuf.com/sectool/253957.html
+
+Threat Pursuit Virtual Machine (VM): A fully customizable, open-sourced Windows-based distribution focused on threat intelligence analysis and hunting designed for intel and malware analysts as well as threat hunters to get up and running quickly.
+https://github.com/fireeye/ThreatPursuit-VM
+恶意软件分析专用虚拟机：
+https://github.com/fireeye/flare-vm
+红队渗透测试专用虚拟机：
+https://github.com/fireeye/commando-vm
+
+有兴趣的都可以在保证安全的前提下使用。
 ## 20210312
 
 各类收藏的网络信息安全/黑客攻防/渗透测试等书籍

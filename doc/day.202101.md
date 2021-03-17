@@ -273,10 +273,7 @@ https://www.anquanke.com/post/id/230954
 
 ## 0203
 
-端口和识别列表
-https://www.iana.org/assignments/service-names-port-numbers/service-names-port-numbers.xhtml
-nmap top 1000 包括哪些端口
-https://nullsec.us/top-1-000-tcp-and-udp-ports-nmap-default/
+
 
 str = "3,5-10,90"
 b = str.split(',').map{|i| i.include?("-") ? (k,m = i.split("-"); (k.to_i..m.to_i).to_a) : i.to_i }.flatten

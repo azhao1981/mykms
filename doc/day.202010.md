@@ -719,8 +719,7 @@ https://www.freebuf.com/sectool/245701.html
 
 浅谈Linux主机加固
 https://www.freebuf.com/articles/system/250501.html
-Nmap流量特征修改
-https://www.freebuf.com/articles/others-articles/250028.html
+
 
 
 论敏感数据发现能力对企业重要性

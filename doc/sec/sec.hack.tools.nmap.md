@@ -1,5 +1,20 @@
 # nmap
 
+NmapCheatSheetv1.1.pdf
+https://github.com/The-Art-of-Hacking/h4cker
+
+端口和识别列表
+https://www.iana.org/assignments/service-names-port-numbers/service-names-port-numbers.xhtml
+nmap top 1000 包括哪些端口
+https://nullsec.us/top-1-000-tcp-and-udp-ports-nmap-default/
+Nmap流量特征修改
+https://www.freebuf.com/articles/others-articles/250028.html
+
+https://github.com/SpiderLabs/Nmap-Tools
+
+O.G. AUTO-RECON：一款功能强大的基于Nmap结果的目标枚举工具
+https://www.freebuf.com/sectool/243589.html
+
 学习Nmap脚本引擎(NSE)的基础知识，并开始构建自己的NSE脚本
 ref https://www.udemy.com/course/network_and_vulnerability_scan_by_nmap_nessus/
 
@@ -10,6 +25,11 @@ https://www.udemy.com/course/security-testing-china/
 最常用法：
 nmap -T4 -A -v $IP
 nmap -T4 -A -Pn -v $IP
+
+### zenmap
+apt-get install alien dpkg-dev debhelper build-essential -y
+alien xxx.rpm
+dpkg -i xxx.deb
 
 每天学习一个命令：nmap 扫描开放端口
 http://einverne.github.io/post/2017/01/nmap.html

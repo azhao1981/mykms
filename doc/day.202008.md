@@ -363,8 +363,7 @@ https://www.anquanke.com/post/id/212984
 活动 | Black Hat USA 2020最值得期待的11种安全工具
 https://www.anquanke.com/post/id/213032
 
-O.G. AUTO-RECON：一款功能强大的基于Nmap结果的目标枚举工具
-https://www.freebuf.com/sectool/243589.html
+
 
 Hackingtool：一款针对渗透测试人员的多合一测试套件
 https://www.freebuf.com/sectool/244997.html

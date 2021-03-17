@@ -484,23 +484,13 @@ tor: hidden wiki
 
 ## 收集信息
 
-### nmap
+### [nmap](\doc\sec\sec.hack.tools.nmap.md)
 
-nmap -v -sn  10.10.0.0/24
+### [zenmap](\doc\sec\sec.hack.tools.nmap.md)
 
-10.10.0.10
-10.10.0.30
-10.10.0.34
-10.10.0.50
-10.10.0.54
-10.10.0.62
-10.10.0.82
-10.10.0.86
-10.10.0.90
-10.10.0.102
-10.10.0.122
-10.10.0.118
-10.10.0.142
+apt-get install alien dpkg-dev debhelper build-essential -y
+alien xxx.rpm
+dpkg -i xxx.deb
 
 ## wifi
 可用例子
@@ -929,10 +919,7 @@ curl -sSL https://get.daocloud.io/daotools/set_mirror.sh | sh -s http://f1361db2
 ```
 
 ## system hacking
-### zenmap
-apt-get install alien dpkg-dev debhelper build-essential -y
-alien xxx.rpm
-dpkg -i xxx.deb
+
 
 ## phoneinfoga 查找电话相关的信息
 https://github.com/sundowndev/PhoneInfoga
