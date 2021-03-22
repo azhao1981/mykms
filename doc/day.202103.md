@@ -1,5 +1,227 @@
 # 202103
 
+## 20210322
+
+https://www.youtube.com/channel/UCKKmeW6hUa4cc935Jd8eijg/videos
+https://www.youtube.com/watch?v=L6xX4Kcn0sk
+Atlassian JIRA Template injection vulnerability (CVE-2019-11581) with Pocsuite3
+
+https://jike.info/topic/4314/%E9%98%BF%E9%87%8C%E4%BA%91%E7%BD%91%E7%9B%98%E6%87%82%E7%9A%84%E9%83%BD%E6%87%82
+
+Hutool 让Java使用者感受甜美的工具
+官网 https://hutool.cn/
+轻量但是很强大
+内置非常多高效的工具类
+稳定安全
+
+https://www.harmonyos.com/cn/home
+鸿蒙OS 技术架构
+https://www.w3cschool.cn/harmonyos/harmonyos-2e8b3bwn.html
+鸿蒙OS架构及关键技术整理
+https://blog.csdn.net/qq_31765191/article/details/108948348
+鸿蒙OS — 基于微内核的全场景分布式OS
+https://blog.csdn.net/jiangguangchao/article/details/99056323
+内核问题
+当前支持： linux/鸿蒙内核/liteOS 同时支持，未来只留 鸿蒙内核 
+
+The best and easiest way to decode and repack AWVS scripts. AWVS 最好、最简单、最新的解码/再打包方法，仅15行代码！
+https://github.com/gatlindada/awvs-decode
+
+[Grafana Enterprise 安全漏洞](http://www.cnnvd.org.cn/web/xxk/ldxqById.tag?CNNVD=CNNVD-202103-1169)
+
+[【安全通报】Apache Solr stream.url SSRF与任意文件读取漏洞](https://nosec.org/home/detail/4700.html)
+
+[内网渗透实战技巧](https://www.anquanke.com/post/id/235101)
+
+[sudo提权（CVE-2021–3156）：从堆溢出到命令执行的最后亿步](https://www.anquanke.com/post/id/234535)
+
+[Gatekeeper：首个开源的DDoS防护系统](https://www.freebuf.com/sectool/265642.html)
+
+[等保测评2.0：Windows身份鉴别结果记录描述（下） 会员](https://www.freebuf.com/articles/compliance/263955.html)
+
+[红蓝对抗之邮件伪造](https://www.freebuf.com/articles/network/264663.html)
+
+## 20210319
+
+https://www.hackthebox.eu/
+https://tryhackme.com/
+
+再总结应急响应：
+https://github.com/meirwah/awesome-incident-response/blob/master/README_ch.md
+
+这两篇很有用
+Linux应急响应知识总结
+https://hongludianxue.com/2018/12/28/Linux%E5%BA%94%E6%80%A5%E5%93%8D%E5%BA%94%E7%9F%A5%E8%AF%86%E6%80%BB%E7%BB%93/
+Linux应急响应笔记 金币
+https://www.freebuf.com/articles/network/248376.html
+
+Confluence 未授权 RCE 分析（CVE-2019-3396）
+https://paper.seebug.org/893/
+exploit工具
+https://github.com/jas502n/CVE-2019-3396
+
+取证
+https://github.com/SekoiaLab/Fastir_Collector_Linux
+
+
+es替代方案
+https://github.com/go-ego/riot
+https://github.com/go-ego/riot/blob/master/README_zh.md 支持中文
+使用wukong全文搜索引擎
+https://tonybai.com/2016/12/06/an-intro-to-wukong-fulltext-search-engine/
+
+支持sql语言，可以直接用mysql client访问，基于Sphinx Search
+https://manticoresearch.com/
+https://github.com/sphinxsearch/sphinx/ 18年就不维护了
+
+Blast is a full text search and indexing server, written in Go, built on top of Bleve.
+https://github.com/mosuka/blast
+
+https://artem.krylysov.com/blog/2020/07/28/lets-build-a-full-text-search-engine/
+
+https://xapian.org/
+http://clucene.sourceforge.net/
+
+不是很好，官网自己的搜索都不好用
+https://www.meilisearch.com/
+curl 'https://sandbox-pool-4eqqeri-3bsbgmeayb75w.ovh-fr-2.platformsh.site/indexes/movies/search?q=botman+robin&limit=2' | jq
+$ curl 'https://sandbox-pool-4eqqeri-3bsbgmeayb75w.ovh-fr-2.platformsh.site/indexes/movies/search?q=botman+robin&limit=2'
+{"message":"You must have an authorization token","errorCode":"missing_authorization_header","errorType":"authentication_error","errorLink":"https://docs.meilisearch
+.com/errors#missing_authorization_header"}
+
+
+conflenence 替代方案
+https://github.com/TruthHun/BookStack 中文，但好像是生成书的
+PHP
+https://www.bookstackapp.com/
+https://github.com/BookStackApp/BookStack
+
+https://www.dokuwiki.org/dokuwiki
+
+很牛的效果图
+https://github.com/yangshun/front-end-interview-handbook
+A repository for All algorithms implemented in Javascript (for educational purposes only)
+https://github.com/TheAlgorithms/Javascript
+
+从英文翻译而来-Appium是一个开源自动化工具，用于使用Webdriver在Android或iOS上运行脚本和测试本机应用程序，移动Web应用程序和混合应用程序。 维基百科（英文)
+https://github.com/appium/appium
+
+https://github.com/typescript-cheatsheets/react
+
+API, CLI & Web App for analyzing & finding a person's profile across 350+ social media \ websites (Detections are updated regularly)
+https://github.com/qeeqbox/social-analyzer
+
+The open source Firebase alternative. Follow to stay updated about our public Beta.
+https://github.com/supabase/supabase
+
+好像用来保存密码的
+https://github.com/bitwarden/desktop
+https://github.com/getzola/zola
+A fast static site generator in a single binary with everything built-in. https://www.getzola.org
+
+
+https://github.com/nushell/nushell
+
+
+
+
+
+
+用 Git 操作的数据库？这个项目火了！ 
+https://www.sohu.com/a/454980972_115128
+7400 Star！一个使用 Git 命令操作的数据库！
+https://www.jianshu.com/p/a3610e482503
+https://github.com/dolthub/dolt
+https://github.com/linkedin/datahub
+
+Universal Radio Hacker: Investigate Wireless Protocols Like A Boss
+https://github.com/jopohl/urh
+
+不太明白
+https://github.com/projectdiscovery/nuclei
+https://github.com/JanDeDobbeleer/oh-my-posh
+有中文
+https://github.com/quii/learn-go-with-tests
+目录权限+MFA，可惜不支持企业微信之类的登录
+https://github.com/authelia/authelia
+
+https://github.com/docker/awesome-compose
+https://github.com/android/compose-samples
+https://developer.android.com/jetpack/compose
+
+Run Mac in a Docker! Run near native OSX-KVM in Docker! X11 Forwarding! CI/CD for OS X!
+https://github.com/sickcodes/Docker-OSX
+
+API, CLI & Web App for analyzing & finding a person's profile across 350+ social media \ websites (Detections are updated regularly)
+https://github.com/qeeqbox/social-analyzer
+
+Framework agnostic toolchain for building highly secure native apps that have tiny binaries and are very fast.
+[Tauri安装中碰到的坑](https://www.jianshu.com/p/c7e3f2326909)
+tauri - 可替换 electron 的PC端 SPA 框架
+https://segmentfault.com/a/1190000022489403
+手把手教你用 Tauri+Vue 创建小型桌面应用
+https://blog.csdn.net/Crazymryan/article/details/108016711
+用于代替etr 前端多平台
+https://tauri.studio/en/
+https://github.com/tauri-apps/tauri/
+https://tauri.studio/en/docs/getting-started/intro
+
+https://github.com/lloesche/valheim-server-docker
+https://store.steampowered.com/app/892970/Valheim/
+
+基于代码生成器的低代码平台，超越传统商业平台！前后端分离架构SpringBoot 2.x，SpringCloud，Ant Design&Vue，Mybatis-plus，Shiro，JWT。强大的代码生成器让前后端代码一键生成，无需写任何代码! 引领新低代码开发模式OnlineCoding->代码生成->手工MERGE，帮助Java项目解决70%重复工作，让开发更关注业务，既能快速提高开发效率，帮助公司节省成本，同时又不失灵活性。
+https://github.com/zhangdaiscott/jeecg-boot
+「Java学习+面试指南」一份涵盖大部分 Java 程序员所需要掌握的核心知识。准备 Java 面试，首选 JavaGuide！
+https://github.com/Snailclimb/JavaGuide
+https://github.com/jdah/minecraft-weekend 48小时完成的minecraft
+https://github.com/521xueweihan/GitHub520
+
+深入考察状态机中危险的逻辑漏洞
+https://nosec.org/home/detail/4669.html
+
+## 20210318
+
+[GitLab 远程代码执行漏洞通告](https://www.anquanke.com/post/id/235002)
+GitLab Critical Security Release: 13.9.4, 13.8.6, and 13.7.9
++ 改的只有13的版本
++ 没有CVE
+https://gitlab.com/gitlab-org/gitlab
+这个是ee?
+git@gitlab.com:gitlab-org/gitlab.git
+https://gitlab.com/gitlab-org/gitlab/-/compare/v13.9.3-ee...v13.9.4-ee
+https://gitlab.com/gitlab-org/gitlab/-/compare/master...v13.9.4-ee
+
+git tag
+v13.9.3-ee
+v13.9.4-ee
+git checkout -b v13.9.4-ee v13.9.4-ee
+git checkout -b v13.9.3-ee v13.9.3-ee
+
+
+https://gitlab.com/gitlab-org/gitlab-foss
+ Project 'gitlab-org/gitlab-ce' was moved to 'gitlab-org/gitlab-foss'.
+https://github.com/gitlabhq/gitlabhq
+https://gitee.com/mirrors/gitlab
+https://gitlab.com/gitlab-org/gitlab-foss/-/compare/v13.9.3...v13.9.4
+https://github.com/gettalong/kramdown/pull/708
+
+那其它用 kramdown 的项目会不会也受影响
+
+如何在漏洞奖励网络侦察中使用BugBountyScanner|TODO:研究一下
+https://www.freebuf.com/articles/network/265898.html
+https://github.com/chvancooten/BugBountyScanner
+https://hub.docker.com/r/chvancooten/bugbountyscanner
+
+快HVV了，聊聊攻防演练中安全产品的安全性 | FreeBuf甲方群
+https://www.freebuf.com/articles/neopoints/266464.html
+
+防守方须排查的57个安全漏洞与解决方案
+https://www.freebuf.com/vuls/266542.html
+国外顶级数据分类分级工具主要功能解析|看看都应该有什么功能？
+https://www.anquanke.com/post/id/234324
+如何高效的挖掘Java反序列化利用链？
+https://www.anquanke.com/post/id/234537
+
 ## 20210317
 
 A proposed standard that allows websites to define security policies.

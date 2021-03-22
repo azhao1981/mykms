@@ -425,8 +425,7 @@ BottlEye is a usermode emulator for the popular anti-cheat BattlEye
 https://github.com/thesecretclub/BottlEye
 Build a ReactJS App workshop
 https://github.com/kentcdodds/bookshelf
-Framework agnostic toolchain for building highly secure native apps that have tiny binaries and are very fast.
-https://github.com/tauri-apps/tauri
+
 Code for the book Deep Learning with PyTorch by Eli Stevens, Luca Antiga, and Thomas Viehmann.
 https://github.com/deep-learning-with-pytorch/dlwpt-code
 

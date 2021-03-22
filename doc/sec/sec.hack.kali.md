@@ -852,6 +852,7 @@ arp.spoof on
 net.sniff on
 caplets.show
 hstshijack/hstshijack
+
 ## routersploit
 
 https://tools.kali.org/exploitation-tools/routersploit
@@ -860,6 +861,7 @@ https://www.youtube.com/watch?v=fgau-Dx_34o&ab_channel=LoiLiangYang
 
 use scanners/routers/router_scan
 show options
+
 kali
 
 https tracking
@@ -929,3 +931,12 @@ crunch 7 8 xy123 -o instaworldlist
 
 https://github.com/Bitwise-01/Instagram-
 https://github.com/0xfff0800/Brute-force-Instagram-2021
+
+## Beef github
+
+
+Setting up a Kali Linux Docker Image
+https://www.kali.org/blog/official-kali-linux-docker-images/
+muts@macbook-air:~$ docker pull kalilinux/kali-rolling
+muts@macbook-air:~$ docker run -t -i kalilinux/kali-rolling /bin/bash
+root@0129d62d2319:/# apt-get update && apt-get install metasploit-framework

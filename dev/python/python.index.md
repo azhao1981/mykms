@@ -2,6 +2,7 @@
 
 ## [基础](./python.base.md)
 ## [爬虫](./python.spider.md)
+## [cheatsheet](https://github.com/gto76/python-cheatsheet)
 
 学爬虫利器XPath,看这一篇就够了
 https://zhuanlan.zhihu.com/p/29436838

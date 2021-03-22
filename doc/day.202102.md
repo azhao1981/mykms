@@ -108,12 +108,6 @@ A Super Mario 64 decompilation, brought to you by a bunch of clever folks.
 https://github.com/n64decomp/sm64
 
 
-https://github.com/tauri-apps/tauri
-[Tauri安装中碰到的坑](https://www.jianshu.com/p/c7e3f2326909)
-tauri - 可替换 electron 的PC端 SPA 框架
-https://segmentfault.com/a/1190000022489403
-手把手教你用 Tauri+Vue 创建小型桌面应用
-https://blog.csdn.net/Crazymryan/article/details/108016711
 
 
 ## 0223
@@ -164,9 +158,7 @@ https://dev.to/akinghill/start-using-prettier-the-right-way-59kg
 
 
 
-用于代替etr 前端多平台
-https://tauri.studio/en/
-https://github.com/tauri-apps/tauri/
+
 
 https://dev.to/zippytyro/how-to-convert-any-website-webpage-into-an-installable-progressive-web-app-pwa-59ai
 https://dev.to/doabledanny/11-easy-ui-design-tips-for-web-devs-j3j
