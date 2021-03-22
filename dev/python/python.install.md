@@ -190,3 +190,13 @@ deb-src http://mirrors.163.com/debian/ stretch-backports main non-free contrib
 deb http://mirrors.163.com/debian-security/ stretch/updates main non-free contrib
 deb-src http://mirrors.163.com/debian-security/ stretch/updates main non-free contrib
 ```
+
+
+## windows
+
+however the ssl module in Python is not available
+https://blog.csdn.net/S_o_l_o_n/article/details/89457510
+       在下载安装anaconda时，最好把这三个目录都添加到环境变量的path中：C:\anaconda，C:\anaconda\Scripts，C:\anaconda\Library\bin。（要注意，anaconda之前的路径因个人安装的路径而异）
+如果自己安装了python,又安装了conda,而且把scripts加path中，也会出现这个问题，直接删除掉 C:\anaconda\Scripts 即可
+
+拒绝访问
