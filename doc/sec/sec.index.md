@@ -18,8 +18,6 @@ https://github.com/googleprojectzero
 
 谈一谈如何建设体系化的安全运营中心(SOC)
 https://www.secrss.com/articles/8051
-企业安全建设之应急响应
-https://www.freebuf.com/articles/es/249593.html
 
 蓝军攻防演练实用工具和网站总结（工具已打包）
 https://www.freebuf.com/sectool/252418.html

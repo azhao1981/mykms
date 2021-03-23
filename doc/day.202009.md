@@ -292,7 +292,6 @@ http://nginx.org/en/security_advisories.html
 
 ## 20200917
 
-[从入侵应急响应到追踪溯源](https://www.freebuf.com/articles/web/249206.html)
 
 ## 20200916
 

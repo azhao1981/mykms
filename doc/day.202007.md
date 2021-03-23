@@ -2,10 +2,7 @@
 
 ## 20200730
 
-Linux应急响应姿势浅谈
-http://3ms.huawei.com/hi/group/2034125/file_10823427.html?for_statistic_from=my_group_file
-干货 | 黑客入侵？这里有详细的应急排查手册！
-https://www.leiphone.com/news/201706/oCidY2C8IPHt82mF.html
+
 
 CVE-2020-1362 漏洞分析
 https://www.anquanke.com/post/id/212011
@@ -132,8 +129,7 @@ https://www.freebuf.com/articles/container/242763.html
 某企业授权渗透报告
 https://www.freebuf.com/articles/network/243831.html
 
-记一次简单的应急响应
-https://www.freebuf.com/articles/web/242574.html
+
 
 渗透测试之黑白无常“续”
 https://www.anquanke.com/post/id/211219
@@ -570,11 +566,7 @@ https://www.freebuf.com/articles/database/239835.html
 数据安全怎么做？合规篇之数据安全法（草案）
 https://www.freebuf.com/articles/neopoints/242215.html
 
-应急响应：
-服务器遭遇挖矿怎么办？
-https://www.freebuf.com/articles/es/242323.html
-我的主机是不是被gank了？Windows入侵排查初探
-https://www.freebuf.com/articles/system/238860.html
+
 ## 20200706
 
 Apache Guacamole多个漏洞分析

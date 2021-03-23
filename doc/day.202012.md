@@ -5,7 +5,6 @@
 
 [如何使用N1QLMap来利用N1QL注入漏洞并从Couchbase数据库中提取数据](https://www.freebuf.com/articles/database/257101.html)
 
-[一起钓鱼邮件的应急响应](https://www.freebuf.com/articles/system/256049.html)
 
 [GitLab 11.4.7 - RCE (Authenticated)](https://www.exploit-db.com/exploits/49334)
 
@@ -66,8 +65,7 @@ https://www.freebuf.com/articles/system/254998.html
 Docker化自动采集&模拟恶意软件环境
 https://www.freebuf.com/articles/system/255918.html
 
-应急响应之如何发现隐藏的Webshell后门
-https://www.freebuf.com/vuls/256214.html
+
 基于AI的暗网流量检测识别效果专题研究
 https://www.freebuf.com/articles/network/256840.html
 

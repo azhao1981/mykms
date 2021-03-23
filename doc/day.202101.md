@@ -196,9 +196,7 @@ https://github.com/TideSec/Tide
 Tide 安装团队
 http://www.tidesec.net/
   TODO: 深看
-应急响应Wiki
-https://www.yuque.com/tidesec/emergency
-https://github.com/tide-emergency/yingji
+
 
 网络空间测绘的生与死
 https://zhuanlan.zhihu.com/p/92490432
@@ -375,10 +373,7 @@ https://github.com/RangiLyu/nanodet
 一文打尽 Linux/Windows 端口复用实战
 https://www.anquanke.com/post/id/230090
 
-应急响应之入侵排查
-https://www.freebuf.com/articles/system/260724.html
-勒索软件解密工具集
-腾讯哈勃：https://habo.qq.com/tool
+
 
 Apache Log4j反序列化详细分析
 https://www.anquanke.com/post/id/229489
@@ -414,8 +409,7 @@ https://www.anquanke.com/post/id/229873
 Linux通过栈溢出进行提权实战（dpwwn03）
 https://www.freebuf.com/articles/web/259673.html
 
-stackoverflow 一次入侵应急响应
-https://stackoverflow.blog/2021/01/25/a-deeper-dive-into-our-may-2019-security-incident/
+
 
 网络安全运营能力建设思路（四）
 https://www.freebuf.com/articles/es/257769.html
@@ -468,18 +462,7 @@ https://johnrosen1.com/2021/01/24/onion/
 emp3r0r：dropper和ELF加密壳
 https://www.freebuf.com/sectool/260282.html
 
-记一次略坑的应急响应事件
-https://www.freebuf.com/articles/web/259677.html
 
-pe对系统密码进行更改处理
-对系统计划任务、进程运行、主引导区记录等多个项目进行完整检查
-3.排查定时任务，并且跟现场工作人员核对，未发现其他非工作人员创建的定时任务
-4.排查系统防火墙，日志审核策略及日志留存情况，并将日志做导出备份处理：
-5.跟主机安全负责人、网络负责人及该主机使用方做相关询问得出以下信息：
-1.基于该主机自身情况进行分析
-（1）调查该主机自身感染病毒木马情况：人工分析未发现系统感染恶意病毒木马特征，无可疑账户、克隆账户、可疑计划任务，未发现入侵现象。
-2）系统日志分析情况：对近期系统登录成功与失败日志进行排查
-（3）使用logparse进行日志分析：
 
 ​Windows域关系学习攻略
 https://www.anquanke.com/post/id/229454
@@ -766,8 +749,7 @@ https://github.com/darklotuskdb/CISCO-CVE-2020-3452-Scanner-Exploiter
 JuiceFS 开源，分布式文件系统
 https://www.oschina.net/news/126469/juicefs-open-source
 
-应急响应之Linux下进程隐藏
-https://www.freebuf.com/articles/network/258510.html
+
 
 WAF绕过拍了拍你
 https://www.freebuf.com/articles/web/259027.html
@@ -977,28 +959,7 @@ https://mp.weixin.qq.com/s?__biz=MzUzMjcxMzg5Mg==&mid=2247487921&idx=1&sn=dabc68
 
 https://www.devops.buzz/public/general/tools
 
-[Linux应急响应笔记](https://www.freebuf.com/articles/network/248376.html) 
 
-[Linux应急响应笔记（二）|需要应用到实践](https://www.freebuf.com/articles/others-articles/257827.html)
-
-busybox
-alpine linux:
-  security-oriented, lightweigth Linux distribution base on musl libc and busybox
-alternativeto
-  A free-range, non-GMO fork of busybox in 100% Rust 🦀
-https://github.com/samuela/rustybox
-Unix command line utilities installer for Windows.
-https://github.com/bmatzelle/gow
-linux　命令行
-http://www.pixelbeat.org/cmdline_zh_CN.html
-http://landley.net/toybox/
-https://github.com/landley/toybox
-POSIX time for OCaml
-https://github.com/dbuenzli/ptime
-https://www.boost.org/doc/libs/1_65_1/doc/html/date_time/posix_time.html
-
-让所有安全平台支持情报分析
-https://www.anquanke.com/post/id/227609
 
 开发一款基于MitmProxy的被动式漏洞扫描工具 会员 金币
 https://www.freebuf.com/sectool/253025.html

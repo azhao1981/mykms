@@ -91,8 +91,7 @@ https://github.com/apple/password-manager-resources
 
 DalFox：一款基于Golang开发的XSS参数分析和扫描工具
 https://www.freebuf.com/articles/network/237073.html
-入门级应急响应小贴士
-https://www.freebuf.com/articles/es/238170.html
+
 FOFA搜索结果提取技术分析
 https://www.freebuf.com/sectool/238018.html
 GitLab（企业版和社区版）10.3版本至13.0.1版本中存在安全漏洞。攻击者可利用该漏洞查看Kubernetes集群令牌。
@@ -187,8 +186,7 @@ https://www.cnblogs.com/jajian/p/9976900.html
 
 攻防演练中防护阵线构建的三件事
 https://www.freebuf.com/articles/es/238327.html
-使用Elasticsearch与TheHive构建开源安全应急响应平台
-https://www.freebuf.com/articles/es/203538.html
+
 对安全即时通讯软件的流量分析攻击（上）
 https://www.anquanke.com/post/id/208678
 CVE-2020-1317：Windows组策略中的漏洞
@@ -385,8 +383,7 @@ https://www.kiuwan.com/blog/owasp-vulnerabilities-java-applications/
 谷歌开源代码评审规范：好坏代码应该这样来诊断
 https://cloud.tencent.com/developer/article/1500810
 
-应急响应之SqlServr.exe挖矿病毒行为分析
-https://www.freebuf.com/articles/system/236927.html
+
 
 挖洞经验 | 由Google Voice插件触发的DOM-XSS漏洞
 https://www.freebuf.com/vuls/236884.html
@@ -402,8 +399,7 @@ https://www.anquanke.com/post/id/207836
 浅谈Forrester零信任架构评估的7个技术维度
 https://www.freebuf.com/articles/network/239395.html
 
-应急响应之X系统数据库篡改应急分享
-https://www.freebuf.com/articles/web/236766.html
+
 
 FFmpeg 资源管理错误漏洞
 http://www.cnnvd.org.cn/web/xxk/ldxqById.tag?CNNVD=CNNVD-202006-584
@@ -459,8 +455,7 @@ https://blog.csdn.net/bang152101/article/details/89284249
 总结机器学习与安卓恶意软件分析方案|sec+ai
 https://www.freebuf.com/articles/neopoints/236703.html
 
-我的主机是不是被gank了？Windows入侵排查初探| 应急响应
-https://www.freebuf.com/articles/system/238860.html
+
 
 在比特币网络中通过Sybil进行双花攻击（上）
 https://www.anquanke.com/post/id/207493

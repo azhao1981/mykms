@@ -1,5 +1,35 @@
 # 202103
 
+## 20210323
+
+CobaltStrike使用详解
+https://www.anquanke.com/post/id/235251
+
+cisa的工具都比较成熟，很多是MIT
+Malcolm is a powerful, easily deployable network traffic analysis tool suite for full packet capture artifacts (PCAP files) and Zeek logs.
+https://github.com/cisagov/Malcolm
+Cybersecurity Evaluation Tool
+https://github.com/cisagov/cset
+A set of guidelines and best practices for an awesome engineering team
+https://github.com/cisagov/development-guide
+
+自主搭建的三层网络域渗透靶场打靶记录
+https://www.freebuf.com/articles/network/264560.html
+聊聊网络安全等级保护“能力验证”：配置核查（Linux系统）
+https://www.freebuf.com/articles/neopoints/264325.html
+
+Minio MinIO 安全漏洞
+http://www.cnnvd.org.cn/web/xxk/ldxqById.tag?CNNVD=CNNVD-202103-1206
+
+Nessus Agent 安全漏洞
+http://www.cnnvd.org.cn/web/xxk/ldxqById.tag?CNNVD=CNNVD-202103-1194
+
+MariaDB 安全漏洞
+http://www.cnnvd.org.cn/web/xxk/ldxqById.tag?CNNVD=CNNVD-202103-1191
+
+Grafana 安全漏洞
+http://www.cnnvd.org.cn/web/xxk/ldxqById.tag?CNNVD=CNNVD-202103-1174
+
 ## 20210322
 
 https://www.youtube.com/channel/UCKKmeW6hUa4cc935Jd8eijg/videos
@@ -46,14 +76,7 @@ https://github.com/gatlindada/awvs-decode
 https://www.hackthebox.eu/
 https://tryhackme.com/
 
-再总结应急响应：
-https://github.com/meirwah/awesome-incident-response/blob/master/README_ch.md
 
-这两篇很有用
-Linux应急响应知识总结
-https://hongludianxue.com/2018/12/28/Linux%E5%BA%94%E6%80%A5%E5%93%8D%E5%BA%94%E7%9F%A5%E8%AF%86%E6%80%BB%E7%BB%93/
-Linux应急响应笔记 金币
-https://www.freebuf.com/articles/network/248376.html
 
 Confluence 未授权 RCE 分析（CVE-2019-3396）
 https://paper.seebug.org/893/

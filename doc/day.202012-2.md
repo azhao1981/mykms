@@ -47,8 +47,7 @@ HFish蜜罐
 XXL-JOB 跨站脚本漏洞
 http://www.cnnvd.org.cn/web/xxk/ldxqById.tag?CNNVD=CNNVD-202012-1604
 
-应急响应之 Linux 下进程隐藏
-https://www.anquanke.com/post/id/226285
+
 
 Java安全之初探weblogic T3协议漏洞
 https://www.anquanke.com/post/id/226070
