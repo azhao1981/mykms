@@ -3,16 +3,14 @@
 
 ##　CVE-2019-3396
 
-
 docker
-https://hub.docker.com/r/atlassian/confluence-server/tags?page=1&ordering=last_updated&name=6.6.
+https://hub.docker.com/r/atlassian/confluence-server
 https://hub.docker.com/r/cptactionhank/atlassian-confluence
 
 破解
 https://gitee.com/pengzhile/atlassian-agent
 
-https://blog.51cto.com/wzlinux/2494063
-我用 docker 部署 JIRA 和 Confluence（破解版）
+[我用 docker 部署 JIRA 和 Confluence（破解版）](https://blog.51cto.com/wzlinux/2494063)
 
 Atlassian Confluence 6.6.1 
 
@@ -75,16 +73,158 @@ Docker - 实现本地镜像的导出、导入（export、import、save、load）
 
 https://www.hangge.com/blog/cache/detail_2411.html
 
+## 编译 atlassian-agent
 
-https://blog.csdn.net/xiangxianghehe/article/details/105688062
-Ubuntu 20.04换国内源 清华源 阿里源 中科大源 163源
+[Ubuntu 20.04换国内源 清华源 阿里源 中科大源 163源](https://blog.csdn.net/xiangxianghehe/article/details/105688062)
 
+```basb
 docker run -it -v /home/kali/Documents/opensources/atl-agent:/agent atlassian/confluence-server:6.6.1 bash
+echo "deb https://mirrors.ustc.edu.cn/ubuntu/ focal main restricted universe multiverse" > /etc/apt/sources.list
 
 apt update
 apt install maven
-$ docker commit 87354329121e  atlassian/confluence-server:6.6.1.1
+docker commit 87354329121e  atlassian/confluence-server:6.6.1.1
 mvn package
 
 docker run -it -v /home/kali/Documents/opensources/atl-agent:/agent atlassian/confluence-server:6.6.1.1 bash
+```
 
+### mysql
+
+```yaml
+version: '3.4'
+
+services:
+  mysql57:
+    restart: always
+    image: mysql:5.7
+    command: --default-authentication-plugin=mysql_native_password
+    expose:
+      - 3306
+    ports:
+      - 127.0.0.1:3306:3306
+    volumes:
+      - mysql-data:/var/lib/mysql
+      - ./tool:/tool
+    environment:
+      - MYSQL_ROOT_PASSWORD=6XohRGkpAaxpfEGBqjjc
+      - TZ=Asia/Shanghai
+  mysql:
+    image: mysql:8.0.23
+    restart: always
+    network_mode: host
+    volumes:
+      - ./mysql/db:/var/lib/mysql
+      - ./tool:/tool
+    command: mysqld --default-authentication-plugin=mysql_native_password --character-set-server=utf8mb4 --collation-server=utf8mb4_unicode_ci
+    expose:
+      - "3306"
+    environment:
+      - MYSQL_ROOT_PASSWORD=xxx
+      - TZ=Asia/Shanghai
+```
+https://hub.docker.com/r/bitnami/redis/
+
+https://github.com/lagoon-io/mysql8-docker-container/blob/master/docker-compose.yml
+
+mysql_1  | 2021-03-23T06:47:16.071436Z 0 [ERROR] [MY-013129] [Server] A message intended for a client cannot be sent there as no client-session is attached. Therefore, we're sending the information to the error-log instead: MY-001146 - Table 'mysql.component' doesn't exist
+mysql_1  | 2021-03-23T06:47:16.074996Z 0 [ERROR] [MY-010326] [Server] Fatal error: Can't open and lock privilege tables: Table 'mysql.user' doesn't exist
+mysql_1  | 2021-03-23T06:47:16.075424Z 0 [ERROR] [MY-010952] [Server] The privilege system failed to initialize correctly. For complete instructions on how to upgrade MySQL to a new version please see the 'Upgrading MySQL' section from the MySQL manual.
+
+https://askubuntu.com/questions/1253026/docker-mysql-error-no-mysql-table
+
+有时数据文件生成有问题，需要删除
+rm -rf mysql/db/*
+或：
+docker volume ls
+docker volume rm volume_name
+
+[MySQL创建用户与授权](https://www.jianshu.com/p/d7b9c468f20d)
+
+```sql
+-- 创建confluence数据库及用户
+-- https://ma.ttias.be/mysql-8-removes-shorthand-creating-user-permissions/ mysql8不能create+grant，所以这里需要改成
+CREATE DATABASE confluence CHARACTER SET utf8mb4 COLLATE utf8mb4_bin;
+CREATE USER 'confluence'@'%' IDENTIFIED BY 'f9i3ogq4z4szbf94AZWM';
+grant all on confluence.* to 'confluence'@'%';
+
+-- confluence要求设置事务级别为 READ-COMMITTED,mysql8也改成 transaction_isolation
+set global transaction_isolation='READ-COMMITTED';
+```
+
+[MySQL 四种事务隔离级的说明](https://www.cnblogs.com/zhoujinyi/p/3437475.html)
+  ·未提交读(Read Uncommitted)：允许脏读，也就是可能读取到其他会话中未提交事务修改的数据
+  ·提交读(Read Committed)：只能读取到已经提交的数据。Oracle等多数数据库默认都是该级别 (不重复读)
+  ·可重复读(Repeated Read)：可重复读。在同一个事务内的查询都是事务开始时刻一致的，InnoDB默认级别。在SQL标准中，该隔离级别消除了不可重复读，但是还存在幻象读
+  ·串行读(Serializable)：完全串行化的读，每次读都需要获得表级共享锁，读写相互都会阻塞
+
+[十、MySql8设置事务隔离级别](https://blog.csdn.net/u010285974/article/details/82253040)
+mysql8改成了 transaction_isolation
+
+MySQL [mysql]> show variables like 'transaction_isolation';
++-----------------------+-----------------+
+| Variable_name         | Value           |
++-----------------------+-----------------+
+| transaction_isolation | REPEATABLE-READ |
++-----------------------+-----------------+
+
+```bash
+docker build -t confluence:6.6.1 .
+
+docker run -d --name confluence -p 18010:8090 -e TZ="Asia/Shanghai" -v /home/kali/lab/confluence/data:/var/atlassian/confluence confluence:6.6.1
+docker run -it --name confluence -p 18010:8090 -e TZ="Asia/Shanghai" -v /home/kali/lab/confluence/data:/var/atlassian/confluence confluence:6.6.1 bash
+/entrypoint.py
+docker run -d --name confluence \
+  -p 18010:8090 \
+  -e TZ="Asia/Shanghai" \
+  -v /home/kali/lab/confluence/data:/var/atlassian/confluence \
+  confluence:6.6.1
+
+COPY "atlassian-agent-jar-with-dependencies.jar" /opt/atlassian/confluence/atlassian-agent.jar
+RUN echo 'export CATALINA_OPTS="-javaagent:/opt/atlassian/confluence/atlassian-agent.jar ${CATALINA_OPTS}"' >> /opt/atlassian/confluence/bin/setenv.sh
+```
+
+ERROR: Failed to find Premain-Class manifest attribute in /opt/atlassian/confluence/atlassian-agent.jar
+
+应该用： atlassian-agent-jar-with-dependencies.jar
+
+```basb
+mv atlassian-agent-jar-with-dependencies.jar data/
+mv /var/atlassian/confluence/atlassian-agent-jar-with-dependencies.jar /opt/atlassian/confluence/atlassian-agent.jar
+/entrypoint.py
+```
+
+B48W-BW96-A2X2-CVT3
+
+```bash
+# 设置产品类型：-p conf， 详情可执行：java -jar atlassian-agent.jar 
+java -jar atlassian-agent.jar -d -m test@test.com -n BAT -p conf -o http://192.168.0.89 -s B1BF-8EDE-GFRD-HFDH
+java -jar atlassian-agent.jar -d -m xxx@test.com -n BAT  -p conf -o http://192.168.56.111 -s B1BF-8EDE-GFRD-HFDH
+```
+
+Confluence needs a driver to connect to MySQL. You'll need to:
+
+Download the MySQL driver
+Drop the .jar file in /opt/atlassian/confluence/confluence/WEB-INF/lib
+Restart Confluence and continue the setup process.
+
+https://dev.mysql.com/downloads/connector/j/8.0.html
+
+172.17.0.1
+jdbc:mysql://172.17.0.1/confluence?useUnicode=true&characterEncodeing=utf8
+jdbc:mysql://172.17.0.1/confluence?useUnicode=true&characterEncoding=utf8mb4
+
+jdbc:mysql://172.17.0.1:3307/confluence?useUnicode=true&characterEncoding=utf8
+
+http://192.168.56.111:18010
+
+
+```sql
+# 创建confluence数据库及用户
+drop DATABASE confluence;
+CREATE DATABASE confluence CHARACTER SET utf8 COLLATE utf8_bin;
+grant all on confluence.* to 'confluence'@'%' identified by 'M4Zyq4eQbmgWfoyfNVnp';
+
+# confluence要求设置事务级别为READ-COMMITTED
+set global tx_isolation='READ-COMMITTED';
+```

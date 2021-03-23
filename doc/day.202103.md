@@ -2,6 +2,15 @@
 
 ## 20210323
 
+从零开始学习fuzzing之拥有快照/代码覆盖率指引的Fuzzer
+https://www.anquanke.com/post/id/234437
+
+内网渗透实战技巧
+https://www.anquanke.com/post/id/235101
+
+跨域数据共享场景下的数据泄露防护分析
+https://www.anquanke.com/post/id/234335
+
 CobaltStrike使用详解
 https://www.anquanke.com/post/id/235251
 
