@@ -75,6 +75,8 @@ https://www.hangge.com/blog/cache/detail_2411.html
 
 ## 编译 atlassian-agent
 
+https://gitee.com/pengzhile/atlassian-agent
+
 [Ubuntu 20.04换国内源 清华源 阿里源 中科大源 163源](https://blog.csdn.net/xiangxianghehe/article/details/105688062)
 
 ```basb
@@ -107,7 +109,7 @@ services:
       - mysql-data:/var/lib/mysql
       - ./tool:/tool
     environment:
-      - MYSQL_ROOT_PASSWORD=6XohRGkpAaxpfEGBqjjc
+      - MYSQL_ROOT_PASSWORD=xxx
       - TZ=Asia/Shanghai
   mysql:
     image: mysql:8.0.23
@@ -236,7 +238,7 @@ RHOSTS      127.0.0.1                  yes       The target host(s), range CIDR 
    SRVPORT     4444                       yes       The local port to listen on.
 LHOST  192.168.56.111   yes       The listen address (an interface may be specified)
    LPORT  4444             yes       The listen port
-set RHOSTS 127.0.0.0
+set RHOSTS 127.0.0.1
 set RPORT 18010
 set SRVHOST 10.0.2.15
 set SRVPORT 4444
