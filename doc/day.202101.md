@@ -880,10 +880,6 @@ https://www.anquanke.com/post/id/228229
 
 powershell在主机中是否存在安全隐患
 https://www.anquanke.com/post/id/227942
-## 0112
-
-https://zhuanlan.zhihu.com/p/101420781
-云原生安全-更安全的密文管理 Vault on ACK
 
 ## 0111
 
@@ -1000,8 +996,7 @@ https://www.anquanke.com/post/id/227630
 Apache Flink 多个漏洞分析
 https://www.anquanke.com/post/id/227668
 
-密钥管理服务Vault部署与应用介绍
-https://www.secrss.com/articles/11755
+
 
 ## 0106
 

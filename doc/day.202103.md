@@ -1,5 +1,35 @@
 # 202103
 
+## 20210325
+https://github.com/hashicorp/vault
+sec\udesk.sec.kms.md
+
+密钥管理服务Vault部署与应用介绍
+https://www.secrss.com/articles/11755
+
+https://zhuanlan.zhihu.com/p/101420781
+云原生安全-更安全的密文管理 Vault on ACK
+
+https://github.com/TophantTechnology/ARL
+ARL(Asset Reconnaissance Lighthouse)资产侦察灯塔系统旨在快速侦察与目标关联的互联网资产，构建基础资产信息库。 协助甲方安全团队或者渗透测试人员有效侦察和检索资产，发现存在的薄弱点和攻击面。
+
+白帽挖洞“乐高” | 斗象开源项目ARL新版本妙用锦囊
+https://www.freebuf.com/fevents/267337.html
+
+聊一聊我认识的Python安全
+https://www.freebuf.com/articles/web/264920.html
+
+Horusec is an open source tool that improves identification of vulnerabilities in your project with just one command.
+https://github.com/ZupIT/horusec
+安全研究 | 使用Horusec仅需一行命令即可扫描项目中的安全漏洞
+https://www.freebuf.com/sectool/265843.html
+等保测评2.0：Windows访问控制结果记录描述
+https://www.freebuf.com/articles/compliance/265276.html
+Java反序列化漏洞浅析
+https://www.anquanke.com/post/id/235511
+ntopng 权限绕过与任意代码执行漏洞通告
+https://www.anquanke.com/post/id/235822
+
 ## 20210324
 
 国家四部门联合印发规定，明确39类常见APP的必要个人信息范围
