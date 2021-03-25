@@ -481,16 +481,19 @@ https://imzlp.me/posts/11177/
 
 tor: hidden wiki
 
-
 ## 收集信息
 
 ### [nmap](\doc\sec\sec.hack.tools.nmap.md)
 
 ### [zenmap](\doc\sec\sec.hack.tools.nmap.md)
 
+TIP：rpm转deb包
+
+```bash
 apt-get install alien dpkg-dev debhelper build-essential -y
 alien xxx.rpm
 dpkg -i xxx.deb
+```
 
 ## wifi
 可用例子

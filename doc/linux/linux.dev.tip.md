@@ -236,3 +236,69 @@ sudo　!! 上一命令加上sudo 执行
 
 Shell重定向 ＆>file、2>&1、1>&2 、/dev/null的区别
 https://blog.csdn.net/u011630575/article/details/52151995
+
+## linux brew
+
+安装
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
+
+[CN安装](https://gitee.com/RubyKids/LinuxbrewCN)
+
+```bash
+bash -c "$(curl -fsSL https://gitee.com/RubyKids/LinuxbrewCN/raw/master/install.sh)"
+```
+
+[Homebrew / Linuxbrew 镜像使用帮助](https://mirrors.tuna.tsinghua.edu.cn/help/homebrew/)
+
+```bash
+if [[ "$(uname -s)" == "Linux" ]]; then BREW_TYPE="linuxbrew"; else BREW_TYPE="homebrew"; fi
+export HOMEBREW_BREW_GIT_REMOTE="https://mirrors.tuna.tsinghua.edu.cn/git/homebrew/brew.git"
+export HOMEBREW_CORE_GIT_REMOTE="https://mirrors.tuna.tsinghua.edu.cn/git/homebrew/${BREW_TYPE}-core.git"
+export HOMEBREW_BOTTLE_DOMAIN="https://mirrors.tuna.tsinghua.edu.cn/${BREW_TYPE}-bottles"
+```
+
+### [crystal-lang](https://crystal-lang.org/) v1.0.0
+
+http://www.crystal-lang.top/
+http://doc.crystal-lang.top/syntax/
+https://www.yuque.com/opensource-books/crystal-book/readme
+[执行一次编译和运行](http://www.crystal-lang.top/2018/01/01/compiler/)
+
+```bash
+sudo apt install libssl-dev      # for using OpenSSL
+sudo apt install libxml2-dev     # for using XML
+sudo apt install libyaml-dev     # for using YAML
+sudo apt install libgmp-dev      # for using Big numbers
+sudo apt install libz-dev        # for using crystal play
+brew install llvm
+brew install crystal-lang --with-llvm
+```
+居然装不了
+
+TIP： linux最佳安装还是编译好的可执行文件或是deb
+
+```bash
+https://github.com/crystal-lang/crystal/releases
+ln -s [full path to bin/crystal] /usr/local/bin/crystal
+
+docker pull crystallang/crystal:1.0.0
+$ echo 'puts "Hello World!"' > hello-world.cr
+$ docker run --rm -it -v $PWD:/workspace -w /workspace crystallang/crystal:0.32.1-alpine \
+    crystal build hello-world.cr --static
+$ ./hello-world
+Hello World!
+$ ldd hello-world
+        statically linked
+```
+
+## CPU 出现soft lockup的解决办法
+
+https://blog.csdn.net/zgl07/article/details/46493421
+
+```bash
+# echo 30 > /proc/sys/kernel/watchdog_thresh 
+sysctl -w kernel.watchdog_thresh=30
+/etc/sysctl.conf
+kernel.watchdog_thresh=30
+```
+
