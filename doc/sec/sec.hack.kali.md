@@ -1044,3 +1044,24 @@ GitHub Game Link: https://github.com/atilsamancioglu/2048
 ## chrome
 wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
 sudo apt install ./google-chrome-stable_current_amd64.deb
+
+## nmap
+https://learning.oreilly.com/library/view/ceh-certified-ethical/9781260454567/ch3.html
+scanning methodology
+https://www.w3schools.in/ethical-hacking/scanning-techniques/
+https://www.greycampus.com/opencampus/ethical-hacking/scanning-methodology
+
+nmap -sP 45.79.52.249/24
+nmap -sT -p 80,443 45.79.52.249/24
+TCP
+nmap -sS -p 80,443 45.79.52.249/24
+Stealthy
+nmap -O 45.79.52.249
+nmap -A 45.79.52.249
+nmap -A 10.77.1.11
+
+nmap -sS -D 10.77.1.80 10.77.1.226
+nmap --script vuln 10.7.1.226
+
+https://vulnhub.com
+https://www.youtube.com/watch?v=4t4kBkMsDbQ
