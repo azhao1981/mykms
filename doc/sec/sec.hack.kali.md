@@ -938,6 +938,24 @@ http://www.000webhost.com
 https://xxx.000webhostapp.com/password.html
 
 ## Beef github
+https://github.com/beefproject/beef
+
+error:Your RubyGems was installed trough APT ..
+https://stackoverflow.com/questions/13626143/how-to-upgrade-rubygems
+gem install rubygems-update
+update_rubygems
+  gem install nokogiri
+  gem install rubygems-update
+  gem uninstall nokogiri
+  gem uninstall -i /usr/share/rubygems-integration/2.7.0 nokogiri
+  gem uninstall rubygems-update
+gem update --system
+
+这个最好在root下也做一次
+$ gem sources --add https://gems.ruby-china.com/ --remove https://rubygems.org/
+
+$ bundle config mirror.https://rubygems.org https://gems.ruby-china.com
+
 
 
 Setting up a Kali Linux Docker Image
