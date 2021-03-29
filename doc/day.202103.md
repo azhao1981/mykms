@@ -1,5 +1,95 @@
 # 202103
 
+## 20210329
+MSF使用详解
+https://www.anquanke.com/post/id/235631
+CDN安全-论文复现-RangeAmp攻击
+https://www.anquanke.com/post/id/235832
+chisel：一款快速稳定的隧道工具
+https://www.anquanke.com/post/id/234771
+
+浅谈如何有效落地DevSecOps
+https://www.freebuf.com/articles/security-management/264610.html
+Givemexyz挖矿家族新变种云上肆虐
+https://www.freebuf.com/articles/network/264559.html
+使用Chimera混淆PowerShell代码绕过安防产品
+https://www.freebuf.com/sectool/266050.html
+
+【通告更新：EXP已公开】Sudo堆溢出漏洞（CVE-2021-3156）风险通告，腾讯主机安全（云镜）已支持检测
+https://s.tencent.com/research/bsafe/1238.html
+执行命令：sudo apt-get install --only-upgrade sudo
+
+CVE-2020-1971: OpenSSL 拒绝服务漏洞风险通告，腾讯主机安全（云镜）支持检测
+https://s.tencent.com/research/bsafe/1193.html
+sudo apt-get install openssl --only-upgrade
+
+【安全通报】OpenSSL 拒绝服务&证书绕过漏洞
+https://nosec.org/home/detail/4712.html
+
+openssl s_client -tls1_2 -connect xxx.cn:443
+
+MSSQL 数据库攻击实战指北—防守方攻略
+https://paper.seebug.org/1525/
+
+Ruby's -e, -n and -p switches
+https://robm.me.uk/2013/11/ruby-enp/
+
+## 20210327
+https://pwn.college/
+
+https://securitylab.github.com/research/one_day_short_of_a_fullchain_android/
+https://securitylab.github.com/research/one_day_short_of_a_fullchain_sbx/
+https://securitylab.github.com/research/one_day_short_of_a_fullchain_renderer/
+深入理解Android逆向调试原理
+https://mp.weixin.qq.com/s/9DOOapy7eMXqszaPY7bF4g
+
+## 20210326
+https://portswigger.net/research/hidden-oauth-attack-vectors
+https://github.com/0nise/weblogic-framework
+https://blog.securelayer7.net/powershell-for-pentest-examples-of-commands-scripts-for-pentesters/amp/?__twitter_impression=true
+https://academy.fuzzinglabs.com/courses/fuzzing-java-code-jazzer/721226-video/2100920-video-complete-step-by-step-tutorial
+通过ICO图标哈希绕过CDN查找服务器真实IP
+https://mp.weixin.qq.com/s/Dz9aQ0DHiDnJECQgIWZKHw
+1.360QuaKe https://quake.360.cn/quake/welcome
+2.fofa https://fofa.so/  icon_hash查询语法，仅限高级会员使用
+3.shodan https://www.shodan.io/ shodan http.icon hash
+  https://cloud.tencent.com/developer/article/1165189
+4.安恒雷神Sumap https://www.bountyteam.com/laboratory
+5.钟馗之眼 https://www.zoomeye.org/
+
+https://github.com/httpvoid/writeups/blob/main/Apple-RCE.md
+https://melotover.medium.com/how-i-leveraged-xss-to-make-privilege-escalation-to-be-super-admin-e120b6090451
+
+https://wasabigeek.com/blog/dont-give-up-on-your-rails-generators/
+https://remimercier.com/rspec-fundamentals-glossary/
+https://gorails.com/episodes/docker-basics-for-rails
+
+SQLite is not a toy database
+https://antonz.org/sqlite-is-not-a-toy-database/
+
+单位参加攻防演练的防守思路总结
+https://www.freebuf.com/articles/es/267478.html
+
+ntopng 权限绕过与任意代码执行漏洞通告
+https://www.anquanke.com/post/id/235961
+https://www.ntop.org/products/traffic-analysis/ntop/
+源海拾贝 | Viper - 半自动化内网信息收集
+https://www.anquanke.com/post/id/231501
+猫鼠游戏：Windows内核提权样本狩猎思路分享
+https://www.anquanke.com/post/id/235716
+
+OpenVAS提权
+https://csal.medium.com/pentesters-tricks-local-privilege-escalation-in-openvas-fe933d7f161f
+OAuth2.0安全浅析
+https://www.proofpoint.com/us/blog/cloud-security/oauth-abuse-think-solarwindssolorigate-campaign-focus-cloud-applications
+
+Limelighter：假证书安全工具
+https://github.com/Tylous/Limelighter
+好像不行
+
+白盒代码审计系统建设实践系列1：技术选型
+http://www.ijiandao.com/2b/baijia/405546.html
+
 ## 20210325
 https://github.com/hashicorp/vault
 sec\udesk.sec.kms.md

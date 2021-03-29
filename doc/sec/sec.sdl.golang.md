@@ -59,3 +59,22 @@ https://cloud.tencent.com/developer/article/1398007
 Hacking-With-Golang
 https://github.com/re4lity/Hacking-With-Golang
 
+### 代理
+
+https://github.com/goproxy/goproxy.cn
+
+```bash
+go env -w GO111MODULE=on
+go env -w GOPROXY=https://goproxy.cn,direct
+go env | grep proxy
+```
+
+### 跨平台编译
+
+https://www.digitalocean.com/community/tutorials/how-to-build-go-executables-for-multiple-platforms-on-ubuntu-16-04
+
+env GOOS=target-OS GOARCH=target-architecture go build package-import-path
+env GOOS=windows GOARCH=amd64 go build github.com/mholt/caddy/caddy
+windows
+linux
+darwin
