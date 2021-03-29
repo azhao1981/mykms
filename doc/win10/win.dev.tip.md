@@ -674,5 +674,8 @@ path
   D:\MinGW\include
   。
 
+https://www.7-zip.org/
+https://github.com/cuiocean/ZY-Player/releases
+https://github.com/cuiocean/ZY-Player-APP/releases
 
 
