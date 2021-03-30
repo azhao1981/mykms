@@ -1,5 +1,16 @@
 # 202103
 
+## 20210330
+
+Sqlmap使用详解
+https://www.anquanke.com/post/id/235846
+
+从“复盘”到“复仇”，谈如何正确的复盘
+https://www.freebuf.com/articles/neopoints/267893.html
+
+2021年攻防演练信息收集实战技巧
+https://www.freebuf.com/articles/web/266921.html
+
 ## 20210329
 MSF使用详解
 https://www.anquanke.com/post/id/235631
