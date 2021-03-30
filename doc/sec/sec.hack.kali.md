@@ -1065,3 +1065,37 @@ nmap --script vuln 10.7.1.226
 
 https://vulnhub.com
 https://www.youtube.com/watch?v=4t4kBkMsDbQ
+
+
+## OSINT
+
+https://osintframework.com/
+
+### viewdns.info [maltego4](https://www.maltego.com/ce-registration/)
+
+https://osintcurio.us/2020/04/15/data-scraping-and-visualizing-using-instant-data-scraper-viewdns-info-and-maltego/
+
+maltego
+Maltego Penetration Testing Transforms
+https://github.com/allfro/sploitego
+Set of Maltego transforms to inferface with a MISP Threat Sharing instance, and also to explore the whole MITRE ATT&CK dataset.
+https://github.com/MISP/MISP-maltego
+https://github.com/M0m0SMS-OSINT/Maltego
+https://github.com/topics/maltego
+https://github.com/OWASP/Amass
+开源情报相关的
+https://github.com/digitaldisarray/OSINT-Tools
+Pentesting suite for Maltego based on data in a Metasploit database
+https://github.com/shizzz477/msploitego
+Canari v3 - next gen Maltego framework for rapid remote and local transform development
+https://github.com/redcanari/canari3
+
+
+https://viewdns.info
+https://gephi.org/
+https://www.spiderfoot.net/
+
+Semi-automatic OSINT framework and package manager
+https://github.com/kpcyrd/sn0int
+Open-source python project to handle the storage and linking of open-source intelligence (ala Maltego)
+https://github.com/mgeide/poortego
