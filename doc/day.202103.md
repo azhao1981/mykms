@@ -1,6 +1,22 @@
 # 202103
 
+## 20210331
+ApplicationInspector：一款功能强大的软件源代码分析与审计工具 | SDL
+https://www.freebuf.com/sectool/226392.html
+CSS 中 的 margin、border、padding 区别 （内边距、外边距）
+https://blog.csdn.net/jiangyu1013/article/details/85244202
+
 ## 20210330
+
+Q:怎么获取一个 webpack js里的后台地址
+用JavaScript入侵JavaScript
+如何使用解析器和其他工具来分析JavaScript
+https://jsoverson.medium.com/hacking-javascript-with-javascript-6adbeaba22e9
+
+https://twitter.com/d0nutptr/status/1143087965775679490
+https://regex101.com/r/8NmiRL/1/
+
+https://shift-ast.org/
 
 Sqlmap使用详解
 https://www.anquanke.com/post/id/235846

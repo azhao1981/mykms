@@ -26,8 +26,6 @@ https://www.freebuf.com/geek/244688.html
 
 [代码审计思路讨论](https://www.freebuf.com/articles/web/222877.html)
 
-基于Owasp Modsecurity CRS规则的误报率和漏报率调试
-https://www.freebuf.com/articles/web/243781.html
 
 金融APP隐私保护与合规建设
 https://www.freebuf.com/articles/neopoints/243267.html

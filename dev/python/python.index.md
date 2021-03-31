@@ -23,8 +23,6 @@ https://github.com/wuchangfeng/Python-spider
 11、concurrent：RedSpider 社区开源的《深入浅出 Java 多线程》教程。在线阅读
 https://github.com/RedSpider1/concurrent
 
-https://github.com/SpiderLabs/ModSecurity
-
 Gospider：一款基于Go语言的快速Web爬虫
 https://www.freebuf.com/sectool/232276.html
 
