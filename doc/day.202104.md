@@ -1,5 +1,99 @@
 # 202104
 
+## 20210406
+
+https://github.com/terorie/cve-2021-3449
+https://www.openssl.org/news/secadv/20210325.txt
+
+https://github.com/terorie/cve-2021-3449.git
+openssl version -v
+openssl version -a
+腾讯云上并没有显示到底是什么补丁版本
+
+vulmon分数有点低
+https://vulmon.com/vulnerabilitydetails?qid=CVE-2021-3449
+
+阿里
+您好，跟后端核实，slb 这边不受这两个漏洞的影响。SLB这边关闭了 重协商。
+怎么测试？
+  按道理，我可以重复发这个请求，
+检测服务器是否开启重协商功能（用于CVE-2011-1473漏洞检测）
+https://blog.csdn.net/weixin_39078334/article/details/111300194
+
+tls 禁用重协商_白话SSL/TLS默认重协商漏洞原理与安全重协商对抗机制 - 全球可信SSL数字证书解决方案-INFINISIGN...
+https://blog.csdn.net/weixin_42437067/article/details/111955777
+
+TLS协议深入
+https://xiaochai.github.io/2020/07/05/tls/
+
+CVE-2021-28965: XML round-trip vulnerability in REXML
+https://www.ruby-lang.org/en/news/2021/04/05/xml-round-trip-vulnerability-in-rexml-cve-2021-28965/
+https://sourcegraph.com/github.com/ruby/ruby/-/compare/v2_6_6...v2_6_7
+https://sourcegraph.com/github.com/ruby/ruby/-/commit/1b59a4dc76caa061355f4289d2c54d4625671735?visible=11
+```ruby
+    def parse(xml)
+      REXML::Document.new(xml)
+    end
+    doc = parse(<<-XML)
+x<?x y
+<!--?><?x -->?>
+<r/>
+        XML
+        pi = doc.children[1]
+        assert_equal([
+                       "x",
+                       "y\n<!--",
+                     ],
+                     [
+                       pi.target,
+                       pi.content,
+                     ])
+```
+CVE-2021-28966: Path traversal in Tempfile on Windows | 只在windows生效
+https://www.ruby-lang.org/en/news/2021/04/05/tempfile-path-traversal-on-windows-cve-2021-28966/
+
+https://academy.hoppersroppers.org/mod/assign/view.php?id=679
+
+Linux的Cgroups在HIDS-Agent资源限制上的应用
+https://www.freebuf.com/articles/system/265733.html
+https://www.freebuf.com/sectool/266896.html
+安全研究 | 使用Procrustes从DNS流量中提取数据
+
+## 20210405
+
+Redis堆缓冲区溢出漏洞（CVE-2021-3470）
+http://www.nsfocus.net/vulndb/53544
+
+Windows渗透基础大全
+https://www.anquanke.com/post/id/236522
+
+WEB密码学攻击方式从0到1
+https://www.anquanke.com/post/id/235190
+
+## 20210404
+
+https://github.com/dwisiswant0/awesome-oneliner-bugbounty
+https://infosecwriteups.com/sql-injection-for-noobs-3677eac68d38
+
+## 20210402
+https://www.exploit-db.com/exploits/49736
+phpPgAdmin 7.13.0 - COPY FROM PROGRAM Command Execution (Authenticated)
+【安全通报】Gitlab 多处高危漏洞
+https://nosec.org/home/detail/4719.html
+
+（CSA 共识评估调查问卷）CSA Consensus Assessments Initiative Questionnaire
+https://blog.csdn.net/wumeng2012/article/details/84335517
+
+https://www.nist.gov/publications/guide-security-full-virtualization-technologies
+Guide to Security for Full Virtualization Technologies
+https://tsapps.nist.gov/publication/get_pdf.cfm?pub_id=907776
+NIST 网络安全相关标准 美国 （简单整理）
+https://blog.csdn.net/m0_46232048/article/details/107924430
+美国国家标准与技术研究院
+http://www.ecas.cas.cn/xxkw/kbcd/201115_83700/ml/xxhjsyjcss/201111/t20111117_3397740.html
+NIST 網路安全相關標準 美國 （簡單整理）
+https://tw511.com/a/01/7818.html
+https://github.com/decalage2/awesome-security-hardening
 ## 20210401
 
 A FREE comprehensive reverse engineering course covering x86, x64, 32-bit ARM & 64-bit ARM architectures.
