@@ -151,3 +151,147 @@ https://www.youtube.com/watch?v=iRIXXUNkgAM
 38:10 - Patching WSL (part 2)
 46:35 - GitHub search results
 47:28 - Patching WSL (part 3)
+
+## openssl cve-2021-3449
+
+https://github.com/terorie/cve-2021-3449
+https://www.openssl.org/news/secadv/20210325.txt
+
+https://github.com/terorie/cve-2021-3449.git
+openssl version -v
+openssl version -a
+腾讯云上并没有显示到底是什么补丁版本
+
+vulmon分数有点低
+https://vulmon.com/vulnerabilitydetails?qid=CVE-2021-3449
+
+阿里
+您好，跟后端核实，slb 这边不受这两个漏洞的影响。SLB这边关闭了 重协商。
+怎么测试？
+  按道理，我可以重复发这个请求，
+检测服务器是否开启重协商功能（用于CVE-2011-1473漏洞检测）
+https://blog.csdn.net/weixin_39078334/article/details/111300194
+
+tls 禁用重协商_白话SSL/TLS默认重协商漏洞原理与安全重协商对抗机制 - 全球可信SSL数字证书解决方案-INFINISIGN...
+https://blog.csdn.net/weixin_42437067/article/details/111955777
+
+TLS协议深入
+https://xiaochai.github.io/2020/07/05/tls/
+
+CVE-2021-28965: XML round-trip vulnerability in REXML
+https://www.ruby-lang.org/en/news/2021/04/05/xml-round-trip-vulnerability-in-rexml-cve-2021-28965/
+https://sourcegraph.com/github.com/ruby/ruby/-/compare/v2_6_6...v2_6_7
+https://sourcegraph.com/github.com/ruby/ruby/-/commit/1b59a4dc76caa061355f4289d2c54d4625671735?visible=11
+```ruby
+    def parse(xml)
+      REXML::Document.new(xml)
+    end
+    doc = parse(<<-XML)
+x<?x y
+<!--?><?x -->?>
+<r/>
+        XML
+        pi = doc.children[1]
+        assert_equal([
+                       "x",
+                       "y\n<!--",
+                     ],
+                     [
+                       pi.target,
+                       pi.content,
+                     ])
+```
+
+CVE-2021-28966: Path traversal in Tempfile on Windows | 只在windows生效
+https://www.ruby-lang.org/en/news/2021/04/05/tempfile-path-traversal-on-windows-cve-2021-28966/
+
+https://academy.hoppersroppers.org/mod/assign/view.php?id=679
+
+浅谈LDAP注入攻击
+https://www.anquanke.com/post/id/212186
+chrome 插件： hackbar
+  username=admin' or 1=1
+  [Hackbar 2.3.1插件许可证限制绕过](https://cloud.tencent.com/developer/article/1672156)
+  2.1.3后 收费，这是以前的版本 https://github.com/Mr-xn/hackbar2.1.3
+  [Chrome安装Hackbar插件](https://blog.csdn.net/weixin_41182861/article/details/107689926)
+  有开源的版本
+  https://github.com/0140454/hackbar
+  https://chrome.google.com/webstore/detail/hackbar/ginpbkfigcoaokgflihfhhmglmbchinc?hl=zh-CN
+  得看看怎么用
+wfuzz -c --hw 233 -d 'inputUsername=FUZZ&inputOTP=1234' -w special-chars.txt 10.10.10.122/login.php
+  kali 自带
+  stoken工具导入token
+  echo 285449490011357156531651545652335570713167411445727140604172141456711102716717000 > token.txt
+  stoken import --file=token.txt
+  apt install stoken
+
+https://githubmemory.com/repo/trapp3rhat/LDAP-injection
+
+## nginx
+
+sudo apt-get install build-essential libtool
+sudo apt-get update
+#安装依赖：gcc、g++依赖库
+sudo apt-get install build-essential libtool -y
+#安装 pcre依赖库（http://www.pcre.org/）
+sudo apt-get install libpcre3 libpcre3-dev -y
+#安装 zlib依赖库（http://www.zlib.net）
+sudo apt-get install zlib1g-dev -y
+#安装ssl依赖库
+sudo apt-get install openssl -y
+
+./configure
+sudo make
+sudo make install
+
+这个会手动编译得更多模块
+Ubuntu 18.04 编译安装 nginx
+https://blog.csdn.net/yuxiaomin886/article/details/103784918
+
+./configure --prefix=/usr/local/nginx \
+            --sbin-path=/usr/sbin/nginx \
+            --conf-path=/etc/nginx/nginx.conf \
+            --user=nginx \
+            --group=nginx \
+            --pid-path=/var/run/nginx.pid \
+            --lock-path=/var/run/nginx.lock \
+            --error-log-path=/var/log/nginx/error.log \
+            --http-log-path=/var/log/nginx/access.log \
+            --with-select_module \
+            --with-poll_module \
+            --with-threads \
+            --with-file-aio \
+            --with-http_ssl_module \
+            --with-http_v2_module \
+            --with-http_realip_module \
+            --with-http_addition_module \
+            --with-http_sub_module \
+            --with-http_dav_module \
+            --with-http_flv_module \
+            --with-http_mp4_module \
+            --with-http_gunzip_module \
+            --with-http_gzip_static_module \
+            --with-http_auth_request_module \
+            --with-http_random_index_module \
+            --with-http_secure_link_module \
+            --with-http_degradation_module \
+            --with-http_slice_module \
+            --with-http_stub_status_module \
+            --with-mail=dynamic \
+            --with-mail_ssl_module \
+            --with-stream \
+            --with-stream_ssl_module \
+            --with-stream_realip_module \
+            --with-stream_ssl_preread_module \
+            --with-compat \
+            --with-pcre=../pcre-8.42 \ 
+            --with-pcre-jit \
+            --with-zlib=../zlib-1.2.11 \
+            --with-openssl=../openssl-1.1.1a \
+            --with-openssl-opt=no-nextprotoneg \
+            --with-debug
+
+
+
+Ubuntu18.04手动编译安装nginx
+https://blog.csdn.net/A156348933/article/details/85335089

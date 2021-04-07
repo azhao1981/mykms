@@ -1,59 +1,25 @@
 # 202104
 
+## 20210407
+
+https://reconshell.com/threatmapper-identify-vulnerabilities-in-running-containers/
+
+今天有很多
+https://github.com/advisories
+
+HIDS-Agent开发之检测反弹shell
+https://www.anquanke.com/post/id/235717
+
+防守方攻略：四大主流WebShell管理工具分析
+https://www.freebuf.com/sectool/268477.html
+
+Xstream 反序列化远程代码执行漏洞深入分析
+https://paper.seebug.org/1543/
+
+https://www.secjuice.com/web-application-firewall-waf-evasion/
+https://medium.com/secjuice/waf-evasion-techniques-718026d693d8
+
 ## 20210406
-
-https://github.com/terorie/cve-2021-3449
-https://www.openssl.org/news/secadv/20210325.txt
-
-https://github.com/terorie/cve-2021-3449.git
-openssl version -v
-openssl version -a
-腾讯云上并没有显示到底是什么补丁版本
-
-vulmon分数有点低
-https://vulmon.com/vulnerabilitydetails?qid=CVE-2021-3449
-
-阿里
-您好，跟后端核实，slb 这边不受这两个漏洞的影响。SLB这边关闭了 重协商。
-怎么测试？
-  按道理，我可以重复发这个请求，
-检测服务器是否开启重协商功能（用于CVE-2011-1473漏洞检测）
-https://blog.csdn.net/weixin_39078334/article/details/111300194
-
-tls 禁用重协商_白话SSL/TLS默认重协商漏洞原理与安全重协商对抗机制 - 全球可信SSL数字证书解决方案-INFINISIGN...
-https://blog.csdn.net/weixin_42437067/article/details/111955777
-
-TLS协议深入
-https://xiaochai.github.io/2020/07/05/tls/
-
-CVE-2021-28965: XML round-trip vulnerability in REXML
-https://www.ruby-lang.org/en/news/2021/04/05/xml-round-trip-vulnerability-in-rexml-cve-2021-28965/
-https://sourcegraph.com/github.com/ruby/ruby/-/compare/v2_6_6...v2_6_7
-https://sourcegraph.com/github.com/ruby/ruby/-/commit/1b59a4dc76caa061355f4289d2c54d4625671735?visible=11
-```ruby
-    def parse(xml)
-      REXML::Document.new(xml)
-    end
-    doc = parse(<<-XML)
-x<?x y
-<!--?><?x -->?>
-<r/>
-        XML
-        pi = doc.children[1]
-        assert_equal([
-                       "x",
-                       "y\n<!--",
-                     ],
-                     [
-                       pi.target,
-                       pi.content,
-                     ])
-```
-CVE-2021-28966: Path traversal in Tempfile on Windows | 只在windows生效
-https://www.ruby-lang.org/en/news/2021/04/05/tempfile-path-traversal-on-windows-cve-2021-28966/
-
-https://academy.hoppersroppers.org/mod/assign/view.php?id=679
-
 Linux的Cgroups在HIDS-Agent资源限制上的应用
 https://www.freebuf.com/articles/system/265733.html
 https://www.freebuf.com/sectool/266896.html
