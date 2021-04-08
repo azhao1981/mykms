@@ -1,11 +1,39 @@
 # 202104
 
+## 20210408
+基于Frida的Windows厚客户端SSL流量解析研究
+https://www.freebuf.com/articles/web/265860.html
+
+个人隐私保护
+https://www.freebuf.com/column/2293
+
+防守方攻略：四大主流WebShell管理工具分析
+https://www.freebuf.com/sectool/268477.html
+IDA 辅助工具Karta——二进制文件中搜索开源代码
+https://www.anquanke.com/post/id/235632
+源海拾贝 | hooker自动化生成frida脚本
+https://www.anquanke.com/post/id/236820
+
+https://infosecwriteups.com/powershell-reverse-shell-with-social-engineering-toolkit-90506e891269
+https://google.github.io/security-research/pocs/linux/bleedingtooth/writeup.html
+BleedingTooth: Linux Bluetooth Zero-Click Remote Code Execution
+
 ## 20210407
 
 https://reconshell.com/threatmapper-identify-vulnerabilities-in-running-containers/
 
 今天有很多
 https://github.com/advisories
+Cross-site scripting in actionpack
+https://github.com/advisories/GHSA-35mm-cc6r-8fjp
+jetty三个
+https://github.com/advisories/GHSA-j6qj-j888-vvgq
+https://github.com/advisories/GHSA-26vr-8j45-3r4w
+https://github.com/advisories/GHSA-v7ff-8wcx-gmc5
+
+CVE-2021-25329
+Potential remote code execution in Apache Tomcat
+https://github.com/advisories/GHSA-jgwr-3qm3-26f3
 
 HIDS-Agent开发之检测反弹shell
 https://www.anquanke.com/post/id/235717

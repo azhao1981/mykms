@@ -24,6 +24,11 @@ https://www.freebuf.com/sectool/252418.html
 
 ## windows安全
 
+## linux
+
+[linux 漏洞](doc\sec\sec.vuls.linux.md)
+[linux 加固](sec.ops.linux.md)
+
 ## java
 
 https://docs.oracle.com/javase/8/docs/technotes/guides/security/
@@ -61,9 +66,7 @@ https://www.lshack.cn/774/
 一个中文的安全 WIKI
 https://github.com/euphrat1ca/security_w1k1
 
-有价值的 库 https://github.com/starnightcyber/Miscellaneous
-> https://github.com/starnightcyber/Miscellaneous/tree/master/基线检查&加固
-> https://www.freebuf.com/sectool/237396.html
+
 
 有等级分类安全公告: <https://www.csa.gov.sg/singcert/alerts/sb-2020-006>
 
