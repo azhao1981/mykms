@@ -1239,3 +1239,11 @@ sqlmap -u http://xxxx/?username=xxx -T tName -D dbName
 
 ### owasp zap
 scan policy
+
+## 网络模型
+
+![](2021-04-06-23-10-30.png)
+
+## python
+
+https://github.com/atilsamancioglu/PythonCourse/blob/master/01-Variables.ipynb
