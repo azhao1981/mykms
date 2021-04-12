@@ -1248,3 +1248,8 @@ scan policy
 ## python
 
 https://github.com/atilsamancioglu/PythonCourse/blob/master/01-Variables.ipynb
+
+
+## xss relfected  
+## xss stored  
++ beef
