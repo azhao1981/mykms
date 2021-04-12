@@ -24,6 +24,15 @@ https://github.com/moonbingbing/openresty-best-practices
 [WAF代码剖析之初识openresty](https://www.freebuf.com/articles/web/251429.html)
 [这个好像还是一个nginx的CVE连动的](https://hackerone.com/reports/513236)
 
+如何编写正确且⾼效的 OpenResty应⽤
+http://bos.itdks.com/1a86e813234242fd9bce559e1aa3c9fb.pdf
+
+nginx null byte 
+https://github.com/Kong/kong/issues/1816
+https://hackerone.com/reports/513236
+https://portswigger.net/daily-swig/email-security-mail-ru-patches-critical-memory-disclosure-flaw
+https://www.delltechnologies.com/en-us/collaterals/unauth/white-papers/ecs-with-ngixn-deployment-reference-guide.pdf
+
 ### Modsecurity
 
 [基于Owasp Modsecurity CRS规则的误报率和漏报率调试](https://www.freebuf.com/articles/web/243781.html)
