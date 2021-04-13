@@ -1281,3 +1281,15 @@ weevely http://10.0.2.14/dvwa//hackable/uploads/1.php 11111
 ### file inclusion
 
 http://10.0.2.14/dvwa/vulnerablities/fi/?page=/etc/passwd
+## 网络模型
+
+![](2021-04-06-23-10-30.png)
+
+## python
+
+https://github.com/atilsamancioglu/PythonCourse/blob/master/01-Variables.ipynb
+
+
+## xss relfected  
+## xss stored  
++ beef
