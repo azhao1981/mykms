@@ -1,5 +1,83 @@
 # 202104
 
+## 20210412
+JWT jku/x5u Authentication bypass 学习与实践
+https://www.anquanke.com/post/id/236830
+CVE-2021-24074 TCP/IP协议栈漏洞分析
+https://www.anquanke.com/post/id/235165
+etcd未授权访问的风险及修复方案详解
+https://www.anquanke.com/post/id/236831
+浅谈安全运营的二三事
+https://www.freebuf.com/articles/266036.html
+账号安全那些事儿
+https://www.freebuf.com/articles/network/266851.html
+
+https://www.pwnwiki.org/index.php?title=%E7%A6%AA%E9%81%93_8.2-9.2.1_%E6%B3%A8%E5%85%A5GetShell%E6%BC%8F%E6%B4%9E
+https://www.pwnwiki.org/index.php?title=%E7%A6%AA%E9%81%93_8.2_-_9.2.1%E5%89%8D%E5%8F%B0Getshell%E6%BC%8F%E6%B4%9E
+https://www.pwnwiki.org/index.php?title=%E7%A6%AA%E9%81%93_11.6_%E4%BB%BB%E6%84%8F%E6%96%87%E4%BB%B6%E8%AE%80%E5%8F%96%E6%BC%8F%E6%B4%9E
+https://www.pwnwiki.org/index.php?title=%E7%A6%AA%E9%81%93_11.6_%E9%81%A0%E7%A8%8B%E4%BB%A3%E7%A2%BC%E5%9F%B7%E8%A1%8C%E6%BC%8F%E6%B4%9E
+https://www.pwnwiki.org/index.php?title=%E5%A5%87%E5%AE%89%E4%BF%A1NS-NGFW_%E7%B6%B2%E5%BA%B7%E9%98%B2%E7%81%AB%E7%89%86%E5%89%8D%E8%87%BARCE%E6%BC%8F%E6%B4%9E
+
+Erlang Cookie 遠程代碼執行漏洞
+https://www.pwnwiki.org/index.php?title=Erlang_Cookie_%E9%81%A0%E7%A8%8B%E4%BB%A3%E7%A2%BC%E5%9F%B7%E8%A1%8C%E6%BC%8F%E6%B4%9E
+https://insinuator.net/2017/10/erlang-distribution-rce-and-a-cookie-bruteforcer/
+利用erlang的4369端口，如果知道共享cookie,可以直接执行
+如果没有，由于erlang没有检查暴力破解，也可以使用工具暴力破解 密码是：random string [A:Z] with a length of 20 characters
+
+Contextual Content Discovery Tool
+https://github.com/assetnote/kiterunner
+When you don’t realize you’re bleeding or data leaks without hacking by Ivan Glinkin
+https://hakin9.org/data-leaks-without-hacking/
+
+https://castilho101.github.io/midnightsun-2021-ctf/
+https://muzec0318.github.io/posts/BufferOverflow.html
+Exploiting Windows RPC to bypass CFG mitigation: analysis of CVE-2021-26411 in-the-wild sample
+https://iamelli0t.github.io/2021/04/10/RPC-Bypass-CFG.html
+
+## 20210410
+
+https://github.com/assetnote/kiterunner
+
+CVE-2019-10173 Xstream 1.4.10遠程代碼執行漏洞
+https://www.pwnwiki.org/index.php?title=CVE-2019-10173_Xstream_1.4.10%E9%81%A0%E7%A8%8B%E4%BB%A3%E7%A2%BC%E5%9F%B7%E8%A1%8C%E6%BC%8F%E6%B4%9E
+## 20210409
+
+17 Cookie 的 HttpOnly 和 Secure 属性作用
+https://www.jianshu.com/p/b507f9a19447
+
+Cookie的Secure属性，意味着保持Cookie通信只限于加密传输，指示浏览器仅仅在通过安全/加密连接才能使用该Cookie。如果一个Web服务器从一个非安全连接里设置了一个带有secure属性的Cookie，当Cookie被发送到客户端时，它仍然能通过中间人攻击来拦截。
+
+Cookie的HttpOnly属性，指示浏览器不要在除HTTP（和 HTTPS)请求之外暴露Cookie。一个有HttpOnly属性的Cookie，不能通过非HTTP方式来访问，例如通过调用JavaScript(例如，引用document.cookie），因此，不可能通过跨域脚本（一种非常普通的攻击技术）来偷走这种Cookie。尤其是Facebook 和 Google 正在广泛地使用HttpOnly属性。
+
+一个账户接管几乎所有阿里巴巴网站(CSRF漏洞+WAF绕过)
+https://www.cnblogs.com/17bdw/p/10709393.html
+Mssql手工注入执行命令小记
+https://www.anquanke.com/post/id/237031
+Xstream反序列化远程代码执行漏洞深入分析
+https://www.anquanke.com/post/id/237207
+
+CloudBees Jenkins数据验证漏洞（CVE-2021-21639）
+http://www.nsfocus.net/vulndb/53590
+CloudBees Jenkins视图名称验证绕过漏洞（CVE-2021-21640）
+http://www.nsfocus.net/vulndb/53591
+CloudBees Jenkins Promoted Builds Plugin跨站请求伪造漏洞（CVE-2021-21641）
+http://www.nsfocus.net/vulndb/53592
+
+
+VSCode 下的 frida 插件
+https://paper.seebug.org/1553/
+
+一个出人意料的虚拟机漏洞
+https://paper.seebug.org/1550/
+
+CVE-2020-12352&CVE-2020-12351 Linux Kernel 5.4 BleedingTooth遠程代碼執行漏洞
+https://www.pwnwiki.org/index.php?title=CVE-2020-12352%26CVE-2020-12351_Linux_Kernel_5.4_BleedingTooth%E9%81%A0%E7%A8%8B%E4%BB%A3%E7%A2%BC%E5%9F%B7%E8%A1%8C%E6%BC%8F%E6%B4%9E
+
+Linux Kernel 5.4 - 'BleedingTooth' Bluetooth Zero-Click Remote Code Execution
+https://www.exploit-db.com/exploits/49754?utm_source=dlvr.it&utm_medium=twitter
+
+https://bendtheory.medium.com/journeys-in-quoteless-and-multi-reflection-xss-b1d67bb0c5dd
+
 ## 20210408
 基于Frida的Windows厚客户端SSL流量解析研究
 https://www.freebuf.com/articles/web/265860.html

