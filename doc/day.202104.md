@@ -1,6 +1,16 @@
 # 202104
 
+## 20210413
+
+代码分析工具joern的基本用法
+https://www.anquanke.com/post/id/236184
+深度分析CobaltStrike（一）—— Beacon生成流程及Shellcode分析
+https://www.anquanke.com/post/id/237127
+使用Sysmon和Winlogbeat打造Windows平台的HIDS
+https://www.anquanke.com/post/id/236222
+
 ## 20210412
+
 JWT jku/x5u Authentication bypass 学习与实践
 https://www.anquanke.com/post/id/236830
 CVE-2021-24074 TCP/IP协议栈漏洞分析
