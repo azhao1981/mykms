@@ -2,6 +2,22 @@
 
 ## 20210413
 
+https://activationskey.org/nessus-crack/
+Nessus 最新版本8.13.1破解安装教程
+https://www.freebuf.com/sectool/260004.html
+
+序列号：
+4ED5F6TGYHUJ456789I
+WERTYHUJ4567890SXD
+CFVBGHNW46789IASD
+GNHJME567YU89IUUJY
+激活码：
+GFBVDCSASDRFTGYHJK
+45RY7U89IXSEDCFGVBN
+JMW35T6Y78J76GYUHVB
+
+## 20210413
+
 代码分析工具joern的基本用法
 https://www.anquanke.com/post/id/236184
 深度分析CobaltStrike（一）—— Beacon生成流程及Shellcode分析

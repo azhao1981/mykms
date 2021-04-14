@@ -269,3 +269,54 @@ sysctl -w kernel.watchdog_thresh=30
 kernel.watchdog_thresh=30
 ```
 
+## ubuntu 源
+
+```1804
+deb https://mirrors.ustc.edu.cn/ubuntu/ bionic main restricted universe multiverse
+deb-src https://mirrors.ustc.edu.cn/ubuntu/ bionic main restricted universe multiverse
+deb https://mirrors.ustc.edu.cn/ubuntu/ bionic-updates main restricted universe multiverse
+deb-src https://mirrors.ustc.edu.cn/ubuntu/ bionic-updates main restricted universe multiverse
+deb https://mirrors.ustc.edu.cn/ubuntu/ bionic-backports main restricted universe multiverse
+deb-src https://mirrors.ustc.edu.cn/ubuntu/ bionic-backports main restricted universe multiverse
+deb https://mirrors.ustc.edu.cn/ubuntu/ bionic-security main restricted universe multiverse
+deb-src https://mirrors.ustc.edu.cn/ubuntu/ bionic-security main restricted universe multiverse
+deb https://mirrors.ustc.edu.cn/ubuntu/ bionic-proposed main restricted universe multiverse
+deb-src https://mirrors.ustc.edu.cn/ubuntu/ bionic-proposed main restricted universe multiverse
+
+```
+原文链接：https://blog.csdn.net/xiangxianghehe/article/details/105688062
+
+```
+deb https://mirrors.ustc.edu.cn/ubuntu/ focal main restricted universe multiverse
+deb-src https://mirrors.ustc.edu.cn/ubuntu/ focal main restricted universe multiverse
+deb https://mirrors.ustc.edu.cn/ubuntu/ focal-updates main restricted universe multiverse
+deb-src https://mirrors.ustc.edu.cn/ubuntu/ focal-updates main restricted universe multiverse
+deb https://mirrors.ustc.edu.cn/ubuntu/ focal-backports main restricted universe multiverse
+deb-src https://mirrors.ustc.edu.cn/ubuntu/ focal-backports main restricted universe multiverse
+deb https://mirrors.ustc.edu.cn/ubuntu/ focal-security main restricted universe multiverse
+deb-src https://mirrors.ustc.edu.cn/ubuntu/ focal-security main restricted universe multiverse
+deb https://mirrors.ustc.edu.cn/ubuntu/ focal-proposed main restricted universe multiverse
+deb-src https://mirrors.ustc.edu.cn/ubuntu/ focal-proposed main restricted universe multiverse
+```
+
+## virtualBox iamges linux server
+
+https://www.osboxes.org/
+Disable Mouse Integration for VirtualBox: Run virtual machine go to menu Machine > Disable Mouse Integration or simply press Right CTRL + i to enable/disable mouse integration.
+Fix Blankscreen issue: Go to Settings > Display > Sleep > Select “30 minutes”
+Important! For VMware: After setting up, go to “Virtual Machine Settings” > under “Hardware” Tab > Select “Display” > Enable “Accelerate 3D graphics”
+VMware Compatibility: Version 10+
+
+BackBox
+Username: osboxes
+Password: osboxes.org
+VB Guest Additions & VMware Tools: Installed
+Keyboard Layout: US (Qwerty)
+VMware Compatibility: Version 10+
+
+##　—添加开机启动ｓ
+https://www.cnblogs.com/Areas/p/13439000.html
+Linux Ubuntu 20.04 —添加开机启动(服务/脚本)
+
+https://gist.github.com/mohamadaliakbari/1cb9400984094541581fff07143e1c9d
+开机启动 networkd
