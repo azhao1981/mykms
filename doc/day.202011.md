@@ -295,8 +295,6 @@ https://nosec.org/home/detail/4609.html
 手把手教你入门内网渗透之二
 https://www.anquanke.com/post/id/222269
 
-Java安全编码之CSRF
-https://www.anquanke.com/post/id/222284
 
 警惕！你的业务系统可能已经成为黑产违法犯罪的凶器| 要对短信接口做渗透测试和要求
 https://www.freebuf.com/articles/es/252876.html

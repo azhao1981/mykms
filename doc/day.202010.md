@@ -475,9 +475,7 @@ https://www.anquanke.com/post/id/220239
 
 ## 20201021
 
-https://portswigger.net/web-security/csrf
-https://portswigger.net/web-security/ssrf
-https://portswigger.net/support/using-burp-to-test-for-cross-site-request-forgery
+
 
 
 

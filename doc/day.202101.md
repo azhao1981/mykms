@@ -817,9 +817,7 @@ https://codepen.io/
 静态网页搜索
 https://stackshare.io/stork-search?utm_source=weekly_digest&utm_medium=email&utm_campaign=01132021&utm_content=new_tool
 https://github.com/jameslittle230/stork?ref=stackshare
-omniauth 终于解决 CVE-2015-9284
-https://github.com/omniauth/omniauth/releases/tag/v2.0.0
-https://github.com/cookpad/omniauth-rails_csrf_protection
+
 
 网页粉笔画
 https://dev.to/baweaver/ruby-3-pattern-matching-applied-poker-4b9d

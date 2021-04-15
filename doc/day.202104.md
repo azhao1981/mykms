@@ -1,5 +1,42 @@
 # 202104
 
+## 20210414
+
+
+https://github.com/r3curs1v3-pr0xy/vajra
+如何使用Vajar进行自动化Web应用渗透测试
+https://www.freebuf.com/articles/web/267826.html
+
+https://github.com/heilla/SecurityTesting
+wordlists awesome
+https://github.com/heilla/SecurityTesting/blob/master/wordlists/Collection%20of%20wordlists.md
+A virtual host scanner that performs reverse lookups, can be used with pivot tools, detect catch-all scenarios, work around wildcards, aliases and dynamic default pages.
+https://github.com/codingo/VHostScan
+
+Chrome0Day预警
+[【安全通报】Chrome 远程代码执行漏洞（0day）](https://nosec.org/home/detail/4731.html)
+描述： 攻击者利用此漏洞，可以构造一个恶意的web页面，当用户访问该页面时，会造成远程代码执行。
+[【POC公开】Chrome 远程代码执行0Day漏洞通告](https://mp.weixin.qq.com/s/dZl_Urk8cOJ1Qbe16HBFGQ)
+  临时修补建议:强烈建议广大用户在SandBox模式下运行Chrome
+  [Chrome谷歌浏览器沙盒模式更强悍](https://www.mydll.com.cn/post/1663.html)
+  特别说明：Chrome浏览器沙盒功能默认开启，无需自行设定，实际上也没有设置选项
+POC:
+https://github.com/r4j0x00/exploits/tree/master/chrome-0day
+  https://github.com/r4j0x00/exploits.git
+    + 运行后看到是crash了，但是运行了什么代码？一些demo显示能打开计算器什么的
+
+[【安全通报】Apache Solr多个漏洞通告（CVE-2021-27905等）](https://nosec.org/home/detail/4730.html)
+
+https://gregoryszorc.com/blog/2021/04/13/rust-is-for-professionals/
+
+https://www.honeybadger.io/blog/http-caching-ruby-rails/
+http://www.talkingquickly.co.uk/kubernetes-sso-a-detailed-guide
+https://longliveruby.com/articles/building-dsl-with-ruby
+
+https://evilmartians.com/chronicles/set-up-tailwind-css-jit-in-a-rails-project-to-compile-styles-20x-faster
+https://gorails.com/episodes/stripe-checkout-rails
+https://hschne.at/2021/04/04/build-real-time-clis-with-actioncable.html
+
 ## 20210413
 
 代码分析工具joern的基本用法
@@ -59,8 +96,7 @@ Cookie的Secure属性，意味着保持Cookie通信只限于加密传输，指�
 
 Cookie的HttpOnly属性，指示浏览器不要在除HTTP（和 HTTPS)请求之外暴露Cookie。一个有HttpOnly属性的Cookie，不能通过非HTTP方式来访问，例如通过调用JavaScript(例如，引用document.cookie），因此，不可能通过跨域脚本（一种非常普通的攻击技术）来偷走这种Cookie。尤其是Facebook 和 Google 正在广泛地使用HttpOnly属性。
 
-一个账户接管几乎所有阿里巴巴网站(CSRF漏洞+WAF绕过)
-https://www.cnblogs.com/17bdw/p/10709393.html
+
 Mssql手工注入执行命令小记
 https://www.anquanke.com/post/id/237031
 Xstream反序列化远程代码执行漏洞深入分析

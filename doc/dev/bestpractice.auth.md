@@ -6,6 +6,8 @@ Authenticate 验证，回答是不是本系统用户问题
 
 Authorize 授权，回答本系统用户U-1能不能使用模块M-1的问题
 
+参考： [IEEE 安全设计模型](https://cybersecurity.ieee.org/blog/2016/06/02/design-best-practices-for-an-authentication-system/)
+
 ## authentication 验证
 
 1. 能导出资源列表
@@ -17,8 +19,6 @@ Authorize 授权，回答本系统用户U-1能不能使用模块M-1的问题
 7. 敏感数据需要再次验证
 8. 需要有不操作过期时间，如果业务需要，可以手动取消
 9. 记录所有身份认证相关日志
-
-[IEEE 安全设计模型](https://cybersecurity.ieee.org/blog/2016/06/02/design-best-practices-for-an-authentication-system/)
 
 常见现成验证标准：
 

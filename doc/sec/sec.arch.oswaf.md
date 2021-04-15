@@ -14,6 +14,7 @@ https://github.com/0xInfection/Awesome-WAF
 [JXWAF(基于OpenResty) ](https://github.com/jx-sec/jxwaf)
 [BrowserWAF：免费、开源的前端WAF ](https://www.sohu.com/a/403107976_354899)
 
+
 ### openresty
 
 https://github.com/openresty/openresty
@@ -32,6 +33,22 @@ https://github.com/Kong/kong/issues/1816
 https://hackerone.com/reports/513236
 https://portswigger.net/daily-swig/email-security-mail-ru-patches-critical-memory-disclosure-flaw
 https://www.delltechnologies.com/en-us/collaterals/unauth/white-papers/ecs-with-ngixn-deployment-reference-guide.pdf
+
+High-performance WAF built on the OpenResty stack
+https://github.com/p0pr0ck5/lua-resty-waf
+
+###　kong waf
+
+https://docs.konghq.com/hub/wallarm/wallarm/
+Kong APIGW — Plugins — Security
+https://chowdera.com/2021/02/20210220061643219I.html
+将loveshell的ngx_lua_waf插件迁移为kong-waf插件, 适配kong
+https://github.com/exexute/kong-waf
+kong安装lua waf之最佳实践
+https://exexute.github.io/2018/12/25/kong%E5%AE%89%E8%A3%85lua-waf%E4%B9%8B%E6%9C%80%E4%BD%B3%E5%AE%9E%E8%B7%B5/
+Kong plugin for lua-resty-waf
+https://github.com/zhenguang/kong-plugin-lua-resty-waf
+
 
 ### Modsecurity
 
@@ -61,6 +78,9 @@ VeryNginx基于lua_nginx_module(openrestry)。
   它增强了Nginx的功能，并提供了友好的Web界面。
 在 web 界面里面修改配置后，保存后即刻生效，并不需要重启 Nginx 或者 reload 。
 
+### naxsi
+NAXSI is an open-source, high performance, low rules maintenance WAF for NGINX
+https://github.com/nbs-system/naxsi
 ### OpenRASP
 
 [OpenRASP学习笔记](https://www.anquanke.com/post/id/216886)

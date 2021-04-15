@@ -56,9 +56,7 @@ https://www.anquanke.com/post/id/215347
 
 ## 20200825
 
-django的csrf保护
-In general, this can occur when there is a genuine Cross Site Request Forgery, or when Django's CSRF mechanism has not been used correctly. For POST forms, you need to ensure:
-https://docs.djangoproject.com/en/2.1/ref/csrf/
+
 
 [一个黑客写的开源情报方法和工具：在线情报实用指南](https://mp.weixin.qq.com/s/4VCiU1Oi94rKX9uCJ8YkbA)
 
