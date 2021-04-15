@@ -1,5 +1,163 @@
 # 202104
 
+## 20210415
+
+和busybox一样有意思的小工具
+https://busybox.net/tinyutils.html
+https://busybox.net/FAQ.html
+[Busybox](https://yeasy.gitbook.io/docker_practice/os/busybox)
+busybox vs toybox
+https://www.oreilly.com/library/view/mastering-embedded-linux/9781787283282/8c0f324c-1759-4362-8741-e2e5c9db9bff.xhtml
+toybox 小，少，只是许可不同
+
+
+https://github.com/samuela/rustybox
+cargo build --all-features
+[Statically Linked Rust App](https://zhuanlan.zhihu.com/p/38948830)
+http://zderadicka.eu/static-build-of-rust-executables/
+ERROR: 一大推错误
+
+MesaBox is a collection of core system utilities written in Rust for Unix-like systems.
+https://github.com/mesalock-linux/mesabox
+uutils is an attempt at writing universal (as in cross-platform) CLI utilities in Rust. This repository is intended to aggregate GNU coreutils rewrites.
+https://github.com/uutils/coreutils
+
+https://dev.to/humblecoder00/comprehensive-big-o-notation-guide-in-plain-english-using-javascript-3n6m
+https://dev.to/fossheim/i-drew-a-synthesizer-with-html-css-53f
+https://dev.to/afif/another-100-underline-overlay-animations-the-extended-css-collection-574c
+https://dev.to/jemimaabu/how-i-built-my-perfect-score-portfolio-website-4ek0
+
+【贈初學者】 一些滲透測試學習資料集合
+https://www.evilrm.com/t/5
+
+红日攻防实验室
+https://github.com/redBu1l/pentest_book/blob/master/Pentest_Books.md
+白帽子安全开发实战配套代码仓库
+https://github.com/netxfly/sec-dev-in-action-src
+
+蓝队的自我修养之事后溯源（归因）
+https://www.freebuf.com/articles/network/269240.html
+如何打造自己的PoC框架-Pocsuite3-框架篇
+https://paper.seebug.org/913/
+固定资产下的快速刷洞：简易POC框架的打造
+https://www.freebuf.com/sectool/267793.html
+
+List Of 37 courses for all IT Greek.
+
+Watch Now.
+
+Full Stack Web Developer Bootcamp
+https://www.youtube.com/watch?v=KVrpyhZpv2g
+
+Linux Mastery Master the Linux Command Line
+https://www.youtube.com/watch?v=f0Xsg4vKWXg
+
+Introduction to Computer Networks for Non Techies
+https://www.youtube.com/watch?v=aFzxweQ_iMk
+
+The Complete Java Developer Course
+https://www.youtube.com/watch?v=Oyiy57z6ZkU
+
+Cyber Security Hands-on: Complete Network Security A-Z™
+https://www.youtube.com/watch?v=HLrJlsxomks
+
+Red Hat Linux Certified System Admin SA1 RHEL7
+https://www.youtube.com/watch?v=0yK5H6boJRE
+
+Learn operating system
+https://youtu.be/R-g2b9N_jrs
+
+Start using wireshark to hack like a pro
+https://youtu.be/MNSlJa344qE
+
+Ethical hacking the most advanced level nmap course
+https://youtu.be/tsaeF9oraCM
+
+Ethical password hacking and protecting
+https://youtu.be/tWW_6sQNXqo
+
+Html, JavaScript and bootstrap certification course
+https://youtu.be/yzNY5O0uNtY
+
+Penetration testing with kali and more all you need to know
+https://youtu.be/sOtdzjibKGg
+
+Website traffic coursedrive unlimited traffic no need seo
+https://youtu.be/eYPFZKhZN-U
+
+Start Kali Linux, ethical hacking and penetrating testing
+https://youtu.be/_As-rx86f-4
+
+Complete Ethical Hacking Certification Course Zero to Hero
+https://youtu.be/BsgxuFEGlFk
+
+Master in hacking with Metasploit
+https://youtu.be/vRvT7ldjLIA
+
+Java Programming Step by Step from A to Z
+https://youtu.be/pF6QNV5jsGY
+
+Master in wifi ethical hacking
+https://youtu.be/7ySz4IZile8
+
+The beginners guide to cyber security 2019
+https://youtu.be/gUbeqABFaGM
+
+The complete ethical hacking Masterclass beginning to expert
+https://youtu.be/bbIDOFDIXjA
+
+Front End web development for beginners A practice guide.
+https://youtu.be/CTcxaJT2cok
+
+Machine Learning and AI Support Vector Machines in Python
+https://youtu.be/ICYO7VVXDFU
+
+Anatomy of a Cyber Attack   Beginner Hacking with Metasploit
+https://youtu.be/6uun2IQjTaM
+
+Learn Linux in 5 Days and Level Up Your Career
+https://www.youtube.com/watch?v=bvpN9N8H3NE
+
+Easy Adsense Method Using Whatsapp Free Traffic 2019
+https://www.youtube.com/watch?v=DttRY_H6juc&t=1s
+
+Build A Successful Blog In 2019 Make Money
+https://www.youtube.com/watch?v=ihG7MEuABAQ
+
+Web Hacking: Become a Professional Web Pentester
+https://www.youtube.com/watch?v=OTcfjWGCxII
+
+Complete Cyber Security Course Go from zero to hero!
+https://www.youtube.com/watch?v=oILl8E3XlkA
+
+Most Advanced Level Ethical Hacking Using Kali Linux
+https://www.youtube.com/watch?v=kmfKuvEbHEc
+
+kali linux penetration testing recipes
+https://www.youtube.com/watch?v=YkKOUuU74mU
+
+Building Ethical Hacking Python Tools From Scratch
+https://www.youtube.com/watch?v=wMYf2NEvauo
+
+Cyber Security and Information Security Fundamentals 2019
+https://www.youtube.com/watch?v=ZqSdEMkMl7k
+
+A Hacker's Guide to Internet Safety and Cybersecurity
+https://www.youtube.com/watch?v=hDSbACac-CU
+
+Learn Network Hacking From Scratch (WiFi & Wired)
+https://www.youtube.com/watch?v=3u2rRM4LnsY
+
+How Hackers Create Undetectable Malware and Viruses
+https://www.youtube.com/watch?v=2jhbJyWn8W8
+
+Ethical Hacking using Linux & Termux From Scratch
+https://www.youtube.com/watch?v=NH9tEw8KiQc
+
+REAL World Website Hacking and Penetration (101% Practical) 2019
+https://www.youtube.com/watch?v=bYMC-3lLJX8&t=1s
+
+
 ## 20210414
 
 
@@ -39,21 +197,8 @@ https://hschne.at/2021/04/04/build-real-time-clis-with-actioncable.html
 
 ## 20210413
 
-https://activationskey.org/nessus-crack/
 Nessus 最新版本8.13.1破解安装教程
 https://www.freebuf.com/sectool/260004.html
-
-序列号：
-4ED5F6TGYHUJ456789I
-WERTYHUJ4567890SXD
-CFVBGHNW46789IASD
-GNHJME567YU89IUUJY
-激活码：
-GFBVDCSASDRFTGYHJK
-45RY7U89IXSEDCFGVBN
-JMW35T6Y78J76GYUHVB
-
-## 20210413
 
 代码分析工具joern的基本用法
 https://www.anquanke.com/post/id/236184

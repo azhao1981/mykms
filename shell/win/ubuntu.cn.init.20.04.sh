@@ -12,11 +12,13 @@ deb https://mirrors.ustc.edu.cn/ubuntu/ focal-proposed main restricted universe 
 deb-src https://mirrors.ustc.edu.cn/ubuntu/ focal-proposed main restricted universe multiverse
 " > /etc/apt/sources.list
 apt update -y
-echo "DefaultTimeoutStopSec=5s" >> /etc/systemd/system.conf
+echo "DefaultTimeoutStopSec=10s" >> /etc/systemd/system.conf
 systemctl daemon-reload
 
 
-echo "#!/bin/sh
-dhclient enp0s8
-" > /etc/profile.d/enp0s8.sh
-chmod +x /etc/profile.d/enp0s8.sh
+echo "
+[Match]
+Name=enp*
+
+[Network]
+DHCP=ipv4" > /etc/systemd/network/20-dhcp.network

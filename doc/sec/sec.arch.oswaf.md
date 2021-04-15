@@ -18,6 +18,11 @@ https://github.com/0xInfection/Awesome-WAF
 ### openresty
 
 https://github.com/openresty/openresty
+
+https://github.com/openresty/docker-openresty
+https://hub.docker.com/r/openresty/openresty/dockerfile
+docker pull openresty/openresty
+
 https://github.com/moonbingbing/openresty-best-practices
 [OpenResty 环境问题漏洞](http://www.cnnvd.org.cn/web/xxk/ldxqById.tag?CNNVD=CNNVD-202004-615)
 [apigw openresty 安全漏洞 ](http://confluence.flyudesk.com/pages/viewpage.action?pageId=65571687)
@@ -50,27 +55,82 @@ Kong plugin for lua-resty-waf
 https://github.com/zhenguang/kong-plugin-lua-resty-waf
 
 
-### Modsecurity
+### OWASP [Modsecurity](https://www.modsecurity.org/)
+
+ModSecurity is an open source, cross-platform web application firewall (WAF) module
+
+OWASP核心规则集
+https://github.com/coreruleset/coreruleset
+https://github.com/SpiderLabs/ModSecurity
+
+https://hub.docker.com/r/owasp/modsecurity
+https://hub.docker.com/r/owasp/modsecurity-crs/
+  The Official OWASP Core Rule Set Docker Image (ModSecurity+Core Rule Set) 
+```bash
+sudo docker pull owasp/modsecurity
+sudo docker pull owasp/modsecurity-crs
+sudo docker pull owasp/modsecurity-crs:v3.3.0-nginx
+sudo docker run -dti -p 80:80 --rm \
+   -e PARANOIA=1 \
+   -e EXECUTING_PARANOIA=2 \
+   -e ENFORCE_BODYPROC_URLENCODED=1 \
+   -e ANOMALY_INBOUND=10 \
+   -e ANOMALY_OUTBOUND=5 \
+   -e ALLOWED_METHODS="GET POST PUT" \
+   -e ALLOWED_REQUEST_CONTENT_TYPE="text/xml|application/xml|text/plain" \
+   -e ALLOWED_REQUEST_CONTENT_TYPE_CHARSET="utf-8|iso-8859-1" \
+   -e ALLOWED_HTTP_VERSIONS="HTTP/1.1 HTTP/2 HTTP/2.0" \
+   -e RESTRICTED_EXTENSIONS=".cmd/ .com/ .config/ .dll/" \
+   -e RESTRICTED_HEADERS="/proxy/ /if/" \
+   -e STATIC_EXTENSIONS="/.jpg/ /.jpeg/ /.png/ /.gif/" \
+   -e MAX_NUM_ARGS=128 \
+   -e ARG_NAME_LENGTH=50 \
+   -e ARG_LENGTH=200 \
+   -e TOTAL_ARG_LENGTH=6400 \
+   -e MAX_FILE_SIZE=100000 \
+   -e COMBINED_FILE_SIZES=1000000 \
+   -e PROXY=1 \
+   -e APACHE_TIMEOUT=60 \
+   -e LOGLEVEL=warn \
+   -e ERRORLOG='/proc/self/fd/2' \
+   -e USER=daemon \
+   -e GROUP=daemon \
+   -e SERVERADMIN=root@localhost \
+   -e SERVERNAME=localhost \
+   -e PORT=80 \
+   -e MODSEC_RULE_ENGINE=on \
+   -e MODSEC_REQ_BODY_ACCESS=on \
+   -e MODSEC_REQ_BODY_LIMIT=13107200 \
+   -e MODSEC_REQ_BODY_NOFILES_LIMIT=131072 \
+   -e MODSEC_RESP_BODY_ACCESS=on \
+   -e MODSEC_RESP_BODY_LIMIT=524288 \
+   -e MODSEC_PCRE_MATCH_LIMIT=1000 \
+   -e MODSEC_PCRE_MATCH_LIMIT_RECURSION=1000 \
+   owasp/modsecurity-crs:v3.3.0-nginx
+#  owasp/modsecurity-crs:v3.3.0-nginx 启动后死循环了
+```
 
 [基于Owasp Modsecurity CRS规则的误报率和漏报率调试](https://www.freebuf.com/articles/web/243781.html)
 [ModSecurity：一款优秀的开源WAF](https://www.freebuf.com/sectool/211354.html)
-ModSecurity OWASP核心规则集的两种配置模式
-https://www.freebuf.com/articles/web/237521.html
-https://github.com/coreruleset/coreruleset
-https://github.com/SpiderLabs/ModSecurity
-https://www.modsecurity.org/
-ModSecurity is an open source, cross-platform web application firewall (WAF) module
-用ModSecurity启动WAF的一次小试 | WAF
-https://www.freebuf.com/articles/web/227217.html
+  ModSecurity v3.0.3审计日志中是包含请求体和响应体的，不过需要注意的是，3版本里SecAuditLogParts需要添加配置C，而不是IJ，用IJ目前是不会记录请求体的
 
-重要:ModSecurity：一款优秀的开源WAF
-https://www.freebuf.com/sectool/211354.html
+[ModSecurity OWASP核心规则集的两种配置模式](https://www.freebuf.com/articles/web/237521.html)
 
 [用ModSecurity启动WAF的一次小试 | WAF](https://www.freebuf.com/articles/web/227217.html)
 
+[重要:ModSecurity：一款优秀的开源WAF](https://www.freebuf.com/sectool/211354.html)
+
 ### VeryNginx！
-Github标星5.2k+！开源、强大的WAF(web防火墙)VeryNginx！
-https://www.shangyexinzhi.com/article/554151.html
+
+[Github标星5.2k+！开源、强大的WAF(web防火墙)VeryNginx！](https://www.shangyexinzhi.com/article/554151.html)
+
+https://hub.docker.com/r/camil/verynginx
+sudo docker pull camil/verynginx
+A very powerful and friendly nginx based on lua-nginx-module( openresty) WAF, cpanel, and dashboard 
+
+CentOS-Docker搭建VeryNginx
+https://my.oschina.net/zyrs/blog/3158033
+
 传送门：https://github.com/alexazhou/VeryNginx
 VeryNginx ＝ Very powerful and friendly nginx
 VeryNginx基于lua_nginx_module(openrestry)。
@@ -79,8 +139,13 @@ VeryNginx基于lua_nginx_module(openrestry)。
 在 web 界面里面修改配置后，保存后即刻生效，并不需要重启 Nginx 或者 reload 。
 
 ### naxsi
+
 NAXSI is an open-source, high performance, low rules maintenance WAF for NGINX
 https://github.com/nbs-system/naxsi
+
+docker pull dmgnx/nginx-naxsi
+https://hub.docker.com/r/dmgnx/nginx-naxsi
+
 ### OpenRASP
 
 [OpenRASP学习笔记](https://www.anquanke.com/post/id/216886)
@@ -90,7 +155,13 @@ https://github.com/nbs-system/naxsi
 https://www.w3cschool.cn/openwaf/
 https://github.com/titansec/OpenWAF
 
+https://hub.docker.com/r/titansec/openwaf
+sudo docker pull titansec/openwaf
+
 ### [JXWAF](https://www.jxwaf.com/)
+
+https://hub.docker.com/r/jxwaf/jxwaf-server
+sudo docker pull jxwaf/jxwaf-server:v3.3
 
 [JXWAF(锦衣盾)是一款开源web应用防火墙](https://github.com/jx-sec/jxwaf)
 
