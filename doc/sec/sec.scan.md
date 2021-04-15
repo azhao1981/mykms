@@ -14,48 +14,75 @@ https://blog.51cto.com/zoukejian/61737
 https://www.tenable.com/downloads/nessus?loginAttempted=true
 要注意下载对应的平台和版本
 
-神兵利器系列|nessus8.8安装破解
-https://blog.csdn.net/milkway2013/article/details/105142471
-破解的方法还是在 更换 plugin_feed_info.inc 上
+
+Nessus 最新版本8.13.1破解安装教程
+https://www.freebuf.com/sectool/260004.html
+sudo su
+apt install ./Nessus-8.14.0-ubuntu1110_amd64.deb 
+/bin/systemctl start nessusd.service
+/opt/nessus/sbin/nessuscli fetch --challenge
+https://plugins.nessus.org/v2/offline.php
+再注册
+https://zh-cn.tenable.com/products/nessus/nessus-essentials
+
+ssh osboxes@192.168.56.109
+scp .\nessus.license  osboxes@192.168.56.107:~/
+scp .\all-2.0.tar.gz  osboxes@192.168.56.107:~/
+
+是不是要选导入 规则？
+/opt/nessus/sbin/nessuscli update all-2.0.tar.gz
+/opt/nessus/sbin/nessuscli fetch --register-offline nessus.license
+
+/bin/systemctl restart nessusd.service
+
+1.备份/opt/nessus/lib/nessus/plugins/中的插件文件
+cd /opt/nessus/lib/nessus
+tar cvf plugins.tar plugins
+
+2. 修改plugin_feed_info.inc文件
+
 
 ```bash
-export PLUGIN_SET="202007291115"
-cat > /opt/nessus/lib/nessus/plugins/plugin_feed_info.inc <<EOF
-PLUGIN_SET = ${PLUGIN_SET};
-PLUGIN_FEED = "ProfessionalFeed (Direct)";
-PLUGIN_FEED_TRANSPORT = "Tenable Network Security Lightning";
-EOF
-cat > /opt/nessus/var/nessus/plugin_feed_info.inc <<EOF
-PLUGIN_SET = ${PLUGIN_SET};
-PLUGIN_FEED = "ProfessionalFeed (Direct)";
-PLUGIN_FEED_TRANSPORT = "Tenable Network Security Lightning";
-EOF
+grep PLUGIN_SET  /opt/nessus/var/nessus/plugin_feed_info.inc > plugin_feed_info.inc
+echo 'PLUGIN_FEED = "ProfessionalFeed (Direct)";
+PLUGIN_FEED_TRANSPORT = "Tenable Network Security Lightning";' >> plugin_feed_info.inc
+
+sudo cp plugin_feed_info.inc /opt/nessus/lib/nessus/plugins/plugin_feed_info.inc
+sudo cp plugin_feed_info.inc /opt/nessus/var/nessus/plugin_feed_info.inc
 ```
+
+PLUGIN_SET = "202101052305";
+PLUGIN_FEED = "HomeFeed (Non-commercial use only)";
+
+我们需要将这两处文件修改为：
+
+PLUGIN_SET = 202101052305 ;
+PLUGIN_FEED = "ProfessionalFeed (Direct)";
+PLUGIN_FEED_TRANSPORT = "Tenable Network Security Lightning";
+
+/bin/systemctl restart nessusd.service
+/bin/systemctl stop nessusd.service
+cd /opt/nessus/lib/nessus
+rm -rf plugins
+tar xvf plugins.tar
+find plugins_bak/ -name "*.nasl" | xargs -i cp {} train
+cp /home/osboxes/plugin_feed_info.inc /opt/nessus/lib/nessus/plugins/plugin_feed_info.inc
+
+http://noahsnail.com/2017/11/23/2017-11-23-Linux%E4%B8%AD%E2%80%9CArgument%20list%20too%20long%E2%80%9D%E8%A7%A3%E5%86%B3%E6%96%B9%E6%B3%95/
+Linux中“Argument list too long”解决方法
+
+/bin/systemctl start nessusd.service
+
 更新插件
 
-https://zh-cn.tenable.com/products/nessus/activation-code?tns_redirect=true#nessus
-Nessus Essentials
 注册一个
+https://zh-cn.tenable.com/products/nessus/nessus-essentials
 https://plugins.nessus.org/offline.php
 /opt/nessus/sbin/nessuscli fetch --challenge
-256de4da507f88a7eac6fd86e12ae66d40bc77a1
+vmware: 256de4da507f88a7eac6fd86e12ae66d40bc77a1
+vbox: 53f23991974ecbdcd57a63b898f86797066b6377
 
 /opt/nessus/sbin/nessuscli update all-2.0.tar.gz
-sudo /opt/nessus/sbin/nessuscli update ./all-2.0.tar.gz
-
-[sudo] password for ubuntu:
-下载最新插件，请到知识星球搜索“安全工具箱”
-Shared by Shad0wpf
-Nessus插件更新中...
-Nessus插件更新完成，重启服务...
-cp: cannot stat '/opt/nessus/var/nessus/www/policy_wizards.json': No such file or directory
-sed: can't read /opt/nessus/var/nessus/www/policy_wizards.json: No such file or directory
-sed: can't read /opt/nessus/var/nessus/www/policy_wizards.json: No such file or directory
-cp: cannot stat '/opt/nessus/etc/nessus/nessus-fetch.db.bak': No such file or directory
-
-[nessus pro破解安装及插件离线跟新|windows](https://www.mad-coding.cn/2019/11/27/nessus-pro%E7%A0%B4%E8%A7%A3%E5%AE%89%E8%A3%85%E5%8F%8A%E6%8F%92%E4%BB%B6%E7%A6%BB%E7%BA%BF%E8%B7%9F%E6%96%B0/#0x06-%E7%A6%BB%E7%BA%BF%E8%B7%9F%E6%96%B0)
-
-[Nessus v8.x 永久破解方法](http://j0k3r.top/2020/01/05/nessus-crack/#3-%E6%9B%BF%E6%8D%A2%E6%96%87%E4%BB%B6)
 
 使用:
 Nessus之——Nessus的整理
