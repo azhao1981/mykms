@@ -23,3 +23,12 @@ str=<<END_OF_STRING
   a string
   END_OF_STRING
 ```
+
+## gems
+
+### pg
+```bash
+sudo update -y
+sudo apt-get install postgresql-client libpq5 libpq-dev -y
+gem install pg -v '1.2.3'
+```

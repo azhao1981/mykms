@@ -1,5 +1,52 @@
 # 202104
 
+## 20210419
+
+Best 8 Open Source PDF to Word Converter
+https://www.acethinker.com/convert-pdf-free/open-source-pdf-to-word-converter.html
+
+Top 5 Open Source PDF to Word Converter Software
+https://pdf.iskysoft.com/pdf-converter/pdf-to-word-open-source-converter.html
+
+The best free PDF to Word converter 2021: convert PDFs for easier editing
+https://www.techradar.com/best/free-pdf-to-word
+
+Grank：如何评估一个 Github 项目的活跃度
+https://zhuanlan.zhihu.com/p/47359735
+https://gitee.com/azhao-1981/rubytoolbox
+
+十个惊艳到你的高质量GitHub开源项目，你看过吗
+https://cloud.tencent.com/developer/news/627497
+
+红蓝对抗提权篇之一文看懂提权
+https://www.freebuf.com/articles/network/268221.html
+红蓝对抗钓鱼篇之从入门到放弃
+https://www.freebuf.com/articles/network/267251.html
+
+## 20210417
+https://github.com/0xtz/Enum_For_All
+
+
+## 20210416
+https://positive.security/blog/url-open-rce
+https://doar-e.github.io/blog/2021/04/15/reverse-engineering-tcpipsys-mechanics-of-a-packet-of-the-death-cve-2021-24086/
+
+58集团白盒代码审计系统建设实践2：深入理解SAST
+https://www.anquanke.com/post/id/237801
+基于机器学习的自动漏洞修复分析方法
+https://www.anquanke.com/post/id/231450
+Chromium V8 JavaScript引擎远程代码执行漏洞分析讨论
+https://www.anquanke.com/post/id/238343
+从git原理角度浅谈.git泄露利用原理
+https://www.anquanke.com/post/id/236487
+
+
+
+https://github.com/jaredonline/google-authenticator
+https://www.zhihu.com/question/20462696
+谷歌验证 (Google Authenticator) 的实现原理是什么？
+基于时间的一次性密码算法（TOTP）是一种根据预共享的密钥与当前时间计算一次性密码的算法。它已被互联网工程任务组接纳为RFC 6238标准[1]，成为主动开放认证（OATH）的基石，并被用于众多多重要素验证系统当中。
+
 ## 20210415
 
 和busybox一样有意思的小工具

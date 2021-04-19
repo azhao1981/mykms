@@ -319,4 +319,14 @@ https://www.cnblogs.com/Areas/p/13439000.html
 Linux Ubuntu 20.04 —添加开机启动(服务/脚本)
 
 https://gist.github.com/mohamadaliakbari/1cb9400984094541581fff07143e1c9d
-开机启动 networkd
+开机启动 networkd，好像kali不生效
+
+```bash
+echo '
+[Match]
+Name=eth*
+
+[Network]
+DHCP=ipv4
+' | sudo tee -a /etc/systemd/network/20-dhcp.network
+```

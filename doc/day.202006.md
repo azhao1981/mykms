@@ -396,11 +396,6 @@ https://www.anquanke.com/post/id/207974
 开源软件供应链攻击回顾
 https://www.anquanke.com/post/id/207836
 
-浅谈Forrester零信任架构评估的7个技术维度
-https://www.freebuf.com/articles/network/239395.html
-
-
-
 FFmpeg 资源管理错误漏洞
 http://www.cnnvd.org.cn/web/xxk/ldxqById.tag?CNNVD=CNNVD-202006-584
 

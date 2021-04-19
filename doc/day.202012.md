@@ -20,7 +20,7 @@
 
 [命令执行底层原理探究-PHP（一）](https://www.anquanke.com/post/id/226292)
 
-[浅谈Forrester零信任架构评估的7个技术维度](https://www.anquanke.com/post/id/226062)
+
 
 ## 1223
 
