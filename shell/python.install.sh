@@ -7,8 +7,10 @@ sudo apt-get install zlib1g-dev libsqlite3-dev tk-dev -y
 sudo apt-get install libssl-dev openssl -y
 sudo apt-get install libffi-dev -y
 
-curl https://pyenv.run | bash
+curl -L https://gitee.com/azhao-1981/pyenv-installer/raw/master/bin/pyenv-installer | bash
 echo '
-if which pyenv > /dev/null; then eval "$(pyenv init -)"; fi
+export PATH="~/.pyenv/bin:$PATH"
+eval "$(pyenv init -)"
+eval "$(pyenv virtualenv-init -)"
 export  PYTHON_BUILD_MIRROR_URL="http://pyenv.qiniudn.com/pythons/"
-'
+' >> ~/.bashrc
