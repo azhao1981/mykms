@@ -22,3 +22,5 @@ Name=enp*
 
 [Network]
 DHCP=ipv4" > /etc/systemd/network/20-dhcp.network
+
+timedatectl set-timezone "Asia/Shanghai"

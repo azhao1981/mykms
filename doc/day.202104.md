@@ -244,9 +244,6 @@ https://hschne.at/2021/04/04/build-real-time-clis-with-actioncable.html
 
 ## 20210413
 
-Nessus 最新版本8.13.1破解安装教程
-https://www.freebuf.com/sectool/260004.html
-
 代码分析工具joern的基本用法
 https://www.anquanke.com/post/id/236184
 深度分析CobaltStrike（一）—— Beacon生成流程及Shellcode分析
