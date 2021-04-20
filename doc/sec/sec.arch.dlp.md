@@ -5,11 +5,14 @@ Does your organization have a Data Loss Prevention (DLP) system in place to dete
 If YES, please describe the solution and related compliance processes, including monitoring and escalation.
 如果是，请描述解决方案和相关的合规流程，包括监控和上报。
 
-"这个不符合美世的policy
 意思是比如是否有服务器和个人电脑的UBS端口禁用？
 如果需要复制文件，是否有审批流程？
 如果邮件有个人信息，是否udesk的政策是要求放在附件加密？
-等等其他措施"
+
+如何在Windows，Mac和Linux上禁用USB存储设备
+https://www.pcpc.me/tech/disable-usb-storage-devices
+告别恶意拷贝——USB存储设备锁定方法介绍|有脚本
+https://www.reneelab.com.cn/how-to-lock-usb-storage-device.html
 
 公司禁用U盘的方法总结
 https://zhuanlan.zhihu.com/p/111835497
@@ -101,3 +104,8 @@ https://www.daimajiaoliu.com/daima/4814e4f88100404
 
 什么是DLP，以及如何在您的组织中实施？
 https://www.codenong.com/cs106660586/
+
+
+[业务终止策略和SOP](books/policy-procedure-service-termination.pdf)
+
+http://www.hcdac.org/index.php/about-hcdac/policies/service-termination
