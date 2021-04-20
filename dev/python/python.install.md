@@ -75,6 +75,9 @@ export  PYTHON_BUILD_MIRROR_URL="http://pyenv.qiniudn.com/pythons/"
 ```
 curl -L https://raw.githubusercontent.com/yyuu/pyenv-installer/master/bin/pyenv-installer | bash
 
+curl -L https://gitee.com/azhao-1981/pyenv-installer/raw/master/bin/pyenv-installer | bash
+
+export ver=3.9.4
 export ver=3.8.6
 export ver=3.7.9
 wget http://mirrors.sohu.com/python/$ver/Python-$ver.tar.xz -P ~/.pyenv/cache/; pyenv install $ver

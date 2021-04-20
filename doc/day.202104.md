@@ -2,6 +2,21 @@
 
 ## 20210419
 
+https://github.com/tanprathan/OWASP-Testing-Checklist
+https://www.zaproxy.org/docs/developer/quick-start-build/
+
+https://github.com/QPromise/EasyTrans
+https://github.com/topics/pdf-to-word
+https://github.com/dothinking/pdf2docx
+git clone git@github.com:fengdongdongwsn/PdfTool.git
+GitHub开源神器：教你如何实现 PDF 转 Word
+https://blog.csdn.net/github_shequ/article/details/107118489
+https://nikku1234.github.io/2020-09-27-PDF-Conversions-using-Python-Packages/
+编程电子书，电子书，编程书籍，包括C，C#，Docker，Elasticsearch，Git，Hadoop，HeadFirst，Java，Javascript，jvm，Kafka，Linux，Maven，MongoDB，MyBatis，MySQL，Netty，Nginx，Python，RabbitMQ，Redis，Scala，Solr，Spark，Spring，SpringBoot，SpringCloud，TCPIP，Tomcat，Zookeeper，人工智能，大数据类，并发编程，数据库类，数据挖掘，新面试题，架构设计，算法系列，计算机类，设计模式，软件测试，重构优化，等更多分类
+https://github.com/itdevbooks/pdf
+https://github.com/mynane/PDF
+https://github.com/ECNUdase/pdf
+
 Best 8 Open Source PDF to Word Converter
 https://www.acethinker.com/convert-pdf-free/open-source-pdf-to-word-converter.html
 
