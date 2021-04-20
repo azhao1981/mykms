@@ -1,5 +1,23 @@
 # 202104
 
+## 20210420
+
+https://github.com/immunant/c2rust
+
+NAT 原理以及 UDP 穿透
+https://paper.seebug.org/1561/
+
+多平台的敏感信息监测工具-GShark
+https://paper.seebug.org/1560/
+
+【安全通报】WebLogic 0day反序列化漏洞
+https://nosec.org/home/detail/4740.html
+
+多路非对称攻击：HTTP/2服务器上的下一代DDoS
+https://www.anquanke.com/post/id/232060
+NodeJS从零开始到原型链污染
+https://www.anquanke.com/post/id/236182
+
 ## 20210419
 
 https://github.com/tanprathan/OWASP-Testing-Checklist

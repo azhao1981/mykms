@@ -88,9 +88,7 @@ https://github.com/qeeqbox/social-analyzer
 🌍「算法面试+算法知识」针对小白的算法训练 | 还包括：1、阿里、字节、滴滴 百篇大厂面经汇总 2、千本开源电子书 3、百张思维导图 （右侧来个 star 吧 🌹，English version supported）
 https://github.com/geekxh/hello-algorithm
 
-👋 [Looking for maintainers] SnowFS - a fast, scalable version control file storage for graphic files 🎨
-MIT,是不是可以改成一个加密的?
-https://github.com/Snowtrack/SnowFS
+
 
 《JD薅羊毛》一键部署 For Linux
 https://github.com/SuperManito/JD-FreeFuck

@@ -1,5 +1,13 @@
 # windows安全
 
+
+Att&CK 中最多的战术都是Windows的
+
+[Windows横向移动全攻略（二）：DCOM](https://www.anquanke.com/post/id/217928)
+
+[Windows操作系统基线核查](https://www.freebuf.com/articles/system/249783.html)
+
+
 CVE-2020-16898：Windows TCP/IP远程执行代码漏洞通告
 https://www.anquanke.com/post/id/219495
 
@@ -33,3 +41,4 @@ windows相关系统命令
 
 使用WSL+vscode搭建Java开发环境
 https://www.toget.top/views/2020/2020.03/Java%20Env%20Build/
+

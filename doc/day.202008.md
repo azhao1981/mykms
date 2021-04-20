@@ -255,12 +255,6 @@ idea: 代码保护软件/硬件
 代码应该是每个员工看到的部分都是不能运行的
 可以做一个专门的文件格式，各种软件/文档管理器可以打开，但不能拷贝
 
-前市面上最流行的源码加密软件机制是一种对开发人员的操作环境进行加密的软件
-google: 源代码 管控 加密
-http://www.eff-soft.com/jjfa/wlkj/2019-04-15/255.html ?
-
-http://www.hustcad.com/2952/ | 这个比较符合
-　　我们以常见的Eclipse集成开发环境为例（Visual Studio同理），一个Java项目被创建后，通过天喻数据安全源代码加密解决方案，在后台对创建的代码文件进行加密处理（如*.java文件、*.class文件等），加密后的Java项目文件，仅能在授权的范围内或企业内部使用，一旦非法流出企业内部或授权的范围，就无法被正常打开或执行编译。
 
 [XSS Game分析以及知识点总结](https://www.freebuf.com/articles/web/245209.html)
 [挖洞经验 | Grafana应用实例未授权读取型SSRF](https://www.freebuf.com/articles/web/245582.html)

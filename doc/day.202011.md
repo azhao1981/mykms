@@ -118,7 +118,6 @@ https://mp.weixin.qq.com/s?__biz=MzIyMjg2ODExMA==&mid=2247487784&idx=1&sn=f41890
 
 [红队测试之Linux提权小结](https://www.freebuf.com/articles/web/254452.html)
 
-[Python 源码混淆与加密](https://mp.weixin.qq.com/s/LmxdXRjMCOIisQzCISBoGw)
 
 [探索先进自动化漏洞挖掘技术中的不足](https://mp.weixin.qq.com/s/1q_YCJoyCREtgU3X2_0uqQ)
 

@@ -372,10 +372,6 @@ https://www.freebuf.com/articles/es/253776.html
 “The Tie Between Ruby and Rust.”
 https://github.com/danielpclark/rutie
 
-Modern encryption for Ruby and Rails
-数据加密！
-https://github.com/ankane/lockbox
-
 https://stackoverflow.com/questions/2232/how-to-call-shell-commands-from-ruby
 多租户
 https://blog.appsignal.com/2020/12/02/building-a-multi-tenant-ruby-on-rails-app-with-subdomains.html

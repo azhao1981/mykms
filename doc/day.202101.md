@@ -91,34 +91,10 @@ ssh-keygen -t dsa
 ssh-keygen -t ecdsa -b 521
 ssh-keygen -t ed25519
 
-git加密：
-使用 git-secret 对仓库中的文件进行加密
-https://tautcony.xyz/2020/03/07/git-secret/
-缺点： 基于 bash 和 GPG 的工具，所以 Windows 显然就无缘了
-Git加密存储文件 _|按这个文章，windows也是可以用的
-https://www.mikesay.com/2020/12/16/git-encrypt-file-in-repository/
 
-[git 加密_4个用于Git加密的秘密管理工具](https://blog.csdn.net/cumo3681/article/details/107390566)
-  https://opensource.com/article/19/2/secrets-management-tools-git
-  https://github.com/AGWA/git-crypt
-    [在 git-ops 中使用 git-crypt 保护敏感数据](http://generalthink.github.io/2020/03/01/use-git-crypt/)
-  https://github.com/StackExchange/blackbox
-  https://github.com/mozilla/sops
-  https://github.com/elasticdog/transcrypt
-加密git远端版本库
-http://blog.linjunhalida.com/blog/encrypted-git-repo/
-
-设置加密的git仓库
-https://qastack.cn/superuser/1162907/setting-up-an-encrypted-git-repository
-git在推/拉时加密/解密远程存储库文件
-https://www.thinbug.com/q/2456954
 
 ## 0205
-加密软件
-https://www.veracrypt.fr/en/Home.html
-https://www.veracrypt.fr/en/Downloads.html
-VeraCrypt - 最佳免费开源跨平台的文件加密工具 (支持U盘加密/硬盘分区加密)
-https://www.iplaysoft.com/veracrypt.html
+
 
 java的
 https://github.com/cryptomator/cryptomator
@@ -292,9 +268,7 @@ https://www.anquanke.com/post/id/229323
 
 ## 0202
 
-1. Google公开了Libgcrypt加密库中的严重漏洞，影响了许多项目
-GNU Privacy Guard（GnuPG）的Libgcrypt加密软件中的一个“严重”漏洞，可能使攻击者可以将任意数据写入目标计算机，从而可能导致远程执行代码。
-[Google Discloses Severe Bug in Libgcrypt Encryption Library—Impacting Many Projects](https://thehackernews.com/2021/01/google-discloses-severe-bug-in.html)
+
 
 CDK:一款针对容器场景的多功能渗透工具
 https://paper.seebug.org/1474/
@@ -846,8 +820,7 @@ https://insinuator.net/2017/10/erlang-distribution-rce-and-a-cookie-bruteforcer/
 
 渗透测试之地基钓鱼篇：Ink和Mp3伪装钓鱼
 https://www.freebuf.com/articles/web/258916.html
-渗透测试之地基流量加密篇：OpenSSL、Metasploit、Cobalt strike三种方式进... 会员
-https://www.freebuf.com/articles/web/259222.html
+
 
 一部手机失窃引发的后续思考,如何提高我的个人账号安全?
 https://www.anquanke.com/post/id/227949
