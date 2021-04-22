@@ -1,6 +1,22 @@
 # 202104
 
+## 20210422
+【公益译文】安全控制评估自动化支持：软件漏洞管理（三）
+http://blog.nsfocus.net/nistir-8011-4-3/
+
+## 20210421
+
+[【公益译文】安全控制评估自动化支持：软件漏洞管理（二）](http://blog.nsfocus.net/nistir-8011-4-2/)
+
+[CVE-2021-25646 Apache Druid 远程代码执行漏洞分析](https://www.anquanke.com/post/id/235831)
+
+[BlackHat：HTTP 请求走私的新变体、新防御](https://www.anquanke.com/post/id/237140)
+
+[Empire的基本使用和域渗透](https://www.anquanke.com/post/id/236174)
+
 ## 20210420
+
+
 
 https://github.com/immunant/c2rust
 

@@ -1091,7 +1091,6 @@ https://github.com/shizzz477/msploitego
 Canari v3 - next gen Maltego framework for rapid remote and local transform development
 https://github.com/redcanari/canari3
 
-
 https://viewdns.info
 https://gephi.org/
 https://www.spiderfoot.net/
