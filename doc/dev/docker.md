@@ -1,5 +1,16 @@
 # docker
 
+## tips
+
+rm -rf /var/lib/apt/lists/*
+
+5 款非常好用的开源 Docker 工具，get一波～
+https://zhuanlan.zhihu.com/p/159017678
+
+sudo docker history ubuntu.cn:20.04 
+
+三个技巧帮助Docker镜像瘦身
+https://blog.csdn.net/weixin_49163826/article/details/107732323
 ## images
 
 ### postgresql

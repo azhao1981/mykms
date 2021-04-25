@@ -109,10 +109,7 @@ https://www.exploit-db.com/exploits/48994
 https://www.zoomeye.org/searchResult?q=WDR4300
 SmartBlog 2.0.1 - 'id_post' Blind SQL injection
 https://www.exploit-db.com/exploits/48995
-GitLab拒绝服务漏洞（CVE-2020-13306）
-http://www.nsfocus.net/vulndb/50297
-GitLab身份验证不当漏洞（CVE-2020-13303）
-http://www.nsfocus.net/vulndb/50296
+
 ## 20201105
 
 

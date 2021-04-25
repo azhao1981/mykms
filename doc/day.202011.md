@@ -194,12 +194,7 @@ https://dev.to/rahxuls/the-ultimate-and-free-javascript-resources-278i
 https://dev.to/sewinter/10-ways-to-speed-up-react-development-3111
 https://dev.to/dailydotdev/should-you-start-a-blog-as-a-developer-2j8d
 
-http://www.cnnvd.org.cn/web/xxk/ldxqById.tag?CNNVD=CNNVD-202011-1656
-GitLab 安全漏洞
-GitLab EE 12.10之后版本存在安全漏洞，攻击者可利用该漏洞可以在未来安排大量的发布，当发布日期到来时，当所有的发布被同时处理时，攻击者可利用该漏洞会拒绝对GitLab EE 12.10+实例的服务。
-以下产品及版本受到影响：12.10版本至13.3.9之前版本, 13.3.9版本至13.4.5之前版本, 13.4.5版本至13.5.2之前版本。
-Gitlab 12.9.0 - Arbitrary File Read (Authenticated)
-https://www.exploit-db.com/exploits/49076
+
 
 https://dxysrc.vulbox.com/
 https://security.58.com/

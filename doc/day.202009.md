@@ -357,9 +357,6 @@ https://www.freebuf.com/articles/network/249294.html
 
 [OpenSSL 安全漏洞](http://www.cnnvd.org.cn/web/xxk/ldxqById.tag?CNNVD=CNNVD-202009-585)
 
-GitLab 跨站脚本执行漏洞（CVE-2020-13269）
-http://www.nsfocus.net/vulndb/48688
-GitLab（企业版和社区版）12.10版本至13.0.1版本中存在跨站脚本执行漏洞。攻击者可利用该漏洞在静态站点编辑器上执行任意Javascript代码。
 
 
 

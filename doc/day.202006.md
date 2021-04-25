@@ -94,12 +94,6 @@ https://www.freebuf.com/articles/network/237073.html
 
 FOFA搜索结果提取技术分析
 https://www.freebuf.com/sectool/238018.html
-GitLab（企业版和社区版）10.3版本至13.0.1版本中存在安全漏洞。攻击者可利用该漏洞查看Kubernetes集群令牌。
-http://www.cnnvd.org.cn/web/xxk/ldxqById.tag?CNNVD=CNNVD-202006-1506
-GitLab（企业版）9.5版本至13.0.1版本中存在安全漏洞。攻击者可利用该漏洞冒充维护者执行操作。
-http://www.cnnvd.org.cn/web/xxk/ldxqById.tag?CNNVD=CNNVD-202006-1504
-GitLab（企业版和社区版）12.6版本至13.0.1版本中存在安全漏洞。攻击者可借助HTML源代码利用该漏洞查看Amazon EKS凭证。
-http://www.cnnvd.org.cn/web/xxk/ldxqById.tag?CNNVD=CNNVD-202006-1503
 
 ## 2020-06-22
 

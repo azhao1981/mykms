@@ -697,12 +697,7 @@ Git Lfs 代码问题漏洞
 http://www.cnnvd.org.cn/web/xxk/ldxqById.tag?CNNVD=CNNVD-202101-1302
 https://github.com/git-lfs/git-lfs/commit/fc664697ed2c2081ee9633010de0a7f9debea72a
 
-GitLab 安全漏洞
-http://www.cnnvd.org.cn/web/xxk/ldxqById.tag?CNNVD=CNNVD-202101-1296
-GitLab 访问控制错误漏洞|高危
-http://www.cnnvd.org.cn/web/xxk/ldxqById.tag?CNNVD=CNNVD-202101-1294
-Gitlab Nuget Api 安全漏洞
-http://www.cnnvd.org.cn/web/xxk/ldxqById.tag?CNNVD=CNNVD-202101-1295
+
 
 Nacos 1.4.1 修复指定特殊 UA 可绕过所有鉴权的安全漏洞
 https://www.oschina.net/news/126592/nacos-1-4-1-released

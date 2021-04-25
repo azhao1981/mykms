@@ -21,8 +21,6 @@ https://plugins.nessus.org/v2/offline.php
 
 [再注册](https://zh-cn.tenable.com/products/nessus/nessus-essentials)
 
-
-
 是不是要选导入 规则？
 /opt/nessus/sbin/nessuscli update all-2.0.tar.gz
 /opt/nessus/sbin/nessuscli fetch --register-offline nessus.license

@@ -367,31 +367,7 @@ https://nosec.org/home/detail/4669.html
 
 ## 20210318
 
-[GitLab 远程代码执行漏洞通告](https://www.anquanke.com/post/id/235002)
-GitLab Critical Security Release: 13.9.4, 13.8.6, and 13.7.9
-+ 改的只有13的版本
-+ 没有CVE
-https://gitlab.com/gitlab-org/gitlab
-这个是ee?
-git@gitlab.com:gitlab-org/gitlab.git
-https://gitlab.com/gitlab-org/gitlab/-/compare/v13.9.3-ee...v13.9.4-ee
-https://gitlab.com/gitlab-org/gitlab/-/compare/master...v13.9.4-ee
 
-git tag
-v13.9.3-ee
-v13.9.4-ee
-git checkout -b v13.9.4-ee v13.9.4-ee
-git checkout -b v13.9.3-ee v13.9.3-ee
-
-
-https://gitlab.com/gitlab-org/gitlab-foss
- Project 'gitlab-org/gitlab-ce' was moved to 'gitlab-org/gitlab-foss'.
-https://github.com/gitlabhq/gitlabhq
-https://gitee.com/mirrors/gitlab
-https://gitlab.com/gitlab-org/gitlab-foss/-/compare/v13.9.3...v13.9.4
-https://github.com/gettalong/kramdown/pull/708
-
-那其它用 kramdown 的项目会不会也受影响
 
 如何在漏洞奖励网络侦察中使用BugBountyScanner|TODO:研究一下
 https://www.freebuf.com/articles/network/265898.html
@@ -414,9 +390,7 @@ A proposed standard that allows websites to define security policies.
 https://github.com/securitytxt/security-txt
 https://securitytxt.org/
 
-GitLab 搜索利器，代码搜索工具 Kooder 发布
-https://gitee.com/koode/kooder
-https://www.oschina.net/news/132535/gitee-release-kooder?from=20210314
+
 
 CVE-2020-14645——WebLogic反序列化
 https://www.anquanke.com/post/id/231425
@@ -458,8 +432,7 @@ https://github.com/Guardsquare/proguard
 【安全通报】XStream 多个高危漏洞（CVE-2021-21341等）
 https://nosec.org/home/detail/4697.html
 
-安全研究 | 如何查看GitLab中的共享敏感数据
-https://www.freebuf.com/sectool/266025.html
+
 
 linglong：一款甲方资产巡航扫描系统 | 可以研究一下
 https://www.freebuf.com/sectool/264350.html

@@ -39,10 +39,7 @@ docker save cptactionhank/atlassian-confluence:6.12.2 > confluence.6.12.2.tar
 docker save cptactionhank/atlassian-confluence:7.9.3 > confluence.7.9.3.tar
 docker save cptactionhank/atlassian-confluence:6.15.9 > confluence.6.15.9.tar
 
-
-https://my.oschina.net/u/4270238/blog/4074414
-Docker安装JIRA和Confluence（破解版）
-
+[Docker安装JIRA和Confluence（破解版）](https://my.oschina.net/u/4270238/blog/4074414)
 
 https://hub.docker.com/r/atlassian/jira-software
 https://hub.docker.com/r/cptactionhank/atlassian-jira-software

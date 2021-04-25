@@ -147,8 +147,7 @@ https://www.freebuf.com/articles/terminal/236070.html
 并不能直接扫出有问题的结果
 而是验证你想验证的sha值
 
-部署 在 Rails 项目中使用 Docker 和 GitLab CI 高效构建镜像 (第一部分)
-https://ruby-china.org/topics/38766
+
 
 Kubernetes 安全工具：
 

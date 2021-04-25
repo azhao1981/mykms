@@ -1,6 +1,141 @@
 # 202104
 
+## 20210425
+CVE-2021-24086：Windows IPv6分片漏洞分析
+https://www.anquanke.com/post/id/237694
+
+从这几天情况看蜜罐新技术和发展走向
+https://www.freebuf.com/articles/system/269252.html
+
+蓝队的自我修养之如何从流量中检测 WebShell
+https://www.freebuf.com/articles/network/269770.html
+
+SonarSource SonarQube是瑞士SonarSource公司的一套开源的代码质量管理系统。 SonarQube 8.4.2.36762版本存在安全漏洞，攻击者可利用该漏洞通过api设置值URI发现明文SMTP、SVN和GitLab凭证。
+漏洞详情：https://csl.com.co/sonarqube-auditando-al-auditor-parte-i/
+目前厂商已发布升级补丁以修复漏洞，补丁获取链接： https://csl.com.co/sonarqube-auditando-al-auditor-parte-i/
+
+
+近日，阿里云应急响应中心捕获到 XXL-JOB API 接口未授权访问致反序列化漏洞。
+漏洞详情：https://help.aliyun.com/noticelist/articleid/1060736995.html
+XXL-JOB是一个轻量级分布式任务调度平台。默认情况下XXL-JOB的Restful API接口或RPC接口没有配置认证措施，未授权的攻击者可构造恶意请求，造成远程执行命令，直接控制服务器。阿里云应急响应中心提醒 XXL-JOB 用户尽快采取安全措施阻止漏洞攻击。
+影响版本
+XXL-JOB <= 2.2.0
+
+2021年1月15日，阿里云应急响应中心监控到开源堡垒机JumpServer发布更新，修复了一处远程命令执行漏洞。
+漏洞详情：https://help.aliyun.com/noticelist/articleid/1060784724.html
+JumpServer 是全球首款完全开源的堡垒机, 使用GNU GPL v2.0 开源协议, 是符合4A 的专业运维审计系统。 JumpServer 使用Python / Django 进行开发。2021年1月15日，阿里云应急响应中心监控到开源堡垒机JumpServer发布更新，修复了一处远程命令执行漏洞。由于 JumpServer 某些接口未做授权限制，攻击者可构造恶意请求获取到日志文件获取敏感信息，或者执行相关API操作控制其中所有机器。阿里云应急响应中心提醒 JumpServer 用户尽快采取安全措施阻止漏洞攻击。
+
+
+影响版本
+JumpServer < v2.6.2
+JumpServer < v2.5.4
+JumpServer < v2.4.5
+
+修复建议
+安全版本
+JumpServer < v2.6.2
+JumpServer < v2.5.4
+JumpServer < v2.4.5
+JumpServer = v1.5.9
+
+安全建议
+1、升级 JumpServer 至最新版本。
+2、设置当前产品的控制台登录IP地址白名单限制。
+
+2021年1月23日，蚂蚁安全非攻实验室 @fatansyC4t 向Apache官方报告了Apache Skywalking SQL注入与远程代码执行漏洞。2021年2月7日，阿里云应急响应中心监测到 Apache Skywalking 官方发布安全更新修复该漏洞。
+漏洞详情：https://help.aliyun.com/noticelist/articleid/1060803348.html
+详情
+Apache SkyWalking是一款开源的应用性能监控系统，包括指标监控，分布式追踪，分布式系统性能诊断。Apache SkyWalking的某GraphQL功能存在SQL注入漏洞，攻击者可以构造恶意请求查询数据库敏感信息，或利用H2数据路特性进一步造成远程代码执行漏洞。阿里云应急响应中心提醒  Apache Skywalking 用户尽快采取安全措施阻止漏洞攻击。
+​
+修复建议
+安全版本
+Apache Skywalking < v8.4.0
+
+安全建议
+1、升级Apache Skywalking 到最新的 v8.4.0 版本。
+2、将默认h2数据库替换为其它支持的数据库。
+
+## 20210423
+
+120公里/小时
+120*1000/3600 = 33米/s
+一百米需要3s
+已知车从 27.7m/s 降到 0m/s 需要 40m 
+100*1000/3600 = 27.7m/s
+40
+https://www.autohome.com.cn/4078/0/3/Section.html
+https://www.thepaper.cn/newsDetail_forward_2144681
+
+
+Elkeid Server 开源 && Elkeid Agent 更新
+https://paper.seebug.org/1566/
+https://github.com/bytedance/Elkeid/tree/main/server
+https://gitee.com/azhao-1981/Elkeid
+
+azazel linux下基于预加载的注入——文件隐藏篇
+https://www.anquanke.com/post/id/237030
+一文带你手撕metasploit中meterprter木马源码
+https://www.anquanke.com/post/id/238270
+二进制分析从工具说起
+https://www.anquanke.com/post/id/238291
+openssh 源码分析权限维持
+https://www.anquanke.com/post/id/237497
+
+https://hexapdf.gettalong.org/index.html
+pdf
+📫 Rails Engine to preview emails in the browser|浏览器预览mail
+https://github.com/markets/maily
+https://blog.cmol.me/creating-a-udp-server-with-ruby-ractors-be4ff65a8400
+https://github.com/piotrmurach/awesome-ruby-cli-apps
+https://evilmartians.com/chronicles/hotwire-reactive-rails-with-no-javascript
+https://github.com/auth0/omniauth-auth0
+A gem to spy queries running with Active Record and report missing indexes|how
+https://github.com/WeTransfer/wt_activerecord_index_spy
+
+Listing the contents of a remote ZIP archive, without downloading the entire file|多线程下载的原理
+https://rhardih.io/2021/04/listing-the-contents-of-a-remote-zip-archive-without-downloading-the-entire-file/
+
+chmod 600 中 600详解
+https://blog.rebased.pl/2021/04/06/eli5-bitfields.html
+
+rails加安全 auth-base
+https://blog.arkency.com/common-authentication-for-mounted-rack-apps-in-rails/
+
+puma 服务挂起调教
+https://itnext.io/why-puma-workers-constantly-hung-and-how-we-fixed-by-discovering-the-bug-of-ruby-v2-5-8-and-v2-6-6-7fa0fd0a1958
+
+Android可信执行环境安全研究（二）：可信应用漏洞利用
+https://www.anquanke.com/post/id/237029
+Android可信执行环境安全研究（一）：TEE、TrustZone和TEEGRIS
+https://www.anquanke.com/post/id/236483
+
+Chrome 任意代码执行漏洞分析
+https://paper.seebug.org/1563/
+
+Linux 内核蓝牙协议栈漏洞（BleedingTooth）利用分析与复现
+https://paper.seebug.org/1564/
+
+如何使用Maigret根据用户名进行OSINT信息收集
+https://www.freebuf.com/articles/database/268703.html
+
+某单位攻防演练期间的一次应急响应
+https://www.freebuf.com/articles/web/270265.html
+内网渗透基石篇：内网基础知识及域环境搭建
+https://www.freebuf.com/articles/web/267824.html
+
+
+https://github.com/ory/keto
+Open Source (Go) implementation of "Zanzibar: Google's Consistent, Global Authorization System". Ships gRPC, REST APIs, newSQL, and an easy and granular permission language. Supports ACL, RBAC, and other access models.
+https://github.com/ory/kratos
+Next-gen identity server (think Auth0, Okta, Firebase) with Ory-hardened authentication, MFA, FIDO2, profile management, identity schemas, social sign in, registration, account recovery, service-to-service and IoT auth. Can work as an OAuth2 / OpenID Connect Provider. Golang, headless, API-only - without templating or theming headaches.
+
+https://github.com/keycloak/keycloak
+https://casbin.org/en/
+https://www.openpolicyagent.org/
+
+
 ## 20210422
+
 【公益译文】安全控制评估自动化支持：软件漏洞管理（三）
 http://blog.nsfocus.net/nistir-8011-4-3/
 

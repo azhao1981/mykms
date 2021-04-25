@@ -6,7 +6,6 @@
 [如何使用N1QLMap来利用N1QL注入漏洞并从Couchbase数据库中提取数据](https://www.freebuf.com/articles/database/257101.html)
 
 
-[GitLab 11.4.7 - RCE (Authenticated)](https://www.exploit-db.com/exploits/49334)
 
 [Avaya WebLM XML外部实体注入漏洞（CVE-2020-7032）](http://www.nsfocus.net/vulndb/51781)
 
@@ -157,8 +156,7 @@ https://github.com/openssl/openssl/issues/13664
 
 ## 1216
 
-https://www.exploit-db.com/exploits/49263
-GitLab 11.4.7 - Remote Code Execution (Authenticated)
+
 
 https://dev.to/shahinsha/how-to-make-vim-a-python-ide-best-ide-for-python-23e1
 https://dev.to/llldar/migrate-to-typescript-the-advance-guide-1df6
@@ -207,9 +205,7 @@ https://www.wangan.com/docs/gbt30276-2020
 一起典型DDoS事件的应急处置
 https://www.freebuf.com/articles/web/255342.html
 
-https://www.exploit-db.com/exploits/49257
-Gitlab 11.4.7 - Remote Code Execution
-8.13.6 
+
 
 
 
@@ -301,10 +297,7 @@ https://www.anquanke.com/post/id/224769
 https://www.anquanke.com/post/id/225252
 
 ## 1209
-Gitlab 安全漏洞
-http://www.cnnvd.org.cn/web/xxk/ldxqById.tag?CNNVD=CNNVD-202012-442
-Gitlab CE/EE 跨站脚本漏洞
-http://www.cnnvd.org.cn/web/xxk/ldxqById.tag?CNNVD=CNNVD-202012-439
+
 
 https://www.anquanke.com/post/id/225142
 CVE-2020-1971：OpenSSL 拒绝服务漏洞通告
