@@ -1,5 +1,13 @@
 # 202104
 
+## 20210426
+
+OWASP安全测试指南解读
+https://www.freebuf.com/articles/network/228005.html
+
+浅谈Web渗透测试
+https://www.freebuf.com/articles/network/230601.html
+
 ## 20210425
 CVE-2021-24086：Windows IPv6分片漏洞分析
 https://www.anquanke.com/post/id/237694

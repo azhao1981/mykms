@@ -80,13 +80,10 @@ cp /home/osboxes/plugin_feed_info.inc /opt/nessus/lib/nessus/plugins/plugin_feed
 https://zh-cn.tenable.com/products/nessus/nessus-essentials
 https://plugins.nessus.org/offline.php
 /opt/nessus/sbin/nessuscli fetch --challenge
-
-031121d2a0507b3875692ae0859acb25da60996f
-CT2Q-HAUE-EV65-7K66-AXVG
-
-
 /opt/nessus/sbin/nessuscli update all-2.0.tar.gz
 /opt/nessus/etc/nessus/nessus-fetch.rc
+
+### docker
 
 ## 使用:
 
