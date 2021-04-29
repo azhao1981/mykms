@@ -1,5 +1,64 @@
 # 202104
 
+## 20210429
+
+看我如何通过 ZoomEye 发现后门设备
+https://paper.seebug.org/1576/
+
+Linux 内核安全机制总结
+https://www.anquanke.com/post/id/238363
+
+## 20210428
+
+[红队攻防基础建设—神隐之路](https://www.anquanke.com/post/id/239640)
+> 域前置
+
+
+
+How to identify and exploit HTTP Host header vulnerabilities 如何识别和利用HTTP主机报头漏洞
+https://portswigger.net/web-security/host-header/exploiting#top
+
+[Accessing and dumping Jenkins credentials](https://www.codurance.com/publications/2019/05/30/accessing-and-dumping-jenkins-credentials)
+
+[渗透测试之地基内网篇：域森林中权限提升（上） 会员](https://www.freebuf.com/articles/web/268865.html)
+
+最新安全版本： 5.7.34 8.0.24
+Oracle MySQL Server拒绝服务漏洞（CVE-2021-2194）
+http://www.nsfocus.net/vulndb/54072
+Oracle MySQL Server拒绝服务漏洞（CVE-2021-2166）
+http://www.nsfocus.net/vulndb/54074
+Oracle MySQL Server拒绝服务漏洞（CVE-2021-2196）
+http://www.nsfocus.net/vulndb/54076
+## 20210427
+
+个人敏感信息明文传输风险案例解析
+https://opendocs.alipay.com/rules/01n2xe
+
+安全漏洞风险案例解析|邮箱漏洞
+https://opendocs.alipay.com/rules/01ocj1
+
+对url加密的方法及装置、url验证的方法及装置
+https://patents.google.com/patent/CN102594557A/zh
+
+VS Code插件开发介绍（一）
+https://segmentfault.com/a/1190000016641617
+
+vscode插件开发
+https://hellogithub2014.github.io/2019/06/09/vscode-plugin-development/
+
+PoisonApple：一款针对macOS的持久化工具
+https://www.freebuf.com/articles/system/269129.html
+
+NAT 原理以及 UDP 穿透
+https://www.anquanke.com/post/id/238765
+
+OSSEC Linux RootKit检测部分源码分析
+https://www.anquanke.com/post/id/238774
+
+Fuzzingbook学习指南 Lv1
+https://www.anquanke.com/post/id/238224
+
+
 ## 20210426
 
 OWASP安全测试指南解读
@@ -241,25 +300,6 @@ https://www.zhihu.com/question/20462696
 
 ## 20210415
 
-和busybox一样有意思的小工具
-https://busybox.net/tinyutils.html
-https://busybox.net/FAQ.html
-[Busybox](https://yeasy.gitbook.io/docker_practice/os/busybox)
-busybox vs toybox
-https://www.oreilly.com/library/view/mastering-embedded-linux/9781787283282/8c0f324c-1759-4362-8741-e2e5c9db9bff.xhtml
-toybox 小，少，只是许可不同
-
-
-https://github.com/samuela/rustybox
-cargo build --all-features
-[Statically Linked Rust App](https://zhuanlan.zhihu.com/p/38948830)
-http://zderadicka.eu/static-build-of-rust-executables/
-ERROR: 一大推错误
-
-MesaBox is a collection of core system utilities written in Rust for Unix-like systems.
-https://github.com/mesalock-linux/mesabox
-uutils is an attempt at writing universal (as in cross-platform) CLI utilities in Rust. This repository is intended to aggregate GNU coreutils rewrites.
-https://github.com/uutils/coreutils
 
 https://dev.to/humblecoder00/comprehensive-big-o-notation-guide-in-plain-english-using-javascript-3n6m
 https://dev.to/fossheim/i-drew-a-synthesizer-with-html-css-53f

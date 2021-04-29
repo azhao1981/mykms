@@ -5,6 +5,10 @@
 [企业安全建设之应急响应](https://www.freebuf.com/articles/es/249593.html)
 [取证](doc\sec\sec.tools.forensicCollection.取证.md)
 
+
+
+## 
+
 [入门级应急响应小贴士](https://www.freebuf.com/articles/es/238170.html)
 
 [使用Elasticsearch与TheHive构建开源安全应急响应平台](https://www.freebuf.com/articles/es/203538.html)
@@ -14,8 +18,6 @@
 [应急响应之X系统数据库篡改应急分享](https://www.freebuf.com/articles/web/236766.html)
 
 [我的主机是不是被gank了？Windows入侵排查初探| 应急响应](https://www.freebuf.com/articles/system/238860.html)
-
-[Linux应急响应姿势浅谈](http://3ms.huawei.com/hi/group/2034125/file_10823427.html?for_statistic_from=my_group_file)
 
 [干货 | 黑客入侵？这里有详细的应急排查手册！](https://www.leiphone.com/news/201706/oCidY2C8IPHt82mF.html)
 
@@ -53,23 +55,9 @@ pe对系统密码进行更改处理
 
 [应急响应之Linux下进程隐藏](https://www.freebuf.com/articles/network/258510.html)
 
-
-
 勒索软件解密工具集
 腾讯哈勃：https://habo.qq.com/tool
 
-[Linux应急响应笔记](https://www.freebuf.com/articles/network/248376.html) 
-
-[Linux应急响应笔记（二）|需要应用到实践](https://www.freebuf.com/articles/others-articles/257827.html)
-
-busybox
-alpine linux:
-  security-oriented, lightweigth Linux distribution base on musl libc and busybox
-alternativeto
-  A free-range, non-GMO fork of busybox in 100% Rust 🦀
-https://github.com/samuela/rustybox
-Unix command line utilities installer for Windows.
-https://github.com/bmatzelle/gow
 linux　命令行
 http://www.pixelbeat.org/cmdline_zh_CN.html
 http://landley.net/toybox/
@@ -93,7 +81,6 @@ https://www.freebuf.com/articles/network/248376.html
 ##　技术方法
 
 [蓝队应急响应之“雄鸡夜鸣” | 应急响应技巧](https://www.anquanke.com/post/id/211974)
-
 
 报警
 确认攻击

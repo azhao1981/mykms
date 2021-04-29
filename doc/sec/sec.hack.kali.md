@@ -1292,3 +1292,11 @@ https://github.com/atilsamancioglu/PythonCourse/blob/master/01-Variables.ipynb
 ## xss relfected  
 ## xss stored  
 + beef
+
+### searchsploit
+https://www.exploit-db.com/searchsploit
+记一次在实战靶机中使用SearchSploit的总结
+https://xz.aliyun.com/t/2860
+
+https://www.offensive-security.com/metasploit-unleashed/msfconsole-commands/
+https://www.andreafortuna.org/2017/12/11/metasploit-console-my-own-cheatsheet/

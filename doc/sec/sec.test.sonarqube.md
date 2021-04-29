@@ -217,8 +217,6 @@ sonar.password=admin
 SonarQube (2) sonar runner安装配置
 https://www.jianshu.com/p/83fd4b0ea8a4
 
-https://www.busybox.net/
-
 [SonarQube 使用手册](https://guide-wiki.daocloud.io/pages/viewpage.action?pageId=31197301)
 
 [Docker搭建SonarQube](https://blog.csdn.net/qaz5209103/article/details/82563053)
