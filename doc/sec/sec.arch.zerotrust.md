@@ -156,3 +156,6 @@ Github上部分零信任相关开源软件或文档集合
 
 2、https://github.com/cogolabs/beyond
 基于谷歌BeyondCord启发的零信任访问代理软件
+
+国内外零信任：我们不一样
+https://www.freebuf.com/articles/network/270605.html

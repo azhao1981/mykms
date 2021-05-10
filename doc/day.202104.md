@@ -1,5 +1,33 @@
 # 202104
 
+## 20210430
+
+数据库：从注入到提权的全家桶套餐
+https://www.freebuf.com/articles/database/270106.html
+
+MoveKit：一款功能强大的Cobalt Strike横向渗透套件
+https://www.freebuf.com/sectool/270163.html
+如何使用Gotestwaf测试你的WAF检测能力
+https://www.freebuf.com/articles/network/269585.html
+
+[ApplicationScanner：一款App等保的预检测工具](https://www.freebuf.com/sectool/270360.html)
+
+```bash
+git clone https://github.com/paradiseduo/ApplicationScanner.git
+pip install -r -r requirements.txt
+python AppScanner.py -i xxx.apk 
+```
+
+四字节的力量：在Linux内核中利用CVE-2021-26708
+https://www.anquanke.com/post/id/238141
+
+Hvv样本合集分析（二）- Golang恶意样本分析
+https://www.anquanke.com/post/id/239246#h3-5
+
+[数据安全如何定级](https://www.freebuf.com/articles/database/270513.html)
+
+http://projects.webappsec.org/w/page/13246920/Cross%20Site%20Scripting
+
 ## 20210429
 
 看我如何通过 ZoomEye 发现后门设备
@@ -12,8 +40,6 @@ https://www.anquanke.com/post/id/238363
 
 [红队攻防基础建设—神隐之路](https://www.anquanke.com/post/id/239640)
 > 域前置
-
-
 
 How to identify and exploit HTTP Host header vulnerabilities 如何识别和利用HTTP主机报头漏洞
 https://portswigger.net/web-security/host-header/exploiting#top

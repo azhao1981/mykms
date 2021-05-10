@@ -13,15 +13,24 @@ http://www.sinotf.com/GB/News/1002/2020-02-24/wNMDAwMDM0MTIwNA.html
 关于《个人金融信息保护技术规范》的相关解读
 https://www.secrss.com/articles/17921
 
-中文标准名称：信息安全技术 个人信息安全规范 | 需要flash
-http://openstd.samr.gov.cn/bzgk/gb/newGbInfo?hcno=4568F276E0F8346EB0FBA097AA0CE05E
-
 ## [GDPR](https://gdpr-info.eu/)
 
 《通用数据保护条例》（General Data Protection Regulation，简称为“GDPR”）
 
 [全球数据及隐私安全立法及实施概览](https://zhuanlan.zhihu.com/p/87010338)
 
+### 信息安全技术 数据安全能力成熟度模型
+国家标准GB/T 37988-2019《信息安全技术 数据安全能力成熟度模型》
+http://c.gb688.cn/bzgk/gb/showGb?type=online&hcno=3CFD5E5A14C24D303EA1E139E6EB75C8
+https://dsmm.cesidsat.com/assets/file/standard.pdf
+数据安全能力成熟度评估
+https://dsmm.cesidsat.com/home
+
+《数据安全能力成熟度模型》实践指南：数据源鉴别及记录
+https://cloud.tencent.com/developer/article/1690317
+
+国家标准《数据安全能力成熟度模型》明年3月起实施 (附文件)
+https://www.secrss.com/articles/13518
 
 
 ## 法规.国内.隐私

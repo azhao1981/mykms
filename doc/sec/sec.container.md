@@ -29,6 +29,11 @@ https://www.anquanke.com/post/id/229487
 
 ## tools
 
+###　[KubiScan](https://github.com/cyberark/KubiScan)
+
+如何使用KubiScan扫描Kubernetes集群中的风险权限
+https://www.freebuf.com/articles/security-management/270210.html
+
 ### [dagda](https://github.com/eliasgranderubio/dagda)
 
 Dagda 会针对容器镜像中已知的漏洞、特洛伊、病毒、恶意软件和其它恶意威胁进行静态分析。

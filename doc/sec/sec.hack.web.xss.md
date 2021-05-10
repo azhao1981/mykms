@@ -1,5 +1,7 @@
 # web 攻击： xss
 
+https://www.cgisecurity.com/xss-faq.html
+
 Almost all XSS Payloads. xss大全
 https://github.com/irfan-knr/KNR-XSS-Payloads
 
@@ -29,7 +31,6 @@ Reflected xss successfull payload for me:
 3."><script>alert(document.cookie)</script>
 4. /><svg src=x onload=confirm("1337");>
 
-
 Brute Logic
 @brutelogic
 ·
@@ -57,8 +58,38 @@ BUG : HTML INJECTION to XSS
 2) HTML injection successfully working.
 3) Now try escalate to XSS : <a href=javascript:alert('Fauzan_hacker')>click</a>
 
-TOOLS:
-x5s: fiddler　插件，都是１０年左右的
+## TOOLS
+
+### burpsuite xss-validator
+
+
+burpsuite检测xss漏洞 burpsuite实战指南
+https://cloud.tencent.com/developer/article/1353325
+如何使用开源组件解决web应用中的XSS漏洞
+https://t0data.gitbooks.io/mysecuritybook/content/chapter1.html
+
+
+#### 检查
+
+评论：
+1 好像是无法自动识别的，只是帮着发而以，可能存储型的好一些
+2 360一些用url也无法触发
+Intruder组件根据Grep Phrase标志区分是否存在漏洞？怎么实现？
+
+[2021Kali系列 -- BurpSuite(XSS插件)](https://zhuanlan.zhihu.com/p/364017983)
+
+[使用Burp、PhantomJS进行XSS检测](https://t0data.gitbooks.io/burpsuite/content/chapter19.html)
+
+extender -> BAppStore 'XSS VALIDATOR'
+
+https://github.com/portswigger/xss-validator
+
+https://phantomjs.org/download.html
+
+https://github.com/pmiaowu/BurpReflectiveXssMiao
+
+### x5s: fiddler　插件，都是１０年左右的
+
 http://xss.codeplex.com x5s XSS and Unicode transformations security testing assistant
 https://www.security-database.com/toolswatch/x5s-Beta-released-Automated-XSS.html
 

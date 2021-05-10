@@ -25,6 +25,9 @@ https://github.com/sbilly/awesome-security
 https://github.com/Hack-with-Github/Free-Security-eBooks
 https://github.com/qazbnm456/awesome-web-security
 
+Black Hat ASIA 2021武器库回顾
+https://www.freebuf.com/news/272191.html
+
 ## [分享 GitHub 上有趣、入门级的开源项目](https://github.com/521xueweihan/HelloGitHub)
 
 32、GitHub-Chinese-Top-Charts：每周更新一次的 GitHub 中文项目排行榜

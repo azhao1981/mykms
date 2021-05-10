@@ -4,8 +4,9 @@
 [数据安全合规实践（二） 安全需求评审：信息采集部分评审 会员](https://www.freebuf.com/articles/database/252219.html)
 [数据安全合规实践（三）：数据溯源系统的思考](https://www.freebuf.com/articles/database/252222.html)
 [企业合规视角下的《个人信息保护法 (草案) 》解读](https://www.freebuf.com/articles/neopoints/253546.html)
-GDPR笔记（4）：数据保护影响评估（DPIA）之“高风险”认定
-https://zhuanlan.zhihu.com/p/134369950
+[从技术角度解读《数据安全法（草案）》二审稿](http://blog.nsfocus.net/426-429-20/)
+[GDPR笔记（4）：数据保护影响评估（DPIA）之“高风险”认定](https://zhuanlan.zhihu.com/p/134369950)
+
 
 ### 0x01安全需求评审的内容
 
