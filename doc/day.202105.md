@@ -1,5 +1,21 @@
 # 202105
 
+## 0511
+
+XXL-JOB 任務調度中心 後台任意命令執行漏洞
+https://www.pwnwiki.org/index.php?title=XXL-JOB_%E4%BB%BB%E5%8B%99%E8%AA%BF%E5%BA%A6%E4%B8%AD%E5%BF%83_%E5%BE%8C%E5%8F%B0%E4%BB%BB%E6%84%8F%E5%91%BD%E4%BB%A4%E5%9F%B7%E8%A1%8C%E6%BC%8F%E6%B4%9E
+XXL-JOB 任務調度中心 後台默認弱口令
+https://www.pwnwiki.org/index.php?title=XXL-JOB_%E4%BB%BB%E5%8B%99%E8%AA%BF%E5%BA%A6%E4%B8%AD%E5%BF%83_%E5%BE%8C%E5%8F%B0%E9%BB%98%E8%AA%8D%E5%BC%B1%E5%8F%A3%E4%BB%A4
+
+Fuzzingbook学习指南Lv3
+https://www.anquanke.com/post/id/239999
+
+从零带你看struts2中ognl命令执行漏洞
+https://www.anquanke.com/post/id/239783
+
+KubeArmor：一个针对容器的运行时安全检查系统
+https://www.freebuf.com/articles/container/272230.html
+
 ## 0510
 
 safeforces Shield 平台加密最佳实践
@@ -7,11 +23,6 @@ https://help.salesforce.com/articleView?id=sf.security_pe_best_practices.htm&typ
 
 Metasploit-framework 内网穿透：多场景详解
 https://www.freebuf.com/articles/web/270456.html
-
-DSXS源码分析
-https://www.anquanke.com/post/id/238386
-这是一个仅有一百行的xss检测脚本，现在来分析一下他的源码
-项目地址：https://github.com/stamparm/DSXS
 
 从技术角度解读等保2.0对数据安全的要求
 http://blog.nsfocus.net/gbt-20/

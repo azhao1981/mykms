@@ -124,3 +124,19 @@ https://infosecwriteups.com/automating-xss-using-dalfox-gf-and-waybackurls-bc6de
 
 Chrome 插件 Vue.js devtools UXSS
 https://www.pwnwiki.org/index.php?title=Chrome_%E6%8F%92%E4%BB%B6_Vue.js_devtools_UXSS
+
+
+## 工具
+
+轻量级开源SAST工具semgrep分析|XSS
+https://www.anquanke.com/post/id/240028
+
+### [DSXS源码分析](https://www.anquanke.com/post/id/238386)
+
+  这是一个仅有一百行的xss检测脚本，现在来分析一下他的源码
+
+  项目地址：https://github.com/stamparm/DSXS
+
+```bash
+git clone https://github.com/stamparm/DSXS.git
+```
