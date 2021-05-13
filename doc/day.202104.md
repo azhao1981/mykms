@@ -197,10 +197,7 @@ https://blog.arkency.com/common-authentication-for-mounted-rack-apps-in-rails/
 puma 服务挂起调教
 https://itnext.io/why-puma-workers-constantly-hung-and-how-we-fixed-by-discovering-the-bug-of-ruby-v2-5-8-and-v2-6-6-7fa0fd0a1958
 
-Android可信执行环境安全研究（二）：可信应用漏洞利用
-https://www.anquanke.com/post/id/237029
-Android可信执行环境安全研究（一）：TEE、TrustZone和TEEGRIS
-https://www.anquanke.com/post/id/236483
+
 
 Chrome 任意代码执行漏洞分析
 https://paper.seebug.org/1563/

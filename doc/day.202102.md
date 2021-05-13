@@ -77,8 +77,6 @@ https://www.freebuf.com/vuls/262047.html
 
 如何使用Aura对Python源码进行安全审计和静态分析
 https://www.freebuf.com/articles/database/260626.html
-如何使用开源的Umbrella学习和管理Android、iOS和Web应用安全
-https://www.freebuf.com/articles/system/261866.html
 
 ## 0224
 

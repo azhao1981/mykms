@@ -77,8 +77,7 @@ https://github.com/gorilla/websocket
 13、MyBookshelf：免费开源的安卓小说阅读软件，能够自定义订阅小说数据源。支持：
 TODO: 搞一个
 https://github.com/gedoor/MyBookshelf
-14、QMUI_Android：用于辅助快速搭建一个具备基本还原设计效果的 Android 项目。快速搭建一个 Demo App 的必备利器，官网还提供示例 App 下载，感兴趣的小伙伴快去试试吧
-https://github.com/Tencent/QMUI_Android
+
 18、Zettlr：开源免费支持多种操作系统的 Markdown 编辑器。如果你想尝试一款新的 Markdown 编辑器，它或许能满足你对编辑器所有想法，如果还不够那就自己动手增加吧
 https://github.com/Zettlr/Zettlr
 22、ncmdump：网易云音乐下载的 NCM 文件转化工具

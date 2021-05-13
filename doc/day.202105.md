@@ -76,10 +76,6 @@ https://pentestwiki.org/academy/interactsh-open-source-oob-solution-for-ssrf-bli
 ATT&CK 初探--侦察阶段
 https://paper.seebug.org/1583/
 
-如何使用Android-PIN-Bruteforce爆破Android的锁屏密码
-https://www.freebuf.com/articles/terminal/271047.html
-https://github.com/urbanadventurer/Android-PIN-Bruteforce
-
 
 
 让高敏感数据销声匿迹：一种用户无感知的数据防泄露方法
@@ -139,8 +135,7 @@ https://www.anquanke.com/post/id/240032
 
 ## 0507
 
-Android可信执行环境安全研究（三）：特权提升
-https://www.anquanke.com/post/id/239181
+
 
 渗透神器：burpsuit教程之intruder模块
 https://www.freebuf.com/articles/web/270618.html

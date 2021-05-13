@@ -561,8 +561,7 @@ https://github.com/clouDr-f2e/mitojs
 https://github.com/psf/requests-html
 24、PyG2Plot：基于 G2Plot 封装的 Python3 可视化库。G2Plot 是蚂蚁集团开源的一个基于图表分类学的可视分析图表库，内置 25+ 常见图表类型。该库是 Python 对 G2Plot 的封装，体验良好，开箱即用
 https://github.com/hustcc/PyG2Plot
-33、AndroidSDK：包含完整 Android SDK 运行环境的 Docker 镜像。适用于各种 Android 持续集成场景，甚至包括模拟器运行应用、界面自动化测试，也可以连接云端进行自动化测试。Android 构建的容器镜像解决方案之一（不违法许可协议的方案），并在 Docker 官方的 DockerCon EU 2017 进行过宣讲
-https://github.com/thyrlian/AndroidSDK
+
 30、computer-science：开源社区大学，计算机科学自学的免费材料集合仓库。该项目不仅包含了学习的视频，还有学习计划和时间安排，同时这些课程大多来自国际知名大学。唯一不足的点是材料都是英文的，我想了想还是决定推荐给大家，毕竟学好英语也是编程路上必经之路
 https://github.com/ossu/computer-science
 
@@ -690,8 +689,7 @@ https://www.seafile.com/home/
 Seafile 是一款开源的企业云盘，注重可靠性和性能。支持 Windows, Mac, Linux, iOS, Android 平台。支持文件同步或者直接挂载到本地访问。
 
 ## 20210308
-https://github.com/kp300/shotdroid
-ShotDroid is a pentesting tool for android. There are 3 tools that have their respective functions, Get files from Android directory, internal and external storage, Android Keylogger + Reverse Shell and Take a webcam shot of the face from the front camera of the phone and PC.
+
 https://reconshell.com/advanced-mssql-injection-tricks/
 https://console.huaweicloud.com/ssa/?region=cn-north-4#/ssa/vulnerabilityManagement/emergencyVulnerability
 https://github.com/tone-row/flowchart-fun

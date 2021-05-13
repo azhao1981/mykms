@@ -113,8 +113,7 @@ https://www.freebuf.com/articles/network/256580.html
 内网渗透之代理转发
 https://www.freebuf.com/articles/web/256415.html
 
-CVE-2020-0423 android内核提权漏洞分析 
-https://bbs.pediy.com/thread-264616.htm
+
 如何快速构建内部钓鱼平台
 https://mp.weixin.qq.com/s/SpOQ_ZwwE7_k4fV3JGVBjA
 ##　20201225

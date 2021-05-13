@@ -428,7 +428,6 @@ https://www.freebuf.com/articles/database/258970.html
 
 ## 0127
 
-https://telegra.ph/11-Best-Wi-Fi-Hacking-Apps-For-Android-01-26
 https://vypersquad.blogspot.com/2021/01/best-websites-to-test-your-hacking.html
 自建onion网站
 https://johnrosen1.com/2021/01/24/onion/
@@ -676,9 +675,7 @@ https://svelte.dev/ | 看起来不错
 Cybernetically enhanced web apps
 https://github.com/sveltejs/svelte
 
-Android terminal and Linux environment - packages repository.
-https://github.com/termux/termux-packages
-https://termux.com/
+
 
 A modern file explorer that pushes the boundaries of the platform.
 https://github.com/files-community/Files
@@ -872,12 +869,7 @@ docker pull index.docker.io/dstotijn/hetty:0.3.1
 mkdir -p $HOME/.hetty
 docker run -v $HOME/.hetty:/root/.hetty -p 8080:8080 dstotijn/hetty:0.3.1
 
-如何使用Damn-Vulnerable-Bank来学习Android应用程序安全
-https://www.freebuf.com/articles/system/257406.html
-如何使用NFCGate对Android进行NFC安全研究
-https://www.freebuf.com/articles/terminal/258085.html
-APKLab：针对VS Code的Android逆向工程工具
-https://www.freebuf.com/sectool/260402.html
+
 如何对二进制代码进行定向模糊测试以扫描用后释放漏洞|逆向工程
 https://www.freebuf.com/articles/database/257496.html
 
@@ -998,8 +990,7 @@ https://www.freebuf.com/news/257686.html
 企业FRP安全实践
 https://www.freebuf.com/articles/network/257772.html
 
-基于静态和动态分析的Android应用漏洞挖掘方法
-https://www.anquanke.com/post/id/221581
+
 DNSMon：用DNS数据进行威胁发现（2）
 https://www.anquanke.com/post/id/227326
 你可能不知道的挖洞小技巧系列之OAuth 2.0
@@ -1046,8 +1037,7 @@ https://wiki.jikexueyuan.com/project/spring/aop-with-spring.html
 
 [emp3r0r - Linux用户打造的Linux后渗透框架 | vs kali? metaexploit](https://www.freebuf.com/sectool/259079.html)
 
-A vulnerable Android application that shows simple examples of vulnerabilities in a ctf style.
-https://github.com/B3nac/InjuredAndroid
+
 
 ## 0101
 

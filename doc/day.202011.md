@@ -133,7 +133,6 @@ https://mp.weixin.qq.com/s?__biz=MzIyMjg2ODExMA==&mid=2247487784&idx=1&sn=f41890
 
 [浅谈OWASP IoT TOP10与物联网安全开发生命周期](https://vipread.com/library/topic/3244)
 
-[浅谈 Android 的安全启动和完整性保护](https://evilpan.com/2020/11/14/android-secure-boot/)
 
 [macOS版本的本地提权漏洞分析](https://sec-in.com/article/698)
 
