@@ -372,9 +372,7 @@ https://my.oschina.net/bypass/blog/4554008
 
 [通过欺骗性的React元素实现XSS](https://www.freebuf.com/vuls/247982.html)
 
-[[CVE-2020-15169] Potential XSS vulnerability in Action View](https://groups.google.com/g/rubyonrails-security/c/b-C9kSGXYrc)
-> https://sourcegraph.com/github.com/rails/rails/-/compare/v5.2.4.3...v5.2.4.4
-> https://sourcegraph.com/github.com/rails/rails@404ad9e8acf8ab45ae2314050131a00e57e63b40/-/blob/actionview/lib/action_view/helpers/translation_helper.rb#L77
+
 
 https://gist.github.com/eliotsykes/ace0222174804372b51a
 rails new rails_vuls --webpack=react

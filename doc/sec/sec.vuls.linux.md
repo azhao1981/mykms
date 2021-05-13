@@ -178,30 +178,6 @@ https://blog.csdn.net/weixin_42437067/article/details/111955777
 TLS协议深入
 https://xiaochai.github.io/2020/07/05/tls/
 
-CVE-2021-28965: XML round-trip vulnerability in REXML
-https://www.ruby-lang.org/en/news/2021/04/05/xml-round-trip-vulnerability-in-rexml-cve-2021-28965/
-https://sourcegraph.com/github.com/ruby/ruby/-/compare/v2_6_6...v2_6_7
-https://sourcegraph.com/github.com/ruby/ruby/-/commit/1b59a4dc76caa061355f4289d2c54d4625671735?visible=11
-```ruby
-    def parse(xml)
-      REXML::Document.new(xml)
-    end
-    doc = parse(<<-XML)
-x<?x y
-<!--?><?x -->?>
-<r/>
-        XML
-        pi = doc.children[1]
-        assert_equal([
-                       "x",
-                       "y\n<!--",
-                     ],
-                     [
-                       pi.target,
-                       pi.content,
-                     ])
-```
-
 CVE-2021-28966: Path traversal in Tempfile on Windows | 只在windows生效
 https://www.ruby-lang.org/en/news/2021/04/05/tempfile-path-traversal-on-windows-cve-2021-28966/
 

@@ -1,5 +1,12 @@
 # web 攻击： xss
 
+这里面相关xss的
+https://github.com/trimstray/the-book-of-secret-knowledge
+
+https://github.com/qazbnm456/awesome-web-security
+
+https://github.com/swisskyrepo/PayloadsAllTheThings/tree/master/XSS%20Injection
+
 https://www.cgisecurity.com/xss-faq.html
 
 Almost all XSS Payloads. xss大全
@@ -68,6 +75,8 @@ https://cloud.tencent.com/developer/article/1353325
 如何使用开源组件解决web应用中的XSS漏洞
 https://t0data.gitbooks.io/mysecuritybook/content/chapter1.html
 
+这应该是burpsuite发的请求
+https://portswigger.net/web-security/cross-site-scripting/cheat-sheet
 
 #### 检查
 
@@ -140,3 +149,38 @@ https://www.anquanke.com/post/id/240028
 ```bash
 git clone https://github.com/stamparm/DSXS.git
 ```
+
+### nmap
+
+ll /usr/share/nmap/scripts | grep xss
+
+https://github.com/trimstray/the-book-of-secret-knowledge
+Recon specific ip:service with Nmap NSE scripts stack
+
+
+## 相关知识
+
+[DOM XSS 安全学习平台](https://domgo.at/cxss/intro)
+> [function与Function，这两种写法，在javascript中，区别是什么？（一个大写，一个小写开头）](https://bbs.csdn.net/topics/330250888)
+
+[HTML5 Security Cheatsheet](http://html5sec.org/)
+> 这里是各种payload
+
+http://evuln.com/tools/xss-encoder/
+> 各种编码方法  
+
+https://github.com/s0md3v/AwesomeXSS
+> https://github.com/s0md3v/XSStrike
+
+
+Master the art of Cross Site Scripting.
+https://brutelogic.com.br/blog/
+BRUTE XSS
+CSP Bypass Guidelines
+https://brutelogic.com.br/blog/csp-bypass-guidelines/
+
+TODO: 看书：
+2020版本
+https://www.rapidx.in/pdf/432309207.pdf
+2018版本
+https://paper.bobylive.com/Security/XSS_Cheat_Sheet_2018_Edition.pdf

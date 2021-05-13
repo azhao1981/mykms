@@ -344,6 +344,17 @@ https://github.com/ulisesbocchio/jasypt-spring-boot
 
 ## 如何绑定SDK版本和Maven/Gradle
 
+## idea + spring
+
+Shiro 权限绕过的历史线（上）
+https://www.anquanke.com/post/id/240033
+
+使用Shiro实现认证和授权(基于SpringBoot)
+https://www.cnblogs.com/seve/p/12241197.html
+
+Spring Boot 中文乱码问题解决方案汇总
+https://developer.aliyun.com/article/627073
+
 ## idea 插件
 Mac：IntelliJ IDEA -> Preferences -> Plugins;
 Windows：File -> Settings -> Plugins.

@@ -1,5 +1,97 @@
 # 202105
 
+## 0515
+
+[Shiro 权限绕过的历史线（上）](https://www.anquanke.com/post/id/240033)
+
+[Shiro 权限绕过的历史线（下）](https://www.anquanke.com/post/id/240202)
+
+[CVE-2021-31166](http://blog.nsfocus.net/cve-2021-31166/)
+
+HTTP协议栈远程代码执行漏洞（CVE-2021-31166），该漏洞存在于HTTP 协议栈 (http.sys) 的处理程序中，未经身份验证的远程攻击者可通过向目标主机发送特制数据包来进行利用，从而在目标系统上以内核身份执行任意代码。
+
+<https://zh-cn.tenable.com/blog/cve-2021-22893-zero-day-vulnerability-in-pulse-connect-secure-exploited-in-the-wild>
+
+[微软HTTP协议栈远程代码执行漏洞 (CVE-2021-31166)](https://poc.shuziguanxing.com/?#/publicIssueInfo#issueId=4018)
+
+## 0512
+
+https://github.com/jenkinsci/jenkins
+
+https://www.vuxml.org/freebsd/vuln.xml
+(High) JENKINS-65280 / CVE-2021-28165
+
+https://www.vuxml.org/
+VuXML is the Vulnerability and eXposure Markup Language, an XML application for documenting security issues in a software package collection such as the FreeBSD Ports Collection.
+
+https://github.com/osquery/osquery
+https://github.com/toniblyx/my-arsenal-of-aws-security-tools
+
+开发安全的 API 所需要核对的清单
+https://github.com/shieldfy/API-Security-Checklist/blob/master/README-zh.md
+
+https://github.com/FallibleInc/security-guide-for-developers/blob/master/security-checklist.md
+
+https://github.com/x64dbg/x64dbg 不错
+https://github.com/rizinorg/cutter
+
+DOMPurify - a DOM-only, super-fast, uber-tolerant XSS sanitizer for HTML, MathML and SVG. DOMPurify works with a secure default, but offers a lot of configurability and hooks. Demo:
+https://github.com/cure53/DOMPurify
+
+
+A Simple and Comprehensive Vulnerability Scanner for Container Images, Git Repositories and Filesystems. Suitable for CI
+https://github.com/aquasecurity/trivy
+
+Simple and flexible tool for managing secrets
+https://github.com/mozilla/sops
+
+https://github.com/ory/hydra
+OpenID Certified™ OpenID Connect and OAuth Provider written in Go - cloud native, security-first, open source API security for your infrastructure. SDKs for any language. Compatible with MITREid.
+https://github.com/docker/labs
+This is a collection of tutorials for learning how to use Docker with various tools. Contributions welcome.
+
+Certificate authority and access plane for SSH, Kubernetes, web applications, and databases
+https://github.com/gravitational/teleport
+
+https://github.com/topics/security
+
+Agent-less vulnerability scanner for Linux, FreeBSD, Container, WordPress, Programming language libraries, Network devices
+https://github.com/future-architect/vuls
+
+This guide details creating a secure Linux production system. OpenSCAP (C2S/CIS, STIG).
+https://github.com/trimstray/the-practical-linux-hardening-guide#how-to-harden-linux
+
+My portfolio website simulating macOS's GUI, developed with React and tailwindcss.|很不错
+https://github.com/Renovamen/playground-macos
+
+在可用的工具中，创建shellcode能够不被反病毒(AV)软件检测，OWASP-ZSC(零日shellcode)可能是最通用的。
+OWASP- zsc是OWASP的一个项目，仍在开发中，有一些有用的特性在这个类别中的其他一些应用程序中没有发现。
+在本教程中，我将试图演示OWASP-ZSC的一些最重要的功能，以及如何使用它们创建零日shellcode，将规避杀毒软件。
+https://www.hackers-arise.com/amp/2017/05/03/how-to-evade-av-with-owasp-zsc-part-1?__twitter_impression=true
+
+https://securib.ee/beelog/how-to-start-bug-bounty-for-beginners/
+https://infosecwriteups.com/oauth-2-0-hacking-simplified-part-1-understanding-basics-ad323cb4a05c
+https://pentestwiki.org/academy/interactsh-open-source-oob-solution-for-ssrf-blind-sqli-in-kali-linux/
+
+ATT&CK 初探--侦察阶段
+https://paper.seebug.org/1583/
+
+如何使用Android-PIN-Bruteforce爆破Android的锁屏密码
+https://www.freebuf.com/articles/terminal/271047.html
+https://github.com/urbanadventurer/Android-PIN-Bruteforce
+
+
+
+让高敏感数据销声匿迹：一种用户无感知的数据防泄露方法
+https://www.anquanke.com/post/id/240691
+1 分库
+2 标记记录
+3 分表，原表匿名化，敏感数据关联表
+4 前置处理：权限判断和数据过滤
+
+实践之后，我们来谈谈如何做好威胁建模
+https://www.anquanke.com/post/id/239997
+
 ## 0511
 
 XXL-JOB 任務調度中心 後台任意命令執行漏洞
