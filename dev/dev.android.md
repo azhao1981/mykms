@@ -5,6 +5,16 @@
 下载： https://developer.android.com/studio
 指南：https://developer.android.com/studio/intro
 
+
+ERROR:　navigation.json (系统找不到指定的文件。)
+什么是Android Studio 4.1中的navigation.json？
+https://www.debugcn.com/archives/29221.html
+File -> Project Structure 把 4.0.2 + 6.4.1
+https://stackoverflow.com/questions/64333649/what-is-navigation-json-in-android-studio-4-1
+还有个这样解决的,好像我的是EXFAT
+Had same issue. Moving project files to ntfs drive fixed it.
+
+
 Android官方培訓課程中文版 
 https://www.cntofu.com/book/41/index.html
 

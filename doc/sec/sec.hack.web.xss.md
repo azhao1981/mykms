@@ -65,6 +65,28 @@ BUG : HTML INJECTION to XSS
 2) HTML injection successfully working.
 3) Now try escalate to XSS : <a href=javascript:alert('Fauzan_hacker')>click</a>
 
+
+### react xss
+
+浅谈 React 中的 XSS 攻击
+https://www.infoq.cn/article/yVgbxJCyJklf9eqg71cL
+DOM-based XSS 与存储性 XSS、反射型 XSS 有什么区别？
+https://www.zhihu.com/question/26628342
+在易用上，存储型XSS > DOM - XSS > 反射型 XSS。
+在检测上，目前我还没有看到比较好的针对存储型xss的检测手段，而domxss和反射型xss均有比较好的检测手段了。
+你用burp Suite或者其他WEB数据包分析工具分析一下就会发现：
+存储型XSS：你发送一次带XSS代码的请求，以后这个页面的返回包里都会有XSS代码；
+反射型XSS：你发送一次带XSS代码的请求，只能在当前返回的数据包中发现XSS代码；
+DOM型XSS：你发送一次带XSS代码的请求，在返回包里压根儿就找不到XSS代码的影子；
+DOM Based Cross-site Scripting Vulnerability
+https://www.netsparker.com/blog/web-security/dom-based-cross-site-scripting-vulnerability/
+The article also explains why the traditional XSS remediation methods do not work and what you can do to ensure that your web applications are not vulnerable to DOM based cross-site scripting vulnerability.
+
+12 | 从0到1：你的第一个GUI自动化测试
+https://time.geekbang.org/column/article/11913
+21 个 React 性能优化技巧
+https://www.infoq.cn/article/KVE8xtRs-uPphptq5LUz
+
 ## TOOLS
 
 ### burpsuite xss-validator
