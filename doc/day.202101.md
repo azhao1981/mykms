@@ -22,8 +22,7 @@ https://www.freebuf.com/articles/system/263139.html
 
 ## 0208
 
-Apache Shiro 两种姿势绕过认证分析（CVE-2020-17523）
-https://paper.seebug.org/1478/
+
 
 
 

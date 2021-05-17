@@ -1,5 +1,29 @@
 # 202105
 
+## 0517
+
+insgam的开源版本
+https://bibliogram.art/
+
+Containerd 1.5 发布：重磅支持 docker-compose！
+https://www.oschina.net/news/141038/containerd-1-5-released?from=20210516
+加密镜像
+zstd 
+$ nerdctl compose -f docker-compose.yaml up
+
+https://gitee.com/mirrors/winrt-rs
+
+记一次当时不会，事后特别后悔的利用阿里云 Access Key 到 Getshell 经历
+https://www.freebuf.com/articles/web/271273.html
+阿里AK的攻击方法
+https://yun.cloudbility.com/login.html
+
+Microsoft Windows被在野利用的提权漏洞（CVE-2021-1732）的分析报告
+https://www.freebuf.com/vuls/271177.html
+
+Linux HIDS开发之eBPF的应用
+https://www.anquanke.com/post/id/239870
+
 ## 0516
 
 Rubygem
@@ -216,9 +240,7 @@ Callbacks + BaseService
 ## 0514
 
 
-[Shiro 权限绕过的历史线（上）](https://www.anquanke.com/post/id/240033)
 
-[Shiro 权限绕过的历史线（下）](https://www.anquanke.com/post/id/240202)
 
 [CVE-2021-31166](http://blog.nsfocus.net/cve-2021-31166/)
 

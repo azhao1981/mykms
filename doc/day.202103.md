@@ -357,6 +357,7 @@ https://store.steampowered.com/app/892970/Valheim/
 
 基于代码生成器的低代码平台，超越传统商业平台！前后端分离架构SpringBoot 2.x，SpringCloud，Ant Design&Vue，Mybatis-plus，Shiro，JWT。强大的代码生成器让前后端代码一键生成，无需写任何代码! 引领新低代码开发模式OnlineCoding->代码生成->手工MERGE，帮助Java项目解决70%重复工作，让开发更关注业务，既能快速提高开发效率，帮助公司节省成本，同时又不失灵活性。
 https://github.com/zhangdaiscott/jeecg-boot
+
 「Java学习+面试指南」一份涵盖大部分 Java 程序员所需要掌握的核心知识。准备 Java 面试，首选 JavaGuide！
 https://github.com/Snailclimb/JavaGuide
 https://github.com/jdah/minecraft-weekend 48小时完成的minecraft
@@ -569,7 +570,6 @@ https://github.com/ossu/computer-science
 
 [Apache Flink CVE-2020-17518、17519 漏洞分析](https://paper.seebug.org/1505/)
 
-Shiro [反序列化漏洞利用工具编写思路](https://paper.seebug.org/1503/)
 
 [红蓝对抗开源远控：BlueShell](https://www.freebuf.com/sectool/264813.html)
 
@@ -704,8 +704,7 @@ https://www.freebuf.com/articles/network/265401.html
 https://www.freebuf.com/articles/network/263069.html
 持续风险监测体系实践：基于ATT&CK的APT高频技术分析
 https://www.freebuf.com/articles/network/263141.html
-一道shiro反序列化题目引发的思考
-https://www.anquanke.com/post/id/231488
+
 
 ## 20210305
 
