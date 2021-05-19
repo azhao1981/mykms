@@ -359,6 +359,12 @@ Enables or disables padding.
  If the pad parameter is zero then no padding is performed, the total amount of data encrypted or decrypted must then be a multiple of the block size or an error will occur.
 See EVP_CIPHER_CTX_set_padding for further information.
 
+
+Ruby AES-128-ECB encryption / decryption example. This was written to interface with a 3rd party that required string parameters to be encrypted the following way: Rinndael cipher, Electronic Code Block mode (ECB), no padding, encrypted buffer should be padded with spaces such that its length is divisible by 32.
+https://gist.github.com/tcaddy/c2282fb795581d560fb7a42ff1f5e8d6
+
+[PKCS7 / PKCS5 填充算法](https://segmentfault.com/a/1190000019793040)
+
 [Web狗要懂的Padding Oracle攻击](https://www.jianshu.com/p/ad8bdd87e131)
 Ruby 对AES/CBC/PKCS7 的攻击
 

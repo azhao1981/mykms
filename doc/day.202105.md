@@ -1,5 +1,97 @@
 # 202105
 
+## 0519
+
+[CVE-2021-29505|官方复现](https://x-stream.github.io/CVE-2021-29505.html)
+[[TPSA21-24] 腾讯蓝军安全通告｜XStream远程代码执行漏洞(CVE-2021-29505)](https://security.tencent.com/index.php/announcement/msg/242)
+
+1、升级到最新版本-1.4.17
+https://x-stream.github.io/news.html
+
+2、使用安全api
+https://x-stream.github.io/security.html#example
+
+Keepalive Connections Causing Denial Of Service in puma
+https://github.com/advisories/GHSA-q28m-8xjw-8vr5
+This problem has been fixed in puma 4.3.8 and 5.3.1.
+CVE-2021-29509
+
+golang.org/x/crypto before v0.0.0-20200220183623-bac4c82f6975 for Go allows a panic during signature verification in the golang.org/x/crypto/ssh package. A client can attack an SSH server that accepts public keys. Also, a server can attack any SSH client.
+Improper Verification of Cryptographic Signature
+https://github.com/advisories/GHSA-ffhg-7mh4-33c4
+CVE-2020-9283
+
+
+Thrift is a lightweight, language-independent software stack for point-to-point RPC implementation. Thrift provides clean abstractions and implementations for data transport, data serialization, and application level processing. The code generation system takes a simple definition language as input and generates code across programming languages that uses the abstracted stack to build interoperable RPC clients and servers.
+https://github.com/apache/thrift
+In Apache Thrift 0.9.3 to 0.12.0, a server implemented in Go using TJSONProtocol or TSimpleJSONProtocol may panic when feed with invalid input data.
+CVE-2019-0210
+Out-of-bounds read in Apache Thrift
+https://github.com/advisories/GHSA-jq7p-26h5-w78r
+
+Update packaged dependency libxml2 from 2.9.10 to 2.9.12
+https://github.com/advisories/GHSA-7rrm-v45f-jp64
+
+Confluence Server和Confluence Data Center服务器端请求伪造漏洞（CVE-2021-26072）
+http://www.nsfocus.net/vulndb/54618
+
+GitLab CE/EE 13.10.0及之后版本存在跨站请求伪造漏洞。攻击者可通过API利用该漏洞在系统挂钩（HOOK）中导致跨站请求伪造。
+GitLab CE/EE跨站请求伪造漏洞（CVE-2021-22202）
+http://www.nsfocus.net/vulndb/54617
+GitLab CE/EE信息泄露漏洞（CVE-2021-22203）
+http://www.nsfocus.net/vulndb/54616
+
+小安选“秀” | 4月月度优秀作者大公开！
+https://www.anquanke.com/post/id/192750
+
+漏洞自动化利用（AEG）研究进展
+https://www.anquanke.com/post/id/240026
+
+简析Apache如何解析HTTP请求
+https://www.anquanke.com/post/id/210554
+
+WAF Bypass之webshell上传jsp与tomcat
+https://www.anquanke.com/post/id/210630
+
+Metasploit Framework Handbook
+https://www.anquanke.com/post/id/209966
+Metasploit Framework Handbook（二）
+https://www.anquanke.com/post/id/209972
+Metasploit Framework Handbook（三）
+https://www.anquanke.com/post/id/209974
+Metasploit Framework Handbook（四）
+https://www.anquanke.com/post/id/209975
+
+Go二进制文件逆向分析从基础到进阶——itab与strings
+https://www.anquanke.com/post/id/218377
+
+Go二进制文件逆向分析从基础到进阶——Tips与实战案例
+https://www.anquanke.com/post/id/218674
+
+赏金$25000的GitHub漏洞：通过 GitHub Pages 不安全的Kramdown配置实现多个RCE
+https://www.anquanke.com/post/id/220964
+
+Linux流程分析——从开机那一刻开始
+https://www.anquanke.com/post/id/227940
+Linux流程分析——从开机那一刻开始（2）
+https://www.anquanke.com/post/id/228380
+
+CDN 2021 完全攻击指南 （一）
+https://www.anquanke.com/post/id/227818
+CDN 2021 完全攻击指南 （二）
+https://www.anquanke.com/post/id/231437
+CDN 2021 完全攻击指南 （三）
+https://www.anquanke.com/post/id/231441
+
+安卓应用层协议/框架通杀抓包：实战篇
+https://www.anquanke.com/post/id/228709
+Json Web Token 2020 攻击指南
+https://www.anquanke.com/post/id/225947
+
+OSSEC Linux RootKit检测部分源码分析
+https://www.anquanke.com/post/id/238774
+
+
 ## 0518
 
 内网渗透基石篇-- 隐藏通信隧道技术（上）

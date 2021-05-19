@@ -203,17 +203,6 @@ https://www.freebuf.com/articles/web/240764.html
 
 ## 20200715
 
-Metasploit Framework Handbook（四）
-https://www.anquanke.com/post/id/209975
-Metasploit Framework Handbook（三）
-https://www.anquanke.com/post/id/209974
-Metasploit Framework Handbook（二）
-https://www.anquanke.com/post/id/209972
-Metasploit Framework Handbook (一)
-https://www.anquanke.com/post/id/209966
-
-
-
 CVE-2020-0787 本地提权漏洞简要分析
 https://www.anquanke.com/post/id/209451
 CVE-2019–1367: IE 漏洞利用 Part1

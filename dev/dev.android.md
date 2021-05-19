@@ -73,16 +73,17 @@ https://github.com/B3nac/InjuredAndroid
 https://github.com/kp300/shotdroid
 ShotDroid is a pentesting tool for android. There are 3 tools that have their respective functions, Get files from Android directory, internal and external storage, Android Keylogger + Reverse Shell and Take a webcam shot of the face from the front camera of the phone and PC.
 
-Android可信执行环境安全研究（二）：可信应用漏洞利用
-https://www.anquanke.com/post/id/237029
 Android可信执行环境安全研究（一）：TEE、TrustZone和TEEGRIS
 https://www.anquanke.com/post/id/236483
+Android可信执行环境安全研究（二）：可信应用漏洞利用
+https://www.anquanke.com/post/id/237029
+Android可信执行环境安全研究（三）：特权提升
+https://www.anquanke.com/post/id/239181
 
 如何使用Android-PIN-Bruteforce爆破Android的锁屏密码
 https://www.freebuf.com/articles/terminal/271047.html
 https://github.com/urbanadventurer/Android-PIN-Bruteforce
 
-Android可信执行环境安全研究（三）：特权提升
-https://www.anquanke.com/post/id/239181
+
 
 [android 逆向工程](/doc/sec.sec.reverseEng.android.md)
