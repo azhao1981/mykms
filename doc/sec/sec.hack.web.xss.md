@@ -1,5 +1,58 @@
 # web 攻击： xss
 
+## 什么是xss
+
+跨站脚本攻击（Cross-site scripting，XSS）是一种安全漏洞，攻击者可以利用这种漏洞在网站上注入恶意的客户端代码。
+当被攻击者登陆网站时就会自动运行这些恶意代码，从而，攻击者可以突破网站的访问权限，冒充受害者。
+
+引用：
+[Cross-site scripting（跨站脚本攻击）](https://developer.mozilla.org/zh-CN/docs/Glossary/Cross-site_scripting)
+
+XSS 攻击可以分为3类：存储型（持久型）、反射型（非持久型）、DOM 型。
+
+## 为什么是xss
+
+很严重的后果
+  OWASP TOP10
+  Cross Site Scripting (XSS)
+https://owasp.org/www-community/attacks/xss/
+  盗取身份，冒充受者
+  攻击受害者
+
+美好的“钱途”
+  大厂对xss漏洞的悬赏很高
+Bug Bounty:$20000 Facebook DOM XSS
+https://xz.aliyun.com/t/7783
+Bug Bounty: Facebook XSS漏洞挖掘
+https://xz.aliyun.com/t/7933
+
+  2020年漏洞赏金记录表|bug bounty writeups
+https://www.ddosi.com/bug-bounty-2020/
+
+## 怎么发起XSS
+演示
+XSS 攻击可以分为3类：存储型（持久型）、反射型（非持久型）、DOM 型。
+
+存储型 XSS
+注入型脚本永久存储在目标服务器上。当浏览器请求数据时，脚本从服务器上传回并执行。
+反射型 XSS
+当用户点击一个恶意链接，或者提交一个表单，或者进入一个恶意网站时，注入脚本进入被攻击者的网站。Web服务器将注入脚本，比如一个错误信息，搜索结果等 返回到用户的浏览器上。由于浏览器认为这个响应来自"可信任"的服务器，所以会执行这段脚本。
+基于 DOM 的 XSS
+通过修改原始的客户端代码，受害者浏览器的 DOM 环境改变，导致有效载荷的执行。也就是说，页面本身并没有变化，但由于DOM环境被恶意修改，有客户端代码被包含进了页面，并且意外执行。
+我们项目的例子
+测试的例子
+  在线网站xss平台
+真实的攻击延展
+
+## 武器库
+怎么发现
+
+## 怎么防御
+我们做了哪些？
+
+
+## 
+
 这里面相关xss的
 https://github.com/trimstray/the-book-of-secret-knowledge
 
