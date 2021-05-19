@@ -87,6 +87,23 @@ spring boot
 https://medium.com/@ahmetkapusuz/spring-boot-hello-world-application-with-intellij-idea-1524c68ddaae
 https://www.jetbrains.com/help/idea/your-first-spring-application.html#create-new-spring-boot-project
 
+[官方文档](https://spring.io/guides/gs/spring-boot/)
+
+安装 Plugins/marketting/spring Assisstant
+开始/spring Assisstant/默认/web/spring web
+打开 src/main/java/com.xxx.hello/xxx.java
+  run 当前应用名
+HelloWorld
+主类添加 @RestController
+添加requestMapping()
+public void xxx(@RequestParam(value="name", defaultValue="world") String name) { 
+  return "hello" + name; 
+}
+mvn spring-boot:run
+修改 shift+F10
+添加：
+src/main/resources/static/index.html
+
 ### hibernate
 
 http://hibernate.org/

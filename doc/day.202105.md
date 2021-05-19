@@ -1,5 +1,110 @@
 # 202105
 
+## 0519
+
+[CVE-2021-29505|官方复现](https://x-stream.github.io/CVE-2021-29505.html)
+[[TPSA21-24] 腾讯蓝军安全通告｜XStream远程代码执行漏洞(CVE-2021-29505)](https://security.tencent.com/index.php/announcement/msg/242)
+
+1、升级到最新版本-1.4.17
+https://x-stream.github.io/news.html
+
+2、使用安全api
+https://x-stream.github.io/security.html#example
+
+Keepalive Connections Causing Denial Of Service in puma
+https://github.com/advisories/GHSA-q28m-8xjw-8vr5
+This problem has been fixed in puma 4.3.8 and 5.3.1.
+CVE-2021-29509
+
+golang.org/x/crypto before v0.0.0-20200220183623-bac4c82f6975 for Go allows a panic during signature verification in the golang.org/x/crypto/ssh package. A client can attack an SSH server that accepts public keys. Also, a server can attack any SSH client.
+Improper Verification of Cryptographic Signature
+https://github.com/advisories/GHSA-ffhg-7mh4-33c4
+CVE-2020-9283
+
+
+Thrift is a lightweight, language-independent software stack for point-to-point RPC implementation. Thrift provides clean abstractions and implementations for data transport, data serialization, and application level processing. The code generation system takes a simple definition language as input and generates code across programming languages that uses the abstracted stack to build interoperable RPC clients and servers.
+https://github.com/apache/thrift
+In Apache Thrift 0.9.3 to 0.12.0, a server implemented in Go using TJSONProtocol or TSimpleJSONProtocol may panic when feed with invalid input data.
+CVE-2019-0210
+Out-of-bounds read in Apache Thrift
+https://github.com/advisories/GHSA-jq7p-26h5-w78r
+
+Update packaged dependency libxml2 from 2.9.10 to 2.9.12
+https://github.com/advisories/GHSA-7rrm-v45f-jp64
+
+Confluence Server和Confluence Data Center服务器端请求伪造漏洞（CVE-2021-26072）
+http://www.nsfocus.net/vulndb/54618
+
+GitLab CE/EE 13.10.0及之后版本存在跨站请求伪造漏洞。攻击者可通过API利用该漏洞在系统挂钩（HOOK）中导致跨站请求伪造。
+GitLab CE/EE跨站请求伪造漏洞（CVE-2021-22202）
+http://www.nsfocus.net/vulndb/54617
+GitLab CE/EE信息泄露漏洞（CVE-2021-22203）
+http://www.nsfocus.net/vulndb/54616
+
+小安选“秀” | 4月月度优秀作者大公开！
+https://www.anquanke.com/post/id/192750
+
+漏洞自动化利用（AEG）研究进展
+https://www.anquanke.com/post/id/240026
+
+简析Apache如何解析HTTP请求
+https://www.anquanke.com/post/id/210554
+
+WAF Bypass之webshell上传jsp与tomcat
+https://www.anquanke.com/post/id/210630
+
+Metasploit Framework Handbook
+https://www.anquanke.com/post/id/209966
+Metasploit Framework Handbook（二）
+https://www.anquanke.com/post/id/209972
+Metasploit Framework Handbook（三）
+https://www.anquanke.com/post/id/209974
+Metasploit Framework Handbook（四）
+https://www.anquanke.com/post/id/209975
+
+Go二进制文件逆向分析从基础到进阶——itab与strings
+https://www.anquanke.com/post/id/218377
+
+Go二进制文件逆向分析从基础到进阶——Tips与实战案例
+https://www.anquanke.com/post/id/218674
+
+赏金$25000的GitHub漏洞：通过 GitHub Pages 不安全的Kramdown配置实现多个RCE
+https://www.anquanke.com/post/id/220964
+
+Linux流程分析——从开机那一刻开始
+https://www.anquanke.com/post/id/227940
+Linux流程分析——从开机那一刻开始（2）
+https://www.anquanke.com/post/id/228380
+
+CDN 2021 完全攻击指南 （一）
+https://www.anquanke.com/post/id/227818
+CDN 2021 完全攻击指南 （二）
+https://www.anquanke.com/post/id/231437
+CDN 2021 完全攻击指南 （三）
+https://www.anquanke.com/post/id/231441
+
+安卓应用层协议/框架通杀抓包：实战篇
+https://www.anquanke.com/post/id/228709
+Json Web Token 2020 攻击指南
+https://www.anquanke.com/post/id/225947
+
+OSSEC Linux RootKit检测部分源码分析
+https://www.anquanke.com/post/id/238774
+
+
+## 0518
+
+内网渗透基石篇-- 隐藏通信隧道技术（上）
+https://www.freebuf.com/articles/network/271827.html
+
+DDoS预警：TCP反射的深度分析
+https://www.freebuf.com/articles/web/271727.html
+
+CVE-2021-3156：sudo堆溢出提权漏洞分析
+https://www.freebuf.com/vuls/269892.html
+
+
+
 ## 0517
 
 insgam的开源版本
@@ -24,132 +129,9 @@ https://www.freebuf.com/vuls/271177.html
 Linux HIDS开发之eBPF的应用
 https://www.anquanke.com/post/id/239870
 
+
 ## 0516
 
-Rubygem
-https://github.com/chicks/aes
-
-https://hackerone.com/reports/170548
-Ruby OpenSSL Library - IV Reuse in GCM Mode
-```Ruby
-def encrypt(plaintext)
-    cipher = OpenSSL::Cipher.new('aes-256-gcm')
-    cipher.encrypt
-    iv = cipher.random_iv # Notice here the IV is set before the key
-    cipher.key = '11111111111111111111111111111111'
-    cipher.auth_data = ""
-    ciphertext = cipher.update(plaintext) + cipher.final
-    tag = cipher.auth_tag
-
-    puts "[+] Encrypting: #{plaintext}"
-    puts "[+] CipherMessage (IV | Tag | Ciphertext): #{bin2hex(iv)} |
-#{bin2hex(tag)} | #{bin2hex(ciphertext)}"
-end
-
-# 列出支持的算法模式
-puts OpenSSL::Cipher.ciphers
-
-```
-
-https://docs.ruby-lang.org/en/master/OpenSSL/Cipher.html#method-i-auth_data-3D
-auth_data = string → string
-Sets the cipher's additional authenticated data. 
-This field must be set when using AEAD cipher modes such as GCM or CCM. 
-If no associated data shall be used, this method must still be called with a value of “”. 
-The contents of this field should be non-sensitive data which will be added to the ciphertext 
-  to generate the authentication tag which validates the contents of the ciphertext.
-
-The AAD must be set prior to encryption or decryption. 
-In encryption mode, it must be set after calling Cipher#encrypt and setting Cipher#key= and Cipher#iv=. 
-When decrypting, the authenticated data must be set after key, iv and especially after the authentication tag has been set. 
-I.e. set it only after calling Cipher#decrypt, Cipher#key=, Cipher#iv= and Cipher#auth_tag= first.
-
-1 Answer. The authentication tag is defined as an output parameter in GCM (see section 7, step 7 of NIST SP 800-38D). ... The name "tag" of course kind of indicates that it should be tagged to the ciphertext and that may well mean direct concatenation. The tag is often considered part of the ciphertext within an API.
-关于加密：如何使用Android的身份验证标签进行GCM加密
-https://www.codenong.com/44425846/
-【RUBY】AES
-https://www.796t.com/post/Nmhrbnk=.html
-如果我正確理解gcm模式，它不僅應該提供加密，而且還應該提供密文的身份驗證。
-然而，當我使用ruby的openssl實現以AES-256-GCM模式加密資料時，即使我篡改了auth_tag，它也會很高興地解密資料。
-我是在這裡遺漏了什麼，還是實現確實中斷了？
-
-这个好像也说没有用到，但那个人回答是怎么解释？
-https://stackoverflow.com/questions/38293211/aes-128-gcm-does-not-seem-to-check-for-authentication
-
-这是干什么?
-https://crypto.stackexchange.com/questions/17999/aes256-gcm-can-someone-explain-how-to-use-it-securely-ruby
-
-官方解决这个问题
-https://github.com/ruby/openssl/issues/63
-
-auth_tag(tag_len = 16) → String
-Gets the authentication tag generated by Authenticated Encryption Cipher modes (GCM for example). 
-This tag may be stored along with the ciphertext, then set on the decryption cipher to authenticate the contents of the ciphertext against changes. 
-If the optional integer parameter tag_len is given, the returned tag will be tag_len bytes long. 
-If the parameter is omitted, the default length of 16 bytes or the length previously set by auth_tag_len= will be used. For maximum security, the longest possible should be chosen.
-The tag may only be retrieved after calling Cipher#final.
-
-现在最安全的是aes-256-GCM，但好像默认不支持，这应该是 openssl来支持？
-支持
-padding
-https://stackoverflow.com/questions/13241489/how-to-set-padding-mode-with-ruby-openssl-decryption-encryption
-默认padding 为PKCS7 
-
-https://docs.ruby-lang.org/en/master/OpenSSL/Cipher.html#method-i-padding-3D
-padding = integer → integer
-Enables or disables padding.
- By default encryption operations are padded using standard block padding and the padding is checked and removed when decrypting. 
- If the pad parameter is zero then no padding is performed, the total amount of data encrypted or decrypted must then be a multiple of the block size or an error will occur.
-See EVP_CIPHER_CTX_set_padding for further information.
-
-[Web狗要懂的Padding Oracle攻击](https://www.jianshu.com/p/ad8bdd87e131)
-Ruby 对AES/CBC/PKCS7 的攻击
-padding oracle 原理深度解析 & CBC 字节翻转攻击原理解析
-https://paper.seebug.org/1123/
-我对Padding Oracle攻击的分析和思考（详细）
-https://www.freebuf.com/articles/web/15504.html
-侧信道攻击研究——PADDING ORACLE
-https://www.anquanke.com/post/id/203808
-Padding Oracle Attack¶
-https://ctf-wiki.org/crypto/blockcipher/mode/padding-oracle-attack/#padding-oracle-attack
-padding oracle和cbc翻转攻击
-https://skysec.top/2017/12/13/padding-oracle%E5%92%8Ccbc%E7%BF%BB%E8%BD%AC%E6%94%BB%E5%87%BB/
-
-https://github.com/chillfox/Crystal-encryption-example/blob/master/src/crystal_encryption.cr
-https://forum.crystal-lang.org/t/how-to-encrypt-decrypt-data/2474
-
-使用身份验证TAG的openssl aes gcm加密；命令行
-https://www.codenong.com/51509530/
-openssl enc -aes-256-gcm -p -iv 000000000000000000000000 -K 00000000000000000000000000000000000000000000000000000000000000 -nosalt -in file.raw -out file.enc
-
-关于 iV存储
-如何存储iv，salt和密文？
-https://stackoom.com/question/2FeSZ/%E5%A6%82%E4%BD%95%E5%AD%98%E5%82%A8iv-salt%E5%92%8C%E5%AF%86%E6%96%87
-AES加密-密钥与IV
-https://cn.ourladylakes.org/853052-aes-encryption-key-versus-iv-UDFQCR
-总结： IV 在CBC 模式下，其实就是和密文放在一起的
-
-java
-Java AES encryption and decryption
-https://mkyong.com/java/java-aes-encryption-and-decryption/
-
-openssl aes-256-gcm
-https://docs.ruby-lang.org/en/master/OpenSSL/Cipher.html
-https://security.stackexchange.com/questions/30344/why-does-openssl-not-include-aes-256-gcm
-https://github.com/aws/aws-sdk-ruby/issues/1037
-Aws::S3::Encryption: AES/GCM/NoPadding encryption not supported #1037
-
-问题:AES128和AES256主要区别和安全程度是多少?他们对于机器的消耗是怎样的?两者性能如何?实际开发如何选择?
-https://www.zhihu.com/question/29925026
-在这种绝对安全之下，没有任何必要使用AES256。AES256一共有14轮轮运算，因此效率是只具有10轮轮运算的AES128的70%。
-然而，NIST要求绝密级文件必须使用AES192或者256。
-这是因为量子计算技术。
-AES128在量子算法看来，只提供64位的安全性，等于2^8个 DES。
-
-https://blog.csdn.net/newizan/article/details/45461347
-AES128和AES256主要区别是密钥长度不同（分别是128bits,256bits)、加密处理轮数不同（分别是10轮，14轮），后者强度高于前者。 ... 非对称加密算法的资源消耗大于对称加密。 一般是进行混合加密处理，例如使用RSA进行密钥分发、协商，使用AES进行业务数据的加解密。2015年5月3日
-
-https://noknow.info/it/ruby/implement_encryption_decryption_by_aes_gcm
 
 欧盟《通用数据保护条例》GDPR浅析
 https://zhuanlan.zhihu.com/p/38014002
@@ -239,16 +221,6 @@ https://kukicola.io/posts/useful-active-support-features-you-may-not-have-heard-
 Callbacks + BaseService 
 ## 0514
 
-
-
-
-[CVE-2021-31166](http://blog.nsfocus.net/cve-2021-31166/)
-
-HTTP协议栈远程代码执行漏洞（CVE-2021-31166），该漏洞存在于HTTP 协议栈 (http.sys) 的处理程序中，未经身份验证的远程攻击者可通过向目标主机发送特制数据包来进行利用，从而在目标系统上以内核身份执行任意代码。
-
-<https://zh-cn.tenable.com/blog/cve-2021-22893-zero-day-vulnerability-in-pulse-connect-secure-exploited-in-the-wild>
-
-[微软HTTP协议栈远程代码执行漏洞 (CVE-2021-31166)](https://poc.shuziguanxing.com/?#/publicIssueInfo#issueId=4018)
 
 ## 0512
 

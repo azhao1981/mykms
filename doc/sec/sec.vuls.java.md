@@ -185,6 +185,10 @@ FIX: 使用默认的AppTest来做，不要加入 org.junit.jupiter
 参考：什么是 org.junit.jupiter [JUnit 5和JUnit 4比较](https://blog.csdn.net/u010675669/article/details/86574956)
 > jupiter 是 junit5 才有的，所以上面原来引用了4.11，是没有 jupiter的 
 
+####　spring-boot + shiro
+git checkout shiro-root-1.4.1 -b shiro-root-1.4.1
+git checkout shiro-root-1.4.2 -b shiro-root-1.4.2
+
 
 [Shiro安全框架【快速入门】就这一篇！](https://zhuanlan.zhihu.com/p/54176956)
 

@@ -229,3 +229,5 @@ https://www.sqreen.com/checklists/saas-cto-security-checklist
 [github 的安全相关](https://github.com/showcases/security)
 + <https://github.com/trimstray/the-book-of-secret-knowledge#hackingpenetration-testing-toc>
 + <https://github.com/Hack-with-Github/Awesome-Hacking>
+
+https://github.com/anzhihe/Free-Web-Books
