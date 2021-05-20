@@ -1,5 +1,10 @@
 # 202105
 
+## 0520
+
+初探 Golang 代码混淆
+https://paper.seebug.org/1586/
+
 ## 0519
 
 [CVE-2021-29505|官方复现](https://x-stream.github.io/CVE-2021-29505.html)
