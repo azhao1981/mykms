@@ -1,5 +1,35 @@
 # 202105
 
+## 0527
+
+pocassist — 全新的开源在线 poc 测试框架
+https://paper.seebug.org/1588/
+
+如何利用Red-Detector扫描你EC2实例中的安全漏洞
+https://www.freebuf.com/articles/container/272909.html
+
+Java安全漫谈笔记
+https://www.anquanke.com/post/id/241089
+
+## 0524
+【公益译文】安全控制评估自动化支持：软件漏洞管理（五）
+http://blog.nsfocus.net/nistir-8011-4-5/
+
+如何基于kubectl实现红队K8S模拟对抗
+https://www.freebuf.com/articles/container/273570.html
+
+企业建设DevSecOps流程梳理
+https://www.anquanke.com/post/id/240752
+
+
+## 0521
+
+RabbitMQ代码注入漏洞（CVE-2021-22117）
+http://www.nsfocus.net/vulndb/54714
+
+Metasploit工具之windows渗透研究
+https://www.freebuf.com/articles/web/271173.html
+
 ## 0520
 
 初探 Golang 代码混淆
