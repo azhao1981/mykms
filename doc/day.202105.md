@@ -2,6 +2,9 @@
 
 ## 0527
 
+面向开发人员梳理的代码安全指南
+https://github.com/Tencent/secguide
+
 pocassist — 全新的开源在线 poc 测试框架
 https://paper.seebug.org/1588/
 
