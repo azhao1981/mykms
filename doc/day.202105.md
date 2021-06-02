@@ -1,6 +1,110 @@
 # 202105
 
+## 0531
+
+TIP:把英文的 raft a 的各种读音理解为中文的升降调
+
+洞见RSA 2021｜备受热捧的“供应链攻击”如何防御？
+http://blog.nsfocus.net/rsa2021-apiiro-2/
+
+Selenium 3.141.59 遠程代碼執行漏洞
+https://www.pwnwiki.org/index.php?title=Selenium_3.141.59_%E9%81%A0%E7%A8%8B%E4%BB%A3%E7%A2%BC%E5%9F%B7%E8%A1%8C%E6%BC%8F%E6%B4%9E
+https://www.exploit-db.com/exploits/49915
+
+FFmpeg缓冲区溢出漏洞（CVE-2020-24015）
+http://www.nsfocus.net/vulndb/55009
+
+一个“登录框”引发的安全问题
+https://www.freebuf.com/articles/web/269002.html
+
+软件质量指标自动度量方法
+https://www.freebuf.com/articles/es/271712.html
+
+借助Gotify轻松实现MSF上线提醒
+https://www.freebuf.com/sectool/271836.html
+
+零信任四化之应用零信任化的趋势分析
+https://www.freebuf.com/articles/network/272858.html
+
+某在线教育devsecops实践分享
+https://www.freebuf.com/articles/es/269648.html
+
+数据安全合规实践
+https://www.freebuf.com/column/1759
+
+等保测评2.0系列
+https://www.freebuf.com/column/1666
+
+等保2.0测评：Redis 数据库配置
+https://www.freebuf.com/articles/system/272036.html
+
+Android App安全之Intent重定向详解
+https://www.freebuf.com/articles/endpoint/271629.html
+
+OpenRasp xxe算法的几种绕过方式
+https://www.anquanke.com/post/id/241107
+
+浅谈命令执行的绕过方法
+https://www.anquanke.com/post/id/241808
+
+从RFC规范看如何绕过waf上传表单 下篇
+https://www.anquanke.com/post/id/242583
+
+SSRF漏洞学习
+https://www.anquanke.com/post/id/239994
+利用Script Gadget进行CSP绕过
+https://www.anquanke.com/post/id/239359
+
+从SSRF到RCE——一个15k美金的故事
+https://www.anquanke.com/post/id/241238
+对万金油gopher协议的理解与应用
+https://k-ring.github.io/2019/05/31/%E5%AF%B9%E4%B8%87%E9%87%91%E6%B2%B9gopher%E5%8D%8F%E8%AE%AE%E7%9A%84%E7%90%86%E8%A7%A3%E4%B8%8E%E5%BA%94%E7%94%A8/
+gopher 协议在SSRF 中的一些利用
+https://xz.aliyun.com/t/6993
+
+浅析端口扫描原理(Nmap)
+https://www.anquanke.com/post/id/239641
+
+
+## 0529
+https://github.com/inoyna11/jd28
+
+循序渐进，学习Spring Boot、Spring Boot & Shiro、Spring Batch、Spring Cloud、Spring Cloud Alibaba、Spring Security & Spring Security OAuth2，博客Spring系列源码：https://mrbird.cc
+https://github.com/wuyouzhuguli/SpringAll
+Spring Cloud Alibaba provides a one-stop solution for application development for the distributed solutions of Alibaba middleware.
+https://github.com/alibaba/spring-cloud-alibaba
+
+Roadmap to becoming an Artificial Intelligence Expert in 2021
+https://github.com/AMAI-GmbH/AI-Expert-Roadmap
+
+vmware 攻击 POC
+https://github.com/straightblast/My-PoC-Exploits
+
+Curated list of project-based tutorials
+https://github.com/tuvtran/project-based-learning
+
+VS Code in the browser
+https://github.com/cdr/code-server
+
+TODO：A little tool to play with Windows security
+https://github.com/gentilkiwi/mimikatz
+
+简单高效的直播服务器：
+安装和使用非常简单；
+纯 Golang 编写，性能高，跨平台；
+支持常用的传输协议、文件格式、编码格式；
+https://github.com/gwuhaolin/livego/blob/master/README_cn.md
+
+一个基于C++11的高性能运营级流媒体服务框架|直播平台
+https://github.com/ZLMediaKit/ZLMediaKit
+
+World's best free and open source ERP.
+https://github.com/frappe/erpnext
+
+目前最友好的开源远程桌面软件，开箱即用，无需任何配置，完美替代TeamViewer和AnyDesk。您完全掌控数据，不用担心安全问题。您可以使用我们的注册/中继服务器，或者自己设置，亦或者开发您的版本。下载源代码。
+https://rustdesk.com/zh/
 ## 0527
+
 
 面向开发人员梳理的代码安全指南
 https://github.com/Tencent/secguide

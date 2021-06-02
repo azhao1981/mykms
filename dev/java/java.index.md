@@ -72,6 +72,11 @@ sudo apt install maven -y
 
 vim ~/.m2/settings.xml
 ```
+## idea
+
+第一弹！安排！安利10个让你爽到爆的IDEA必备插件！
+https://zhuanlan.zhihu.com/p/131511544
+
 ## 常见 组件/类库 使用
 
 ### jetty
