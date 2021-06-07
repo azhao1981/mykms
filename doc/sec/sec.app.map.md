@@ -22,3 +22,8 @@ App安全检测实践基础：客户端程序安全（一）
 https://www.freebuf.com/articles/terminal/255712.html
 App安全检测实践基础：组件安全（二）
 https://www.freebuf.com/articles/terminal/256189.html
+
+App安全合规的思考（四） 权限问题
+https://www.freebuf.com/articles/compliance/275082.html
+从一个app开始的渗透测试之路
+https://www.anquanke.com/post/id/241589

@@ -1,10 +1,64 @@
 # 202106
 
+## 0607
+https://github.com/q1f3/WooYun-1
+一条Fofa搜索语法，实现批量挖洞
+https://www.freebuf.com/articles/web/274071.html
+https://github.com/tangxiaofeng7/Fofa-collect
+
+记一次Fuzz绕WAF实现SQL 注入
+https://www.freebuf.com/articles/web/274492.html
+
+## 0604
+
+A tool for writing better scripts
+https://github.com/google/zx?ref=stackshare
+> js + 脚本工具
+
+Monty, Mongo tinified. MongoDB implemented in Python !
+https://github.com/davidlatwe/montydb?ref=stackshare
+用py写的mongodb:?
+
+
+GitLab信息泄露漏洞（CVE-2021-22180）
+http://www.nsfocus.net/vulndb/55163
+
+Ruby参数注入漏洞（CVE-2021-33564）
+http://www.nsfocus.net/vulndb/55134
+
+Puma graceful restarts
+https://nts.strzibny.name/puma-graceful-restarts/
+
+Gitlab 13.9.3 - Remote Code Execution (Authenticated)
+https://www.exploit-db.com/exploits/49944
+https://hackerone.com/reports/1125425
+Kramdown before 2.3.1 does not restrict Rouge formatters to the Rouge::Formatters namespace, and thus arbitrary classes can be instantiated.
+https://gitlab.com/gitlab-org/gitlab/-/commit/179329b5c3c118924fb242dc449d06b4ed6ccb66
+https://github.com/advisories/GHSA-52p9-v744-mwjj
+https://github.com/gettalong/kramdown/pull/708
+
+由 OAuth 流程后的不安全重定向导致的 Facebook 账号接管
+https://www.anquanke.com/post/id/240016
+> 还是不太明白
+https://ysamm.com/?p=667%EF%BB%BF
+
+MSSQL：我(蹦蹦跳跳地)来了
+https://www.anquanke.com/post/id/241805
+
+利用内置加速度计进行手机侧信道窃听攻击
+https://www.anquanke.com/post/id/241740
+
+## 0603
+
+CVE(CAN) ID: CVE-2021-33564
+http://www.nsfocus.net/vulndb/55134
+
+淘宝/天猫/京东618活动任务助手，养猫猫/喵币/热爱狂欢！秒杀软件/抢购软件。淘宝/天猫/京东/拼多多/苏宁易购/华为商城/小米商城/聚划算/百亿补贴/抖音/快手/直播。手机抢购/茅台抢购/显卡抢购/耐克、阿迪达斯鞋子抢购。38女王节/618/1111/双11/双十一/1212/双12/双十二/年货节
+https://github.com/omxmo/qg
 ## 0602
 TIPs：
 网站DDOS漏洞查找:
 用burpsuite找到延时最高的接口，如果不限制请求，那就是一个DDOS漏洞了
-
 
 [OpenSSL 常见对称加密算法特性分析](https://www.cnblogs.com/chenxuhua/p/openssl-crypto-method.html)
 

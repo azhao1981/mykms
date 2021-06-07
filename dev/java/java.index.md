@@ -77,6 +77,16 @@ vim ~/.m2/settings.xml
 第一弹！安排！安利10个让你爽到爆的IDEA必备插件！
 https://zhuanlan.zhihu.com/p/131511544
 
+
+Crtl + D 
+
+而在IDEA中：
+
+选中下一个相同内容的快捷键是：Alt + J 
+
+选中所有相同内容的快捷键是：Ctrl + Shift + Alt + J 
+
+ctrl+w = ctrl+F4
 ## 常见 组件/类库 使用
 
 ### jetty
