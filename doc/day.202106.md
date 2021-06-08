@@ -1,5 +1,9 @@
 # 202106
 
+## 0608
+
+[Redis 基于主从复制的 RCE 利用方式](https://paper.seebug.org/975/)
+
 ## 0607
 https://github.com/q1f3/WooYun-1
 一条Fofa搜索语法，实现批量挖洞
