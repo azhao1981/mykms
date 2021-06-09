@@ -1,5 +1,13 @@
 # 202106
 
+## 0609
+
+零信任网络建设及部分细节讨论
+https://www.freebuf.com/articles/endpoint/274350.html
+
+FastJson_1.2.24 反序列化漏洞复现+解析
+https://www.anquanke.com/post/id/239867
+
 ## 0608
 
 [Redis 基于主从复制的 RCE 利用方式](https://paper.seebug.org/975/)
