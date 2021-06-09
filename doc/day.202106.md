@@ -2,6 +2,8 @@
 
 ## 0609
 
+https://www.mofa.go.jp/mofaj/ms/pe_ar/page24_000482.html
+
 零信任网络建设及部分细节讨论
 https://www.freebuf.com/articles/endpoint/274350.html
 
