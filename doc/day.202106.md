@@ -1,5 +1,26 @@
 # 202106
 
+## 0610
+细说 sqlmap_api
+https://paper.seebug.org/940/
+
+Fastjson-RCE漏洞复现
+https://www.anquanke.com/post/id/242330
+浅入深出 Reids 攻击方法总结
+https://www.anquanke.com/post/id/241146
+
+密码安全那些事儿
+https://www.freebuf.com/articles/compliance/274656.html
+
+Httpx：一款针对HTTP的安全研究工具|golang.
+https://www.freebuf.com/sectool/273382.html
+
+你的扫描器可以绕过防火墙么？（一）
+https://paper.seebug.org/1600/
+你的扫描器可以绕过防火墙么？（二）
+https://paper.seebug.org/1601/
+利用 Linux 内核漏洞实现 Docker 逃逸
+https://paper.seebug.org/1602/
 ## 0609
 
 简单通俗的理解Vue3.0中的Proxy

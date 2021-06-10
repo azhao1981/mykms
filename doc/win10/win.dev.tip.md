@@ -682,3 +682,6 @@ https://github.com/cuiocean/ZY-Player-APP/releases
 ## 82 sp1 脚本被禁止
 PowerShell：因为在此系统上禁止运行脚本，解决方法
 https://www.jianshu.com/p/4eaad2163567
+
+## 83 Windows alias给cmd命令起别名
+https://www.awaimai.com/2445.html
