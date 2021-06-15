@@ -1,5 +1,120 @@
 # 202106
 
+## 0615
+TODO：深入
+如果需要解析 XML 文件，确保实体解析（entity parsing）是关闭的以避免 XXE 攻击。	
+如果需要解析 XML 文件，确保实体扩展（entity expansion）是关闭的以避免通过指数实体扩展攻击实现的 Billion Laughs/XML bomb。	
+
+entity parsing 对于java是什么、怎么实现、怎么关闭？
+
+这里有描述：
+[java代码审计手书(二）](https://xz.aliyun.com/t/3372)
+其它java代码审计
+[java代码审计手书(一）](https://xz.aliyun.com/t/3358)
+[java代码审计手书(三）](https://xz.aliyun.com/t/3416)
+[java代码审计手书(四）](https://xz.aliyun.com/t/3460)
+扩展： https://github.com/zhaoweiho/awesome-java-security-checklist
+java代码审计文章集合
+https://www.cnblogs.com/r00tuser/p/10577571.html
+[Java代码审计](https://chenergy1991.github.io/2019/03/24/%E5%A5%BD%E7%9A%84%E9%93%BE%E6%8E%A5/)
+  [【绿盟大讲堂】代码审计指南](http://blog.nsfocus.net/code-audit-instruction/)
+  [【绿盟大讲堂】 渗透测试流程解析](https://www.shangmayuan.com/a/81c98471b4da476aa78b9075.html)
+[Java代码审计](https://yinwc.github.io/2020/01/03/Java%E4%BB%A3%E7%A0%81%E5%AE%A1%E8%AE%A1/)
+
+[idea安装findbugs及Find-sec-bugs安全组件](https://www.cnblogs.com/kingsonfu/p/12419817.html)
+ERROR："Plugin 'FindBugs-IDEA'(version 1.0.1) was explicitly marked as incompatible with the current version of the IDE"
+Since FindBugs-IDEA is not compatible with IDEA 2020.1 any more, I personally substitute SpotBugs for it.
+
+好像2019就不再更新，有人推荐 [spotbugs](https://plugins.jetbrains.com/plugin/14014-spotbugs)
+The SpotBugs plugin for security audits of Java web applications.
+安装：
+File/settings/plugins 市场搜索 SpotBugs
+https://find-sec-bugs.github.io/ 官方已经说明 `The SpotBugs plugin for security audits of Java web applications.`
+安装 find-sec-bugs
+https://github.com/find-sec-bugs/find-sec-bugs/wiki/IntelliJ-Tutorial
+
+https://avd.aliyun.com/
+
+技术分享 | 快速上手 Golang 编写 PoC&EXP
+https://nosec.org/home/detail/4767.html
+
+框架安全之Shiro渗透复现
+https://www.freebuf.com/vuls/274305.html
+
+**新型TLS攻击**可对安全站点发起跨站脚本攻击，至少影响140万台web服务器
+https://www.freebuf.com/news/277183.html
+
+数据流转安全如何守护（上）
+https://www.freebuf.com/articles/database/275248.html
+
+认证与授权详解
+https://www.freebuf.com/articles/web/273239.html
+
+《数据安全法》要点解读
+https://www.freebuf.com/articles/database/277198.html
+（附全文）最新！《数据安全法》表决通过，9月1日起施行
+https://www.freebuf.com/news/277111.html
+聚焦《中华人民共和国数据安全法》（附全文）
+https://www.anquanke.com/post/id/244115
+
+CVE-2021-25217: dhcpd dhclient 栈溢出漏洞
+https://access.redhat.com/errata/RHSA-2021:2359
+
+## 0611
+
+RoR:
+https://cheatsheetseries.owasp.org/cheatsheets/Ruby_on_Rails_Cheat_Sheet.html
+https://www.netsparker.com/blog/web-security/preventing-xss-ruby-on-rails-web-applications/
+https://brakemanpro.com/2017/09/08/cross-site-scripting-in-rails
+https://guides.rubyonrails.org/security.html
+https://molily.de/xss/
+
+xss js
+https://dev.to/caffiendkitten/innerhtml-cross-site-scripting-agc
+
+java
+https://www.baeldung.com/spring-prevent-xss
+https://docs.spring.io/spring-security/site/docs/5.1.6.RELEASE/reference/html/web-app-security.html
+
+TODO:
+老版本有一个向量拼接的问题，看看4.2有没有？
+<%= link_to "Personal Website", @user.website %>
+<a href="javascript:alert('Haxored')">Personal Website</a>
+新版本：
+link_to "Personal Website", 'javascript:alert(1);'.html_safe()
+# Will generate:
+# "<a href="javascript:alert(1);">Personal Website</a>"
+
+服务器session管理
+Project::Application.config.session_store :active_record_store
+config.force_ssl = true
+devise增加密码复杂度
+To enforce password complexity, it is possible to use [zxcvbn gem](https://github.com/bitzesty/devise_zxcvbn). Configure your user model with it:
+
+
+
+
+ReactJS 中的代码注入
+https://zhuanlan.zhihu.com/p/28434174
+浅谈 React 中的 XSS 攻击
+https://segmentfault.com/a/1190000024522392
+浅谈 React 中的 XSS 攻击
+https://www.zoo.team/article/xss-in-react
+jamesarosen/ember-xss.md
+https://gist.github.com/jamesarosen/478db5faef370eac43fb
+
+利用 Linux 内核漏洞实现 Docker 逃逸
+https://paper.seebug.org/1602/
+
+Bypass of access control in Django
+https://github.com/advisories/GHSA-p99v-5w3c-jqq9
+
+Path Traversal in Django
+https://github.com/advisories/GHSA-68w8-qjq3-2gfm
+
+Jetty Utility Servlets ConcatServlet Double Decoding Information Disclosure Vulnerability
+https://github.com/advisories/GHSA-gwcr-j4wh-j3cq
+
 ## 0610
 细说 sqlmap_api
 https://paper.seebug.org/940/
