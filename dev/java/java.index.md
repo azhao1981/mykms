@@ -46,6 +46,7 @@ export PATH=$PATH:$JAVA_HOME/bin
 ```
 
 ## 编译工具
+
 ### vscode 和配置
 
 ## Hello world
@@ -355,6 +356,27 @@ https://www.jianshu.com/p/e638d64b6955
 https://www.freebuf.com/articles/network/245608.html
 等保2.0涉及的Apache Tomcat中间件（下）
 https://www.freebuf.com/articles/system/247984.html
+
+### idea+tomcat
+
+idea CE 是没有tomcat支持的
+
+CE没有默认的TOMCAT服务，解决方法看下面的文章，建议： 使用 `mvn tomcat:run mvn jetty:run`
+
+https://stackoverflow.com/questions/22047860/tomcat-in-intellij-idea-community-edition/38266010
+  installing [Smart Tomcat plugin](https://plugins.jetbrains.com/plugin/9492)
+  installing IDEA [Jetty Runner plugin](https://plugins.jetbrains.com/plugin/7505) 
+  running the application server from Maven, Gradle, whatever, as outlined in the other answers.
+
+其中： stmart tomcat
+
+[Idea上配置Smart Tomcat](https://blog.csdn.net/weixin_42514162/article/details/110287324)
+
+IntelliJ IDEA Community Edition（社区版）不支持Tomcat，如果不想花钱购买Ultimate版本，也不想使用Eclipse，可以尝试通过以下方式使IDEA社区版支持Tomcat。
+
+<https://github.com/Adrninistrator/IDEA-IC-Tomcat>
+
+[使用IntelliJ IDEA配置Tomcat（入门）|但这个版本是ultra的](https://www.jianshu.com/p/b4b42a90b2e9)
 
 ### Spring Boot Extension
 

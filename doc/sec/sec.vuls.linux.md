@@ -205,6 +205,36 @@ https://githubmemory.com/repo/trapp3rhat/LDAP-injection
 
 ## nginx
 
+[Nginx SSL 安全配置最佳实践.](https://gist.github.com/fotock/9cf9afc2fd0f813828992ebc4fdaad6f)
+[加强 Nginx 的 SSL 安全](https://www.oschina.net/translate/strong_ssl_security_on_nginx?cmp)
+[ssl - 在Ubuntu 16和Nginx中禁用Diffie-Hellman(DH) key](https://www.coder.work/article/4023104)
+[Nginx漏洞修复：SSL/TLS 服务器瞬时 Diffie-Hellman 公共密钥过弱](https://www.cnblogs.com/-wenli/p/13391201.html)
+[加强 Nginx的SSL 安全](https://cloud.tencent.com/developer/news/305996)
+[SQL注入之sqli-labs（Less7-22）](https://www.freebuf.com/articles/web/274059.html)
+[Nginx曝DNS解析器Off-by-One堆写入高危漏洞CVE-2021-23017](https://www.freebuf.com/vuls/274503.html)
+[CVE-2021-23017：nginx DNS解析漏洞PoC公开](https://www.freebuf.com/vuls/276543.html)
+
+https://github.com/x41sec/advisories/blob/master/X41-2021-002/poc.py
+
+https://www.valgrind.org/
+Valgrind是一款用于内存调试、内存泄漏检测以及性能分析的软件开发工具
+
+https://www.valgrind.org/downloads/current.html
+https://sourceware.org/pub/valgrind/valgrind-3.17.0.tar.bz2
+
+```bash
+ cd valgrind
+  ./autogen.sh
+  ./configure --prefix=...
+  make
+  make install
+  valgrind --trace-children=yes /usr/sbin/nginx -p ../runtime -c reverse-proxy.conf
+  # 报错,64/32位的问题
+```
+
+/home/kali/lab/cve-2021-23017/access.log
+sudo nginx -c /home/kali/lab/cve-2021-23017/reverse-proxy.conf
+
 sudo apt-get install build-essential libtool
 sudo apt-get update
 #安装依赖：gcc、g++依赖库

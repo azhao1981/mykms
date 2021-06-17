@@ -330,3 +330,5 @@ Name=eth*
 DHCP=ipv4
 ' | sudo tee -a /etc/systemd/network/20-dhcp.network
 ```
+
+[linux top命令VIRT,RES,SHR,DATA的含义](https://javawind.net/p131)

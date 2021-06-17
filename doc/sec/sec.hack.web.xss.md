@@ -30,6 +30,9 @@ https://xz.aliyun.com/t/7933
 https://www.ddosi.com/bug-bounty-2020/
 
 ## 怎么发起XSS
+
+[基础篇-XSS盲打](https://cloud.tencent.com/developer/article/1078996)
+
 演示
 XSS 攻击可以分为3类：存储型（持久型）、反射型（非持久型）、DOM 型。
 

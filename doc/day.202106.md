@@ -1,5 +1,43 @@
 # 202106
 
+## 0617
+
+Linux权限提升：自动化信息收集
+https://www.freebuf.com/articles/network/274223.html
+
+SDK API自动化测试与持续集成
+https://www.freebuf.com/sectool/276109.html
+
+## 0616
+ 5.1 API请求基础
+https://www.wangan.com/docs/977
+
+Welcome to SeeCode Scanner’s documentation!
+https://seecode-scanner.readthedocs.io/en/latest/index.html
+
+10个国外用于扫描网站安全漏洞和恶意软件的在线免费工具
+https://www.coca.cc/zxgj/23.html
+360Webscan 网站安全检测
+https://webscan.360.cn/
+360在线网站安全检测，web安全测试AppScan扫描工具，XSS常用的攻击手法
+https://www.cnblogs.com/zdz8207/p/webscan-appscan-xss.html
+
+
+
+Apache Shiro历史高危反序列化漏洞预警 （shiro-550、shiro-721）
+https://www.huaweicloud.com/notice/2018/20210616155641831.html
+
+https://github.com/chinanf-boy/fd-zh
+
+[Java 命令执行之我见](https://www.anquanke.com/post/id/243329)
+http://www.jackson-t.ca/runtime-exec-payloads.html
+回答了：为什么要用 `bash -c {echo,ZWNobyAiMTExMSIgPiAxLnR4dA==}|{base64,-d}|{bash,-i}`
+
+CVE-2021-3560
+https://access.redhat.com/security/cve/CVE-2021-3560
+https://www.bleepingcomputer.com/news/security/linux-system-service-bug-lets-you-get-root-on-most-modern-distros/
+https://dbus.freedesktop.org/doc/dbus-send.1.html
+
 ## 0615
 TODO：深入
 如果需要解析 XML 文件，确保实体解析（entity parsing）是关闭的以避免 XXE 攻击。	
