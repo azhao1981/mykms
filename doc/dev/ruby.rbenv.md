@@ -7,10 +7,10 @@
 一键安装,包括分步安装 和环境设置,并且安装2.4.1
 
 ```bash
-  curl -sSL https://git.io/v78Uu | bash
+  curl -sSL https://git.io/Jn6DI | bash
 ```
 
-分步手动安装
+#### 分步手动安装
 
 ```bash
 sudo apt install -y libreadline-dev libssl-dev zlib1g-dev libjemalloc-dev git
@@ -22,10 +22,9 @@ git clone https://github.com/sstephenson/ruby-build.git ~/.rbenv/plugins/ruby-bu
 git clone git://github.com/jf/rbenv-gemset.git $HOME/.rbenv/plugins/rbenv-gemset
 git clone https://github.com/andorchen/rbenv-china-mirror.git $HOME/.rbenv/plugins/rbenv-china-mirror
 git clone https://github.com/rkh/rbenv-update.git $HOME/.rbenv/plugins/rbenv-update"
-
 ```
 
-### 环境设置
+#### 环境设置
 
 ```bash
 echo 'export PATH="$HOME/.rbenv/bin:$PATH"' >> ~/.bashrc
