@@ -685,3 +685,7 @@ https://www.jianshu.com/p/4eaad2163567
 
 ## 83 Windows alias给cmd命令起别名
 https://www.awaimai.com/2445.html
+
+## 84 WSL 2 需要更新其内核组件
+
+https://blog.csdn.net/littlehaes/article/details/104879476

