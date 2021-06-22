@@ -1,5 +1,33 @@
 # 202106
 
+## 0622
+nacos-console配置敏感数据持久化加密存储 #492
+https://github.com/alibaba/nacos/issues/492
+https://github.com/alibaba/nacos/issues/5695
+[Summer 2021] Add a plugin SPI for configuration encryption and decryption for Nacos 2.0 #5695
+
+
+Spring Boot： 加密应用配置文件敏感信息
+https://juejin.cn/post/6844903520546586637
+Spring Cloud Config 加密和解密
+https://blog.csdn.net/qq_40354025/article/details/78269284
+
+
+[linux的find命令--按时间查找文件](https://blog.csdn.net/ytmayer/article/details/6364739)
+fd 好像没有这个
+
+```bash
+----(+n)---------|------------(n)--------------|---------(-n)----
+   (n+1)*24H前   |    (n+1)*24H ~ n*24H之间  |  n*24H以内
+-ctime -n    查找距现在 n*24H 内修改过的文件
+-ctime n    查找距现在 n*24H 前, (n+1)*24H 内修改过的文件
+-ctime +n    查找距现在 (n+1)*24H 前修改过的文件
+[a|c|m]min    [最后访问|最后状态修改|最后内容修改]min 
+[a|c|m]time    [最后访问|最后状态修改|最后内容修改]time
+
+#ls -lt    ./  按修改时间顺序查看
+#ls -lut ./ 按访问时间顺序查看
+```
 ## 0621
 
 https://www.hacking8.com/bug-product/Ruby-On-Rails/CVE-2018-3760-Ruby-On-Rails-%E4%BB%BB%E6%84%8F%E6%96%87%E4%BB%B6%E8%AF%BB%E5%8F%96%E6%BC%8F%E6%B4%9E.html

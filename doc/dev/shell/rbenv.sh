@@ -8,6 +8,7 @@ set -x \
   && git clone --depth=1 https://gitee.com/azhao-1981/ruby-build.git ~/.rbenv/plugins/ruby-build \
   && git clone --depth=1 https://gitee.com/azhao-1981/rbenv-gemset.git ~/.rbenv/plugins/rbenv-gemset \
   && git clone --depth=1 https://gitee.com/azhao-1981/rbenv-china-mirror.git ~/.rbenv/plugins/rbenv-taobao-mirror \
+  && git clone --depth=1 https://gitee.com/azhao-1981/rbenv-update.git ~/.rbenv/plugins/rbenv-update \
   && echo 'export PATH="$HOME/.rbenv/bin:$PATH"' >> ~/.bashrc \
   && echo 'eval "$(rbenv init -)"' >> ~/.bashrc
 
