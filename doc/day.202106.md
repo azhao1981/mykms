@@ -1,6 +1,113 @@
 # 202106
 
+## 0624
+小而全而美的第三方登录开源组件。目前已支持Github、Gitee、微博、钉钉、百度、Coding、腾讯云开发者平台、OSChina、支付宝、QQ、微信、淘宝、Google、Facebook、抖音、领英、小米、微软、今日头条、Teambition、StackOverflow、Pinterest、人人、华为、企业微信、酷家乐、Gitlab、美团、饿了么、推特、飞书、京东、阿里云、喜马拉雅、Amazon、Slack和 Line 等第三方平台的授权登录。 Login, so easy!
+https://gitee.com/yadong.zhang/JustAuth
+这可能是我想要的超级登录器 MIT
+
+这可能是史上功能最全的Java权限认证框架！目前已集成——登录认证、权限认证、分布式Session会话、微服务网关鉴权、单点登录、OAuth2.0、踢人下线、Redis集成、前后台分离、记住我模式、模拟他人账号、临时身份切换、账号封禁、多账号认证体系、注解式鉴权、路由拦截式鉴权、花式token生成、自动续签、同端互斥登录、会话治理、密码加密、jwt集成、Spring集成、WebFlux集成...
+https://gitee.com/dromara/sa-token
+
+WxJava - 微信开发 Java SDK，支持微信支付、开放平台、公众号、企业号/企业微信、小程序等的后端开发，记得右上角点个star 关注更新
+https://gitee.com/binary/weixin-java-tools
+
+MIT：生成你自己的O'RLY动物书封面，让你的同事惊掉下巴
+https://gitee.com/nanmu42/orly
+MIT：基于vue和typescript开发的一款图片剪裁处理工具。 优点：原生、轻量、使用简单、功能全面、扩展性强。 目前功能：缩放、翻折、旋转、边缘校验、矩形剪裁、任意(椭)圆剪裁。
+https://gitee.com/light-year/vue-picture-cut
+
+数字绘——支持云存储的在线框图、流程图、网络图、组织结构图、UML、BPMN绘制
+
+https://gitee.com/zxhm/DataDraw
+
+纯前端在线图片格式转化器,可将jpeg、jpg、png、gif、webp、svg、ico、bmp文件转化为jpeg、png、webp、ico文件。无需上传文件，本地即可完成转换。
+https://gitee.com/renzhezhilu/webp2jpg-online
+
+MIT：一个适用于摄影从业者/爱好者、设计师等创意行业从业者的图像工具箱。
+https://gitee.com/cnoliverzhang/PotatofieldImageToolkit
+
+MIT：仅需5分钟，改变切图方式！公司里几个设计还有十几个开发，就一个前端，忙都忙不过来，有木有。使用快切助手迅速提升切图效率，甩美工和开发好几条街。交流群：40348818
+https://gitee.com/qdsay/kuaiqie
+
+ImageCombiner是一个专门用于Java服务端图片合成的工具，不依赖任何框架，简单实用，从实际业务场景出发，提供简单的接口，几行代码即可实现图片拼合（当然用于合成水印也可以），素材上支持图片和文本两种，支持定位、缩放、旋转、圆角、透明度、颜色、字体、字号、删除线、居中绘制、文本自动换行等特性，足够覆盖图片合成的日常需求。
+https://gitee.com/dromara/image-combiner
+MIT： 为了方便制作Icon，而专门开发的一款软件
+https://gitee.com/scimence/easyIcon
+MIT：基于Three.js、Go语言和MongoDB的跨平台的3D场景编辑器，支持桌面版和Web版。
+https://gitee.com/tengge1/ShadowEditor
+MIT：PDMan是一款开源免费的数据库模型建模工具，支持Windows,Mac,Linux等操作系统，是PowerDesigner之外，更好的免费的替代方案。他具有颜值高，使用简单的特点。包含数据库建模，灵活自动的自动生成代码模板，自动生成文档等多种开发人员实用的功能。
+https://gitee.com/robergroup/pdman
+
+Arthas（阿尔萨斯）是阿里巴巴开源的 Java 诊断工具
+https://gitee.com/arthas/arthas
+
+基于JavaFx搭建的实用小工具集合，方便开发过程中的代码编写与调试，想学习javaFx的同学可以参考参考。其中包括文件复制、Cron表达式生成器、编码转换、加密解密、Time转换、路径转换、二维码生成工具、正则表达式生成工具、网址缩短、转义字符、字符串转换、Mq调试工具、Http调试工具、json格式化编辑工具、图标生成工具、Redis连接工具、网页源码下载工具、切换Hosts工具、Ftp服务器、Cmd调试工具、Ftp/Ftps/Sftp客户端调试工具、Pdf转换工具、文件列表生成器、图片压缩工具、图片转码工具、Kafka调试工具、Email群发工具、颜色代码转换工具、短信群发工具、脚本引擎调试、文件重命名、Json转换、语音转换、Socket调试、图片解析、微信小程序反编译、Zoo... 展开 
+https://gitee.com/xwintop/xJavaFxTool
+
+
+MIT：一个JavaEE服务，将Office文档转换为PDF，格式兼容性好，源文档格式支持doc、docx、xls、xlsx、ppt、pptx。
+https://gitee.com/xdoc/xoffice
+chimm.excel 是一款能够简单操作 excel 的程序，该程序提供了如：填充excel模板数据、动态更改表格样式、导出excel等功能，降低了我们对excel的操作难度
+https://gitee.com/xdoc/chimm.excel
+
+MIT：🚀🚀🚀vue-admin-beautiful-pro是github开源admin中最优秀的集成框架之一，它是国内首个基于vue3.0的开源admin项目，同时支持电脑，手机，平板，🔥🔥🔥默认分支使用vue3.x+antdv开发，master分支使用的是vue2.x+element开发
+https://gitee.com/chu1204505056/vue-admin-beautiful
+
+通用书籍阅读APP，BookChat 的 uni-app 实现版本，支持多端分发，编译生成Android和iOS 手机APP以及各平台的小程序
+https://gitee.com/truthhun/BookChatApp
+WeX5是H5 App开发工具，开源免费，极速秒开；只需一次开发，即可发布、运行于各种前端平台上；支持iOS ipa、android apk、微信服务号/企业号应用、web app和其他轻应用的快速开发。 WeX5采用混合应用（hybrid app）开发模式, UI体系完全基于w3c的html5+css3+js；引入jquery和bootstrap并对移动做了极致优化，效率极高。WeX5本机API Framework采用phonegap(cordova)框架。
+https://gitee.com/X5OK/WeX5
+Security Orchestration, Automation and Response (SOAR) Platform. 安全编排与自动化响应平台，无需编写代码的安全自动化，使用 SOAR 可以让团队工作更加高效
+https://gitee.com/w5team/w5
+在任何地方通过web访问您的设备的终端
+https://gitee.com/zhaojh329/rtty
+基于Python研发，魔鬼自动化部署系统，发布系统
+https://gitee.com/zongzhige/mogui
+快捷运维，代号kjyw，项目基于shell、python，运维脚本工具库，收集各类运维常用工具脚本，实现快速安装nginx、mysql、php、redis、nagios、运维经常使用的脚本等等...
+https://gitee.com/aqztcom/kjyw
+🍬小而全的Java工具类库，使Java拥有函数式语言般的优雅，让Java语言也可以“甜甜的”。
+https://gitee.com/dromara/hutool
+基于SpringBoot 2.0，SpringMVC，Mybatis，mybatis-plus，motan/dubbo分布式，Redis缓存，Shiro权限管理，redis管理Session，Quartz分布式集群调度，Restful服务；系统管理：包括用户管理、权限管理、数据字典、系统参数管理等等；支持QQ/微信登录，App token登录，微信/支付宝支付；日期转换、数据类型转换、序列化、汉字转拼音、身份证号码验证、数字转人民币、发送短信、发送邮件、加密解密、图片处理、excel导入导出、FTP/SFTP/fastDFS上传下载、二维码、XML读写、高精度计算、系统配置工具类等等。
+https://gitee.com/iBase4J/iBase4J
+使用spring boot打造文件文档在线预览项目解决方案，支持doc、docx、ppt、pptx、xls、xlsx、zip、rar、mp4、mp3以及众多类文本如txt、html、xml、java、properties、sql、js、md、json、conf、ini、vue、php、py、bat、gitignore等文件在线预览
+https://gitee.com/kekingcn/file-online-preview
+使用spring boot打造文件文档在线预览项目解决方案，支持doc、docx、ppt、pptx、xls、xlsx、zip、rar、mp4、mp3以及众多类文本如txt、html、xml、java、properties、sql、js、md、json、conf、ini、vue、php、py、bat、gitignore等文件在线预览
+https://gitee.com/kekingcn/file-online-preview
+「企业级低代码平台」前后端分离架构SpringBoot 2.x，SpringCloud，Ant Design&Vue，Mybatis-plus，Shiro，JWT。强大的代码生成器让前后端代码一键生成，无需写任何代码! 引领新的开发模式OnlineCoding->代码生成->手工MERGE，帮助Java项目解决70%重复工作，让开发更关注业务，既能快速提高效率，帮助公司节省成本，同时又不失灵活性。
+https://gitee.com/jeecg/jeecg-boot
+🔥完整前后端数据可视化,大屏,可使用原生Echarts,SQL,API,vue,Jupyter,DataV 极低门槛,拿来即用,比拖拽方便, 简单, 敏捷, 高效, 通用化, 高度可定制化,为你完全打通前后端, 轻松实现图形数据联动, 数据处理机制让报表快人一步
+https://gitee.com/smartchart/smartchart
+
+MIT:🚀Luckysheet ，一款纯前端类似excel的在线表格，功能强大、配置简单、完全开源。
+
+https://gitee.com/mengshukeji/Luckysheet
+
+基于.Net 5.0、Uni-App开发，支持可视化布局的小程序商城系统，前后端分离，支持分布式部署，跨平台运行，拥有分销、代理、团购、拼团、秒杀、直播、优惠券、自定义表单等众多营销功能，拥有完整SKU、下单、售后、物流流程。支持一套代码编译发布微信小程序版、H5版、Android版、iOS版、支付宝小程序版、字节跳动小程序版、QQ小程序版等共10个平台。
+https://gitee.com/CoreUnion/CoreShop
+
+✍ 一款高度简洁的微信 Markdown 编辑器：支持 Markdown 所有基础语法、色盘取色、一键复制并粘贴到公众号后台、多图上传、一键下载文档、自定义 CSS 样式、一键重置等特性
+https://gitee.com/Doocs/md
+
+
+简单易用的vue图片裁剪插件，支持移动图像，裁剪图片，放大缩小图片，上下左右移动，固定比例，固定尺寸，远程图片裁剪，只需要很少的代码就可以实现裁剪功能，也可以通过调整参数以适应你自己的业务需求。
+https://gitee.com/GLUESTICK/vue-img-cutter
+
+ UniAPP开发必备
+https://gitee.com/wgsuxin/collections/172242
+
+收集整理Android开发所需的Android SDK、开发中用到的工具、Android开发教程、Android设计规范，免费的设计素材等。
+https://gitee.com/gxnualbert/AndroidDevTools
+TypeScript 入门教程 从 JavaScript 程序员的角度总结思考，循序渐进的理解 TypeScript https://github.com/xcatliu/typescript-tutorial
+https://gitee.com/masx200/typescript-tutorial
 ## 0623
+
+https://gitee.com/pptist/PPTist
+一个基于 Vue3.x + TypeScript 的在线演示文稿应用，实现PPT幻灯片的在线编辑、演示。还原了大部分PPT常用功能，支持 文字、图片、形状、线条、图表、表格 6种最常用的元素类型，每一种元素都拥有高度可编辑能力，同时支持丰富的快捷键和右键菜单，尽可能还原本地桌面应用的使用体验。
+https://gitee.com/gitee-community/gitee-8th-collections-producer/blob/master/%E6%98%9F%E9%80%89%E9%9B%86%E4%BD%9C%E5%93%81%E5%B1%95%E7%A4%BA.md
+Gitee / 寻找最佳星选集制作人
+
+Office文件转换预览解决方案	
+https://cloud.tencent.com/developer/article/1647162
 
 [记一次从未授权页面到 GetShell](https://www.freebuf.com/articles/web/275199.html)
 

