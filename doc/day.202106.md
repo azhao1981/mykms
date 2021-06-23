@@ -1,6 +1,16 @@
 # 202106
 
+## 0623
+
+[记一次从未授权页面到 GetShell](https://www.freebuf.com/articles/web/275199.html)
+
+IntelliJ IDEA 简体中文专题教程
+https://github.com/judasn/IntelliJ-IDEA-Tutorial
+一个全栈增长工程师的练手项目集. A Growth Engineering Idea in Action.
+https://github.com/phodal/ideabook
+
 ## 0622
+
 nacos-console配置敏感数据持久化加密存储 #492
 https://github.com/alibaba/nacos/issues/492
 https://github.com/alibaba/nacos/issues/5695

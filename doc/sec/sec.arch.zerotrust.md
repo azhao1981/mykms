@@ -82,6 +82,12 @@ Pomerium is an identity-aware access proxy.
 https://github.com/pomerium/pomerium
 https://github.com/pomerium/awesome-zero-trust
 
+
+
+https://github.com/99designs/aws-vault
+A reverse proxy that provides authentication with Google, Github or other providers.| 零信
+https://github.com/oauth2-proxy/oauth2-proxy
+
 ## pritunl
 https://zero.pritunl.com/
 https://github.com/oauth2-proxy/oauth2-proxy

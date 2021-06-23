@@ -262,3 +262,6 @@ TODO: 看书：
 https://www.rapidx.in/pdf/432309207.pdf
 2018版本
 https://paper.bobylive.com/Security/XSS_Cheat_Sheet_2018_Edition.pdf
+
+### xss
+[Google Search XSS漏洞分析](https://www.anquanke.com/post/id/213422)

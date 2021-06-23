@@ -120,14 +120,7 @@ https://github.com/Tylous/Limelighter
 http://www.ijiandao.com/2b/baijia/405546.html
 
 ## 20210325
-https://github.com/hashicorp/vault
-sec\udesk.sec.kms.md
 
-密钥管理服务Vault部署与应用介绍
-https://www.secrss.com/articles/11755
-
-https://zhuanlan.zhihu.com/p/101420781
-云原生安全-更安全的密文管理 Vault on ACK
 
 https://github.com/TophantTechnology/ARL
 ARL(Asset Reconnaissance Lighthouse)资产侦察灯塔系统旨在快速侦察与目标关联的互联网资产，构建基础资产信息库。 协助甲方安全团队或者渗透测试人员有效侦察和检索资产，发现存在的薄弱点和攻击面。

@@ -499,9 +499,7 @@ Open Source Continuous File Synchronization
 https://github.com/syncthing/syncthing
 https://github.com/jenkinsci/jenkins
 
-https://github.com/99designs/aws-vault
-A reverse proxy that provides authentication with Google, Github or other providers.| 零信
-https://github.com/oauth2-proxy/oauth2-proxy
+
 
 A shell parser, formatter, and interpreter with bash support; includes shfmt
 https://github.com/mvdan/sh

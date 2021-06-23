@@ -51,3 +51,9 @@ ldd target/x86_64-unknown-linux-musl/release/hello
 ```
 
 [Rust 在linux环境下 编译 .so 提供给 android 使用](https://blog.csdn.net/xie397361457/article/details/109997037)
+
+Q： error occurred: Failed to find tool. Is `x86_64-linux-musl-gcc-gcc` installed?
+A: `apt install musl-tools -y`
+[使用 musl 库静态编译 rust 程序](https://blog.biofan.org/2019/08/rust-static-build-with-musl/)
+
+

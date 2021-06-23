@@ -1,5 +1,21 @@
 # linux 漏洞
 
+## CVE-2021-3493
+
+Ubuntu OverlayFS Local Privesc
+https://ubuntu.com/security/CVE-2021-3493
+Ubuntu 18.04 LTS (Bionic Beaver)	Released (4.15.0-142.146)
+
+POC
+https://github.com/briskets/CVE-2021-3493
+https://github.com/Al1ex/LinuxEelvation/tree/master/CVE-2021-3493
+
+这个漏洞很新很厉害，基本上都能成功
+
+[CVE-2021-3493 Ubuntu内核OverlayFS权限逃逸漏洞分析](https://www.anquanke.com/post/id/240030)
+
+[CVE-2021-3493 内核overlayfs提权漏洞分析](https://www.freebuf.com/vuls/275787.html)
+
 ## [Sudo缓冲区溢出漏洞（CVE-2021-3156）](http://www.nsfocus.net/vulndb/52555)
 
 Sudo 1.8.2-1.8.31p2和1.9.0-1.9.5p1版本存在缓冲区溢出漏洞。
@@ -62,6 +78,7 @@ https://github.com/reverse-ex/CVE-2021-3156
 $ vagrant init ubuntu/focal64
 $ vagrant up
 $ vagrant ssh
+
 $ wget https://haxx.in/CVE-2021-3156_nss_poc_ubuntu.tar.gz
 $ tar -xzvf *.tar.gz
 $ cd CVE-2021-3156
@@ -86,6 +103,13 @@ Welcome to Ubuntu 18.04.2 LTS (GNU/Linux 4.15.0-52-generic x86_64)
 18.04.2 不可以
 18.04.4 可以 
 18.04.5 可以
+
+好像现在也不行了，使用后要求输入sudo密码
+
+再看下
+https://github.com/d4rk6h05t/CVE-Exploits/tree/master/CVE-2021-3156
+https://github.com/Al1ex/LinuxEelvation/tree/master/CVE-2021-3156_one_shot
+
 
 其它有视频可以完成的:
 

@@ -17,7 +17,7 @@ jenv -h
 
 [java 官网](https://www.oracle.com/java) 下载相对不太友好,详见 [为什么下载 jdk 这么难?](https://www.v2ex.com/t/608785)
 
-更新/2020/10/27 好像这里不需要账号了 见 <https://www.oracle.com/java/technologies/>
+更新/2020/10/27 还是要求账号 见 <https://www.oracle.com/java/technologies/>
 
 下载这些非官方的版本可能会更友好一些：
 
