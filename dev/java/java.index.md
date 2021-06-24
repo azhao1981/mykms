@@ -398,23 +398,6 @@ https://github.com/ulisesbocchio/jasypt-spring-boot
 
 ## 如何绑定SDK版本和Maven/Gradle
 
-## idea + spring
-
-Spring Boot 中文乱码问题解决方案汇总
-https://developer.aliyun.com/article/627073
-
-## idea 插件
-Mac：IntelliJ IDEA -> Preferences -> Plugins;
-Windows：File -> Settings -> Plugins.
-
-详述 IntelliJ IDEA 插件的安装及使用方法
-https://blog.csdn.net/qq_35246620/article/details/78289074
-
-IntelliJ IDEA 常用插件一览，让效率成为习惯
-https://juejin.im/entry/6844903769025560590
-
-值得推荐的Idea十几大优秀插件
-https://blog.csdn.net/win7system/article/details/83508313
 
 ## java 版本
 

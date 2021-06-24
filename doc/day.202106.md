@@ -1,10 +1,15 @@
 # 202106
 
 ## 0624
+Security Orchestration, Automation and Response (SOAR) Platform. 安全编排与自动化响应平台，无需编写代码的安全自动化，使用 SOAR 可以让团队工作更加高效
+https://gitee.com/w5team/w5
+主要是编排 和安全关系不大
+
 【Flutter 集录指南 App】The unity of flutter, The unity of coder.
 https://github.com/toly1994328/FlutterUnit
 
-D3FEND 是一个知识库，更具体地说是一个网络安全对策技术的知识图谱。从最简单的意义上讲，它是防御性网络安全技术及其与进攻/对手技术关系的目录。
+D3FEND 是一个知识库，更具体地说是一个网络安全对策技术的知识图谱。
+从最简单的意义上讲，它是防御性网络安全技术及其与进攻/对手技术关系的目录。
 https://d3fend.mitre.org/
 
 小而全而美的第三方登录开源组件。目前已支持Github、Gitee、微博、钉钉、百度、Coding、腾讯云开发者平台、OSChina、支付宝、QQ、微信、淘宝、Google、Facebook、抖音、领英、小米、微软、今日头条、Teambition、StackOverflow、Pinterest、人人、华为、企业微信、酷家乐、Gitlab、美团、饿了么、推特、飞书、京东、阿里云、喜马拉雅、Amazon、Slack和 Line 等第三方平台的授权登录。 Login, so easy!
@@ -63,8 +68,7 @@ https://gitee.com/chu1204505056/vue-admin-beautiful
 https://gitee.com/truthhun/BookChatApp
 WeX5是H5 App开发工具，开源免费，极速秒开；只需一次开发，即可发布、运行于各种前端平台上；支持iOS ipa、android apk、微信服务号/企业号应用、web app和其他轻应用的快速开发。 WeX5采用混合应用（hybrid app）开发模式, UI体系完全基于w3c的html5+css3+js；引入jquery和bootstrap并对移动做了极致优化，效率极高。WeX5本机API Framework采用phonegap(cordova)框架。
 https://gitee.com/X5OK/WeX5
-Security Orchestration, Automation and Response (SOAR) Platform. 安全编排与自动化响应平台，无需编写代码的安全自动化，使用 SOAR 可以让团队工作更加高效
-https://gitee.com/w5team/w5
+
 在任何地方通过web访问您的设备的终端
 https://gitee.com/zhaojh329/rtty
 基于Python研发，魔鬼自动化部署系统，发布系统
@@ -253,37 +257,7 @@ https://www.bleepingcomputer.com/news/security/linux-system-service-bug-lets-you
 https://dbus.freedesktop.org/doc/dbus-send.1.html
 
 ## 0615
-TODO：深入
-如果需要解析 XML 文件，确保实体解析（entity parsing）是关闭的以避免 XXE 攻击。	
-如果需要解析 XML 文件，确保实体扩展（entity expansion）是关闭的以避免通过指数实体扩展攻击实现的 Billion Laughs/XML bomb。	
 
-entity parsing 对于java是什么、怎么实现、怎么关闭？
-
-这里有描述：
-[java代码审计手书(二）](https://xz.aliyun.com/t/3372)
-其它java代码审计
-[java代码审计手书(一）](https://xz.aliyun.com/t/3358)
-[java代码审计手书(三）](https://xz.aliyun.com/t/3416)
-[java代码审计手书(四）](https://xz.aliyun.com/t/3460)
-扩展： https://github.com/zhaoweiho/awesome-java-security-checklist
-java代码审计文章集合
-https://www.cnblogs.com/r00tuser/p/10577571.html
-[Java代码审计](https://chenergy1991.github.io/2019/03/24/%E5%A5%BD%E7%9A%84%E9%93%BE%E6%8E%A5/)
-  [【绿盟大讲堂】代码审计指南](http://blog.nsfocus.net/code-audit-instruction/)
-  [【绿盟大讲堂】 渗透测试流程解析](https://www.shangmayuan.com/a/81c98471b4da476aa78b9075.html)
-[Java代码审计](https://yinwc.github.io/2020/01/03/Java%E4%BB%A3%E7%A0%81%E5%AE%A1%E8%AE%A1/)
-
-[idea安装findbugs及Find-sec-bugs安全组件](https://www.cnblogs.com/kingsonfu/p/12419817.html)
-ERROR："Plugin 'FindBugs-IDEA'(version 1.0.1) was explicitly marked as incompatible with the current version of the IDE"
-Since FindBugs-IDEA is not compatible with IDEA 2020.1 any more, I personally substitute SpotBugs for it.
-
-好像2019就不再更新，有人推荐 [spotbugs](https://plugins.jetbrains.com/plugin/14014-spotbugs)
-The SpotBugs plugin for security audits of Java web applications.
-安装：
-File/settings/plugins 市场搜索 SpotBugs
-https://find-sec-bugs.github.io/ 官方已经说明 `The SpotBugs plugin for security audits of Java web applications.`
-安装 find-sec-bugs
-https://github.com/find-sec-bugs/find-sec-bugs/wiki/IntelliJ-Tutorial
 
 https://avd.aliyun.com/
 
