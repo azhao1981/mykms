@@ -91,8 +91,6 @@ https://www.freebuf.com/articles/system/257018.html
 https://www.freebuf.com/articles/neopoints/256705.html
 企业安全后期运营建设：从细微之处看起
 
-那些FastJson漏洞不为人知的事情（开发角度）
-https://www.freebuf.com/articles/web/258827.html
 
 Decoder++：一款专用于渗透的多数据格式编码解码工具
 https://www.freebuf.com/articles/database/256700.html

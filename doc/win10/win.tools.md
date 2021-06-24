@@ -1,6 +1,37 @@
 # windows tools
 
+## 安装器
+
+### <https://scoop.sh/>
+
+<https://gitee.com/squallliu/scoop>
+
+```bash
+iwr -useb get.scoop.sh | iex
+
+scoop config SCOOP_REPO https://gitee.com/squallliu/scoop
+scoop update
+```
+
+搭建 Windows 统一开发环境（Chocolatey，Scoop）
+https://zhuanlan.zhihu.com/p/128955118
+
+### https://chocolatey.org/install
+
+### winget
+
+[虽迟但到：Windows Package Manager 体验报告](https://sspai.com/post/60597)
+
+## wsl2
+
+WSL 支持运行 AI 训练任务以及 Linux GUI 应用
+https://www.oschina.net/news/145269/wsl-support-ai-training-n-wslg?from=20210613
+
+## 其它
+
 [superF4](https://stefansundin.github.io/superf4/)
+Kill programs instantly with Ctrl+Alt+F4.
+不知道怎么用
 
 [qttabBar](https://sourceforge.net/projects/qttabbar/)
 给 Explore 加bar

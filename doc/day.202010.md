@@ -41,7 +41,6 @@ https://nosec.org/home/detail/4602.html
 沙箱与恶意样本自动化分析|windows sandbox的使用
 https://www.freebuf.com/articles/system/252026.html
 
-[Fastjson小于1.2.68版本反序列化漏洞分析](https://www.freebuf.com/vuls/252029.html)
 [OAuth2.0认证解析](https://www.freebuf.com/articles/web/253170.html)
 
 

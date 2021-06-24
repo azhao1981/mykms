@@ -387,8 +387,6 @@ https://www.anquanke.com/post/id/223557
 如何利⽤Quake挖掘某授权⼚商边缘站点漏洞
 https://www.anquanke.com/post/id/224420
 
-FastJson<=1.2.24RCE双链详细分析
-https://www.anquanke.com/post/id/223467
 
 https://www.exploit-db.com/exploits/49178
 WordPress Plugin Wp-FileManager 6.8 - RCE

@@ -13,7 +13,14 @@ https://github.com/sindresorhus/awesome#security
 
 [garter AST](https://www.gartner.com/reviews/market/application-security-testing)
 
-中文
+https://github.com/sdmg15/Best-websites-a-programmer-should-visit
+
+程序员应该访问的最佳网站中文版
+https://github.com/tuteng/Best-websites-a-programmer-should-visit-zh
+
+https://github.com/kwai/DouZero
+
+## 中文
 
 GitHubDaily 分享内容定期整理与分类。欢迎推荐、自荐项目，让更多人知道你的项目。
 https://github.com/GitHubDaily/GitHubDaily

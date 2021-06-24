@@ -106,7 +106,6 @@ https://mp.weixin.qq.com/s?__biz=MzIyMjg2ODExMA==&mid=2247487784&idx=1&sn=f41890
 
 [TailorScan内网扫描工具](https://github.com/uknowsec/TailorScan)
 
-[fastjson在一些特殊场景下的漏洞挖掘与利用](https://www.anquanke.com/post/id/222946)
 
 [隐秘的角落——基于某款游戏利用的反射攻击分析](https://security.tencent.com/index.php/blog/msg/169)
 

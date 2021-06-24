@@ -138,6 +138,17 @@ https://www.jianshu.com/p/5d554f138253
 http://blog.zhaojie.me/2010/02/byte-order-and-related-library.html
 
 
+## JIT
+
+ruby --jit -e "puts RubyVM::MJIT.enabled?"
+
+ruby --jit -S irb
+
+ruby --jit -S pry
+
+翻译 [译] Ruby 的新特性 JIT
+https://ruby-china.org/topics/38084
+
 ## gems
 
 ### pg

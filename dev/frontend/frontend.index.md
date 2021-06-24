@@ -1,5 +1,20 @@
 # 前端
 
+## npm mirror 镜像
+
+```bash
+npm config get registry
+npm config get disturl
+npm config set registry=http://registry.npm.taobao.org
+npm install -g cnpm --registry=https://registry.npm.taobao.org 
+npm install -g yarn
+
+npm config delete registry
+npm config delete disturl
+```
+
+参考：https://blog.csdn.net/qq_42403503/article/details/108479464
+
 ## 基础
 
 https://blog.greenroots.info/10-lesser-known-web-apis-you-may-want-to-use-ckejv75cr012y70s158n85yhn
@@ -11,7 +26,6 @@ https://demo.greenroots.info/web-apis/web-api-network-info/
 
 后面有一堆支持代码是什么?
 https://observablehq.com/@tomlarkworthy/hacker-favourites-analysis
-
 
 ## html5
 

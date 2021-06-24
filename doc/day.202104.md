@@ -762,8 +762,7 @@ https://github.com/Datalux/Osintgram
 
 SQL注入漏洞详解
 https://www.anquanke.com/post/id/235970
-Fastjson1.2.24反序列化学习
-https://www.anquanke.com/post/id/235479
+
 Kubestriker：一款针对Kubernetes的快速安全审计工具
 https://www.anquanke.com/post/id/235479
 攻防演练前的安全隐患排查工作指南

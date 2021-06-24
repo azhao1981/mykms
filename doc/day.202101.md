@@ -932,8 +932,6 @@ https://cloud.tencent.com/developer/article/1668989
 Mybatis 框架下 SQL 注入攻击的 3 种方式，真是防不胜防
 https://www.jianshu.com/p/875902ea7df6
 
-这些FastJson漏洞已经人尽皆知的事情（安全角度）
-https://www.freebuf.com/articles/web/258948.html
 
 赵彦的CISO闪电战｜两年甲方安全修炼之路
 https://www.freebuf.com/articles/es/200024.html
