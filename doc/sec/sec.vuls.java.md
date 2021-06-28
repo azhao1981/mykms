@@ -97,6 +97,7 @@ https://github.com/masahiro331/CVE-2020-9484
 https://github.com/IdealDreamLast/CVE-2020-9484
 
 https://y4er.com/post/cve-2020-9484-tomcat-session-rce/
+
 条件：
 1. 不是默认配置，需要手动增加Context.xml
 2. 文件上传 文件后缀需要是.session

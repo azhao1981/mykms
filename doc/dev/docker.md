@@ -1,5 +1,14 @@
 # docker
 
+## cn mirror
+
+
+```json
+{
+  "registry-mirrors": ["https://docker.mirrors.ustc.edu.cn/"]
+}
+```
+
 ## tips
 
 rm -rf /var/lib/apt/lists/*

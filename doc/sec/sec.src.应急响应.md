@@ -3,11 +3,19 @@
 ## index
 
 [企业安全建设之应急响应](https://www.freebuf.com/articles/es/249593.html)
+
 [取证](doc\sec\sec.tools.forensicCollection.取证.md)
 
+## linux
 
+[Linux应急响应笔记 金币](https://www.freebuf.com/articles/network/248376.html)
 
-## 
+<https://yinwc.github.io/2020/01/21/应急响应笔记之Linux篇/>
+
+https://yinwc.github.io/2020/01/21/%E5%BA%94%E6%80%A5%E5%93%8D%E5%BA%94%E7%AC%94%E8%AE%B0%E4%B9%8BLinux%E7%AF%87/
+### busybox和PS
+
+## 参考
 
 [入门级应急响应小贴士](https://www.freebuf.com/articles/es/238170.html)
 
@@ -72,11 +80,7 @@ https://www.anquanke.com/post/id/227609
 再总结应急响应：
 https://github.com/meirwah/awesome-incident-response/blob/master/README_ch.md
 
-这两篇很有用
-Linux应急响应知识总结
-https://hongludianxue.com/2018/12/28/Linux%E5%BA%94%E6%80%A5%E5%93%8D%E5%BA%94%E7%9F%A5%E8%AF%86%E6%80%BB%E7%BB%93/
-Linux应急响应笔记 金币
-https://www.freebuf.com/articles/network/248376.html
+
 
 ##　技术方法
 

@@ -1,13 +1,39 @@
 # busybox
 
+<https://busybox.net/FAQ.html>
+
+https://gitee.com/mirr/busybox.git
 
 ## 安装
 
 ```bash
 wget 'https://busybox.net/downloads/binaries/1.30.0-i686/busybox'
+# 这个版本不对
+wget 'https://busybox.net/downloads/binaries/1.31.0-i686-uclibc/busybox'
+
+git clone https://gitee.com/mirr/busybox.git
+git checkout  -b 1_31_1 1_31_1
+
+make defconfig
+make menuconfig
+# Busybox Setting => Build Options => Build BusyBox as a static binary
+make
 ```
 
-<https://busybox.net/FAQ.html>
+```
+Busybox Setting ----->
+    Build Options -----> 
+        //1选择将busybox进行静态编译 
+        [*]Build BusyBox as a static binary (no shared libs) 
+        //2.指定交叉编译器为 
+        (/usr/local/arm/4.3.2/bin/arm-linux-)Cross Compiler prefix
+
+Busybox Library Tuning---> 
+    [*]Username completion    // tab 自动补齐功能
+    [*]Fancy shell prompts 
+    [*]Query  cursor  position  from  terminal 
+        //4.编译出的busybox的shell命令解释器支持显示当前路径及主机信息
+```
 
 ## [和busybox一样有意思的小工具](https://busybox.net/tinyutils.html)
 
