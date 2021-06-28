@@ -689,3 +689,9 @@ https://www.awaimai.com/2445.html
 ## 84 WSL 2 需要更新其内核组件
 
 https://blog.csdn.net/littlehaes/article/details/104879476
+
+
+你管这玩意叫双系统？直接在 Windows 上体验 Linux
+https://blog.csdn.net/melody157398/article/details/117376630
+wsl --update
+https://github.com/microsoft/wslg
