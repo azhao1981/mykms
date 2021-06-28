@@ -1,8 +1,83 @@
 # 202106
 
+## 0628
+
+vscode插件开发实践
+https://www.jianshu.com/p/a276ee130854
+
+
+[如何使用Lucifer实现自动化渗透测试任务](https://www.freebuf.com/articles/web/273258.html)
+
+git clone https://github.com/Skiller9090/Lucifer.git
+
+## 0625
+
+HOST头攻击 讲得比较
+
+[HTTP Host 头攻击 -- 学习笔记](https://blog.csdn.net/angry_program/article/details/109034421)
+> 在测试密码重置功能时，需要做一下
+> 扩展阅读：[同源策略(Same Origin Policy)](https://blog.csdn.net/angry_program/article/details/106441323)
+> [45. XSS篇——XSS过滤绕过技巧](https://blog.csdn.net/Fly_hps/article/details/79623908)
+
+这篇也值得一看: <https://wooyun.js.org/drops/利用HTTP host头攻击的技术.html>
+
+FIX: [在Web服务器防止Host头攻击](ttps://www.freebuf.com/articles/web/178315.html)
+
+中国信通院发布 https://www.caict.ac.cn
+google: site:www.caict.ac.cn pdf
+
+Rails Security Threats: Authentication
+https://www.honeybadger.io/blog/rails-security-authentication-leaks/
+
+d3-rails provides D3 for Rails.
+https://github.com/iblue/d3-rails
+https://github.com/d3/d3
+https://d3js.org/
+
+Shiro反序列化漏洞与Tomcat注入内存马学习
+https://www.anquanke.com/post/id/244450
+
+
+渗透测试之微信小程序那些事儿
+https://www.freebuf.com/articles/web/276108.html
+
+传字节实习生删除公司GB以下所有机器学习模型，权限管理怎么了？
+https://www.freebuf.com/news/278406.html
+
+零信任实战架构总结
+https://www.freebuf.com/articles/es/276772.html
+
+云安全价格对比
+
+腾讯: <https://buy.cloud.tencent.com/yunjing?ADTAG=cwp.buy.pro.cwp.buy.pro.loginModal2>
+
+计费：3元/1台天
+包月：80/月台
+可以部分升级
+支持多云
+
+阿里：<https://common-buy.aliyun.com/?spm=5176.b45069876.0.0.19831e43fFjpaV&commodityCode=sas>
+
+6折，默认一般是8折
+防病毒版：13,779.00 /2874c月，按核算
+高级版本：32,661.00 /573hm
+企业版：63,603.00 / 573hm
+旗舰版：45,658.80 /2874cm,按核算
+支持多云
+
+华为： <https://console.huaweicloud.com/hss/?region=cn-north-1&locale=zh-cn#/hss/purchase>
+企业版： 72.00 / 1hm
+旗舰版：160.00 / 1hm
+网页防篡改版：784.00 / 1hm
+按需只有企业版：
+支持多云
+
 ## 0624
-Security Orchestration, Automation and Response (SOAR) Platform. 安全编排与自动化响应平台，无需编写代码的安全自动化，使用 SOAR 可以让团队工作更加高效
+
+Security Orchestration, Automation and Response (SOAR) Platform. 
+安全编排与自动化响应平台，无需编写代码的安全自动化，使用 SOAR 可以让团队工作更加高效
 https://gitee.com/w5team/w5
+
 主要是编排 和安全关系不大
 
 【Flutter 集录指南 App】The unity of flutter, The unity of coder.

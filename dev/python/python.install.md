@@ -4,17 +4,51 @@
 
 建议通过 pyenv 安装
 
-### 安装前准备
+### pyenv
+
 ```bash
-# 安装前准备 <https://www.lagou.com/lgeduarticle/36876.html>
+curl -L https://gitee.com/azhao-1981/my-fak/raw/master/shell/pyenv.sh | bash
 
-yum install git readline readline-devel readline-static -y
-yum install openssl openssl-devel openssl-static -y
-yum install sqlite-devel -y
-yum install bzip2-devel bzip2-libs -y
-yum install libffi-devel -y
-yum install gcc -y
+export ver=3.9.5
+wget https://npm.taobao.org/mirrors/python/$ver/Python-$ver.tar.xz -P ~/.pyenv/cache/; pyenv install $ver
+pyenv global 3.9.5
+python -m pip install --upgrade pip
+```
+包含 安装前准备 和 pyenv 下载
 
+### pip 升级
+
+python -m pip install --upgrade pip
+
+### 中国镜像
+<https://www.mywaiting.com/weblogs/pyenv-install-for-virtualenv-and-accelerate-in-mainland-china/>
+
+~/.pip/pip.conf
+
+```bash
+[global]
+index-url = https://pypi.tuna.tsinghua.edu.cn/simple
+[install]
+trusted-host = pypi.tuna.tsinghua.edu.cn
+```
+
+### 安装镜像不对的问题
+
+[PYENV_PYTHON_MIRROR_URL](https://github.com/pyenv/pyenv/issues/1473)
+
+好像也没有解决，因为没有合并到master里去
+
+https://npm.taobao.org/mirrors/python/
+
+### 安装前准备
+
+参考： <https://www.lagou.com/lgeduarticle/36876.html>
+
+`libffi-dev` 这个很重要,不然有一些`pip Install`会报 `_ctypes` 错误, 如果已经安装,重新装 libffi-dev,然后重装一下 python
+  <https://stackoverflow.com/questions/27022373/python3-importerror-no-module-named-ctypes-when-using-value-from-module-mul>
+  <https://blog.csdn.net/wang725/article/details/79905612>
+
+```bash
 # ubuntu
 sudo apt-get update
 sudo apt-get install git curl -y
@@ -24,25 +58,31 @@ sudo apt-get install zlib1g-dev libsqlite3-dev tk-dev -y
 sudo apt-get install libssl-dev openssl -y
 sudo apt-get install libffi-dev -y
 
-# libffi-dev 这个很重要,不然有一些pip Install会报 _ctypes 错误, 如果已经安装,重新装 libffi-dev,然后重装一下 python
-# https://stackoverflow.com/questions/27022373/python3-importerror-no-module-named-ctypes-when-using-value-from-module-mul
-# https://blog.csdn.net/wang725/article/details/79905612
+# WARNING: The Python readline extension was not compiled. Missing the GNU readline lib?
+# WARNING: The Python bz2 extension was not compiled. Missing the bzip2 lib?
+# https://github.com/pyenv/pyenv/wiki/Common-build-problems
+sudo apt-get install -y make libbz2-dev libreadline-dev wget llvm libncurses5-dev xz-utils tk-dev liblzma-dev python-openssl
+
+# centos
+yum install git readline readline-devel readline-static -y
+yum install openssl openssl-devel openssl-static -y
+yum install sqlite-devel -y
+yum install bzip2-devel bzip2-libs -y
+yum install libffi-devel -y
+yum install gcc -y
 ```
 
-### pyenv
-
-## pyenv 升级后 pip 会报: /usr/local/Cellar/pyenv/1.2.12/libexec/pyenv: No such file or directory
+## errors
+### mac: pyenv 升级后 pip 会报: /usr/local/Cellar/pyenv/1.2.12/libexec/pyenv: No such file or directory
 
 改成:
+
 brew info pyenv
+
 看下新版本
 修改一下
 /usr/local/Cellar/pyenv/1.2.14_1
 /usr/local/Cellar/pyenv/1.2.14_1/libexec/pyenv
-
-## pip 升级
-
-python -m pip install --upgrade pip
 
 ## mac 安装 pip 阿里镜像
 
@@ -73,15 +113,12 @@ export  PYTHON_BUILD_MIRROR_URL="http://pyenv.qiniudn.com/pythons/"
 ```bash
 151.101.8.133   raw.githubusercontent.com
 ```
-curl -L https://raw.githubusercontent.com/yyuu/pyenv-installer/master/bin/pyenv-installer | bash
-
-curl -L https://gitee.com/azhao-1981/pyenv-installer/raw/master/bin/pyenv-installer | bash
-
-export ver=3.9.4
+export ver=3.9.5
 export ver=3.8.6
 export ver=3.7.9
 wget http://mirrors.sohu.com/python/$ver/Python-$ver.tar.xz -P ~/.pyenv/cache/; pyenv install $ver
 pyenv install 3.8.6
+
 # 手动下载
 https://www.python.org/ftp/python/3.7.2/Python-3.7.2.tar.xz
 cp Python-3.7.2.tar.xz ~/.pyenv/cache/
@@ -163,7 +200,6 @@ jupyter serverextension enable --py jupyterlab --sys-prefix
 <https://github.com/jupyter/jupyter/wiki/Jupyter-kernels>
 <https://github.com/SciRuby/iruby>
 
-
 ```bash
 sudo apt install libtool libffi-dev ruby ruby-dev make
 sudo apt install libzmq3-dev libczmq-dev
@@ -193,7 +229,6 @@ deb-src http://mirrors.163.com/debian/ stretch-backports main non-free contrib
 deb http://mirrors.163.com/debian-security/ stretch/updates main non-free contrib
 deb-src http://mirrors.163.com/debian-security/ stretch/updates main non-free contrib
 ```
-
 
 ## windows
 

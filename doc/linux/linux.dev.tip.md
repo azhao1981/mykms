@@ -13,6 +13,53 @@ openssl rand -hex 10
 openssl passwd -stdin < <(echo)
 ```
 
+## 主版本升级
+
+```bash
+do-release-upgrade
+```
+
+## 内核升级
+
+```bash
+sudo dpkg --configure -a
+sudo apt --fix-broken install
+sudo apt autoremove
+```
+最近可能因为内核问题比较多，常见会报：
+
+E: dpkg was interrupted, you must manually run 'sudo dpkg --configure -a' to correct the problem. 
+
+fix：
+
+`sudo dpkg --configure -a`
+
+又报：
+
+Errors were encountered while processing:
+ linux-generic
+
+随便安装一个如 apt install git-core
+
+You might want to run 'apt --fix-broken install' to correct these.
+The following packages have unmet dependencies:
+ linux-generic : Depends: linux-headers-generic (= 4.15.0.137.124) but 4.15.0.136.123 is to be installed
+E: Unmet dependencies. Try 'apt --fix-broken install' with no packages (or specify a solution).
+
+```bash
+apt --fix-broken install
+uname -r
+# 4.15.0-137-generic
+sudo reboot
+uname -a
+# Linux ubuntu 4.15.0-149-generic #153-Ubuntu SMP Thu Jun 24 09:53:50 UTC 2021 x86_64 x86_64 x86_64 GNU/Linux
+# 最后删除不用的内核
+# Use 'sudo apt autoremove' to remove them.
+sudo apt autoremove
+```
+
+应该是要4.15.0-149以上
+
 ## Linux命令大全
 
 Linux命令大全搜索工具，内容包含Linux命令手册、详解、学习、搜集。https://git.io/linux
