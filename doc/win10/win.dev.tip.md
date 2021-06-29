@@ -690,8 +690,10 @@ https://www.awaimai.com/2445.html
 
 https://blog.csdn.net/littlehaes/article/details/104879476
 
+## 85 wslg
 
-你管这玩意叫双系统？直接在 Windows 上体验 Linux
-https://blog.csdn.net/melody157398/article/details/117376630
+[你管这玩意叫双系统？直接在 Windows 上体验 Linux](https://blog.csdn.net/melody157398/article/details/117376630)
+
+1 windows预览体验计划 需要这个，暂时没有
 wsl --update
 https://github.com/microsoft/wslg
