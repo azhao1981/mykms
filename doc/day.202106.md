@@ -1,5 +1,23 @@
 # 202106
 
+## 0629
+关于系统常见默认软件(dns、ssh、netbios、openssl及docker)的漏洞说明及修改方案说明
+http://www.xwood.net/_site_domain_/_root/5870/5874/t_c269166.html
+
+基于阿里云上实现全站https的正确姿势(二)
+https://www.zhuxiaodong.net/2016/how-to-switch-your-website-to-https-on-aliyun-part2/
+
+Web Security Best Practices
+https://www.checkbot.io/guide/security/
+The 8 HTTP Security Headers Best Practices
+https://www.globaldots.com/resources/blog/the-8-http-security-headers-best-practices/
+https://owasp.org/www-project-secure-headers/
+
+Top 12 Website Security Practices for 2021
+https://cyberexperts.com/website-security-practices/
+
+[Atlassian Jira Server/Data Center 8.16.0 - Reflected Cross-Site Scripting (XSS)](https://www.exploit-db.com/exploits/50068)
+
 ## 0628
 
 vscode插件开发实践

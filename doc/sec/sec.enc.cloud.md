@@ -34,14 +34,17 @@ https://support.huaweicloud.com/productdesc-ecs/ecs_01_0054.html
 其实就是说加密盘在载入的时候访问CMK，但使用过程中并不使用
 
 云硬盘 EVS
+
 https://console.huaweicloud.com/ecm/?region=cn-south-1#/evs/createvolume
 
 ![](images/2021-06-24-11-34-55.png)
 
 管理加密云硬盘
+
 https://support.huaweicloud.com/usermanual-evs/evs_01_0009.html
 
 流程：
+
 创建一个服务器
 制作镜像
 导出镜像到OBS对象存储
@@ -49,11 +52,14 @@ https://support.huaweicloud.com/usermanual-evs/evs_01_0009.html
   创建私有镜像，然后在选 系统盘镜像/镜像文件，从上面 OBS存储的地方获取
   选 硬盘加密
 制作加密硬盘系统
+
 ![](images/2021-06-24-16-55-54.png)
 
 ![](images/2021-06-24-16-42-31.png)
 
 ## 阿里云
+
 ECS
 数据盘才能加密
+
 ![](images/2021-06-24-14-47-04.png)
