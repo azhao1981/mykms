@@ -895,13 +895,11 @@ https://github.com/taoufik07/responder
 https://github.com/SpiderLabs/Responder
 github.com/lgandx/Responder 谷歌提示有害信息？
  
-https://www.anquanke.com/post/id/227590
-从软件研发管理角度理解开发安全中的SDL和DevSecOps
+
 CVE-2020-11800 zabbix RCE漏洞细节披露
 https://xz.aliyun.com/t/8991
 技术分享 | 从CVE-2020-17518到一键Getshell
-https://nosec.org/home/detail/4639.html
-从软件研发管理角度理解开发安全中的SDL和DevSecOps
+
 
 CVE-2020-11800 zabbix RCE漏洞细节披露
 https://xz.aliyun.com/t/8991
@@ -961,8 +959,7 @@ OnionSearch：一款针对洋葱域名的URL搜索脚本
 https://www.freebuf.com/articles/web/256896.html
 App安全检测实践基础：客户端程序安全（一）
 https://www.freebuf.com/articles/terminal/255712.html
-DevSecOps建设之白盒篇
-https://www.freebuf.com/articles/es/259762.html
+
 基于套接字的模糊测试技术，第1部分：FTP服务器（上）
 https://www.anquanke.com/post/id/227120
 hackme：2 靶机攻略

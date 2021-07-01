@@ -526,3 +526,10 @@ What is a DLP alert?
 A DLP alert is a system-generated message. A DLP tool monitors activities, such as data storage access and network traffic. The software will raise an alert if an activity lies outside registered acceptable behavior. The alert does not necessarily mean that a data loss event has occurred. It could identify a potential risk or a system weakness that the actions of intruders have exposed without successfully touching the target data. An alert should instigate an investigation into the necessity of adjusting security standards or taking some other preventative measures or it could indicate a security breach in progress.
 
 
+
+DevSecOps 意味着
+从一开始就要考虑应用和基础架构的安全性；
+同时还要让某些安全网关实现自动化，以防止 DevOps 工作流程变慢。
+选择合适的工具来持续集成安全防护（比如在集成开发环境（IDE）中集成安全防护功能）有助于实现这些目标。
+但是高效的 DevOps 安防需要的不仅是新工具。
+它更需要整个公司实现 DevOps 文化变革，从而尽早集成安全团队的工作。

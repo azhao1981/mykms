@@ -56,14 +56,14 @@ https://jeremylong.github.io/DependencyCheck/data/database.html
 mirror NVD
 https://jeremylong.github.io/DependencyCheck/data/mirrornvd.html
 
-https://bloodzer0.github.io/ossa/other-security-branch/devsecops/sdc/
+[SonarQube集成DependencyCheck](https://bloodzer0.github.io/ossa/other-security-branch/devsecops/sdc/)
 
 下载
 https://bintray.com/jeremy-long/owasp/dependency-check
 
 和 SonarQ 结合了,有不错的效果
 
-OWASP Dependency-Check插件介绍及使用|CPE格式
+OWASP Dependency-Check 插件介绍及使用|CPE格式
 https://www.cnblogs.com/shengulong/p/7698428.html
 jar第三方组件Dependency-check依赖检查工具
 http://www.mianhuage.com/913.html

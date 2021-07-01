@@ -190,8 +190,7 @@ https://www.anquanke.com/post/id/208450
 
 ## 2020-06-18
 
-从SDL到DevSecOps：始终贯穿开发生命周期的安全
-https://www.freebuf.com/vuls/240074.html
+
 
 JAVA代码审计之SSM框架与示例
 https://www.freebuf.com/vuls/237474.html
@@ -338,8 +337,6 @@ https://cert.360.cn/warning/detail?id=04f6a686db24fcfa478498f55f3b79ef
 微软SMBv3客户端/服务端远程代码执行漏洞（CVE-2020-0796）技术分析
 http://blogs.360.cn/post/CVE-2020-0796.html
 
-从SDL到DevSecOps：始终贯穿开发生命周期的安全
-https://www.anquanke.com/post/id/208353
 
 恶意代码分析之行为分析及样本收集
 https://www.anquanke.com/post/id/208208

@@ -26,8 +26,6 @@ https://www.freebuf.com/sectool/271836.html
 零信任四化之应用零信任化的趋势分析
 https://www.freebuf.com/articles/network/272858.html
 
-某在线教育devsecops实践分享
-https://www.freebuf.com/articles/es/269648.html
 
 数据安全合规实践
 https://www.freebuf.com/column/1759
@@ -125,8 +123,6 @@ http://blog.nsfocus.net/nistir-8011-4-5/
 如何基于kubectl实现红队K8S模拟对抗
 https://www.freebuf.com/articles/container/273570.html
 
-企业建设DevSecOps流程梳理
-https://www.anquanke.com/post/id/240752
 
 
 ## 0521

@@ -37,8 +37,7 @@ https://www.anquanke.com/post/id/235832
 chisel：一款快速稳定的隧道工具
 https://www.anquanke.com/post/id/234771
 
-浅谈如何有效落地DevSecOps
-https://www.freebuf.com/articles/security-management/264610.html
+
 Givemexyz挖矿家族新变种云上肆虐
 https://www.freebuf.com/articles/network/264559.html
 使用Chimera混淆PowerShell代码绕过安防产品

@@ -4,12 +4,15 @@
 
 随着传统开发流程向着DevOps的转变，SDL也需要把自己自动化的集成到DevOps当中去，形成新的 DevSecOps
 
-DevSecOps在百度的实践|不错，指导性
-https://www.freebuf.com/articles/es/243902.html
+[DevSecOps在百度的实践|不错，指导性](https://www.freebuf.com/articles/es/243902.html)
+
 轻量级 SDL，即通过少量的人力投入，以高自动化、高 CI/CD 集成的方式解决业务产品的安全问题
+
 CI/CD
+
 持续集成 Continuous integration (CI) 
 持续交付 continuous delivery (CD)
+
 V1:
 小规模安全评估
 自动化安全测试
@@ -38,3 +41,47 @@ https://rasp.baidu.com/
 研发工程规范性模型
     产品研发各个阶段的规范和措施的完成度量化为分数
     以产品和代码仓库的维度进行统计和公示，并在公司层面建立了工程规范性评分基准线
+
+SonarQube集成DependencyCheck
+https://bloodzer0.github.io/ossa/other-security-branch/devsecops/sdc/
+
+Linux应用容器部署安全保障需求
+[Security Assurance Requirements for Linux Application Container Deployments](https://csrc.nist.gov/publications/detail/nistir/8176/final)
+
+DevSecOps 和 DevOps 有什么区别 ?
+https://www.redhat.com/zh/topics/devops/what-is-devsecops
+
+从SDL到DevSecOps：始终贯穿开发生命周期的安全
+https://www.freebuf.com/vuls/240074.html
+
+
+从SDL到DevSecOps：始终贯穿开发生命周期的安全
+https://www.anquanke.com/post/id/208353
+
+《2020 DevSecOps 企业实践白皮书》发布
+https://www.freebuf.com/articles/243414.html
+
+https://www.anquanke.com/post/id/227590
+从软件研发管理角度理解开发安全中的SDL和DevSecOps
+https://nosec.org/home/detail/4639.html
+从软件研发管理角度理解开发安全中的SDL和DevSecOps
+
+使用Anchore Engine来完善DevSecOps工具链|容器？
+https://www.freebuf.com/articles/es/239266.html
+Anchore Engine的功能之一是可以基于CVE数据来对容器镜像进行漏洞扫描
+
+DevSecOps建设之白盒篇
+https://www.freebuf.com/articles/es/259762.html
+
+浅谈如何有效落地DevSecOps
+https://www.freebuf.com/articles/security-management/264610.html
+
+
+某在线教育devsecops实践分享
+https://www.freebuf.com/articles/es/269648.html
+
+企业建设DevSecOps流程梳理
+https://www.anquanke.com/post/id/240752
+
+根据之前在SDL建设和devsecops建设中的经验，设计问答形式的表格，让研发填写长篇大论，往往会造成更多的沟通成本，这往往是安全需求评审阻碍devsecops建设的一大瓶颈。
+因此，应当更多的让研发做选择题，并通过选择题，让部分需求评审能够自动化（不要指望完全自动化）。

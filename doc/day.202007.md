@@ -118,8 +118,6 @@ https://www.freebuf.com/articles/network/244159.html
 
 ## 20200722
 
-《2020 DevSecOps 企业实践白皮书》发布
-https://www.freebuf.com/articles/243414.html
 
 初识Docker逃逸
 https://www.freebuf.com/articles/container/242763.html
@@ -168,9 +166,7 @@ https://www.freebuf.com/vuls/242500.html
 无线安全实战基础篇
 https://www.freebuf.com/articles/wireless/243445.html
 
-使用Anchore Engine来完善DevSecOps工具链|容器？
-https://www.freebuf.com/articles/es/239266.html
-Anchore Engine的功能之一是可以基于CVE数据来对容器镜像进行漏洞扫描
+
 
 ## 20200720
 安卓实现安卓-光速虚拟机技术内幕
