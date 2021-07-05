@@ -1,5 +1,7 @@
 # android 逆向工程
 
+List of awesome reverse engineering resources
+https://github.com/wtsxDev/reverse-engineering
 
 [基于Java的Android逆向工程及程序保护教程](https://www.bilibili.com/video/av412998483/)
 
