@@ -53,7 +53,14 @@ https://www.pianshen.com/article/65451571007/
 https://ansible.leops.cn/advanced/ara/
 
 ### 怎么下载文件
+使用 Ansible 传输文件的几种方式
+https://zdyxry.github.io/2019/11/22/%E4%BD%BF%E7%94%A8-Ansible-%E4%BC%A0%E8%BE%93%E6%96%87%E4%BB%B6%E7%9A%84%E5%87%A0%E7%A7%8D%E6%96%B9%E5%BC%8F/
+copy/fetch
+ansible批量传输文件
+https://blog.csdn.net/wszll_Alex/article/details/77688224
 
+ansible笔记（4）：常用模块之文件操作
+https://www.zsythink.net/archives/2542
 
 Ansible 日常使用技巧 - 运维总结
  
