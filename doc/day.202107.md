@@ -1,7 +1,35 @@
 # 202107
 
-## 20210705
+## 20210706
+150+ Website Templates
+https://github.com/Captaindeve/website-templates
+https://learning-zone.github.io/website-templates/
 
+Thousands of Unauthenticated Databases Exposed on the Internet
+https://redhuntlabs.com/blog/thousands-of-unauthenticated-databases-exposed-on-the-internet.html/amp?__twitter_impression=true
+
+Bug bounty methodology V4.0 — Demonstrated
+https://thexssrat.medium.com/bug-bounty-methodology-v4-0-demonstrated-8e9cb6ed1b12
+
+Vinix is an effort to write a modern, fast, and useful operating system in the V programming language
+https://github.com/vlang/vinix
+
+https://paper.seebug.org/1628/
+ATT&CK 初探 2 -- 资源开发利用阶段
+
+linglong：一款 IP 资产巡航扫描系统
+https://paper.seebug.org/1627/
+
+越权检测系统从零开发之-Chrome插件开发
+https://www.anquanke.com/post/id/245292
+
+Active Directory 证书服务攻击与防御（一）
+https://www.anquanke.com/post/id/245791
+
+SSO中的身份账户不一致漏洞
+https://www.anquanke.com/post/id/243938
+
+## 20210705
 
 python-magic installation challenges for 64-bit Windows 10 running 32-bit Python 2.7 build
 https://stackoverflow.com/questions/41516138/python-magic-installation-challenges-for-64-bit-windows-10-running-32-bit-python
@@ -11,7 +39,6 @@ https://stackoverflow.com/questions/41516138/python-magic-installation-challenge
 pip install python-libmagic
 pip install python-magic-bin
 ```
-
 
 React 的许可协议到底发生了什么问题？
 https://zhuanlan.zhihu.com/p/28618630

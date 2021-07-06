@@ -349,7 +349,9 @@ deb-src https://mirrors.ustc.edu.cn/ubuntu/ focal-proposed main restricted unive
 ## virtualBox iamges linux server
 
 https://www.osboxes.org/
-Disable Mouse Integration for VirtualBox: Run virtual machine go to menu Machine > Disable Mouse Integration or simply press Right CTRL + i to enable/disable mouse integration.
+
+Disable Mouse Integration for VirtualBox: 
+Run virtual machine go to menu Machine > Disable Mouse Integration or simply press Right CTRL + i to enable/disable mouse integration.
 Fix Blankscreen issue: Go to Settings > Display > Sleep > Select “30 minutes”
 Important! For VMware: After setting up, go to “Virtual Machine Settings” > under “Hardware” Tab > Select “Display” > Enable “Accelerate 3D graphics”
 VMware Compatibility: Version 10+
@@ -361,12 +363,13 @@ VB Guest Additions & VMware Tools: Installed
 Keyboard Layout: US (Qwerty)
 VMware Compatibility: Version 10+
 
-##　—添加开机启动ｓ
-https://www.cnblogs.com/Areas/p/13439000.html
-Linux Ubuntu 20.04 —添加开机启动(服务/脚本)
+##　ubuntu 添加开机启动ｓ
+
+[Linux Ubuntu 20.04 —添加开机启动(服务/脚本)](https://www.cnblogs.com/Areas/p/13439000.html)
 
 https://gist.github.com/mohamadaliakbari/1cb9400984094541581fff07143e1c9d
-开机启动 networkd，好像kali不生效
+
+开机启动 networkd，好像kali不生效,kali见下面一节
 
 ```bash
 echo '
@@ -378,4 +381,28 @@ DHCP=ipv4
 ' | sudo tee -a /etc/systemd/network/20-dhcp.network
 ```
 
-[linux top命令VIRT,RES,SHR,DATA的含义](https://javawind.net/p131)
+## kali 启动服务和网卡
+
+[Kali Linux系统开启SSH服务教程](https://www.jianshu.com/p/9805a4f02d69)
+
+```bash
+# 开机重启:
+update-rc.d ssh defaults
+update-rc.d ssh enable
+```
+
+sudo vim /etc/network/interfaces
+
+```bash
+auto eth1
+iface eth1 inet static
+address 192.168.56.111
+netmask 255.255.255.0
+broadcast 192.168.56.255
+network 192.168.56.0
+gateway 192.168.56.1
+```
+
+## [linux top命令VIRT,RES,SHR,DATA的含义](https://javawind.net/p131)
+
+
