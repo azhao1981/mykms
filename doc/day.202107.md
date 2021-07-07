@@ -1,5 +1,19 @@
 # 202107
 
+## 20210707
+
+SSH登录日志分析脚本（Python)
+https://blog.csdn.net/Nocky/article/details/45200111
+
+[Android工具] 阿里云盘上传任务（容量续命）助手     [复制链接]
+https://www.52pojie.cn/thread-1469067-1-1.html
+
+拥抱零信任你就站在安全行业的风口，理解和落地零信任你就走在成功的道路上
+https://www.freebuf.com/articles/network/279695.html
+
+精读--GMTC 2021 演讲《字节跳动的现代 Web 开发实践》
+https://mp.weixin.qq.com/s/m3ISibvCEvAi5jJWaG8VtQ
+
 ## 20210706
 150+ Website Templates
 https://github.com/Captaindeve/website-templates
