@@ -1,5 +1,17 @@
 # 202107
 
+## 20210708
+
+机器学习Web安全原理探究之：为何隐马尔可夫模型可用于参数异常检测
+https://www.anquanke.com/post/id/245954
+
+从安全工程师转型安全研发3年来的小结
+https://www.freebuf.com/articles/neopoints/279135.html
+
+Rocket.Chat 3.12.1 - NoSQL Injection to RCE (Unauthenticated) (2)
+https://www.exploit-db.com/exploits/50108
+怎么注入NoSQL
+
 ## 20210707
 
 SSH登录日志分析脚本（Python)
