@@ -1,15 +1,36 @@
 ## Tomcat
 
-公告：http://tomcat.apache.org/security.html
+安全公告：http://tomcat.apache.org/security.html
+  http://tomcat.apache.org/security-7.html
+  http://tomcat.apache.org/security-8.html
+  http://tomcat.apache.org/security-9.html
+  http://tomcat.apache.org/security-10.html
 
-http://tomcat.apache.org/security-7.html
-http://tomcat.apache.org/security-8.html
-http://tomcat.apache.org/security-9.html
-http://tomcat.apache.org/security-10.html
+### Apache Tomcat 信息泄露漏洞 CVE-2021-24122 2020-11-11
 
-### Apache Tomcat 信息泄露漏洞 CVE-2021-24122
+影响：
 
-https://fengchenzxc.github.io/%E6%BC%8F%E6%B4%9E%E5%A4%8D%E7%8E%B0/Web%E6%9C%8D%E5%8A%A1%E5%99%A8%E6%BC%8F%E6%B4%9E/Apache/Apache%20Tomcat/Apache%20Tomcat%20%E4%BF%A1%E6%81%AF%E6%B3%84%E9%9C%B2%E6%BC%8F%E6%B4%9E%20CVE-2021-24122/
+Apache Tomcat 10.0.0-M1-10.0.0-M9
+
+Apache Tomcat 9.0.0.M1-9.0.39
+
+Apache Tomcat 8.5.0-8.5.59
+
+Apache Tomcat 7.0.0-7.0.106
+
+<https://fengchenzxc.github.io/%E6%BC%8F%E6%B4%9E%E5%A4%8D%E7%8E%B0/Web%E6%9C%8D%E5%8A%A1%E5%99%A8%E6%BC%8F%E6%B4%9E/Apache/Apache%20Tomcat/Apache%20Tomcat%20%E4%BF%A1%E6%81%AF%E6%B3%84%E9%9C%B2%E6%BC%8F%E6%B4%9E%20CVE-2021-24122/>
+
+据官方描述，该漏洞由于Windows API（FindFirstFileW）与JRE API File.getCanonicalPath的一些意外行为所导致。
+
+**当使用NTFS文件系统时，可以绕过一些安全限制，最终可导致如查看某些配置中JSP的源代码等危害。**
+
+`getCanonicalPath()`
+
+此路径方法返回绝对唯一的标准规范路径名。
+此方法首先将此路径名转换为绝对形式，就像调用getAbsolutePath方法一样，然后以系统相关的方式将其映射到其唯一路径上。
+也就是说如果路径中包含“.”或“..”等当前路径及上层路径表示法，则会从路径名中删除“.”和“..”使用真实路径代替。
+另外比较重点的是 它还会解析软链接（在UNIX平台上）以及将驱动器号（在Microsoft Windows平台上），将它们转换为标准实际路径。
+而 getCanonicalPath() 解析了软链接转换为实际路径导致漏洞的产生
 
 ### Tomcat websocket 拒绝服务漏洞利用代码披露（CVE-2020-13935）
 

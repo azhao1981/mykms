@@ -631,10 +631,7 @@ https://dev.to/aumayeung/more-ways-to-level-up-as-a-developer-4kj2
 
 ## 20200701
 
-OpenSSH 安全漏洞
-http://www.cnnvd.org.cn/web/xxk/ldxqById.tag?CNNVD=CNNVD-202006-1822
-官方暂时没有处理
-https://www.openssh.com/security.html
+
 
 浅谈网络安全领域售前从业人员技术能力图谱（上）
 https://www.freebuf.com/articles/neopoints/240962.html

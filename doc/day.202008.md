@@ -387,10 +387,6 @@ https://securitytrails.com/
 
 [dom4j XML外部实体注入漏洞 （CVE-2020-10683）](http://www.nsfocus.net/vulndb/47453)
 
-[OpenSSH 命令注入漏洞（CVE-2020-15778）](http://www.nsfocus.net/vulndb/47482)
-[OpenSSH 命令注入漏洞（CVE-2020-15778）](https://www.4hou.com/posts/vD70)
-[Write up for CVE id CVE-2020-15778.](https://github.com/cpandya2909/CVE-2020-15778/)
-scp  /sourcefile remoteserver:'`touch /tmp/exploit.sh`/targetfile'
 
 
 

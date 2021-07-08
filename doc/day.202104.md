@@ -171,8 +171,7 @@ https://www.anquanke.com/post/id/237030
 https://www.anquanke.com/post/id/238270
 二进制分析从工具说起
 https://www.anquanke.com/post/id/238291
-openssh 源码分析权限维持
-https://www.anquanke.com/post/id/237497
+
 
 https://hexapdf.gettalong.org/index.html
 pdf

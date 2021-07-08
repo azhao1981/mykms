@@ -510,8 +510,7 @@ https://www.freebuf.com/sectool/233772.html
 31500美元：Facebook的SSRF漏洞
 https://nosec.org/home/detail/4471.html
 
-OpenSSH 安全漏洞
-http://www.cnnvd.org.cn/web/xxk/ldxqById.tag?CNNVD=CNNVD-202006-078
+
 
 Python-RSA 安全漏洞
 http://www.cnnvd.org.cn/web/xxk/ldxqById.tag?CNNVD=CNNVD-202006-071

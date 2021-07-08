@@ -3,8 +3,50 @@
 NmapCheatSheetv1.1.pdf
 https://github.com/The-Art-of-Hacking/h4cker
 
-端口和识别列表
-https://www.iana.org/assignments/service-names-port-numbers/service-names-port-numbers.xhtml
+## 下载和安装
+
+https://nmap.org/download.html
+https://nmap.org/book/inst-source.html
+
+bzip2 -cd nmap-7.91.tar.bz2 | tar xvf -
+cd nmap-7.91
+./configure
+make
+su root
+make install
+
+## 版本探测
+
+```bash
+SERVICE/VERSION DETECTION:
+  -sV: Probe open ports to determine service/version info
+  --version-intensity <level>: Set from 0 (light) to 9 (try all probes)
+  --version-light: Limit to most likely probes (intensity 2)
+  --version-all: Try every single probe (intensity 9)
+  --version-trace: Show detailed version scan activity (for debugging)
+
+sudo nmap -Pn -sV version-all --version-trace -O $ip -p 8080,8443,22
+```
+
+-O 需要 sudo
+
+扫描会提示：
+
+Nmap scan report for bogon (192.168.223.133)
+Read from /usr/bin/../share/nmap: nmap-payloads nmap-service-probes nmap-services.
+
+[讲原理的：nmap服务识别和操作系统探测](https://segmentfault.com/a/1190000011871145)
+
+当我们指定 -sV 选项运行 nmap 时，它会根据 nmap-services-probes 文件里面存储的是服务类型特征数据去判断具体扫描到的是哪种服务。
+
+[讲使用：[Nmap渗透测试指南]第四章(指纹识别与探测)](https://blog.csdn.net/nzjdsds/article/details/72862765)
+
+[服务和版本探测](https://nmap.org/man/zh/man-version-detection.html)
+
+https://nmap.org/book/vscan.html
+
+### [端口和识别列表](https://www.iana.org/assignments/service-names-port-numbers/service-names-port-numbers.xhtml)
+
 nmap top 1000 包括哪些端口
 https://nullsec.us/top-1-000-tcp-and-udp-ports-nmap-default/
 https://github.com/danielmiessler/SecLists/blob/master/Discovery/Infrastructure/nmap-ports-top1000.txt
@@ -183,3 +225,4 @@ msf6 auxiliary(scanner/http/iis_internal_ip) > exploit
 [*] Scanned 1 of 1 hosts (100% complete)
 [*] Auxiliary module execution completed
 msf6 auxiliary(scanner/http/iis_internal_ip) > info
+
