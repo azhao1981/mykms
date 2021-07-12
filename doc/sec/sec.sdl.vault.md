@@ -14,10 +14,10 @@ https://learn.hashicorp.com/tutorials/vault/eaas-spring-demo?in=vault/app-integr
 
 [Introduction to HashiCorp Vault with Armon Dadgar](https://www.youtube.com/watch?v=VYfl-DpZ5wM)
 
-
 [云原生安全-更安全的密文管理 Vault on ACK](https://zhuanlan.zhihu.com/p/101420781)
 
 ## vault
+<<<<<<< HEAD
 ### vault 安全
 
 mlock: 不允许把内存数据swap到硬盘
@@ -25,6 +25,8 @@ mlock: 不允许把内存数据swap到硬盘
 
 深入剖析HashiCorp Vault中的身份验证漏洞（上篇）
 https://anquan.baidu.com/article/1191
+=======
+>>>>>>> db7af43acb43029be99e3ba85daf185d24887b02
 
 ### vault 服务 开发模式
 
@@ -201,6 +203,41 @@ vault kv delete secret/hello
 ### vault api 访问
 
 [密钥管理服务Vault部署与应用介绍](https://www.secrss.com/articles/11755)
+### vault api 访问
+
+[密钥管理服务Vault部署与应用介绍](https://www.secrss.com/articles/11755)
+
+### 生产部署
+如果报　mlock 问题：
+https://www.vaultproject.io/docs/configuration#disable_mlock
+sudo setcap cap_ipc_lock=+ep $(readlink -f $(which vault))
+sudo setcap cap_ipc_lock=+ep $(readlink -f /home/ubuntu/vault/vault)
+ubuntu@ubuntu:~/vault$ ./vault server -config=config.hcl
+
+Error initializing core: Failed to lock memory: cannot allocate memory #53
+https://github.com/hashicorp/docker-vault/issues/53
+
+https://learn.hashicorp.com/tutorials/vault/getting-started-deploy
+export VAULT_ADDR='http://127.0.0.1:8200'
+$ vault operator init
+$ vault operator unseal
+
+Unseal Key 1: Ak0I4OOacKcIQXXJzEgtVkypkJ2hWKfZYuBbblExESR/
+Unseal Key 2: A03rOoeMRXW0e8CF8OUIo0u3xEVv0E+YMRlWBeRgBzdL
+Unseal Key 3: R8cKLBDCdEjxidmwEt494j/Cc6t1LBVPnv+nw9aWQ2Kh
+Unseal Key 4: AGZj5hxbfq/uTIpnwv6IRxjBbcfj5njphTCFwMLNtI3N
+Unseal Key 5: TQ27lsP8rtNnMuGzIBJLQEUstOTGSIGHMecQv2+HfpHG
+
+Initial Root Token: s.atat1HUoJfZFHe7tVdcv1IMz
+
+./vault auth enable -output-curl-string approle
+
+curl \
+    --header "X-Vault-Token: s.atat1HUoJfZFHe7tVdcv1IMz" \
+    --request POST \
+    --data '{ "type":"kv-v2" }' \
+    http://127.0.0.1:8200/v1/sys/mounts/secret
+
 
 ```bash
 # 开发环境
@@ -225,9 +262,6 @@ vault kv put secret/hello foo=world excited=yes
 vault kv get secret/hello
 vault kv get -format=json secret/hello | jq -r .data.data.excited
 vault kv delete secret/hello
-
-docker pull index.docker.io/library/mysql:8.0.22
-docker pull index.docker.io/library/mysql:5.7.32
 ```
 
 https://learn.hashicorp.com/tutorials/vault/getting-started-secrets-engines?in=vault/getting-started
