@@ -1,5 +1,45 @@
 # 202107
 
+## 20210712
+
+[中间件安全之WebLogic渗透](https://www.freebuf.com/vuls/278228.html)
+
+## 20210709
+
+[YApi管理平台任意代码执行漏洞](http://www.hackdig.com/07/hack-404183.htm)
+
+<https://www.pwnwiki.org/index.php?title=YApi_未授權用戶創建%26Mock遠程命令執行漏洞>
+
+[高级Mock可以获取到系统操作权限 #2099](https://github.com/YMFE/yapi/issues/2099)
+  1.9.2 引入
+  修复建议：关闭注册、关闭高级mock
+
+[CVE-2021-31810: Trusting FTP PASV responses vulnerability in Net::FTP](https://www.ruby-lang.org/en/news/2021/07/07/trusting-pasv-responses-in-net-ftp/)
+
+[CVE-2021-32066: A StartTLS stripping vulnerability in Net::IMAP](https://www.ruby-lang.org/en/news/2021/07/07/starttls-stripping-in-net-imap/)
+
+Scour - AWS Exploitation Framework
+https://www.kitploit.com/2021/07/scour-aws-exploitation-framework.html
+TODO：
+有哪些切入点？
+阿里呢？是否也有这样的工具，或也有这样的漏洞
+
+2019年黑客常用的漏洞扫描工具
+https://zhuanlan.zhihu.com/p/76261350
+openAVS
+
+Java 供应链（依赖）安全检测实践
+https://www.anquanke.com/post/id/246079
+
+梨子带你刷burpsuite官方网络安全学院靶场(练兵场)系列之服务器端漏洞篇 - Sql注入专题
+https://www.anquanke.com/post/id/245532
+
+从 RFC 规范看如何绕过 waf 上传表单
+https://paper.seebug.org/1631/
+
+emp3r0r – Linux Post Exploitation Framework
+https://reconshell.com/emp3r0r-linux-post-exploitation-framework/
+
 ## 20210708
 
 机器学习Web安全原理探究之：为何隐马尔可夫模型可用于参数异常检测

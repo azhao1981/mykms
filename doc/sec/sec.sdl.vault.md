@@ -6,6 +6,8 @@
 
 [github](https://github.com/hashicorp/vault)
 
+[gitee.com](https://gitee.com/mirrors/vault)
+
 sec\udesk.sec.kms.md
 
 https://learn.hashicorp.com/tutorials/vault/eaas-spring-demo?in=vault/app-integration
@@ -16,7 +18,19 @@ https://learn.hashicorp.com/tutorials/vault/eaas-spring-demo?in=vault/app-integr
 [云原生安全-更安全的密文管理 Vault on ACK](https://zhuanlan.zhihu.com/p/101420781)
 
 ## vault
+### vault 安全
+
+mlock: 不允许把内存数据swap到硬盘
+启封：可以理解为重启服务需要用密钥，每次重启都需要
+
+深入剖析HashiCorp Vault中的身份验证漏洞（上篇）
+https://anquan.baidu.com/article/1191
+
 ### vault 服务 开发模式
+
+当前安全版本： 1.7.3
+
+下载页面：https://www.vaultproject.io/downloads
 
 https://learn.hashicorp.com/tutorials/vault/getting-started-dev-server?in=vault/getting-started
 
@@ -26,7 +40,7 @@ https://learn.hashicorp.com/tutorials/vault/getting-started-dev-server?in=vault/
 
 ```bash
 # 直接写到客户端
-export VAULT_ADDR='http://0.0.0.0:1234'
+export VAULT_ADDR='http://0.0.0.0:8200'
 # Unseal Key 1saM6YkT1dcq4mEGUKlVLJoppaAqri7lcQMs1Ch6R8A=
 # 用于启封，但好像这里用不到，也用不了
 vault unseal 1saM6YkT1dcq4mEGUKlVLJoppaAqri7lcQMs1Ch6R8A=
@@ -41,9 +55,125 @@ Sealed          false
 
 术语：启封 在使用vault之前首先要对vault进行启封，才能对vault进行后续操作。使用上面生成的uneal-key，其实dev模式下默认是已经启封状态
 
-好像1.7.3没有unseal命令了
+启封操作见生产模式
 
-`vault unseal xxx`
+### vault 生产模式
+
+1 生产模式需要先锁定共享内存片段
+
+```bash
+sudo setcap cap_ipc_lock=+ep $(readlink -f /home/ubuntu/vault/bin/vault)
+# /home/ubuntu/vault/bin/vault 为vault应用的位置
+```
+
+[setcap详解](https://www.cnblogs.com/nf01/articles/10418141.html)
+CAP_IPC_LOCK:允许锁定共享内存片段
+
+<https://github.com/hashicorp/docker-vault/issues/53>
+
+2 以生产模式启动
+
+https://learn.hashicorp.com/tutorials/vault/getting-started-deploy?in=vault/getting-started
+
+```bash
+mkdir -p vault-data
+bin/vault server -config=config.hcl
+cat config.hcl
+
+storage "raft" {
+  path    = "vault-data"
+  node_id = "node1"
+}
+
+listener "tcp" {
+  tls_disable = "true"
+  address = "0.0.0.0:8200"
+}
+
+api_addr = "http://127.0.0.1:8200"
+cluster_addr = "https://127.0.0.1:8201"
+```
+
+3 客户端
+```bash
+export VAULT_ADDR='http://0.0.0.0:8200'
+# 查看状态，看到是 Sealed true 密封状态
+bin/vault status
+Key                Value
+---                -----
+Seal Type          shamir
+Initialized        false
+Sealed             true
+
+# 初始化
+vault operator init
+# 得到5个Unseal Key和一个RootToken
+Unseal Key 1: TkAWiBruOSiNi4LdRU4TaYNcXMjkz8YLMqGUvKhw8jey
+Unseal Key 2: g888H+nSteDSu/ZxPM/Pw4n82JCsp/iSkjScDMRyz20a
+Unseal Key 3: 4eFrunG8S+fctsBLMTzOZHiJRvF+95iZMq5oFw1pykyU
+Unseal Key 4: cHYpShaKaqEneNeahPF62UBz+8AJjm1WKNjh7BObjOdL
+Unseal Key 5: yLSZdEyLPzNTm1Fsn6cmWvwV6IEWgMkudplpg//5dd6O
+
+Initial Root Token: s.sY7ICdNGJrF0TokvIjquAv1B
+
+# 启封
+vault operator unseal
+Unseal Key (will be hidden): 
+# 将上面5个中的3个UnsealKey输入,完成启封操作，可以看到 Sealed false
+Unseal Key (will be hidden): 
+Key                     Value
+---                     -----
+Seal Type               shamir
+Initialized             true
+Sealed                  false
+
+# 客户端连接
+bin/vault status
+Key                     Value
+---                     -----
+Seal Type               shamir
+Initialized             true
+Sealed                  false
+...
+
+```
+
+4 客户端操作 kv
+
+执行
+
+```bash
+bin/vault kv put secret/hello foo=world
+# * preflight capability check returned 403, please ensure client's policies grant access to path "secret/hello/"
+```
+
+这是因为没有密钥引擎`Secrets Engines`,dev模式会默认激活一个 /secret 的 kv-v2 密钥引擎
+
+**Secrets engines** are components which store, generate, or encrypt data. Secrets engines are incredibly flexible, so it is easiest to think about them in terms of their function. Secrets engines are provided some set of data, they take some action on that data, and they return a result.
+
+**密钥引擎** 是用于存储、生成或加密数据的组件。密钥引擎非常易于扩展，从他们名字上也很容易知道他们的功能。
+
+```bash
+# 查看已
+bin/vault secrets list
+Path          Type         Accessor              Description
+----          ----         --------              -----------
+cubbyhole/    cubbyhole    cubbyhole_95af5399    per-token private secret storage
+identity/     identity     identity_29e4f5cb     identity store
+sys/          system       system_e7f9df67       system endpoints used for control, policy and debugging
+# 把目录 /kv 设置为 kv 密钥引擎
+bin/vault secrets enable -path=kv kv-v2
+bin/vault kv put kv/main_mysql host=localhost username=my-app-user password=my-app-pwd
+bin/vault kv get kv/main_mysql
+bin/vault kv get --format=json kv/main_mysql
+# 返回 OK
+```
+
+### vault UI模式
+
+https://learn.hashicorp.com/tutorials/vault/getting-started-intro-ui?in=vault/getting-started-ui
+
+启封：如果vault服务重启，那么需要进行启封才能放下
 
 ### vault 客户端使用
 
@@ -51,8 +181,10 @@ https://learn.hashicorp.com/tutorials/vault/getting-started-first-secret?in=vaul
 
 ```bash
 # 写值 
-$ vault kv put secret/hello foo=world
-$ vault kv put secret/hello foo=world excited=yes
+bin/vault kv put secret/hello foo=world
+bin/vault kv put secret/hello foo=world excited=yes
+bin/vault kv put secret/main_mysql host=localhost username=my-app-user password=my-app-pwd
+
 # 取值 
 vault kv get secret/hello
 vault kv get -field=excited secret/hello
@@ -64,10 +196,9 @@ vault kv delete secret/hello
 
 [jq](https://github.com/stedolan/jq)
 
+参考： https://gitee.com/glt_2020/vault-ui
 
 ### vault api 访问
-
-
 
 [密钥管理服务Vault部署与应用介绍](https://www.secrss.com/articles/11755)
 
@@ -97,7 +228,6 @@ vault kv delete secret/hello
 
 docker pull index.docker.io/library/mysql:8.0.22
 docker pull index.docker.io/library/mysql:5.7.32
-
 ```
 
 https://learn.hashicorp.com/tutorials/vault/getting-started-secrets-engines?in=vault/getting-started
@@ -150,7 +280,6 @@ https://itnext.io/effective-secrets-with-vault-and-kubernetes-9af5f5c04d06
 
 [vault-服务器密码/证书管理工具](https://segmentfault.com/a/1190000012959727)
 
-
 ## 其它加解密 jasypt
 
 https://github.com/jasypt/jasypt
@@ -168,3 +297,24 @@ http://www.jasypt.org/download.html
 还支持什么加密算法：
 pbewithhmacsha512andaes_256 site:jasypt.org
 http://www.jasypt.org/encrypting-texts.html
+
+如何在 Kubernetes 集群中把 Vault 用起来
+https://developer.aliyun.com/article/738911
+
+
+## 编译 
+
+```bash
+git clone https://github.com/hashicorp/vault.git
+
+make bootstrap
+apt install gox
+flag provided but not defined: -gcflags
+# 这个不行，用apt
+go get github.com/mitchellh/gox
+# 需要保证 .bashrc有
+export GOPATH=$(go env GOPATH)
+export PATH=$PATH:$GOPATH/bin
+
+make dev
+```
