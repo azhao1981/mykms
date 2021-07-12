@@ -173,7 +173,17 @@ bin/vault kv get --format=json kv/main_mysql
 
 ### vault UI模式
 
-https://learn.hashicorp.com/tutorials/vault/getting-started-intro-ui?in=vault/getting-started-ui
+参考：<https://learn.hashicorp.com/tutorials/vault/getting-started-intro-ui?in=vault/getting-started-ui>
+
+启用UI组件
+config.hcl
+```bash
+ui = true
+```
+
+重启服务
+
+http://192.168.56.140:8200/ui
 
 启封：如果vault服务重启，那么需要进行启封才能放下
 
@@ -198,21 +208,25 @@ vault kv delete secret/hello
 
 [jq](https://github.com/stedolan/jq)
 
-参考： https://gitee.com/glt_2020/vault-ui
-
 ### vault api 访问
 
 [密钥管理服务Vault部署与应用介绍](https://www.secrss.com/articles/11755)
-### vault api 访问
 
-[密钥管理服务Vault部署与应用介绍](https://www.secrss.com/articles/11755)
+```bash
+export VAULT_ADDR='http://192.168.56.140:8200'
+export VAULT_TOKEN='s.sY7ICdNGJrF0TokvIjquAv1B'
+
+curl -H "X-Vault-Token: $VAULT_TOKEN" -X GET http://192.168.56.140:8200/v1/kv/data/main_mysql
+curl -H "X-Vault-Token: $VAULT_TOKEN" -X GET http://192.168.56.140:8200/v1/kv/data/main_mysql?version=1
+```
 
 ### 生产部署
+
 如果报　mlock 问题：
 https://www.vaultproject.io/docs/configuration#disable_mlock
-sudo setcap cap_ipc_lock=+ep $(readlink -f $(which vault))
-sudo setcap cap_ipc_lock=+ep $(readlink -f /home/ubuntu/vault/vault)
-ubuntu@ubuntu:~/vault$ ./vault server -config=config.hcl
+
+sudo setcap cap_ipc_lock=+ep $(readlink -f /home/ubuntu/vault/bin/vault)
+./vault server -config=config.hcl
 
 Error initializing core: Failed to lock memory: cannot allocate memory #53
 https://github.com/hashicorp/docker-vault/issues/53
@@ -232,12 +246,36 @@ Initial Root Token: s.atat1HUoJfZFHe7tVdcv1IMz
 
 ./vault auth enable -output-curl-string approle
 
+
+```bash
 curl \
     --header "X-Vault-Token: s.atat1HUoJfZFHe7tVdcv1IMz" \
     --request POST \
     --data '{ "type":"kv-v2" }' \
     http://127.0.0.1:8200/v1/sys/mounts/secret
 
+
+curl http://127.0.0.1:8200/v1/sys/init
+
+
+curl \
+    --header "X-Vault-Token: $VAULT_TOKEN" \
+    --request POST \
+    --data '{ "type":"kv-v2" }' \
+    http://127.0.0.1:8200/v1/sys/mounts/secret
+
+curl \
+    -H "X-Vault-Token: $VAULT_TOKEN" \
+    -X GET \
+    http://192.168.56.140:8200/v1/kv/data/main_mysql
+    http://192.168.56.140:8200/v1/kv/metadata/?list=true
+
+    Request URL: http://192.168.56.140:8200/v1/kv/metadata/main_mysql
+    Request URL: http://192.168.56.140:8200/v1/kv/data/main_mysql?version=1
+
+```
+
+## 其它
 
 ```bash
 # 开发环境
@@ -352,3 +390,5 @@ export PATH=$PATH:$GOPATH/bin
 
 make dev
 ```
+
+参考： https://gitee.com/glt_2020/vault-ui
