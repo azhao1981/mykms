@@ -1,5 +1,20 @@
 # 202107
 
+## 20210713
+
+DevOps流程中使用SonarQube推动代码质量优化
+https://chinalhr.github.io/post/devops-sonar-practice/
+
+基于Linux Namespaces 特性 实现的消音
+https://www.anquanke.com/post/id/246601
+
+https://github.com/dev-sec/ansible-collection-hardening
+https://github.com/dev-sec/ansible-collection-hardening/tree/master/roles/os_hardening
+https://github.com/dev-sec/ansible-collection-hardening/tree/master/roles/mysql_hardening
+https://github.com/dev-sec/ansible-collection-hardening/tree/master/roles/nginx_hardening
+https://github.com/dev-sec/ansible-collection-hardening/tree/master/roles/ssh_hardening
+https://github.com/dev-sec/ansible-ssh-hardening
+
 ## 20210712
 
 [中间件安全之WebLogic渗透](https://www.freebuf.com/vuls/278228.html)

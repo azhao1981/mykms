@@ -17,7 +17,6 @@ https://learn.hashicorp.com/tutorials/vault/eaas-spring-demo?in=vault/app-integr
 [云原生安全-更安全的密文管理 Vault on ACK](https://zhuanlan.zhihu.com/p/101420781)
 
 ## vault
-<<<<<<< HEAD
 ### vault 安全
 
 mlock: 不允许把内存数据swap到硬盘
@@ -25,8 +24,6 @@ mlock: 不允许把内存数据swap到硬盘
 
 深入剖析HashiCorp Vault中的身份验证漏洞（上篇）
 https://anquan.baidu.com/article/1191
-=======
->>>>>>> db7af43acb43029be99e3ba85daf185d24887b02
 
 ### vault 服务 开发模式
 
@@ -110,13 +107,13 @@ Sealed             true
 # 初始化
 vault operator init
 # 得到5个Unseal Key和一个RootToken
-Unseal Key 1: TkAWiBruOSiNi4LdRU4TaYNcXMjkz8YLMqGUvKhw8jey
-Unseal Key 2: g888H+nSteDSu/ZxPM/Pw4n82JCsp/iSkjScDMRyz20a
-Unseal Key 3: 4eFrunG8S+fctsBLMTzOZHiJRvF+95iZMq5oFw1pykyU
-Unseal Key 4: cHYpShaKaqEneNeahPF62UBz+8AJjm1WKNjh7BObjOdL
-Unseal Key 5: yLSZdEyLPzNTm1Fsn6cmWvwV6IEWgMkudplpg//5dd6O
+Unseal Key 1: CqMmd40ZvAelxgO+PX/umr+sVLJSzAO+jcQ/RZaPH1/H
+Unseal Key 2: znxyKoscvtjlDcbZbvfi4SUz9BJtjAjDbtCLabQK4NYb
+Unseal Key 3: 3N4Op4vE3KA+MzmXKQW8U0WnFPCVhNL7i7Ke1h6i1Ygp
+Unseal Key 4: Kc21ISabTBAFNaIm4x+qAXyoJUtBR9Rr9nNpFXjoIkkm
+Unseal Key 5: LQ1oZYdgWCYb2cncO7O4ShFSkI9sxZFwlBppve3/nZ3B
 
-Initial Root Token: s.sY7ICdNGJrF0TokvIjquAv1B
+Initial Root Token: s.66aKZChC0vMNX1cOsWPyv1lE
 
 # 启封
 vault operator unseal
@@ -187,6 +184,14 @@ http://192.168.56.140:8200/ui
 
 启封：如果vault服务重启，那么需要进行启封才能放下
 
+TIPS： 如果出现 ERROR:
+
+`Authentication failed: local node not active but active cluster node not found`
+
+这是初始化没有完成造成的，等一下就好了
+
+TIPS：用root登录，是不保存的，关闭和刷新都需要重新输入
+
 ### vault 客户端使用
 
 https://learn.hashicorp.com/tutorials/vault/getting-started-first-secret?in=vault/getting-started
@@ -213,6 +218,7 @@ vault kv delete secret/hello
 [密钥管理服务Vault部署与应用介绍](https://www.secrss.com/articles/11755)
 
 ```bash
+export VAULT_ADDR='http://127.0.0.1:8200'
 export VAULT_ADDR='http://192.168.56.140:8200'
 export VAULT_TOKEN='s.sY7ICdNGJrF0TokvIjquAv1B'
 
@@ -272,8 +278,20 @@ curl \
 
     Request URL: http://192.168.56.140:8200/v1/kv/metadata/main_mysql
     Request URL: http://192.168.56.140:8200/v1/kv/data/main_mysql?version=1
-
 ```
+
+## java client
+
+https://dzone.com/articles/spring-cloud-hashicorp-vault-hello-world-example
+
+https://spring.io/projects/spring-vault#samples
+
+https://github.com/mp911de/spring-cloud-vault-config-samples
+
+Cannot download 'https://start.spring.io': connect timed out
+有时会报这个，需要设置一下proxy
+
+Error while fetching metadata from server 'https://start-scs.cfapps.io'
 
 ## 其它
 

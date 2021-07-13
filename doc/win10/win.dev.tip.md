@@ -697,3 +697,10 @@ https://blog.csdn.net/littlehaes/article/details/104879476
 1 windows预览体验计划 需要这个，暂时没有
 wsl --update
 https://github.com/microsoft/wslg
+
+## 86 vscode `正在下载 C/C++ language components`
+
+vscode 解决正在下载程序包“C/C++ language components (Linux / x86_64)” 失败引起的符号找不到问题
+https://blog.csdn.net/chenwr2018/article/details/115774007
+cpptools
+https://github.com/microsoft/vscode-cpptools/releases
