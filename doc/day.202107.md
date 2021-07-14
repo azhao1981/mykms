@@ -1,5 +1,11 @@
 # 202107
 
+## 20210714
+sonarQube+ci
+https://cloud.tencent.com/developer/article/1649610
+https://www.cnblogs.com/zoujiaojiao/p/14480359.html
+https://cloud.tencent.com/developer/article/1523270
+
 ## 20210713
 
 DevOps流程中使用SonarQube推动代码质量优化
