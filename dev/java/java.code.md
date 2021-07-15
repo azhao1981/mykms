@@ -1,5 +1,21 @@
 # java code tips
 
+## Java 注解（Annotation）
+https://www.runoob.com/w3cnote/java-annotation.html
+
+定义注解
+https://www.liaoxuefeng.com/wiki/1252599548343744/1265102803921888
+
+
+## Configuration、
+SpringBoot - @Configuration、@Bean注解的使用详解（配置类的实现）
+https://www.hangge.com/blog/cache/detail_2506.html
+
+### bean
+
+[JavaBean](https://www.liaoxuefeng.com/wiki/1252599548343744/1260474416351680)
+
+
 ## exception
 
 import java.io.UnsupportedEncodingException;

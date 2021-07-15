@@ -27,7 +27,14 @@ Github仓库：https://github.com/cilium/cilium
 Docker容器的漏洞分析与安全研究
 https://www.anquanke.com/post/id/229487
 
+## k8s
 
+[浅谈云安全之K8S](https://www.anquanke.com/post/id/245526)
+
+Secret 有三种类型：
+Service Account : 用来访问Kubernetes API，由Kubernetes自动创建，并且会自动挂载到Pod的/run/secrets/kubernetes.io/serviceaccount目录中；
+Opaque : base64编码格式的Secret，用来存储密码、密钥等；
+kubernetes.io/dockerconfigjson : 用来存储私有docker registry的认证信息。
 
 ## tools
 

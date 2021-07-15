@@ -1,5 +1,18 @@
 # 202107
 
+## 20210715
+
+[廖雪峰 Spring开发](https://www.liaoxuefeng.com/wiki/1252599548343744/1266263217140032)
+
+合规之风已起| 解读《网络产品安全漏洞管理规定》
+https://www.freebuf.com/articles/neopoints/280670.html
+网络运营者
+要求：
+建立健全网络产品安全漏洞信息接收渠道并保持畅通
+留存网络产品安全漏洞信息接收日志不少于6个月
+
+发现或者获知其网络、信息系统及其设备存在安全漏洞后，立即采取措施，及时对安全漏洞进行验证并完成修补。
+
 ## 20210714
 sonarQube+ci
 https://cloud.tencent.com/developer/article/1649610

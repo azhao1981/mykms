@@ -252,7 +252,6 @@ Initial Root Token: s.atat1HUoJfZFHe7tVdcv1IMz
 
 ./vault auth enable -output-curl-string approle
 
-
 ```bash
 curl \
     --header "X-Vault-Token: s.atat1HUoJfZFHe7tVdcv1IMz" \
@@ -282,6 +281,13 @@ curl \
 
 ## java client
 
+https://spring.io/guides/gs/vault-config/
+
+$ export export VAULT_TOKEN="00000000-0000-0000-0000-000000000000"
+$ export VAULT_ADDR="http://127.0.0.1:8200"
+$ vault kv put secret/gs-vault-config example.username=demouser example.password=demopassword
+$ vault kv put secret/gs-vault-config/cloud example.username=clouduser example.password=cloudpassword
+
 https://dzone.com/articles/spring-cloud-hashicorp-vault-hello-world-example
 
 https://spring.io/projects/spring-vault#samples
@@ -289,7 +295,8 @@ https://spring.io/projects/spring-vault#samples
 https://github.com/mp911de/spring-cloud-vault-config-samples
 
 Cannot download 'https://start.spring.io': connect timed out
-有时会报这个，需要设置一下proxy
+
+有时会报这个，需要设置一下 proxy
 
 Error while fetching metadata from server 'https://start-scs.cfapps.io'
 
