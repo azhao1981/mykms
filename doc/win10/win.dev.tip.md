@@ -704,3 +704,50 @@ vscode 解决正在下载程序包“C/C++ language components (Linux / x86_64)�
 https://blog.csdn.net/chenwr2018/article/details/115774007
 cpptools
 https://github.com/microsoft/vscode-cpptools/releases
+
+## 华为鼠标
+
+找不到鼠标，或希望重新配对：把开关往下按三秒
+
+## 华为鼠标失灵
+法1.点击 windows 图标>设置图标，在"设置"的界面中点击"设备>蓝牙和其他设备"，删除已配对的蓝牙鼠标；
+接着右键点击 windows 图标,选择"设备管理器"。在"设备管理器"窗口中点击"蓝牙"，右键点击"英特尔( R )无线 Bluetooth ( R )右键"，选择"禁用设备"后再"启动设备"；
+最后再次前往"设置"界面重新配对蓝牙鼠标。
+法2.电脑完全关机，点开机键后不停按F2进bios，关了蓝牙，保存启动系统，设备管理器刷新，再完全关机，进bios打开蓝牙就好了
+
+https://club.huawei.com/thread-20414891-1-1.html
+法3.取消勾选"允许计算机关闭此设备以节约电源( A )"可能可以解决蓝牙鼠标链接中断的问题https://cn.club.vmall.com/forum. ... ge=1&prevpage=1
+
+没有电源管理的问题：
+
+https://consumer.huawei.com/cn/support/content/zh-cn00734699/
+
+[win10新版蓝牙驱动没有电源管理问题](https://bbs.huaweicloud.com/blogs/280117)
+
+priv\win10.蓝牙电源管理.reg
+
+如果还不行按注册表路径比对PID，修正路径。设备管理器/设备/属性/事件 可以查看pid。
+
+最新：2021/7/18 23:42:12
+已配置设备 USB\VID_8087&PID_0AAA\5&1cec4248&0&10。
+
+看到： 
+  设备 USB\VID_8087&PID_0AAA\5&1cec4248&0&10 需要进一步安装。
+
+如何修理：设备需要进一步安装
+http://windowsbulletin.com/zh-CN/%E5%A6%82%E4%BD%95%E4%BF%AE%E5%A4%8D%E8%AE%BE%E5%A4%87%E9%9C%80%E8%A6%81%E8%BF%9B%E4%B8%80%E6%AD%A5%E5%AE%89%E8%A3%85/
+结果：不处理，这是很久以前的错误
+
+键盘自己好了，键盘好像也会很快关闭，但点一下就好了
+
+鼠标则是在使用中也会在几秒内停止
+
+蓝牙鼠标发生断开的问题一般都是由于驱动不兼容造成的，建议您在安全模式中到设备管理器里卸载驱动，然后再重新安装官方的驱动程序进行安装。
+
+安全模式：
+
+将鼠标移动到右下角，呼出超级菜单，点击设置，点击电源，Shift+重启键。
+重启后会进入一个新的菜单，点击疑难解答——高级选项——启动设置——重启
+重启后按照提示按键盘上的数字进入安全模式。
+
+https://answers.microsoft.com/zh-hans/windows/forum/all/%E8%93%9D%E7%89%99%E9%BC%A0%E6%A0%87%E7%BB%8F/8235611d-7281-49be-97d9-8db1a0561379

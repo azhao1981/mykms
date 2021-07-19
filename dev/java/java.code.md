@@ -11,6 +11,32 @@ https://www.liaoxuefeng.com/wiki/1252599548343744/1265102803921888
 SpringBoot - @Configuration、@Bean注解的使用详解（配置类的实现）
 https://www.hangge.com/blog/cache/detail_2506.html
 
+spring框架中的@Import注解
+https://segmentfault.com/a/1190000011068471
+@Import 是被用来整合所有在@Configuration注解中定义的bean配置。
+这其实很像我们将多个XML配置文件导入到单个文件的情形。
+@Import注解实现了相同的功能。
+
+### Illegal character in scheme name at index 0
+
+错：
+
+vault.uri="http://192.168.56.140:8200"
+
+fixed:
+
+vault.uri=http://192.168.56.140:8200
+
+参考： https://stackoverflow.com/questions/15151613/java-lang-illegalargumentexception-illegal-character-in-scheme-at-index-0/15151968
+
+### random
+
+
+UUID random = UUID.randomUUID();
+System.out.println( random );
+
+https://stackoverflow.com/questions/7111651/how-to-generate-a-secure-random-alphanumeric-string-in-java-efficiently
+
 ### bean
 
 [JavaBean](https://www.liaoxuefeng.com/wiki/1252599548343744/1260474416351680)

@@ -1,5 +1,53 @@
 # 202107
 
+## 20210719
+
+
+
+更适应DevOps的被动式漏洞检测产品技术研究及架构设计
+https://www.freebuf.com/articles/es/280227.html
+
+Struts2漏洞复现合集
+https://www.freebuf.com/articles/web/280245.html
+Struts2-001 远程代码执行漏洞浅析
+https://www.anquanke.com/post/id/246100
+
+## 20210716
+
+https://cisofy.com/lynis/
+Lynis is a battle-tested security tool for systems running Linux, macOS, or Unix-based operating system. 
+It performs an extensive health scan of your systems to support system hardening and compliance testing. 
+The project is open source software with the GPL license and available since 2007.
+
+https://github.com/apache/airflow
+Apache Airflow - A platform to programmatically author, schedule, and monitor workflows
+
+Record CS knowlegement with XMind, version 2.0. 使用 XMind 记录 Linux 操作系统，网络，C++，Golang 以及数据库的一些设计
+https://github.com/SmartKeyerror/Psyduck
+Record CS knowledge with XMind
+https://github.com/SmartKeyerror/ZeroMind
+
+Kratos 一套轻量级 Go 微服务框架，包含大量微服务相关框架及工具。
+https://github.com/go-kratos/kratos/blob/main/README_zh.md
+
+https://github.com/cloudwego/kitex
+Kitex 字节跳动内部的 Golang 微服务 RPC 框架，具有高性能、强可扩展的特点，针对字节内部做了定制扩展。如今越来越多的微服务选择使用 Golang，我们考虑将 Kitex 开源出来丰富开源社区。如果对微服务性能有要求，又希望定制扩展融入自己的治理体系，Kitex 会是一个不错的选择。
+https://gitee.com/mirrors_trending/kitex
+
+这可能是史上功能最全的Java权限认证框架！目前已集成——登录认证、权限认证、分布式Session会话、微服务网关鉴权、单点登录、OAuth2.0、踢人下线、Redis集成、前后台分离、记住我模式、模拟他人账号、临时身份切换、账号封禁、多账号认证体系、注解式鉴权、路由拦截式鉴权、花式token生成、自动续签、同端互斥登录、会话治理、密码加密、jwt集成、Spring集成、WebFlux集成...
+https://github.com/dromara/Sa-Token
+
+⚡机器学习实战（Python3）：kNN、决策树、贝叶斯、逻辑回归、SVM、线性回归、树回归
+https://github.com/Jack-Cherish/Machine-Learning
+
+Active Record Encryption
+https://hint.io/blog/Active-Record-Encryption
+
+Gems, Plugins, Engines, and Mountable Engines: 4 ways to make a Gem.
+https://existentialmutt.com/2021/07/01/4-ways-to-make-a-gem/
+
+https://chartkick.com/
+
 ## 20210715
 
 [廖雪峰 Spring开发](https://www.liaoxuefeng.com/wiki/1252599548343744/1266263217140032)

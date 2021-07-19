@@ -1,5 +1,54 @@
 # linux 漏洞
 
+## CVE-2021-22555
+
+Linux Kernel 2.6.19 < 5.9 - 'Netfilter Local Privilege Escalation
+ * CVE-2021-22555: Turning \x00\x00 into 10000$
+https://www.exploit-db.com/exploits/50135
+
+【PoC公开】CVE-2021-22555: Linux Netfilter本地权限提升漏洞通告
+https://cert.360.cn/warning/detail?id=9aaeeb871ad88f4a243e35be47249d4b
+简述: Linux 内核模块Netfilter中存在一处权限提升漏洞，
+在在64 位系统上为 32 位进程处理 setsockopt IPT_SO_SET_REPLACE（或 IP6T_SO_SET_REPLACE）时，
+如果内核选项CONFIG_USER_NS 、CONFIG_NET_NS被开启，则攻击者可以通过该漏洞实现权限提升，
+以及从docker、k8s容器中实施容器逃逸。
+
+安全版本：5.12，5.10.31, 5.4.113, 4.19.188, 4.14.231, 4.9.267, 4.4.267
+
+### 爆破尝试：
+
+dev机器上，无法暴破
+Linux ubuntu 4.15.0-150-generic #155-Ubuntu SMP Sat Jul 3 13:37:31 UTC 2021 x86_64 x86_64 x86_64 GNU/Linux
+wsl 版本：
+Linux LAPTOP-AZHAOHW 4.4.0-19041-Microsoft #488-Microsoft Mon Sep 01 13:43:00 PST 2020 x86_64 GNU/Linux
+也不能执行
+某台机器上爆破没有成功，进程卡死，无法杀死，程序ps 看到的是[exploit]
+这么说已经进入内核，只是没有办法放出shell
+
+[[ ]括起来的进程属于内核进程，无cmdline](https://blog.csdn.net/weixin_44207985/article/details/107063070)
+
+vuls:
+Linux ubuntu 4.15.0-145-generic #149-Ubuntu SMP Fri May 28 15:52:34 UTC 2021 x86_64 x86_64 x86_64 GNU/Linux
+[-] Error could not corrupt any primary message.
+
+临时修补建议
+根据 RedHat 的建议，用户可以实施以下操作通过禁用非特权用户执行CLONE_NEWUSER、CLONE_NEWNET，以缓解该漏洞带来的影响
+`echo 0 > /proc/sys/user/max_user_namespaces`
+
+https://gitee.com/mirrors_google/security-research.git
+https://github.com/google/security-research.git
+
+gcc -m32 -static -o exploit exploit.c
+
+/usr/include/features.h:424:12: fatal error: sys/cdefs.h: No such file or directory
+
+Try these:
+sudo apt-get purge libc6-dev
+sudo apt-get install libc6-dev
+
+In case of -m32:
+sudo apt-get install libc6-dev-i386
+
 ## CVE-2021-3493
 
 Ubuntu OverlayFS Local Privesc
@@ -10,7 +59,7 @@ POC
 https://github.com/briskets/CVE-2021-3493
 https://github.com/Al1ex/LinuxEelvation/tree/master/CVE-2021-3493
 
-这个漏洞很新很厉害，基本上都能成功
+**这个漏洞很新很厉害，基本上都能成功**
 
 [CVE-2021-3493 Ubuntu内核OverlayFS权限逃逸漏洞分析](https://www.anquanke.com/post/id/240030)
 

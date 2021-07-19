@@ -168,6 +168,19 @@ bin/vault kv get --format=json kv/main_mysql
 # 返回 OK
 ```
 
+### vault 存储于 Mysql
+
+https://www.vaultproject.io/docs/configuration/storage/mysql
+
+```hcl
+storage "mysql" {
+  address = ""
+  username = "root"
+  password = "udesk321456"
+  database = "vault"
+}
+```
+
 ### vault UI模式
 
 参考：<https://learn.hashicorp.com/tutorials/vault/getting-started-intro-ui?in=vault/getting-started-ui>
@@ -280,6 +293,11 @@ curl \
 ```
 
 ## java client
+
+https://docs.spring.io/spring-vault/docs/2.3.1/reference/html/
+
+https://cloud.spring.io/spring-cloud-vault/reference/html/
+https://cloud.spring.io/spring-cloud-config/reference/html/
 
 https://spring.io/guides/gs/vault-config/
 
