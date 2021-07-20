@@ -1,8 +1,17 @@
 # 202107
 
+## 20210720
+
+老生常谈的无字母数字 Webshell 总结
+https://www.freebuf.com/articles/network/279563.html
+
+区块链协议安全系列——当拜占庭将军犯错时，区块链共识还安全么？（上集）
+https://paper.seebug.org/1643/
+
+简易 Linux Rootkit 编写入门指北（一）：模块隐藏与进程提权
+https://www.anquanke.com/post/id/246749
+
 ## 20210719
-
-
 
 更适应DevOps的被动式漏洞检测产品技术研究及架构设计
 https://www.freebuf.com/articles/es/280227.html

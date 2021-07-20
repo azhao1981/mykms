@@ -229,10 +229,7 @@ https://github.com/phodal/ideabook
 
 ## 0622
 
-nacos-console配置敏感数据持久化加密存储 #492
-https://github.com/alibaba/nacos/issues/492
-https://github.com/alibaba/nacos/issues/5695
-[Summer 2021] Add a plugin SPI for configuration encryption and decryption for Nacos 2.0 #5695
+
 
 
 Spring Boot： 加密应用配置文件敏感信息

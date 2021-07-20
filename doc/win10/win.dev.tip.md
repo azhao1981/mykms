@@ -705,7 +705,7 @@ https://blog.csdn.net/chenwr2018/article/details/115774007
 cpptools
 https://github.com/microsoft/vscode-cpptools/releases
 
-## 华为鼠标
+## 86 华为鼠标
 
 找不到鼠标，或希望重新配对：把开关往下按三秒
 
@@ -742,7 +742,8 @@ http://windowsbulletin.com/zh-CN/%E5%A6%82%E4%BD%95%E4%BF%AE%E5%A4%8D%E8%AE%BE%E
 
 鼠标则是在使用中也会在几秒内停止
 
-蓝牙鼠标发生断开的问题一般都是由于驱动不兼容造成的，建议您在安全模式中到设备管理器里卸载驱动，然后再重新安装官方的驱动程序进行安装。
+蓝牙鼠标发生断开的问题一般都是由于驱动不兼容造成的，建
+议您在安全模式中到设备管理器里卸载驱动，然后再重新安装官方的驱动程序进行安装。
 
 安全模式：
 
@@ -751,3 +752,9 @@ http://windowsbulletin.com/zh-CN/%E5%A6%82%E4%BD%95%E4%BF%AE%E5%A4%8D%E8%AE%BE%E
 重启后按照提示按键盘上的数字进入安全模式。
 
 https://answers.microsoft.com/zh-hans/windows/forum/all/%E8%93%9D%E7%89%99%E9%BC%A0%E6%A0%87%E7%BB%8F/8235611d-7281-49be-97d9-8db1a0561379
+
+## 87 键盘不灵
+
+键盘大回车键不灵解决方法【微软拼音】
+https://www.bilibili.com/s/video/BV1hK4y1x7cL
+

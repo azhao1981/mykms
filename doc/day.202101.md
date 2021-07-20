@@ -695,9 +695,7 @@ https://github.com/git-lfs/git-lfs/commit/fc664697ed2c2081ee9633010de0a7f9debea7
 
 
 
-Nacos 1.4.1 修复指定特殊 UA 可绕过所有鉴权的安全漏洞
-https://www.oschina.net/news/126592/nacos-1-4-1-released
-https://www.secrss.com/articles/28723
+
 
 基于抽象语法树和深度学习的高效漏洞检测方法
 https://www.anquanke.com/post/id/221892

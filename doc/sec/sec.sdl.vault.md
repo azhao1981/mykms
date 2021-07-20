@@ -1,37 +1,38 @@
 # vault
 
 [主页](https://www.vaultproject.io/)
+| [docker](https://hub.docker.com/_/vault)
+| [github](https://github.com/hashicorp/vault)
+| [gitee.com](https://gitee.com/mirrors/vault)
 
-[docker](https://hub.docker.com/_/vault)
+<!-- sec\udesk.sec.kms.md -->
 
-[github](https://github.com/hashicorp/vault)
+## 教程
 
-[gitee.com](https://gitee.com/mirrors/vault)
+[加密服务集成](https://learn.hashicorp.com/tutorials/vault/eaas-spring-demo?in=vault/app-integration)
 
-sec\udesk.sec.kms.md
+[视频教程| Introduction to HashiCorp Vault with Armon Dadgar](https://www.youtube.com/watch?v=VYfl-DpZ5wM)
 
-https://learn.hashicorp.com/tutorials/vault/eaas-spring-demo?in=vault/app-integration
-
-[Introduction to HashiCorp Vault with Armon Dadgar](https://www.youtube.com/watch?v=VYfl-DpZ5wM)
-
-[云原生安全-更安全的密文管理 Vault on ACK](https://zhuanlan.zhihu.com/p/101420781)
+[K8s集成|云原生安全-更安全的密文管理 Vault on ACK](https://zhuanlan.zhihu.com/p/101420781)
 
 ## vault
+
+### 术语
+
+**mlock:** 不允许把内存数据swap到硬盘
+
+**启封：** 可以理解为重启服务需要用密钥，每次重启都需要
 ### vault 安全
 
-mlock: 不允许把内存数据swap到硬盘
-启封：可以理解为重启服务需要用密钥，每次重启都需要
-
-深入剖析HashiCorp Vault中的身份验证漏洞（上篇）
-https://anquan.baidu.com/article/1191
+[深入剖析HashiCorp Vault中的身份验证漏洞（上篇）](https://anquan.baidu.com/article/1191)
 
 ### vault 服务 开发模式
 
-当前安全版本： 1.7.3
+**当前安全版本：** 1.7.3
 
 下载页面：https://www.vaultproject.io/downloads
 
-https://learn.hashicorp.com/tutorials/vault/getting-started-dev-server?in=vault/getting-started
+<https://learn.hashicorp.com/tutorials/vault/getting-started-dev-server?in=vault/getting-started>
 
 `vault server -dev`
 
@@ -58,7 +59,7 @@ Sealed          false
 
 ### vault 生产模式
 
-1 生产模式需要先锁定共享内存片段
+#### 1 生产模式需要先锁定共享内存片段
 
 ```bash
 sudo setcap cap_ipc_lock=+ep $(readlink -f /home/ubuntu/vault/bin/vault)
@@ -70,7 +71,7 @@ CAP_IPC_LOCK:允许锁定共享内存片段
 
 <https://github.com/hashicorp/docker-vault/issues/53>
 
-2 以生产模式启动
+#### 2 以生产模式启动
 
 https://learn.hashicorp.com/tutorials/vault/getting-started-deploy?in=vault/getting-started
 
@@ -93,7 +94,10 @@ api_addr = "http://127.0.0.1:8200"
 cluster_addr = "https://127.0.0.1:8201"
 ```
 
-3 客户端
+#### 3 客户端
+
+`vault` 程序即是服务端,也是客户端
+
 ```bash
 export VAULT_ADDR='http://0.0.0.0:8200'
 # 查看状态，看到是 Sealed true 密封状态
@@ -137,7 +141,7 @@ Sealed                  false
 
 ```
 
-4 客户端操作 kv
+#### 4 客户端操作 kv
 
 执行
 
@@ -186,7 +190,8 @@ storage "mysql" {
 参考：<https://learn.hashicorp.com/tutorials/vault/getting-started-intro-ui?in=vault/getting-started-ui>
 
 启用UI组件
-config.hcl
+
+`config.hcl`
 ```bash
 ui = true
 ```
@@ -197,7 +202,7 @@ http://192.168.56.140:8200/ui
 
 启封：如果vault服务重启，那么需要进行启封才能放下
 
-TIPS： 如果出现 ERROR:
+TIPS： 如果出现 `ERROR`:
 
 `Authentication failed: local node not active but active cluster node not found`
 
@@ -228,6 +233,8 @@ vault kv delete secret/hello
 
 ### vault api 访问
 
+可以使用curl访问
+
 [密钥管理服务Vault部署与应用介绍](https://www.secrss.com/articles/11755)
 
 ```bash
@@ -242,15 +249,20 @@ curl -H "X-Vault-Token: $VAULT_TOKEN" -X GET http://192.168.56.140:8200/v1/kv/da
 ### 生产部署
 
 如果报　mlock 问题：
+
 https://www.vaultproject.io/docs/configuration#disable_mlock
 
+```bash
 sudo setcap cap_ipc_lock=+ep $(readlink -f /home/ubuntu/vault/bin/vault)
 ./vault server -config=config.hcl
+```
 
 Error initializing core: Failed to lock memory: cannot allocate memory #53
 https://github.com/hashicorp/docker-vault/issues/53
 
 https://learn.hashicorp.com/tutorials/vault/getting-started-deploy
+
+```bash
 export VAULT_ADDR='http://127.0.0.1:8200'
 $ vault operator init
 $ vault operator unseal
@@ -294,17 +306,21 @@ curl \
 
 ## java client
 
-https://docs.spring.io/spring-vault/docs/2.3.1/reference/html/
+[spring-vault](https://docs.spring.io/spring-vault/docs/2.3.1/reference/html/)
+
 
 https://cloud.spring.io/spring-cloud-vault/reference/html/
+
 https://cloud.spring.io/spring-cloud-config/reference/html/
 
 https://spring.io/guides/gs/vault-config/
 
+```bash
 $ export export VAULT_TOKEN="00000000-0000-0000-0000-000000000000"
 $ export VAULT_ADDR="http://127.0.0.1:8200"
 $ vault kv put secret/gs-vault-config example.username=demouser example.password=demopassword
 $ vault kv put secret/gs-vault-config/cloud example.username=clouduser example.password=cloudpassword
+```
 
 https://dzone.com/articles/spring-cloud-hashicorp-vault-hello-world-example
 
@@ -354,6 +370,7 @@ https://www.vaultproject.io/docs/configuration/storage/alicloudoss
 
 看来只有min.io来完成
 
+```bash
 vault write alicloud/role/policy-based \
     inline_policies=-<<EOF
 [
@@ -369,10 +386,13 @@ vault write alicloud/role/policy-based \
     }
 ]
 EOF
+```
 
 默认：
 
+```bash
 vault server -config=/vault/config -dev-root-token-id= -dev-listen-address=0.0.0.0:8200 -dev
+```
 
 https://www.vaultproject.io/docs/secrets/alicloud
 
@@ -380,16 +400,15 @@ k8s有一个 Native Kubernetes Secrets，但安全性很差，base64加密
 https://kubernetes.io/docs/tasks/inject-data-application/distribute-credentials-secure/
 
 正常情况下要考虑： vault+k8s
+
 Kubernetes External Secrets allows you to use external secret management systems, like AWS Secrets Manager or HashiCorp Vault, to securely add secrets in Kubernetes.
 https://github.com/external-secrets/kubernetes-external-secrets
 
-Kubernetes Secret vs. Vault
-https://medium.com/@harsh.manvar111/kubernetes-secret-vs-vault-fb57d75ce553
-Injecting Vault Secrets Into Kubernetes Pods via a Sidecar
-https://www.hashicorp.com/blog/injecting-vault-secrets-into-kubernetes-pods-via-a-sidecar
-Effective Secrets with Vault and Kubernetes
-https://itnext.io/effective-secrets-with-vault-and-kubernetes-9af5f5c04d06
+[Kubernetes Secret vs. Vault](https://medium.com/@harsh.manvar111/kubernetes-secret-vs-vault-fb57d75ce553)
 
+[Injecting Vault Secrets Into Kubernetes Pods via a Sidecar](https://www.hashicorp.com/blog/injecting-vault-secrets-into-kubernetes-pods-via-a-sidecar)
+
+[Effective Secrets with Vault and Kubernetes](https://itnext.io/effective-secrets-with-vault-and-kubernetes-9af5f5c04d06)
 
 [stackshare对比，好像都不是同一类型的产品](https://stackshare.io/vault)
 
@@ -398,24 +417,28 @@ https://itnext.io/effective-secrets-with-vault-and-kubernetes-9af5f5c04d06
 ## 其它加解密 jasypt
 
 https://github.com/jasypt/jasypt
+
 https://github.com/ulisesbocchio/jasypt-spring-boot
 
 http://www.jasypt.org/download.html
+
 https://www.jianshu.com/p/323ec96c46d2
+
 https://blog.lqdev.cn/2019/05/08/springboot/chapter-thirty-seven/
 
 https://www.geeksforgeeks.org/how-to-encrypt-passwords-in-a-spring-boot-project-using-jasypt/
-  在线加密工具： https://www.devglan.com/online-tools/jasypt-online-encryption-decryption
+
+在线加密工具： https://www.devglan.com/online-tools/jasypt-online-encryption-decryption
 
 http://www.jasypt.org/download.html
 
 还支持什么加密算法：
+
 pbewithhmacsha512andaes_256 site:jasypt.org
+
 http://www.jasypt.org/encrypting-texts.html
 
-如何在 Kubernetes 集群中把 Vault 用起来
-https://developer.aliyun.com/article/738911
-
+[如何在 Kubernetes 集群中把 Vault 用起来](https://developer.aliyun.com/article/738911)
 
 ## 编译 
 

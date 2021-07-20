@@ -1,4 +1,10 @@
 
+## idea + short key
+
+打开文件 ctrl+shift +N
+
+选中单词下一个 ctrl+F3
+
 ## idea + spring
 
 Spring Boot 中文乱码问题解决方案汇总

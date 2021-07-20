@@ -53,6 +53,25 @@ XSS 攻击可以分为3类：存储型（持久型）、反射型（非持久型
 ## 怎么防御
 我们做了哪些？
 
+https://www.baeldung.com/spring-prevent-xss
+
+https://owasp.org/www-project-enterprise-security-api/
+ESAPI (The OWASP Enterprise Security API) is a free, open source, web application security control library that makes it easier for programmers to write lower-risk applications. The ESAPI libraries are designed to make it easier for programmers to retrofit security into existing applications. The ESAPI libraries also serve as a solid foundation for new development.
+
+https://mvnrepository.com/artifact/org.owasp.esapi/esapi
+
+这个是spring的官方包,有不少是header的功能
+https://docs.spring.io/spring-security/site/docs/5.1.6.RELEASE/reference/html/web-app-security.html
+
+这里也有一些header上保护xss的
+Preventing XSS in Spring Boot Apps
+https://phani-susarla.medium.com/preventing-xss-in-spring-boot-apps-558580340f33
+
+https://github.com/sotheareth/XSS-Filter-Spring
+
+Spring MVC Xss Filter
+https://www.javatt.com/p/33781
+http://opensource.finn.no/xss-html-filter/
 
 ## 
 
