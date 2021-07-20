@@ -11,9 +11,9 @@
 
 [加密服务集成](https://learn.hashicorp.com/tutorials/vault/eaas-spring-demo?in=vault/app-integration)
 
-[视频教程| Introduction to HashiCorp Vault with Armon Dadgar](https://www.youtube.com/watch?v=VYfl-DpZ5wM)
+[视频教程 | Introduction to HashiCorp Vault with Armon Dadgar](https://www.youtube.com/watch?v=VYfl-DpZ5wM)
 
-[K8s集成|云原生安全-更安全的密文管理 Vault on ACK](https://zhuanlan.zhihu.com/p/101420781)
+[K8s集成 | 云原生安全-更安全的密文管理 Vault on ACK](https://zhuanlan.zhihu.com/p/101420781)
 
 ## vault
 
@@ -306,8 +306,33 @@ curl \
 
 ## java client
 
-[spring-vault](https://docs.spring.io/spring-vault/docs/2.3.1/reference/html/)
+以下MYsql信息为列
 
+```
+host: 192.168.56.140
+username: myapp-user
+password: myapp-password
+```
+
+### mysql+mybatis+spring
+
+spring + mysql
+
+https://www.codejava.net/frameworks/spring-boot/connect-to-mysql-database-examples
+
+
+[mybatis-plus思维导图，让mybatis-plus不再难懂](https://bbs.huaweicloud.com/blogs/218425)
+> mybatis-plus 内置SQL注入剥离器
+
+[开源项目spring-shiro-training思维导图，让项目不再难懂](https://cloud.tencent.com/developer/article/1062586)
+
+[MyBatis思维导图](https://www.processon.com/view/60346a4b6376896cd6ec03ac#map)
+
+mybatis思维导图整理
+https://developer.aliyun.com/article/659669
+
+
+[spring-vault](https://docs.spring.io/spring-vault/docs/2.3.1/reference/html/)
 
 https://cloud.spring.io/spring-cloud-vault/reference/html/
 
@@ -328,11 +353,11 @@ https://spring.io/projects/spring-vault#samples
 
 https://github.com/mp911de/spring-cloud-vault-config-samples
 
+idea `error`:
+
 Cannot download 'https://start.spring.io': connect timed out
 
 有时会报这个，需要设置一下 proxy
-
-Error while fetching metadata from server 'https://start-scs.cfapps.io'
 
 ## 其它
 
@@ -360,11 +385,11 @@ vault kv get secret/hello
 vault kv get -format=json secret/hello | jq -r .data.data.excited
 vault kv delete secret/hello
 ```
-
 https://learn.hashicorp.com/tutorials/vault/getting-started-secrets-engines?in=vault/getting-started
 
 https://www.vaultproject.io/docs/secrets/alicloud
 这个没有oss的详细例子
+
 https://www.vaultproject.io/docs/configuration/storage/alicloudoss
 这个好像是把数据存在上面，而不是取得一个oss的签名
 
