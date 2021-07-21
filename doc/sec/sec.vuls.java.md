@@ -32,6 +32,10 @@ https://www.jianshu.com/p/ffe5ebe17c3a
 
 ## Struts2
 
+[Struts2漏洞复现合集](https://www.freebuf.com/articles/web/280245.html)
+
+[Struts2-001 远程代码执行漏洞浅析](https://www.anquanke.com/post/id/246100)
+
 + [x] Struts2 真的落后了吗? 是 https://github.com/apache/struts/releases 基本不更新了
 + [ ] 现在流行的又是什么? Spring+SpringMVC+Mybatis
 

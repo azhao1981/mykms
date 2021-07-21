@@ -15,8 +15,7 @@
 
 [K8s集成 | 云原生安全-更安全的密文管理 Vault on ACK](https://zhuanlan.zhihu.com/p/101420781)
 
-## vault
-
+## vault 安装和使用
 ### 术语
 
 **mlock:** 不允许把内存数据swap到硬盘
@@ -314,6 +313,69 @@ username: myapp-user
 password: myapp-password
 ```
 
+
+```xml
+<dependency>
+  <groupId>org.springframework.boot</groupId>
+  <artifactId>spring-boot-starter-data-jpa</artifactId>
+</dependency>
+```
+
+```java
+spring.datasource.driver-class-name=com.mysql.cj.jdbc.Driver
+spring.jpa.hibernate.ddl-auto=update
+spring.jpa.show-sql=true
+spring.jpa.properties.hibernate.format_sql=true
+spring.jpa.properties.hibernate.dialect=org.hibernate.dialect.MySQL8Dialect
+
+  @Autowired
+  private UserRepository repo;
+  
+  @GetMapping("/users")
+  public String listAll() {
+    List<User> listUsers = repo.findAll();
+    JSONObject responseDetailsJson = new JSONObject();
+		JSONArray jsonArray = new JSONArray();
+		for (User user : listUsers) {
+			JSONObject formDetailsJson = new JSONObject();
+			formDetailsJson.put("id", user.getId());
+			formDetailsJson.put("fullname", user.getFullname());
+			formDetailsJson.put("email", user.getEmail());
+			jsonArray.put(formDetailsJson);
+		}
+		responseDetailsJson.put("code", 200);
+		responseDetailsJson.put("users", jsonArray);
+		return responseDetailsJson.toString();
+  }
+```
+
+```sql
+CREATE TABLE `users` (
+	`id` INT(10) NOT NULL DEFAULT '0',
+	`fullname` VARCHAR(225) NULL DEFAULT NULL COLLATE 'utf8mb4_bin',
+	`email` VARCHAR(225) NULL DEFAULT NULL COLLATE 'utf8mb4_bin',
+	`password` VARCHAR(225) NULL DEFAULT NULL COLLATE 'utf8mb4_bin',
+	`username` VARCHAR(255) NULL DEFAULT NULL COLLATE 'utf8mb4_bin',
+	PRIMARY KEY (`id`) USING BTREE
+)
+COLLATE='utf8mb4_bin'
+ENGINE=InnoDB;
+```
+
+```java
+@Entity
+@Table(name = "users")
+public class User {
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private Long id;
+//    private String username;
+    private String email;
+    private String password;
+}
+
+```
+
 ### mysql+mybatis+spring
 
 spring + mysql
@@ -358,6 +420,10 @@ idea `error`:
 Cannot download 'https://start.spring.io': connect timed out
 
 有时会报这个，需要设置一下 proxy
+
+### spring cloud vault
+
+https://www.techgeeknext.com/spring-boot/spring-cloud-vault
 
 ## 其它
 
