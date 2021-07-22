@@ -1,5 +1,19 @@
 # 202107
 
+## 20210722
+
+https://zhuanlan.zhihu.com/p/78328450
+利用 Python3 来实现 Metasploit 自动化
+
+[前沿视角盘点：谷歌安全研究室都在研究什么？](https://www.freebuf.com/articles/network/280723.html)
+
+1、实验性开源依赖性分析工具：[Open Source Insights](https://deps.dev/)
+
+只有依赖包的
+
+2、开源安全计分卡工具： [Scorecard v2](https://github.com/ossf/scorecard)
+https://security.googleblog.com/2021/07/measuring-security-risks-in-open-source.html
+
 ## 20210721
 
 ## 20210720
