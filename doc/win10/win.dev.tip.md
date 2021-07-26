@@ -23,10 +23,6 @@ https://www.jdbbs.com/thread-4706251-1-1.html
 
 `c:\windows\System32\drivers\etc\hosts`
 
-## 
-
-
-
 ## win10安装工具
 
 1 火绒安全  https://www.huorong.cn/
@@ -347,17 +343,23 @@ https://jingyan.baidu.com/article/1612d500632fcba30e1eeed2.html
 
 47 windows.wsl.d盘
 
-把你的子系统(WSL)搬到非系统盘	
-https://cloud.tencent.com/developer/article/1594940
+[把你的子系统(WSL)搬到非系统盘](https://cloud.tencent.com/developer/article/1594940)	
+
 https://github.com/DDoSolitary/LxRunOffline
-LxRunOffline 使用教程 - WSL 自定义安装、备份
-https://p3terx.com/archives/manage-wsl-with-lxrunoffline.html
+
+[LxRunOffline 使用教程 - WSL 自定义安装、备份](https://p3terx.com/archives/manage-wsl-with-lxrunoffline.html)
+
 
 ```bash
 LxRunOffline.exe list
-wsl -l
+wsl -l --verbose
 wsl -t Debian
+# 全部关闭
+wsl --shutdown
 .\LxRunOffline.exe m -n Debian -d D:\os\debian
+# 迁移docker-desktop
+./LxRunOffline.exe m -n docker-desktop -d D:\os\docker-desktop
+./LxRunOffline.exe m -n docker-desktop-data -d D:\os\docker-desktop-data
 ```
 
 或者看： https://blog.csdn.net/fleaxin/article/details/88587081

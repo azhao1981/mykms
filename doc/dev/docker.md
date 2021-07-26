@@ -9,6 +9,12 @@
 }
 ```
 
+镜像加速器
+https://yeasy.gitbook.io/docker_practice/install/mirror
+
+可用性测试结果：
+https://github.com/docker-practice/docker-registry-cn-mirror-test/actions
+
 ## tips
 
 rm -rf /var/lib/apt/lists/*
@@ -96,4 +102,29 @@ sudo docker pull postgres:11.11
       - postgres-data:/var/lib/postgresql/data
 volumes:
   postgres-data:
+```
+
+## mysql
+
+```bash
+# 8.0.26, 8.0, 8, latest
+docker pull mysql:8.0.26
+docker pull redis:4.0.14-alpine
+```
+
+```yml
+
+```
+
+## k8s.gcr.io
+
+例如 k8s.gcr.io/coredns:1.6.7 镜像可以用 
+
+`registry.cn-hangzhou.aliyuncs.com/google_containers/coredns:1.6.7` 代替。
+
+一般情况下有如下对应关系：
+
+```bash
+docker pull k8s.gcr.io/xxx
+docker pull registry.cn-hangzhou.aliyuncs.com/google_containers/xxx
 ```

@@ -1,9 +1,43 @@
 # 202107
 
+## 20210726
+
+Win10中Vmmem程序资源占用过高解决办法
+https://zhuanlan.zhihu.com/p/277825426
+
+知识图谱
+据Google称，知识图谱的信息来自许多来源，包括CIA的世界概况，Freebase和维基百科[1]。其功能与Ask.com和Wolfram Alpha等问题问答系统相似。
+
+https://zh.wikipedia.org/wiki/世界概况
+
+https://zh.wikipedia.org/wiki/Freebase
+
+https://github.com/googlearchive/graphd
+
+前员工揭内幕：10 年了，为何谷歌还搞不定知识图谱？
+https://www.infoq.cn/article/cdyjlgpbef-mqmie9cf7
+
+VPN 原理以及实现
+https://paper.seebug.org/1648/
+
+知识图谱及其在安全领域的应用
+https://paper.seebug.org/1649/
+
+## 20210723
+
+应急漏洞：【安全通告】Jira Data Center等多个产品远程代码执行漏洞风险通告(CVE-2020-36239) (TCSA-2021-0109) 立即查看
+
+https://console.cloud.tencent.com/sa/screen/info.html?skipWarning=true&id=TCSA-2021-0109
+
+[sqlmap源码解读（1）](https://www.anquanke.com/post/id/247450)
+
+[ISO27701个人隐私信息安全管理体系 认证经验](https://www.freebuf.com/articles/neopoints/280596.html)
+
+[App安全合规的思考（六）SDK合规](https://www.freebuf.com/articles/compliance/280167.html)
+
 ## 20210722
 
-https://zhuanlan.zhihu.com/p/78328450
-利用 Python3 来实现 Metasploit 自动化
+[利用 Python3 来实现 Metasploit 自动化](https://zhuanlan.zhihu.com/p/78328450)
 
 [前沿视角盘点：谷歌安全研究室都在研究什么？](https://www.freebuf.com/articles/network/280723.html)
 
@@ -31,11 +65,6 @@ https://security.googleblog.com/2021/07/measuring-security-risks-in-open-source.
 [更适应DevOps的被动式漏洞检测产品技术研究及架构设计](https://www.freebuf.com/articles/es/280227.html)
 
 ## 20210716
-
-https://cisofy.com/lynis/
-Lynis is a battle-tested security tool for systems running Linux, macOS, or Unix-based operating system. 
-It performs an extensive health scan of your systems to support system hardening and compliance testing. 
-The project is open source software with the GPL license and available since 2007.
 
 https://github.com/apache/airflow
 Apache Airflow - A platform to programmatically author, schedule, and monitor workflows

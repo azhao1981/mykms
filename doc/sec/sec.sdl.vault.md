@@ -49,7 +49,7 @@ export VAULT_TOKEN="myroot"
 # 查看状态
 vault status
 # 一般 dev 状态是
-Sealed          false
+Sealed false
 ```
 
 术语：启封 在使用vault之前首先要对vault进行启封，才能对vault进行后续操作。使用上面生成的uneal-key，其实dev模式下默认是已经启封状态
@@ -173,6 +173,9 @@ bin/vault kv get --format=json kv/main_mysql
 
 ### vault 存储于 Mysql
 
+```sql
+create database vault default character set utf8mb4 collate utf8mb4_unicode_ci;
+```
 https://www.vaultproject.io/docs/configuration/storage/mysql
 
 ```hcl
@@ -307,7 +310,7 @@ curl \
 
 以下MYsql信息为列
 
-```
+```yml
 host: 192.168.56.140
 username: myapp-user
 password: myapp-password
@@ -351,7 +354,7 @@ spring.jpa.properties.hibernate.dialect=org.hibernate.dialect.MySQL8Dialect
 
 ```sql
 CREATE TABLE `users` (
-	`id` INT(10) NOT NULL DEFAULT '0',
+	`id` INT(10) NOT NULL AUTO_INCREMENT,
 	`fullname` VARCHAR(225) NULL DEFAULT NULL COLLATE 'utf8mb4_bin',
 	`email` VARCHAR(225) NULL DEFAULT NULL COLLATE 'utf8mb4_bin',
 	`password` VARCHAR(225) NULL DEFAULT NULL COLLATE 'utf8mb4_bin',
@@ -360,6 +363,9 @@ CREATE TABLE `users` (
 )
 COLLATE='utf8mb4_bin'
 ENGINE=InnoDB;
+
+ALTER TABLE `users`
+	CHANGE COLUMN `id` `id` INT(10) NOT NULL AUTO_INCREMENT FIRST;
 ```
 
 ```java
@@ -378,7 +384,7 @@ public class User {
 
 ### mysql+mybatis+spring
 
-spring + mysql
+#### spring + mysql
 
 https://www.codejava.net/frameworks/spring-boot/connect-to-mysql-database-examples
 
@@ -390,9 +396,9 @@ https://www.codejava.net/frameworks/spring-boot/connect-to-mysql-database-exampl
 
 [MyBatis思维导图](https://www.processon.com/view/60346a4b6376896cd6ec03ac#map)
 
-mybatis思维导图整理
-https://developer.aliyun.com/article/659669
+[mybatis思维导图整理](https://developer.aliyun.com/article/659669)
 
+#### spring vault
 
 [spring-vault](https://docs.spring.io/spring-vault/docs/2.3.1/reference/html/)
 
@@ -409,23 +415,112 @@ $ vault kv put secret/gs-vault-config example.username=demouser example.password
 $ vault kv put secret/gs-vault-config/cloud example.username=clouduser example.password=cloudpassword
 ```
 
-https://dzone.com/articles/spring-cloud-hashicorp-vault-hello-world-example
-
 https://spring.io/projects/spring-vault#samples
 
 https://github.com/mp911de/spring-cloud-vault-config-samples
 
-idea `error`:
-
-Cannot download 'https://start.spring.io': connect timed out
-
-有时会报这个，需要设置一下 proxy
-
 ### spring cloud vault
+
+在项目中加入：
+```xml
+    <dependency>
+			<groupId>org.springframework.cloud</groupId>
+			<artifactId>spring-cloud-starter-vault-config</artifactId>
+			<version>3.0.3</version>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework.cloud</groupId>
+			<artifactId>spring-cloud-starter-bootstrap</artifactId>
+			<version>3.0.3</version>
+		</dependency>
+```
+
+配置bootstrap.properties
+
+```bash
+spring.cloud.vault.uri=http://127.0.0.1:8200
+spring.cloud.vault.token=s.1N0Kc9ETKql2tRuf0xlcxKTM
+spring.cloud.vault.generic.enabled=true
+spring.cloud.vault.application-name=VaultDemo
+# 注意，很多教程写成 vault.generic.application-name,起码在3.0.3里是错的
+# 必须用 spring.vault.application-name 或 spring.application.name=VaultDemo
+```
+应该参考这篇文章： https://www.baeldung.com/spring-cloud-vault
+
+In general, migrating to Vault is a very simple process: just add the required libraries and add a few extra configuration properties to our project and we should be good to go. No code changes are required!
+
+通常，迁移到vault过程很简单：只要引入库并添加几个多余的配置到项目中即可，**不需要改代码**
+
+This is possible because it acts as a high priority PropertySource registered in the current Environment.
+
+之所以能这样，因为它运行在高优先级PropertySource，并注册到当前环境。
+
+As such, Spring will use it whenever a property is required. Examples include DataSource properties, ConfigurationProperties, and so on.
+
+这样，Spring 可以在任何时间使用他的属性，示例包括DataSource属性、ConfigurationProperties等
 
 https://www.techgeeknext.com/spring-boot/spring-cloud-vault
 
+https://mvnrepository.com/artifact/org.springframework.cloud/spring-cloud-starter-vault-config
+
+```xml
+    <dependency>
+			<groupId>org.springframework.cloud</groupId>
+			<artifactId>spring-cloud-starter-vault-config</artifactId>
+		</dependency>
+```
+
+```bash
+vault secrets enable -path=secret/ kv
+vault kv put secret/DemoMysqlVaultApplication dbusername=root
+vault kv put secret/DemoMysqlVaultApplication dbpassword=xxx
+```
+
+TIP：如果在UI上手动创建，然后再删除，再用API创建一个名字一样的，好像UI上看到的就会出错，需要刷新
+
+ERROR：
+找不到` org.springframework.cloud.vault.config.VaultConfiguration.createSslConfiguration
+`
+因为 spring-cloud-starter-vault-config 需要 spring-vault-core 2.3.2 以上
+
+还是空的,要装 `spring-cloud-starter-bootstrap`
+```xml
+<dependency>
+    <groupId>org.springframework.cloud</groupId>
+    <artifactId>spring-cloud-starter-bootstrap</artifactId>
+</dependency>
+```
+
+https://cloud.spring.io/spring-cloud-static/spring-cloud-vault/2.1.0.RELEASE/multi/multi_vault.config.backends.database-backends.html
+
+[Spring Boot 核心配置文件 bootstrap & application 详解](https://segmentfault.com/a/1190000015741797)
+> - boostrap 由父 ApplicationContext 加载，比 applicaton 优先加载
+> - boostrap 里面的属性不能被覆盖
+
+一样的问题：
+https://stackoverflow.com/questions/64994034/bootstrap-yml-configuration-not-processed-anymore-with-spring-cloud-2020-0/65009480#65009480
+
+spring-cloud-starter-bootstrap
+
+With Spring Boot 2.4, the bootstrap context initialization(bootstrap.yml, bootstrap.properties) of property sources is deprecated. Please refer below:
+https://stackoverflow.com/a/65009480
+
+他的例子： https://github.com/pavankjadda/HashiCorpVault-SpringCloud
+
+
+`ERROR!`
+2021-07-26 14:32:37.144  WARN 19532 --- [           main] LeaseEventPublisher$LoggingErrorListener : [RequestedSecret [path='secret/application', mode=ROTATE]] Lease [leaseId='null', leaseDuration=PT0S, renewable=false] I/O error on GET request for "https://localhost:8200/v1/secret/application": Unsupported or unrecognized SSL message; nested exception is javax.net.ssl.SSLException: Unsupported or unrecognized SSL message
+
+`fixed:`
+spring.cloud.vault.url=http://127.0.0.1:8200
+应该是
+spring.cloud.vault.uri=http://127.0.0.1:8200
 ## 其它
+
+加密相关,TODO: 可以用于TOKEN的加密
+https://www.springcloud.cc/spring-cloud-config.html
+
+https://stackoverflow.com/questions/37404703/spring-boot-how-to-hide-passwords-in-properties-file
 
 ```bash
 # 开发环境
@@ -549,3 +644,25 @@ make dev
 ```
 
 参考： https://gitee.com/glt_2020/vault-ui
+
+## ERROR
+
+### Failed to execute goal org.apache.maven.plugins:maven-resources-plugin:3.2.0
+
+应该是 maven-resources-plugin 最新的版本 3.2.0有bugs，要降为3.1.0就好了
+
+
+```xml
+<plugin>
+    <groupId>org.apache.maven.plugins</groupId>
+    <artifactId>maven-resources-plugin</artifactId>
+    <version>3.1.0</version>
+</plugin>          
+```
+springboot打包错误：Failed to execute goal org.apache.maven.plugins:maven-resources-plugin:3.2.0...
+
+https://blog.csdn.net/weixin_43567035/article/details/109706572
+
+Maven clean install: Failed to execute goal org.apache.maven.plugins:maven-resources-plugin:3.2.0:resources
+
+https://stackoverflow.com/questions/65910112/maven-clean-install-failed-to-execute-goal-org-apache-maven-pluginsmaven-resou

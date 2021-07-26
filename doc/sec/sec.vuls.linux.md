@@ -1,5 +1,17 @@
 # linux 漏洞
 
+
+## CVE-2021-33909
+
+[LINUX内核权限提升漏洞（CVE-2021-33909）通告](http://blog.nsfocus.net/linux-2021-33909/)
+
+下面是这个CVE的POC，应该是不行的
+
+https://github.com/Liang2580/CVE-2021-33909
+
+https://github.com/baerwolf/cve-2021-33909
+> This module fixes an issue in the kernels filesystem layer (CVE-2021-33909) by kprobe-replacing vulnerable functions during runtime
+
 ## CVE-2021-22555
 
 Linux Kernel 2.6.19 < 5.9 - 'Netfilter Local Privilege Escalation

@@ -97,6 +97,11 @@ https://www.orchome.com/58
 
 [jetty初学者教程](https://www.soosmart.com/topic/909.html)
 
+### spring jdbcTemplate
+
+https://mkyong.com/spring/spring-jdbctemplate-querying-examples/
+
+https://www.codejava.net/frameworks/spring-boot/connect-to-mysql-database-examples
 ### spring Boot
 
 spring boot
