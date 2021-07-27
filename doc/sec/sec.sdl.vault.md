@@ -515,9 +515,60 @@ https://stackoverflow.com/a/65009480
 spring.cloud.vault.url=http://127.0.0.1:8200
 应该是
 spring.cloud.vault.uri=http://127.0.0.1:8200
+
+## window
+
+```powershell
+.\vault.exe server -config=D:\dev\docker\docker-compose\vault\config.hcl
+# 客户端
+$Env:<variable-name> = "<new-value>"
+$Env:PATH += ":/usr/local/temp"
+
+$Env:VAULT_ADDR='http://127.0.0.1:8200'
+$Env:VAULT_TOKEN='s.1N0Kc9ETKql2tRuf0xlcxKTM'
+
+# TODO：好像这两个
+# window 工具，和 linux的用法如：
+vault write transit/encrypt/my-key plaintext=$(base64 <<< "my secret data")
+base64 <<< "my secret data"
+# 不太一样 bXkgc2VjcmV0IGRhdGEK
+# https://www.base64encode.org/ 结果是
+bXkgc2VjcmV0IGRhdGE=
+
+echo "my secret data" | coreutils.exe base64
+bXkgc2VjcmV0IGRhdGENCg==
+
+# 这个是有回车的
+echo 'bXkgc2VjcmV0IGRhdGENCg=='| base64 --decode
+# 这个没有回车
+echo 'bXkgc2VjcmV0IGRhdGE='| base64 --decode
+# 这个也是有回车的，可能是\n 和 \r\n的差别
+echo 'bXkgc2VjcmV0IGRhdGEK'| base64 --decode
+```
+
+
+### 加密服务
+
+https://www.vaultproject.io/api/secret/transit#ecdsa-p384
+
+https://www.vaultproject.io/docs/secrets/transit#aes256-gcm96
+
+```powershell
+./vault write -f transit/keys/my-key
+
+# https://www.base64encode.org/ "my secret data" => bXkgc2VjcmV0IGRhdGE=
+./vault write transit/encrypt/my-key plaintext=bXkgc2VjcmV0IGRhdGE=
+
+ciphertext     vault:v1:D0ebigzQw/vqS+bJmOedsW/GgMIUyOFYCVu7ajZsSjVoUX5cE+fPR3tg
+
+# 解码出来的是 
+./vault write transit/decrypt/my-key ciphertext=vault:v1:D0ebigzQw/vqS+bJmOedsW/GgMIUyOFYCVu7ajZsSjVoUX5cE+fPR3tg
+plaintext    bXkgc2VjcmV0IGRhdGE=
+```
 ## 其它
 
 加密相关,TODO: 可以用于TOKEN的加密
+
 https://www.springcloud.cc/spring-cloud-config.html
 
 https://stackoverflow.com/questions/37404703/spring-boot-how-to-hide-passwords-in-properties-file

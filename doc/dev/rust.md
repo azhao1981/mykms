@@ -1,5 +1,18 @@
 # rust
 
+## rust-lang
+
+https://www.rust-lang.org/
+
+
+https://www.rust-lang.org/tools/install
+
+```bash
+curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
+source $HOME/.cargo/env
+
+```
+
 ## 中国镜像
 
 [Rust crates 国内镜像源加速配置](https://zhuanlan.zhihu.com/p/126204128)
@@ -55,5 +68,40 @@ ldd target/x86_64-unknown-linux-musl/release/hello
 Q： error occurred: Failed to find tool. Is `x86_64-linux-musl-gcc-gcc` installed?
 A: `apt install musl-tools -y`
 [使用 musl 库静态编译 rust 程序](https://blog.biofan.org/2019/08/rust-static-build-with-musl/)
+
+## rustybox for windows
+
+```bash
+git clone https://github.com/samuela/rustybox
+cargo build --all-features
+cargo build --all-features --release --target=x86_64-pc-windows-msvc
+cargo build --all-features --release --features windows
+
+rustup target list|grep windows
+# aarch64-pc-windows-msvc
+# i586-pc-windows-msvc
+# i686-pc-windows-gnu
+# i686-pc-windows-msvc
+# x86_64-pc-windows-gnu
+# x86_64-pc-windows-msvc
+rustup target add x86_64-pc-windows-msvc
+cargo build --release --target=x86_64-pc-windows-msvc
+
+```
+
+https://github.com/uutils/coreutils
+
+Cross-platform Rust rewrite of the GNU coreutils
+
+```bash
+git clone https://github.com/uutils/coreutils
+cargo build --release --features windows
+cargo build --release --target=x86_64-pc-windows-msvc
+
+# ERROR：error: linker `cc` not found
+apt install build-essential
+```
+
+
 
 

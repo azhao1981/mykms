@@ -760,3 +760,9 @@ https://answers.microsoft.com/zh-hans/windows/forum/all/%E8%93%9D%E7%89%99%E9%BC
 键盘大回车键不灵解决方法【微软拼音】
 https://www.bilibili.com/s/video/BV1hK4y1x7cL
 
+## 88 window powershell 设置环境变量
+
+https://docs.microsoft.com/zh-cn/powershell/module/microsoft.powershell.core/about/about_environment_variables?view=powershell-7.1
+
+$Env:<variable-name>
+$Env:path

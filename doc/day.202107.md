@@ -1,5 +1,19 @@
 # 202107
 
+## 20210727
+
+[rust tool](https://gitee.com/azhao-1981/rustybox)
+
+[c转rust](https://github.com/immunant/c2rust)
+
+https://c2rust.com/
+
+[如何利用API对AI发动攻击？](https://www.anquanke.com/post/id/247895)
+
+[Java方法完整调用链生成工具](https://www.freebuf.com/sectool/279742.html)
+
+[sqlmap源码解读（3）](https://www.anquanke.com/post/id/247452)
+
 ## 20210726
 
 Win10中Vmmem程序资源占用过高解决办法
