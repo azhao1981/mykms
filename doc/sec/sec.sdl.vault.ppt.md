@@ -255,6 +255,43 @@ curl -H "X-Vault-Token: $VAULT_TOKEN" -X GET http://127.0.0.1:8200/v1/kv/data/ma
 
 ### 应用对接 java
 
+vault 的 java SDK `spring-cloud-starter-vault-config` 实现了透明接入vault的最佳实践
+
+官方教程详见： <https://spring.io/projects/spring-cloud-vault>
+
+#### 原则
+
+原理是通过 bootstrap.yml 获取 vault配置，读取到vault KV值后，将之转成
+
+`org.springframework.core.env.Environmen`可直接读取，或在application.properties 使用 `${dbpassword} `来使用
+
+参考这篇文章： https://www.baeldung.com/spring-cloud-vault
+
+In general, migrating to Vault is a very simple process: just add the required libraries and add a few extra configuration properties to our project and we should be good to go. No code changes are required!
+
+通常，迁移到vault过程很简单：只要引入库并添加几个多余的配置到项目中即可，**不需要改代码**
+
+This is possible because it acts as a high priority PropertySource registered in the current Environment.
+
+之所以能这样，因为它运行在高优先级PropertySource，并注册到当前环境。
+
+As such, Spring will use it whenever a property is required. Examples include DataSource properties, ConfigurationProperties, and so on.
+
+这样，Spring 可以在任何时间使用他的属性，示例包括DataSource属性、ConfigurationProperties等
+
+#### java vault demo
+
+- 加入 `spring-cloud-starter-vault-config` 使用 Environment 读取vault中KV信息
+- spring-boot-starter-jdbc 实现接口，访问数据，增加随机用户和显示用户信息
+- 使用 vault中的 `spring.datasource.password` 代替 application.properties 中的 `spring.datasource.password`
+
+示例代码见：<https://github.com/azhao1981/vault_demo>
+
+idea 新建项目 vault_demo
+![](images/2021-07-27-18-41-47.png)
+选择： web/spring web
+![](images/2021-07-27-18-42-21.png)
+
 ### 应用对接 ruby
 
 ### 应用对接 Golang
@@ -265,9 +302,7 @@ curl -H "X-Vault-Token: $VAULT_TOKEN" -X GET http://127.0.0.1:8200/v1/kv/data/ma
 + 使用 低权限的 mysql 账号密码
 + 为操作员或应用分配合适权限的 token
 
-K8s支持
-
-### Nacos的更多特性
+### 更多特性
 
 #### 鉴权功能集成
 #### 加密服务(微服务)
@@ -279,3 +314,5 @@ K8s支持
 
 - Alicloud
 - Database
+
+doc\sec\sec.sdl.vault.ppt.md
