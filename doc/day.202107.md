@@ -1,5 +1,45 @@
 # 202107
 
+## 20210728
+
+https://revealjs.com/
+reveal.js is an open source HTML presentation framework. It's a tool that enables anyone with a web browser to create fully-featured and beautiful presentations for free.
+https://impress.js.org/
+https://slideshow-s9.github.io/ ruby gem
+
+https://play.presenta.cc/
+https://github.com/presenta-software/presenta-lib
+
+https://arnehilmann.github.io/markdeck/
+https://github.com/arnehilmann/markdeck
+
+https://marpit.marp.app/markdown
+https://marp.app/
+
+https://typora.io/ markdown only
+
+https://github.com/forem/selfhost
+Selfhost your Forem Community on your own infrastructure 🎉
+有一个ansible-vault的使用
+forem是一个开源社区（类twitter)
+
+https://github.com/zhenghaoz/gorse
+An open source recommender system service written in Go
+
+CVE-2021-22555 linux内核提权
+https://www.anquanke.com/post/id/247830
+
+CVE-2021-36934 Windows提权漏洞复现
+https://mp.weixin.qq.com/s/rzds0qw2RSjNS3PGbBTh1w
+icacls C:\windows\system32\config\sam
+
+CVE-2021-22145 ElasticSearch 7.13.3 內存泄漏漏洞
+https://www.pwnwiki.org/index.php?title=CVE-2021-22145_ElasticSearch_7.13.3_%E5%85%A7%E5%AD%98%E6%B3%84%E6%BC%8F%E6%BC%8F%E6%B4%9E
+
+
+NOSQL注入|Rocket.Chat 远程命令执行漏洞分析
+https://paper.seebug.org/1652/
+
 ## 20210727
 
 [rust tool](https://gitee.com/azhao-1981/rustybox)

@@ -1,0 +1,96 @@
+{
+  "main": {
+    "id": "ff8d36b9dc1b3384",
+    "type": "split",
+    "children": [
+      {
+        "id": "13b0081da63640a6",
+        "type": "leaf",
+        "state": {
+          "type": "markdown",
+          "state": {
+            "file": "doc/win10/win.dev.tip.md",
+            "mode": "source"
+          }
+        }
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "5f3a8fc9b753ac10",
+    "type": "split",
+    "children": [
+      {
+        "id": "8bc3a7beadee130d",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "73e21246dd4d9ecb",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {}
+            }
+          },
+          {
+            "id": "878d508938c178c7",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 254
+  },
+  "right": {
+    "id": "d6cba1babc146be5",
+    "type": "split",
+    "children": [
+      {
+        "id": "facca69e5b173833",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "2470e5397c301725",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "doc/win10/win.dev.tip.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "active": "13b0081da63640a6",
+  "lastOpenFiles": [
+    "doc/win10/win.dev.tip.md",
+    "doc/day.202007.md",
+    "readme.md",
+    "doc/sec/sec.container.md"
+  ]
+}

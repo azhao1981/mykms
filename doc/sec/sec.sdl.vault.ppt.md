@@ -4,6 +4,18 @@
 
 KMS 开源版本，用于管理密钥
 
+主页 https://www.vaultproject.io/
+
+
+
+主要功能：**密钥管理**和**敏感数据保护**
+
+![](images/2021-07-28-11-59-37.png)
+
+由传统静态基础设施架构向动态基础设施架构变更的重要元素
+
+![](images/2021-07-28-12-02-24.png)
+
 对标商业产品: 
 
 阿里 KMS 
@@ -47,7 +59,10 @@ KMS 开源版本，用于管理密钥
 
 ![](images/2021-07-27-14-12-06.png)
 
+
+
 ### 为什么不是 Nacos
+
 - 明文存储，支持密文需要自己开发
 - 合规不认可，一些合规就要求使用 `KMS`
 
@@ -259,25 +274,27 @@ vault 的 java SDK `spring-cloud-starter-vault-config` 实现了透明接入vaul
 
 官方教程详见： <https://spring.io/projects/spring-cloud-vault>
 
-#### 原则
+#### 原理
 
-原理是通过 bootstrap.yml 获取 vault配置，读取到vault KV值后，将之转成
+​    原理是通过 bootstrap.yml 获取 vault配置，读取到vault KV值后，将之转成
 
 `org.springframework.core.env.Environmen`可直接读取，或在application.properties 使用 `${dbpassword} `来使用
 
+
+
 参考这篇文章： https://www.baeldung.com/spring-cloud-vault
 
-In general, migrating to Vault is a very simple process: just add the required libraries and add a few extra configuration properties to our project and we should be good to go. No code changes are required!
+  In general, migrating to Vault is a very simple process: just add the required libraries and add a few extra configuration properties to our project and we should be good to go. No code changes are required!
 
-通常，迁移到vault过程很简单：只要引入库并添加几个多余的配置到项目中即可，**不需要改代码**
+   通常，迁移到vault过程很简单：只要引入库并添加几个多余的配置到项目中即可，**不需要改代码**
 
-This is possible because it acts as a high priority PropertySource registered in the current Environment.
+  This is possible because it acts as a high priority PropertySource registered in the current Environment.
 
-之所以能这样，因为它运行在高优先级PropertySource，并注册到当前环境。
+   之所以能这样，因为它运行在高优先级PropertySource，并注册到当前环境。
 
-As such, Spring will use it whenever a property is required. Examples include DataSource properties, ConfigurationProperties, and so on.
+   As such, Spring will use it whenever a property is required. Examples include DataSource properties, ConfigurationProperties, and so on.
 
-这样，Spring 可以在任何时间使用他的属性，示例包括DataSource属性、ConfigurationProperties等
+​    这样，Spring 可以在任何时间使用他的属性，示例包括DataSource属性、ConfigurationProperties等
 
 #### java vault demo
 
@@ -285,34 +302,337 @@ As such, Spring will use it whenever a property is required. Examples include Da
 - spring-boot-starter-jdbc 实现接口，访问数据，增加随机用户和显示用户信息
 - 使用 vault中的 `spring.datasource.password` 代替 application.properties 中的 `spring.datasource.password`
 
-示例代码见：<https://github.com/azhao1981/vault_demo>
+   示例代码见：<https://github.com/azhao1981/vault_demo>
 
 idea 新建项目 vault_demo
 ![](images/2021-07-27-18-41-47.png)
 选择： web/spring web
 ![](images/2021-07-27-18-42-21.png)
 
+1. pom.xml
+
+   ```xml
+           <dependency>
+   			<groupId>org.springframework.cloud</groupId>
+   			<artifactId>spring-cloud-starter-vault-config</artifactId>
+   			<version>3.0.3</version>
+   		</dependency>
+   		<dependency>
+   			<groupId>org.springframework.cloud</groupId>
+   			<artifactId>spring-cloud-starter-bootstrap</artifactId>
+   			<version>3.0.3</version>
+   		</dependency>
+   ```
+
+   如果spring的版本依赖关系要求 Spring Cloud Vault 3.0 和 Spring Boot 2.4 以下，则不需要加入 `spring-cloud-starter-bootstrap`
+
+   参考：https://stackoverflow.com/questions/64994034/bootstrap-yml-configuration-not-processed-anymore-with-spring-cloud-2020-0/
+
+2. boostrap.properties
+
+   ```properties
+   spring.cloud.vault.uri=http://127.0.0.1:8200
+   spring.cloud.vault.token=s.1N0Kc9ETKql2tRuf0xlcxKTM
+   spring.cloud.vault.generic.enabled=true
+   spring.cloud.vault.application-name=VaultDemo
+   ```
+
+   `application-name ` 对应 vault 中 `secret/VaultDemo` ,如果不存在，则会使用 `spring.application.name`
+
+3. 在 vault 中添加 `secret/VaultDemo` 两个值
+
+   ![](images/2021-07-28-14-10-27.png)
+
+4. 应用 添加 '/' 接口，返回这两个值 
+
+   ```java
+       @Autowired
+   	Environment env;
+   	@RequestMapping("/")
+   	public String home() {
+   		String dbusername = env.getProperty("dbusername");
+   		String dbpassword = env.getProperty("dbpassword");
+   		return "hello world: " + dbusername+":"+dbpassword;
+   	}
+   ```
+
+   http://localhost:8080/ 返回账号密码，表明vault的kv已经成功注册到env中
+
+   ![](images/2021-07-28-14-12-43.png)
+
+5. 引入 jdbc 组件
+
+   ```xml
+   		<dependency>
+   			<groupId>mysql</groupId>
+   			<artifactId>mysql-connector-java</artifactId>
+   			<scope>runtime</scope>
+   		</dependency>
+   		<dependency>
+   			<groupId>org.springframework.boot</groupId>
+   			<artifactId>spring-boot-starter-jdbc</artifactId>
+   			<version>2.5.3</version>
+   		</dependency>
+   
+           <!--
+   		如果遇到问题 Failed to execute goal org.apache.maven.plugins:maven-resources-plugin:3.2.0:resources
+   		为最新版本 maven-resources-plugin 3.2.0 有问题，可以回退到 3.1.0
+   		-->
+           <plugin>
+               <groupId>org.apache.maven.plugins</groupId>
+               <artifactId>maven-resources-plugin</artifactId>
+               <version>3.1.0</version>
+           </plugin>
+   ```
+
+   
+
+   appliaction.properites
+
+   ```properties
+   spring.datasource.url=jdbc:mysql://127.0.0.1:3306/vault_demo
+   spring.datasource.username=root
+   spring.datasource.password=PRma-qmLnWf-Q90dA-V91La
+   spring.datasource.driver-class-name=com.mysql.cj.jdbc.Driver
+   ```
+
+   VaultDemoApplication.java
+
+   ```java
+       @Autowired private JdbcTemplate jdbcTemplate;
+   	@RequestMapping("/addUser")
+   	public Map addUser(){
+   		String name = UUID.randomUUID().toString();
+   		String pwd = UUID.randomUUID().toString();
+   
+   		String sql = "INSERT INTO users (fullname, email, password) VALUES (?, ?, ?)";
+   		int result = jdbcTemplate.update(sql, name,name+"@temp.com",pwd);
+   
+   		if (result > 0) {
+   			System.out.println("A new row has been inserted.");
+   		}
+   		Map<String, Object> rtn = new LinkedHashMap<>();
+   		rtn.put("status", 200);
+   		rtn.put("count", result);
+   		rtn.put("username", name);
+   		rtn.put("password", pwd);
+   		return rtn;
+   	}
+   
+   	@RequestMapping("/users")
+   	public Map Users(){
+   		String sql = "Select * from users limit 1;";
+   		Map result  = jdbcTemplate.queryForMap(sql);
+   
+   		return result;
+   	}
+   ```
+
+6. 数据库表
+
+   ```sql
+   create database vault_demo default character set utf8mb4 collate utf8mb4_unicode_ci;
+   CREATE TABLE `users` (
+   	`id` INT(10) NOT NULL AUTO_INCREMENT,
+   	`fullname` VARCHAR(225) NULL DEFAULT NULL COLLATE 'utf8mb4_bin',
+   	`email` VARCHAR(225) NULL DEFAULT NULL COLLATE 'utf8mb4_bin',
+   	`password` VARCHAR(225) NULL DEFAULT NULL COLLATE 'utf8mb4_bin',
+   	PRIMARY KEY (`id`) USING BTREE
+   )
+   COLLATE='utf8mb4_bin'
+   ENGINE=InnoDB;
+   ```
+
+   
+
+7. 随机插入数据库
+
+   VaultDemoAppliaction.java
+
+   ```java
+       @Autowired private JdbcTemplate jdbcTemplate;
+   	@RequestMapping("/addUser")
+   	public Map addUser(){
+   		String name = UUID.randomUUID().toString();
+   		String pwd = UUID.randomUUID().toString();
+   
+   		String sql = "INSERT INTO users (fullname, email, password) VALUES (?, ?, ?)";
+   		int result = jdbcTemplate.update(sql, name,name+"@temp.com",pwd);
+   
+   		if (result > 0) {
+   			System.out.println("A new row has been inserted.");
+   		}
+   		Map<String, Object> rtn = new LinkedHashMap<>();
+   		rtn.put("status", 200);
+   		rtn.put("count", result);
+   		rtn.put("username", name);
+   		rtn.put("password", pwd);
+   		return rtn;
+   	}
+   
+   	@RequestMapping("/users")
+   	public Map Users(){
+   		String sql = "Select * from users limit 1;";
+   		Map result  = jdbcTemplate.queryForMap(sql);
+   
+   		return result;
+   	}	
+   ```
+
+   访问 http://localhost:8080/addUser 添加几个随机数据
+
+   访问 http://localhost:8080/users 获取
+
+   ![](images/2021-07-28-14-29-27.png)
+
+8. 使用 vault dbusername dbpassword 代替 appliaction.properites 密码明文
+
+   appliaction.properites 
+
+   ```properties
+   spring.datasource.url=jdbc:mysql://127.0.0.1:3306/vault_demo
+   spring.datasource.username=${dbusername}
+   spring.datasource.password=${dbpassword}
+   spring.datasource.driver-class-name=com.mysql.cj.jdbc.Driver
+   ```
+
+   访问 http://localhost:8080/users 验证
+
+9. 优化：使用 vault 配置代替 appliaction.properites 配置
+
+   vault 添加配置
+   ![](images/2021-07-28-14-37-48.png)
+
+   appliaction.properites 删除配置
+
+   ```properties
+   spring.datasource.url=jdbc:mysql://127.0.0.1:3306/vault_demo
+   #spring.datasource.username=${dbusername}
+   #spring.datasource.password=${dbpassword}
+   spring.datasource.driver-class-name=com.mysql.cj.jdbc.Driver
+   ```
+
+   启动应用验证：http://localhost:8080/users
+
 ### 应用对接 ruby
+
+Ruby gem没有提供像 `spring-cloud-starter-vault-config` 将 vault 配置整合到 项目中的方案
+
+https://github.com/hashicorp/vault-ruby
+
+提供 简单的配置和访问的接口
+
+```bash
+gem install vault
+```
+
+读取数据
+
+```ruby
+# frozen_string_literal: true
+require 'vault'
+
+Vault.address = "http://127.0.0.1:8200" # Also reads from ENV["VAULT_ADDR"]
+Vault.token   = "s.1N0Kc9ETKql2tRuf0xlcxKTM" # Also reads from ENV["VAULT_TOKEN"]
+# Vault.sys.mounts
+
+res = Vault.kv("secret").read("VaultDemo", 1)
+puts res.data
+res = Vault.kv("secret").read("VaultDemo")
+puts res.data
+```
+
+
+
+https://github.com/hashicorp/vault-rails
+
+提供加密服务对字段进行加密的功能
+
+
+
+其它非官方gem，可供参考:
+
+https://github.com/joker1007/yaml_vault
+
+https://github.com/tpickett66/ansible-vault-rb
 
 ### 应用对接 Golang
 
+同Ruby，Golang也没有找到像 `spring-cloud-starter-vault-config` 将 vault 配置整合到 项目中的方案
+
+
+
+```go
+package main
+
+import (
+	"fmt"
+
+	"github.com/hashicorp/vault/api"
+)
+
+var token = "s.1N0Kc9ETKql2tRuf0xlcxKTM"
+var vault_addr = "http://127.0.0.1:8200"
+
+func main() {
+	config := &api.Config{
+		Address: vault_addr,
+	}
+	client, err := api.NewClient(config)
+	if err != nil {
+		fmt.Println(err)
+		return
+	}
+	client.SetToken(token)
+	secret, err := client.Logical().Read("secret/data/VaultDemo")
+	if err != nil {
+		fmt.Println(err)
+		return
+	}
+	m, ok := secret.Data["data"].(map[string]interface{})
+	if !ok {
+		fmt.Printf("%T %#v\n", secret.Data["data"], secret.Data["data"])
+		return
+	}
+	fmt.Printf("hello: %v\n", m)
+}
+
+```
+
+
+
 ### 安全配置
 
-+ 为UI外网提供访问控制
++ 为UI/API外网提供访问控制
 + 使用 低权限的 mysql 账号密码
 + 为操作员或应用分配合适权限的 token
++ 使用环境变量来代替配置中的 vault_token
 
 ### 更多特性
 
 #### 鉴权功能集成
+
+- JWT
+- Username&Password
+- kubernates
+- 企业微信
+
+![](images/2021-07-28-16-12-14.png)
 #### 加密服务(微服务)
+
+官方文档 https://www.vaultproject.io/docs/secrets/transit
+
+用例 https://github.com/hashicorp/vault-rails
+
+![](images/2021-07-28-16-22-00.png)
+
+
+
 #### K8s集成
 
 #### 更多的 [Secrets Engine](https://www.vaultproject.io/docs/secrets)
 
-![](images/2021-07-27-14-30-14.png)
-
 - Alicloud
 - Database
 
-doc\sec\sec.sdl.vault.ppt.md
+![](images/2021-07-27-14-30-14.png)

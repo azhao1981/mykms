@@ -14,6 +14,12 @@ https://github.com/baerwolf/cve-2021-33909
 
 ## CVE-2021-22555
 
+https://google.github.io/security-research/pocs/linux/bleedingtooth/writeup
+https://google.github.io/security-research/pocs/linux/cve-2021-22555/writeup.html
+
+CVE-2021-22555 linux内核提权
+https://www.anquanke.com/post/id/247830
+
 Linux Kernel 2.6.19 < 5.9 - 'Netfilter Local Privilege Escalation
  * CVE-2021-22555: Turning \x00\x00 into 10000$
 https://www.exploit-db.com/exploits/50135
