@@ -1,5 +1,59 @@
 # 202107
 
+## 20210729
+
+https://github.com/justalever/kickoff_vite_rails
+https://vite-ruby.netlify.app/
+A Tour of my new Rails Vite Kickoff Template
+https://www.youtube.com/watch?v=TbdJHdEoMZU
+
+1 客户端访问登录界面，服务端返回 id:token
+2 客户端用token进行加密，返回id:IV:密文
+3 服务端用ID得到密码，然后进行加密
+怎么防止 重放请求
+
+https://stackoverflow.com/questions/8053394/how-to-do-something-before-on-submit
+
+1 以rails为例 ，可以加入middleware来处理一个ENCDATA/PRETECTED=密文
+2 JS把commit点击进行加密
+3 请求任意接口，返回一个对一个客户是唯一的标识，即为密码。
+4 IV在密文中拼接
+5 怎么保证密码的安全？
+6 处理重复或过期
+7 在api gateway层实现
+
+lua-aes
+https://github.com/Lyafei/lua-aes
+
+Decryption of AES 256 CBC With iv & PKCS7Padding Encrypted String (Encrypted using Java)
+https://stackoverflow.com/questions/62232165/decryption-of-aes-256-cbc-with-iv-pkcs7padding-encrypted-string-encrypted-usi
+
+客户端加密 账号密码
+https://medium.com/@piyushwani/client-side-password-encryption-in-rails-2dddd0349c6c
+
+知乎是加密的：
+也就是说，虽然我们输入的的确是用户名和密码，但是知乎的前端代码对我们的数据进行了加密，如果搞不明白怎么加密的，就无法模拟知乎登录，而知乎第三方客户端的实现也无从谈起。
+https://www.zhihu.com/question/25539382
+阿里/华为是不加密的
+
+登录接口密码加密传输的设计
+https://www.jianshu.com/p/3d2698e99b2d
+
+注册、登录和 token 的安全之道
+https://juejin.cn/post/6844903498329358349
+
+例子：
+https://github.com/zeruniverse/Password-Manager
+https://phppasswordmanager.sourceforge.io/
+
+https://github.com/MaxLaumeister/PageCrypt
+https://www.maxlaumeister.com/pagecrypt/
+
+30 个常用 Maven 命令
+https://www.jianshu.com/p/6f57c322e50e
+Maven 命令
+https://www.jianshu.com/p/6f91752f3962
+
 ## 20210728
 
 https://revealjs.com/

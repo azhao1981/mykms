@@ -766,3 +766,5 @@ https://docs.microsoft.com/zh-cn/powershell/module/microsoft.powershell.core/abo
 
 $Env:<variable-name>
 $Env:path
+
+## 89 win+G 录屏功能
