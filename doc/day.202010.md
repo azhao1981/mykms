@@ -208,8 +208,7 @@ Jenkins是一个开源软件项目，是基于Java开发的一种持续集成工
 1、升级Jenkins至最新版本
 2、若存在弱口令漏洞，请尽快修改相关账号密码。
 
-GitHub RCE——git option注入
-https://www.anquanke.com/post/id/220153
+
 
 企业安全建设之生产环境安全管控 会员
 https://www.freebuf.com/articles/es/250976.html
@@ -642,8 +641,7 @@ CVE-2020-16898：Windows TCP/IP远程执行代码漏洞通告
 https://www.anquanke.com/post/id/219495
 
 ## 20201013
-[Apache SkyWalking SQL注入漏洞（CVE-2020-9483）](http://www.nsfocus.net/vulndb/49473)
-> 不影响，我们都是 8.0
+
 
 [Samba 内存错误引用漏洞（CVE-2020-10760）](http://www.nsfocus.net/vulndb/49479)
 
@@ -705,8 +703,7 @@ https://www.freebuf.com/articles/system/250904.html
 https://www.freebuf.com/sectool/245294.html
 一款自动化recon工具（norecon） 金币
 https://www.freebuf.com/sectool/248273.html
-Thymeleaf模板注入导致命令执行漏洞分析
-https://www.freebuf.com/articles/network/250026.html
+
 Intelspy：一款功能强大的自动化网络侦察扫描工具
 https://www.freebuf.com/sectool/245701.html
 

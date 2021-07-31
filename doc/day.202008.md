@@ -188,8 +188,7 @@ https://github.com/twilco/kosmonaut
 python open source alternative to IDM (Internet Download Manager) with multi-connections, high speed engine, based on python, pycurl, youtube_dl, and pysimplegui
 https://github.com/pyIDM/PyIDM
 
-Automatic SQL injection and database takeover tool
-https://github.com/sqlmapproject/sqlmap
+
 
 🇨🇳 GitHub中文排行榜，帮助你发现高分优秀中文项目、更高效地吸收国人的优秀经验成果；榜单每周更新一次，敬请关注！
 https://github.com/kon9chunkit/GitHub-Chinese-Top-Charts
@@ -350,7 +349,6 @@ https://www.ruby-toolbox.com/categories/Table_Builders
 WebLogic coherence UniversalExtractor 反序列化 (CVE-2020-14645) 漏洞分析
 https://www.anquanke.com/post/id/212984
 
-[Java安全编码之sql注入](https://www.anquanke.com/post/id/212897)
 
 活动 | Black Hat USA 2020最值得期待的11种安全工具
 https://www.anquanke.com/post/id/213032
@@ -385,7 +383,6 @@ https://securitytrails.com/
 
 [这可能是netcat最全的使用指南](https://www.freebuf.com/sectool/243115.html)
 
-[dom4j XML外部实体注入漏洞 （CVE-2020-10683）](http://www.nsfocus.net/vulndb/47453)
 
 
 
@@ -426,9 +423,6 @@ https://serverfault.com/questions/83856/allow-scp-but-not-actual-login-using-ssh
 
 [物联网安全之MQTT协议安全](https://www.anquanke.com/post/id/212335)
 
-[浅谈LDAP注入攻击](https://www.anquanke.com/post/id/212186)
-> intitle:”phpLDAPadmin” inurl:cmd.php
-> https://www.hackthebox.eu/
 
 ## 20200801
 

@@ -72,8 +72,7 @@ https://www.freebuf.com/articles/network/256580.html
 
 ## 20201228
 
-[深入分析ImageMagick的Shell注入漏洞](https://www.anquanke.com/post/id/226346)
-ruby on rails 正常都会使用这个，但好像无法利用，过
+
 
 [SSRF引发的血案](https://www.anquanke.com/post/id/226607)
 

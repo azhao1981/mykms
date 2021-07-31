@@ -44,8 +44,6 @@ https://www.anquanke.com/post/id/208992
 
 https://ddosecrets.com/data/asia/
 
-某租车系统Java代码审计之后台注入漏洞分析
-https://www.freebuf.com/vuls/238175.html
 
 
 
@@ -140,8 +138,6 @@ https://github.com/SebastianThorn/ruby-docker-skeleton
 Multiuser Live Video Chat in Rails
 https://gorails.com/episodes/multiuser-live-video-chat-in-rails
 
-新手入门：显错型SQL注入
-https://www.freebuf.com/vuls/237550.html
 
 js pose 动画
 https://github.com/yemount/pose-animator
@@ -209,8 +205,6 @@ https://www.anquanke.com/post/id/208568
 简述获取shellcode的几种方式
 https://www.freebuf.com/articles/system/237300.html
 
-Java命令注入原理并结合Java Instrument技术
-https://www.freebuf.com/articles/web/236925.html
 
 ## 2020-06-16
 

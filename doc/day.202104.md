@@ -2,8 +2,7 @@
 
 ## 20210430
 
-数据库：从注入到提权的全家桶套餐
-https://www.freebuf.com/articles/database/270106.html
+
 
 MoveKit：一款功能强大的Cobalt Strike横向渗透套件
 https://www.freebuf.com/sectool/270163.html
@@ -135,18 +134,7 @@ JumpServer = v1.5.9
 1、升级 JumpServer 至最新版本。
 2、设置当前产品的控制台登录IP地址白名单限制。
 
-2021年1月23日，蚂蚁安全非攻实验室 @fatansyC4t 向Apache官方报告了Apache Skywalking SQL注入与远程代码执行漏洞。2021年2月7日，阿里云应急响应中心监测到 Apache Skywalking 官方发布安全更新修复该漏洞。
-漏洞详情：https://help.aliyun.com/noticelist/articleid/1060803348.html
-详情
-Apache SkyWalking是一款开源的应用性能监控系统，包括指标监控，分布式追踪，分布式系统性能诊断。Apache SkyWalking的某GraphQL功能存在SQL注入漏洞，攻击者可以构造恶意请求查询数据库敏感信息，或利用H2数据路特性进一步造成远程代码执行漏洞。阿里云应急响应中心提醒  Apache Skywalking 用户尽快采取安全措施阻止漏洞攻击。
-​
-修复建议
-安全版本
-Apache Skywalking < v8.4.0
 
-安全建议
-1、升级Apache Skywalking 到最新的 v8.4.0 版本。
-2、将默认h2数据库替换为其它支持的数据库。
 
 ## 20210423
 
@@ -165,8 +153,7 @@ https://paper.seebug.org/1566/
 https://github.com/bytedance/Elkeid/tree/main/server
 https://gitee.com/azhao-1981/Elkeid
 
-azazel linux下基于预加载的注入——文件隐藏篇
-https://www.anquanke.com/post/id/237030
+
 一文带你手撕metasploit中meterprter木马源码
 https://www.anquanke.com/post/id/238270
 二进制分析从工具说起
@@ -556,8 +543,7 @@ Cookie的Secure属性，意味着保持Cookie通信只限于加密传输，指�
 Cookie的HttpOnly属性，指示浏览器不要在除HTTP（和 HTTPS)请求之外暴露Cookie。一个有HttpOnly属性的Cookie，不能通过非HTTP方式来访问，例如通过调用JavaScript(例如，引用document.cookie），因此，不可能通过跨域脚本（一种非常普通的攻击技术）来偷走这种Cookie。尤其是Facebook 和 Google 正在广泛地使用HttpOnly属性。
 
 
-Mssql手工注入执行命令小记
-https://www.anquanke.com/post/id/237031
+
 Xstream反序列化远程代码执行漏洞深入分析
 https://www.anquanke.com/post/id/237207
 
@@ -759,8 +745,6 @@ https://github.com/birchb1024/frangipanni
 Osintgram is a OSINT tool on Instagram. It offers an interactive shell to perform analysis on Instagram account of any users by its nickname
 https://github.com/Datalux/Osintgram
 
-SQL注入漏洞详解
-https://www.anquanke.com/post/id/235970
 
 Kubestriker：一款针对Kubernetes的快速安全审计工具
 https://www.anquanke.com/post/id/235479

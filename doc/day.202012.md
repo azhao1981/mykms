@@ -1,13 +1,7 @@
 # 202012
 ## 1225
 
-[Nosqli：一款功能强大的NoSql注入命令行接口工具](https://www.freebuf.com/articles/database/256392.html)
 
-[如何使用N1QLMap来利用N1QL注入漏洞并从Couchbase数据库中提取数据](https://www.freebuf.com/articles/database/257101.html)
-
-
-
-[Avaya WebLM XML外部实体注入漏洞（CVE-2020-7032）](http://www.nsfocus.net/vulndb/51781)
 
 [D-Link DSL-2888A任意命令执行漏洞（CVE-2020-24581）](http://www.nsfocus.net/vulndb/51799)
 
@@ -96,8 +90,7 @@ https://github.com/ory/kratos#what-is-ory-kratos
 ## 1218
 Webshell免杀的一些思考
 https://www.freebuf.com/articles/web/253710.html
-sqlmap源码简析（一）
-https://www.freebuf.com/articles/network/232047.html
+
 Tomcat容器攻防笔记之隐匿行踪
 https://www.anquanke.com/post/id/225027
 Vulhub漏洞系列：Discuz! 6.x7.x 全局变量防御绕过-命令执行
@@ -411,8 +404,6 @@ http://www.nsfocus.net/vulndb/46807
 WordPress Plugin Buddypress 6.2.0 - Persistent Cross-Site Scripting
 https://www.exploit-db.com/exploits/49061
 
-WordPress Email Subscribers & Newsletters SQL注入漏洞（CVE-2020-5768）
-http://www.nsfocus.net/vulndb/49449
 
 WordPress Real-Time Find and Replace插件代码执行漏洞（CVE-2020-13641）
 http://www.nsfocus.net/vulndb/46809

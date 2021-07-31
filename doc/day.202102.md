@@ -141,8 +141,7 @@ https://www.anquanke.com/post/id/231420
 分析SolarWinds Orion平台的另外三个漏洞
 https://www.anquanke.com/post/id/231451
 
-如何使用K55实现Linux x86_64进程注入|工具
-https://www.freebuf.com/sectool/261868.html
+
 通过Windows事件日志介绍APT-Hunter
 https://www.freebuf.com/sectool/261806.html
 

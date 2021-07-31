@@ -135,8 +135,7 @@ http://hibernate.org/orm/
 
 https://www.w3cschool.cn/hibernate/
 
-Java安全编码之SQL注入
-https://www.freebuf.com/articles/web/245851.html
+
 
 ## log4j
 

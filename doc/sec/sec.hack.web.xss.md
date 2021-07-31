@@ -29,6 +29,10 @@ https://xz.aliyun.com/t/7933
   2020年漏洞赏金记录表|bug bounty writeups
 https://www.ddosi.com/bug-bounty-2020/
 
+XSStrike 是用 Python3 编写的，快速检测跨站脚本漏洞的工具
+https://blog.intigriti.com/2021/06/29/hacker-tools-xsstrike-hunting-for-low-hanging-fruits/
+
+
 ## 怎么发起XSS
 
 [基础篇-XSS盲打](https://cloud.tencent.com/developer/article/1078996)

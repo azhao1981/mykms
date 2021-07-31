@@ -159,8 +159,6 @@ https://squib.rocks/
 Squib is a Ruby DSL for prototyping card and board games.
 Write a little bit of Ruby, define your deck’s stats, then compile your game into a series of images ready for print-and-play or even print-on-demand. Squib is very data-driven and built on the principle of Don’t Repeat Yourself. Think of it like nanDeck done “the Ruby way”. Squib supports:
 
-Nexus Repository Manager 2.x命令注入漏洞 (CVE-2019-5475) 两次绕过
-https://www.freebuf.com/vuls/242500.html
 
 
 无线安全实战基础篇
@@ -538,8 +536,7 @@ Gartner客户交互的AutoML关键供应商
 https://image.3001.net/images/20200706/1594006265.png
 cpython历史漏洞分析及其fuzzer编写
 https://www.anquanke.com/post/id/209754
-减轻对旧版Web应用程序的SQL注入攻击
-https://www.anquanke.com/post/id/209772
+
 
 ## 20200707
 
@@ -560,8 +557,7 @@ https://www.anquanke.com/post/id/209734
 印度统一支付接口和支付应用程序的安全性分析
 https://www.anquanke.com/post/id/209599
 
-Mybatis框架下SQL注入审计分析
-https://www.freebuf.com/vuls/240578.html
+
 
 JSshell：一款针对XSS漏洞的JavaScript反向Shell
 https://www.freebuf.com/articles/network/239373.html
@@ -569,11 +565,8 @@ https://www.freebuf.com/articles/network/239373.html
 数据安全怎么做？合规篇之数据安全法（草案）
 https://www.freebuf.com/articles/neopoints/242215.html
 
-挖洞经验 | Gsuite邮件发送功能中的SMTP注入漏洞分析
-https://www.freebuf.com/articles/web/242292.html
 
-MemoryMapper：一款轻量级代码映射和进程注入工具
-https://www.freebuf.com/articles/system/238432.html
+
 
 CVE-2019-5786 漏洞原理分析及利用
 https://www.anquanke.com/post/id/209568
@@ -611,8 +604,6 @@ https://www.anquanke.com/post/id/209365
 Dubbo2.7.7反序列化漏洞绕过分析
 https://www.anquanke.com/post/id/209576
 
-Nexus Repository Manager 2.x 命令注入漏洞 (CVE-2019-5475) 两次绕过
-https://www.anquanke.com/post/id/209597
 
 Docker安全性与攻击面分析
 https://www.anquanke.com/post/id/209448

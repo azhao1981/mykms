@@ -11,7 +11,6 @@ https://github.com/wtsxDev/reverse-engineering
 
 [【Kali】(第十一集)工具使用--逆向工程之查看android安装包apk源代码](https://www.bilibili.com/video/av41682740/)
 
-[Android逆向反编译代码注入之注入思路和步骤](https://www.bilibili.com/s/video/BV13t4y1D7Y3)
 
 [Android逆向破解基础系列](https://www.bilibili.com/video/BV18x411Q7Be?spm_id_from=333.905.b_72656c61746564.2)
 

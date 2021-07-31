@@ -127,8 +127,6 @@ https://www.freebuf.com/articles/container/273570.html
 
 ## 0521
 
-RabbitMQ代码注入漏洞（CVE-2021-22117）
-http://www.nsfocus.net/vulndb/54714
 
 Metasploit工具之windows渗透研究
 https://www.freebuf.com/articles/web/271173.html

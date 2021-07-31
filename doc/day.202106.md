@@ -60,8 +60,6 @@ https://github.com/iblue/d3-rails
 https://github.com/d3/d3
 https://d3js.org/
 
-Shiro反序列化漏洞与Tomcat注入内存马学习
-https://www.anquanke.com/post/id/244450
 
 
 渗透测试之微信小程序那些事儿
@@ -276,8 +274,6 @@ https://www.freebuf.com/vuls/274478.html
 如何使用GraphQLmap对GraphQL节点进行渗透测试
 https://www.freebuf.com/articles/network/274296.html
 
-CockpitCMS NoSQL注入漏洞分析
-https://www.anquanke.com/post/id/241113
 
 ## 0619
 
@@ -417,9 +413,6 @@ To enforce password complexity, it is possible to use [zxcvbn gem](https://githu
 
 
 
-
-ReactJS 中的代码注入
-https://zhuanlan.zhihu.com/p/28434174
 浅谈 React 中的 XSS 攻击
 https://segmentfault.com/a/1190000024522392
 浅谈 React 中的 XSS 攻击
@@ -440,8 +433,7 @@ Jetty Utility Servlets ConcatServlet Double Decoding Information Disclosure Vuln
 https://github.com/advisories/GHSA-gwcr-j4wh-j3cq
 
 ## 0610
-细说 sqlmap_api
-https://paper.seebug.org/940/
+
 
 浅入深出 Reids 攻击方法总结
 https://www.anquanke.com/post/id/241146
@@ -479,8 +471,6 @@ https://github.com/q1f3/WooYun-1
 https://www.freebuf.com/articles/web/274071.html
 https://github.com/tangxiaofeng7/Fofa-collect
 
-记一次Fuzz绕WAF实现SQL 注入
-https://www.freebuf.com/articles/web/274492.html
 
 ## 0604
 
@@ -496,8 +486,7 @@ https://github.com/davidlatwe/montydb?ref=stackshare
 GitLab信息泄露漏洞（CVE-2021-22180）
 http://www.nsfocus.net/vulndb/55163
 
-Ruby参数注入漏洞（CVE-2021-33564）
-http://www.nsfocus.net/vulndb/55134
+
 
 Puma graceful restarts
 https://nts.strzibny.name/puma-graceful-restarts/

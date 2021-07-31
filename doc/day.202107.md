@@ -1,6 +1,8 @@
 # 202107
 
 ## 20210729
+[PentestBox](https://pentestbox.org/zh/)
+
 
 https://github.com/justalever/kickoff_vite_rails
 https://vite-ruby.netlify.app/
@@ -20,7 +22,7 @@ https://stackoverflow.com/questions/8053394/how-to-do-something-before-on-submit
 4 IV在密文中拼接
 5 怎么保证密码的安全？
 6 处理重复或过期
-7 在api gateway层实现
+7 在 api gateway 层实现
 
 lua-aes
 https://github.com/Lyafei/lua-aes
@@ -91,8 +93,7 @@ CVE-2021-22145 ElasticSearch 7.13.3 內存泄漏漏洞
 https://www.pwnwiki.org/index.php?title=CVE-2021-22145_ElasticSearch_7.13.3_%E5%85%A7%E5%AD%98%E6%B3%84%E6%BC%8F%E6%BC%8F%E6%B4%9E
 
 
-NOSQL注入|Rocket.Chat 远程命令执行漏洞分析
-https://paper.seebug.org/1652/
+
 
 ## 20210727
 
@@ -106,7 +107,6 @@ https://c2rust.com/
 
 [Java方法完整调用链生成工具](https://www.freebuf.com/sectool/279742.html)
 
-[sqlmap源码解读（3）](https://www.anquanke.com/post/id/247452)
 
 ## 20210726
 
@@ -137,7 +137,6 @@ https://paper.seebug.org/1649/
 
 https://console.cloud.tencent.com/sa/screen/info.html?skipWarning=true&id=TCSA-2021-0109
 
-[sqlmap源码解读（1）](https://www.anquanke.com/post/id/247450)
 
 [ISO27701个人隐私信息安全管理体系 认证经验](https://www.freebuf.com/articles/neopoints/280596.html)
 
@@ -261,8 +260,7 @@ openAVS
 Java 供应链（依赖）安全检测实践
 https://www.anquanke.com/post/id/246079
 
-梨子带你刷burpsuite官方网络安全学院靶场(练兵场)系列之服务器端漏洞篇 - Sql注入专题
-https://www.anquanke.com/post/id/245532
+
 
 从 RFC 规范看如何绕过 waf 上传表单
 https://paper.seebug.org/1631/
@@ -278,9 +276,7 @@ https://www.anquanke.com/post/id/245954
 从安全工程师转型安全研发3年来的小结
 https://www.freebuf.com/articles/neopoints/279135.html
 
-Rocket.Chat 3.12.1 - NoSQL Injection to RCE (Unauthenticated) (2)
-https://www.exploit-db.com/exploits/50108
-怎么注入NoSQL
+
 
 ## 20210707
 
@@ -344,12 +340,6 @@ https://github.com/RaRe-Technologies/smart_open
 各个基础漏洞的top25易存在漏洞的参数
 https://github.com/lutfumertceylan/top25-parameter
 For basic researches, top 25 vulnerability parameters that can be used in automation tools or manual recon. 🛡️⚔️🧙
-
-XSStrike 是用 Python3 编写的，快速检测跨站脚本漏洞的工具
-https://blog.intigriti.com/2021/06/29/hacker-tools-xsstrike-hunting-for-low-hanging-fruits/
-
-sqlmap4burp++是一款兼容Windows，mac，linux多个系统平台的Burp与sqlmap联动插件
-https://github.com/c0ny1/sqlmap4burp-plus-plus/
 
 数据安全探索者之路
 https://www.freebuf.com/articles/database/279379.html

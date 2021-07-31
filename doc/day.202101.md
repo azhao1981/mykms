@@ -534,12 +534,7 @@ https://www.anquanke.com/post/id/229284
 白名单，被谁绕过了？
 https://www.anquanke.com/post/id/228916
 
-[emp3r0r - Linux下的进程注入和持久化](https://www.anquanke.com/post/id/229096)
-  [linux post-exploitation framework made by linux user](https://github.com/jm33-m0/emp3r0r)
-  理论上我们只需要一个dd和procfs即可将代码注入一个进程，相关工具 [Cexigua](https://github.com/AonCyberLabs/Cexigua) 
-  https://www.commandlinux.com/man-page/man5/procfs.5.html
-  [emp3r0r：Linux用户打造的Linux后渗透框架](https://www.freebuf.com/sectool/259079.html)
-  [Empire](https://github.com/BC-SECURITY/empire) is a PowerShell and Python 3.x post-exploitation framework. 
+
 
 Pyattck - A Python Module To Interact With The Mitre ATT&CK Framework
 https://www.kitploit.com/2019/07/pyattck-python-module-to-interact-with.html
@@ -924,9 +919,7 @@ http://117.78.49.126/article_101_10000077
 
 Postgresql 渗透利用总结
 https://cloud.tencent.com/developer/article/1668989
-
-Mybatis 框架下 SQL 注入攻击的 3 种方式，真是防不胜防
-https://www.jianshu.com/p/875902ea7df6
+m/p/875902ea7df6
 
 
 赵彦的CISO闪电战｜两年甲方安全修炼之路

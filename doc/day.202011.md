@@ -1,8 +1,7 @@
 # 202011
 
 ## 20201130
-Elasticsearch Kibana代码注入漏洞（CVE-2020-7013）
-http://www.nsfocus.net/vulndb/50990
+
 
 CTF中的SQLite总结Cheat Sheet
 https://www.anquanke.com/post/id/222625
@@ -113,7 +112,6 @@ https://mp.weixin.qq.com/s?__biz=MzIyMjg2ODExMA==&mid=2247487784&idx=1&sn=f41890
 
 [Linux透明代理在红队渗透中的应用](https://payloads.online/archivers/2020-11-13/1)
 
-[高级的MSSQL注入技巧](https://xz.aliyun.com/t/8513)
 
 [红队测试之Linux提权小结](https://www.freebuf.com/articles/web/254452.html)
 
@@ -122,7 +120,6 @@ https://mp.weixin.qq.com/s?__biz=MzIyMjg2ODExMA==&mid=2247487784&idx=1&sn=f41890
 
 [跨平台C2-Mythic不明觉厉教程](https://mp.weixin.qq.com/s?__biz=MzUyMDgzMDMyMg==&mid=2247483957&idx=1&sn=c95fd190bed241ec0541131922670496)
 
-[利用电子邮件中的HTML注入](https://mp.weixin.qq.com/s?__biz=MzIzMTQ4NzE2Ng==&mid=2247485725&idx=1&sn=69fda84d7f1e2fa97c050cbf6817a68f)
 
 [监听445端口抓v2数据](https://xz.aliyun.com/t/8543)
 
@@ -174,8 +171,6 @@ https://www.freebuf.com/articles/web/253832.html
 渗透测试之通过代码审计打点
 https://www.freebuf.com/articles/web/253104.html
 
-Nagios XI命令注入漏洞（CVE-2020-5791）
-http://www.nsfocus.net/vulndb/50710
 
 Jenkins| 又有一大波新的
 http://www.nsfocus.net/index.php?os=&type_id=&keyword=Jenkins&act=sec_bug&submit=+
@@ -374,8 +369,7 @@ DNSLog 是四叶草安全旗下 BugscanTeam 打造的一款监控 DNS 解析记�
 [dnslog](https://wh0ale.github.io/2019/01/13/2019-1-13-dnslog/)
 http://ceye.io/profile
 
-[DNSlog注入学习](https://www.cnblogs.com/Xy--1/p/12896599.html)
-[渗透测试小技巧之DNSlog](http://byd.dropsec.xyz/2016/12/04/dnslog%E5%88%A9%E7%94%A8/)
+
 
 
 [教你学木马攻防 | 隧道木马 | DNS反弹shell| 好像不是指这种木马](https://cloud.tencent.com/developer/article/1419096)

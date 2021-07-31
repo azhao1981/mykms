@@ -1,23 +1,125 @@
 # sqlmap
 
-[main](http://sqlmap.org/) | 
-[github](https://github.com/sqlmapproject/sqlmap) |
-[中文](https://github.com/sqlmapproject/sqlmap/blob/master/doc/translations/README-zh-CN.md) |
+[main](http://sqlmap.org/) | [github](https://github.com/sqlmapproject/sqlmap) | [gitee 镜像](https://gitee.com/azhao-1981/sqlmap) | [中文](https://github.com/sqlmapproject/sqlmap/blob/master/doc/translations/README-zh-CN.md) | [官方:详细用法](https://github.com/sqlmapproject/sqlmap/wiki/Usage)
 
-##　获取
+##　
+
+#### 获取
+
+1 安装 [python](/dev/python/python.install.md)
+2 下载
 
 ```bash
 git clone --depth 1 https://github.com/sqlmapproject/sqlmap.git sqlmap-dev
-python sqlmap.py -h
+git clone https://gitee.com/azhao-1981/sqlmap.git
+python ./sqlmap.py -h
 ```
 
-需要安装 [python](/dev/python/python.install.md)
+### 使用
+sqlmap -u http://xxxx/?username=xxx
+要用带参数的请求给他，工具会帮你找到可以注入的参数
 
-[官网](http://sqlmap.org/) | 
-[github](https://github.com/sqlmapproject/sqlmap) |
-[gitee](https://gitee.com/azhao-1981/sqlmap)
+但这个效果好像不太好
 
-## 原理
+TODO：
+
+为什么有些接口如token,指定的话就可以？带参数分析不行
+
+sqlmap -u http://xxxx/?username=xxx --dbs 
+sqlmap -u http://xxxx/?username=xxx --current-db 
+sqlmap -u http://xxxx/?username=xxx --tables -D dbname 
+sqlmap -u http://xxxx/?username=xxx --columns -T tName -D dbName 
+sqlmap -u http://xxxx/?username=xxx -T tName -D dbName 
+
+场景：测试 api，token参数不是csrf
+
+python ./sqlmap.py -u 'https://xxxx?token=xxx' -p token --batch  --dbs
+
+--dbs
+
+
+
+中间会有提示：
+
+  --batch      从不询问用户输入，使用所有默认配置。
+
+- CSRF：
+
+GET parameter 'token' appears to hold anti-CSRF token. Do you want sqlmap to automatically update it in further requests? [y/N] 
+
+如果有一个token参数，如上提示
+
+符合这样的参数包括：
+
+```python
+CSRF_TOKEN_PARAMETER_INFIXES = ("csrf", "xsrf", "token")
+```
+
+TIPs: 
+
+>  如果页面没有做 csrf 防御，token不是csrf， 那么应该选N，后面需要加一个 -p token,用于测试token是不是有注入
+
+>  如果选y，那么sqlmap会在请求返回中找token，如果在另外的url里能获得那么应该设置一下`--csrf-url`
+>
+> 如果不能获取，程序结束，报 user quit 
+
+其它相关csrf的参数
+
+--csrf-token=参数用来保存反CSRF令牌
+
+--csrf-url=CSRFURL URL地址访问提取anti-CSRF令牌
+
+TODO: 以rails devise 登录界面为例子
+
+相关代码 lib\core\target.py
+
+选y找不到会返回
+
+[17:24:55] [CRITICAL] anti-CSRF token 'token' can't be found at 'https://xxxx'. You can try to rerun by providing a valid value for option '--csrf-url'
+
+- cookie
+
+you have not declared cookie(s), while server wants to set its own ('aliyungf_tc=aa9a0466b82...dc1726a4f3'). Do you want to use those [Y/n] 
+
+正常选Y，--batch 忽略
+
+
+
+ 思考：
+
+sqlmap 会把数据存在一个目录里，最后会告诉你在哪里，但怎么能读出来，（有的像是64编码或加密）
+
+能不能把请求存起来，像 burpsuite的请求那样
+
+命中的payload可以保存，以下次做验证
+
+
+
+## [SQL 注入原理](./sec.hack.web.inject.sql.md)
+
+### SQL map原理
+
+使用 sqlmap -v 4 可以看到测试过程中发出去的 payload 和 url
+
+> -v  VERBOSE  信息级别:  0-6 （缺省1）
+>
+> “0”只显示python错误以及严重的信息；
+>
+> 1同时显示基本信息和警告信息（默认）；
+>
+> “2”同时显示debug信息；
+>
+> “3”同时显示注入的payload；
+>
+> “4”同时显示HTTP请求；
+>
+> “5”同时显示HTTP响应头；
+>
+> “6”同时显示HTTP响应页面；
+>
+> 如果想看到sqlmap发送的测试payload最好的等级就是3。
+
+
 
 https://rails-sqli.org/
 
@@ -103,3 +205,28 @@ http://www.91ri.org/6775.html#HTTP cookie头
 [以前rails的](https://github.com/sqlmapproject/sqlmap/issues/1239)
 
 [rails sqli](https://rails-sqli.org/)
+
+#### 参考：
+
+[超详细SQLMap使用攻略及技巧分享](https://www.freebuf.com/sectool/164608.html)
+
+[PentestBox window 的集成渗透测试工具](https://pentestbox.org/zh/)
+
+sqlmap源码简析（一）
+https://www.freebuf.com/articles/network/232047.html
+Automatic SQL injection and database takeover tool
+https://github.com/sqlmapproject/sqlmap
+
+Sqlmap使用详解
+https://www.anquanke.com/post/id/235846
+细说 sqlmap_api
+https://paper.seebug.org/940/
+[sqlmap源码解读（3）](https://www.anquanke.com/post/id/247452)
+[sqlmap源码解读（1）](https://www.anquanke.com/post/id/247450)
+
+sqlmap4burp++是一款兼容Windows，mac，linux多个系统平台的Burp与sqlmap联动插件
+https://github.com/c0ny1/sqlmap4burp-plus-plus/
+
+[burpsuite安装sqlmap插件](https://www.cnblogs.com/zcz1995/articles/10467297.html)
+
+[burp插件大全 漏洞扫描 waf绕过 sql XSS 命令注入 fuzzer](https://www.ddosi.com/b226/)

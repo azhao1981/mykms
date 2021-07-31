@@ -390,9 +390,7 @@ magic_frozen_string_literal .
 
 
 ## 20200908
-java 安全开发之 spring boot Thymeleaf 模板注入
-https://paper.seebug.org/1332/
-https://paper.seebug.org/1332/
+
 
 
 

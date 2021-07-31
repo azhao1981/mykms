@@ -20,8 +20,6 @@ https://regex101.com/r/8NmiRL/1/
 
 https://shift-ast.org/
 
-Sqlmap使用详解
-https://www.anquanke.com/post/id/235846
 
 从“复盘”到“复仇”，谈如何正确的复盘
 https://www.freebuf.com/articles/neopoints/267893.html
@@ -770,8 +768,6 @@ https://www.freebuf.com/articles/es/256334.html
 Java反序列化之与JDK版本无关的利用链挖掘
 https://www.anquanke.com/post/id/232415
 
-浅谈利用mysql8新特性进行SQL注入
-https://www.anquanke.com/post/id/231627
 保姆级Cobalt Strike主机隐藏教程
 https://www.freebuf.com/articles/network/262445.html
 
