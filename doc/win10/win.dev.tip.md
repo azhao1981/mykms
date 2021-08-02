@@ -768,3 +768,9 @@ $Env:<variable-name>
 $Env:path
 
 ## 89 win+G 录屏功能
+注：没有声音
+
+## Windows 10 中的磁盘清理
+
+https://support.microsoft.com/zh-cn/windows/windows-10-中的磁盘清理-8a96ff42-5751-39ad-23d6-434b4d5b9a68
+在“磁盘清理”中，选择“清理系统文件”。

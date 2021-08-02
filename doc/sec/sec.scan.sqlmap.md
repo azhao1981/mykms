@@ -224,9 +224,32 @@ https://paper.seebug.org/940/
 [sqlmap源码解读（3）](https://www.anquanke.com/post/id/247452)
 [sqlmap源码解读（1）](https://www.anquanke.com/post/id/247450)
 
+[SQLMAP源码分析Part1](https://wooyun.js.org/drops/SQLMAP源码分析Part1.流程篇.html)
+
+[sqlmap 源码分析（二）初始化](https://lorexxar.cn/2016/08/11/sqlmap-source2/)
+
+
 sqlmap4burp++是一款兼容Windows，mac，linux多个系统平台的Burp与sqlmap联动插件
 https://github.com/c0ny1/sqlmap4burp-plus-plus/
 
 [burpsuite安装sqlmap插件](https://www.cnblogs.com/zcz1995/articles/10467297.html)
 
 [burp插件大全 漏洞扫描 waf绕过 sql XSS 命令注入 fuzzer](https://www.ddosi.com/b226/)
+
+自定义payload
+https://www.trustwave.com/en-us/resources/blogs/spiderlabs-blog/sqlmap-tricks-for-advanced-sql-injection/
+
+SQLMap - Cheetsheat
+https://book.hacktricks.xyz/pentesting-web/sql-injection/sqlmap
+
+扩展阅读
+https://book.hacktricks.xyz/
+
+Sqlmap Advanced Guide
+
+https://www.scanforsecurity.com/scanning-techniques/sqlmap-advanced-guide.html
+
+SQLMap Cheat Sheet : The Lazy Man’s Guide
+https://thedarksource.com/sqlmap-cheat-sheet/
+
+http://kaoticcreations.blogspot.com/2011/05/sqlmap-volume-2-tips-tricks.html

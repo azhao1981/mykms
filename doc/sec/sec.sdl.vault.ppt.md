@@ -447,44 +447,12 @@ idea 新建项目 vault_demo
 
 7. 随机插入数据库
 
-   VaultDemoAppliaction.java
-
-   ```java
-       @Autowired private JdbcTemplate jdbcTemplate;
-   	@RequestMapping("/addUser")
-   	public Map addUser(){
-   		String name = UUID.randomUUID().toString();
-   		String pwd = UUID.randomUUID().toString();
-   
-   		String sql = "INSERT INTO users (fullname, email, password) VALUES (?, ?, ?)";
-   		int result = jdbcTemplate.update(sql, name,name+"@temp.com",pwd);
-   
-   		if (result > 0) {
-   			System.out.println("A new row has been inserted.");
-   		}
-   		Map<String, Object> rtn = new LinkedHashMap<>();
-   		rtn.put("status", 200);
-   		rtn.put("count", result);
-   		rtn.put("username", name);
-   		rtn.put("password", pwd);
-   		return rtn;
-   	}
-   
-   	@RequestMapping("/users")
-   	public Map Users(){
-   		String sql = "Select * from users limit 1;";
-   		Map result  = jdbcTemplate.queryForMap(sql);
-   
-   		return result;
-   	}	
-   ```
-
    访问 http://localhost:8080/addUser 添加几个随机数据
 
    访问 http://localhost:8080/users 获取
-
+   
    ![](images/2021-07-28-14-29-27.png)
-
+   
 8. 使用 vault dbusername dbpassword 代替 appliaction.properites 密码明文
 
    appliaction.properites 

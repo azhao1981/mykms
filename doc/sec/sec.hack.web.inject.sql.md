@@ -173,3 +173,6 @@ Apache Skywalking < v8.4.0
 [命令注入](/doc/sec/sec.hack.web.inject.cmd.md)
 
 [系统注入](/doc/sec/sec.hack.web.inject.sys.md)
+
+Blind SQL Injection
+https://owasp.org/www-community/attacks/Blind_SQL_Injection
