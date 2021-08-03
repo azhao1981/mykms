@@ -1,4 +1,21 @@
 # 202108
+## 20210803
+不错的COOKIE提示
+https://www.nccgroup.com/Libraries/Document_Downloads/more__Advanced_SQL_Injection.sflb.ashx
+
+这可能是史上功能最全的Java权限认证框架！目前已集成——登录认证、权限认证、分布式Session会话、微服务网关鉴权、单点登录、OAuth2.0、踢人下线、Redis集成、前后台分离、记住我模式、模拟他人账号、临时身份切换、账号封禁、多账号认证体系、注解式鉴权、路由拦截式鉴权、花式token生成、自动续签、同端互斥登录、会话治理、密码加密、jwt集成、Spring集成、WebFlux集成...
+https://github.com/dromara/Sa-Token
+
+LINUX KERNEL任意代码执行漏洞（CVE-2021-3490）通告
+http://blog.nsfocus.net/linux-kernelcve/
+
+SpringMVC配合Fastjson的内存马利用与分析
+
+https://www.anquanke.com/post/id/248155
+《数据安全法》加码数据出境安全，跨国公司该如何应对？
+
+https://www.freebuf.com/articles/database/282002.html
+
 ## 20210802
 8.3 自定义 Git - Git 钩子
 https://git-scm.com/book/zh/v2/%E8%87%AA%E5%AE%9A%E4%B9%89-Git-Git-%E9%92%A9%E5%AD%90

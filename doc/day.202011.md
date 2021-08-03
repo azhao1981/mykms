@@ -165,8 +165,6 @@ https://www.vehicleduty.com/pages/contact.php
 
 google: Get in touch with automasters, we'll be glad to hear from you
 
-如何使用Django开发OpenRASP报警接收Web应用
-https://www.freebuf.com/articles/web/253832.html
 
 渗透测试之通过代码审计打点
 https://www.freebuf.com/articles/web/253104.html
@@ -229,8 +227,7 @@ https://www.anquanke.com/post/id/222730
 从零开始学习各种常见未授权访问漏洞
 https://www.freebuf.com/vuls/254160.html
 
-如何使用Django开发OpenRASP报警接收Web应用
-https://www.freebuf.com/articles/web/253832.html
+
 
 NERVE：一款专为渗透测试设计的多功能网络安全&漏洞利用引擎
 https://www.freebuf.com/articles/network/253232.html

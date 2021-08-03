@@ -36,11 +36,7 @@ https://github.com/zaproxy/zap-hud
 Contrast Security - Community
 https://www.contrastsecurity.com/contrast-community-edition
 
-RASP
-[openRasp](https://rasp.baidu.com/)
-https://github.com/baidu/openrasp
-Sqreen,平台类形,免费3M req/month
-https://www.sqreen.com/pricing
+[RASP](./sec.sdl.OpenRASP.md)
 
 ### SAST - 静态应用安全测试
 

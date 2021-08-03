@@ -27,6 +27,16 @@ Github仓库：https://github.com/cilium/cilium
 Docker容器的漏洞分析与安全研究
 https://www.anquanke.com/post/id/229487
 
+## docker 镜像扫描
+
+[docker 和snyk 联合出品的镜像](https://docs.docker.com/engine/scan/)
+
+```bash
+docker scan redis:6.2.5
+```
+
+评:这个很不错
+
 ## k8s
 
 [浅谈云安全之K8S](https://www.anquanke.com/post/id/245526)
