@@ -794,6 +794,13 @@ DEL /F /A /Q \\?\%1
 RD /s /Q \\?\%1
 https://www.youtube.com/watch?v=vfWhWcwgktc
 
+
+https://www.freedidi.com/1862.html
+https://www.freedidi.com/1858.html
+https://www.ozabc.com/it/503062.html
+https://www.freedidi.com/1865.html
+https://www.ozabc.com/it/503068.html
+
 ## 90 wsl 慢的问题: 没有解决
 git - 对于大型项目，在Debian和Ubuntu上的WSL上运行git命令确实很慢
 https://www.coder.work/article/6344091
