@@ -34,9 +34,8 @@ https://mp.weixin.qq.com/s?__biz=MzA4ODc0MTIwMw==&mid=2652532493&idx=1&sn=02085d
 IAST/FAST
 灰盒自动化漏洞挖掘实践
 https://mp.weixin.qq.com/s?__biz=MzA4ODc0MTIwMw==&mid=2652531544&idx=1&sn=871dc6f5ebae0f74cfe01a66f17e7d8e&scene=19#wechat_redirect
-RASP
-开源应用运行时自我保护解决方案 - OpenRASP
-https://rasp.baidu.com/
+
+[RASP](./sec.sdl.OpenRASP.md)
 
 研发工程规范性模型
     产品研发各个阶段的规范和措施的完成度量化为分数

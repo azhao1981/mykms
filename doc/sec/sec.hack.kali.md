@@ -1167,8 +1167,11 @@ exploit 就会注射到前面的会话中去
 ### vm images: metasploitable
 https://securingninja.com/how-to-install-metasploitable-in-virtualbox/
 https://sourceforge.net/projects/metasploitable/files/Metasploitable2/
-
 https://github.com/rapid7/metasploitable3
+https://www.serra.pw/how-to-create-metasploitable3-virtual-image/
+Windows 10环境下Metasploitable3 靶机的安装与部署（简单版）
+https://jeza-chen.com/2018/09/21/MetaSploit3_Setup/
+
 好像用于es迁移的
 https://github.com/rapid7/elasticsearch-drain
 A modern vulnerable web app

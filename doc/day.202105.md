@@ -39,8 +39,7 @@ https://www.freebuf.com/articles/system/272036.html
 Android App安全之Intent重定向详解
 https://www.freebuf.com/articles/endpoint/271629.html
 
-OpenRasp xxe算法的几种绕过方式
-https://www.anquanke.com/post/id/241107
+
 
 浅谈命令执行的绕过方法
 https://www.anquanke.com/post/id/241808

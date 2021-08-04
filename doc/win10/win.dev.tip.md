@@ -793,3 +793,14 @@ del.bat
 DEL /F /A /Q \\?\%1
 RD /s /Q \\?\%1
 https://www.youtube.com/watch?v=vfWhWcwgktc
+
+## 90 wsl 慢的问题: 没有解决
+git - 对于大型项目，在Debian和Ubuntu上的WSL上运行git命令确实很慢
+https://www.coder.work/article/6344091
+https://stackoverflow.com/questions/50231989/running-git-commands-on-debian-ubuntu-on-wsl-is-really-slow-for-large-projects
+
+🚀 为什么在 WSL 下项目的编译/运行/git 等等和 IO 相关的操作貌似很慢？ #17
+https://github.com/spencerwooo/dowww/issues/17
+https://gist.github.com/noelbundick/9c804a710eb76e1d6a234b14abf42a52
+https://github.com/microsoft/WSL/issues/4401
+https://markentier.tech/posts/2020/10/faster-git-under-wsl2/
