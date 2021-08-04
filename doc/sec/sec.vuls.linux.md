@@ -1,5 +1,6 @@
 # linux 漏洞
 
+sudo apt --only-upgrade install git
 
 ## CVE-2021-33909
 

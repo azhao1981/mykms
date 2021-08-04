@@ -246,3 +246,6 @@ config/src/main/java/com/alibaba/nacos/config/server/service/repository/embedded
 [Blind SQL Injection](https://owasp.org/www-community/attacks/Blind_SQL_Injection)
 
 https://resources.infosecinstitute.com/topic/dumping-a-database-using-sql-injection/
+
+利用WebSocket接口中转注入渗透实战
+https://www.freebuf.com/articles/web/281451.html

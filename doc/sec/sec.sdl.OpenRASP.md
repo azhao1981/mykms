@@ -127,7 +127,9 @@ curl https://packages.baidu.com/app/openrasp/release/1.3.6/rasp-java.tar.gz -o r
 tar -xvf rasp-java.tar.gz
 cd rasp-*/
 
+# heartbeat 决定客户端会多久拉取新的配置
 java -jar RaspInstall.jar -heartbeat 90 -appid 66ce24d42bf4a488da0aecf32c4708a6edca825b -appsecret jtamD1gULeAt6NjIq4bxqh1BapAaDTj65gGVokhE1D4 -backendurl http://192.168.56.140:8086/ -install /home/ubuntu/openrasp/apache-tomcat-9.0.50
+
 
 # Duplicating "rasp" directory
 # - /home/ubuntu/openrasp/apache-tomcat-9.0.50/rasp
@@ -158,24 +160,60 @@ java -jar RaspInstall.jar -heartbeat 90 -appid 66ce24d42bf4a488da0aecf32c4708a6e
 
 http://192.168.56.140:8080/vulns/
 
-使用用例，可以看到有记录，但我取消了日志模式，却并不能形成拦截
-
 http://192.168.56.140:8080/vulns/012-jdbc-mysql.jsp
+
+bat 012-jdbc-mysql.jsp
+conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/test", "test", "test");  
 
 ```sql
 DROP DATABASE IF EXISTS test;
 CREATE DATABASE test;         
-grant all privileges on test.* to 'test'@'%' identified by 'test';
-grant all privileges on test.* to 'test'@'localhost' identified by 'test';
 CREATE TABLE test.vuln (id INT, name text);
 INSERT INTO test.vuln values (0, "openrasp");
 INSERT INTO test.vuln values (1, "rocks");
+-- 原文档应该先加用户
+CREATE USER 'test'@'%' IDENTIFIED BY 'test';
+grant all privileges on test.* to 'test'@'%' identified by 'test';
+grant all privileges on test.* to 'test'@'localhost' identified by 'test';
+
+-- 如果是 mysql8,应该用:
+-- https://dev.mysql.com/doc/refman/8.0/en/grant.html grant 语法已经没有 identified by 语法了
+
+grant all privileges on test.* to 'test'@'%';
+grant all privileges on test.* to 'test'@'localhost';
 ```
 
-创建用户
+ERROR: mysql is started in --skip-name-resolve mode
 
-CREATE USER 'username'@'host' IDENTIFIED BY 'password';
 
+[优化MySQL开启skip-name-resolve参数时显示“ignored in --skip-name-resolve mode.”Warning解决方法](https://developer.aliyun.com/article/475220)
+
+原因分析：
+“--skip-name-resolvemode”是禁用dns解析，避免网络DNS解析服务引发访问MYSQL的错误，一般应当启用。
+启用“--skip-name-resolvemode”后，在MySQL的授权表中就不能使用主机名了，只能使用IP，出现此警告是由于mysql表中已经存在有localhost.localdomain帐号信息。
+
+TIPs:可以忽略
+
+![](images/2021-08-04-16-17-26.png)
+
+攻击 Payload `111 or  1=1` 可以看到能查到两个,注入成功
+
+如果打开拦截
+
+![](images/2021-08-04-17-03-14.png)
+
+则会被跳转到 拦截跳转页面 
+
+
+
+## TODO
+
++ 商业版: 没有看到
++ spring-boot 集成
++ 扫描 上线前的应⽤安全测试（IAST 模式）
++ PHP的容器有什么用: 加到wordpress里
+
+## 参考
 
 [IAST: 一文洞悉DAST、SAST、IAST ](https://www.aqniu.com/learn/46910.html) 
 
@@ -190,4 +228,3 @@ CREATE USER 'username'@'host' IDENTIFIED BY 'password';
 [OpenRasp xxe算法的几种绕过方式](https://www.anquanke.com/post/id/241107)
 
 [如何使用Django开发OpenRASP报警接收Web应用](https://www.freebuf.com/articles/web/253832.html)
-
