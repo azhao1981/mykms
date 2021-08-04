@@ -774,3 +774,22 @@ $Env:path
 
 https://support.microsoft.com/zh-cn/windows/windows-10-中的磁盘清理-8a96ff42-5751-39ad-23d6-434b4d5b9a68
 在“磁盘清理”中，选择“清理系统文件”。
+
+## 免费软件替换
+promi pro
+final cute pro
+达芬奇决心 
+onlyoffice
+libreoffice
+ps vs gimp
+录屏 OBS studio
+3d blender
+视频压缩 handbrake
+https://github.com/xiandanin/magnetW
+qbtorrent 增强版 github
+ventoy 
+
+del.bat
+DEL /F /A /Q \\?\%1
+RD /s /Q \\?\%1
+https://www.youtube.com/watch?v=vfWhWcwgktc
