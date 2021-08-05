@@ -695,6 +695,34 @@ make dev
 
 参考： https://gitee.com/glt_2020/vault-ui
 
+## 创建policy 和 对应的 ToKEN 
+
+注意如果是kv_v2的,必须指定　/data 还是 /meta
+```hcl
+path "secret/data/foo" {
+  capabilities = ["read"]
+}
+```
+
+```PowerShell
+./vault.exe token create -policy=my-new-policy
+Key                  Value
+---                  -----
+token                s.79IPknQPYbbc6GWsv5WJDkpa
+token_accessor       39ShJXlht5iWmodZpTnWpTRV
+token_duration       768h
+token_renewable      true
+token_policies       ["default" "my-new-policy"]
+identity_policies    []
+policies             ["default" "my-new-policy"]
+注意:有 token_duration       768h 为32d
+cd D:\dev\docker\docker-compose\vault
+$env:VAULT_ADDR="http://127.0.0.1:8200"
+$env:VAULT_TOKEN="s.79IPknQPYbbc6GWsv5WJDkpa"
+./vault.exe kv get secret/foo
+
+```
+
 ## ERROR
 
 ### Failed to execute goal org.apache.maven.plugins:maven-resources-plugin:3.2.0

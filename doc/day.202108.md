@@ -1,4 +1,15 @@
 # 202108
+## 20210805
+
+定位：协助红队人员快速的信息收集，测绘目标资产，寻找薄弱点
+水泽-信息收集自动化工具
+https://github.com/0x727/ShuiZe_0x727
+https://gitee.com/azhao-1981/ShuiZe_0x727
+https://github.com/0x727/SqlKnife_0x727
+
+vue3,vue3.0,vue,vue3.x,vue.js,vue后台管理
+https://github.com/chuzhixin/vue-admin-beautiful-pro
+
 ## 20210804
 
 斯坦福大学开源的 JavaScript 加密库。用于 JS 的加密和解密，体积小且支持多种加密算法
