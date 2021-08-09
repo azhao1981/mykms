@@ -68,6 +68,11 @@ because: "Beginning January 15, 2020, The Central Repository will no longer supp
 
 ### xstream
 
+Java安全之 Xstream 漏洞分析
+https://www.anquanke.com/post/id/248029
+https://x-stream.github.io/security.html
+https://x-stream.github.io/tutorial.html
+
 [20201214 CVE-2020-26258/26259：XStream 反序列化漏洞通告](https://www.anquanke.com/post/id/225489)
 > [XStream 反序列化漏洞（CVE-2020-26258 & 26259）的复现与分析](https://www.anquanke.com/post/id/226241)
 CVE-2020-26259 只要（运行 XStream 服务的）进程有足够的权限，那么当 XStream 在反序列化数据时，攻击者构造特定的XML/JSON 请求，可以造成任意文件删除。

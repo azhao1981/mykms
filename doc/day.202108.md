@@ -1,4 +1,41 @@
 # 202108
+## 20210809
+别想偷我源码：通用的针对源码泄露利用程序的反制（常见工具集体沦陷）
+https://paper.seebug.org/1662/
+
+## 20210806
+
+登录框密码框input框禁止复制、粘贴、剪切和右键功能
+
+<input name="pwd" type="password" id="pwd" onpaste="return false" oncontextmenu="return false" oncopy="return false" oncut="return false"/>
+
+https://www.majorgeeks.com/files/details/mouse_lock.html
+https://www.thewindowsclub.com/mouse-lock-windows-pc
+https://sourceforge.net/projects/mouselock/files/
+
+A FREE comprehensive reverse engineering course covering x86, x64, 32-bit ARM & 64-bit ARM architectures.
+https://github.com/mytechnotalent/Reverse-Engineering
+
+https://simonwillison.net/2021/Aug/3/samesite/
+Exploring the SameSite cookie attribute for preventing CSRF
+In reading Yan Zhu’s excellent write-up of the JSON CSRF vulnerability she found in OkCupid one thing puzzled me: I was under the impression that browsers these days default to …
+
+Active Directory certificate abuse.
+https://github.com/GhostPack/Certify
+
+Generic Signature Format for SIEM Systems
+https://github.com/SigmaHQ/sigma
+
+https://github.com/eugenp/tutorials
+
+https://github.com/doocs/jvm
+🤗 JVM 底层原理最全知识总结
+
+🌍 针对小白的算法训练 | 包括四部分：①.算法基础 ②.力扣图解 ③.大厂面经 ④.CS_汇总 | 附：1、千本开源电子书 2、百张技术思维导图（项目花了上百小时，希望可以点 star 支持，🌹感谢~）
+https://github.com/geekxh/hello-algorithm
+
+[XMLDecoder反序列化漏洞底层扩展与WebShell](https://www.anquanke.com/post/id/248771)
+
 ## 20210805
 
 定位：协助红队人员快速的信息收集，测绘目标资产，寻找薄弱点
@@ -14,10 +51,9 @@ https://github.com/chuzhixin/vue-admin-beautiful-pro
 
 斯坦福大学开源的 JavaScript 加密库。用于 JS 的加密和解密，体积小且支持多种加密算法
 https://github.com/bitwiseshiftleft/sjcl
-可以用于前端加密和解密
-javascript - 用JavaScript加密AES-GCM，用Java解密
-https://www.coder.work/article/5413624
 
+可以用于前端加密和解密
+[javascript - 用JavaScript加密AES-GCM，用Java解密](https://www.coder.work/article/5413624)
 
 克隆某个人说话声音的 AI 项目。仅需几秒音频，就能模仿出原音频的人声
 https://github.com/CorentinJ/Real-Time-Voice-Cloning

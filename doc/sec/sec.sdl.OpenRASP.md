@@ -204,12 +204,28 @@ TIPs:可以忽略
 
 则会被跳转到 拦截跳转页面 
 
+## iast
 
+https://github.com/baidu-security/openrasp-iast
+openrasp-iast config -o /path/to/config.yaml -a X -b Y -c Z -m mysql://xxx
+
+https://rasp.baidu.com/doc/install/iast.html
+https://rasp.baidu.com/doc/hacking/architect/iast.html
+
+php:7.2-apache
+elasticsearch:6.8.17
+mongo:3.6
+python:3.7.11-slim-stretch
+
+openjdk:8-stretch
+debian:stretch-slim
+tomcat:8.5.69-jdk8-openjdk
 
 ## TODO
 
 + 商业版: 没有看到
 + spring-boot 集成
+  + jar 模式
 + 扫描 上线前的应⽤安全测试（IAST 模式）
 + PHP的容器有什么用: 加到wordpress里
 
