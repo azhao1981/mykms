@@ -1,4 +1,71 @@
 # 202108
+## 20210810
+
+百度云文档服务、免费 https://cloud.baidu.com/product/doc.html
+易度云查看、付费  http://viewer.everydo.com/home/@zopen.cms:view
+I doc view、付费http://www.idocv.com/
+office web 365 付费https://www.officeweb365.com/
+自己搭建服务器，用openoffice，swftools，jodconvert，flexpaper
+http://developer.qiniu.com/code/v6/api/dora-api/third-party/yifangyun_preview.html#yifangyun_preview-price 七牛文档转换文档
+
+阿里 文档预览（OSS）
+https://help.aliyun.com/document_detail/99373.html
+
+阿里云-文件预览（智能媒体管理）
+https://www.cnblogs.com/zhoujin-Jojo/p/13610464.html
+https://help.aliyun.com/document_detail/63761.html
+
+管理文档
+https://support.huaweicloud.com/usermanual-projectman/docman_hlp_00131.html#docman_hlp_00131__section573793292811
+
+https://www.onlyoffice.com/blog/2017/01/11-things-you-can-do-with-onlyoffice-but-cant-with-google-docs-or-ms-word-online/?from=comparison
+https://github.com/ONLYOFFICE/DocumentServer
+https://helpcenter.onlyoffice.com/installation/docs-community-install-docker.aspx
+https://hub.docker.com/r/onlyoffice/documentserver/
+/var/www/onlyoffice/Data
+
+docker pull onlyoffice/documentserver:6.3.1
+
+中文文档：https://support.websoft9.com/docs/onlyoffice/zh/
+
+docker run -i -t -d -p 80:80 onlyoffice/documentserver:6.3.1
+docker ps
+docker exec ca1c7b42d88b sudo supervisorctl start ds:example
+上传文件
+点击预览
+TODO：
+- API上传
+- 仅预览
+
+OnlyOffice Docker版搬砖心得
+https://blog.csdn.net/weixin_41499259/article/details/89156960
+https://api.onlyoffice.com/editors/demopreview
+https://api.onlyoffice.com/editors/config/
+https://github.com/ONLYOFFICE/Docker-CommunityServer
+
+https://open.yozocloud.cn/product/preview
+https://open.yozocloud.cn/price
+
+数据库等保2.0审计是必须的吗
+http://www.dengbaoceping.net/news/280.html
+而安全审计又分为主机审计、网络审计、数据库审计、运维审计、日志审计、业务审计、配置审计。换句话说，等保2.0时代，数据库审计是必须的。
+约:30,600.00/年 2,550.00/月
+C100: 采用日志服务（SLS）产品进行实时日志分析及存储，可动态扩容存储空间，支持3个到80个数据库实例的审计。如需审计经典网络业务，可参考跨网络审计方案。
+A100: 采用高效云盘进行审计日志存储、分析及归档，支持3个到25个数据库实例的审计。支持部署在容器docker环境。
+D100: 注意：数据库审计实例需要与自建数据库或使用数据库的应用服务器（ECS）网络互通，建议在与业务系统相同的地域采购。
+
+对云上数据（如RDS、PolarDB、OSS等）进行安全防护，识别敏感数据、自动对敏感数据分类分级、并提供针对性的数据泄漏风险检测和告警。
+
+Yearning Mysql SQL审核平台
+https://gitee.com/cookieYe/Yearning
+
+baidu DBAUdit，现在公测免费
+https://cloud.baidu.com/doc/DBAUDIT/s/kjx1phha6
+https://console.bce.baidu.com/dbaudit/?_=1628564255295#/dbcluster/list
+
+The DevOps Open-Source Database Audit Manual - Everything You Should Know
+https://severalnines.com/database-blog/devops-open-source-database-audit-manual-everything-you-should-know
+
 ## 20210809
 别想偷我源码：通用的针对源码泄露利用程序的反制（常见工具集体沦陷）
 https://paper.seebug.org/1662/
