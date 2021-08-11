@@ -48,6 +48,16 @@ HTTP Cross-Origin-Embedder-Policy (COEP) 响应标头可防止文档加载未明
 [Cross-Origin-Resource-Policy](https://developer.mozilla.org/zh-CN/docs/Web/HTTP/Headers/Cross-Origin-Resource-Policy)
 Cross-Origin-Resource-Policy 响应头会指示浏览器阻止对指定资源的无源跨域/跨站点请求。
 
+Access-Control-Allow-Origin: *
+https://developer.mozilla.org/zh-CN/docs/Web/HTTP/CORS
+
+CORS介绍及其漏洞检测
+https://zhuanlan.zhihu.com/p/83099266
+有些开发者为了方便，直接使用请求者的origin作为ACAO的域名，例如下面的Nginx配置:
+add_header "Access-Control-Allow-Origin" $http_origin;
+add_header "Access-Control-Allow-Credentials" "true";
+这种配置非常危险，相当于任意网站可以直接跨域读取其资源内容
+
 [A guide to enable cross-origin isolation](https://web.dev/cross-origin-isolation-guide/)
 [好像没有什么用:Chrome Site Isolation 简介](https://zhuanlan.zhihu.com/p/37861033)
 

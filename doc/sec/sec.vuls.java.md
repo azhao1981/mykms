@@ -6,6 +6,11 @@
 
 [fastjson](sec.vuls.java.fastjson.md)
 
+
+借鉴目标： Java代码审计 入门篇
+https://item.jd.com/13350018.html#
+
+
 https://www.upguard.com/blog/top-10-java-vulnerabilities-and-how-to-fix-them
 
 https://snyk.io/blog/162-security-vulnerabilities-disclosed-in-javas-top-10-libraries-including-jackson-spring-and-jetty/

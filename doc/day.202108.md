@@ -1,4 +1,25 @@
 # 202108
+## 20210811
+
+红队实战攻防技术（一）
+https://paper.seebug.org/1666/
+
+Shreder：一款功能强大的多线程SSH协议密码爆破工具
+https://www.freebuf.com/sectool/281133.html
+渗透测试之地基服务篇：服务攻防之数据库Mssql（上）
+https://www.freebuf.com/articles/network/280164.html
+渗透测试战技101之nmap与icmp隧道
+https://www.freebuf.com/articles/system/282623.html
+
+LinuxKernel任意代码执行漏洞通告（CVE-2021-3490）
+
+近日，绿盟科技CERT监测到有研究人员公开披露了eBPF中的一个任意代码执行漏洞（CVE-2021-3490）的细节信息和PoC，并演示利用此漏洞在Ubuntu20.10和21.04上实现本地权限提升，该漏洞是由于Linux内核中按位操作（AND、OR和XOR）的eBPFALU32边界跟踪没有正确更新32位边界，造成Linux内核中的越界读取和写入，从而导致任意代码执行。官方已于5月11号发布修复版本，请相关用户及时采取措施防护。ExtendedBerkeleyPacketFilter（eBPF）是一种内核技术（从Linux4.x开始），允许程序运行而无需改变内核源代码或添加额外的模块。它是Linux内核中的一种轻量级的沙盒虚拟机（VM），可以在其中运行利用特定内核资源的BPF字节码。
+
+mysql 5.0 日志 配置_MySQL数据库5.0的my.cnf配置选项
+https://blog.csdn.net/weixin_33321522/article/details/113443549
+详细分析MySQL的日志(一)
+https://www.cnblogs.com/f-ck-need-u/p/9001061.html
+
 ## 20210810
 
 百度云文档服务、免费 https://cloud.baidu.com/product/doc.html
@@ -207,8 +228,7 @@ http://blog.nsfocus.net/linux-kernelcve/
 
 SpringMVC配合Fastjson的内存马利用与分析
 
-https://www.anquanke.com/post/id/248155
-《数据安全法》加码数据出境安全，跨国公司该如何应对？
+
 
 https://www.freebuf.com/articles/database/282002.html
 

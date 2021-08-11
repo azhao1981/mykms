@@ -1,16 +1,55 @@
 # sql 注入
 
 ## 内容
+
 做为 [OWASP TOP10-A1](https://owasp.org/www-project-top-ten/2017/A1_2017-Injection) 第一个介绍的漏洞风险，特别需要我们关注。
 
-是什么
+### 什么是SQL注入
+
     所谓SQL注入，就是通过把SQL命令插入到Web表单提交或输入域名或页面请求的查询字符串，最终达到欺骗服务器执行恶意的SQL命令。
-产生原因
-    - 一个是没有对输入的数据进行过滤（过滤输入）
-    - 二是没有对发送到数据库的数据进行转义（转义输出）
-发现漏洞(测试)
-    手动
-        万能钥匙
+
+### 产生原因
+
+- 一个是没有对输入的数据进行过滤（过滤输入）
+- 二是没有对发送到数据库的数据进行转义（转义输出）
+
+### 手动发现漏洞(测试)
+    
+#### 万能钥匙 `xxx' or '1'='1` 或 `1 or 1=1`
+Name/token等字符串时
+```sql
+name=xxx
+select * from users name='xxx';
+name="xxx' or '1'='1"
+select * from users name='xxx' or '1'='1';
+```
+id等数字时
+```sql
+id=123
+select * from users id=123;
+id='123 or 1=1'
+select * from users id=123 or 1=1;
+```
+
+最古老的方法
+```sql
+  and 1=1 -- 页面正常
+  and 1=2 -- 页面不正常
+```
+
+        最简单的方法
+
+页面后加`'`，看是否报错
+如果是数字型传参，可以尝试 -1
+例如：
+
+http://www.xxx.com/new.php?id=1 页面显示id=1的新闻
+http://www.xxx.com/new.php?id=2-1 页面显示id=1的新闻
+
+and 1=1 and 1=2 被拦截的可能性太高了，可以尝试 and -1=-1 and -1=-2 and 1>0 or 1=1。
+
+或者直接 or sleep(5)
+
         https://owasp.org/www-project-web-security-testing-guide/stable/4-Web_Application_Security_Testing/07-Input_Validation_Testing/05-Testing_for_SQL_Injection.html
     工具扫描 sqlmap
         sqlmap -u http://xxxx/?username=xxx
@@ -249,3 +288,42 @@ https://resources.infosecinstitute.com/topic/dumping-a-database-using-sql-inject
 
 利用WebSocket接口中转注入渗透实战
 https://www.freebuf.com/articles/web/281451.html
+
+
+[SQL注入原理及分析](https://paper.seebug.org/1665/)
+
+dvwa
+/var/www/dvwa/config/config.inc.php
+/var/www/phpMyAdmin/setup/frames/config.inc.php
+/var/www/tikiwiki-old/lib/sheet/conf/config.inc.php
+/var/www/tikiwiki/lib/sheet/conf/config.inc.php
+
+数据位置
+cd /var/lib/mysql
+
+root@metasploitable:/# find . -name "mysql"
+./usr/bin/mysql
+./usr/share/mysql
+./usr/lib/perl5/DBD/mysql
+./usr/lib/perl5/auto/DBD/mysql
+./etc/mysql
+./etc/apparmor.d/abstractions/mysql
+./etc/init.d/mysql
+./var/log/mysql
+./var/lib/mysql
+./var/lib/mysql/mysql
+
+mysql -u root
+Server version: 5.0.51a-3ubuntu5 (Ubuntu)
+MySQL中的参数general_log用来控制开启、关闭MySQL查询日志,
+参数general_log_file用来控制查询日志的位置。
+general_log为ON表示开启查询日志，OFF表示关闭查询日志。
+
+log [= file] 把所有的连接以及所有的SQL命令记入日志(通用查询日志); 
+如果没有给出file参数，MySQL将在数据库目录里创建一个hostname.log文件作为这种日志文件(hostname是服务器的主机名)。
+
+log-slow-queries [= file] 把执行用时超过long_query_time变量值的查询命令记入日志(慢查询日志); 如果没有给出file参数，MySQL将在数据库目录里创建一个hostname-slow.log文件作为这种日志文件(hostname是服务器主机 名)。
+
+```bash
+#log            = /var/log/mysql/mysql.log
+```

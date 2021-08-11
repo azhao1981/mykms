@@ -370,12 +370,7 @@ https://www.freebuf.com/articles/database/275248.html
 认证与授权详解
 https://www.freebuf.com/articles/web/273239.html
 
-《数据安全法》要点解读
-https://www.freebuf.com/articles/database/277198.html
-（附全文）最新！《数据安全法》表决通过，9月1日起施行
-https://www.freebuf.com/news/277111.html
-聚焦《中华人民共和国数据安全法》（附全文）
-https://www.anquanke.com/post/id/244115
+
 
 CVE-2021-25217: dhcpd dhclient 栈溢出漏洞
 https://access.redhat.com/errata/RHSA-2021:2359

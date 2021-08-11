@@ -219,8 +219,7 @@ https://www.freebuf.com/articles/es/241507.html
 https://www.freebuf.com/articles/es/232640.html
 数据安全怎么做：合规篇之CCPA
 https://www.freebuf.com/articles/compliance/241532.html
-数据安全怎么做？合规篇之数据安全法（草案）
-https://www.freebuf.com/articles/neopoints/242215.html
+
 
 浅谈安全管理和态势平台关键能力建设要点
 https://www.freebuf.com/articles/243307.html
@@ -543,8 +542,7 @@ https://www.anquanke.com/post/id/209754
 Impost3r：一款针对Linux的密码提取工具
 https://www.freebuf.com/articles/database/239835.html
 
-数据安全怎么做？合规篇之数据安全法（草案）
-https://www.freebuf.com/articles/neopoints/242215.html
+
 
 
 ## 20200706
@@ -562,8 +560,7 @@ https://www.anquanke.com/post/id/209599
 JSshell：一款针对XSS漏洞的JavaScript反向Shell
 https://www.freebuf.com/articles/network/239373.html
 
-数据安全怎么做？合规篇之数据安全法（草案）
-https://www.freebuf.com/articles/neopoints/242215.html
+
 
 
 

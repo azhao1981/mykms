@@ -7,6 +7,21 @@
 [从技术角度解读《数据安全法（草案）》二审稿](http://blog.nsfocus.net/426-429-20/)
 [GDPR笔记（4）：数据保护影响评估（DPIA）之“高风险”认定](https://zhuanlan.zhihu.com/p/134369950)
 
+## 中华人民共和国数据安全法
+
+[《中华人民共和国数据安全法》解读|德勤](https://www2.deloitte.com/cn/zh/pages/risk/articles/china-data-security-law-interpretation.html)
+
+明确了重要数据处理者必须“定期开展风险评估”及相应评估报告内容的具体要求，违反企业将面临最高200万人民币的罚款，相关个人最高20万人民币的罚款。（网安法为最高100万人民币和10万人民币）
+
+[数据安全怎么做？合规篇之数据安全法（草案）](https://www.freebuf.com/articles/neopoints/242215.html)
+
+[《数据安全法》加码数据出境安全，跨国公司该如何应对？](https://www.anquanke.com/post/id/248155)
+
+[《数据安全法》要点解读](https://www.freebuf.com/articles/database/277198.html)
+
+[（附全文）最新！《数据安全法》表决通过，9月1日起施行](https://www.freebuf.com/news/277111.html)
+
+[聚焦《中华人民共和国数据安全法》（附全文）](https://www.anquanke.com/post/id/244115)
 
 ### 0x01安全需求评审的内容
 
