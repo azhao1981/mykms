@@ -1,5 +1,67 @@
 # 202108
+## 20210816
+
+EDR
+https://alternativeto.net/software/symantec-endpoint-protection/
+https://www.cynet.com/endpoint-protection-and-edr/top-6-edr-tools-compared/
+
+git push解决办法： ! [remote rejected] master -> master (pre-receive hook declined)
+https://www.cnblogs.com/cppeterpan/p/7289266.html
+
+笔记本CPU天梯图 2021
+https://zhuanlan.zhihu.com/p/143283849
+
+笔记本电脑推荐2021（轻薄本）
+https://zhuanlan.zhihu.com/p/373437918
+
+从mimikatz学习Windows安全之访问控制模型（一）
+https://paper.seebug.org/1669/
+
+需要一个比es更好用的搜索引擎，这个看起来不错
+rust的搜索引擎
+https://github.com/meilisearch/MeiliSearch
+https://www.meilisearch.com/
+https://tech.marksblogg.com/meilisearch-full-text-search.html
+
+分享一个基于 Rust 的搜索引擎 MeiliSearch
+https://www.v2ex.com/t/744135
+
+The Ultimate Go Study Guide
+https://github.com/hoanhan101/ultimate-go
+
+https://github.com/EbookFoundation/free-programming-books
+Arwes 是一个基于未来科幻小说和赛博朋克风格、动画和音效为 Web 应用程序构建用户界面的 Web 框架，项目基于 React、JSS、Anime 和 Howler。
+GitHub 地址→https://github.com/arwes/arwes
+New CS-Notes 是字节跳动一名非科班程序员的自学笔记，目前收录了 C++、算法、操作系统笔记，后续将更新分布式系统知识，在该 repo 里作者也分享了他面试心得体会、转行相关随感，一些他用的到编程效率工具。
+GitHub 地址→https://github.com/huangrt01/CS-Notes
+
+Bevy 是一个用 Rust 编写的一款简单数据驱动游戏引擎。设计目标为：
+提供完整 2D/3D 功能集
+新手易上手，高级用户可灵活使用
+以数据为中心，使用实体组件系统范式的面向数据架构
+模块化，可随意替换你不喜欢的模块
+快速运行，并行运行
+生产可用，快速编译变更，毕竟等待不是件有趣的事
+除了官方的特性、目标之外，使用者觉得它还有以下特性：
+Bevy ECS：具有无与伦比的可用性和超快性能的自定义实体组件系统
+渲染图：使用“渲染图”节点轻松构建自己的多线程渲染管道
+Bevy UI：专为 Bevy 构建的自定义 ECS 驱动的 UI 框架
+高效的编译时间：使用“快速编译”配置，预期更改将在约 0.8-3.0 秒内完成编译
+GitHub 地址→https://github.com/bevyengine/bevy
+
+New autocxx 是一个以高度自动化、安全地从 Rust 调用 C++ 的工具。这样做的目的是，在使用 bindgen 变体从现有的 C++ 头文件自动生成接口的同时，它具有来自 CXX 的流畅、安全性。可以把 autocxx 看作是将 bindgen 插入 cxx 的胶水。
+GitHub 地址→https://github.com/google/autocxx
+
+
+
 ## 20210812
+
+SOC2:
+我真的需要第三方安全审计吗？
+https://www.freebuf.com/articles/es/164330.html
+
+https://www.huaweicloud.com/securecenter/compliance.html
+![](images/2021-08-13-15-49-41.png)
 
 [数据交换共享安全管理方案 —— NIST SP 800-47干货](https://www.freebuf.com/articles/others-articles/283779.html)
 
