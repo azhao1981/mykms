@@ -62,6 +62,13 @@ https://www.freebuf.com/articles/es/164330.html
 
 https://www.huaweicloud.com/securecenter/compliance.html
 ![](images/2021-08-13-15-49-41.png)
+很漂亮的视频教学软件
+https://github.com/netless-io/flat
+
+https://github.com/TCM-Course-Resources/Practical-Ethical-Hacking-Resources
+
+💯高质量、最全面、完全免费的系统架构设计师（软考高级）备考资源库。QQ群：系统架构设计师（④群：910582038），系统分析师（②群：699260558），信息系统项目管理师（217144315），纯备考群，非培训群。
+https://github.com/xxlllq/system_architect
 
 [数据交换共享安全管理方案 —— NIST SP 800-47干货](https://www.freebuf.com/articles/others-articles/283779.html)
 
