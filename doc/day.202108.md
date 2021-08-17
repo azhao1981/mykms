@@ -1,5 +1,9 @@
 # 202108
 ## 20210817
+https://www.bookstack.cn/read/recommend/0006-kooder.md
+Kooder 是 Gitee 团队开发的一款代码搜索系统，可为 Gitee/GitLab/Gitea 提供代码搜索服务。
+https://www.bookstack.cn/read/recommend/01.GoogleChrome-LightHouse.md
+
 
 https://github.com/widelands/widelands
 https://www.widelands.org/
