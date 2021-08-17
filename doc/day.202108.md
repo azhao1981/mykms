@@ -1,4 +1,38 @@
 # 202108
+## 20210817
+
+https://github.com/widelands/widelands
+https://www.widelands.org/
+GPL 
+
+[Email Authenticity 101: DKIM, DMARC, and SPF](https://www.alexblackie.com/articles/email-authenticity-dkim-spf-dmarc/) 
+
+https://www.nothingventured.com/the-rise-of-the-one-person-unicorn/
+Hyper-specific, profitable, company-building
+答案是狭隘的、垂直的业务，旨在解决单一的、具体的问题。
+像 [Headlime](https://headlime.com/) (帮助作者生成更好的标题)、
+ConvertKit(为创作者提供的电子邮件营销软件)、
+Fathom(正在打造谷歌Analytics之外的一个关注隐私的替代产品)和Transistor(播客托管和发布平台)等公司。
+写文案既费时又困难。Headlime的人工智能可以将你的想法转化成文字，为你节省大量时间，让你可以专注于重要的事情:你的业务!
+
+Alda is a text-based programming language for music composition. 
+It allows you to write and play back music using only a text editor and the command line.
+https://alda.io/tutorial/
+
+https://usefathom.com/ref/TZFFJS
+Website analytics without compromise
+
+Deploying a Rails application to Kubernetes
+https://kubernetes-rails.com/
+
+The bullet gem is a great tool that can help us detect problems that will degrade performance in applications.
+https://blog.appsignal.com/2021/08/11/ruby-hidden-gems-bullet-and-how-it-integrates-with-appsignal.html
+
+Building a Programming Language in Ruby: The Interpreter, Part 2
+https://www.honeybadger.io/blog/stoffle-interpreter-2/
+
+https://github.com/elastic/elasticsearch-rails
+
 ## 20210816
 
 EDR
@@ -17,14 +51,7 @@ https://zhuanlan.zhihu.com/p/373437918
 从mimikatz学习Windows安全之访问控制模型（一）
 https://paper.seebug.org/1669/
 
-需要一个比es更好用的搜索引擎，这个看起来不错
-rust的搜索引擎
-https://github.com/meilisearch/MeiliSearch
-https://www.meilisearch.com/
-https://tech.marksblogg.com/meilisearch-full-text-search.html
 
-分享一个基于 Rust 的搜索引擎 MeiliSearch
-https://www.v2ex.com/t/744135
 
 The Ultimate Go Study Guide
 https://github.com/hoanhan101/ultimate-go
@@ -51,8 +78,6 @@ GitHub 地址→https://github.com/bevyengine/bevy
 
 New autocxx 是一个以高度自动化、安全地从 Rust 调用 C++ 的工具。这样做的目的是，在使用 bindgen 变体从现有的 C++ 头文件自动生成接口的同时，它具有来自 CXX 的流畅、安全性。可以把 autocxx 看作是将 bindgen 插入 cxx 的胶水。
 GitHub 地址→https://github.com/google/autocxx
-
-
 
 ## 20210812
 

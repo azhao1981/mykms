@@ -2,6 +2,13 @@
 
 ## index
 
+[[2021/08](doc/day.202108.md)]
+[[2021/07](doc/day.202107.md)]
+[[2021/06](doc/day.202106.md)]
+[[2021/05](doc/day.202105.md)]
+[[2021/04](doc/day.202104.md)]
+[[2021/03](doc/day.202103.md)]
+[[2021/02](doc/day.202102.md)]
 [[2021/01](doc/day.202101.md)]
 [[2020/12](doc/day.202012.md)]
 [[2020/11](doc/day.202011.md)]
@@ -39,6 +46,7 @@
 | [frontend](dev/frontend/frontend.index.md)
 | [k8s](/doc/ops/k8s.readme.md)
 | [codereview](/doc/dev/codereview.md)
+| [search](/doc/dev/search.md)
 
 #### **宝库**
 
