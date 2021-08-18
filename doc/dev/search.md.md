@@ -1,18 +1,15 @@
 # search
 
+主要对比对中文支持和性能，占内存
+
 ## 产品
 
 [Elasticsearch](https://www.elastic.co/cn/) is made up of almost 2 million lines of Java
 [Apache Solr](https://solr.apache.org/) which uses [Apache Lucene](https://lucene.apache.org/) comes in at around 1.3M lines of Java
+
 [Groonga](https://groonga.org/) is made up of 600K+ lines of C
 docker pull groonga/groonga:latest
-[Manticore Search](https://manticoresearch.com/) is made up of 150K lines of C++,
-docker run --name manticore --rm -d manticoresearch/manticore && docker exec -it manticore mysql && docker stop manticore
-https://hub.docker.com/r/manticoresearch/manticore/
-mysql> source /sandbox.sql
-docker pull manticoresearch/manticore:3.6.0
-698 92
- GPL-2.0 License
+
 [Sphinx](http://sphinxsearch.com/) is made up of 100K lines of C++, 
 $ docker run -it --rm -v /path/to/document:/docs sphinxdoc/sphinx sphinx-quickstart
 https://hub.docker.com/r/sphinxdoc/sphinx
@@ -56,9 +53,37 @@ docker save -o typesense.tar typesense/typesense:0.21.0
 gzip typesense.tar
 scp root@ln.gezhishirt.club:typesense.tar.gz ./
 mkdir /tmp/typesense-data
-docker run -p 8108:8108 -v/tmp/data:/data typesense/typesense:0.21.0 --data-dir /data --api-key=Hu52dwsas2AdxdE
+docker run -p 8108:8108 -v /tmp/tsdata:/data typesense/typesense:0.21.0 --data-dir /data --api-key=Hu52dwsas2AdxdE
 https://typesense.org/docs/0.21.0/guide/
 https://hub.docker.com/r/typesense/typesense/tags?page=1&ordering=last_updated
+
+数据集：
+https://typesense.org/docs/0.21.0/guide/building-a-search-application.html#sample-dataset
+gem install typesense
+
+```bash
+export TYPESENSE_API_KEY='Hu52dwsas2AdxdE'
+export TYPESENSE_HOST='http://192.168.56.140:8108'
+curl "${TYPESENSE_HOST}/collections" \
+      -X POST \
+      -H "Content-Type: application/json" \
+      -H "X-TYPESENSE-API-KEY: ${TYPESENSE_API_KEY}" -d '{
+        "name": "books",
+        "fields": [
+          {"name": "title", "type": "string" },
+          {"name": "authors", "type": "string[]", "facet": true },
+          {"name": "image_url", "type": "string" },
+
+          {"name": "publication_year", "type": "int32", "facet": true },
+          {"name": "ratings_count", "type": "int32" },
+          {"name": "average_rating", "type": "float" }       
+        ],
+        "default_sorting_field": "ratings_count"
+      }'
+
+
+```
+
 
 [Bleve](https://github.com/blevesearch/bleve), which is just a text indexing library for GoLang, that doesn't include any client or server interfaces, is made up of 83K+ lines of code Apache-2.0 License
  Apache-2.0 License 7.7k 587
@@ -78,6 +103,15 @@ https://github.com/valeriansaliou/sonic  MPL-2.0 License rust
 221s
 https://www.bookstack.cn/read/recommend/0003-redisearch.md
 10MB 的数据，大概会占用 30MB 的内存
+
+
+[Manticore Search](https://manticoresearch.com/) is made up of 150K lines of C++,
+docker run --name manticore --rm -d manticoresearch/manticore && docker exec -it manticore mysql && docker stop manticore
+https://hub.docker.com/r/manticoresearch/manticore/
+mysql> source /sandbox.sql
+docker pull manticoresearch/manticore:3.6.0
+698 92
+ GPL-2.0 License
 
 [manticoresearch](https://github.com/manticoresoftware/manticoresearch)
 698 92
