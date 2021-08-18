@@ -1,4 +1,18 @@
 # 202108
+## 20210818
+
+https://github.com/Qv2ray/Qv2ray
+
+Java内存攻击技术漫谈
+https://xz.aliyun.com/t/10075
+
+https://huacnlee.com/autocorrect/
+https://rustwasm.github.io/book/
+
+https://github.com/babysor/Realtime-Voice-Clone-Chinese
+MySQL8新特性注入技巧
+https://www.anquanke.com/post/id/249650
+
 ## 20210817
 https://www.bookstack.cn/read/recommend/0006-kooder.md
 Kooder 是 Gitee 团队开发的一款代码搜索系统，可为 Gitee/GitLab/Gitea 提供代码搜索服务。
