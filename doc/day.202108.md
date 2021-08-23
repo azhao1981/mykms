@@ -1,4 +1,84 @@
 # 202108
+## 20210823
+
+https://www.baeldung.com/spring-request-param
+
+人脸识别技术在民航机场应用现状分析
+https://www.freebuf.com/articles/compliance/284758.html
+
+Struts2-002 XSS漏洞浅析
+https://www.anquanke.com/post/id/247828
+
+Fastjson远程命令执行漏洞总结
+https://www.freebuf.com/articles/web/283585.html
+
+
+内网渗透基石篇——权限维持分析（上）
+https://www.freebuf.com/articles/web/283870.html
+
+内网渗透基石篇--权限维持分析（下）
+https://www.freebuf.com/articles/web/284497.html
+
+浅谈利用session绕过getshell
+https://www.freebuf.com/articles/web/283729.html
+
+## 20210820
+
+小而全而美的第三方登录开源组件。目前已支持Github、Gitee、微博、钉钉、百度、Coding、腾讯云开发者平台、OSChina、支付宝、QQ、微信、淘宝、Google、Facebook、抖音、领英、小米、微软、今日头条、Teambition、StackOverflow、Pinterest、人人、华为、企业微信、酷家乐、Gitlab、美团、饿了么、推特、飞书、京东、阿里云、喜马拉雅、Amazon、Slack和 Line 等第三方平台的授权登录。 Login, so easy!
+https://gitee.com/yadong.zhang/JustAuth
+这可能是我想要的超级登录器 MIT
+
+## 20210819
+🔥🔥🔥 前端面试，独有前端面试题详解，前端面试刷题必备，1000+前端面试真题，Html、Css、JavaScript、Vue、React、Node、TypeScript、Webpack、算法、网络与安全、浏览器
+https://github.com/lgwebdream/FE-Interview
+
+😱 从源码层面，剖析挖掘互联网行业主流技术的底层实现原理，为广大开发者 “提升技术深度” 提供便利。目前开放 Spring 全家桶，Mybatis、Netty、Dubbo 框架，及 Redis、Tomcat 中间件等
+https://github.com/doocs/source-code-hunter
+Spring源码阅读
+https://github.com/seaswalker/spring-analysis
+
+GoKart is a static analysis tool for Go that finds vulnerabilities using the SSA (single static assignment) form of Go source code. 
+It is capable of tracing the source of variables and function arguments to determine whether input sources are safe, which reduces the number of false positives compared to other Go security scanners. For instance, a SQL query that is concatenated with a variable might traditionally be flagged as SQL injection; however, GoKart can figure out if the variable is actually a constant or constant equivalent, in which case there is no vulnerability.
+
+https://github.com/praetorian-inc/gokart
+
+https://github.com/tal-tech/go-zero
+go-zero is a web and rpc framework written in Go. It's born to ensure the stability of the busy sites with resilient design. Builtin goctl greatly improves the development productivity.
+http://www.jikejiaocheng.com/c/gozero-intro.html
+https://www.bookstack.cn/read/go-zero-1.1.8-zh/README.md
+https://go-zero.dev/cn/
+go-zero解读与最佳实践（上）
+https://segmentfault.com/a/1190000039160242
+先粗后细，不要过细，切忌一个接口一个服务
+横向拆分，而非纵向，我们尽量不要超过三层调用
+单向调用，严禁循环调用
+禁止接口类型透传，在不同的层之间不要共享同一个数据定义，避免一处修改，影响其它
+没有依赖关系的串行调用改为并行，可以通过 core/mr 包降低响应延迟而不增加系统负载
+
+CodeQL从入门到放弃
+https://www.freebuf.com/articles/web/283795.html
+安卓学习思路方法总结（三）
+https://www.freebuf.com/articles/mobile/282950.html
+
+【安全通报】美洽在线客服系统存在XSS漏洞（CNVD-2021-51877）
+https://nosec.org/home/detail/4826.html
+
+最全的Tomcat漏洞复现
+https://paper.seebug.org/1677/
+Golang 的字符编码与 regexp
+https://paper.seebug.org/1679/
+Java 内存攻击技术漫谈
+https://paper.seebug.org/1678/
+
+There is a possible open redirect vulnerability in the Host Authorization
+middleware in Action Pack. This vulnerability has been assigned the CVE
+identifier CVE-2021-22942.
+
+[CVE-2021-22942] Possible Open Redirect in Host Authorization Middleware
+https://groups.google.com/g/rubyonrails-security/c/wB5tRn7h36c
+Versions Affected:  >= 6.0.0.
+Not affected:       < 6.0.0
+Fixed Versions:     6.1.4.1, 6.0.4.1
 ## 20210818
 
 https://github.com/Qv2ray/Qv2ray
@@ -17,7 +97,6 @@ https://www.anquanke.com/post/id/249650
 https://www.bookstack.cn/read/recommend/0006-kooder.md
 Kooder 是 Gitee 团队开发的一款代码搜索系统，可为 Gitee/GitLab/Gitea 提供代码搜索服务。
 https://www.bookstack.cn/read/recommend/01.GoogleChrome-LightHouse.md
-
 
 https://github.com/widelands/widelands
 https://www.widelands.org/

@@ -811,3 +811,15 @@ https://github.com/spencerwooo/dowww/issues/17
 https://gist.github.com/noelbundick/9c804a710eb76e1d6a234b14abf42a52
 https://github.com/microsoft/WSL/issues/4401
 https://markentier.tech/posts/2020/10/faster-git-under-wsl2/
+
+
+## 91 windows vscode python code run 中文乱码
+vscode code runner 运行python 中文乱码
+https://www.jianshu.com/p/52d95de8aea9
+runner settings 中 设置 
+
+```json
+"code-runner.executorMap": {
+  "python": "set PYTHONIOENCODING=utf8 && python -u",
+  }
+```

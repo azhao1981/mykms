@@ -7,6 +7,12 @@
 [从技术角度解读《数据安全法（草案）》二审稿](http://blog.nsfocus.net/426-429-20/)
 [GDPR笔记（4）：数据保护影响评估（DPIA）之“高风险”认定](https://zhuanlan.zhihu.com/p/134369950)
 
+解读 |《个人信息保护法》定稿与二审稿18条改动对比（附全文）
+https://www.freebuf.com/news/285633.html
+
+浅谈新修订的GBT 30283《信息安全技术 信息安全服务 分类与代码》
+https://www.freebuf.com/articles/neopoints/284164.html
+
 ## 中华人民共和国数据安全法
 
 [《中华人民共和国数据安全法》解读|德勤](https://www2.deloitte.com/cn/zh/pages/risk/articles/china-data-security-law-interpretation.html)
