@@ -1,4 +1,99 @@
 # 202108
+## 20210824
+【精心解读】关于Jupyter Notebook的28个技巧
+https://zhuanlan.zhihu.com/p/32600329
+
+https://api.aliyun.com/#/
+https://next.api.aliyun.com/home
+
+红队实战攻防技术（一）
+https://www.freebuf.com/articles/web/284080.html
+说说JAVA反序列化
+https://www.anquanke.com/post/id/251223
+gomarkdown/markdown 项目的 XSS 漏洞产生与分析
+https://www.anquanke.com/post/id/250541
+如何使用Red-Shadow扫描AWS IAM中的安全漏洞
+https://www.freebuf.com/articles/security-management/285667.html
+
+浅谈云上攻防—— Kubelet 访问控制机制与提权方法研究
+https://paper.seebug.org/1683/
+浅谈云上攻防——元数据
+https://paper.seebug.org/1681/
+浅谈云上攻防——对象存储服务访问策略评估机制研究
+https://paper.seebug.org/1682/
+Weblogic CVE-2021-2394 分析
+https://paper.seebug.org/1684/
+浅谈云上攻防——Web 应用托管服务中的元数据安全隐患
+https://paper.seebug.org/1680/
+
+陈梦，1994年1月15日出生于山东青岛，中国乒乓球运动员，效力于中国女子乒乓球队 [122]  。
+1999年，陈梦开始练习乒乓球 [134]  ；2004年，陈梦进入山东省体工队；2007年，陈梦被调选送至国家队 [135]  。
+13岁的陈梦在国家队集训中成绩优异，在争夺进入国家队唯一一个名额的队内大循环中，年龄最小的陈梦从16名选手中脱颖而出，以第一名的身份拿到了进入国家队，年龄仅次于12岁就进入国家队的郭跃
+孙颖莎，2000年11月4日出生于河北石家庄，中国女子乒乓球运动员，效力于中国女子乒乓球一队。
+2015年9月，孙颖莎进入中国乒乓球国家二队。2017年1月进入国家一队。 [1] 
+
+XSTREAM 多个高危漏洞通告
+http://blog.nsfocus.net/xstream-se/
+【安全通报】XStream 多个远程代码执行漏洞（CVE-2021-39139等）
+https://nosec.org/home/detail/4829.html
+腾讯蓝军安全通告：XStream修复14个安全漏洞
+https://mp.weixin.qq.com/s/eidFQQXs70-kSM4OMSakhA
+
+Vulfocus 漏洞靶场 v0.3.2.6 版本 Docker-Compose 上线
+https://nosec.org/home/detail/4811.html
+
+
+CASB 云访问安全代理 是一类安全产品 
+云访问安全代理（Cloud Access Security Broker，CASB）
+https://cloud.tencent.com/document/product/1303/47853
+https://www.freebuf.com/articles/network/230403.html
+http://jiagoushi.pro/what-casb-cloud-access-security-broker
+
+Best CASB Security Vendors for 2021
+https://www.esecurityplanet.com/products/casb-security-vendors/
+
+https://blog.runpanther.io/open-source-cloud-security-tools/
+
+https://osquery.readthedocs.io/en/latest/introduction/using-osqueryi/
+https://github.com/osquery/osquery
+```
+osqueryi
+SELECT DISTINCT processes.name, listening_ports.port, processes.pid
+  FROM listening_ports JOIN processes USING (pid)
+  WHERE listening_ports.address = '0.0.0.0';
+```
+
+go-audit is an alternative to the auditd daemon that ships with many distros
+https://github.com/slackhq/go-audit
+https://github.com/slackhq/go-audit/blob/master/go-audit.yaml.example
+https://ancat.github.io/auditd/2018/11/01/auditd.html
+https://anee.me/monitoring-commands-using-go-audit-59226a2cf442
+
+Grapl is a graph-based SIEM platform built by-and-for incident response engineers.
+https://github.com/grapl-security/grapl
+
+Suricata是一个基于开源的入侵检测系统和入侵防御系统。它是由开放信息安全基金会开发的。
+Suricata is an essential open-source security project that acts as an intrusion detection system, intrusion prevention system, and network security monitoring tool.
+
+Suricata是一个重要的开源安全项目，作为入侵检测系统、入侵防御系统和网络安全监控工具。
+https://github.com/OISF/suricata
+Suricata IDS 入门 — 规则详解
+https://www.secpulse.com/archives/71603.html
+
+
+与Suricata一样，Zeek或Bro (Bro在BroCon 2018年更名为Zeek)也是一种入侵检测系统和网络监控工具，可以识别异常行为，如可疑或威胁活动。Zeek与传统IDS的不同之处在于，与检测异常的基于规则的引擎不同，Zeek还捕获关于网络上活动的元数据，以更好地理解网络行为的上下文。例如，您可以查看协议、HTTP调用或证书中的头和域名。
+Zeek is a powerful network analysis framework that is much different from the typical IDS you may know.
+https://github.com/zeek/zeek
+
+Panther是一个强大的安全分析平台，旨在缓解传统SIEMs的问题。
+它是由StreamAlert的核心架构师创建的，StreamAlert是一个由Airbnb开源的自动日志分析解决方案。
+Panther提供了一个单一窗格，用于在所有可扩展的业务环境中集中检测和响应。
+检测是透明和确定的规则，以减少假阳性和警报疲劳。
+https://github.com/panther-labs/panther
+打包了，4月不再更新，是打包了？闭源了？
+Panther Community Edition存储库已弃用。我们决定专注于通过Panther SaaS产品为客户提供卓越的体验。如果你想了解更多关于免费试用的信息，请申请一个演示!
+https://runpanther.io/
+
 ## 20210823
 
 https://www.baeldung.com/spring-request-param
