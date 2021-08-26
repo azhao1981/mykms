@@ -599,6 +599,13 @@ vault kv delete secret/hello
 https://learn.hashicorp.com/tutorials/vault/getting-started-secrets-engines?in=vault/getting-started
 
 https://www.vaultproject.io/docs/secrets/alicloud
+
+```bash
+vault write alicloud/config \
+    access_key=0wNEpMMlzy7szvai \
+    secret_key=PupkTg8jdmau1cXxYacgE736PJj4cA
+
+```
 这个没有oss的详细例子
 
 https://www.vaultproject.io/docs/configuration/storage/alicloudoss

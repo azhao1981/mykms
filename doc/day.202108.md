@@ -1,4 +1,8 @@
 # 202108
+## 20210826
+
+埃文降维抄同行作业？博士抄高中生作业？高中生，你的智商呢？
+https://mp.weixin.qq.com/s?__biz=MzA3NDc3NjcyNQ==&mid=2456910535&idx=1&sn=b63ee04a883f72c0df04ce210eb8f1a8&chksm=88ff733dbf88fa2be477648c84c9a09308a28a253f316c7f52b4be6432c6a3060308eb179f54&mpshare=1&scene=1&srcid=0714k9kc04Ra68Ql1XLwxSfA&sharer_sharetime=1629967056229&sharer_shareid=b43d2c2b80926567e00fc4faa4da958a&version=3.1.11.3009&platform=win#rd
 ## 20210825
 
 浅谈云上攻防——对象存储服务访问策略评估机制研究
