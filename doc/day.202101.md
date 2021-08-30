@@ -291,9 +291,6 @@ https://www.anquanke.com/post/id/230001
 
 https://github.com/go-delve/delve
 5、delve：一款 Go 语言的调试工具。如果你还在像我一样用 fmt.Println 调试 go 的代码，就试试这个工具吧。万星的开源项目可不是开玩笑的，它上手简单并且支持多种方式调用，助你快速找到 Bug
-7、JustAuth：帮你搞定第三方登陆的 Java 开源组件。使用简单、接入方便，帮你随心所欲地接入第三方登陆，让登陆变得简单。目前已经支持十多个平台，还在持续扩充中
-https://github.com/justauth/JustAuth
-💯 小而全而美的第三方登录开源组件。目前已支持Github、Gitee、微博、钉钉、百度、Coding、腾讯云开发者平台、OSChina、支付宝、QQ、微信、淘宝、Google、Facebook、抖音、领英、小米、微软、今日头条、Teambition、StackOverflow、Pinterest、人人、华为、企业微信、酷家乐、Gitlab、美团、饿了么和推特等第三方平台的授权登录。 Login, so easy!
 
 8、java-design-patterns：设计模式 Java 的最佳实践，出自开源社区大佬们之手。作为有梦想和追求的 Java 程序员，当然需要会一些设计模式啦。这个项目虽然是英文的但是先看代码和图，尝试理解含义那么英文描述也就能猜得八九不离十了。不要让英语作为你不努力的借口，努力变强吧！在线阅读
 https://github.com/iluwatar/java-design-patterns

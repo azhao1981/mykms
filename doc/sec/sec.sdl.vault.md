@@ -546,6 +546,87 @@ echo 'bXkgc2VjcmV0IGRhdGE='| base64 --decode
 echo 'bXkgc2VjcmV0IGRhdGEK'| base64 --decode
 ```
 
+### 其它应用的支持
+
+jumpserver/apps/assets/backends/vault.py
+
+### vault 数据库账号管理 mysql
+
++ 配置管理账号
++ 轮换管理账号
++ 创建数据库角色
++ 获取数据库角色用户
+
+
+https://www.vaultproject.io/docs/secrets/databases
+```bash
+vault secrets enable database
+vault write database/config/my-database \
+    plugin_name="..." \
+    connection_url="..." \
+    allowed_roles="..." \
+    username="..." \
+    password="..."
+```
+It is highly recommended a user within the database is created specifically for Vault to use. 
+This user will be used to manipulate dynamic and static users within the database. 
+This user is called the "root" user within the documentation.
+
+After configuring the root user, it is highly recommended you rotate that user's password such that the vault user is not accessible by any users other than Vault itself:
+配置完成后，就建议轮换密码，不让vault外的别人再能用这个账号访问数据库
+vault write -force database/rotate-root/my-database
+
+When this is done, the password for the user specified in the previous step is no longer accessible. 
+Because of this, it is highly recommended that a user is created specifically for Vault to use to manage database users.
+
+
+https://www.vaultproject.io/docs/secrets/databases/mysql-maria
+
+```bash
+vault write database/config/my-mysql-database \
+    plugin_name=mysql-database-plugin \
+    connection_url="{{username}}:{{password}}@tcp(127.0.0.1:3306)/" \
+    allowed_roles="my-role" \
+    username="vaultuser" \
+    password="vaultpass"
+```
+
+
+
+### vault 阿里密钥
+
++ 创建管理密码
++ 创建策略，对应阿里的自定义策略,权限策略管理里可以看到
++ 创建密钥，对应会生产一个用户并在用户下建一个AK
++ TODO：怎么删除账号
+
+对应代码：https://github.com/hashicorp/vault-plugin-secrets-alicloud
+
+https://www.vaultproject.io/docs/concepts/lease
+
+All dynamic secrets in Vault are required to have a lease. Even if the data is meant to be valid for eternity, a lease is required to force the consumer to check in routinely.
+所有vault中的动态密钥都有一个租期。即使data是明确一直存在，租期是强制要求消费者来定制登记用的。
+vault的租期是用来通知客户端来重新获取的，并不是说租期到了，vault就会把key销毁，并创建新的
+
+这里又好像在说会自动的清除 revoked
+Revocation can happen manually via the API, via the vault lease revoke cli command, or automatically by Vault. 
+When a lease is expired, Vault will automatically revoke that lease. 
+When a token is revoked, Vault will revoke all leases that were created using that token.
+
+注意这里说的是 vault 的 “后端”，其实是vault的接口规范，后端如ali的vault接口可以不处理 租约时长，但事实上，阿里是会处理，租约过期，如删除AK，但不会删除账号
+The requested increment is completely advisory. 
+The backend in charge of the secret can choose to completely ignore it. For most secrets, the backend does its best to respect the increment, but often limits it to ensure renewals every so often.
+
+lease_id           alicloud/creds/oss-wei-vault-test2/r29LR1oOs0YZKtuVnfdZLAVr
+
+vault lease renew $lease_id
+vault lease revoke $lease_id
+
+可以按前缀删除
+vault lease revoke -prefix aws/
+
+当被入侵发生时，可以快速把所有的ak删除掉
+
 ### 加密服务
 
 https://www.vaultproject.io/api/secret/transit#ecdsa-p384
@@ -599,6 +680,13 @@ vault kv delete secret/hello
 https://learn.hashicorp.com/tutorials/vault/getting-started-secrets-engines?in=vault/getting-started
 
 https://www.vaultproject.io/docs/secrets/alicloud
+
+```bash
+vault write alicloud/config \
+    access_key=0wNEpMMlzy7szvai \
+    secret_key=PupkTg8jdmau1cXxYacgE736PJj4cA
+
+```
 这个没有oss的详细例子
 
 https://www.vaultproject.io/docs/configuration/storage/alicloudoss

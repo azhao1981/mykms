@@ -1,4 +1,328 @@
 # 202108
+## 20210830
+
+协程与任务
+https://docs.python.org/zh-cn/3/library/asyncio-task.html
+
+关于开发中的数据库管理，和使用规约
+Ask HN: How do you organize and manage database migrations?
+https://news.ycombinator.com/item?id=21405501
+rails migration ，但有一个问题，注释和默认id
+https://stackify.com/rails-migration-a-complete-guide/
+gitlab的迁移指导
+https://docs.gitlab.com/ee/development/migration_style_guide.html
+
+python:
+Django's migration handling is excellent as well [0]. python的迁移工具
+[0] https://docs.djangoproject.com/en/2.2/topics/migrations/
+https://pypi.org/project/yoyo-migrations/
+The best way to manage MySQL table definitions
+https://www.skeema.io/
+https://github.com/SectorLabs/django-postgres-extra
+other
+https://github.com/jtdaugherty/dbmigrations 最后更新18年
+
+go: dbmate
+https://github.com/amacneil/dbmate
+dbmate --help    # print usage help
+dbmate new       # generate a new migration file
+dbmate up        # create the database (if it does not already exist) and run any pending migrations
+dbmate create    # create the database
+dbmate drop      # drop the database
+dbmate migrate   # run any pending migrations
+dbmate rollback  # roll back the most recent migration
+dbmate down      # alias for rollback
+dbmate status    # show the status of all migrations (supports --exit-code and --quiet)
+dbmate dump      # write the database schema.sql file
+dbmate wait      # wait for the database server to become available
+
+ghost 数据迁移
+
+proxy 个人数据审核或代理
+
+vault 用来管理账号
+
+ClickHouse是一个用于联机分析处理的开源列式数据库。 
+ClickHouse是由俄罗斯IT公司Yandex为Yandex.Metrica网络分析服务开发的。 
+ClickHouse允许分析实时更新的数据。
+关键词：列式存储
+https://clickhouse.tech/
+ClickHouse® is a free analytics DBMS for big data
+https://github.com/ClickHouse/ClickHouse
+什么是ClickHouse？
+https://clickhouse.tech/docs/zh/
+探索ClickHouse与Amazon S3结合使用的三种方法
+https://aws.amazon.com/cn/blogs/china/explore-three-ways-to-combine-clickhouse-and-amazon-s3/
+ClickHouse 在有赞的实践之路
+https://tech.youzan.com/clickhouse-zai-you-zan-de-shi-jian-zhi-lu/
+
+阿里云也提供了ClickHouse
+云数据库 ClickHouse 新用户可享受首月10元优惠！优惠支持规格：4 核16GB，8 核 32GB，存储容量不超过 500GB；优惠节点数不超过 4 。
+https://www.aliyun.com/product/clickhouse
+
+《个人信息保护法》强在哪？我们又该如何准备
+https://www.freebuf.com/articles/neopoints/286092.html
+CCPA(加州消费者保护法案)
+GDPR
+UPDBA 统一个人数据保护法案
+《个人信息保护法》企业侧实用解读指南
+https://www.freebuf.com/articles/neopoints/286277.html
+落地《个人信息保护法》 直面数字化时代的困难与挑战
+https://www.freebuf.com/articles/neopoints/286507.html
+国家网信办：算法推荐服务提供者不得利用算法屏蔽信息、过度推荐
+https://www.freebuf.com/news/286454.html
+
+基于编码注入的对抗性NLP攻击
+https://www.anquanke.com/post/id/251222
+
+如何使用Whoami在Kali上保持匿名性
+https://www.freebuf.com/articles/system/285908.html
+
+ATT&CK 实战分享（一）
+https://www.freebuf.com/articles/web/283647.html
+渗透测试员完整职业指南
+https://www.freebuf.com/articles/network/282989.html
+web安全战技101之JWT
+https://www.freebuf.com/articles/web/283640.html
+
+应用层隧道技术：SSH隧道反向代理（非主流用法）
+https://www.freebuf.com/articles/network/284921.html
+正向代理（-L）：相当于iptable的port forwarding
+反向代理（-R）：相当于frp或者ngrok
+socks5代理（-D）：相当于ss/ssr指定本地“动态”应用程序级端口转发。
+
+Scour：一款针对AWS的漏洞利用框架|怎么对阿里?
+https://www.freebuf.com/articles/security-management/285674.html
+
+FTP在ssrf中的应用
+https://www.anquanke.com/post/id/251517
+Java反序列化和集合之间的渊源
+https://www.anquanke.com/post/id/251220
+
+【安全通报】OpenSSL 缓冲区溢出漏洞（CVE-2021-3711&CVE-2021-3712）
+https://nosec.org/home/detail/4833.html
+SM2国密算法应用的高危漏洞——CVE-2021-3711
+https://www.anquanke.com/post/id/251504
+
+【安全通报】Atlassian Confluence Webwork OGNL 注入漏洞（CVE-2021-26084）
+https://nosec.org/home/detail/4836.html
+
+隐藏十五年的漏洞：CVE-2021-22555 漏洞分析与复现
+https://www.anquanke.com/post/id/251515
+
+## 20210828
+TypeScript Deep Dive 中文版
+https://github.com/jkchao/typescript-book-chinese
+This repository contains all the DSA (Data-Structures, Algorithms, 450 DSA by Love Babbar Bhaiya, FAANG Questions), Technical Subjects (OS + DBMS + SQL + CN + OOPs) Theory+Questions, FAANG Interview questions, and Miscellaneous Stuff (Programming MCQs, Puzzles, Aptitude, Reasoning). The Programming languages used for demonstration are C++, Pytho…
+https://github.com/AkashSingh3031/The-Complete-FAANG-Preparation
+
+绝妙的个人生产力（Awesome Productivity 中文版）
+https://github.com/eastlakeside/awesome-productivity-cn
+
+https://github.com/tiangolo/sqlmodel
+https://github.com/filebrowser/filebrowser
+https://github.com/bregman-arie/devops-exercises
+The Linux Kernel Module Programming Guide (updated for 5.x kernels)
+https://github.com/sysprog21/lkmpg
+
+https://sqlmodel.tiangolo.com/tutorial/fastapi/
+https://pydantic-docs.helpmanual.io/
+https://fastapi.tiangolo.com/
+
+## 20210826
+
+埃文降维抄同行作业？博士抄高中生作业？高中生，你的智商呢？
+https://mp.weixin.qq.com/s?__biz=MzA3NDc3NjcyNQ==&mid=2456910535&idx=1&sn=b63ee04a883f72c0df04ce210eb8f1a8&chksm=88ff733dbf88fa2be477648c84c9a09308a28a253f316c7f52b4be6432c6a3060308eb179f54&mpshare=1&scene=1&srcid=0714k9kc04Ra68Ql1XLwxSfA&sharer_sharetime=1629967056229&sharer_shareid=b43d2c2b80926567e00fc4faa4da958a&version=3.1.11.3009&platform=win#rd
+## 20210825
+
+浅谈云上攻防——对象存储服务访问策略评估机制研究
+https://paper.seebug.org/1682/
+据统计，由于缺乏经验或人为错误导致的存储桶错误配置所造成的安全问题占所有云安全漏洞的16%。
+
+通过上文的分析可知，公有读权限可以通过匿名身份直接读取用户存储桶中的数据，存在着严重的安全隐患。
+
+但是有些用户为了避免使用繁杂且细粒度的权限配置，会错误的将其存储桶设置为公有读写，这将导致了其存储桶中的内容被攻击者窃取与篡改。
+正如本文前言中所描述的2017美国国防部承包商数据泄露案例。即便是美国国防部承包商，在使用存储桶进行对象存储时，也会犯下这样的常见错误。
+因此，为了保障存储桶安全，建议用户为存储桶配置私有读写权限。
+
+COSCMD 工具
+https://cloud.tencent.com/document/product/436/10976
+这篇是腾讯云的
+
+## 20210824
+【精心解读】关于Jupyter Notebook的28个技巧
+https://zhuanlan.zhihu.com/p/32600329
+
+https://api.aliyun.com/#/
+https://next.api.aliyun.com/home
+
+红队实战攻防技术（一）
+https://www.freebuf.com/articles/web/284080.html
+说说JAVA反序列化
+https://www.anquanke.com/post/id/251223
+gomarkdown/markdown 项目的 XSS 漏洞产生与分析
+https://www.anquanke.com/post/id/250541
+如何使用Red-Shadow扫描AWS IAM中的安全漏洞
+https://www.freebuf.com/articles/security-management/285667.html
+
+浅谈云上攻防—— Kubelet 访问控制机制与提权方法研究
+https://paper.seebug.org/1683/
+浅谈云上攻防——元数据
+https://paper.seebug.org/1681/
+
+Weblogic CVE-2021-2394 分析
+https://paper.seebug.org/1684/
+浅谈云上攻防——Web 应用托管服务中的元数据安全隐患
+https://paper.seebug.org/1680/
+
+陈梦，1994年1月15日出生于山东青岛，中国乒乓球运动员，效力于中国女子乒乓球队 [122]  。
+1999年，陈梦开始练习乒乓球 [134]  ；2004年，陈梦进入山东省体工队；2007年，陈梦被调选送至国家队 [135]  。
+13岁的陈梦在国家队集训中成绩优异，在争夺进入国家队唯一一个名额的队内大循环中，年龄最小的陈梦从16名选手中脱颖而出，以第一名的身份拿到了进入国家队，年龄仅次于12岁就进入国家队的郭跃
+孙颖莎，2000年11月4日出生于河北石家庄，中国女子乒乓球运动员，效力于中国女子乒乓球一队。
+2015年9月，孙颖莎进入中国乒乓球国家二队。2017年1月进入国家一队。 [1] 
+
+XSTREAM 多个高危漏洞通告
+http://blog.nsfocus.net/xstream-se/
+【安全通报】XStream 多个远程代码执行漏洞（CVE-2021-39139等）
+https://nosec.org/home/detail/4829.html
+腾讯蓝军安全通告：XStream修复14个安全漏洞
+https://mp.weixin.qq.com/s/eidFQQXs70-kSM4OMSakhA
+
+Vulfocus 漏洞靶场 v0.3.2.6 版本 Docker-Compose 上线
+https://nosec.org/home/detail/4811.html
+
+
+CASB 云访问安全代理 是一类安全产品 
+云访问安全代理（Cloud Access Security Broker，CASB）
+https://cloud.tencent.com/document/product/1303/47853
+https://www.freebuf.com/articles/network/230403.html
+http://jiagoushi.pro/what-casb-cloud-access-security-broker
+
+Best CASB Security Vendors for 2021
+https://www.esecurityplanet.com/products/casb-security-vendors/
+
+https://blog.runpanther.io/open-source-cloud-security-tools/
+
+https://osquery.readthedocs.io/en/latest/introduction/using-osqueryi/
+https://github.com/osquery/osquery
+```
+osqueryi
+SELECT DISTINCT processes.name, listening_ports.port, processes.pid
+  FROM listening_ports JOIN processes USING (pid)
+  WHERE listening_ports.address = '0.0.0.0';
+```
+
+go-audit is an alternative to the auditd daemon that ships with many distros
+https://github.com/slackhq/go-audit
+https://github.com/slackhq/go-audit/blob/master/go-audit.yaml.example
+https://ancat.github.io/auditd/2018/11/01/auditd.html
+https://anee.me/monitoring-commands-using-go-audit-59226a2cf442
+
+Grapl is a graph-based SIEM platform built by-and-for incident response engineers.
+https://github.com/grapl-security/grapl
+
+Suricata是一个基于开源的入侵检测系统和入侵防御系统。它是由开放信息安全基金会开发的。
+Suricata is an essential open-source security project that acts as an intrusion detection system, intrusion prevention system, and network security monitoring tool.
+
+Suricata是一个重要的开源安全项目，作为入侵检测系统、入侵防御系统和网络安全监控工具。
+https://github.com/OISF/suricata
+Suricata IDS 入门 — 规则详解
+https://www.secpulse.com/archives/71603.html
+
+
+与Suricata一样，Zeek或Bro (Bro在BroCon 2018年更名为Zeek)也是一种入侵检测系统和网络监控工具，可以识别异常行为，如可疑或威胁活动。Zeek与传统IDS的不同之处在于，与检测异常的基于规则的引擎不同，Zeek还捕获关于网络上活动的元数据，以更好地理解网络行为的上下文。例如，您可以查看协议、HTTP调用或证书中的头和域名。
+Zeek is a powerful network analysis framework that is much different from the typical IDS you may know.
+https://github.com/zeek/zeek
+
+Panther是一个强大的安全分析平台，旨在缓解传统SIEMs的问题。
+它是由StreamAlert的核心架构师创建的，StreamAlert是一个由Airbnb开源的自动日志分析解决方案。
+Panther提供了一个单一窗格，用于在所有可扩展的业务环境中集中检测和响应。
+检测是透明和确定的规则，以减少假阳性和警报疲劳。
+https://github.com/panther-labs/panther
+打包了，4月不再更新，是打包了？闭源了？
+Panther Community Edition存储库已弃用。我们决定专注于通过Panther SaaS产品为客户提供卓越的体验。如果你想了解更多关于免费试用的信息，请申请一个演示!
+https://runpanther.io/
+
+## 20210823
+
+https://www.baeldung.com/spring-request-param
+
+人脸识别技术在民航机场应用现状分析
+https://www.freebuf.com/articles/compliance/284758.html
+
+Struts2-002 XSS漏洞浅析
+https://www.anquanke.com/post/id/247828
+
+Fastjson远程命令执行漏洞总结
+https://www.freebuf.com/articles/web/283585.html
+
+
+内网渗透基石篇——权限维持分析（上）
+https://www.freebuf.com/articles/web/283870.html
+
+内网渗透基石篇--权限维持分析（下）
+https://www.freebuf.com/articles/web/284497.html
+
+浅谈利用session绕过getshell
+https://www.freebuf.com/articles/web/283729.html
+
+## 20210820
+
+小而全而美的第三方登录开源组件。目前已支持Github、Gitee、微博、钉钉、百度、Coding、腾讯云开发者平台、OSChina、支付宝、QQ、微信、淘宝、Google、Facebook、抖音、领英、小米、微软、今日头条、Teambition、StackOverflow、Pinterest、人人、华为、企业微信、酷家乐、Gitlab、美团、饿了么、推特、飞书、京东、阿里云、喜马拉雅、Amazon、Slack和 Line 等第三方平台的授权登录。 Login, so easy!
+https://gitee.com/yadong.zhang/JustAuth
+这可能是我想要的超级登录器 MIT
+
+## 20210819
+🔥🔥🔥 前端面试，独有前端面试题详解，前端面试刷题必备，1000+前端面试真题，Html、Css、JavaScript、Vue、React、Node、TypeScript、Webpack、算法、网络与安全、浏览器
+https://github.com/lgwebdream/FE-Interview
+
+😱 从源码层面，剖析挖掘互联网行业主流技术的底层实现原理，为广大开发者 “提升技术深度” 提供便利。目前开放 Spring 全家桶，Mybatis、Netty、Dubbo 框架，及 Redis、Tomcat 中间件等
+https://github.com/doocs/source-code-hunter
+Spring源码阅读
+https://github.com/seaswalker/spring-analysis
+
+GoKart is a static analysis tool for Go that finds vulnerabilities using the SSA (single static assignment) form of Go source code. 
+It is capable of tracing the source of variables and function arguments to determine whether input sources are safe, which reduces the number of false positives compared to other Go security scanners. For instance, a SQL query that is concatenated with a variable might traditionally be flagged as SQL injection; however, GoKart can figure out if the variable is actually a constant or constant equivalent, in which case there is no vulnerability.
+
+https://github.com/praetorian-inc/gokart
+
+https://github.com/tal-tech/go-zero
+go-zero is a web and rpc framework written in Go. It's born to ensure the stability of the busy sites with resilient design. Builtin goctl greatly improves the development productivity.
+http://www.jikejiaocheng.com/c/gozero-intro.html
+https://www.bookstack.cn/read/go-zero-1.1.8-zh/README.md
+https://go-zero.dev/cn/
+go-zero解读与最佳实践（上）
+https://segmentfault.com/a/1190000039160242
+先粗后细，不要过细，切忌一个接口一个服务
+横向拆分，而非纵向，我们尽量不要超过三层调用
+单向调用，严禁循环调用
+禁止接口类型透传，在不同的层之间不要共享同一个数据定义，避免一处修改，影响其它
+没有依赖关系的串行调用改为并行，可以通过 core/mr 包降低响应延迟而不增加系统负载
+
+CodeQL从入门到放弃
+https://www.freebuf.com/articles/web/283795.html
+安卓学习思路方法总结（三）
+https://www.freebuf.com/articles/mobile/282950.html
+
+【安全通报】美洽在线客服系统存在XSS漏洞（CNVD-2021-51877）
+https://nosec.org/home/detail/4826.html
+
+最全的Tomcat漏洞复现
+https://paper.seebug.org/1677/
+Golang 的字符编码与 regexp
+https://paper.seebug.org/1679/
+Java 内存攻击技术漫谈
+https://paper.seebug.org/1678/
+
+There is a possible open redirect vulnerability in the Host Authorization
+middleware in Action Pack. This vulnerability has been assigned the CVE
+identifier CVE-2021-22942.
+
+[CVE-2021-22942] Possible Open Redirect in Host Authorization Middleware
+https://groups.google.com/g/rubyonrails-security/c/wB5tRn7h36c
+Versions Affected:  >= 6.0.0.
+Not affected:       < 6.0.0
+Fixed Versions:     6.1.4.1, 6.0.4.1
 ## 20210818
 
 https://github.com/Qv2ray/Qv2ray
@@ -17,7 +341,6 @@ https://www.anquanke.com/post/id/249650
 https://www.bookstack.cn/read/recommend/0006-kooder.md
 Kooder 是 Gitee 团队开发的一款代码搜索系统，可为 Gitee/GitLab/Gitea 提供代码搜索服务。
 https://www.bookstack.cn/read/recommend/01.GoogleChrome-LightHouse.md
-
 
 https://github.com/widelands/widelands
 https://www.widelands.org/

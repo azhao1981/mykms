@@ -328,7 +328,7 @@ idea 新建项目 vault_demo
 
    参考：https://stackoverflow.com/questions/64994034/bootstrap-yml-configuration-not-processed-anymore-with-spring-cloud-2020-0/
 
-2. boostrap.properties
+2. bootstrap.properties
 
    ```properties
    spring.cloud.vault.uri=http://127.0.0.1:8200

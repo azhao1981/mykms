@@ -298,11 +298,6 @@ A fast static site generator in a single binary with everything built-in. https:
 
 https://github.com/nushell/nushell
 
-
-
-
-
-
 用 Git 操作的数据库？这个项目火了！ 
 https://www.sohu.com/a/454980972_115128
 7400 Star！一个使用 Git 命令操作的数据库！
@@ -495,9 +490,7 @@ https://github.com/shuveb/containers-the-hard-way
 https://github.com/go-delve/delve
 6、rqlite：用 Go 实现的基于 SQLite 轻量级、分布式关系数据库。如果你对分布式数据库的原理及实现感兴趣的话，这个项目真的是你入门这方面的不二之选，这个项目用 SQLite 作为存储引擎，让你可以把更多的精力放在理解分布式的知识上，尝试阅读下这个项目的文档，相信你会对它感兴趣的。设计图如下：
 https://github.com/rqlite/rqlite
-7、JustAuth：帮你搞定第三方登陆的 Java 开源组件。使用简单、接入方便，帮你随心所欲地接入第三方登陆，让登陆变得简单。目前已经支持十多个平台，还在持续扩充中
-https://github.com/justauth/JustAuth
-没有企业微信吗？
+
 
 8、java-design-patterns：设计模式 Java 的最佳实践，出自开源社区大佬们之手。作为有梦想和追求的 Java 程序员，当然需要会一些设计模式啦。这个项目虽然是英文的但是先看代码和图，尝试理解含义那么英文描述也就能猜得八九不离十了。不要让英语作为你不努力的借口，努力变强吧！在线阅读
 https://github.com/iluwatar/java-design-patterns
