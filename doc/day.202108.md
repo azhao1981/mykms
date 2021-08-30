@@ -1,4 +1,134 @@
 # 202108
+## 20210830
+
+协程与任务
+https://docs.python.org/zh-cn/3/library/asyncio-task.html
+
+关于开发中的数据库管理，和使用规约
+Ask HN: How do you organize and manage database migrations?
+https://news.ycombinator.com/item?id=21405501
+rails migration ，但有一个问题，注释和默认id
+https://stackify.com/rails-migration-a-complete-guide/
+gitlab的迁移指导
+https://docs.gitlab.com/ee/development/migration_style_guide.html
+
+python:
+Django's migration handling is excellent as well [0]. python的迁移工具
+[0] https://docs.djangoproject.com/en/2.2/topics/migrations/
+https://pypi.org/project/yoyo-migrations/
+The best way to manage MySQL table definitions
+https://www.skeema.io/
+https://github.com/SectorLabs/django-postgres-extra
+other
+https://github.com/jtdaugherty/dbmigrations 最后更新18年
+
+go: dbmate
+https://github.com/amacneil/dbmate
+dbmate --help    # print usage help
+dbmate new       # generate a new migration file
+dbmate up        # create the database (if it does not already exist) and run any pending migrations
+dbmate create    # create the database
+dbmate drop      # drop the database
+dbmate migrate   # run any pending migrations
+dbmate rollback  # roll back the most recent migration
+dbmate down      # alias for rollback
+dbmate status    # show the status of all migrations (supports --exit-code and --quiet)
+dbmate dump      # write the database schema.sql file
+dbmate wait      # wait for the database server to become available
+
+ghost 数据迁移
+
+proxy 个人数据审核或代理
+
+vault 用来管理账号
+
+ClickHouse是一个用于联机分析处理的开源列式数据库。 
+ClickHouse是由俄罗斯IT公司Yandex为Yandex.Metrica网络分析服务开发的。 
+ClickHouse允许分析实时更新的数据。
+关键词：列式存储
+https://clickhouse.tech/
+ClickHouse® is a free analytics DBMS for big data
+https://github.com/ClickHouse/ClickHouse
+什么是ClickHouse？
+https://clickhouse.tech/docs/zh/
+探索ClickHouse与Amazon S3结合使用的三种方法
+https://aws.amazon.com/cn/blogs/china/explore-three-ways-to-combine-clickhouse-and-amazon-s3/
+ClickHouse 在有赞的实践之路
+https://tech.youzan.com/clickhouse-zai-you-zan-de-shi-jian-zhi-lu/
+
+阿里云也提供了ClickHouse
+云数据库 ClickHouse 新用户可享受首月10元优惠！优惠支持规格：4 核16GB，8 核 32GB，存储容量不超过 500GB；优惠节点数不超过 4 。
+https://www.aliyun.com/product/clickhouse
+
+《个人信息保护法》强在哪？我们又该如何准备
+https://www.freebuf.com/articles/neopoints/286092.html
+CCPA(加州消费者保护法案)
+GDPR
+UPDBA 统一个人数据保护法案
+《个人信息保护法》企业侧实用解读指南
+https://www.freebuf.com/articles/neopoints/286277.html
+落地《个人信息保护法》 直面数字化时代的困难与挑战
+https://www.freebuf.com/articles/neopoints/286507.html
+国家网信办：算法推荐服务提供者不得利用算法屏蔽信息、过度推荐
+https://www.freebuf.com/news/286454.html
+
+基于编码注入的对抗性NLP攻击
+https://www.anquanke.com/post/id/251222
+
+如何使用Whoami在Kali上保持匿名性
+https://www.freebuf.com/articles/system/285908.html
+
+ATT&CK 实战分享（一）
+https://www.freebuf.com/articles/web/283647.html
+渗透测试员完整职业指南
+https://www.freebuf.com/articles/network/282989.html
+web安全战技101之JWT
+https://www.freebuf.com/articles/web/283640.html
+
+应用层隧道技术：SSH隧道反向代理（非主流用法）
+https://www.freebuf.com/articles/network/284921.html
+正向代理（-L）：相当于iptable的port forwarding
+反向代理（-R）：相当于frp或者ngrok
+socks5代理（-D）：相当于ss/ssr指定本地“动态”应用程序级端口转发。
+
+Scour：一款针对AWS的漏洞利用框架|怎么对阿里?
+https://www.freebuf.com/articles/security-management/285674.html
+
+FTP在ssrf中的应用
+https://www.anquanke.com/post/id/251517
+Java反序列化和集合之间的渊源
+https://www.anquanke.com/post/id/251220
+
+【安全通报】OpenSSL 缓冲区溢出漏洞（CVE-2021-3711&CVE-2021-3712）
+https://nosec.org/home/detail/4833.html
+SM2国密算法应用的高危漏洞——CVE-2021-3711
+https://www.anquanke.com/post/id/251504
+
+【安全通报】Atlassian Confluence Webwork OGNL 注入漏洞（CVE-2021-26084）
+https://nosec.org/home/detail/4836.html
+
+隐藏十五年的漏洞：CVE-2021-22555 漏洞分析与复现
+https://www.anquanke.com/post/id/251515
+
+## 20210828
+TypeScript Deep Dive 中文版
+https://github.com/jkchao/typescript-book-chinese
+This repository contains all the DSA (Data-Structures, Algorithms, 450 DSA by Love Babbar Bhaiya, FAANG Questions), Technical Subjects (OS + DBMS + SQL + CN + OOPs) Theory+Questions, FAANG Interview questions, and Miscellaneous Stuff (Programming MCQs, Puzzles, Aptitude, Reasoning). The Programming languages used for demonstration are C++, Pytho…
+https://github.com/AkashSingh3031/The-Complete-FAANG-Preparation
+
+绝妙的个人生产力（Awesome Productivity 中文版）
+https://github.com/eastlakeside/awesome-productivity-cn
+
+https://github.com/tiangolo/sqlmodel
+https://github.com/filebrowser/filebrowser
+https://github.com/bregman-arie/devops-exercises
+The Linux Kernel Module Programming Guide (updated for 5.x kernels)
+https://github.com/sysprog21/lkmpg
+
+https://sqlmodel.tiangolo.com/tutorial/fastapi/
+https://pydantic-docs.helpmanual.io/
+https://fastapi.tiangolo.com/
+
 ## 20210826
 
 埃文降维抄同行作业？博士抄高中生作业？高中生，你的智商呢？
