@@ -2,6 +2,14 @@
 
 ## 内容
 
+https://www.youtube.com/watch?v=1nJgupaUPEQ
+SQL Injection | Complete Guide
+Win和Print Screen 会直接放在图片里
+1 什么是
+2 怎么发现
+3 怎么利用
+4 如何保护
+
 做为 [OWASP TOP10-A1](https://owasp.org/www-project-top-ten/2017/A1_2017-Injection) 第一个介绍的漏洞风险，特别需要我们关注。
 
 ### 什么是SQL注入
