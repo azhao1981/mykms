@@ -591,8 +591,6 @@ vault write database/config/my-mysql-database \
     password="vaultpass"
 ```
 
-
-
 ### vault 阿里密钥
 
 + 创建管理密码

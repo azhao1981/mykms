@@ -33,7 +33,7 @@
 | [容器安全](doc/sec/sec.container.md)
 | [人工智能安全](doc/sec/sec.ai)
 | [蜜罐](sec/sec.honeypots.md)
-| [蜜罐](sec/sec.windows.md)
+| [Windows](sec/sec.windows.md)
 
 #### **开发**
 
@@ -47,6 +47,7 @@
 | [k8s](/doc/ops/k8s.readme.md)
 | [codereview](/doc/dev/codereview.md)
 | [search](/doc/dev/search.md)
+| [dbcr](/doc/dev/dbcr.md)
 
 #### **宝库**
 
