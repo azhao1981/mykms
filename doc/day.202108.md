@@ -1,4 +1,86 @@
 # 202108
+## 20210831
+
+https://www.blackhillsinfosec.com/webcast-your-free-and-open-source-edr-options/
+
+There has been a huge explosion of different free and open-source options for EDR in the security space. Which is nice because the commercial offerings are stupid expensive. In this Black Hills Information Security (BHIS) webcast, we look at OpenEDR, Elastic, and Velociraptor. With all these great options, there is no reason your organization should not have one of these offerings. Further, they are essential for any IR gig you may do.
+https://www.elastic.co/cn/endpoint-security/
+https://www.velocidex.com/about/
+https://wazuh.com/
+
+
+https://openedr.com/
+https://github.com/ComodoSecurity/openedr/
+https://www.reddit.com/r/sysadmin/comments/jszjqp/comodo_opensources_its_edr_solution/
+
+TheHive: a Scalable, Open Source and Free Security Incident Response Platform
+https://github.com/TheHive-Project/TheHive
+https://thehive-project.org/
+Hive 项目是一个“面向大众的安全事件响应(平台)”，利用开源、可扩展和免费的解决方案。
+该产品旨在帮助 cert、 SOCs 和 csirt 根据各种提示(如观察或定制创建的警报)起草更快和详细的安全事故报告。
+
+https://github.com/ION28/BLUESPAWN
+An Active Defense and EDR software to empower Blue Teams
+
+
+Open-source EDR tools
+https://heimdalsecurity.com/blog/open-source-edr-tools/
+OSSEC is open-source and free software that offers HIDS, HIPS, log analysis, real-time Windows registry monitoring, and other EDR features. 
+The software can be downloaded from the official website or the developer’s GitHub page. OSSEC is mostly addressed to large enterprises, SMBs, and governmental agencies in search of server intrusion detection systems and/or solutions.
+ossec 是有EDR功能的
+
+[Ettercap Project](https://www.ettercap-project.org/) 是一个跨平台、开源的 EDR 工具，用于模拟局域网上的 ARP 中毒和中间人攻击。
+这个工具拥有各种各样的安全选项，例如网络流量拦截、最常见的协议主动窃听、网络安全审计和协议剖析。Ettercap Project 兼容 Linux、 Solaris、 BSD、 MacOS x 和 Microsoft Windows。
+
+https://www.guardicore.com/infectionmonkey/
+Infection Monkey 是一个免费的开源网络安全态势评估工具，可以模拟系统破坏和 APTs (高级持久性攻击)。Guardicore 的软件是为那些希望探测公司安全基础设施以寻找漏洞和调查人员的系统管理员开发的。
+Infection Monkey 与 Microsoft Windows、 Linux 和 macOS x 兼容。
+
+https://cuckoosandbox.org/
+Cuckoo Sandbox is an open-source sandboxing environment that allows the user to quarantine, analyze, and dissect files exhibiting malicious behavior.
+ The tool is compatible with Microsoft Windows, Linux, Mac OS X, and Android.
+
+ https://github.com/google/grr
+GRR Rapid Response is an Apache-licensed, open-source incident response framework used in remote live forensics. The tool can be used to perform minute forensic analyses on a large number of endpoints. GRR, Rapid response is compatible with Microsoft Windows, macOS X, and most Linux builds.
+Mozilla’s MIG is a free-to-use forensics platform for remote endpoints. The tool is compatible with Windows, Linux, and Mac OSX. A beginner’s tool, but very helpful in providing accurate IOCs.
+http://mozilla.github.io/mig/
+
+https://github.com/0xrawsec/whids
+Open Source EDR for Windows
+
+VeraCrypt 
+VeraCrypt is a security tool for disk encryption. It runs on Windows, Mac OSX and Linux and creates a virtual encrypted disk within a file before mounting it as a real disk. 
+This tool encrypts an entire partition (file storage drive) or storage device such as a USB flash drive or hard drive before dumping it the cloud or elsewhere. Users can also pre-boot authentication by encrypting a partition or drive where the Windows OS is installed. 
+VeraCrypt encrypts in real-time and supports hidden drives and hidden operating system on a machine. 
+https://www.veracrypt.fr/en/Home.html
+
+Security Onion  集成工具，这个不错
+Security Onion is a Debian-based Linux distribution for detecting threats, enterprise security monitoring and log management. It incorporates security tools such as Elasticsearch, Logstash, Kibana, Snort, Suricata, Zeek, OSSEC, Wazuh, Sguil, Squert, NetworkMiner and others to protect an organization against cyber threats. 
+It is an all-in-one open source security solution that provides users with various tools to detect threats and monitor their systems. 
+https://blog.securityonion.net/
+
+https://cirt.net/nikto2
+是一款免费的开源 web 服务器扫描器，可以扫描 web 服务器的多个漏洞。该测试覆盖了超过6700个潜在的有害文件/程序，并检查了超过1250台服务器的过时版本。Web 服务器扫描器在270多台服务器上发现特定于版本的问题。用户还可以执行服务器配置问题的检查，例如多个索引文件、 HTTP 服务器选项的存在。这个开源安全工具还可以识别已安装的 web 服务器和软件。
+https://www.openvas.org/
+
+https://keepass.info/
+KeePass is a free and open source password manager that securely stores passwords. This security tools enables users to have a single place for their unique passwords for websites, email accounts, webservers or network login credentials. 
+
+KeePass works by storing passwords in a secure database, which unlock by entering a single master key. Database encryption is using the most secure encryption algorithms available: AES-256, ChaCha20 and Twofish. It encrypts the complete database, which means user names, notes, etc. are being encrypted along with the password fields. 
+https://books.google.com/books?id=Ld5x_YDRpWYC&pg=PA314&lpg=PA314&dq=windows+%22usb%22+edr+open+source&source=bl&ots=DDSJYx6NTP&sig=ACfU3U2TmrXcMZ3IZTIKLbW3l8FrdK6spA&hl=zh-CN&sa=X&ved=2ahUKEwjKt-Og3NvyAhUSnWoFHbgvDH4Q6AF6BAgREAM#v=onepage&q=windows%20%22usb%22%20edr%20open%20source&f=false
+
+https://github.com/USBGuard/usbguard
+The USBGuard software framework helps to protect your computer against rogue USB devices (a.k.a. BadUSB) by implementing basic whitelisting and blacklisting capabilities based on device attributes.
+https://usbguard.github.io/
+
+商用usb管理工具
+https://www.softwaretestinghelp.com/top-device-control-software-tools/#10_Trend_Micro
+
+BitLocker是内置于Windows Vista及其之后系统的全磁盘加密功能，透过为整个卷提供加密来保护数据。它默认在密码块链接或XTS模式下使用128位或256位密钥的AES加密算法。其中CBC用于每个单独的磁盘扇区，不在整个磁盘上使用。 维基百科
+https://zhuanlan.zhihu.com/p/347867965
+U盘安全管理方案
+
+
 ## 20210830
 
 协程与任务
