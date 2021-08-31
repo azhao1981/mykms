@@ -823,3 +823,13 @@ runner settings 中 设置
   "python": "set PYTHONIOENCODING=utf8 && python -u",
   }
 ```
+
+## Vscode 的环境变量
+
+如果win环境变量有改变，run code是不能直接读到的，需要重启一下vscode
+
+```python
+env_dist = os.environ
+print(env_dist.get('VAULT_ADDR'))
+print(env_dist.get('VAULT_TOKEN'))
+```
