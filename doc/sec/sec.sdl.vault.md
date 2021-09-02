@@ -830,3 +830,105 @@ https://blog.csdn.net/weixin_43567035/article/details/109706572
 Maven clean install: Failed to execute goal org.apache.maven.plugins:maven-resources-plugin:3.2.0:resources
 
 https://stackoverflow.com/questions/65910112/maven-clean-install-failed-to-execute-goal-org-apache-maven-pluginsmaven-resou
+
+
+## 部署最佳实践
+
+https://learn.hashicorp.com/tutorials/vault/deployment-guide
+
+建立用户
+systemd
+
+加固 
+https://learn.hashicorp.com/tutorials/vault/production-hardening?in=vault/day-one-consul
+
+## 日志审计
+vault audit list
+vault read sys/audit-hash/file
+
+https://www.vaultproject.io/api-docs/system/audit-hash
+
+/var/log$ vault list sys/
+No value found at sys/
+/var/log$ vault read /sys/audit-hash
+No value found at sys/audit-hash
+/var/log$ vault list /sys/audit-hash
+No value found at sys/audit-hash/
+
+下面这三个用来干什么？
+
+monitor        Stream log messages from a Vault server
+ssh            Initiate an SSH session
+namespace      Interact with namespaces
+https://www.vaultproject.io/docs/commands/namespace
+
+### token.roles
+
+vault write auth/token/roles/zabbix  allowed_policies="policy1, policy2, policy3"  orphan=true  period=8h
+
+vault timed task
+scheduled task
+
+
+### vault 最大数据，这里以 mysql 
+
+https://www.vaultproject.io/docs/internals/limits
+
+主要是受到后端存储的影响
+如果是mysql ，需要改两个：
+1 max_allowed_packet 这是每次sql语句请求包的大小
+2 MEDIUMBLOB 改为 LONGBLOB
+
+然后重启服务
+
+```sql
+ALTER TABLE `vault` CHANGE COLUMN `vault_value` `vault_value` LONGBLOB NULL AFTER `vault_key`;
+use information_schema;
+// 32 MB
+SET GLOBAL max_allowed_packet = 32 * 1048576;
+SELECT @@GLOBAL.max_allowed_packet;
+
+use information_schema;
+SELECT TABLE_NAME,DATA_LENGTH+INDEX_LENGTH,TABLE_ROWS FROM TABLES WHERE TABLE_SCHEMA='vault';
+```
+
+原表create table
+```sql
+CREATE TABLE `vault` (
+	`vault_key` VARBINARY(512) NOT NULL,
+	`vault_value` MEDIUMBLOB NULL DEFAULT NULL,
+	PRIMARY KEY (`vault_key`) USING BTREE
+)
+COLLATE='utf8mb4_unicode_ci'
+ENGINE=InnoDB
+;
+```
+https://zhuanlan.zhihu.com/p/25084711
+
+MediumBlob            最大 16M 
+LongBlob              最大 4G 
+
+为什么只有 48k? 49152 ,数据存在什么地方去了？
+落库了，但不一定是实时的
+
+```bash
+  * 1 error occurred:
+        * Error 1105: Parameter of prepared statement which is set through mysql_send_long_data() is longer than 'max_allowed_packet' bytes
+```
+
+https://blog.csdn.net/qq_36742720/article/details/81567422
+max_allowed_packet=10485760
+
+```sql
+// 32 MB
+SET GLOBAL max_allowed_packet = 32 * 1048576;
+SELECT @@GLOBAL.max_allowed_packet;
+
+ALTER TABLE `vault` CHANGE COLUMN `vault_value` `vault_value` LONGBLOB NULL AFTER `vault_key`;
+```
+
+https://github.com/rancher/rancher/issues/9357
+Defaults on max_allowed_packet, based on Dockerhub images and RDS
+mysql	5.7	4194304
+
+
