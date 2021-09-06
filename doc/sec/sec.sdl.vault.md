@@ -931,4 +931,7 @@ https://github.com/rancher/rancher/issues/9357
 Defaults on max_allowed_packet, based on Dockerhub images and RDS
 mysql	5.7	4194304
 
+### 删除过期，但 token 已经不存在的lease
+
+vault_1 | 2021-09-03T10:19:20.194Z [ERROR] expiration: failed to revoke lease: lease_id=alicloud/creds/oss-wei-vault-test3/2Z8AaQDETL0lhF8sAiZF9tNx error="failed to revoke entry: resp: (*logical.Response)(nil) err: malformed remote_policies internal data"
 

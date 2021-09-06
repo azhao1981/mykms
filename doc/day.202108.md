@@ -155,6 +155,13 @@ https://github.com/AkashSingh3031/The-Complete-FAANG-Preparation
 https://github.com/eastlakeside/awesome-productivity-cn
 
 https://github.com/tiangolo/sqlmodel
+
+mysql+sqlmodel
+https://stackoverflow.com/questions/454854/no-module-named-mysqldb
+
+sudo apt-get install -y python3-mysqldb libmysqlclient-dev
+pip3 install pymysql
+
 https://github.com/filebrowser/filebrowser
 https://github.com/bregman-arie/devops-exercises
 The Linux Kernel Module Programming Guide (updated for 5.x kernels)

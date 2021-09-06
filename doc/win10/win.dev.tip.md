@@ -341,14 +341,13 @@ Alt+Shift+I => Ctrl+Shift+L
 https://jingyan.baidu.com/article/1612d500632fcba30e1eeed2.html
 开始——运行，输入services.msc——找到将Microsoft Office即点即用服务——禁用——设为自动——重新启动
 
-47 windows.wsl.d盘
+47 windows.wsl.d 盘
 
 [把你的子系统(WSL)搬到非系统盘](https://cloud.tencent.com/developer/article/1594940)	
 
 https://github.com/DDoSolitary/LxRunOffline
 
 [LxRunOffline 使用教程 - WSL 自定义安装、备份](https://p3terx.com/archives/manage-wsl-with-lxrunoffline.html)
-
 
 ```bash
 LxRunOffline.exe list
@@ -360,6 +359,7 @@ wsl --shutdown
 # 迁移docker-desktop
 ./LxRunOffline.exe m -n docker-desktop -d D:\os\docker-desktop
 ./LxRunOffline.exe m -n docker-desktop-data -d D:\os\docker-desktop-data
+./LxRunOffline.exe m -n Ubuntu-20.04 -d D:\os\Ubuntu-20.04
 ```
 
 或者看： https://blog.csdn.net/fleaxin/article/details/88587081
@@ -824,7 +824,7 @@ runner settings 中 设置
   }
 ```
 
-## Vscode 的环境变量
+## 92 Vscode 的环境变量
 
 如果win环境变量有改变，run code是不能直接读到的，需要重启一下vscode
 
@@ -833,3 +833,62 @@ env_dist = os.environ
 print(env_dist.get('VAULT_ADDR'))
 print(env_dist.get('VAULT_TOKEN'))
 ```
+
+### 关闭 win 10 天气广告新闻的方法
+
+关闭方法：右键任务栏-news and interests - 关闭。
+https://zhuanlan.zhihu.com/p/364935899
+
+### 93 wmware ip
+
+如Nessus Web地址：
+https://nessus.local.dev:8834 
+ 
+配置文件在/etc/netplan/中 
+ 
+如果不同机器的wmnet不一样，可能需要改一下才能用
+
+ens33: 1.1.2.16/24 固定IP，VMnet2，桥接网卡  
+ens34: DHCP获取IP，VMnet3，桥接网卡 
+
+192.168.253.128 nessus.local.dev
+
+TIP：桥接网卡指定ip几乎没有什么用，因为一般人都有自己的ip段，所以还是 1 host-only 2 nat-network 的模式
+
+```bash
+network:
+    ethernets:
+        ens33:
+            addresses: [ "1.1.2.16/24" ]
+            dhcp4: false
+            optional: true
+        ens34:
+            addresses: []
+            dhcp4: true
+            optional: true
+    version: 2
+```
+
+### 94 windows ssh 开启agent
+
+https://dev.to/aka_anoop/how-to-enable-openssh-agent-to-access-your-github-repositories-on-windows-powershell-1ab8
+
+```bash
+Set-Service -Name ssh-agent -StartupType Automatic
+Set-Service -Name ssh-agent -Status Running
+ssh-add 
+```
+
+或找开“服务” “OpenSSH Authentication Agent” 设置为自动打开
+
+测试：
+```
+ssh xxx
+ssh-add -l
+```
+
+### 95 windows 
+
+https://www.jb51.net/os/win10/731154.html
+
+添加英语语音，然后搜索 “代替默认输入法” 进行修改
