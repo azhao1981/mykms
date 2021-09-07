@@ -892,3 +892,13 @@ ssh-add -l
 https://www.jb51.net/os/win10/731154.html
 
 添加英语语音，然后搜索 “代替默认输入法” 进行修改
+
+### 96 windows nohup
+
+https://stackoverflow.com/questions/3382082/whats-the-nohup-on-windows
+start /min ssh -NL xxx
+关闭shell进程也不会掉
+
+https://wangdoc.com/ssh/port-forwarding.html
+ssh xxx -i "work2021" -N -L 3316:rm-xxx.mysql.rds.aliyuncs.com:3306 -vv
+LocalForward client-IP:client-port server-IP:server-port
