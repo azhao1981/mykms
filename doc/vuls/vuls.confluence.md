@@ -1,6 +1,18 @@
 
 # confluence
 
+##　CVE-2021-26084
+
+https://github.com/h3v0x/CVE-2021-26084_Confluence
+
+Atlassian Confluence 远程代码执行漏洞（CVE-2021-26084）
+Atlassian Confluence是Atlassian公司出品的专业的企业知识管理与协同软件，可用于构建企业文库等。2021年8月26日Atlassian官方发布公告，披露了CVE-2021-26084 Atlassian Confluence 远程代码执行漏洞。攻击者在经过认证后或在部分场景下无需认证，即可构造恶意请求，造成OGNL表达式注入，从而执行任意代码，控制服务器。阿里云应急响应中心提醒 Atlassian Confluence 用户尽快采取安全措施阻止漏洞攻击。
+
+https://packetstormsecurity.com/files/164013/Confluence-Server-7.12.4-OGNL-Injection-Remote-Code-Execution.html?spm=5176.12809143.sas.77.6a19202fSOSTo9
+
+【安全通报】Atlassian Confluence Webwork OGNL 注入漏洞（CVE-2021-26084）
+https://nosec.org/home/detail/4836.html
+
 ##　CVE-2019-3396
 
 docker
@@ -15,8 +27,11 @@ https://gitee.com/pengzhile/atlassian-agent
 Atlassian Confluence 6.6.1 
 
 https://www.cvedetails.com/cve/CVE-2019-3396/
+
 The Widget Connector macro in Atlassian Confluence Server before version 6.6.12 (the fixed version for 6.6.x), from version 6.7.0 before 6.12.3 (the fixed version for 6.12.x), from version 6.13.0 before 6.13.3 (the fixed version for 6.13.x), and from version 6.14.0 before 6.14.2 (the fixed version for 6.14.x), allows remote attackers to achieve path traversal and remote code execution on a Confluence Server or Data Center instance via server-side template injection.
+
 需要升级到6.6.12以上，小版本升级不涉及功能或数据库表 6.6.17
+
 docker pull atlassian/confluence-server:6.6.17
 docker pull atlassian/confluence-server:6.6.1
 
@@ -29,6 +44,7 @@ docker pull atlassian/confluence-server:7.4.8
 最新版本
 docker pull cptactionhank/atlassian-confluence:7.9.3
 docker pull cptactionhank/atlassian-confluence:6.15.9
+
 有问题的版本
 docker pull cptactionhank/atlassian-confluence:6.12.2
 
@@ -41,9 +57,10 @@ docker save cptactionhank/atlassian-confluence:6.15.9 > confluence.6.15.9.tar
 
 [Docker安装JIRA和Confluence（破解版）](https://my.oschina.net/u/4270238/blog/4074414)
 
-https://hub.docker.com/r/atlassian/jira-software
-https://hub.docker.com/r/cptactionhank/atlassian-jira-software
-Atlassian JIRA Project Management Software (v7.6.1#76002-sha1:21e6670)  About JIRA  Report a problem
+
+
+```bash
+# Atlassian JIRA Project Management Software (v7.6.1#76002-sha1:21e6670)  About JIRA  Report a problem
 docker pull cptactionhank/atlassian-jira-software:7.6.1
 docker pull cptactionhank/atlassian-jira-software:7.6.3
 docker pull cptactionhank/atlassian-jira-software:7.13.1
@@ -54,7 +71,7 @@ docker save cptactionhank/atlassian-jira-software:7.6.3 > jira.7.6.3.tar
 docker save cptactionhank/atlassian-jira-software:7.13.1 > jira.7.13.1.tar
 docker save atlassian/jira-software:8.13.4 > jira.8.13.4.tar
 没有这个镜像
-Atlassian JIRA Project Management Software (v6.3.10#6340-sha1:7ea293a)  About JIRA  Report a problem
+# Atlassian JIRA Project Management Software (v6.3.10#6340-sha1:7ea293a)  About JIRA  Report a problem
 
 GitLab Community Edition 8.13.6 69cda01 Check
 docker pull gitlab/gitlab-ce:8.13.6-ce.0
@@ -66,9 +83,13 @@ docker save gitlab/gitlab-ce:8.13.6-ce.0 >　gitlab.8.13.6.tar
 docker save gitlab/gitlab-ce:8.13.12-ce.0 >　gitlab.8.13.12.tar
 docker save gitlab/gitlab-ce:8.17.8-ce.0 >　gitlab.8.17.8.tar
 docker save gitlab/gitlab-ce:13.10.0-ce.0 >　gitlab.13.10.0.tar
-Docker - 实现本地镜像的导出、导入（export、import、save、load）
+```
 
-https://www.hangge.com/blog/cache/detail_2411.html
+
+
+
+
+[Docker - 实现本地镜像的导出、导入（export、import、save、load）](https://www.hangge.com/blog/cache/detail_2411.html)
 
 ## 编译 atlassian-agent
 
@@ -151,11 +172,15 @@ grant all on confluence.* to 'confluence'@'%';
 set global transaction_isolation='READ-COMMITTED';
 ```
 
+
+
 [MySQL 四种事务隔离级的说明](https://www.cnblogs.com/zhoujinyi/p/3437475.html)
   ·未提交读(Read Uncommitted)：允许脏读，也就是可能读取到其他会话中未提交事务修改的数据
   ·提交读(Read Committed)：只能读取到已经提交的数据。Oracle等多数数据库默认都是该级别 (不重复读)
   ·可重复读(Repeated Read)：可重复读。在同一个事务内的查询都是事务开始时刻一致的，InnoDB默认级别。在SQL标准中，该隔离级别消除了不可重复读，但是还存在幻象读
   ·串行读(Serializable)：完全串行化的读，每次读都需要获得表级共享锁，读写相互都会阻塞
+
+
 
 [十、MySql8设置事务隔离级别](https://blog.csdn.net/u010285974/article/details/82253040)
 mysql8改成了 transaction_isolation
@@ -171,8 +196,11 @@ MySQL [mysql]> show variables like 'transaction_isolation';
 docker build -t confluence:6.6.1 .
 
 docker run -d --name confluence -p 18010:8090 -e TZ="Asia/Shanghai" -v /home/kali/lab/confluence/data:/var/atlassian/confluence confluence:6.6.1.1
+
 docker run -it --name confluence -p 18010:8090 -e TZ="Asia/Shanghai" -v /home/kali/lab/confluence/data:/var/atlassian/confluence confluence:6.6.1 bash
+
 /entrypoint.py
+
 docker run -d --name confluence \
   -p 18010:8090 \
   -e TZ="Asia/Shanghai" \

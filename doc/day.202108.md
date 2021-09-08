@@ -139,8 +139,7 @@ https://nosec.org/home/detail/4833.html
 SM2国密算法应用的高危漏洞——CVE-2021-3711
 https://www.anquanke.com/post/id/251504
 
-【安全通报】Atlassian Confluence Webwork OGNL 注入漏洞（CVE-2021-26084）
-https://nosec.org/home/detail/4836.html
+
 
 隐藏十五年的漏洞：CVE-2021-22555 漏洞分析与复现
 https://www.anquanke.com/post/id/251515

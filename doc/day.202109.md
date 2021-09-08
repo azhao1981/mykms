@@ -1,9 +1,95 @@
 # 202009
 
+## 20210908
+
+https://www.dfxj.top/archives/docker安装confluence
+
+【每日一库】ripgrep - grep的替代者
+https://cloud.tencent.com/developer/article/1460054
+https://github.com/BurntSushi/ripgrep
+
+链接：https://www.zhihu.com/question/20821753/answer/503623838
+
+Everything + TextSeekEverything可搜文件名，速度极快。TextSeek可搜文件内容，常见的word, ppt, excel, pdf，wps都能解析。界面类似搜索引擎，易上手。TextSeek是我用过的对中文内容搜索支持最好的，其他工具会漏掉的它都不会遗漏。两个工具互补，一个快，一个准，能解决桌面搜索文件的大部分问题。
+
+everywhere
+比 everything 还要强大，可以搜索文件内容，欢迎去github 观光，喜欢的star下。
+最好用的：桌面搜索工具（或：硬盘搜索） 是什么？
+https://www.zhihu.com/question/20821753
+
+https://zh.tinystm.org/fix-high-cpu-usage-audiodg
+
+https://bonsaibrowser.com/
+Web-browser for research
+that helps programmers
+think clearly.
+
+https://github.com/mgdm/htmlq
+Like jq, but for HTML.
+
+反制爬虫之Burp Suite RCE
+https://www.anquanke.com/post/id/252591
+
+「人对信息的关系，是创造信息和影响信息并使之适应成长需要的客观力量」，英语为「Productive Forces」，其核心在互联网时代已经由「自然」演变为「信息」，而这是我们任何人都绕不开的话题。
+https://github.com/yaoleifly/Nonsense-Series
+以下为一则清单，包含信息资讯、工具推荐、使用教程、生活感悟等，旨在将你引向独立思考和客观理性。我会持续更新和维护，也可以视作本人的「废话集」和 eBooksPlan 公众号文集的备份。
+基于 WPF 实现的仿 Windows 桌面版微信 UI 界面库 An unofficial UI library for Windows WeChat based on WPF implementation
+https://github.com/IUpdatable/WeUiSharp
+
+渗透测试之地基服务篇：服务攻防之数据库Redis（上） 会员
+https://www.freebuf.com/articles/network/281140.html
+应急响应之windows入侵排查篇
+https://www.freebuf.com/articles/network/286270.html
+如何使用DNSStager在DNS中隐藏Payload
+https://www.freebuf.com/articles/network/286304.html
+
+https://www.freebuf.com/articles/es/286379.html
+Allsafe：包含大量安全漏洞的Android研究平台
+
+https://www.freebuf.com/sectool/286324.html
+隐藏十五年的漏洞：CVE-2021-22555 漏洞分析与复现
+
+https://www.freebuf.com/articles/system/286366.html
+如何使用Regexploit识别ReDoS正则表达式拒绝服务攻击
+https://www.freebuf.com/sectool/286566.html
+
+
+https://www.intoan.com/archives/992.html
+【教程】2019年的5个最佳Linux Torrent客户端
+
+https://www.linuxtechi.com/rtorrent-command-line-bittorrent-client-ubuntu-linux/
+https://github.com/rakshasa/rtorrent/wiki#installation
+apt-get install rtorrent
+curl -Ls "https://raw.githubusercontent.com/wiki/rakshasa/rtorrent/CONFIG-Template.md" \
+    | sed -ne "/^######/,/^### END/p" \
+    | sed -re "s:/home/USERNAME:$HOME:" >~/.rtorrent.rc
+mkdir -p ~/rtorrent/
+都没 有
+service rtorrent status
+ps aux|grep rtorrent 
+[rtorrent 的安装、使用](https://blog.csdn.net/fenghuizhidao/article/details/107504616)
+wget 'https://github.com/astaxie/bat/releases/download/v0.0.1/bat_0.0.1_linux_amd64.tar.gz'
+tar xvf bat_0.0.1_linux_amd64.tar.gz
+bat .rtorrent.rc
+
+wget 'https://github.com/sharkdp/bat/releases/download/v0.18.3/bat-v0.18.3-x86_64-unknown-linux-musl.tar.gz'
+tar xvf bat-v0.18.3-x86_64-unknown-linux-musl.tar.gz
+
+https://dev.deluge-torrent.org/wiki/About
+
+apt install deluge -y
+Debian/Ubuntu Deluge安装汉化教程及ltConfig插件设置
+https://sunpma.com/188.html
+Deluge 的配置、优化与远程控制
+https://www.jianshu.com/p/d514665bf34b
+apt install -y deluge-console
+
+OpenSSL 国密爆出 8.1 分高危漏洞 CVE-2021-3711
+https://paper.seebug.org/1695/
+反制爬虫之 Burp Suite RCE
+https://paper.seebug.org/1696/
+
 ## 20210905
-
-
-
 从Windows 10 SSH-Agent中提取SSH私钥
 https://www.freebuf.com/articles/system/172624.html
 
@@ -26,7 +112,7 @@ sudo apt-get update -qq
 sudo apt-get -qq -y install podman
 
 ## 20210904
-https://github.com/h3v0x/CVE-2021-26084_Confluence
+
 
 ## 20210903
 
@@ -77,44 +163,3 @@ https://github.com/sysown/proxysql
 a proxy for sharding databases and tables 主要是sharding
 https://github.com/alibaba/cobar
 
-我要找的数据库开源审计工具
-Database security suite. 
-Database proxy with field-level encryption, search through encrypted data, SQL injections prevention, intrusion detection, honeypots. 
-Supports client-side and proxy-side ("transparent") encryption. SQL, NoSQL.
-https://github.com/cossacklabs/acra
-https://www.cossacklabs.com/acra/
-https://gitee.com/azhao-1981/acra
-
-Example projects: see Acra in action
-See Acra and its features in a live infrastructure with just one command:
-Try Docker-based example projects:
-Typical web apps (Django and Ruby on Rails) protected by Acra.
-Acra with AcraCensor SQL firewall configured to prevent injections in OWASP Mutillidae 2 app.
-High-availability infrastructure for Acra: Python app, HAProxy, PostgreSQL.
-
-
-https://github.com/square/keywhiz
-https://stackshare.io/stackups/keywhiz-vs-vault
-
-https://github.com/Qihoo360/Atlas 19年后不再更新
-https://github.com/mysql/mysql-proxy
-https://proxysql.com/
-
-https://github.com/masahide/mysql-audit-proxy
-Proxy for mysql audit recording
-不用看，太老了
-译文：GreenSQL是一个开源数据库防火墙，用于保护数据库免受SQL注入攻击。GreenSQL作为一个代理工作，并内置了对MySQL和PostgreSQL的支持。
-https://greensql.net/
-GreenSQL is an Open Source database firewall used to protect databases from SQL injection attacks.
-https://github.com/larskanis/greensql-fw 17年不再更新
-
-
-
-
-
-这个还搞不清
-https://github.com/aprismatic/prismadb
-Prisma/DB (https://prismadb.com/) is a cryptographic security layer for relational database systems, that currently supports Microsoft SQL Server, MySQL, MariaDB, PostgreSQL and CockroachDB. Started as a research project in Nanyang Technological University (Singapore), it is now a fast-growing product developed by Aprismatic.
-
-Cloud SQL proxy client and Go library
-https://github.com/GoogleCloudPlatform/cloudsql-proxy
