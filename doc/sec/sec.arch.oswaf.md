@@ -125,14 +125,14 @@ sudo docker run -dti -p 80:80 --rm \
    owasp/modsecurity-crs:v3.3.2-nginx
 #  owasp/modsecurity-crs:v3.3.0-nginx 启动后死循环了
 ```
+参考一下这个
+https://janikvonrotz.ch/2020/02/26/nginx-waf-with-modsecurity-and-owasp-crs/
 
 [基于Owasp Modsecurity CRS规则的误报率和漏报率调试](https://www.freebuf.com/articles/web/243781.html)
 [ModSecurity：一款优秀的开源WAF](https://www.freebuf.com/sectool/211354.html)
   ModSecurity v3.0.3审计日志中是包含请求体和响应体的，不过需要注意的是，3版本里SecAuditLogParts需要添加配置C，而不是IJ，用IJ目前是不会记录请求体的
 
 [ModSecurity OWASP核心规则集的两种配置模式](https://www.freebuf.com/articles/web/237521.html)
-
-
 
 引用
 [Nginx1.14.0+ModSecurity实现简单的WAF](https://www.cnblogs.com/xll970105/p/10250697.html)
