@@ -19,11 +19,6 @@ docker
 https://hub.docker.com/r/atlassian/confluence-server
 https://hub.docker.com/r/cptactionhank/atlassian-confluence
 
-破解
-https://gitee.com/pengzhile/atlassian-agent
-
-[我用 docker 部署 JIRA 和 Confluence（破解版）](https://blog.51cto.com/wzlinux/2494063)
-
 Atlassian Confluence 6.6.1 
 
 https://www.cvedetails.com/cve/CVE-2019-3396/
@@ -85,15 +80,11 @@ docker save gitlab/gitlab-ce:8.17.8-ce.0 >　gitlab.8.17.8.tar
 docker save gitlab/gitlab-ce:13.10.0-ce.0 >　gitlab.13.10.0.tar
 ```
 
-
-
-
-
 [Docker - 实现本地镜像的导出、导入（export、import、save、load）](https://www.hangge.com/blog/cache/detail_2411.html)
 
 ## 编译 atlassian-agent
 
-https://gitee.com/pengzhile/atlassian-agent
+
 
 [Ubuntu 20.04换国内源 清华源 阿里源 中科大源 163源](https://blog.csdn.net/xiangxianghehe/article/details/105688062)
 
@@ -172,15 +163,11 @@ grant all on confluence.* to 'confluence'@'%';
 set global transaction_isolation='READ-COMMITTED';
 ```
 
-
-
 [MySQL 四种事务隔离级的说明](https://www.cnblogs.com/zhoujinyi/p/3437475.html)
   ·未提交读(Read Uncommitted)：允许脏读，也就是可能读取到其他会话中未提交事务修改的数据
   ·提交读(Read Committed)：只能读取到已经提交的数据。Oracle等多数数据库默认都是该级别 (不重复读)
   ·可重复读(Repeated Read)：可重复读。在同一个事务内的查询都是事务开始时刻一致的，InnoDB默认级别。在SQL标准中，该隔离级别消除了不可重复读，但是还存在幻象读
   ·串行读(Serializable)：完全串行化的读，每次读都需要获得表级共享锁，读写相互都会阻塞
-
-
 
 [十、MySql8设置事务隔离级别](https://blog.csdn.net/u010285974/article/details/82253040)
 mysql8改成了 transaction_isolation
@@ -256,6 +243,12 @@ grant all on confluence.* to 'confluence'@'%' identified by 'M4Zyq4eQbmgWfoyfNVn
 set global tx_isolation='READ-COMMITTED';
 ```
 
+
+
+metaexploit
+
+
+
 RHOSTS      127.0.0.1                  yes       The target host(s), range CIDR identifier,
                                                     or hosts file with syntax 'file:<path>'
    RPORT       18010                      yes       The target port (TCP)
@@ -285,6 +278,7 @@ https://www.exploit-db.com/exploits/46731
 
 Atlassian Confluence Widget Connector Macro - SSTI
 https://www.exploit-db.com/exploits/49465
+
 2021-01-22
 
 https://github.com/rapid7/metasploit-framework/blob/master/documentation/modules/exploit/multi/http/confluence_widget_connector.md

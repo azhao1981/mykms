@@ -1,6 +1,38 @@
 # 202009
 
+## 20210909
+
+https://github.com/Mr-xn/BurpSuite-collections
+Burp Notes Extension is a plugin for Burp Suite that adds a Notes tab. The tool aims to better organize external files that are created during penetration testing.
+https://github.com/SpiderLabs/BurpNotesExtension
+有关burpsuite的插件(非商店),文章以及使用技巧的收集(此项目不再提供burpsuite破解文件,如需要请在博客mrxn.net下载)---Collection of burpsuite plugins (non-stores), articles and tips for using Burpsuite, no crack version file
+
+开源软件对比
+star 数 fork 数 最新更新时间 证书
+代码活跃度 社区活跃度 团队健康 流行趋势 影响力
+
+还在看开源项目的Star？这个指标其实更值得关注！
+https://zhuanlan.zhihu.com/p/386806326
+
+[osquery](https://github.com/osquery/osquery)
+```sql
+SELECT * FROM users;
+SELECT * FROM processes WHERE on_disk = 0;
+SELECT name FROM processes WHERE name like '%chrome%';
+
+SELECT DISTINCT processes.name, listening_ports.port, processes.pid
+  FROM listening_ports JOIN processes USING (pid)
+  WHERE listening_ports.address = '0.0.0.0';
+```
+
+内网渗透测试：域用户和机器用户
+https://www.freebuf.com/articles/network/283767.html
+Blackhat 2021 议题详细分析 —— FastJson 反序列化漏洞及在区块链应用中的渗透利用
+https://paper.seebug.org/1698/
+Jenkins Nested View插件XXE漏洞（CVE-2021-21680）分析
+https://www.anquanke.com/post/id/252564
 ## 20210908
+
 
 https://www.dfxj.top/archives/docker安装confluence
 

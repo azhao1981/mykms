@@ -1,32 +1,51 @@
 # 开源WAF
 
+[TOC]
+
 ## 有哪些
 
+https://github.com/topics/waf
+
+- [ModSecurity](http://www.modsecurity.org/)
+  [第一个全方位开源的Web应用防护系统（WAF），更全面的防护功能，更多样的防护策略](https://gitee.com/miracleqi/OpenWAF)
+- [众安开源waf引擎](https://github.com/ZhongAnTech/maiev-waf)
+    基于OpenResty®实现的高性能应用防火墙（WAF），需搭配众安开源waf控制台项目一起使用。
+- [NAXSI](https://github.com/nbs-system/naxsi)
+- [WebKnight](https://www.aqtronix.com/?PageID=99)
+- [Shadow Daemon](https://shadowd.zecure.org/overview/introduction/)
+- [JXWAF(基于OpenResty) ](https://github.com/jx-sec/jxwaf)
+- [BrowserWAF：免费、开源的前端WAF ](https://www.sohu.com/a/403107976_354899)
+
+TIPS：
+
+github上最高的是 modsecurity 和 naxsi
+
+主要产品和测试方法
 https://github.com/0xInfection/Awesome-WAF
 
-[ModSecurity](http://www.modsecurity.org/)
-[第一个全方位开源的Web应用防护系统（WAF），更全面的防护功能，更多样的防护策略](https://gitee.com/miracleqi/OpenWAF)
-[众安开源waf引擎](https://github.com/ZhongAnTech/maiev-waf)
-  基于OpenResty®实现的高性能应用防火墙（WAF），需搭配众安开源waf控制台项目一起使用。
-[NAXSI](https://github.com/nbs-system/naxsi)
-[WebKnight](https://www.aqtronix.com/?PageID=99)
-[Shadow Daemon](https://shadowd.zecure.org/overview/introduction/)
-[JXWAF(基于OpenResty) ](https://github.com/jx-sec/jxwaf)
-[BrowserWAF：免费、开源的前端WAF ](https://www.sohu.com/a/403107976_354899)
-
-
 ### openresty
+
+OpenResty® 是一个基于 [Nginx](https://openresty.org/cn/nginx.html) 与 Lua 的高性能 Web 平台，其内部集成了大量精良的 Lua 库、第三方模块以及大多数的依赖项。用于方便地搭建能够处理超高并发、扩展性极高的动态 Web 应用、Web 服务和动态网关。
 
 https://github.com/openresty/openresty
 
 https://github.com/openresty/docker-openresty
 https://hub.docker.com/r/openresty/openresty/dockerfile
+
 docker pull openresty/openresty
 
 https://github.com/moonbingbing/openresty-best-practices
 [OpenResty 环境问题漏洞](http://www.cnnvd.org.cn/web/xxk/ldxqById.tag?CNNVD=CNNVD-202004-615)
 [apigw openresty 安全漏洞 ](http://confluence.flyudesk.com/pages/viewpage.action?pageId=65571687)
+
 [Web应用程序防火墙(ngx_lua_waf或X-WAF)产品](https://openresty.org/cn/)
+
+这两个都是中文的
+
+https://github.com/loveshell/ngx_lua_waf 	3.4k S, 1.4k F
+
+https://github.com/xsec-lab/x-waf
+
 [WAF代码剖析之初识openresty](https://www.freebuf.com/articles/web/251429.html)
 [这个好像还是一个nginx的CVE连动的](https://hackerone.com/reports/513236)
 
@@ -42,20 +61,8 @@ https://www.delltechnologies.com/en-us/collaterals/unauth/white-papers/ecs-with-
 High-performance WAF built on the OpenResty stack
 https://github.com/p0pr0ck5/lua-resty-waf
 
-###　kong waf
 
-https://docs.konghq.com/hub/wallarm/wallarm/
-Kong APIGW — Plugins — Security
-https://chowdera.com/2021/02/20210220061643219I.html
-将loveshell的ngx_lua_waf插件迁移为kong-waf插件, 适配kong
-https://github.com/exexute/kong-waf
-kong安装lua waf之最佳实践
-https://exexute.github.io/2018/12/25/kong%E5%AE%89%E8%A3%85lua-waf%E4%B9%8B%E6%9C%80%E4%BD%B3%E5%AE%9E%E8%B7%B5/
-Kong plugin for lua-resty-waf
-https://github.com/zhenguang/kong-plugin-lua-resty-waf
-
-
-### OWASP [Modsecurity](https://www.modsecurity.org/)
+#### OWASP [Modsecurity](https://www.modsecurity.org/)
 
 ModSecurity is an open source, cross-platform web application firewall (WAF) module
 
@@ -63,13 +70,22 @@ OWASP核心规则集
 https://github.com/coreruleset/coreruleset
 https://github.com/SpiderLabs/ModSecurity
 
+https://github.com/SpiderLabs/ModSecurity-nginx
+
 https://hub.docker.com/r/owasp/modsecurity
 https://hub.docker.com/r/owasp/modsecurity-crs/
+
+https://github.com/coreruleset/modsecurity-docker
+
+https://github.com/coreruleset/modsecurity-crs-docker
+
+https://github.com/coreruleset/ftw Framework for Testing WAFs (FTW!)
+
   The Official OWASP Core Rule Set Docker Image (ModSecurity+Core Rule Set) 
+
 ```bash
 sudo docker pull owasp/modsecurity
-sudo docker pull owasp/modsecurity-crs
-sudo docker pull owasp/modsecurity-crs:v3.3.0-nginx
+sudo docker pull owasp/modsecurity-crs:v3.3.2-nginx
 sudo docker run -dti -p 80:80 --rm \
    -e PARANOIA=1 \
    -e EXECUTING_PARANOIA=2 \
@@ -106,7 +122,7 @@ sudo docker run -dti -p 80:80 --rm \
    -e MODSEC_RESP_BODY_LIMIT=524288 \
    -e MODSEC_PCRE_MATCH_LIMIT=1000 \
    -e MODSEC_PCRE_MATCH_LIMIT_RECURSION=1000 \
-   owasp/modsecurity-crs:v3.3.0-nginx
+   owasp/modsecurity-crs:v3.3.2-nginx
 #  owasp/modsecurity-crs:v3.3.0-nginx 启动后死循环了
 ```
 
@@ -116,13 +132,56 @@ sudo docker run -dti -p 80:80 --rm \
 
 [ModSecurity OWASP核心规则集的两种配置模式](https://www.freebuf.com/articles/web/237521.html)
 
+
+
+引用
+[Nginx1.14.0+ModSecurity实现简单的WAF](https://www.cnblogs.com/xll970105/p/10250697.html)
+
+[ModSecurity：一款优秀的开源WAF](https://www.cnblogs.com/cheyunhua/p/11881125.html)
+
+
+优势：
+
+> 完美兼容nginx，是nginx官方推荐的WAF
+>
+> 支持OWASP规则
+>
+> 3.0版本比老版本更新更快，更加稳定，并且得到了nginx、Inc和Trustwave等团队的积极支持
+>
+> 免费
+
+劣势：
+
+> 不支持检查响应体的规则，如果配置中包含这些规则，则会被忽略，nginx的的sub_filter指令可以用来检查状语从句：重写响应数据，OWASP中相关规则是95X。
+>
+> 不支持OWASP核心规则集DDoS规则REQUEST-912-DOS- PROTECTION.conf,nginx本身支持配置DDoS限制
+>
+> 不支持在审计日志中包含请求和响应主体
+
 [用ModSecurity启动WAF的一次小试 | WAF](https://www.freebuf.com/articles/web/227217.html)
 
-[重要:ModSecurity：一款优秀的开源WAF](https://www.freebuf.com/sectool/211354.html)
+利用Nginx的resolver实现动态upstream
+https://cjfeii.blog.csdn.net/article/details/77987004
+
+###　kong waf
+
+https://docs.konghq.com/hub/wallarm/wallarm/
+Kong APIGW — Plugins — Security
+https://chowdera.com/2021/02/20210220061643219I.html
+将loveshell的ngx_lua_waf插件迁移为kong-waf插件, 适配kong
+https://github.com/exexute/kong-waf
+kong安装lua waf之最佳实践
+https://exexute.github.io/2018/12/25/kong%E5%AE%89%E8%A3%85lua-waf%E4%B9%8B%E6%9C%80%E4%BD%B3%E5%AE%9E%E8%B7%B5/
+Kong plugin for lua-resty-waf
+https://github.com/zhenguang/kong-plugin-lua-resty-waf
+
+https://www.freebuf.com/sectool/211354.html)
 
 ### VeryNginx！
 
 [Github标星5.2k+！开源、强大的WAF(web防火墙)VeryNginx！](https://www.shangyexinzhi.com/article/554151.html)
+
+星是很多，可是19年就不再更新了
 
 https://hub.docker.com/r/camil/verynginx
 sudo docker pull camil/verynginx
@@ -147,9 +206,6 @@ docker pull dmgnx/nginx-naxsi
 https://hub.docker.com/r/dmgnx/nginx-naxsi
 
 ### [openRasp](https://rasp.baidu.com/)
-
-
-
 
 ### openwaf
 
@@ -191,7 +247,7 @@ BrowserWAF，一款由ShareWAF推出的免费、开源的前端WAF，也可称�
 [mRuby 使用 ngx_mruby 打造简易 WAF](https://ruby-china.org/topics/29834) | 玩具，无产品
 
 [企业安全建设(二)：构建开源企业WAF](https://www.secrss.com/articles/8270)
-  
+
 云WAF接收到请求，也是通过Internet的方式请求真实的Web服务器，国内有：
 [百度云加速](https://su.baidu.com/)，
 [360网站卫士](https://wangzhan.qianxin.com/)
