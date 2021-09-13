@@ -928,6 +928,7 @@ ALTER TABLE `vault` CHANGE COLUMN `vault_value` `vault_value` LONGBLOB NULL AFTE
 ```
 
 https://github.com/rancher/rancher/issues/9357
+
 Defaults on max_allowed_packet, based on Dockerhub images and RDS
 mysql	5.7	4194304
 

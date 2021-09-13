@@ -1,5 +1,29 @@
 # 202009
 
+## 20210913
+
+kickoff_vite_rails
+https://github.com/justalever/kickoff_vite_rails
+
+rails new rails-demo --skip-webpack-install --skip-javascript -d mysql -m kickoff_vite_rails/template.rb
+为什么要删除？
+      remove  config/initializers/cors.rb
+
+https://vite-ruby.netlify.app/
+A Tour of my new Rails Vite Kickoff Template
+https://www.youtube.com/watch?v=TbdJHdEoMZU
+
+https://www.freebuf.com/sectool/286615.html
+Bughound：一款基于Elasticsearch的静态代码分析工具
+
+浅谈DevSecOps的落地实践方案
+https://www.freebuf.com/articles/es/286584.html
+总结常见漏洞的代码审计方法
+https://www.freebuf.com/articles/web/287981.html
+## 20210910
+
+https://owasp.org/Top10/
+
 ## 20210909
 
 https://github.com/Mr-xn/BurpSuite-collections
@@ -125,23 +149,7 @@ https://paper.seebug.org/1696/
 从Windows 10 SSH-Agent中提取SSH私钥
 https://www.freebuf.com/articles/system/172624.html
 
-podman apt安装需要ubuntu20.10，但wsl不能直接装，需要升级来装
-https://0xzx.com/202010240500903592.html
-如何在Windows 10的WSL中​​升级到Ubuntu 20.10
-https://podman.io/getting-started/
-如何在 Windows 安全中心设置白名单
-https://consumer.huawei.com/cn/support/content/zh-cn00694627/
 
-
-Podman 初次体验
-
-https://zdyxry.github.io/2019/10/12/Podman-%E5%88%9D%E6%AC%A1%E4%BD%93%E9%AA%8C/
-
-. /etc/os-release
-echo "deb https://download.opensuse.org/repositories/devel:/kubic:/libcontainers:/testing/xUbuntu_${VERSION_ID}/ /" | sudo tee /etc/apt/sources.list.d/devel:kubic:libcontainers:testing.list
-curl -L "https://download.opensuse.org/repositories/devel:/kubic:/libcontainers:/testing/xUbuntu_${VERSION_ID}/Release.key" | sudo apt-key add -
-sudo apt-get update -qq
-sudo apt-get -qq -y install podman
 
 ## 20210904
 

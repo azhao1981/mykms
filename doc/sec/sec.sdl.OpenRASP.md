@@ -113,7 +113,7 @@ http://192.168.56.140:8086
 
 默认账号密码： openrasp admin@123321
 
-启动tomcat
+启动 tomcat
 
 https://tomcat.apache.org/download-90.cgi
 
@@ -129,7 +129,6 @@ cd rasp-*/
 
 # heartbeat 决定客户端会多久拉取新的配置
 java -jar RaspInstall.jar -heartbeat 90 -appid 66ce24d42bf4a488da0aecf32c4708a6edca825b -appsecret jtamD1gULeAt6NjIq4bxqh1BapAaDTj65gGVokhE1D4 -backendurl http://192.168.56.140:8086/ -install /home/ubuntu/openrasp/apache-tomcat-9.0.50
-
 
 # Duplicating "rasp" directory
 # - /home/ubuntu/openrasp/apache-tomcat-9.0.50/rasp
@@ -221,11 +220,46 @@ openjdk:8-stretch
 debian:stretch-slim
 tomcat:8.5.69-jdk8-openjdk
 
+## confluence  和防护配置项的影响
+
+如果需要对confluence进行防护，使用springboot的jar模式
+- 安装服务后台管理端
+- 下载rasp agent,配置
+- 把 -javaagent= 加入到confluence启动命令中
+- 调整 rasp 的防护配置
+
+### 安装服务后台管理端 见上面
+### 下载rasp agent和配置
+
+```bash
+curl https://packages.baidu.com/app/openrasp/release/1.3.6/rasp-java.tar.gz -o rasp-java.tar.gz
+tar -xvf rasp-java.tar.gz
+cd rasp-*/
+sudo mv rasp /rasp
+sudo vim /rasp/conf/openrasp.yml
+# 如果confluence是用confluence用户启动，需要
+sudo chown confluence -R /rasp
+```
+
+openrasp.yml 添加的配置
+
+```yml
+cloud.enable: true
+cloud.backend_url: http://rasp.domain.com/
+cloud.app_id: xxx
+cloud.app_secret: xxx
+cloud.heartbeat_interval: 90
+```
+
+### 
+```bash
+~$ sudo -i
+~# /etc/init.d/confluence restart
+```
+
 ## TODO
 
 + 商业版: 没有看到
-+ spring-boot 集成
-  + jar 模式
 + 扫描 上线前的应⽤安全测试（IAST 模式）
 + PHP的容器有什么用: 加到wordpress里
 
@@ -244,3 +278,9 @@ tomcat:8.5.69-jdk8-openjdk
 [OpenRasp xxe算法的几种绕过方式](https://www.anquanke.com/post/id/241107)
 
 [如何使用Django开发OpenRASP报警接收Web应用](https://www.freebuf.com/articles/web/253832.html)
+
+
+https://lucifaer.com/2019/09/25/浅谈RASP/
+
+http://images.china-pub.com/ebook7730001-7735000/7731482/ch02.pdf
+企业安全建设入门

@@ -9,10 +9,7 @@ https://github.com/accurics/terrascan
 [PentestBox](https://pentestbox.org/zh/)
 
 
-https://github.com/justalever/kickoff_vite_rails
-https://vite-ruby.netlify.app/
-A Tour of my new Rails Vite Kickoff Template
-https://www.youtube.com/watch?v=TbdJHdEoMZU
+
 
 1 客户端访问登录界面，服务端返回 id:token
 2 客户端用token进行加密，返回id:IV:密文

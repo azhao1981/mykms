@@ -61,7 +61,6 @@ https://www.delltechnologies.com/en-us/collaterals/unauth/white-papers/ecs-with-
 High-performance WAF built on the OpenResty stack
 https://github.com/p0pr0ck5/lua-resty-waf
 
-
 #### OWASP [Modsecurity](https://www.modsecurity.org/)
 
 ModSecurity is an open source, cross-platform web application firewall (WAF) module
@@ -73,10 +72,13 @@ https://github.com/SpiderLabs/ModSecurity
 https://github.com/SpiderLabs/ModSecurity-nginx
 
 https://hub.docker.com/r/owasp/modsecurity
-https://hub.docker.com/r/owasp/modsecurity-crs/
-
 https://github.com/coreruleset/modsecurity-docker
 
+```bash
+docker pull owasp/modsecurity:3.0.5
+```
+
+https://hub.docker.com/r/owasp/modsecurity-crs/
 https://github.com/coreruleset/modsecurity-crs-docker
 
 https://github.com/coreruleset/ftw Framework for Testing WAFs (FTW!)

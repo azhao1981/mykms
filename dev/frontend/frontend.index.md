@@ -5,8 +5,10 @@
 ```bash
 npm config get registry
 npm config get disturl
+npm config set disturl https://npm.taobao.org/dist
 npm config set registry=http://registry.npm.taobao.org
-npm install -g cnpm --registry=https://registry.npm.taobao.org 
+
+# 安装 yarn，请不要用 apt install yarn
 npm install -g yarn
 
 npm config delete registry
