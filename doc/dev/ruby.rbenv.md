@@ -41,26 +41,26 @@ sources ~/.bashrc
 
 ### 查看可安装的 RUBY 版本和安装
 
+
 ```shell
 ll ~/.rbenv/plugins/ruby-build/share/ruby-build/
-rbenv install 2.6.6  # 推荐
 
-# 2.5.1 的jemalloc版本
-RUBY_CONFIGURE_OPTS=--with-jemalloc rbenv install 2.6
-RUBY_CONFIGURE_OPTS=--with-jemalloc rbenv install 3.0
+RUBY_CONFIGURE_OPTS="--with-jemalloc" rbenv install 2.6.7
+RUBY_CONFIGURE_OPTS="--with-jemalloc" rbenv install 2.7.4
+RUBY_CONFIGURE_OPTS="--with-jemalloc" rbenv install 3.0.2
 
-# 是否有使用 jemalloc
+# 2.6.* 以上的检查:
+ruby -r rbconfig -e "puts RbConfig::CONFIG['MAINLIBS']"
+
+# 以下检查是否有使用 jemalloc
 ruby -r rbconfig -e "puts RbConfig::CONFIG['LIBS']"
 # -lpthread -ljemalloc -lgmp -ldl -lcrypt -lm  # Output
-
-# 2.6.* 的检查:
-ruby -r rbconfig -e "puts RbConfig::CONFIG['MAINLIBS']"
 ```
 
 ### 设置
 
 ```shell
-rbenv global 2.6.6
+rbenv global 2.6.7
 rbenv shell $(rbenv global) # shell 是临时切换
 gem sources --add https://gems.ruby-china.com/ --remove https://rubygems.org/
 gem install bundler # 必装
@@ -68,16 +68,25 @@ gem install bundler # 必装
 
 ### jruby
 
+
+https://www.jruby.org/download
+JRuby 9.2.19.0 is our point release of our Ruby 2.5.x suppor
+
 rbenv
-https://s3.amazonaws.com/jruby.org/downloads/9.2.12.0/jruby-bin-9.2.12.0.tar.gz
+https://s3.amazonaws.com/jruby.org/downloads/9.2.12.0/jruby-bin-9.2.19.0.tar.gz
+-> https://s3.amazonaws.com/jruby.org/downloads/9.2.19.0/jruby-bin-9.2.19.0.tar.gz
+
+https://cache.ruby-china.com
+grep 's3\.amazonaws\.com' -R 
+grep 'cache\.ruby-china\.com' -R 
 
 官网下载：
-https://repo1.maven.org/maven2/org/jruby/jruby-dist/9.2.12.0/jruby-dist-9.2.12.0-bin.tar.gz
 
 ```bash
 mkdir ~/.rbenv/cache
-mv jruby-dist-9.2.12.0-bin.tar.gz jruby-9.2.12.0.tar.gz
-rbenv install 9.2.12.0
+wget https://repo1.maven.org/maven2/org/jruby/jruby-dist/9.2.19.0/jruby-dist-9.2.19.0-bin.tar.gz
+mv jruby-dist-9.2.19.0-bin.tar.gz jruby-9.2.19.0.tar.gz
+rbenv install jruby-9.2.19.0
 ```
 
 安装时好像要求java8,但切换成java11也是可以运行的
