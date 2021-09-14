@@ -2,10 +2,20 @@
 
 ## 20210913
 
+Ruby on Rails 构建更小的docker镜像
+https://www.vicw.com/groups/code_monkey/topics/334
+
 kickoff_vite_rails
 https://github.com/justalever/kickoff_vite_rails
 
+template的修改可以参考：
+https://github.com/shioyama/rails-template/blob/master/template.rb
+
 rails new rails-demo --skip-webpack-install --skip-javascript -d mysql -m kickoff_vite_rails/template.rb
+git clone git@gitee.com:azhao-1981/rails_mp.git
+rails new rails-demo --skip-webpack-install --skip-javascript -d mysql -m rails_mp/template.rb
+
+
 为什么要删除？
       remove  config/initializers/cors.rb
 

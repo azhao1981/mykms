@@ -46,8 +46,8 @@ ll ~/.rbenv/plugins/ruby-build/share/ruby-build/
 rbenv install 2.6.6  # 推荐
 
 # 2.5.1 的jemalloc版本
-RUBY_CONFIGURE_OPTS=--with-jemalloc rbenv install 2.6.6
-RUBY_CONFIGURE_OPTS=--with-jemalloc rbenv install 2.5.1
+RUBY_CONFIGURE_OPTS=--with-jemalloc rbenv install 2.6
+RUBY_CONFIGURE_OPTS=--with-jemalloc rbenv install 3.0
 
 # 是否有使用 jemalloc
 ruby -r rbconfig -e "puts RbConfig::CONFIG['LIBS']"
