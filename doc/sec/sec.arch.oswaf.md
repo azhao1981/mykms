@@ -127,7 +127,7 @@ sudo docker run -dti -p 80:80 --rm \
    owasp/modsecurity-crs:v3.3.2-nginx
 #  owasp/modsecurity-crs:v3.3.0-nginx 启动后死循环了
 ```
-参考一下这个
+参考一下这个, 用docker-compose来安装，更多讲结构化数据等，TODO
 https://janikvonrotz.ch/2020/02/26/nginx-waf-with-modsecurity-and-owasp-crs/
 
 [基于Owasp Modsecurity CRS规则的误报率和漏报率调试](https://www.freebuf.com/articles/web/243781.html)
@@ -139,8 +139,16 @@ https://janikvonrotz.ch/2020/02/26/nginx-waf-with-modsecurity-and-owasp-crs/
 引用
 [Nginx1.14.0+ModSecurity实现简单的WAF](https://www.cnblogs.com/xll970105/p/10250697.html)
 
+上面的都要安装 libmaxminddb ，但这个会出错，我看有安装 libmaxminddb-dev-le
 [ModSecurity：一款优秀的开源WAF](https://www.cnblogs.com/cheyunhua/p/11881125.html)
+yum install gcc-c++ flex bison yajl yajl-devel curl-devel curl GeoIP-devel doxygen zlib-devel pcre pcre-devel libxml2 libxml2-devel autoconf automake lmdb-devel ssdeep-devel ssdeep-libs lua-devel libmaxminddb-devel git apt-utils autoconf automake build-essential git libcurl4-openssl-dev libgeoip-dev liblmdb-dev ibpcre++-dev libtool libxml2-dev libyajl-dev pkgconf wget zlib1g-dev
 
+https://www.cnblogs.com/Hi-blog/p/OpenResty-ModSecurity.html
+
+yum install gcc-c++ flex bison yajl yajl-devel curl-devel curl GeoIP-devel doxygen zlib-devel pcre pcre-devel libxml2 libxml2-devel autoconf automake lmdb-devel ssdeep-devel ssdeep-libs lua-devel libmaxminddb-devel git apt-utils autoconf automake build-essential git libcurl4-openssl-dev libgeoip-dev liblmdb-dev ibpcre++-dev libtool libxml2-dev libyajl-dev pkgconf wget zlib1g-dev -y
+用这个又会报：Error: Unable to find a match: apt-utils build-essential libcurl4-openssl-dev libgeoip-dev liblmdb-dev ibpcre++-dev libxml2-dev libyajl-dev zlib1g-dev
+但可以选安装
+dnf instaall libmaxminddb-devel
 
 优势：
 
