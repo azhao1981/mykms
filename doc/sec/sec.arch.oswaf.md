@@ -130,6 +130,30 @@ sudo docker run -dti -p 80:80 --rm \
 参考一下这个, 用docker-compose来安装，更多讲结构化数据等，TODO
 https://janikvonrotz.ch/2020/02/26/nginx-waf-with-modsecurity-and-owasp-crs/
 
+```yaml
+version: '3.9'
+services:
+  waf-crs:
+    image: owasp/modsecurity-crs:v3.3.2-nginx
+    environment:
+      BACKEND: http://confluence:8090
+      METRICS_ALLOW_FROM: all
+      TZ: "Asia/Shanghai"
+      SERVERNAME: confl6.local.dev
+      PARANOIA: 1
+      ANOMALY_INBOUND: 5
+      ANOMALY_OUTBOUND: 4
+    ports:
+      - "8082:80"
+      - "4445:443"
+    depends_on:
+      - confluence
+```
+
+
+
+
+
 [基于Owasp Modsecurity CRS规则的误报率和漏报率调试](https://www.freebuf.com/articles/web/243781.html)
 [ModSecurity：一款优秀的开源WAF](https://www.freebuf.com/sectool/211354.html)
   ModSecurity v3.0.3审计日志中是包含请求体和响应体的，不过需要注意的是，3版本里SecAuditLogParts需要添加配置C，而不是IJ，用IJ目前是不会记录请求体的
