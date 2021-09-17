@@ -1,5 +1,39 @@
 # 202009
 
+## 20210916
+
+
+
+The goal of the series is to understand the basics of MLOps like model building, monitoring, configurations, testing, packaging, deployment, cicd, etc.
+
+https://github.com/graviraja/MLOps-Basics
+
+## 20210915
+
+lua的小编辑器：感觉还不是很完善
+
+https://lite-xl.github.io/
+
+处理中文问题
+
+https://samwhelp.github.io/note-about-lite-editor/read/config/font.html
+
+https://www.toutiao.com/a7006910494309122598/
+
+
+
+https://github.com/lockedbyte/CVE-2021-40444
+Malicious docx generator to exploit CVE-2021-40444 (Microsoft Office Word Remote Code Execution)
+
+MongoDB特性注入
+https://www.anquanke.com/post/id/250101
+
+渗透测试之地基服务篇：服务攻防之数据库Redis（下）
+https://www.freebuf.com/articles/network/281162.html
+
+渗透测试之地基服务篇：服务攻防之数据库Redis（上）
+https://www.freebuf.com/articles/network/281140.html
+
 ## 20210913
 
 Ruby on Rails 构建更小的docker镜像
@@ -102,8 +136,7 @@ https://github.com/yaoleifly/Nonsense-Series
 基于 WPF 实现的仿 Windows 桌面版微信 UI 界面库 An unofficial UI library for Windows WeChat based on WPF implementation
 https://github.com/IUpdatable/WeUiSharp
 
-渗透测试之地基服务篇：服务攻防之数据库Redis（上） 会员
-https://www.freebuf.com/articles/network/281140.html
+
 应急响应之windows入侵排查篇
 https://www.freebuf.com/articles/network/286270.html
 如何使用DNSStager在DNS中隐藏Payload

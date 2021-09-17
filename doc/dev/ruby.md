@@ -157,3 +157,10 @@ sudo update -y
 sudo apt-get install postgresql-client libpq5 libpq-dev -y
 gem install pg -v '1.2.3'
 ```
+
+### VS Code Run test
+
+https://marketplace.visualstudio.com/items?itemName=hbenl.vscode-test-explorer
+
+https://marketplace.visualstudio.com/items?itemName=connorshea.vscode-ruby-test-adapter
+
