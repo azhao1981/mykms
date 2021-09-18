@@ -1,5 +1,27 @@
 # 202009
 
+## 20210918
+
+
+
+A Ruby library that encodes QR Codes 二维码
+
+https://github.com/whomwah/rqrcode
+
+https://maximomussini.com/posts/a-rubyist-guide-to-vite-js/
+
+https://www.fastruby.io/blog/open-source/introducing-dotenv-validator.html
+
+```
+gem "dotenv_validator"
+```
+
+
+
+https://github.com/7kms/react-illustration-series
+
+图解react源码, 用大量配图的方式, 致力于将react原理表述清楚.
+
 ## 20210916
 
 
@@ -8,7 +30,11 @@ The goal of the series is to understand the basics of MLOps like model building,
 
 https://github.com/graviraja/MLOps-Basics
 
+
+
 ## 20210915
+
+
 
 lua的小编辑器：感觉还不是很完善
 
