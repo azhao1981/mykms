@@ -902,3 +902,51 @@ start /min ssh -NL xxx
 https://wangdoc.com/ssh/port-forwarding.html
 ssh xxx -i "work2021" -N -L 3316:rm-xxx.mysql.rds.aliyuncs.com:3306 -vv
 LocalForward client-IP:client-port server-IP:server-port
+
+### 97 windows 自签证书
+https://www.pico.net/kb/how-do-you-get-chrome-to-accept-a-self-signed-certificate/
+
+1 导航到您要信任的证书所在的站点，然后单击不受信任证书的常见警告。
+
+2 在地址栏中，右键单击红色警告三角形和“不安全”消息，然后从结果菜单中选择“证书”以显示证书。
+
+3 在弹出的窗口中，选择“详细信息”选项卡（紧靠“常规”右侧），然后单击选项卡右下角的“复制到文件…”。
+
+4 这将启动证书导出向导；单击底部的“下一步”，将进入选择格式的单选按钮对话框。保留默认的“DER编码二进制X.509（.CER）”并再次单击“下一步”。
+
+5 使用“浏览…”按钮选择文件名文档（或您希望保留导出证书的任何位置），并记住名称和路径。单击“下一步”导出证书，然后单击“完成”。
+
+6 您应该会看到另一个弹出窗口，告诉您导出成功。单击“确定”将其取消，然后再次在原始“证书”弹出窗口中取消它。
+
+7 接下来打开Chrome设置页面，滚动到底部，展开“高级”部分；在“隐私和安全”面板中，单击“管理证书”区域。
+
+8 在弹出的“证书”窗口中，选择“受信任的根证书颁发机构”选项卡，然后单击“导入…”按钮；这将启动证书导入向导。
+
+9 单击“下一步”，并在下一页上选择“浏览…”，然后使用浏览器窗口查找您在上述步骤5中导出的证书。
+
+10 再次单击“下一步”，然后单击“完成”，在“安全警告”弹出窗口中，单击“是”；您应该会看到另一个弹出窗口，让您知道导入成功。
+
+11 重新启动Chrome，再次导航到该网页；这一次，您应该会在URL的左侧看到关闭的挂锁和“安全”注释。
+
+
+Navigate to the site with the cert you want to trust, and click through the usual warnings for untrusted certificates.
+
+In the address bar, right click on the red warning triangle and "Not secure" message and, from the resulting menu, select "Certificate" to show the certificate.
+
+In the window that pops up, select the "Details" tab (immediately to the right of "General"), and click on the "Copy to File..." at the bottom right of the tab.
+
+This launches the Certificate Export Wizard; click "Next" at the bottom, which takes you to a radio-button dialogue for selecting the format. Leave the default "DER encoded binary X.509 (.CER)" and click next again.
+
+Use the "Browse..." button to select a filename Documents (or wherever you'd like to leave the exported cert), and remember the name and path. Click "Next" to export the cert and then "Finish".
+
+You should get another pop-up window telling you the export was successful. Click "OK" to dismiss it, and again in the original "Certificate" pop-up window to dismiss it too.
+
+Next open the Chrome settings page, scroll to the bottom, and expand the "Advanced" section; in the "Privacy and security" panel, click on the "Manage certificates" area.
+
+In the pop-up "Certificates" window, select the "Trusted Root Certification Authorities" tab, and click on the "Import..." button; this will launch the Certificate Import Wizard.
+
+Click "Next" and, on the next page, select "Browse..." and use the explorer window to locate the certificate you exported at step 5 above.
+
+Click "Next" again, then "Finish", and, in the "Security Warning" pop-up, click on "Yes"; you should see yet another pop-up letting you know that the import was successful.
+
+Restart Chrome, and navigate to the webpage again; this time you should see the closed padlock and "Secure" annotation to the left of the URL.

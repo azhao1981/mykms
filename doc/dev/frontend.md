@@ -9,6 +9,11 @@
 
 [国内外有哪些好的前端实战网站？](https://www.zhihu.com/question/21034316)
 
+https://github.com/juntossomosmais/frontend-guideline
+
+https://github.com/lydiahallie/javascript-questions/blob/master/zh-CN/README-zh_CN.md
+JavaScript 进阶问题列表
+
 https://codepen.io/
 
 ## vscode
