@@ -208,3 +208,11 @@ https://blog.csdn.net/yangzhenping/article/details/41699299
 
 三个技巧，将 Docker 镜像体积减小 90%
 https://www.infoq.cn/article/3-simple-tricks-for-smaller-docker-images
+
+宿主机IP
+https://stackoverflow.com/questions/48546124/what-is-linux-equivalent-of-host-docker-internal/61001152
+
+--add-host=host.docker.internal:host-gateway
+
+extra_hosts:
+  - "host.docker.internal:host-gateway"
