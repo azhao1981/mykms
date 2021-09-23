@@ -1,5 +1,14 @@
 # 202009
 
+## 20210923
+
+幂等安全，差不多就是指重复调用时的处理，比如存一笔钱，重复调用了两次，加一次钱还是两次
+细说RESTFul API之幂等性	
+https://cloud.tencent.com/developer/article/1474941
+
+幂等REST API
+http://restful.p2hp.com/learn/idempotent-rest-apis
+
 ## 20210922
 
 怎么让 chrome 信任自签名证书（亲测有效）
@@ -15,8 +24,6 @@ https://www.freebuf.com/articles/system/287684.html
 https://www.freebuf.com/articles/network/281169.html
 ## 20210918
 
-
-
 A Ruby library that encodes QR Codes 二维码
 
 https://github.com/whomwah/rqrcode
@@ -28,8 +35,6 @@ https://www.fastruby.io/blog/open-source/introducing-dotenv-validator.html
 ```
 gem "dotenv_validator"
 ```
-
-
 
 https://github.com/7kms/react-illustration-series
 
