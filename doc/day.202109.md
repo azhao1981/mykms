@@ -1,5 +1,18 @@
 # 202009
 
+## 20210922
+
+怎么让 chrome 信任自签名证书（亲测有效）
+https://blog.csdn.net/freeabc/article/details/109737552
+
+windows中如何让chrome信任自签名证书？
+https://blog.csdn.net/arv002/article/details/109066228
+
+Confluence服务器挖矿木马处理报告（CVE-2021-26084）
+https://www.freebuf.com/articles/system/287684.html
+
+渗透测试之地基服务篇：服务攻防之数据库Mongodb（下） 会员
+https://www.freebuf.com/articles/network/281169.html
 ## 20210918
 
 

@@ -47,8 +47,6 @@ FIX: 使用默认的AppTest来做，不要加入 org.junit.jupiter
 
 ####　spring-boot + shiro
 
-
-
 git checkout shiro-root-1.4.1 -b shiro-root-1.4.1
 
 git checkout shiro-root-1.4.2 -b shiro-root-1.4.2
@@ -66,6 +64,13 @@ git checkout shiro-root-1.4.2 -b shiro-root-1.4.2
 [Shiro 权限绕过的历史线（上）](https://www.anquanke.com/post/id/240033)
 
 [Shiro 权限绕过的历史线（下）](https://www.anquanke.com/post/id/240202)
+
+##### CVE-2020-17523
+
+http://blog.nsfocus.net/apache-shiro/
+APACHE SHIRO身份验证绕过漏洞（CVE-2021-41303）通告
+
+https://sourcegraph.com/github.com/apache/shiro/-/compare/shiro-root-1.7.1...shiro-root-1.8.0
 
 ##### CVE-2020-17523
 

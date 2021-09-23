@@ -902,3 +902,14 @@ start /min ssh -NL xxx
 https://wangdoc.com/ssh/port-forwarding.html
 ssh xxx -i "work2021" -N -L 3316:rm-xxx.mysql.rds.aliyuncs.com:3306 -vv
 LocalForward client-IP:client-port server-IP:server-port
+
+### 96 vsCode 禁止更新
+1 禁止 vsCode更新
+2 禁止 插件更新
+设置 搜索 update
+1 code 本身
+![](images/2021-09-22-14-44-32.png)
+2 功能：扩展 
+![](images/2021-09-22-14-43-41.png)
+
+https://blog.csdn.net/qq_44235822/article/details/107665860

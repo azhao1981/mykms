@@ -197,6 +197,15 @@ dnf instaall libmaxminddb-devel
 利用Nginx的resolver实现动态upstream
 https://cjfeii.blog.csdn.net/article/details/77987004
 
+```bash
+# 这么写，就需要用resolver
+resolver 114.114.114.114;
+set $upstream_host baidu.com;
+proxy_pass http://$upstream_host;
+```
+
+
+
 ###　kong waf
 
 https://docs.konghq.com/hub/wallarm/wallarm/
