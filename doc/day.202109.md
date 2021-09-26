@@ -1,5 +1,26 @@
 # 202009
 
+## 20210925
+
+https://github.com/babysor/MockingBird/blob/main/README-CN.md
+conda install pytorch torchvision torchaudio cpuonly -c pytorch
+https://github.com/ascoders/weekly
+https://github.com/rust-lang/mdBook
+Create book from markdown files. Like Gitbook but implemented in Rust
+
+## 20210924
+
+glibc,uclibc,eglibc,musl-libc区别和联系
+http://www.freeoa.net/osuport/intronix/libc-glibc-uclibc-eglibc-musl-libc_3029.html
+
+https://medium.com/analytics-vidhya/how-to-create-a-python-library-7d5aea80cc3f
+
+如何发布自己的Python库？
+https://zhuanlan.zhihu.com/p/66603015
+
+Linux终端注意了！隐蔽性更强的后门木马Rmgr来了
+https://www.freebuf.com/articles/system/289323.html
+
 ## 20210923
 
 幂等安全，差不多就是指重复调用时的处理，比如存一笔钱，重复调用了两次，加一次钱还是两次

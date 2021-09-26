@@ -81,6 +81,10 @@ git clone https://github.com/junegunn/fzf.vim.git
 git clone https://github.com/junegunn/fzf.git 
 ```
 
+https://github.com/junegunn/fzf/issues/1486
+[Ubuntu] --preview error : Failed to read /dev/tty #1486
+这个不如直接集成到脚本里
+
 ### ctags
 
 Vim实用技巧进阶(第16章:ctags索引和导航) - Practical.Vim.2nd.Edition Tip 102~104

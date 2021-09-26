@@ -60,3 +60,14 @@ File/settings/plugins 市场搜索 alibaba
 https://plugins.jetbrains.com/plugin/10046-alibaba-java-coding-guidelines
 
 使用： tools 阿里编程规范 扫描
+
+## mysql 
+
+```yaml
+spring.datasource.url = "jdbc:mysql//localhost:3060/db_name?useSSL=false"
+spring.datasource.username = "root"
+spring.datasource.password = "password"
+
+spring.jpa.properties.hibernate.dialect = "org.hibernate.dialect.MySQL5InnoDBDialect"
+spring.jpa.hibernate.ddl-auto = update
+```
