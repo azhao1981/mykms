@@ -26,6 +26,7 @@ GPL：基于之上的代码必须使用相同的协议
 
 ```bash 
 git clone https://github.com/CISOfy/lynis
+git clone https://gitee.com/azhao-1981/lynis.git
 cd lynis; ./lynis audit system
 
 # 常见问题： 更新内核及相关软件

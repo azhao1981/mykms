@@ -213,3 +213,15 @@ https://segmentfault.com/a/1190000020416577
 把mysql转成json kafka的生产者
 Maxwell's daemon, a mysql-to-json kafka producer
 https://github.com/zendesk/maxwell
+
+AI搜索
+https://ambar.cloud/
+https://vespa.ai/
+
+RUST
+https://github.com/rajasekarv/vega
+https://github.com/vectordotdev/vector
+https://github.com/toshi-search/Toshi
+
+https://news.ycombinator.com/item?id=21417859
+Bayard: a full-text search and indexing server written in Rust (github.com/mosuka)

@@ -1,8 +1,25 @@
 # docker
 
+## install
+
+```bash
+curl -sSL https://get.daocloud.io/docker | sh
+
+To run Docker as a non-privileged user, consider setting up the
+Docker daemon in rootless mode for your user:
+
+    dockerd-rootless-setuptool.sh install
+
+curl -L https://get.daocloud.io/docker/compose/releases/download/v2.0.1/docker-compose-`uname -s`-`uname -m` > /usr/local/bin/docker-compose
+chmod +x /usr/local/bin/docker-compose
+```
+
 ## cn mirror
 
-
+https://www.daocloud.io/mirror
+curl -sSL https://get.daocloud.io/daotools/set_mirror.sh | sh -s http://f1361db2.m.daocloud.io
+curl -sSL https://get.daocloud.io/daotools/set_mirror.sh | sh -s https://docker.mirrors.ustc.edu.cn/
+/etc/docker/daemon.json
 ```json
 {
   "registry-mirrors": ["https://docker.mirrors.ustc.edu.cn/"]

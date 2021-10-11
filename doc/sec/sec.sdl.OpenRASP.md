@@ -1,5 +1,7 @@
 # OpenRASP
 
+[RASP关键技术与相关产品调研](https://mp.weixin.qq.com/s/juEPju1Qx7Wdt0akDz9BsA)
+
 [开源应用运行时自我保护解决方案 - OpenRASP](https://rasp.baidu.com/)
 
 [OpenRASP学习笔记](https://www.anquanke.com/post/id/216886)

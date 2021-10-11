@@ -1,7 +1,8 @@
 # 202009
 
 ## 20210925
-
+https://github.com/ripienaar/free-for-dev
+https://github.com/YunaiV/ruoyi-vue-pro
 https://github.com/babysor/MockingBird/blob/main/README-CN.md
 conda install pytorch torchvision torchaudio cpuonly -c pytorch
 https://github.com/ascoders/weekly

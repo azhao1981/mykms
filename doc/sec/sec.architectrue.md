@@ -20,6 +20,9 @@ Data classification and protection
 workfore competencies assessments
 Automationg security Risk assessments
 
+[安全运营中心（SOC）技术框架](https://mp.weixin.qq.com/s/4LmvqBYJeTOPa237-vaZeQ)
+
+
 ## WAF
 
 [开源waf解决方案](.\sec.arch.oswaf.md)

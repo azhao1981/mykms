@@ -904,6 +904,7 @@ ssh xxx -i "work2021" -N -L 3316:rm-xxx.mysql.rds.aliyuncs.com:3306 -vv
 LocalForward client-IP:client-port server-IP:server-port
 
 ### 96 vsCode 禁止更新
+
 1 禁止 vsCode更新
 2 禁止 插件更新
 设置 搜索 update
@@ -960,3 +961,7 @@ Click "Next" and, on the next page, select "Browse..." and use the explorer wind
 Click "Next" again, then "Finish", and, in the "Security Warning" pop-up, click on "Yes"; you should see yet another pop-up letting you know that the import was successful.
 
 Restart Chrome, and navigate to the webpage again; this time you should see the closed padlock and "Secure" annotation to the left of the URL.
+
+### 97 拆分单元格
+
+数据/分列
