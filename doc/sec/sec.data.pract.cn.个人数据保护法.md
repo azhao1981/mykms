@@ -1,0 +1,203 @@
+# 个人数据保护法
+
+
+
+## 概述
+
+[<<中华人民共和国个人信息保护法>>](http://www.npc.gov.cn/npc/c30834/202108/a8c4e3672c74491a80b53a172bb753fe.shtml)
+
+2021年11月01日 实施
+
+
+
+需要做什么改进以符合保护法要求
+
+
+
+### 组成
+
+隐私协议：公开声明
+
+客户同意：同意收集哪些信息，并可以撤回
+
+客户个人数据中心：已经收集了哪些信息，并可以修改，删除等
+
+保护措施：加密 去标识化 https
+
+
+
+内部：
+
+制度文档/规程
+
+数据分级分类
+
+培训和培训记录
+
+应急预案，演练记录
+
+应急处理SOP
+
+
+
+合规集成和审计
+
+
+
+平台：
+
+
+
+独立外部成员个人信息保护监督机构
+
+平台规则公告
+
+查处平台的用户/产品
+
+发布个人 信息保护社会责任报告
+
+
+
+## 架构
+
+隐私平台
+
+- 隐私协议管理
+- 客户同意 收集开关管理
+- 客户个人数据修改集成
+- 加密套件  接口
+- 去标识化 库
+
+## 设计TIP
+
+
+
+### 加密
+
+如果是老系统，应该以老系统做为 去标识化 后的数据存储
+
++ 比如你现有系统中的 user.name, 现存数据张三丰，处理后，user.name=张先生，然后
+
+将个人信息数据/敏感数据 放到新的加密数据中
+
+如何支持搜索
+
+
+
+导出加密保护：导出的文件压缩成zip，并加密
+
+API接口加密保护：接口的数据都加密返回
+
+SPA加密保护：
+
++ 敏感数据提交： 加密了，怎么进行WAF过滤
++ 敏感数据输出加密： 安全header中加入x-sec-token,后端得到后以之加密，强制开关，如果没有这个参数，拒绝返回
++ 前端加密解密组件：
+
+
+
+
+
+
+
+## 引用
+
+
+
+[十问十答看懂我国个人信息去标识化规则](https://www.secrss.com/articles/31527)
+
+个人数据安全法 11.1 生效
+
+个人信息去标识化，是指个人信息经过处理，使其在不借助额外信息的情况下无法识别特定自然人的过程。去标识化采用假名、加密、哈希函数等技术手段替代对个人信息的标识，但在一定程度上保留了个人信息的颗粒度。个人信息去标识化的目的在于降低信息对个人的识别程度，使得单个信息不能识别到特定个人。
+
+[逃离“告知-同意”：《个人信息去标识化指南》笔记](https://zhuanlan.zhihu.com/p/106983511)
+
++ 重要概念
++ 去标识化的武器库/工具
+
+[个人信息去标识化框架及标准化](https://blog.51cto.com/u_15127528/2697852)
+
+[全景解构《个人信息保护法》，助力企业进入中国个人信息保护新纪元](http://www.zhonglun.com/Content/2021/08-21/0130117987.html)
+
+《个人信息保护法》强在哪？我们又该如何准备
+https://www.freebuf.com/articles/neopoints/286092.html
+CCPA(加州消费者保护法案)
+GDPR
+UPDBA 统一个人数据保护法案
+《个人信息保护法》企业侧实用解读指南
+https://www.freebuf.com/articles/neopoints/286277.html
+落地《个人信息保护法》 直面数字化时代的困难与挑战
+https://www.freebuf.com/articles/neopoints/286507.html
+国家网信办：算法推荐服务提供者不得利用算法屏蔽信息、过度推荐
+https://www.freebuf.com/news/286454.html
+
+网络安全视角下的《个人信息保护法》
+https://www.freebuf.com/articles/neopoints/253951.html
+
+数据安全怎么做：个人信息保护法解读
+https://www.freebuf.com/articles/compliance/253713.html
+
+好像有一个GDPR服务
+https://www.netcraft.com/topics/gdpr/
+https://search.bilibili.com/all?keyword=GDPR
+https://www.udemy.com/courses/search/?src=ukw&q=GDPR
+https://www.youtube.com/results?search_query=GDPR
+
+《中华人民共和国个人信息保护法（草案）》解读|德勤
+https://www2.deloitte.com/cn/zh/pages/risk/articles/china-draft-personal-data-protection-law.html
+https://search.bilibili.com/all?keyword=个人信息保护法
+https://www.bilibili.com/video/BV13D4y1X74B?from=search&seid=6747857310039500278
+
+[盘点2020年上半年个人信息保护重大事件](https://www.freebuf.com/articles/neopoints/242861.html)
+
+[企业合规视角下的《个人信息保护法 (草案) 》解读](https://www.freebuf.com/articles/neopoints/253546.html)
+
+2021第5讲:《个人信息保护法》理解与适用|律师法律相关
+https://www.bilibili.com/video/BV1Hb4y1U7uU/?spm_id_from=333.788.recommend_more_video.0
+撒回授权
+删除个人信息
+
+企业和负责人要做什么：
+
+![](images/2021-10-19-17-34-23.png)
+
+![](images/2021-10-19-17-34-39.png)
+
+![](images/2021-10-19-17-35-03.png)
+
+
+
+
+
+![](images/2021-10-19-17-36-26.png)
+
+![](images/2021-10-19-17-38-30.png)
+
+![](images/2021-10-19-17-39-04.png)
+
+![](images/2021-10-19-17-40-06.png)
+
+![](images/2021-10-19-17-40-32.png)
+
+![](images/2021-10-19-17-41-23.png)
+
+
+
+如果是SDK，列出所要求的权限和收集的数据
+
+
+Guy-HW
+
+活动作品《数据安全保护法》和《个人信息保护法》解读与合规应对思路——环球律师事务所合伙人孟洁律师
+https://www.bilibili.com/video/BV1XA411F71x/?spm_id_from=333.788.recommend_more_video.2
+
+活动作品个人信息保护法的理解与展望——前网信办工作人员解读
+https://www.bilibili.com/video/BV1AM4y157ZF?from=search&seid=5030832091563850512&spm_id_from=333.337.0.0
+
+活动作品个人信息保护法立法执法态势与企业合规——上海锦天城合伙人解读
+https://www.bilibili.com/video/BV1K64y1Y7vQ?from=search&seid=5030832091563850512&spm_id_from=333.337.0.0
+
+### 主体同意：
+
+参考德勤的设计
+https://www2.deloitte.com/cn/zh/pages/risk/articles/personal-information-protection-law-analysis.html

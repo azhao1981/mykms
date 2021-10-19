@@ -32,8 +32,6 @@ https://www.freebuf.com/articles/terminal/254258.html
 PHP绕过禁用函数漏洞的原理与利用分析
 https://www.freebuf.com/articles/network/253489.html
 
-网络安全视角下的《个人信息保护法》
-https://www.freebuf.com/articles/neopoints/253951.html
 
 企业安全体系架构分析：抗DDoS解决方案
 https://www.freebuf.com/articles/es/253129.html
@@ -282,9 +280,6 @@ https://www.anquanke.com/post/id/222269
 
 警惕！你的业务系统可能已经成为黑产违法犯罪的凶器| 要对短信接口做渗透测试和要求
 https://www.freebuf.com/articles/es/252876.html
-
-数据安全怎么做：个人信息保护法解读
-https://www.freebuf.com/articles/compliance/253713.html
 
 企业安全建设之安全合规检查
 https://www.freebuf.com/articles/compliance/243807.html

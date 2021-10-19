@@ -59,10 +59,6 @@ http://openstd.samr.gov.cn/bzgk/gb/newGbInfo?hcno=4568F276E0F8346EB0FBA097AA0CE0
 
 参考：
 
-[盘点2020年上半年个人信息保护重大事件](https://www.freebuf.com/articles/neopoints/242861.html)
-
-[企业合规视角下的《个人信息保护法 (草案) 》解读](https://www.freebuf.com/articles/neopoints/253546.html)
-
 样例
 https://teahouse.fifty-five.com/zh-hans/gdpr-and-data-privacy-a-legislative-world-tour/
 ![](images/2020-09-16-11-29-46.png)

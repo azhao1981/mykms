@@ -1204,15 +1204,7 @@ netcraft 不再提供服务
 toolbar.netcraft.com
 https://sitereport.netcraft.com/
 
-好像有一个GDPR服务
-https://www.netcraft.com/topics/gdpr/
-https://search.bilibili.com/all?keyword=GDPR
-https://www.udemy.com/courses/search/?src=ukw&q=GDPR
-https://www.youtube.com/results?search_query=GDPR
-《中华人民共和国个人信息保护法（草案）》解读|德勤
-https://www2.deloitte.com/cn/zh/pages/risk/articles/china-draft-personal-data-protection-law.html
-https://search.bilibili.com/all?keyword=%E4%B8%AA%E4%BA%BA%E4%BF%A1%E6%81%AF%E4%BF%9D%E6%8A%A4%E6%B3%95
-https://www.bilibili.com/video/BV13D4y1X74B?from=search&seid=6747857310039500278
+
 
 ### reverse DNS
 https://www.yougetsignal.com/tools/web-sites-on-web-server/
