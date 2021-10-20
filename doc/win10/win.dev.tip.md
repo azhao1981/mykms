@@ -965,3 +965,30 @@ Restart Chrome, and navigate to the webpage again; this time you should see the 
 ### 97 拆分单元格
 
 数据/分列
+
+### 98 vmmem
+
+https://blog.simonpeterdebbarma.com/2020-04-memory-and-wsl/
+
+.wslconfig
+
+```conf
+[wsl2]
+kernel=<path>              # An absolute Windows path to a custom Linux kernel.
+memory=<size>              # How much memory to assign to the WSL2 VM.
+processors=<number>        # How many processors to assign to the WSL2 VM.
+swap=<size>                # How much swap space to add to the WSL2 VM. 0 for no swap file.
+swapFile=<path>            # An absolute Windows path to the swap vhd.
+localhostForwarding=<bool> # Boolean specifying if ports bound to wildcard or localhost in the WSL2 VM should be connectable from the host via localhost:port (default true).
+
+# <path> entries must be absolute Windows paths with escaped backslashes, for example C:\\Users\\Ben\\kernel
+# <size
+```
+
+注意：
+
+如果用 vscode + tabnine 好像占用内存非常大
+wsl > free -h
+wsl > top
+
+wsl --shutdown
