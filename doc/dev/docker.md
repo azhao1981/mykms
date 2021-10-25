@@ -13,6 +13,26 @@ Docker daemon in rootless mode for your user:
 curl -L https://get.daocloud.io/docker/compose/releases/download/v2.0.1/docker-compose-`uname -s`-`uname -m` > /usr/local/bin/docker-compose
 chmod +x /usr/local/bin/docker-compose
 ```
+## rocky centos
+
+https://yeasy.gitbook.io/docker_practice/install/centos
+
+sudo yum install -y yum-utils
+yum-config-manager \
+    --add-repo \
+    https://mirrors.aliyun.com/docker-ce/linux/centos/docker-ce.repo
+yum install docker-ce docker-ce-cli containerd.io
+```bash
+# /etc/firewalld/firewalld.conf
+# FirewallBackend=nftables
+FirewallBackend=iptables
+# or
+$ firewall-cmd --permanent --zone=trusted --add-interface=docker0
+$ firewall-cmd --reload
+
+$ sudo systemctl enable docker
+$ sudo systemctl start docker
+```
 
 ## cn mirror
 
@@ -44,7 +64,6 @@ sudo docker history ubuntu.cn:20.04
 三个技巧帮助Docker镜像瘦身
 https://blog.csdn.net/weixin_49163826/article/details/107732323
 
-
 ### 修改容器ip映射
 
 [Docker容器修改端口映射](https://zhuanlan.zhihu.com/p/94949253)
@@ -58,7 +77,6 @@ docker stop 容器id
 # 修改： config.v2.json，如果需要在里面添加新的expose port
 # 必须重启
 service docker restart
-
 ```
 
 ### 清理空间

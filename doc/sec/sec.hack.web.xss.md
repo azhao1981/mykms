@@ -12,14 +12,15 @@ XSS 攻击可以分为3类：存储型（持久型）、反射型（非持久型
 
 ## 为什么是xss
 
-很严重的后果
-  OWASP TOP10
-  Cross Site Scripting (XSS)
-https://owasp.org/www-community/attacks/xss/
+### 1 很严重的后果
+
+  **OWASP TOP10   /  Cross Site Scripting (XSS)**  https://owasp.org/www-community/attacks/xss/
+
   盗取身份，冒充受者
   攻击受害者
 
-美好的“钱途”
+### 2 美好的“钱途”
+
   大厂对xss漏洞的悬赏很高
 Bug Bounty:$20000 Facebook DOM XSS
 https://xz.aliyun.com/t/7783
@@ -29,8 +30,7 @@ https://xz.aliyun.com/t/7933
   2020年漏洞赏金记录表|bug bounty writeups
 https://www.ddosi.com/bug-bounty-2020/
 
-XSStrike 是用 Python3 编写的，快速检测跨站脚本漏洞的工具
-https://blog.intigriti.com/2021/06/29/hacker-tools-xsstrike-hunting-for-low-hanging-fruits/
+
 
 
 ## 怎么发起XSS
@@ -52,7 +52,7 @@ XSS 攻击可以分为3类：存储型（持久型）、反射型（非持久型
 真实的攻击延展
 
 ## 武器库
-怎么发现
+怎么发现,怎么检查出来
 
 ## 怎么防御
 
@@ -81,9 +81,29 @@ Spring MVC Xss Filter
 https://www.javatt.com/p/33781
 http://opensource.finn.no/xss-html-filter/
 
-## 
+XSStrike 是用 Python3 编写的，快速检测跨站脚本漏洞的工具
+https://blog.intigriti.com/2021/06/29/hacker-tools-xsstrike-hunting-for-low-hanging-fruits/
 
-这里面相关xss的
+## Payload
+
+在进攻和防守武器都到位后，就剩下Payload之间斗智斗勇的拉剧战了
+
+
+
+https://github.com/payloadbox/xss-payload-list
+
+https://www.kitploit.com/2018/05/xss-payload-list-cross-site-scripting.html
+
+Almost all XSS Payloads. xss大全
+https://github.com/irfan-knr/KNR-XSS-Payloads
+
+@SamuelAnttila ’s amazing XSS cheatsheet. It covers wide range of topics. His story is as incredible as he is. Thanks for all the advice :) 
+https://netsec.expert/posts/xss-in-2021/
+
+
+
+## 这里面相关xss的
+
 https://github.com/trimstray/the-book-of-secret-knowledge
 
 https://github.com/qazbnm456/awesome-web-security
@@ -92,11 +112,17 @@ https://github.com/swisskyrepo/PayloadsAllTheThings/tree/master/XSS%20Injection
 
 https://www.cgisecurity.com/xss-faq.html
 
-Almost all XSS Payloads. xss大全
-https://github.com/irfan-knr/KNR-XSS-Payloads
 
-@SamuelAnttila ’s amazing XSS cheatsheet. It covers wide range of topics. His story is as incredible as he is. Thanks for all the advice :) 
-https://netsec.expert/posts/xss-in-2021/
+
+
+
+
+
+https://twitter.com/ldionmarcil/status/922553386645454850
+
+Stored XSS quick-win: IIS serves .stm files as text/html. Most file uploads features will blacklist asp(x), s/htm(l), etc. but rarely .stm
+
+
 
 https://hackerone.com/reports/643908
 I found a stored xss @ https://core.trac.wordpress.org/
@@ -119,6 +145,7 @@ Reflected xss successfull payload for me:
 1.<b onmouseover=alert('Wufff!')>click me!</b>
 2."><script>propmt("mamunwhh")</script>
 3."><script>alert(document.cookie)</script>
+
 4. /><svg src=x onload=confirm("1337");>
 
 Brute Logic
@@ -147,6 +174,7 @@ BUG : HTML INJECTION to XSS
 1) try : <a href="https://evil.com")>click</a>
 2) HTML injection successfully working.
 3) Now try escalate to XSS : <a href=javascript:alert('Fauzan_hacker')>click</a>
+
 
 
 ### react xss
@@ -182,6 +210,8 @@ https://t0data.gitbooks.io/mysecuritybook/content/chapter1.html
 
 这应该是burpsuite发的请求
 https://portswigger.net/web-security/cross-site-scripting/cheat-sheet
+
+
 
 #### 检查
 
@@ -263,6 +293,7 @@ https://github.com/trimstray/the-book-of-secret-knowledge
 Recon specific ip:service with Nmap NSE scripts stack
 
 
+
 ## 相关知识
 
 [DOM XSS 安全学习平台](https://domgo.at/cxss/intro)
@@ -292,3 +323,8 @@ https://paper.bobylive.com/Security/XSS_Cheat_Sheet_2018_Edition.pdf
 
 ### xss
 [Google Search XSS漏洞分析](https://www.anquanke.com/post/id/213422)
+
+Web笔记（十一）文件上传漏洞
+
+https://houkc.github.io/2020/12/03/fileUpload/
+https://github.com/JnuSimba/MiscSecNotes/blob/master/%E6%96%87%E4%BB%B6%E4%B8%8A%E4%BC%A0/%E6%96%87%E4%BB%B6%E4%B8%8A%E4%BC%A0.md

@@ -1,5 +1,82 @@
 # 202110
 
+### 20211025
+
+怎么处理 php 阿里探测造成的高负载
+
+[Nginx 的基础内置变量 / Nginx 重写 url 的模式](https://segmentfault.com/a/1190000022499679)
+
+高负载方案1 然后把SLB上的探测改成 /healthz
+```bash
+  location /healthz {
+        access_log off;
+        add_header Content-Type text/plain;
+        return 200 "OK";
+    }
+```
+
+测试 http://xxx/healthz
+
+解决方案2
+把 / 请求 302 到 index.php，是不需要请求 index.php
+
+[Nginx葵花宝典—草根站长Nginx运维百科全书](https://zhuanlan.zhihu.com/p/39311377)
+
+= 精确匹配 严格匹配这个查询。如果找到，停止搜索
+所以可以
+```conf
+location = / {
+    return 301 "/index.php";
+}
+```
+
+OpenSSL 缓冲区溢出漏洞（CVE-2021-3711）
+
+OpenSSL发布安全公告，修复了OpenSSL中的一个缓冲区溢出漏洞（CVE-2021-3711）。
+该漏洞源于SM2解密代码中EVP_PKEY_decrypt()的边界错误，远程攻击者可通过发送特制的用于解密的SM2内容，触发缓冲区溢出最多62个字节，从而改变进程行为或导致应用崩溃，实现在目标系统上执行任意代码。
+
+```bash
+dpkg -l openssl
+sudo apt-get install --only-upgrade openssl
+```
+
+Ubuntu系统用户： 
+查看OpenSSL版本：dpkg -l openssl
+升级OpenSSL版本：sudo apt-get install --only-upgrade openssl
+1）	Ubuntu 21.04 LTS版本用户，建议升级到如下版本： 1.1.1j-1ubuntu3.5
+2）	Ubuntu 20.04 LTS版本用户，建议升级到如下版本： 1.1.1f-1ubuntu2.8
+3）	Ubuntu 18.04 LTS版本用户，建议升级到如下版本： 1.1.1-1ubuntu2.1~18.04.13
+
+Raider：一款功能强大的Web身份认证测试框架
+https://www.freebuf.com/articles/web/288288.html
+https://docs.raiderauth.com/en/latest/
+
+mysql提权总结
+https://www.freebuf.com/articles/web/288941.html
+
+红队实战攻防技术（一）
+https://www.anquanke.com/post/id/249994
+
+红队实战攻防技术（二）
+https://www.freebuf.com/articles/web/290622.html
+
+PortSwigger之不安全的反序列化+服务器端模板注入漏洞笔记
+https://www.freebuf.com/articles/web/290701.html
+
+业务安全SDL体历（续）
+https://www.freebuf.com/articles/security-management/267371.html
+
+### 20211022
+平常看到好的渗透hacking工具和多领域效率工具的集合
+https://github.com/taielab/awesome-hacking-lists
+
+
+### 20211021
+
+https://github.com/payloadbox/xss-payload-list
+
+https://www.kitploit.com/2018/05/xss-payload-list-cross-site-scripting.html
+
 ### 20211020
 
 https://paper.seebug.org/1739/
