@@ -205,8 +205,45 @@ proxy_pass http://$upstream_host;
 ```
 
 
+```bash
+sudo docker pull owasp/modsecurity-crs:nginx
+
+sudo docker stop waf
+sudo docker rm waf
+sudo docker run -d --name waf \
+-e BACKEND=http://192.168.3.233 \
+-e METRICS_ALLOW_FROM=all \
+-e TZ="Asia/Shanghai" \
+-e SERVERNAME=blog.xxxx.com \
+-e PARANOIA=1 \
+-e ANOMALY_INBOUND=5 \
+-e ANOMALY_OUTBOUND=4 \
+-v /mnt/modsecurity/conf:/etc/nginx \
+-v /mnt/modsecurity/tools/busybox:/bin/busybox \
+-p 9080:80 \
+owasp/modsecurity-crs:nginx
+sudo docker ps
+```
+https://www.inmotionhosting.com/support/security/find-and-disable-specific-modsecurity-rules/
+```bash
+```
+
+### Kubernetes Ingress modsecurity
+Kubernetes Ingress — NGINX
+https://www.helloworld.net/p/0055893025
+
+在 Kong Ingress 控制器上实现 WAF 的最佳方法是什么？ （如 ModSecurity v3）
+https://stackoom.com/question/4YjMm
+
+包含核心规则集的规则文件和误报处理。
+https://www.netnea.com/cms/nginx-tutorial-7_including-owasp-modsecurity-core-rule-set/
+https://www.netnea.com/cms/nginx-tutorial-8_handling-false-positives-modsecurity-core-rule-set/
+NGINX/ModSecurity 教程。
+https://www.netnea.com/cms/nginx-modsecurity-tutorials/
 
 ###　kong waf
+
+
 
 https://docs.konghq.com/hub/wallarm/wallarm/
 Kong APIGW — Plugins — Security

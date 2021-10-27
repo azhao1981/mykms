@@ -5,14 +5,22 @@
 ```bash
 curl -sSL https://get.daocloud.io/docker | sh
 
+# 好像去sudo和以前不一样了，而且没有成功
 To run Docker as a non-privileged user, consider setting up the
 Docker daemon in rootless mode for your user:
-
     dockerd-rootless-setuptool.sh install
+```
 
-curl -L https://get.daocloud.io/docker/compose/releases/download/v2.0.1/docker-compose-`uname -s`-`uname -m` > /usr/local/bin/docker-compose
+## docker-compose
+
+```bash
+curl -kL https://get.daocloud.io/docker/compose/releases/download/v2.0.1/docker-compose-`uname -s`-`uname -m` > /usr/local/bin/docker-compose
 chmod +x /usr/local/bin/docker-compose
 ```
+
+docker-compose终端常用命令
+https://maizitoday.github.io/post/docker%E7%B3%BB%E5%88%97-compose/
+
 ## rocky centos
 
 https://yeasy.gitbook.io/docker_practice/install/centos
@@ -53,6 +61,25 @@ https://yeasy.gitbook.io/docker_practice/install/mirror
 https://github.com/docker-practice/docker-registry-cn-mirror-test/actions
 
 ## tips
+### root-less
+
+最新有：
+
+Docker daemon in rootless mode for your user:
+    dockerd-rootless-setuptool.sh install
+Visit https://docs.docker.com/go/rootless/ to learn about rootless mode.
+To run the Docker daemon as a fully privileged service, but granting non-root
+users access, refer to https://docs.docker.com/go/daemon-access/
+
+dockerd-rootless-setuptool.sh install
+apt-get install -y uidmap
+
+还是这个管用
+```bash
+sudo groupadd docker
+sudo usermod -aG docker $USER
+```
+
 
 rm -rf /var/lib/apt/lists/*
 
@@ -78,6 +105,14 @@ docker stop 容器id
 # 必须重启
 service docker restart
 ```
+
+### 使用宿主网络
+
+compose:
+network_mode: "host"
+
+cmd:
+--net=host
 
 ### 清理空间
 

