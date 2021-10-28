@@ -1,5 +1,19 @@
 # 202110
 
+### 20211028
+
+PortSwigger之XSS实验笔记
+https://www.freebuf.com/articles/web/289478.html
+
+利用SCF文件攻击进行渗透实战
+https://www.freebuf.com/articles/web/291348.html
+
+web安全101之如何理解XXE？
+https://www.freebuf.com/articles/web/291094.html
+
+Tomcat通用回显学习笔记
+https://www.anquanke.com/post/id/256966
+
 ### 20211027
 
 Apache HTTPd 多个路径穿越与命令执行漏洞（CVE-2021-41773 CVE-2021-42013）
