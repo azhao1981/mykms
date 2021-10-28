@@ -364,6 +364,9 @@ https://www.freebuf.com/articles/web/243781.html
 modsecurity黑白名单以及规则检测模式配置
 http://blog.itpub.net/31537832/viewspace-2689109/
 
+使用ModSecurity阻止IP|动态名单
+https://topic.kaikeba.com/p/1000050050625257
+
 
 引用
 [Nginx1.14.0+ModSecurity实现简单的WAF](https://www.cnblogs.com/xll970105/p/10250697.html)
