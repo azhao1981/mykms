@@ -367,9 +367,13 @@ http://blog.itpub.net/31537832/viewspace-2689109/
 使用ModSecurity阻止IP|动态名单
 https://topic.kaikeba.com/p/1000050050625257
 
-
 引用
 [Nginx1.14.0+ModSecurity实现简单的WAF](https://www.cnblogs.com/xll970105/p/10250697.html)
+
+
+
+如何打造好用的ModSecurity系列 Part 2
+https://forum.butian.net/share/300
 
 
 

@@ -992,3 +992,5 @@ wsl > free -h
 wsl > top
 
 wsl --shutdown
+
+### vscode Files:Eol \n

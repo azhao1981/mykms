@@ -1,5 +1,10 @@
 # 202110
 
+### 20211029
+
+https://opalrb.com/
+https://tenderlovemaking.com/2021/10/26/publishing-gems-with-your-yubikey.html
+
 ### 20211028
 
 PortSwigger之XSS实验笔记
