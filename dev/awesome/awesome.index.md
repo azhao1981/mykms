@@ -166,8 +166,7 @@ https://github.com/rust-lang/rustlings
 https://github.com/halfrost/Halfrost-Field
 25、ntfstool：一款为苹果电脑提供 NTFS 读写支持的免费工具。有了它就可以很方便的在苹果电脑上读写，从 Windows 系统拷贝数据的 U 盘和移动硬盘等。安装说明
 https://github.com/ntfstool/ntfstool
-26、hexo-theme-matery：一款采用 Material Design 和响应式设计的 Hexo 博客主题。特点：
-https://github.com/blinkfox/hexo-theme-matery
+
 28、lite：一款用 Lua 编写的超级轻量级的文本编辑器。在 Windows 下的 exe 文件虽然只有 300KB 左右，但颜值、功能和速度却一点都不差，甚至还支持使用自定义插件、配色主题等功能。小而美的文本编辑器
 https://github.com/rxi/lite
 TODO getit，为什么这么小，怎么启动图形，能不能渲染别的语言

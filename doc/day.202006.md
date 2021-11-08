@@ -381,8 +381,7 @@ https://www.anquanke.com/post/id/207974
 开源软件供应链攻击回顾
 https://www.anquanke.com/post/id/207836
 
-FFmpeg 资源管理错误漏洞
-http://www.cnnvd.org.cn/web/xxk/ldxqById.tag?CNNVD=CNNVD-202006-584
+[FFmpeg 资源管理错误漏洞](http://www.cnnvd.org.cn/web/xxk/ldxqById.tag?CNNVD=CNNVD-202006-584)
 
 My Python Examples http://www.thegeekblog.co.uk
 https://github.com/geekcomputers/Python

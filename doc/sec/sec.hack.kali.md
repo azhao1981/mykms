@@ -297,9 +297,6 @@ http://blog.mr-zrz.com/openvpn-%E5%AE%89%E8%A3%85%E9%85%8D%E7%BD%AE%E8%B5%84%E6%
 https://my.oschina.net/propagator/blog/824915
 利用OpenVPN实现局域网内多台机器共享上网
 
-https://blog.lopygo.com/2020/2020-03-06-openvpn-over-ss/
-这个blog的主题不错
-https://github.com/iissnan/hexo-theme-next
 
 关于TUN/TAP网卡二三事以及物理网卡Ring buffer
 https://blog.csdn.net/dog250/article/details/80414228
