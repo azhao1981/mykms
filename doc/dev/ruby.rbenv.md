@@ -14,7 +14,7 @@
 
 ```bash
 sudo apt install -y libreadline-dev libssl-dev zlib1g-dev libjemalloc-dev git
-sudo apt install -y libmysqlclient-dev
+sudo apt install -y libmysqlclient-dev  
 sudo apt install -y build-essential gcc g++ make cmake 
 
 git clone https://github.com/sstephenson/rbenv.git ~/.rbenv
@@ -45,7 +45,7 @@ sources ~/.bashrc
 ```shell
 ll ~/.rbenv/plugins/ruby-build/share/ruby-build/
 
-RUBY_CONFIGURE_OPTS="--with-jemalloc" rbenv install 2.6.7
+RUBY_CONFIGURE_OPTS="--with-jemalloc" rbenv install 2.6.8
 RUBY_CONFIGURE_OPTS="--with-jemalloc" rbenv install 2.7.4
 RUBY_CONFIGURE_OPTS="--with-jemalloc" rbenv install 3.0.2
 
