@@ -1,5 +1,27 @@
 # 202111
 
+## 20211109
+
+/lib/systemd/systemd-journald 占大量的内存？
+ps -A --sort -rss -o comm,pmem,rss | head -n 20
+
+http://blog.lujun9972.win/blog/2018/08/08/使用journalctl查看systemd日志/index.html
+若我们只是想查看日志中的最后几行，没有必要使用tail命令，通过 --lines 命令即可,比如上面那个命令可以写成
+journalctl --all --lines=100
+
+18.4 systemd-journald.service 简介
+https://wizardforcel.gitbooks.io/vbird-linux-basic-4e/content/160.html
+
+rsyslogd、systemd-journald内存占用高解决方案
+https://blog.espnlol.com/?p=599
+
+/etc/systemd/journald.conf
+SystemMaxUse=16M
+ForwardToSyslog=no
+systemctl restart systemd-journald
+systemctl restart snapd
+sudo apt purge snapd
+
 ## 20211108
 ruby 更友好的 hash 访问
 https://github.com/ty-porter/intellihash
