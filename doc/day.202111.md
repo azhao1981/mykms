@@ -1,5 +1,20 @@
 # 202111
 
+## 20211110
+
+https://github.com/louisfb01/best_AI_papers_2021
+
+https://github.com/Python-World/python-mini-projects
+
+Android 工程师进阶手册（8 年 Android 开发者的成长感悟）
+https://github.com/Skykai521/AndroidDeveloperAdvancedManual
+
+这里是写博客的地方 —— Halfrost-Field 冰霜之地
+https://github.com/halfrost/Halfrost-Field
+
+https://github.com/digitalocean/nginxconfig.io
+https://gitee.com/mirrors/nginxconfig.io
+
 ## 20211109
 
 /lib/systemd/systemd-journald 占大量的内存？

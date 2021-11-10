@@ -70,49 +70,117 @@ https://tailwindcss.com/
 
 [前端模块化——彻底搞懂AMD、CMD、ESM和CommonJS](https://www.cnblogs.com/chenwenhao/p/12153332.html)
 
-## nodejs
 
-### 系统安装
 
-很多的linux版本最高版本就是 8.10.x，apt就不再更新了，最近更新rails，造成了
-  01 Autoprefixer doesn’t support Node v8.10.0. Update it.
-的报错，有一些npm包已经不支持老版本的nodejs了，需要更新。
+## 在 2016 年学 JavaScript 是一种什么样的体验？
 
-我在服务器上安装了 nvm，但cap并不会使用nvm，根据 https://github.com/koenpunt/capistrano-nvm ，加 gem 'capistrano-nvm'
+<https://hackernoon.com/how-it-feels-to-learn-javascript-in-2016-d3a717dd577f#.axai1uwuo>
 
-发现还是不行,还是升级node为王道。
+https://www.v2ex.com/t/310767
 
-参考： https://phoenixnap.com/kb/update-node-js-version
+## js函数式编程指南
 
-下载：https://nodejs.org/en/download/
+<https://www.gitbook.com/book/llh911001/mostly-adequate-guide-chinese/>
+
+## [vscode debug](http://jerryzou.com/posts/vscode-debug-guide/)
+
+## [vuejs心法和技法](http://www.cnblogs.com/kidsitcn/p/5409994.html)
+
+## [如何更好地运用 Chrome (Google)](http://jeffjade.com/2017/05/01/122-how-to-better-use-google_chrome/)
+
+## 大数据显示
+
+[Clusterize.js](http://blog.nrowegt.com/get-rails-data-to-glass-quicker-with-clusterize-js-coffeescript/)
+
+## baidu echarts
+
+<http://echarts.baidu.com/>
+
+<https://github.com/ecomfe/echarts>
+
+## sockio
+
+<https://www.zhihu.com/question/20215561>
+
+<http://www.alloyteam.com/2015/04/qian-duan-qiang-hou-duan-fan-wan-node-js-socket-io-zhi-zuo-jian-yi-liao-tian-shi/>
+
+## 取ip
+
+http://www.expressjs.com.cn/guide/behind-proxies.html
+
+
+
+## markdown ppt
+
+[nodePPT](https://github.com/ksky521/nodePPT)
+
+[推荐nodeppt：使用markdown语法来写网页ppt](http://js8.in/2013/11/16/%E6%8E%A8%E8%8D%90nodeppt%EF%BC%9A%E4%BD%BF%E7%94%A8markdown%E8%AF%AD%E6%B3%95%E6%9D%A5%E5%86%99%E7%BD%91%E9%A1%B5ppt/)
+
+[用Markdown写一个极客范儿的PPT](http://www.jianshu.com/p/e063303317cb)
+
+  https://github.com/adamzap/landslide
+
+  https://github.com/hakimel/reveal.js
 
 ```bash
-# 先删除老版本
-nvm ls
-nvm use system
-node -v
-which node
-# => /usr/bin/node
-sudo apt remove nodejs
-# 下载
-wget https://nodejs.org/dist/v12.19.0/node-v12.19.0-linux-x64.tar.xz
-# 安装xz
-sudo apt-get install xz-utils
-# 安装
-sudo tar --strip-components 1 -xf node-v12.19.0-linux-x64.tar.xz -C /usr/local
-# 验证
-node -v
-# => v12.19.0
-which node
-# => /usr/local/bin/node
+  npm install -g nodeppt
+
+  nodeppt start -p port
 ```
-
-注：
-
-这个命令会把node 可执行文件安装到当前目录的bin下，但还会有include/lib等目录
+  # or
 
 ```bash
-tar --strip-components 1 -xf node-v12.19.0-linux-x64.tar.xz
+  nodeppt start -p port -d path/for/ppts
+
+  # 支持markdown语法快速创建网页幻灯片。
+  nodeppt create ppt-name
+
+  # html版本，
+  nodeppt create ppt-name.html
 ```
 
-所以加 -C /usr/local 会放到 /usr/local 目录下
+  title: 这是演讲的题目
+
+  speaker: 演讲者名字
+
+  url: 可以设置链接
+
+  transition: 转场效果，例如：zoomin
+
+  files: 引入js和css的地址，如果有的话~自动放在页面底部
+
+## 其它
+
+### meteor
+
+<http://zh.discovermeteor.com/chapters/introduction/>
+
+<http://www.telescopeapp.org>
+
+<https://www.nitrous.io>
+
+<https://github.com/facebook/watchman>
+
+<https://github.com/facebook/flow>
+
+<https://github.com/facebook/mysql-5.6>
+
+<https://github.com/facebook/presto>
+
+<https://github.com/facebook/nuclide An open IDE for web and native mobile development>
+
+<https://github.com/facebook/osquery>
+
+<https://github.com/facebook/jest Painless JavaScript Unit Testing>
+
+<http://react-china.org/latest>
+
+<http://wiki.jikexueyuan.com/project/react-native/>
+
+<https://github.com/shakacode/react_on_rails>
+
+<https://github.com/kadirahq/react-storybook>
+
+<https://github.com/Codiad/Codiad>
+
+<http://www.hongkiat.com/blog/cloud-ide-developers/>

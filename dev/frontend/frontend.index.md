@@ -1,21 +1,7 @@
 # 前端
 
-## npm mirror 镜像
+[node+npm+yarn](doc\dev\frontend.node.md)
 
-```bash
-npm config get registry
-npm config get disturl
-npm config set disturl https://npm.taobao.org/dist
-npm config set registry=http://registry.npm.taobao.org
-
-# 安装 yarn，请不要用 apt install yarn
-npm install -g yarn
-
-npm config delete registry
-npm config delete disturl
-```
-
-参考：https://blog.csdn.net/qq_42403503/article/details/108479464
 
 ## 基础
 
