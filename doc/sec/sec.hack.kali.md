@@ -1061,6 +1061,9 @@ nmap -A 10.77.1.11
 nmap -sS -D 10.77.1.80 10.77.1.226
 nmap --script vuln 10.7.1.226
 
+nmap -T4 -A -v $IP
+nmap -T4 -A -Pn -v $IP
+
 https://vulnhub.com
 https://www.youtube.com/watch?v=4t4kBkMsDbQ
 

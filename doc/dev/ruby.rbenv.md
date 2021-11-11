@@ -68,11 +68,11 @@ gem install bundler # 必装
 
 ### jruby
 
-
 https://www.jruby.org/download
 JRuby 9.2.19.0 is our point release of our Ruby 2.5.x suppor
 
 rbenv
+
 https://s3.amazonaws.com/jruby.org/downloads/9.2.12.0/jruby-bin-9.2.19.0.tar.gz
 -> https://s3.amazonaws.com/jruby.org/downloads/9.2.19.0/jruby-bin-9.2.19.0.tar.gz
 
@@ -88,11 +88,16 @@ wget https://repo1.maven.org/maven2/org/jruby/jruby-dist/9.2.19.0/jruby-dist-9.2
 mv jruby-dist-9.2.19.0-bin.tar.gz jruby-9.2.19.0.tar.gz
 rbenv install jruby-9.2.19.0
 ```
+github 下载
+
+https://github.com/jruby/jruby/releases/download/9.2.20.0/jruby-bin-9.2.20.0.tar.gz
 
 安装时好像要求java8,但切换成java11也是可以运行的
 低层的java 版本切换,jruby自然就切换好了
 
 jar包
+
+https://github.com/jruby/warbler
 
 ```bash
 gem install warbler
@@ -101,6 +106,24 @@ vim bin/hello_world.rb
 puts "hello jruby jar"
 warble jar
 java -jar hello.jar
+```
+
+jruby on rails 
+
+https://www.digitalocean.com/community/tutorials/how-to-use-jruby-to-run-a-rails-application-on-apache-tomcat-7-and-ubuntu-14-04
+
+```bash
+gem install rails -v '5.2.6'
+rails _5.2.6_ new japi-demo -d jdbcmysql --api --skip-bundle
+```
+
+jar 包 jetty
+
+```bash
+warble executable war
+MAVEN_REPO=http://maven.aliyun.com/nexus/content/repositories/central warble executable war
+
+java -jar simple.war
 ```
 
 java jruby 相互调用
@@ -115,6 +138,12 @@ rake rails:update:bin
 ```
 
 ### 常见问题和错误处理
+
+#### rails
+
+rails _version_ new application_name
+rails _5.2.4.6_ new japi-demo -d mysql --api
+rails _5.2.4.6_ new japi-demo -d jdbcmysql --api --skip-bundle
 
 #### mysql/puma/nokogiri
 

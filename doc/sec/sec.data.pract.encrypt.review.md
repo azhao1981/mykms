@@ -81,7 +81,9 @@ https://blog.csdn.net/Li_Ya_Fei/article/details/79294186
 
 我要找的数据库开源审计工具
 Database security suite. 
-Database proxy with field-level encryption, search through encrypted data, SQL injections prevention, intrusion detection, honeypots. 
+Database proxy with field-level encryption, search through encrypted data, SQL injections prevention, 
+
+intrusion detection（入侵检测）, honeypots. 
 Supports client-side and proxy-side ("transparent") encryption. SQL, NoSQL.
 
 https://github.com/cossacklabs/acra
@@ -113,7 +115,22 @@ https://docs.cossacklabs.com/acra/getting-started/installing/launching-acra-from
 
 
 
+### ShardingSphere
 
+[分布式数据库中间 Apache ShardingSphere 京东落地实战](https://www.infoq.cn/article/1qvyzw9w*yuf685kybkq)
+
+https://gitee.com/Sharding-Sphere
+
+https://medium.com/geekculture/updates-and-faq-your-1-minute-quick-start-guide-to-shardingsphere-b80bed396b2
+
+基于Sharding Sphere实现数据“一键脱敏”
+https://jaskey.github.io/blog/2020/03/18/sharding-sphere-data-desensitization/
+
+数据脱敏
+https://shardingsphere.apache.org/document/legacy/4.x/document/cn/features/orchestration/encrypt/
+
+基于ShardingSphere的线上业务数据脱敏解决方案
+https://www.cnblogs.com/nanjuryc/p/14135244.html
 
 ### 其它数据审计工具
 

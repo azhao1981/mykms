@@ -1,5 +1,17 @@
 # 202111
 
+## 20211111
+
+基于网络攻击链的安全防护思考
+https://www.freebuf.com/articles/network/293324.html
+
+OSS密钥复用研究以及常用渗透利用方式总结
+https://www.freebuf.com/vuls/304106.html
+原理：OSS的KEY，经常会被泄露在开源如GITHUB上，而且OSS的KEY本质上，并不只是OSS的，权限配置不当，可以访问所有的资源
+
+Apache httpd Server CVE-2021-41773 漏洞分析
+https://www.anquanke.com/post/id/256973
+
 ## 20211110
 
 https://github.com/louisfb01/best_AI_papers_2021
