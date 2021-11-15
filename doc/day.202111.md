@@ -1,5 +1,36 @@
 # 202111
 
+
+## 20211115
+
+如何写好一份“漏洞报告”
+https://www.freebuf.com/articles/web/303558.html
+
+Apache httpd Server CVE-2021-40438 漏洞分析
+https://www.anquanke.com/post/id/257657
+
+Apache 模块 mod_proxy
+https://www.docs4dev.com/docs/zh/apache/2.4/reference/mod-mod_proxy.html
+
+## 20211112
+CMDB 蓝黥 
+
+国家标准《个人信息安全规范》2020版正式发布 (附下载)
+https://www.secrss.com/articles/17713
+
+密钥交换算法
+https://www.liaoxuefeng.com/wiki/1252599548343744/1304227905273889
+
+异步请求xhr、ajax、axios与fetch的区别比较
+https://www.cnblogs.com/weiqinl/p/11279950.html
+
+AES对称加密（crypto-js）
+https://segmentfault.com/a/1190000039192480
+
+https://www.honeybadger.io/blog/rails-on-kubernetes/
+
+https://blog.peterzhu.ca/ruby-memcheck/
+
 ## 20211111
 
 基于网络攻击链的安全防护思考

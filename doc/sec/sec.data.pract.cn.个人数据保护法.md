@@ -128,6 +128,10 @@ SPA加密保护：
 
 
 
+### 个人信息定义和范围
+
+
+
 ### 隐私声明
 
 
@@ -141,6 +145,12 @@ SPA加密保护：
 
 
 ## 引用
+
+
+
+全景解构《个人信息保护法》，助力企业进入中国个人信息保护新纪元
+
+http://www.zhonglun.com/Content/2021/08-21/0130117987.html
 
 
 
@@ -239,7 +249,10 @@ https://www.bilibili.com/video/BV1AM4y157ZF?from=search&seid=5030832091563850512
 活动作品个人信息保护法立法执法态势与企业合规——上海锦天城合伙人解读
 https://www.bilibili.com/video/BV1K64y1Y7vQ?from=search&seid=5030832091563850512&spm_id_from=333.337.0.0
 
-### 主体同意：
+个人信息安全法律保护伞｜《中华人民共和国个人信息保护法》解读
+http://www7.zzu.edu.cn/aqz/nry.jsp?urltype=news.NewsContentUrl&wbtreeid=1046&wbnewsid=1174
+
+### 主体同意
 
 参考德勤的设计
 https://www2.deloitte.com/cn/zh/pages/risk/articles/personal-information-protection-law-analysis.html
@@ -262,3 +275,4 @@ https://developer.alibaba.com/docs/doc.htm?treeId=620&articleId=115812&docType=1
 企业微信稳私声明，包含
 
 https://work.weixin.qq.com/nl/privacy?version=3.1.18.6007&platform=win
+

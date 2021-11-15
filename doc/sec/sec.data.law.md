@@ -1,14 +1,34 @@
 # 数据保护法规
 
+
+
+认证
+
+[ISO 29151隐私保护认证心得体会](https://www.freebuf.com/articles/neopoints/250617.html)
+
+国内：[**中华人民共和国个人信息保护法**](http://www.npc.gov.cn/npc/c30834/202108/a8c4e3672c74491a80b53a172bb753fe.shtml) 
+
+欧盟：《通用数据保护条例》（General Data Protection Regulation，简称为“GDPR”）
+
+
+
 ## 国内
 
 盘点2020年上半年个人信息保护重大事件
 https://www.freebuf.com/articles/neopoints/242861.html
 
-关于印发《App违法违规收集使用个人信息行为认定方法》的通知  http://www.cac.gov.cn/2019-12/27/c_1578986455686625.htm
+
+
+关于印发《App违法违规收集使用个人信息行为认定方法》的通知 
+
+http://www.cac.gov.cn/2019-12/27/c_1578986455686625.htm
+
+
 
 《个人金融信息保护技术规范》发布，附全文最全信息
 http://www.sinotf.com/GB/News/1002/2020-02-24/wNMDAwMDM0MTIwNA.html
+
+
 
 关于《个人金融信息保护技术规范》的相关解读
 https://www.secrss.com/articles/17921
@@ -111,6 +131,6 @@ The test result is published on the website of Trusted Cloud Service Certificati
 
 ## 引用
 
-[ISO 29151隐私保护认证心得体会](https://www.freebuf.com/articles/neopoints/250617.html)
+
 
 [数据安全能力建设思路](https://www.freebuf.com/articles/database/248950.html)
