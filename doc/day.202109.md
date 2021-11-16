@@ -102,8 +102,6 @@ https://www.freebuf.com/articles/network/281140.html
 
 ## 20210913
 
-Ruby on Rails 构建更小的docker镜像
-https://www.vicw.com/groups/code_monkey/topics/334
 
 kickoff_vite_rails
 https://github.com/justalever/kickoff_vite_rails

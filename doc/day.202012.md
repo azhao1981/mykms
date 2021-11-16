@@ -25,10 +25,7 @@
 
 https://www.driftingruby.com/episodes/from-editor-to-ide
 https://pganalyze.com/blog/materialized-views-ruby-rails
-https://www.codewithjason.com/dockerize-rails-application/
 
-Docker Docs Docker image访问控制不当漏洞（CVE-2020-35467）
-http://www.nsfocus.net/vulndb/51610
 
 F5 BIG-IP跨站脚本执行漏洞（CVE-2020-5950）
 http://www.nsfocus.net/vulndb/51620

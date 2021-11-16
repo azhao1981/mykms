@@ -670,9 +670,7 @@ https://github.com/harsh-bothra/learn365
 备忘录app Memo is an Anki mobile app written in Flutter
 https://github.com/olmps/memo
 
-nerdctl: 适用于Containerd的、与docker兼容的cli - https://medium.com/nttlabs/nerdctl-359311b32d0e
-Docker-compatible CLI for containerd
-https://github.com/containerd/nerdctl
+
 
 Go中集合类型的高阶函数 | Gopher Daily (2021.03.30) ʕ◔ϖ◔ʔ
 https://zhuanlan.zhihu.com/p/360967517

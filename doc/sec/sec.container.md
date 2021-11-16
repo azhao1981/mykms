@@ -11,11 +11,31 @@ docker daemon的权限必须是root，这还是偏向管理方便，而不是安
 
 [私有云安全：容器产品架构设计实践](https://www.freebuf.com/articles/network/259775.html)
 这篇和参考文档中的文章，基本就可以构成一个相对完整的框架了
-Docker安全入门与实战（二）
-https://zhuanlan.zhihu.com/p/43671129
 
+[Docker安全入门与实战（二）](https://zhuanlan.zhihu.com/p/43671129)
+
+
+17 open-source container security tools
+https://techbeacon.com/security/17-open-source-container-security-tools
+
+## docker-bench-security
+
+原理：
 https://www.cisecurity.org/benchmark/docker/
+CIS Docker Benchmark version 1.3.1
+
 Github仓库：https://github.com/docker/docker-bench-security.git
+gitee: https://gitee.com/azhao-1981/docker-bench-security
+
+git clone git@gitee.com:azhao-1981/docker-bench-security.git
+sudo sh docker-bench-security.sh
+
+中文： https://www.cnblogs.com/Hi-blog/p/docker-bench-security.html
+
+从检测结果上来看，docker-bench-security对容器的检测项较少，对Docker的一些基础配置项检测较为详细，可以配合其他工具进行使用，如Clair。
+
+## https://github.com/quay/clair
+
 https://www.cisecurity.org/benchmark/kubernetes/
 Github仓库：https://github.com/aquasecurity/kube-bench
 Kubernetes的管理平台Rancher、Kubeoperator等已经支持集成kube-bench
@@ -216,3 +236,53 @@ https://stackoverflow.com/questions/48546124/what-is-linux-equivalent-of-host-do
 
 extra_hosts:
   - "host.docker.internal:host-gateway"
+
+
+Docker安全性与攻击面分析
+https://www.anquanke.com/post/id/209448
+https://www.codewithjason.com/dockerize-rails-application/
+
+Docker Docs Docker image访问控制不当漏洞（CVE-2020-35467）
+http://www.nsfocus.net/vulndb/51610
+
+https://cve.mitre.org/cgi-bin/cvekey.cgi?keyword=kong
+https://www.anquanke.com/vul/id/2277092
+Docker Image kong 默认配置问题漏洞
+
+nerdctl: 适用于Containerd的、与docker兼容的cli - https://medium.com/nttlabs/nerdctl-359311b32d0e
+Docker-compatible CLI for containerd
+https://github.com/containerd/nerdctl
+
+利用 Linux 内核漏洞实现 Docker 逃逸
+https://paper.seebug.org/1602/
+
+
+
+Set Up A Docker Container To Test Your Rails App
+https://www.honeybadger.io/blog/testing-rails-with-docker/
+
+
+[Containerd 的前世今生和保姆级入门教程](https://cloud.tencent.com/developer/article/1766288)
+
+https://github.com/containerd/containerd
+
+Kubernetes 
+shim
+Docker 
+[Containerd](https://containerd.io/) 
+CRI 
+
+sudo apt-get update
+sudo apt-get install libseccomp2
+
+
+Ruby on Rails 构建更小的docker镜像
+https://www.vicw.com/groups/code_monkey/topics/334
+
+
+The Docker Bench for Security is a script that checks for dozens of common best-practices around deploying Docker containers in production.
+https://github.com/docker/docker-bench-security
+
+很多不错的docker ，包括docker-gui
+https://github.com/jessfraz/dockerfiles
+https://blog.jessfraz.com/post/docker-containers-on-the-desktop/

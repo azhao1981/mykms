@@ -408,21 +408,7 @@ https://github.com/red-data-tools/YouPlot
 
 ![](images/2021-07-02-14-19-43.png)
 
-Set Up A Docker Container To Test Your Rails App
-https://www.honeybadger.io/blog/testing-rails-with-docker/
 
-[Containerd 的前世今生和保姆级入门教程](https://cloud.tencent.com/developer/article/1766288)
-
-https://github.com/containerd/containerd
-
-Kubernetes 
-shim
-Docker 
-[Containerd](https://containerd.io/) 
-CRI 
-
-sudo apt-get update
-sudo apt-get install libseccomp2
 
 华为：
 

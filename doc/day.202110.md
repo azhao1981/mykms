@@ -32,12 +32,7 @@ http://125.121.239.10:5000/cgi-bin/.%2e/%2e%2e/%2e%2e/%2e%2e/etc/passwd
 
 ### 20211026
 
-The Docker Bench for Security is a script that checks for dozens of common best-practices around deploying Docker containers in production.
-https://github.com/docker/docker-bench-security
 
-很多不错的docker ，包括docker-gui
-https://github.com/jessfraz/dockerfiles
-https://blog.jessfraz.com/post/docker-containers-on-the-desktop/
 
 钓鱼工具集合
 https://github.com/htr-tech/zphisher

@@ -206,9 +206,7 @@ netsh winsock reset
 漏洞分析 - Kong未授权访问漏洞(CVE-2020-11710)
 https://xz.aliyun.com/t/7631
 
-https://cve.mitre.org/cgi-bin/cvekey.cgi?keyword=kong
-https://www.anquanke.com/vul/id/2277092
-Docker Image kong 默认配置问题漏洞
+
 
 漏洞复现: Apache Druid 远程代码执行漏洞 (CVE-2021-25646)
 https://paper.seebug.org/1476/

@@ -413,8 +413,7 @@ https://www.zoo.team/article/xss-in-react
 jamesarosen/ember-xss.md
 https://gist.github.com/jamesarosen/478db5faef370eac43fb
 
-利用 Linux 内核漏洞实现 Docker 逃逸
-https://paper.seebug.org/1602/
+
 
 Bypass of access control in Django
 https://github.com/advisories/GHSA-p99v-5w3c-jqq9
@@ -441,8 +440,7 @@ https://www.freebuf.com/sectool/273382.html
 https://paper.seebug.org/1600/
 你的扫描器可以绕过防火墙么？（二）
 https://paper.seebug.org/1601/
-利用 Linux 内核漏洞实现 Docker 逃逸
-https://paper.seebug.org/1602/
+
 ## 0609
 
 简单通俗的理解Vue3.0中的Proxy
