@@ -1,6 +1,20 @@
 # 202111
 
 
+## 20211118
+
+https://github.com/sickcodes/Docker-OSX
+你管这破玩意叫操作系统源码 — 像小说一样品读 Linux 0.11 核心代码
+https://github.com/sunym1993/flash-linux0.11-talk
+
+https://github.com/riramar/Web-Attack-Cheat-Sheet
+
+https://copilot.github.com/
+
+一篇文章弄懂mysql8新特性注入
+https://www.toutiao.com/a7031032187034157580/?log_from=a0808ce233a4c_1637223614405
+
+
 ## 20211117
 
 https://downloads.cisecurity.org/#/

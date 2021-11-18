@@ -377,7 +377,6 @@ https://github.com/widelands/widelands
 https://www.widelands.org/
 GPL 
 
-[Email Authenticity 101: DKIM, DMARC, and SPF](https://www.alexblackie.com/articles/email-authenticity-dkim-spf-dmarc/) 
 
 https://www.nothingventured.com/the-rise-of-the-one-person-unicorn/
 Hyper-specific, profitable, company-building

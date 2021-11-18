@@ -86,3 +86,6 @@ https://github1s.com/mstamy2/PyPDF2/blob/HEAD/PyPDF2/pdf.py
 [python解析并读取PDF文件：函数总结](https://blog.csdn.net/qq_27586341/article/details/105432400)
 
 [bypassWaf_xss](http://github.wh0ale.xyz/2018/12/30/2018-12-30-BypassWaf_xss/)
+
+https://hub.docker.com/_/python
+http://doc.bugscan.net/chapter1/1-1.html
