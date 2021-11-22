@@ -3,6 +3,9 @@
 
 ## 20211121
 
+百度营销，bcp，居然连强制https都没有
+http://so.baidu.com/tags.php?2075
+
 OCR 对比
 
 腾讯每月1000次免费，有免费Demo
