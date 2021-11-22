@@ -1,7 +1,60 @@
 # 202111
 
 
+## 20211121
+
+OCR 对比
+
+腾讯每月1000次免费，有免费Demo
+https://console.cloud.tencent.com/ocr/
+https://cloud.tencent.com/act/event/ocrdemo
+
+阿里 500/0.01元次 不可重复购买
+
+华为： 千次/40元，无免费，Demo不能上传自己的
+https://www.huaweicloud.com/product/ocr.html
+
+免费在线：
+http://www.pdfdo.com/image-to-txt.aspx
+
+## 20211119
+
+https://myssl.com/
+HTTPS 安全最佳实践（一）之SSL/TLS部署
+https://blog.myssl.com/ssl-and-tls-deployment-best-practices/
+HTTPS 安全最佳实践（二）之安全加固
+https://blog.myssl.com/https-security-best-practices/
+HTTPS 安全最佳实践（三）之服务器软件
+https://blog.myssl.com/https-security-best-practices-2/
+
+使用python进行ATS合规检测
+https://www.secrss.com/articles/7413
+python ssl test
+sslyze 库：为了处理SNI
+
+[Kunyu (坤舆) - 更高效的企业资产收集](https://paper.seebug.org/1758/)
+
+https://github.com/knownsec/Kunyu
+git@gitee.com:azhao-1981/Kunyu.git
+
+pip install -r requirements.txt
+
+
+装完先一堆依赖问题
+
+ERROR: pip's dependency resolver does not currently take into account all the packages that are installed. This behaviour is the source of the following dependency conflicts.
+spyder 4.2.5 requires pyqt5<5.13, which is not installed.
+spyder 4.2.5 requires pyqtwebengine<5.13, which is not installed.
+conda-repo-cli 1.0.4 requires pathlib, which is not installed.
+anaconda-project 0.9.1 requires ruamel-yaml, which is not installed.
+pip install pyqt5==5.13
+pip install pyqt5
+pip install pyqtwebengine==5.13
+pip install pathlib
+pip install ruamel-yaml
+
 ## 20211118
+
 
 https://github.com/sickcodes/Docker-OSX
 你管这破玩意叫操作系统源码 — 像小说一样品读 Linux 0.11 核心代码
@@ -20,9 +73,6 @@ https://www.toutiao.com/a7031032187034157580/?log_from=a0808ce233a4c_16372236144
 https://downloads.cisecurity.org/#/
 
 ## 20211116
-
-
-
 
 CVE-2021-41817: Regular Expression Denial of Service Vunlerability of Date Parsing Methods
 https://www.ruby-lang.org/en/news/2021/11/15/date-parsing-method-regexp-dos-cve-2021-41817/
