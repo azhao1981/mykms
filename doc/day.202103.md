@@ -171,8 +171,6 @@ https://www.freebuf.com/articles/network/264560.html
 聊聊网络安全等级保护“能力验证”：配置核查（Linux系统）
 https://www.freebuf.com/articles/neopoints/264325.html
 
-Minio MinIO 安全漏洞
-http://www.cnnvd.org.cn/web/xxk/ldxqById.tag?CNNVD=CNNVD-202103-1206
 
 Nessus Agent 安全漏洞
 http://www.cnnvd.org.cn/web/xxk/ldxqById.tag?CNNVD=CNNVD-202103-1194

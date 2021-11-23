@@ -125,7 +125,6 @@ https://g2ex.top/2018/05/25/go-dep-tips/
 - [hound 快速代码搜索/sublime](https://github.com/etsy/hound)
 - [shortme 二维码及短域名](https://github.com/andyxning/shortme)
 - [goim 轻量级IM/kafka](https://github.com/Terry-Mao/goim)
-- [minio OSS 类aws的 oss](https://github.com/minio/minio)
 - [看起来不错的命令行工具](https://github.com/ericfreese/rat)
 - [tooling工具集合](https://github.com/campoy/go-tooling-workshop)
 - [gitea](https://github.com/go-gitea/gitea)
