@@ -76,10 +76,10 @@
 
 隐私平台
 
-- 隐私协议管理
-- 客户同意 收集开关管理， js ， 功能应该包括如 不允许使用ip时，不获取ip，不允许获得url时不获得url（vistor)
+- x 隐私协议管理
+- V 客户同意 收集开关管理， js ， 功能应该包括如 不允许使用ip时，不获取ip，不允许获得url时不获得url（vistor)
 - 客户个人数据修改集成  查看 去标识化 和删除
-- 加密套件  接口 js 加密解密， ruby / java 加密解密 -> 正常参数
+- 加密套件  xxxxxxxx接口 js 加密解密， ruby / java 加密解密 -> 正常参数
 - 去标识化 库 ，如客户或客服点击一下，可以把一个数据变成去标识化的
 - js 敏感数据提示
 
@@ -126,6 +126,11 @@ SPA加密保护：
 + 敏感数据输出加密： 安全header中加入x-sec-token,后端得到后以之加密，强制开关，如果没有这个参数，拒绝返回
 + 前端加密解密组件：
 
+斯坦福大学开源的 JavaScript 加密库。用于 JS 的加密和解密，体积小且支持多种加密算法
+https://github.com/bitwiseshiftleft/sjcl
+
+可以用于前端加密和解密
+[javascript - 用JavaScript加密AES-GCM，用Java解密](https://www.coder.work/article/5413624)
 
 
 ### 个人信息定义和范围

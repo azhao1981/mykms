@@ -610,11 +610,7 @@ https://github.com/chuzhixin/vue-admin-beautiful-pro
 
 ## 20210804
 
-斯坦福大学开源的 JavaScript 加密库。用于 JS 的加密和解密，体积小且支持多种加密算法
-https://github.com/bitwiseshiftleft/sjcl
 
-可以用于前端加密和解密
-[javascript - 用JavaScript加密AES-GCM，用Java解密](https://www.coder.work/article/5413624)
 
 克隆某个人说话声音的 AI 项目。仅需几秒音频，就能模仿出原音频的人声
 https://github.com/CorentinJ/Real-Time-Voice-Cloning

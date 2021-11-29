@@ -57,6 +57,47 @@ XSS 攻击可以分为3类：存储型（持久型）、反射型（非持久型
 ## 怎么防御
 
 我们做了哪些？
+### 方案
+
+
+rails 处理
+https://ruby-china.github.io/rails-guides/security.html#cross-site-scripting-xss
+https://www.bigbinary.com/blog/xss-and-rails
+https://rorsecurity.info/cross-site-scripting-xss-rails
+https://cheatsheetseries.owasp.org/cheatsheets/Ruby_on_Rails_Cheat_Sheet.html
+
+https://www.mi1k7ea.com/2019/02/24/CSP策略及绕过技巧小结/
+
+XSS 防御
+
+1 在cookie中添加 httpOnly
+
+在 cookie 中添加 httpOnly 标志可以规避这种攻击，这个标志可以禁止 JavaScript 读取 document.cookie 属性。IE v6.SP1、 Firefox v2.0.0.5、Opera 9.5、Safari 4 和 Chrome 1.0.154 以及更高版本的浏览器都支持 httpOnly 标志，Safari 浏览器也在考虑支持这个标志。但其他浏览器（如 WebTV）或旧版浏览器（如 Mac 版 IE 5.5）不支持这个标志，因此遇到上述攻击时会导致网页无法加载。
+
+需要注意的是，即便设置了 httpOnly 标志，通过 Ajax 仍然可以读取 cookie。
+
+2 禁止 iframe 套壳 
+
+<iframe name="StatPage" src="http://58.xx.xxx.xxx" width=5 height=5 style="display:none"></iframe>
+
+3 白名单 过滤
+Rails 2 及更高版本中使用了白名单，下面是使用新版 sanitize() 方法的例子：
+
+tags = %w(a acronym b strong i em li ul ol h1 h2 h3 h4 h5 h6 blockquote br cite sub sup ins p)
+s = sanitize(user_input, tags: tags, attributes: %w(href title))
+
+anitize() 过滤器能够识别此类代码
+<IMG SRC=&#106;&#97;&#118;&#97;&#115;&#99;&#114;&#105;&#112;&#116;&#58;&#97;
+  &#108;&#101;&#114;&#116;&#40;&#39;&#88;&#83;&#83;&#39;&#41;>
+
+https://hackvertor.co.uk/public
+
+4 转义输出 
+
+接下来应该转义应用的所有输出，特别是在需要显示未经过滤的用户输入时（例如前面提到的的搜索表单的例子）。使用 escapeHTML() 方法（或其别名 h() 方法），把 HTML 中的字符 &、"、< 和 > 替换为对应的转义字符 &amp;amp;、&amp;quot;、&amp;lt; 和 &amp;gt;。
+
+
+
 ### [openRasp](https://rasp.baidu.com/)
 
 

@@ -1,6 +1,32 @@
 # 202111
 
 
+## 20211126
+
+https://github.com/kamailio/kamailio
+https://www.kamailio.org/w/2021/11/kamailio-v5-5-3-released/
+
+使用 Nginx NJS 实现高性能的 RSA 加解密服务
+https://soulteary.com/2021/11/14/use-nginx-njs-to-implement-high-performance-rsa-encryption-and-decryption-services.html
+这篇有一个组件可能可以直接使用
+
+活动作品【RSA加密算法】| RSA加密过程详解 | 公钥加密| 密码学| 信息安全|
+https://www.bilibili.com/video/BV1YQ4y1a7n1?from=search&seid=174617367231683753&spm_id_from=333.337.0.0
+
+https://www.bilibili.com/video/BV1BU4y1T7qA?from=search&seid=174617367231683753&spm_id_from=333.337.0.0
+RSA加密算法的几何之美!
+java RSA算法的性能记录
+https://www.helloworld.net/p/3593765398
+32位明文时加密比较快，解密比较慢
+但这篇又好像不太一样
+https://www.cxymm.net/article/Yore_/52733994
+
+http://www.360doc.com/content/19/1018/10/12765144_867584989.shtml
+![](images/2021-11-27-10-40-03.png)
+
+https://github.com/fangzesheng/free-api
+收集免费的接口服务,做一个api的搬运工
+
 ## 20211121
 
 百度营销，bcp，居然连强制https都没有
