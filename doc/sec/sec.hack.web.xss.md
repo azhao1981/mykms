@@ -57,16 +57,28 @@ XSS 攻击可以分为3类：存储型（持久型）、反射型（非持久型
 ## 怎么防御
 
 我们做了哪些？
+
 ### 方案
 
-
 rails 处理
+
 https://ruby-china.github.io/rails-guides/security.html#cross-site-scripting-xss
 https://www.bigbinary.com/blog/xss-and-rails
 https://rorsecurity.info/cross-site-scripting-xss-rails
 https://cheatsheetseries.owasp.org/cheatsheets/Ruby_on_Rails_Cheat_Sheet.html
 
+https://github.com/abedra/safe-erb
+https://molily.de/xss/
+https://www.netsparker.com/blog/web-security/preventing-xss-ruby-on-rails-web-applications/
+
+
 https://www.mi1k7ea.com/2019/02/24/CSP策略及绕过技巧小结/
+
+富文本场景下的 XSS
+https://cloud.tencent.com/developer/article/1882137
+
+富文本编辑框和防止xss攻击
+https://www.cnblogs.com/xiugeng/p/9439473.html
 
 XSS 防御
 
@@ -96,7 +108,12 @@ https://hackvertor.co.uk/public
 
 接下来应该转义应用的所有输出，特别是在需要显示未经过滤的用户输入时（例如前面提到的的搜索表单的例子）。使用 escapeHTML() 方法（或其别名 h() 方法），把 HTML 中的字符 &、"、< 和 > 替换为对应的转义字符 &amp;amp;、&amp;quot;、&amp;lt; 和 &amp;gt;。
 
+分为两种：
+1 普通文本不应该带标签，直接全清, ERB::Util.html_escape_once(str)用来处理历史数据
+2 富文本，本身需要支持一些标签，白名单支持 sanitize ，触发的事件关键字替换，Script => Script Ｓｃｒｉｐｔ
 
+事件列表见：
+https://netsec.expert/posts/xss-in-2021/
 
 ### [openRasp](https://rasp.baidu.com/)
 
@@ -129,18 +146,17 @@ https://blog.intigriti.com/2021/06/29/hacker-tools-xsstrike-hunting-for-low-hang
 
 在进攻和防守武器都到位后，就剩下Payload之间斗智斗勇的拉剧战了
 
-
+@SamuelAnttila ’s amazing XSS cheatsheet. It covers wide range of topics. 
+His story is as incredible as he is. Thanks for all the advice :) 
+https://netsec.expert/posts/xss-in-2021/
+这个不错
 
 https://github.com/payloadbox/xss-payload-list
 
 https://www.kitploit.com/2018/05/xss-payload-list-cross-site-scripting.html
 
-Almost all XSS Payloads. xss大全
+Almost all XSS Payloads. xss大全, 这个好像下了
 https://github.com/irfan-knr/KNR-XSS-Payloads
-
-@SamuelAnttila ’s amazing XSS cheatsheet. It covers wide range of topics. His story is as incredible as he is. Thanks for all the advice :) 
-https://netsec.expert/posts/xss-in-2021/
-
 
 
 ## 这里面相关xss的
