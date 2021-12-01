@@ -110,7 +110,13 @@ https://hackvertor.co.uk/public
 
 分为两种：
 1 普通文本不应该带标签，直接全清, ERB::Util.html_escape_once(str)用来处理历史数据
-2 富文本，本身需要支持一些标签，白名单支持 sanitize ，触发的事件关键字替换，Script => Script Ｓｃｒｉｐｔ
+2 富文本，本身需要支持一些标签，白名单支持 sanitize ，触发的事件关键字替换，Script => Ｓｃript
+  需要测试一下性能， 固定即可，如 Sc Ｓｃ On Ｏｎ 
+  https://tool.chinaz.com/fullhalf
+
+CGI.unescapeHTML
+
+  sanitize 的实现原理
 
 事件列表见：
 https://netsec.expert/posts/xss-in-2021/
