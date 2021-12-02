@@ -72,13 +72,20 @@ https://molily.de/xss/
 https://www.netsparker.com/blog/web-security/preventing-xss-ruby-on-rails-web-applications/
 
 
-https://www.mi1k7ea.com/2019/02/24/CSP策略及绕过技巧小结/
 
-富文本场景下的 XSS
-https://cloud.tencent.com/developer/article/1882137
+rails 有一个专门用于处理xss富文本的，对一下自己公司的富文本标签集合是否一致
+https://github.com/rails/rails-html-sanitizer
+Rails::Html::SafeListSanitizer.new
+https://github.com/flavorjones/loofah/blob/main/lib/loofah/html5/safelist.rb
+使用的是 loofah
 
-富文本编辑框和防止xss攻击
-https://www.cnblogs.com/xiugeng/p/9439473.html
+非可信数据来源：
+不是网站最高管理员和本域名最高管理员能录入的数据
+比如一个租户的域名为 xxx.a.com, 租户是xxx，那 xxx的管理员算是可信输入，而他的客户不算，他的员工也不算
+
+[富文本场景下的 XSS](https://cloud.tencent.com/developer/article/1882137)
+
+[富文本编辑框和防止xss攻击](https://www.cnblogs.com/xiugeng/p/9439473.html)
 
 XSS 防御
 
@@ -147,6 +154,32 @@ http://opensource.finn.no/xss-html-filter/
 
 XSStrike 是用 Python3 编写的，快速检测跨站脚本漏洞的工具
 https://blog.intigriti.com/2021/06/29/hacker-tools-xsstrike-hunting-for-low-hanging-fruits/
+
+
+## headers
+
+### CSP
+
+[CSP: sandbox](https://cloud.tencent.com/developer/section/1189875)
+
+Content-Security-Policy: sandbox;
+
+[Content Security Policy 入门教程](http://www.ruanyifeng.com/blog/2016/09/csp.html)
+
+[CSP Bypass Guidelines](https://brutelogic.com.br/blog/csp-bypass-guidelines/)
+
+https://www.mi1k7ea.com/2019/02/24/CSP策略及绕过技巧小结/
+
+rails 4.2 添加header
+
+https://api.rubyonrails.org/v4.2/classes/ActionDispatch/Response.html
+https://github.com/rails/rails/blob/a63760cea7d858984f83549019297221f18ed574/actionpack/lib/action_dispatch/http/response.rb#L118
+
+### X-XSS-Protection: 1; mode=block
+
+这个值为什么不管用？
+https://webdock.io/en/docs/how-guides/security-guides/how-to-configure-security-headers-in-nginx-and-apache
+
 
 ## Payload
 
@@ -375,8 +408,7 @@ https://github.com/s0md3v/AwesomeXSS
 Master the art of Cross Site Scripting.
 https://brutelogic.com.br/blog/
 BRUTE XSS
-CSP Bypass Guidelines
-https://brutelogic.com.br/blog/csp-bypass-guidelines/
+
 
 TODO: 看书：
 2020版本
