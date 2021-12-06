@@ -39,6 +39,11 @@ https://www.secrss.com/articles/17921
 
 [全球数据及隐私安全立法及实施概览](https://zhuanlan.zhihu.com/p/87010338)
 
+GDPR 认可的数据中心例外国家：
+https://gdpr-info.eu/issues/third-countries/
+Andorra, Argentina, Canada (only commercial organizations), Faroe Islands, Guernsey, Israel, Isle of Man, Jersey, New Zealand, Switzerland, Uruguay , Japan and the United Kingdom
+安道尔、阿根廷、加拿大(只有商业组织)、法罗群岛、根西岛、以色列、马恩岛、泽西岛、新西兰、瑞士、乌拉圭、日本和英国  
+
 ### 信息安全技术 数据安全能力成熟度模型
 国家标准GB/T 37988-2019《信息安全技术 数据安全能力成熟度模型》
 http://c.gb688.cn/bzgk/gb/showGb?type=online&hcno=3CFD5E5A14C24D303EA1E139E6EB75C8

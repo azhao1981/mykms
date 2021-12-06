@@ -158,9 +158,23 @@ https://blog.intigriti.com/2021/06/29/hacker-tools-xsstrike-hunting-for-low-hang
 
 ## headers
 
+检查工具：
+https://securityheaders.com/
+https://github.com/riramar/hsecscan
+
+https://owasp.org/www-project-secure-headers/
+
+best-practice
+https://developer.okta.com/blog/2021/10/18/security-headers-best-practices#permissions-policy
+
+How to configure Security Headers in Nginx and Apache
+https://webdock.io/en/docs/how-guides/security-guides/how-to-configure-security-headers-in-nginx-and-apache
+
+https://www.sebkln.de/tutorials/http-security-header-teil-1-verbesserter-website-schutz/
+
 ### CSP
 
-[CSP: sandbox](https://cloud.tencent.com/developer/section/1189875)
+[鹅厂文档：CSP: sandbox](https://cloud.tencent.com/developer/section/1189875)
 
 Content-Security-Policy: sandbox;
 
@@ -177,9 +191,23 @@ https://github.com/rails/rails/blob/a63760cea7d858984f83549019297221f18ed574/act
 
 ### X-XSS-Protection: 1; mode=block
 
+https://github.com/w3c/webappsec-permissions-policy/blob/main/permissions-policy-explainer.md
+
 这个值为什么不管用？
 https://webdock.io/en/docs/how-guides/security-guides/how-to-configure-security-headers-in-nginx-and-apache
 
+### permission policy
+
+
+```bash
+# 禁用摄像头和麦克风
+Permissions-Policy: microphone=(), camera=()
+```
+
+Feature-Policy 退场，欢迎 Permissions-Policy！
+https://zhuanlan.zhihu.com/p/258862767
+
+https://pypi.org/project/django-permissions-policy/
 
 ## Payload
 
