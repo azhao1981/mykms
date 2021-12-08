@@ -1,7 +1,64 @@
 # 202112
+## 20211208
 
-## 20211206
++ kong -> k8s 后就找不到正确的 Ｐｒｏｔｏ和 ｐｏｒｔ了
+Kong overwrites X-Forwarded-Proto header when already present #1823
+https://github.com/Kong/kong/issues/1823
+Kong系列（三）——Kong插件[IP Restriction]使用
+https://zhuanlan.zhihu.com/p/68517991
+Kong配置反向代理后获取原始IP
+https://www.programminghunter.com/article/9313300473/
 
+apigateway-kong(三)Proxy规则
+https://blog.csdn.net/fvjuerh/article/details/96429866
+
+使用 api-gw 让你的应用历史应用更加安全
+https://konghq.com/blog/api-gateway-request-transformation/
+https://docs.konghq.com/hub/kong-inc/request-transformer/
+
+http://mockbin.org/
+Mockbin allows you to generate custom endpoints to test, mock, and track HTTP requests & responses between libraries, sockets and APIs.
+
+企业级API网关Kong系列
+https://segmentfault.com/a/1190000019857235
+【API网关Kong系列六】- 玩转Consumer
+https://segmentfault.com/a/1190000019923741
+【API网关Kong系列三】 - 战前预热
+https://segmentfault.com/a/1190000019886923
+
+https://www.cnblogs.com/it-deepinmind/p/14036488.html
+3. Consumers 消费者
+The Consumer object represents a consumer - or a user - of a Service. 
+You can either rely on Kong as the primary datastore, or you can map the consumer list with your database to keep consistency between Kong and your existing primary datastore.
+
+最简单的理解和配置consumer的方式是,将其于用户进行一一映射,即一个consumer代表一个用户（或应用）.但是对于KONG而言,这些都无所谓. Consumer的核心原则是您可以为其添加插件,从而自定义他的请求行为. 所以,或许您会有一个手机APP应用,并为他的每个版本都定义一个consumer, 又或者您有一个应用或几个应用,并为这些应用定义统一个consumer,这些都无所谓.
+Consumer是使用Service的用户(eg: github账号就是一个Consumer是使用github Open API Service)
+Consumer的核心原则是您可以为其添加Plugin插件,从而自定义他的请求行为.(eg: 安装kong Oauth2插件)
+Consumer下可以创建多个APP(eg:您的github账号中您可以创建多个Github Apps )
+
+我们新建一个plugin时，可以看到：
+The CONSUMER ID that this plugin configuration will target. 
+This value can only be used if authentication has been enabled so that the system can identify the user making the request. 
+If left blank, the plugin will be applied to all consumers.
+
+配置最佳实践
+https://kubernetes.io/zh/docs/concepts/configuration/overview/
+
+Jenkins API
+https://www.cnblogs.com/anliven/p/13642675.html
+
+## 20211207
+
+https://github.com/SummitRoute/csp_security_mistakes
+
+使用ModSecurity/App Protect模块构建NGINX WAF | NGINX公开课（2020年8-11月）
+https://www.bilibili.com/video/BV15K41137h4?from=search&seid=16261941898413690538&spm_id_from=333.337.0.0
+
+https://0xbharath.github.io/python-network-programming/protocols/dns/index.html
+
+[dnspython](https://www.tutorialspoint.com/python_network_programming/python_dns_look_up.htm)
+
+https://www.bilibili.com/video/BV1y64y1s7gi?from=search&seid=8749424551303216564&spm_id_from=333.337.0.0
 
 ## 20211203
 
