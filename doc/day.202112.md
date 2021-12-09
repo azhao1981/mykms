@@ -1,11 +1,19 @@
 # 202112
+## 20211209
+
+https://www.alibabacloud.com/blog/clb-alb-兩種負載平衡產品差異介紹_597952
+
 ## 20211208
 
 + kong -> k8s 后就找不到正确的 Ｐｒｏｔｏ和 ｐｏｒｔ了
+
 Kong overwrites X-Forwarded-Proto header when already present #1823
 https://github.com/Kong/kong/issues/1823
+
 Kong系列（三）——Kong插件[IP Restriction]使用
 https://zhuanlan.zhihu.com/p/68517991
+KONG_REAL_IP_HEADER
+
 Kong配置反向代理后获取原始IP
 https://www.programminghunter.com/article/9313300473/
 
