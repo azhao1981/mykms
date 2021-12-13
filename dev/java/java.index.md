@@ -114,13 +114,19 @@ https://www.jetbrains.com/help/idea/your-first-spring-application.html#create-ne
 开始/spring Assisstant/默认/web/spring web
 打开 src/main/java/com.xxx.hello/xxx.java
   run 当前应用名
+
 HelloWorld
+
 主类添加 @RestController
+
 添加requestMapping()
+
 public void xxx(@RequestParam(value="name", defaultValue="world") String name) { 
   return "hello" + name; 
 }
+
 mvn spring-boot:run
+
 修改 shift+F10
 添加：
 src/main/resources/static/index.html
@@ -399,6 +405,28 @@ https://code.visualstudio.com/docs/java/java-build
 https://github.com/ulisesbocchio/jasypt-spring-boot
 
 ## Gradle
+
+国内开源镜像一览
+https://bambrow.com/20210702-domestic-images/
+
+init.gradle
+```gradle
+allprojects {
+    repositories {
+        def ALIYUN_REPOSITORY_URL = 'https://maven.aliyun.com/repository/public'
+        all { ArtifactRepository repo ->
+            if (repo instanceof MavenArtifactRepository) {
+                def url = repo.url.toString()
+                if (url.startsWith('https://repo1.maven.org/maven2')) {
+                    project.logger.lifecycle "Repository ${repo.url} replaced by $ALIYUN_REPOSITORY_URL."
+                    remove repo
+                }
+            }
+        }
+        maven { url ALIYUN_REPOSITORY_URL }
+    }
+}
+```
 
 ## 如何绑定SDK版本和Maven/Gradle
 

