@@ -1,6 +1,11 @@
 # 202112
 ## 20211213
+https://www.youtube.com/watch?v=7qoPDq41xhQ
+CVE-2021-44228 - Log4j - MINECRAFT VULNERABLE! (and SO MUCH MORE)
 
+https://github.com/xiajun325/apache-log4j-rce-poc
+https://github.com/leonjza/log4jpwn
+https://github.com/YfryTchsGD/Log4jAttackSurface
 https://github.com/christophetd/log4shell-vulnerable-app
 
 docker build . -t vulnerable-app
