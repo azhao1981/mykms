@@ -602,5 +602,7 @@ func main() {
 
 - Alicloud
 - Database
+- [tencentcloud](https://github.com/tencentcloudstack/vault-plugin-secrets-tencentcloud)
+  - 不是默认的
 
 ![](images/2021-07-27-14-30-14.png)
