@@ -5,8 +5,8 @@
 使用MSSQL加载运行CLR代码
 http://blog.nsfocus.net/mssql-clr/
 
-Apache Shiro 反序列化漏洞详解
-https://paper.seebug.org/1782/
+[Apache Shiro 反序列化漏洞详解](https://paper.seebug.org/1782/)
+
 Grafana 8.3.0 - Directory Traversal and Arbitrary File Read
 https://www.exploit-db.com/exploits/50581
 
@@ -16,8 +16,6 @@ https://www.ruby-lang.org/en/news/2021/11/24/buffer-overrun-in-cgi-escape_html-c
 CVE-2021-41819: Cookie Prefix Spoofing in CGI::Cookie.parse
 https://www.ruby-lang.org/en/news/2021/11/24/cookie-prefix-spoofing-in-cgi-cookie-parse-cve-2021-41819/
 
-Apache Shiro 反序列化漏洞详解
-https://paper.seebug.org/1782/
 Apache Storm 漏洞分析
 https://paper.seebug.org/1780/
 Identity Security Authentication Vulnerability

