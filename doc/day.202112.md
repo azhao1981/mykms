@@ -1,5 +1,45 @@
 # 202112
-## 20211214
+## 20211216
+
+
+安全工具 | log4j ldap 恶意class下载工具
+https://www.anquanke.com/post/id/263300
+Log4J 漏洞复现+漏洞靶场
+https://www.anquanke.com/post/id/263132
+Log4shell漏洞研究及其挖矿案例分析
+https://www.anquanke.com/post/id/263217
+
+在 Struts2 中触发 Log4j JNDI RCE 漏洞分析
+https://www.anquanke.com/post/id/262852
+Struts2 漏洞分析系列 - S2-009/003与005的补丁绕过
+https://www.anquanke.com/post/id/261743
+
+Redis安全问题之常见漏洞利用方法总结
+https://www.freebuf.com/articles/database/305343.html
+CobaltStrike使用：第一篇（基本使用方法、监听器、重定向器） 原创
+https://www.freebuf.com/sectool/306396.html
+
+Apache Log4j2 Jndi RCE 高危漏洞分析与防御
+https://paper.seebug.org/1787/
+log4shell 分析
+https://paper.seebug.org/1788/
+log4j2 漏洞分析与思考
+https://paper.seebug.org/1786/
+
+Chrome-V8-CVE-2020-16040
+https://www.anquanke.com/post/id/263161
+
+[CVE-2021-44528] Possible Open Redirect in Host Authorization Middleware
+
+https://groups.google.com/g/rubyonrails-security/c/i0cuCD4grJ8
+There is a possible open redirect vulnerability in the Host Authorization
+middleware in Action Pack. This vulnerability has been assigned the CVE
+identifier CVE-2021-44528.
+
+Versions Affected:  >= 6.0.0.
+Not affected:       < 6.0.0
+Fixed Versions:     6.1.4.2, 6.0.4.2, 7.0.0.rc2
+
 ## 20211213
 
 使用MSSQL加载运行CLR代码
