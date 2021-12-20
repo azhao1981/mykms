@@ -1,16 +1,11 @@
 # 202112
+## 20211220
+
+蜻蜓爬升过程飞行特征实验研究
+http://html.rhhz.net/BJHKHTDXXBZRB/2016-6-1271.htm
+
 ## 20211216
 
-
-安全工具 | log4j ldap 恶意class下载工具
-https://www.anquanke.com/post/id/263300
-Log4J 漏洞复现+漏洞靶场
-https://www.anquanke.com/post/id/263132
-Log4shell漏洞研究及其挖矿案例分析
-https://www.anquanke.com/post/id/263217
-
-在 Struts2 中触发 Log4j JNDI RCE 漏洞分析
-https://www.anquanke.com/post/id/262852
 Struts2 漏洞分析系列 - S2-009/003与005的补丁绕过
 https://www.anquanke.com/post/id/261743
 
