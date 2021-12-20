@@ -57,6 +57,7 @@ docker run -v `pwd`/:/root/poc  marshalsec javac /root/poc/src/main/java/Log4jRC
 # https://www.cnblogs.com/mingforyou/p/3551199.html
 javac Log4jRCE.java
 php -S 127.0.0.1:8888
+
 python -m http.server
 http://localhost:8000/
 
@@ -176,14 +177,47 @@ https://github.com/Neo23x0/log4shell-detector
 
 https://github.com/hillu/local-log4j-vuln-scanner
 
+https://stackoverflow.com/questions/70361367/how-to-find-vulnerable-log4j-programs-on-a-windows-10-pc-and-how-to-provide-firs/70361504
+
+I provided the first-aid PowerShell script in the other answer, however, meanwhile there are several advanced tools that allow detection and patching of log4j-based applications, in context of CVE-2021-44228, for the case that you cannot upgrade the application and its bundled log4j, yet.
+
+https://github.com/mergebase/log4j-detector
+
+log4j-detector is a Java-based tool that searches for vulnerable log4j instances. It detects log4j in "Java Über JARs" as well as otehr JARs/WARs, in uncompressed directories on the file-system (aka *.class) and in shaded jars. It provides information about the found log4j versions. (It does not provide a patcher to fix the findings.) But this one seems to be most thorough in its detection.
+
+https://github.com/hillu/local-log4j-vuln-scanner
+
+log4j-vuln-scanner is a Go-based tool, with binary releases for x86_64 Windows, Linux, MacOSX,that searches for vulnerable log4j instances. It finds log4j also within other JAR and WAR files and it provides information about the found log4j versions. (It seems not as thorough as the log4j-detector above.) But this one provides a patcher to fix the findings.
+
+https://github.com/Neo23x0/log4shell-detector
+
+log4shell-detector is a python-based tool that searches for log files and, from the logs strings, tries to detect any exploitation attempts.
+
 ## WAF
 https://github.com/Puliczek/CVE-2021-44228-PoC-log4j-bypass-words
 ## 补丁
 
+删除 lookup包
+https://stackoverflow.com/questions/70361367/how-to-find-vulnerable-log4j-programs-on-a-windows-10-pc-and-how-to-provide-firs/70361504
+https://discuss.elastic.co/t/delete-jndilookup-class/291507
+zip -q -d log4j-core-*.jar org/apache/logging/log4j/core/lookup/JndiLookup.class
+
+https://bmcsites.force.com/casemgmt/sc_KnowledgeArticle?sfdcid=000391450
+
+使用增加的包：
+https://research.nccgroup.com/2021/12/12/log4j-jndi-be-gone-a-simple-mitigation-for-cve-2021-44228/
+
+### 升级版本
+最新为 2.16.0 ,升级到 2.15.0 时出现新的漏洞，会造成DDOS
+https://logging.apache.org/log4j/2.x/
+
+It was found that the fix to address CVE-2021-44228 in Apache Log4j 2.15.0 was incomplete in certain non-default configurations. 
+This could allows attackers with control over Thread Context Map (MDC) input data when the logging configuration uses a Pattern Layout with either a Context Lookup (for example, $${ctx:loginId}) or a Thread Context Map pattern (%X, %mdc, or %MDC) to craft malicious input data using a JNDI Lookup pattern resulting in a denial of service (DOS) attack. Log4j 2.15.0 restricts JNDI LDAP lookups to localhost by default.
+
 这个对应的 https://mvnrepository.com/artifact/org.springframework.boot/spring-boot-starter-log4j2
 是已经升级到 2.15.0 的
 
-运行时的热补丁
+### 运行时的热补丁
 https://github.com/corretto/hotpatch-for-apache-log4j2
 
 APACHE LOG4J2 远程代码执行漏洞处置手册
