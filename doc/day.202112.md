@@ -1,4 +1,51 @@
 # 202112
+## 20211221
+
+应急响应：没有痕迹该如何进行攻击溯源
+https://www.freebuf.com/articles/web/313394.html
+
+App合规那些事儿（一）最最最常见——违规收集个人信息 原创
+https://www.freebuf.com/articles/neopoints/306183.html
+App合规那些事儿（二）总被忽略总被通报——违规使用个人信息 原创
+https://www.freebuf.com/articles/neopoints/306191.html
+TIWAP：一个包含大量漏洞的Web应用渗透测试学习工具
+https://www.freebuf.com/articles/web/306459.html
+
+sqlmap 项目剖析（I）
+https://www.anquanke.com/post/id/262848
+
+DOM-XSS 自动检测与验证模型
+https://www.anquanke.com/post/id/263107
+
+树莓派·安全专刊：搭建蜜罐HFish
+https://www.freebuf.com/articles/web/309666.html
+
+Apache Log4j2远程代码执行漏洞排查及修复手册
+https://www.cnvd.org.cn/webinfo/show/7146
+从零到一带你深入 log4j2 Jndi RCE CVE-2021-44228 漏洞
+https://paper.seebug.org/1789/
+好像这里并没有修改，还是可以下载
+https://repo1.maven.org/maven2/org/apache/logging/log4j/log4j-core/2.14.0/
+
+https://mvnrepository.com/artifact/org.apache.logging.log4j/log4j-api
+https://mvnrepository.com/artifact/org.apache.logging.log4j/log4j-core
+
+JUL
+Java日志框架JUL
+https://www.jianshu.com/p/727f6364ed5a
+
+Java日志框架之JUL（java util logging）详解
+https://blog.csdn.net/qq_40837310/article/details/106608282
+https://stackoverflow.com/questions/11359187/why-not-use-java-util-logging
+
+https://blog.csdn.net/c5113620/article/details/103577488
+JUL(java.util.logging)java原生官方日志 使用与配置--解决jul不输出显示日志问题
+
+idea maven 输出中文日志问题：
+[解决IntelliJ IDEA各种中文乱码问题](https://blog.csdn.net/qq_41814324/article/details/111772889)
+settings/maven/runner VM.Options=-Dfile.encoding=GB2312
+注意这里在windows里应该是  GB2312 不是UTF-8
+
 ## 20211220
 
 蜻蜓爬升过程飞行特征实验研究
