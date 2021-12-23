@@ -45,6 +45,13 @@ nc -lnvp 9999
 ```
 
 [maven跳过单元测试-maven.test.skip和skipTests的区别](https://www.cnblogs.com/javabg/p/8026881.html)
+-DskipTests，不执行测试用例，但编译测试用例类生成相应的class文件至target/test-classes下。
+-Dmaven.test.skip=true，不执行测试用例，也不编译测试用例类。
+一 使用maven.test.skip，不但跳过单元测试的运行，也跳过测试代码的编译。
+
+如果遇到 WARNING: Illegal reflective access by com.thoughtworks.xstream.core.util.Fields
+[Eureka 中 JDK 11 遇到的问题](https://blog.csdn.net/YKenan/article/details/105959843)
+只是警告，不管
 
 https://github.com/xiajun325/apache-log4j-rce-poc
 

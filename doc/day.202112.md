@@ -1,6 +1,8 @@
 # 202112
 ## 20211221
 
+https://www.cnblogs.com/yyds/p/6901864.html
+
 应急响应：没有痕迹该如何进行攻击溯源
 https://www.freebuf.com/articles/web/313394.html
 
