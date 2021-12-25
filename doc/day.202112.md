@@ -1,5 +1,15 @@
 # 202112
+
+## 20211224
+
+https://github.com/louisfb01/best_AI_papers_2021
+https://github.com/marktext/marktext/releases
+
+
+
 ## 20211221
+
+
 
 https://www.cnblogs.com/yyds/p/6901864.html
 
@@ -207,5 +217,3 @@ https://iapp.org/style-guide/copy/
 使用mvn help:system命令可查看所有环境变量;
 
 ${env.JAVA_HOME}表示JAVA_HOME环境变量的值;
-
-
