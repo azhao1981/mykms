@@ -1,4 +1,7 @@
 # 202112
+## 20211227
+
+[技术点详解---IPSec VPN基本原理](http://www.h3c.com/cn/d_201005/675214_97665_0.htm)
 
 ## 20211224
 
@@ -32,15 +35,7 @@ https://www.anquanke.com/post/id/263107
 树莓派·安全专刊：搭建蜜罐HFish
 https://www.freebuf.com/articles/web/309666.html
 
-Apache Log4j2远程代码执行漏洞排查及修复手册
-https://www.cnvd.org.cn/webinfo/show/7146
-从零到一带你深入 log4j2 Jndi RCE CVE-2021-44228 漏洞
-https://paper.seebug.org/1789/
-好像这里并没有修改，还是可以下载
-https://repo1.maven.org/maven2/org/apache/logging/log4j/log4j-core/2.14.0/
 
-https://mvnrepository.com/artifact/org.apache.logging.log4j/log4j-api
-https://mvnrepository.com/artifact/org.apache.logging.log4j/log4j-core
 
 JUL
 Java日志框架JUL
@@ -73,12 +68,6 @@ https://www.freebuf.com/articles/database/305343.html
 CobaltStrike使用：第一篇（基本使用方法、监听器、重定向器） 原创
 https://www.freebuf.com/sectool/306396.html
 
-Apache Log4j2 Jndi RCE 高危漏洞分析与防御
-https://paper.seebug.org/1787/
-log4shell 分析
-https://paper.seebug.org/1788/
-log4j2 漏洞分析与思考
-https://paper.seebug.org/1786/
 
 Chrome-V8-CVE-2020-16040
 https://www.anquanke.com/post/id/263161

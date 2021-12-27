@@ -195,6 +195,7 @@ Log4j2 RCE Passive Scanner plugin for BurpSuite
 https://github.com/tangxiaofeng7/BurpLog4j2Scan
 
 https://github.com/Neo23x0/log4shell-detector
+从/var/log里看是否受到了攻击 
 
 https://github.com/hillu/local-log4j-vuln-scanner
 
@@ -341,3 +342,102 @@ https://www.anquanke.com/post/id/263217
 
 在 Struts2 中触发 Log4j JNDI RCE 漏洞分析
 https://www.anquanke.com/post/id/262852
+
+
+Apache Log4j2远程代码执行漏洞排查及修复手册
+https://www.cnvd.org.cn/webinfo/show/7146
+从零到一带你深入 log4j2 Jndi RCE CVE-2021-44228 漏洞
+https://paper.seebug.org/1789/
+好像这里并没有修改，还是可以下载
+https://repo1.maven.org/maven2/org/apache/logging/log4j/log4j-core/2.14.0/
+
+https://mvnrepository.com/artifact/org.apache.logging.log4j/log4j-api
+https://mvnrepository.com/artifact/org.apache.logging.log4j/log4j-core
+
+
+Apache Log4j2 Jndi RCE 高危漏洞分析与防御
+https://paper.seebug.org/1787/
+log4shell 分析
+https://paper.seebug.org/1788/
+log4j2 漏洞分析与思考
+https://paper.seebug.org/1786/
+
+
+```bash
+#!/bin/bash
+
+find_jar() {
+  sudo lsof | grep .jar > log4j-find.txt
+  cat log4j-find.txt | awk '{print $10}' | sort | uniq > log4j-find-sorted.txt
+  cat log4j-find.txt | awk '{print $9}' | sort | uniq | grep .jar >> log4j-find-sorted.txt
+  cat log4j-find-sorted.txt | sort | uniq > log4j-find-sorted-uniq.txt
+}
+
+
+cat log4j-find-sorted-uniq.txt | grep log4j-core > log4j-find.result.txt
+cat log4j-find-sorted-uniq.txt | xargs busybox unzip -lx | grep log4j-core > log4j-find.result.jar.txt
+
+ls -l *.jar | awk '{print $9}' | xargs busybox unzip -lx
+# jar vtf *.jar |grep JndiLookup.class
+busybox unzip
+unzip -l log4j-core-2.8.2.jar |grep -i lookup
+org/apache/logging/log4j/core/lookup/JndiLookup.class
+
+```
+
+
+```bash
+#!/bin/bash
+
+remove(){
+  cd /CloudrResetPwdAgent/bin
+  sudo ./cloudResetPwdAgent.script remove
+  cd /CloudResetPwdUpdateAgent/bin
+  sudo ./cloudResetPwdUpdateAgent.script stop
+  sudo ./cloudResetPwdUpdateAgent.script remove
+  sudo rm -rf /CloudrResetPwdAgent
+  sudo rm -rf /CloudResetPwdUpdateAgent
+}
+
+status(){
+  service cloudResetPwdAgent status
+  service cloudResetPwdUpdateAgent status
+}
+
+install(){
+  wget 'http://cn-south-1-cloud-reset-pwd.obs.myhwclouds.com/linux/64/reset_pwd_agent/CloudResetPwdAgent.zip'
+
+  unzip -o -d  / CloudResetPwdAgent.zip
+  cd /CloudResetPwdAgent/CloudResetPwdUpdateAgent.Linux
+  chmod +x setup.sh
+  sudo sh setup.sh
+
+  # 修改重置密码插件的文件权限
+  chmod 640 /CloudrResetPwdAgent/logs/resetPwdAgent.log
+  chmod 640 /CloudrResetPwdAgent/logs/wrapper.log
+  chmod 750 /CloudrResetPwdAgent/bin/cloudResetPwdAgent.script
+  chmod 700 /CloudrResetPwdAgent/bin/wrapper
+  chmod 600 /CloudrResetPwdAgent/lib/commons-codec-1.14.jar
+  chmod 600 /CloudrResetPwdAgent/lib/libwrapper.so
+  chmod 600 /CloudrResetPwdAgent/lib/resetpwdagent.jar
+  chmod 600 /CloudrResetPwdAgent/lib/wrapper.jar
+  chmod 640 /CloudrResetPwdAgent/lib/json-20160810.jar
+  chmod 640 /CloudrResetPwdAgent/lib/log4j-api-2.17.0.jar
+  chmod 640 /CloudrResetPwdAgent/lib/log4j-core-2.17.0.jar
+}
+
+if [ "$1" == "remove" ]; then
+  remove
+elif [ "$1" == "status" ]; then
+  status
+elif [ "$1" == "install" ]; then
+  install
+  status
+elif [ "$1" == "reinstall" ]; then
+  remove
+  install
+  status
+else
+  echo "Usage: $0 {install|remove|status}"
+fi
+```
