@@ -7,6 +7,7 @@ https://github.com/NCSC-NL/log4shell
 各产品影响
 https://github.com/YfryTchsGD/Log4jAttackSurface
 
+https://github.com/cisagov/log4j-scanner
 ## 复现
 
 [CVE-2021-44228 - Log4j - MINECRAFT VULNERABLE! (and SO MUCH MORE)](https://www.youtube.com/watch?v=7qoPDq41xhQ)
