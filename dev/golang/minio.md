@@ -5,12 +5,27 @@
 Minio MinIO 安全漏洞
 http://www.cnnvd.org.cn/web/xxk/ldxqById.tag?CNNVD=CNNVD-202103-1206
 
+https://cve.mitre.org/cgi-bin/cvekey.cgi?keyword=minio
+http://www.nsfocus.net/index.php?os=&type_id=&keyword=minio&act=sec_bug&submit=+
 
 
 MinIO Docker 快速入门
 http://docs.minio.org.cn/docs/master/minio-docker-quickstart-guide
 sudo docker pull minio/minio
+docker pull minio/mc
+docker run minio/mc ls play
+docker run -it -v `pwd`:/data --entrypoint=/bin/sh minio/mc
 
+
+```bash
+nohup /home/opcr/bin/mc watch oss > watch.txt &
+tail -f watch.txt |  grep ObjectCreated:Put | grep -e "jsp|jspx"
+tail -f log | grep --line-buffer xxx | grep --line-buffer yyy
+https://blog.csdn.net/qq_39338585/article/details/81736609
+tail -n 0 -f watch.txt |grep --line-buffer ObjectCreated:Put|grep --line-buffer -Ei 'jsp|jspx' |awk '{print $4, $5}'
+[2021-12-28T19:17:23.315Z]    0 B s3:ObjectCreated:Put https://oss.gezhishirt.club/osstest2/4.jspx
+play/mybucket/myobject.txt
+```
 
 sudo docker run -p 9000:9000 -p 9001:9001 --name minio1 \
   -e "MINIO_ROOT_USER=AKIAIOSFODNN7EXAMPLE" \
@@ -20,6 +35,9 @@ sudo docker run -p 9000:9000 -p 9001:9001 --name minio1 \
   minio/minio server /data --console-address ":9001"
 
 sudo docker rm minio1
+
+https://github.com/minio/minio/blob/master/docs/orchestration/docker-compose/docker-compose.yaml
+
 
 创建test bucket
 
@@ -32,6 +50,9 @@ https://hub.docker.com/r/bitnami/minio/
 如何使用MinIO 建立阿里云OSS代理
 
 https://zhuanlan.zhihu.com/p/375433718
+
+上传
+http://oss-admin.gezhishirt.club/api/v1/buckets/testoss/objects/upload
 
 
 http://docs.minio.org.cn/docs/master/python-client-quickstart-guide
