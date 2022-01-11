@@ -62,3 +62,41 @@ Handling connection for 7080
 Handling connection for 7080
 E0111 18:30:22.137425   23860 portforward.go:400] an error occurred forwarding 7080 -> 8080: error forwarding port 8080 to pod ac62e89cc9bf8e9b8ef5eb2c262fe0b7294f6fbdba4734d8987c896212cab249, uid : exit status 1: 2022/01/11 10:30:22 socat[13859] E connect(5, AF=2 127.0.0.1:8080, 16): Connection refused
 ```
+
+镜像慢问题：
+Windows环境：
+minikube start --image-mirror-country="cn"
+
+
+## rocky
+
+https://github.com/kubernetes/minikube/releases/
+sudo install minikube-linux-amd64 /usr/local/bin/minikube
+
+
+https://www.cnblogs.com/wswind/p/14420803.html
+Linux环境：
+
+```bash
+minikube start --driver='docker' --image-mirror-country='cn' --image-repository='registry.cn-hangzhou.aliyuncs.com/google_containers'
+#or bare metal
+sudo minikube start --driver='none' --image-mirror-country='cn' --image-repository='registry.cn-hangzhou.aliyuncs.com/google_containers'
+```
+
+registry.cn-hangzhou.aliyuncs.com/google_containers
+还是报错
+
+这个应该是宿主机上装的，然后装 vxbox
+sudo dnf -y install qemu-kvm libvirt virt-install
+
+lsmod | grep kvm
+grep -E --color 'vmx|svm' /proc/cpuinfo
+
+https://www.cnblogs.com/xiaochina/p/11616320.html
+minikube国内在线部署体验 
+
+
+https://techviewleo.com/run-local-kubernetes-on-rocky-almalinux-with-minikube/
+
+
+--iso-url=[https://storage.googleapis.com/minikube/iso/minikube-v1.24.0.iso,https://github.com/kubernetes/minikube/releases/download/v1.24.0/minikube-v1.24.0.iso,https://kubernetes.oss-cn-hangzhou.aliyuncs.com/minikube/iso/minikube-v1.24.0.iso]:
