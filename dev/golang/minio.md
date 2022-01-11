@@ -8,6 +8,10 @@ http://www.cnnvd.org.cn/web/xxk/ldxqById.tag?CNNVD=CNNVD-202103-1206
 https://cve.mitre.org/cgi-bin/cvekey.cgi?keyword=minio
 http://www.nsfocus.net/index.php?os=&type_id=&keyword=minio&act=sec_bug&submit=+
 
+https://groups.google.com/g/golang-checkins/c/blDKlmKWKGo
+CVE-2020-11012
+https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2020-11012
+
 
 MinIO Docker 快速入门
 http://docs.minio.org.cn/docs/master/minio-docker-quickstart-guide

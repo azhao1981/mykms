@@ -993,4 +993,20 @@ wsl > top
 
 wsl --shutdown
 
-### vscode Files:Eol \n
+### 99 vscode Files:Eol \n
+
+### 100 windows10 截图
+
+https://zhuanlan.zhihu.com/p/33831541
+Win+Printscreen
+
+优点:直接保存,有反馈
+
+缺点:只能全屏,无法(至少不容易)修改保存路径
+
+### 101 windows10 截图变成锁屏
+WIN10背景、锁屏、照片磁贴图片删除
+https://answers.microsoft.com/zh-hans/windows/forum/all/win10%E8%83%8C%E6%99%AF%E9%94%81%E5%B1%8F%E7%85%A7/97d5023d-338f-4722-8b49-9d061fa791b4
+
+C:\ProgramData\Microsoft\Windows\SystemData
+这下面那个长的删除
