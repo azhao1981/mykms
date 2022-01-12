@@ -6,7 +6,6 @@
 See how DMARC, SPF, and DKIM work interactively
 https://www.learndmarc.com/
 
-
 https://svelte.dev/
 Svelte 是一种全新的构建用户界面的方法。传统框架如 React 和 Vue 在浏览器中需要做大量的工作，而 Svelte 将这些工作放到构建应用程序的编译阶段来处理。
 与使用虚拟（virtual）DOM 差异对比不同。Svelte 编写的代码在应用程序的状态更改时就能像做外科手术一样更新 DOM。
