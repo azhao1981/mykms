@@ -5,6 +5,7 @@
 https://www.youtube.com/watch?v=1nJgupaUPEQ
 SQL Injection | Complete Guide
 Win和Print Screen 会直接放在图片里
+
 1 什么是
 2 怎么发现
 3 怎么利用
@@ -22,7 +23,7 @@ Win和Print Screen 会直接放在图片里
 - 二是没有对发送到数据库的数据进行转义（转义输出）
 
 ### 手动发现漏洞(测试)
-    
+
 #### 万能钥匙 `xxx' or '1'='1` 或 `1 or 1=1`
 Name/token等字符串时
 ```sql
@@ -58,13 +59,16 @@ and 1=1 and 1=2 被拦截的可能性太高了，可以尝试 and -1=-1 and -1=-
 
 或者直接 or sleep(5)
 
-        https://owasp.org/www-project-web-security-testing-guide/stable/4-Web_Application_Security_Testing/07-Input_Validation_Testing/05-Testing_for_SQL_Injection.html
+    https://owasp.org/www-project-web-security-testing-guide/stable/4-Web_Application_Security_Testing/07-Input_Validation_Testing/05-Testing_for_SQL_Injection.html
+    
     工具扫描 sqlmap
         sqlmap -u http://xxxx/?username=xxx
     代码静态扫描
         soanrqube
         fortify
     代码评审
+
+
 如何防御
     预编译
         使用参数化查询（PreparedStatement），避免将未经过滤的输入直接拼接到SQL查询语句中。
@@ -81,28 +85,29 @@ and 1=1 and 1=2 被拦截的可能性太高了，可以尝试 and -1=-1 and -1=-
     [metasploitable2](https://docs.rapid7.com/metasploit/metasploitable-2/)
     [metasploitable2-手册](https://docs.rapid7.com/metasploit/metasploitable-2-exploitability-guide)
     [下载地址](https://sourceforge.net/projects/metasploitable/files/Metasploitable2/)
-    msfadmin:msfadmin
-    vbox ->管理->虚拟介质管理->注册,把解压的 VMware 虚拟盘文件注册到vbox
-    vbox ->新建虚拟机->linux -> 使用现有介质,选择上面的介质
-    vbox -> metasploitable虚拟机 -> 设置 -> 网络 -> 添加网卡 仅主机 (host only)
+
+​    msfadmin:msfadmin
+​    vbox ->管理->虚拟介质管理->注册,把解压的 VMware 虚拟盘文件注册到vbox
+​    vbox ->新建虚拟机->linux -> 使用现有介质,选择上面的介质
+​    vbox -> metasploitable虚拟机 -> 设置 -> 网络 -> 添加网卡 仅主机 (host only)
 
     sudo dbclient
     sudo ifconfig eth1 up
-
+    
     http://192.168.56.116/dvwa
     user: admin
     password: password
-
+    
     [python](/dev/python/python.install.md)
-
+    
     [sqlmap](/doc/sec/sec.scan.sqlmap.md)
-
+    
     [burp suite ce](https://portswigger.net/burp/communitydownload)
-
+    
     java
-
+    
     [Amazon Corretto | 开放 Java 开发工具包 (OpenJDK) 的免费、多平台、生产就绪型发行版 | 推荐](https://aws.amazon.com/cn/corretto/)
-
+    
     最简单的例子
     1 万能“钥匙” `11' or '1'='1`
     ![](images/2021-08-03-14-15-23.png)
@@ -151,7 +156,6 @@ Option 4: Escaping All User Supplied Input 转义所有用户输入 (输入转�
 Also: Enforcing Least Privilege 强制最小权限
 Also: Performing Allow-list Input Validation as a Secondary Defense 执行允许列表输入验证作为辅助防御
 
-
 [MySQL 存储过程](https://www.runoob.com/w3cnote/mysql-stored-procedure.html)
 
 [使用Filter过滤器解决XSS跨脚本攻击和SQL注入问题](https://segmentfault.com/a/1190000039088447)
@@ -196,13 +200,15 @@ doFilter
 
 [SQL盲注、SQL注入 - SpringBoot配置SQL注入过滤器](https://www.cnblogs.com/cao-lei/p/13691468.html)
 
+```bash
 private Pattern sqlPattern = Pattern.compile(
 			"(?:')|(?:--)|(/\\*(?:.|[\\n\\r])*?\\*/)|(\\b(select|update|and|or|delete|insert|trancate|char|into|substr|ascii|declare|exec|count|master|into|drop|execute)\\b)",
 
 			Pattern.CASE_INSENSITIVE);
+```
 
-mybatis注解动态sql注入map和list（防sql注入攻击）
-https://blog.csdn.net/daodfs111/article/details/105630711
+[mybatis注解动态sql注入map和list（防sql注入攻击）](https://blog.csdn.net/daodfs111/article/details/105630711)
+
 
 ## Ruby 代码审计
 
@@ -224,6 +230,8 @@ https://www.calhoun.io/what-is-sql-injection-and-how-do-i-avoid-it-in-go/
 [Java安全编码之SQL注入](https://www.freebuf.com/articles/web/245851.html)
 
 [某租车系统Java代码审计之后台注入漏洞分析](https://www.freebuf.com/vuls/238175.html)
+
+[java项目中如何防止sql注入？](https://blog.csdn.net/alan_liuyue/article/details/88314299)
 
 ## 参考
 
@@ -334,4 +342,13 @@ log-slow-queries [= file] 把执行用时超过long_query_time变量值的查询
 
 ```bash
 #log            = /var/log/mysql/mysql.log
+```
+
+## esapi-java-legacy
+
+https://owasp.org/www-project-enterprise-security-api/
+
+```bash
+mvn clean package -Dmaven.test.skip=true
+git clone git@gitee.com:mirrors/esapi-java-legacy.git
 ```

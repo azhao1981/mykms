@@ -17,6 +17,7 @@ python ./sqlmap.py -h
 
 ### 使用
 sqlmap -u http://xxxx/?username=xxx
+
 要用带参数的请求给他，工具会帮你找到可以注入的参数
 
 但这个效果好像不太好

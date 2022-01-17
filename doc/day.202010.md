@@ -470,11 +470,6 @@ https://www.anquanke.com/post/id/220239
 ## 20201021
 
 
-
-
-
-[JDBC MySQL任意文件读取中的一些坑](https://www.freebuf.com/articles/web/251626.html)
-
 [Mysql 数据库攻击面](https://www.anquanke.com/post/id/219892)
 
 [浅谈解析漏洞的利用与防范](https://www.anquanke.com/post/id/219107)

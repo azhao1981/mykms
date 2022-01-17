@@ -89,7 +89,7 @@ server.address=0.0.0.0
 spring web
 spring boot dev tools
 
-spring dat jpa
+spring data jpa
 mysql drvier
 
 ```yaml
@@ -100,3 +100,5 @@ spring.datasource.password = "password"
 spring.jpa.properties.hibernate.dialect = "org.hibernate.dialect.MySQL5InnoDBDialect"
 spring.jpa.hibernate.ddl-auto = update
 ```
+
+doc\sec\sec.sdl.vault.ppt.md

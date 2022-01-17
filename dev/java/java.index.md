@@ -91,17 +91,19 @@ ctrl+w = ctrl+F4
 ## 常见 组件/类库 使用
 
 ### jetty
-jetty中文教程
 
-https://www.orchome.com/58
+[jetty中文教程](https://www.orchome.com/58)
 
 [jetty初学者教程](https://www.soosmart.com/topic/909.html)
 
 ### spring jdbcTemplate
 
+[JDBC MySQL任意文件读取中的一些坑](https://www.freebuf.com/articles/web/251626.html)
+
 https://mkyong.com/spring/spring-jdbctemplate-querying-examples/
 
 https://www.codejava.net/frameworks/spring-boot/connect-to-mysql-database-examples
+
 ### spring Boot
 
 spring boot
@@ -130,6 +132,22 @@ mvn spring-boot:run
 修改 shift+F10
 添加：
 src/main/resources/static/index.html
+
+## 数据库
+甚麼是 JDBC、ORM、 JPA、ORM框架、Hibernate
+https://medium.com/learning-from-jhipster/13-%E7%94%9A%E9%BA%BC%E6%98%AF-jdbc-orm-jpa-orm%E6%A1%86%E6%9E%B6-hibernate-c762a8c5e112
+
+### JDBC
+
+### ORM
+
+而目前在 Java 中，相對常見或常用的 ORM 框架有：
+Hibernate
+MyBatis
+Spring Data JPA
+Open JPA
+EclipseLink
+Toplink
 
 ### hibernate
 

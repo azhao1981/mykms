@@ -1,5 +1,258 @@
 # 202201
 
+## 20220117
+
+https://wizardforcel.gitbooks.io/owasp-cheat-sheet-zh/content/index.html
+
+Best practices for segmentation of the corporate network of any company
+https://github.com/sergiomarotco/Network-segmentation-cheat-sheet
+
+## 20220114
+
+https://hellogithub.com/periodical/volume/68/
+
+ 3. the_silver_searcher 
+https://github.com/ggreer/the_silver_searcher
+Star 23.1k Watch 426 Fork 1.3k
+
+比 ack 更快的命令行搜索工具。速度快、功能强大、使用简单，支持 Linux、Windows、macOS 操作系统，还能够整合到 Vim 和 Emacs 等编辑器
+
+可以用来代替grep ，很快，可以用于windows,比windows里的findstr好用
+
+结合vim
+git clone https://gitee.com/azhao-1981/ack.vim ~/.vim/bundle/ack.vim
+https://gitee.com/azhao-1981/ack.vim
+
+https://beyondgrep.com/
+https://github.com/beyondgrep/ack3
+
+[ 4. wavefunctioncollapse](https://github.com/marian42/wavefunctioncollapse) 
+Star 3.5k Watch 165 Fork 401
+基于波函数坍缩 (WFC) 算法，实现的无限城市示例。城市里有房子、楼梯、树木、连接房屋的通道，你可以在城市中自由移动、跳跃、飞行，但不论你怎么移动都找不到尽头，因为这座城市会无限延伸
+https://github.com/mxgmn/WaveFunctionCollapse
+
+[波函数坍缩——一种根据局部信息生成图案的方法](https://zhuanlan.zhihu.com/p/28105374)
+
+[ 7. leocad ](https://github.com/leozide/leocad)
+Star 1.8k Watch 70 Fork 161
+用来创建虚拟乐高模型的 CAD 工具。适用于 Windows、Linux 和 macOS 系统
+
+[ 12. spider-flow ](https://github.com/ssssssss-team/spider-flow)
+Star 5.6k Watch 70 Fork 982 中文
+用流程图的方式编写爬虫的平台。无需写代码就可以快速完成一个简单的爬虫
+图不错，但好像搞不清怎么用
+
+[15. vue-color-avatar ](https://github.com/Codennnn/vue-color-avatar)
+Star 1.0k Watch 6 Fork 129 中文项目
+纯前端实现的矢量风格头像生成网站。可以通过搭配不同的素材，生成个性化头像。
+该项目使用 Vite + Vue3 开发，能够帮助前端初学者熟悉 Vue3 语法并掌握项目搭建的相关知识
+
+[6. colorfu ](https://github.com/pearmini/colorfu)
+Star 241 Watch 2 Fork 31 中文项目 上面的项目差不多
+自动生成由文字/颜色/图片/纹理元素组成的壁纸。
+
+[ 18. automa ](https://github.com/kholid060/automa)
+Star 3.2k Watch 44 Fork 284
+通过图形化界面拖拽功能模块，实现浏览器自动操作的扩展工具。轻松实现自动填表、截图、定时执行等操作。
+让浏览器自动完成预设工作流的插件，从而减少重复性操作提高效率
+
+[19. PyWebIO ](https://github.com/pywebio/PyWebIO)
+这个好，快速写表
+Star 2.6k Watch 40 Fork 207
+快速构建 Web 应用的 Python 工具。通过该项目你可在不写 HTML、CSS、JS 代码的前提下，
+仅用 Python 快速完成一个包含数据展示、表单的小型 Web 应用页面
+
+[20. zulip ](https://github.com/zulip/zulip)
+Star 15.0k Watch 385 Fork 5.0k
+完全开源的企业级即时通讯项目。后端采用 Python 语言实现性能足够强大，功能齐全相当于开源、免费的 Slack，拥有拖拽上传文件、代码高亮、Markdown 语法、应用整合、容易接入的 API 等功能，还支持 Web、PC、iOS 和 Android 主流平台，众多知名企业都在用，能够有效地提高团队沟通和办公效率。同时该项目对新手用户友好，如果你想加入一个不错的 Python 开源项目，推荐你花时间研究下它一定会有所收获
+
+ 1.  webssh 
+Star 2.6k Watch 74 Fork 684
+简单的 SSH 连接服务器的 Python Web 应用。该项目后端采用 Tornado Web 框架和 Python SSH 库 paramiko，前端是 TypeScript 写的命令行前端组件 Xterm.js 实现。整个项目简单还具有实用价值，可作为 Python Web 的实战项目学习
+https://github.com/huashengdun/webssh
+
+常见的路径规划算法集合。项目包含了 Python 代码实现、运行过程动画以及相关论文
+
+28. PathPlanning 
+Star 3.6k Watch 81 Fork 730
+常见的路径规划算法集合。项目包含了 Python 代码实现、运行过程动画以及相关论文
+https://github.com/zhm-real/PathPlanning
+
+31. fl_chart 
+Star 4.1k Watch 54 Fork 997
+Flutter 图表库。它支持折线图、条形图、饼图、散点图和雷达图
+https://github.com/imaNNeoFighT/fl_chart
+
+ 33. archbase 
+Star 1.8k Watch 34 Fork 161 中文
+教科书《计算机体系结构基础》第三版。在线阅读
+https://foxsen.github.io/archbase/
+https://github.com/foxsen/archbase
+
+ 34. spring-in-action-v6-translate 
+Star 282 Watch 12 Fork 64 中文
+《Spring 实战第 6 版》中文翻译。在线阅读
+
+https://github.com/LeonLi0102/spring-in-action-v6-translate
+https://leonli0102.github.io/spring-in-action-v6/
+
+[ 36. AnimeGANv2 ](https://github.com/foxsen/archbase)
+Star 3.3k Watch 51 Fork 429
+可以将图片和视频转换成漫画风格的工具。采用的是神经风格迁移+生成对抗网络（GAN）的组合，转换速度快。在线尝试
+https://huggingface.co/spaces/akhaliq/AnimeGANv2
+
+https://hellogithub.com/periodical/volume/69/
+5. cutter 
+Star 10.6k Watch 281 Fork 839
+一款免费开源的逆向工程平台。采用 Rizin 作为核心引擎并集成了 Ghidra 反编译器，它界面简洁功能强大，深受逆向工程师们的喜爱
+
+Linux 高级追踪工具和语言。该工具基于 eBPF 和 BBC 实现了通过探针机制采集内核和程序运行的信息，然后用图表等方式将信息展示出来，帮助开发者找到隐藏较深的 Bug、安全问题和性能瓶颈
+https://github.com/iovisor/bpftrace
+https://github.com/CleverRaven/Cataclysm-DDA
+https://cataclysmdda.org/releases/
+
+使用 Docker 容器作为节点，在本地快速运行起 Kubernetes 集群的工具。通过该工具可以快速创建媲美 k8s 原生的本地环境，而且占用资源相对较少启动速度快。多用于本地开发和测试 k8s 原生组件，不能用于线上环境
+https://github.com/kubernetes-sigs/kind
+
+专为中文内容展示设计的排版样式。它会让你的中文网站变得好看
+
+贴合网格的排版
+全标签样式美化
+预置多种排版样式
+简/繁体中文支持
+移动端支持
+https://github.com/sivan/heti
+
+有代码变动就会自动重启服务的 Go 工具。在开发 Go Web 项目时，每次修改后都需要手动编译、重启服务，这个工具会在文件和目录发生变动后，自动编译并重启服务，大大提高了开发效率
+https://github.com/cosmtrek/air
+
+支持多种语言和主题
+二进制搜索
+十六进制编辑器
+Python 脚本和插件
+支持 Linux、macOS、Windows
+https://github.com/rizinorg/cutter
+
+用于查看进程和连接的流量情况的命令行工具。界面简洁美观，支持进程、Socket 等不同视角查看流量数据
+https://github.com/chenjiandongx/sniffer
+
+wechat团队
+混淆压缩 APK 的工具。原理是采用资源混淆的方式，不涉及编译过程仅通过变短资源路径实现压缩和混淆，使用方法简单只需传入一个打包好的 APK 文件
+https://github.com/shwenzhang/AndResGuard
+
+基于 ArcoDesign 的 React/Vue UI 组件库。包含 60 多个开箱即用的高质量组件，还提供了可视化的样式配置平台，可用于快速构建企业级管理后台
+https://github.com/arco-design/arco-design
+
+高性能多维交叉分析表格工具。提供 KPI 趋势表、占比表、对比表等多种表格样式，开箱即用上手简单拥有详细的文档。通过按需渲染和虚拟滚动等方式，实现在百万级数据量秒级渲染、滚动不卡顿。在线体验
+https://github.com/antvis/S2
+
+适用于 Node.js 和 TypeScript 的 ORM。支持主流数据库可用于开发 REST API、GraphQL API、gRPC API 等任何需要连接数据库的程序，项目还包括了数据迁移工具和管理数据的 GUI 工具
+https://github.com/prisma/prisma
+
+将图片转化成各种较小图块拼接成的图像工具。马赛克风格的图片转化工具，支持自定义拼接图案和符号。工具实用方便、代码简单易懂，适合对图像感兴趣的小伙伴学习和上手
+https://github.com/nuno-faria/tiler
+
+简单的 macOS 状态栏 Python 库
+https://github.com/jaredks/rumps
+
+开源笔记工具。基于 Flutter 开发适用于各种操作系统，目标是成为 Notion 的代替品
+https://github.com/AppFlowy-IO/appflowy
+
+领英开源的成为 SRE（网站可靠性工程师）的入门级教程。内容涵盖 Web、Linux、Git、计算机网络、数据库、安全等方面
+https://github.com/linkedin/school-of-sre
+《关于 curl 的所有东西》。由 curl 项目发起者撰写的书，内容包括 curl 入门、开源、源码、项目等方面。在线阅读
+https://github.com/bagder/everything-curl
+
+开源的设计和原型在线平台。它不仅完全免费还提供 Docker 自建和在线使用，而且支持中文和团队共享。缺点是平台提供的组件太少了，第一次上手需要自己从形状开始搞，不过可以自定义组件做到一劳永逸。如果你在寻找开源、免费的原型设计平台，不妨试试它。在线尝试
+https://github.com/penpot/penpot
+https://penpot.app/
+设计资源集合。项目包含了图片、网站模版、CSS 框架、UI 等资源
+https://github.com/bradtraversy/design-resources-for-developers
+
+https://github.com/Eugeny/tabby
+高颜值的终端工具。功能强大高度可配置，适用于 Windows、macOS、Linux 操作系统
+也很消耗内存，想快而且不占用内存的话，可以用 [alacritty](https://github.com/alacritty/alacritty) 
+
+
+trending
+
+https://github.com/sottlmarek/DevSecOps
+
+Open-source customer engagement suite, an alternative to Intercom, Zendesk, Salesforce Service Cloud etc. 🔥💬
+https://github.com/chatwoot/chatwoot
+A Vue.js 3 UI Library
+https://github.com/arco-design/arco-design-vue
+A clone of the popular game Wordle made using React, Typescript, and Tailwind
+https://github.com/hannahcode/wordle
+NativeScript empowers you to access native platform APIs from JavaScript directly. Angular, Capacitor, Ionic, React, Svelte, Vue and you name it compatible.
+https://github.com/NativeScript/NativeScript
+All Algorithms implemented in Rust
+https://github.com/TheAlgorithms/Rust
+
+Open and extensible continuous delivery solution for Kubernetes. Powered by GitOps Toolkit.
+https://github.com/fluxcd/flux2
+Commandline tool for running SQL queries against JSON, CSV, Excel, Parquet, and more.
+https://github.com/multiprocessio/dsq
+A Workflow Engine for Offensive Security
+https://github.com/j3ssie/osmedeus
+An extremely fast JavaScript and CSS bundler and minifier
+https://github.com/evanw/esbuild
+A lightweight, dependency-free Python library (and command-line utility) for downloading YouTube Videos.
+https://github.com/pytube/pytube
+💡 Build AI-powered semantic search applications
+https://github.com/neuml/txtai
+
+新一代主机管理工具，支持web vnc和web shell
+https://github.com/jkstack/natpass
+Bash script to check if a domain or list of domains can be spoofed based in DMARC records
+https://github.com/v4d1/SpoofThatMail
+A simple, fast, and fun package for building command line apps in Go
+https://github.com/urfave/cli
+A task runner / simpler Make alternative written in Go
+https://github.com/go-task/task
+
+Moby Project - a collaborative project for the container ecosystem to assemble container-based systems
+https://github.com/moby/moby
+Never worry about losing your code. Written in Go
+https://github.com/nikochiko/autosaved
+Like Prometheus, but for logs.
+https://github.com/grafana/loki
+Build fast websites, faster. 🚀🧑‍🚀✨
+https://github.com/withastro/astro
+Window.js is an open-source Javascript runtime for desktop graphics programming.
+https://github.com/windowjs/windowjs
+
+https://github.com/prabhatsharma/zinc
+Zinc Search engine. A lightweight alternative to elasticsearch that requires minimal resources, written in Go.
+
+The all-in-one tool to supercharge your productivity
+https://github.com/alyssaxuu/omni
+
+
+https://www.ruby-lang.org/en/news/2021/11/24/ruby-2-6-9-released/
+https://www.ruby-lang.org/en/news/2021/11/24/cookie-prefix-spoofing-in-cgi-cookie-parse-cve-2021-41819/
+https://www.ruby-lang.org/en/news/2021/11/24/buffer-overrun-in-cgi-escape_html-cve-2021-41816/
+https://sourcegraph.com/github.com/ruby/ruby/-/compare/v2_6_8...v2_6_9?visible=10
+
+cookie 前缀欺诈的攻击 方法可见：
+https://hackerone.com/reports/895727
+百分号编码，又称：URL编码是特定上下文的统一资源定位符 的编码机制，实际上也适用于统一资源标志符的编码。也用于为application/x-www-form-urlencoded MIME准备数据，因为它用于通过HTTP的请求操作提交HTML表单数据。
+
+Stored XSS in custom emoji
+https://hackerone.com/reports/1198517
+https://gitlab.com/gitlab-org/gitlab/-/issues/231317
+
+https://www.ruby-lang.org/en/news/2021/11/24/buffer-overrun-in-cgi-escape_html-cve-2021-41816/
+2.7.x < 2.7.5
+3.0.x < 3.0.3
+This issue has been introduced since Ruby 2.7, so the cgi version bundled with Ruby 2.6 is not vulnerable.
+
+A security issue has been found in Ruby prior to 3.0.3 and 2.7.5. 
+A buffer overrun vulnerability exists in the cgi gem prior to 0.3.1, 0.2.1 and 0.1.1 when you pass a very large string (&gt; 700 MB) to CGI.escape_html on a platform where long type takes 4 bytes, typically, Windows.
+
+Java代码审计 —XXS跨站脚本
+https://www.freebuf.com/articles/web/319333.html
+
 ## 20220111
 
 邮件安全小游戏
