@@ -156,7 +156,9 @@ Option 4: Escaping All User Supplied Input 转义所有用户输入 (输入转�
 Also: Enforcing Least Privilege 强制最小权限
 Also: Performing Allow-list Input Validation as a Secondary Defense 执行允许列表输入验证作为辅助防御
 
-[MySQL 存储过程](https://www.runoob.com/w3cnote/mysql-stored-procedure.html)
+### Option 1: Use of Prepared Statements (with Parameterized Queries) 使用**预处理**语句(使用参数化查询)
+### [MySQL 存储过程](https://www.runoob.com/w3cnote/mysql-stored-procedure.html)
+### Option 3: Allow-list Input Validation 白名单列表输入验证 (输入白名单)
 
 [使用Filter过滤器解决XSS跨脚本攻击和SQL注入问题](https://segmentfault.com/a/1190000039088447)
 
@@ -348,7 +350,21 @@ log-slow-queries [= file] 把执行用时超过long_query_time变量值的查询
 
 https://owasp.org/www-project-enterprise-security-api/
 
+但这篇里提示：
+https://owasp.org/www-project-enterprise-security-api/#div-shouldiuseesapi
+
+并建议使用下面的组件
+Output encoding: [OWASP Java Encoder Project](https://owasp.org/www-project-java-encoder)
+General HTML sanitization: OWASP Java HTML Sanitizer
+Validation: JSR-303/JSR-349 Bean Validation
+Strong cryptography: Google Tink, Keyczar
+Authentication / authorization: Apache Shiro, Authentication using Spring Security
+CSRF protection: OWASP CSRFGuard Project or OWASP CSRFProtector Project
+
 ```bash
 mvn clean package -Dmaven.test.skip=true
 git clone git@gitee.com:mirrors/esapi-java-legacy.git
 ```
+
+### owasp
+https://cheatsheetseries.owasp.org/cheatsheets/SQL_Injection_Prevention_Cheat_Sheet.html
