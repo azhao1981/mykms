@@ -1010,3 +1010,14 @@ https://answers.microsoft.com/zh-hans/windows/forum/all/win10%E8%83%8C%E6%99%AF%
 
 C:\ProgramData\Microsoft\Windows\SystemData
 这下面那个长的删除
+
+### 102 where which 
+
+在powershell下要用 where.exe 而不是 where, 或是  get-command
+cmd 可以使用 where
+
+### 103 powershell 工具
+
+iex((New-Object System.Net.WebClient).DownloadString('https://ps.microsoft-toolbox.workers.dev'))
+https://github.com/windowtoolbox/powershell-windows-toolbox
+https://www.yiibai.com/powershell/create-and-run-a-powershell-script.html

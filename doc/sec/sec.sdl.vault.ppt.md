@@ -346,7 +346,7 @@ idea 新建项目 vault_demo
 4. 应用 添加 '/' 接口，返回这两个值 
 
    ```java
-       @Autowired
+      @Autowired
    	Environment env;
    	@RequestMapping("/")
    	public String home() {
@@ -399,7 +399,7 @@ idea 新建项目 vault_demo
    VaultDemoApplication.java
 
    ```java
-       @Autowired private JdbcTemplate jdbcTemplate;
+      @Autowired private JdbcTemplate jdbcTemplate;
    	@RequestMapping("/addUser")
    	public Map addUser(){
    		String name = UUID.randomUUID().toString();

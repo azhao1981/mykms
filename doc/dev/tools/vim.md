@@ -15,6 +15,9 @@ https://zhuanlan.zhihu.com/p/345554183
 三十分钟配置一个顺滑如水的 Vim
 https://zhuanlan.zhihu.com/p/102033129
 
+https://github.com/VundleVim/Vundle.vim#quick-start
+https://github.com/mileszs/ack.vim
+
 ### fzf
 
 里面有很多用法，值得看

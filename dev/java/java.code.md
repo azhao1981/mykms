@@ -7,7 +7,7 @@ https://www.runoob.com/w3cnote/java-annotation.html
 https://www.liaoxuefeng.com/wiki/1252599548343744/1265102803921888
 
 
-## Configuration、
+## Configuration
 SpringBoot - @Configuration、@Bean注解的使用详解（配置类的实现）
 https://www.hangge.com/blog/cache/detail_2506.html
 

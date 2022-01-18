@@ -12,3 +12,5 @@ https://maven.apache.org/
 
 https://maven.apache.org/shared/maven-script-interpreter/
 
+
+mvn clean package -Dmaven.test.skip=true
