@@ -1,8 +1,86 @@
 # 202201
 
-## 20220119
+## 20220127
+
+https://www.jianshu.com/p/dae5bbed39b1
+RabbitMQ入门教程（概念，应用场景，安装，使用）
+
+保姆级别的RabbitMQ教程！一看就懂！（有安装教程，送安装需要的依赖包，送Java、Golang两种客户端教学Case）
+https://www.cnblogs.com/ZhuChangwu/p/14093107.html
+
+mq版本：3.7.19
+
+bitnami 版本:
+https://hub.docker.com/r/bitnami/rabbitmq/tags?page=1&name=3.7
+
+```bash
+docker pull bitnami/rabbitmq:3.7.19
+docker run --name rabbitmq bitnami/rabbitmq:3.7.19
+
+tcp6       0      0 :::36879                :::*                    LISTEN      27691/node          
+tcp6       0      0 :::45093                :::*                    LISTEN      20775/node 
+
+$ curl -sSL https://raw.githubusercontent.com/bitnami/bitnami-docker-rabbitmq/master/docker-compose.yml > docker-compose.yml
+$ docker-compose up -d
+http://192.168.56.1:15672/
+RABBITMQ_USERNAME: RabbitMQ application username. Default: user
+RABBITMQ_PASSWORD: RabbitMQ application password. Default: bitnami
+
+$ docker run --name rabbitmq bitnami/rabbitmq:latest
+
+python:
+https://pypi.org/project/pika/
+```bash
+import pika
+
+connection = pika.BlockingConnection()
+channel = connection.channel()
+channel.basic_publish(exchange='test', routing_key='test',
+                      body=b'Test message.')
+connection.close()
+```
 
 
+
+https://hub.docker.com/_/rabbitmq?tab=tags
+docker pull rabbitmq:3.8.27
+
+https://github.com/smallnest/gen
+Converts a database into gorm structs and RESTful api
+
+## 20220126
+
+FreeSWITCH权威指南 .pdf
+链接: https://pan.baidu.com/s/1R2R1i-NbRkE4JbWBf3itEw 提取码: wg4h 复制这段内容后打开百度网盘手机App，操作更方便哦
+
+https://github.com/signalwire/freeswitch
+https://github.com/BetterVoice/freeswitch-container
+https://github.com/cdevelop/FreeSWITCH-ASR
+
+## 20220120
+
+https://github.com/SummerSec/ShiroAttack2
+
+https://github.com/doocs/advanced-java
+😮 Core Interview Questions & Answers For Experienced Java(Backend) Developers | 互联网 Java 工程师进阶知识完全扫盲：涵盖高并发、分布式、高可用、微服务、海量数据处理等领域知识
+https://github.com/ityouknow/spring-boot-examples
+
+https://github.com/Elfocrash/.NET-Backend-Developer-Roadmap
+
+https://github.com/KurtBestor/Hitomi-Downloader
+
+Build smaller, faster, and more secure desktop applications with a web frontend.
+https://github.com/tauri-apps/tauri
+
+🛠 [Beta] 面向研发的低代码元编程，代码可视编辑，辅助编码工具
+https://github.com/imcuttle/mometa
+
+📝A simple and elegant markdown editor, available for Linux, macOS and Windows.
+MIT
+https://github.com/marktext/marktext
+
+The Cyber Swiss Army Knife - a web app for encryption, encoding, compression and data analysis
+https://github.com/gchq/CyberChef
 
 ## 20220118
 
