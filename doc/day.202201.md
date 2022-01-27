@@ -39,7 +39,8 @@ channel.basic_publish(exchange='test', routing_key='test',
                       body=b'Test message.')
 connection.close()
 ```
-
+Python操作rabbitmq
+https://www.cnblogs.com/yuncong/p/10482376.html
 
 
 https://hub.docker.com/_/rabbitmq?tab=tags
