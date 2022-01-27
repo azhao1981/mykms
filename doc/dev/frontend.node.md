@@ -87,3 +87,26 @@ sudo npm install -g yarn
 yarn config set registry https://registry.npm.taobao.org -g
 ```
 
+## windows ERROR: node-gyp rebuild
+
+```bash
+npm install -g windows-build-tools
+```
+
+大多是 node-sass 版本过低，换成最新的 7.0.1就可以了
+
+https://www.jianshu.com/p/8fad9c7d8da6
+windows平台安装node-sass失败的解决办法
+注意需要使用管理员权限打开powershell（搜索powershell，右键）
+
+```bash
+npm install -g node-gyp
+npm install --global --production windows-build-tools
+```
+
+https://www.npmjs.com/package/node-sass
+这个已经 7.0.1
+Windows下安装前端项目，node-sass报错
+https://juejin.cn/post/6844904025003933703
+
+https://www.python.org/downloads/release/python-2718/

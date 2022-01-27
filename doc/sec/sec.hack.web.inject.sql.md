@@ -148,6 +148,11 @@ U/**/NION/**/SE/**/LECT/**/user，pwd from user
 https://cheatsheetseries.owasp.org/cheatsheets/SQL_Injection_Prevention_Cheat_Sheet.html
 
 Option 1: Use of Prepared Statements (with Parameterized Queries) 使用**预处理**语句(使用参数化查询)
+    [mysql预编译](https://www.cnblogs.com/qiumingcheng/p/8060471.html)
+    [PreparedStatement实现原理](https://blog.csdn.net/weixin_38937840/article/details/120932252)
+    [JDBC PreparedStatement 实现原理【推荐阅读】](http://www.javashuo.com/article/p-hofejqlk-bw.html)
+    PreparedStatement 可能认为是使用数据库server 的 预编译 功能，来防止SQL注入和优化访问功能
+    
 Option 2: Use of Stored Procedures 使用**存储过程**
 Option 3: Allow-list Input Validation 白名单列表输入验证 (输入白名单)
 Option 4: Escaping All User Supplied Input 转义所有用户输入 (输入转义) https://owasp.org/www-project-enterprise-security-api/
@@ -346,25 +351,129 @@ log-slow-queries [= file] 把执行用时超过long_query_time变量值的查询
 #log            = /var/log/mysql/mysql.log
 ```
 
+## [security-spring](https://www.baeldung.com/security-spring)
+
+https://www.baeldung.com/spring-prevent-xss
+
 ## esapi-java-legacy
 
 https://owasp.org/www-project-enterprise-security-api/
 
+https://github.com/ESAPI/esapi-java-legacy
+https://github1s.com/ESAPI/esapi-java-legacy
+\src\main\java\org\owasp\esapi\Encoder.java
+    String encodeForSQL(Codec codec, String input);
+\src\main\java\org\owasp\esapi\reference\DefaultEncoder.java
+    public String encodeForSQL(Codec codec, String input)
+\src\main\java\org\owasp\esapi\codecs\AbstractCodec.java
+    	public String encode(char[] immune, String input)
+\src\main\java\org\owasp\esapi\codecs\MySQLCodec.java
+    
+
+https://github.com/search?q=esapi&ref=opensearch
+
 但这篇里提示：
 https://owasp.org/www-project-enterprise-security-api/#div-shouldiuseesapi
 
-并建议使用下面的组件
+好像作者自己都不怎么推荐这个组件，并建议使用下面的组件
 Output encoding: [OWASP Java Encoder Project](https://owasp.org/www-project-java-encoder)
-General HTML sanitization: OWASP Java HTML Sanitizer
-Validation: JSR-303/JSR-349 Bean Validation
-Strong cryptography: Google Tink, Keyczar
-Authentication / authorization: Apache Shiro, Authentication using Spring Security
-CSRF protection: OWASP CSRFGuard Project or OWASP CSRFProtector Project
+  https://github.com/OWASP/owasp-java-encoder/
+  https://mvnrepository.com/artifact/org.owasp.encoder/encoder/1.2.3
+  这个是针对xss的
+  但好像也包含了 esapi
+  https://github.com/OWASP/owasp-java-encoder/blob/main/esapi/src/main/java/org/owasp/encoder/esapi/ESAPIEncoder.java
+  可以看这个：每一个encoder都包含了什么过滤功能
+    https://github.com/find-sec-bugs/find-sec-bugs/blob/fa7f7c4d43f178bf8e2062a35d5d66214fe88965/findsecbugs-plugin/src/main/resources/safe-encoders/owasp.txt
+General HTML sanitization: [OWASP Java HTML Sanitizer](https://owasp.org/www-project-java-html-sanitizer/)
+  https://github.com/owasp/java-html-sanitizer
+Validation: [JSR-303/JSR-349 Bean Validation](https://beanvalidation.org/)
+Strong cryptography: [Google Tink](https://github.com/google/tink), Keyczar
+    Important note: Keyczar is deprecated. The Keyczar developers recommend Tink.
+Authentication / authorization: [Apache Shiro](https://shiro.apache.org/), Authentication using Spring Security
+CSRF protection: [OWASP CSRFGuard Project](https://owasp.org/www-project-csrfguard/) or [OWASP CSRFProtector Project](https://owasp.org/www-project-csrfprotector/)
 
 ```bash
 mvn clean package -Dmaven.test.skip=true
 git clone git@gitee.com:mirrors/esapi-java-legacy.git
 ```
 
-### owasp
-https://cheatsheetseries.owasp.org/cheatsheets/SQL_Injection_Prevention_Cheat_Sheet.html
+这篇也说得很明白，过时了
+https://security.stackexchange.com/questions/170523/is-owasp-esapi-still-the-recommended-way-to-secure-jsp-pages
+
+这个也算一个示例
+https://github.com/yiminyangguang520/spring-boot-tutorials/blob/master/core-java/src/main/resources/ESAPI.properties
+
+spring-security-esapi
+https://github1s.com/rbwildchild/esapi-spring
+git@github.com:rbwildchild/esapi-spring.git
+
+Salesforce对esapi的使用示例
+https://github.com/forcedotcom/force-dot-com-esapi
+
+https://github.com/OWASP/EJSF
+git@github.com:OWASP/EJSF.git
+
+ruby 但2011年就不更新了 Ruby-ESAPI
+https://github.com/thesp0nge/owasp-esapi-ruby
+
+Java MySQLCodec類代碼示例
+https://vimsky.com/zh-tw/examples/detail/java-class-org.owasp.esapi.codecs.MySQLCodec.html
+
+http://localhost:8080/hello?name=abc
+http://localhost:8080/hello?in_name=abc' or '1' = '1
+http://localhost:8080/hello?es_name=abc
+http://localhost:8080/hello?es_name=abc' or '1' = '1
+
+2022-01-19 11:05:02.194 DEBUG 19908 --- [nio-8080-exec-2] o.s.jdbc.core.JdbcTemplate               : Executing SQL query [Select * from users where fullname = 'abc\' or \'1\' \= \'1' limit 1;]
+
+esapi 配置问题
+https://github.com/yiminyangguang520/spring-boot-tutorials/blob/master/core-java/src/main/resources/ESAPI.properties
+
+https://stackoverflow.com/questions/34295088/esapi-getting-noclassdeffounderror-loggerfactory-with-banned-dependency
+
+```properties
+ESAPI.Logger=org.owasp.esapi.logging.slf4j.Slf4JLogFactory
+Logger.UserInfo=false
+Logger.ClientInfo=false
+```
+
+```java
+Codec MYSQL_CODEC = new MySQLCodec(MySQLCodec.Mode.STANDARD);
+es_name = ESAPI.encoder().encodeForSQL( MYSQL_CODEC, es_name);
+
+String sql = "Select * from users where fullname = '"+ es_name + "' limit 1;";
+Map result  = jdbcTemplate.queryForMap(sql);
+String fullName = String.valueOf(result.get("fullname"));
+return "Hello " + fullName;
+```
+
+https://github.com/ESAPI/esapi-java-legacy/blob/develop/documentation/esapi4java-core-2.2.1.1-release-notes.txt
+
+NoClassDefFoundError: org/apache/log4j/spi/LoggerFactory ESAPI 问题排查笔记
+https://blog.csdn.net/TimerBin/article/details/86499716
+
+https://github.com/find-sec-bugs/find-sec-bugs/blob/fa7f7c4d43f178bf8e2062a35d5d66214fe88965/findsecbugs-plugin/src/main/resources/safe-encoders/apache-commons.txt
+apache 还提供了一个方法，StringEscapeUtils.escapeSql
+org/apache/commons/lang/StringEscapeUtils.escapeSql(Ljava/lang/String;)Ljava/lang/String;:0|+SQL_INJECTION_SAFE
+
+但他现只做一个事，就是把 ' 转成 ''
+
+https://commons.apache.org/proper/commons-lang/javadocs/api-2.6/org/apache/commons/lang/StringEscapeUtils.html#escapeSql%28java.lang.String%29
+[StringEscapeUtils.escapeSql](https://www.cnblogs.com/smallfa/p/6116754.html)
+[Java StringEscapeUtils.escapeSql方法代码示例](https://vimsky.com/examples/detail/java-method-org.apache.commons.lang.StringEscapeUtils.escapeSql.html)
+
+包括
+https://github.com/find-sec-bugs/find-sec-bugs/blob/fa7f7c4d43f178bf8e2062a35d5d66214fe88965/findsecbugs-plugin/src/main/resources/safe-encoders/other.txt
+在内，基本上都是XSS的多
+--Spring Framework，如：
+org/springframework/web/util/HtmlUtils.htmlEscape(Ljava/lang/String;)Ljava/lang/String;:0|+XSS_SAFE
+org/springframework/web/util/HtmlUtils.htmlEscape(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;:1|+XSS_SAFE
+org/springframework/web/util/HtmlUtils.htmlUnescape(Ljava/lang/String;)Ljava/lang/String;:0|-XSS_SAFE
+org/springframework/web/util/HtmlUtils.htmlEscapeDecimal(Ljava/lang/String;)Ljava/lang/String;:0|+XSS_SAFE
+org/springframework/web/util/HtmlUtils.htmlEscapeDecimal(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;:1|+XSS_SAFE
+org/springframework/web/util/HtmlUtils.htmlEscapeHex(Ljava/lang/String;)Ljava/lang/String;:0|+XSS_SAFE
+org/springframework/web/util/HtmlUtils.htmlEscapeHex(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;:1|+XSS_SAFE
+org/springframework/web/util/JavaScriptUtils.javaScriptEscape(Ljava/lang/String;)Ljava/lang/String;:0|+XSS_SAFE
+
+org/springframework/util/StringUtils.getFilename(Ljava/lang/String;)Ljava/lang/String;:SAFE
+org/springframework/util/StringUtils.getFilenameExtension(Ljava/lang/String;)Ljava/lang/String;:SAFE

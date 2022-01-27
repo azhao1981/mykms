@@ -1,5 +1,92 @@
 # 202201
 
+## 20220127
+
+https://www.jianshu.com/p/dae5bbed39b1
+RabbitMQ入门教程（概念，应用场景，安装，使用）
+
+保姆级别的RabbitMQ教程！一看就懂！（有安装教程，送安装需要的依赖包，送Java、Golang两种客户端教学Case）
+https://www.cnblogs.com/ZhuChangwu/p/14093107.html
+
+mq版本：3.7.19
+
+bitnami 版本:
+https://hub.docker.com/r/bitnami/rabbitmq/tags?page=1&name=3.7
+
+```bash
+docker pull bitnami/rabbitmq:3.7.19
+docker run --name rabbitmq bitnami/rabbitmq:3.7.19
+
+tcp6       0      0 :::36879                :::*                    LISTEN      27691/node          
+tcp6       0      0 :::45093                :::*                    LISTEN      20775/node 
+
+$ curl -sSL https://raw.githubusercontent.com/bitnami/bitnami-docker-rabbitmq/master/docker-compose.yml > docker-compose.yml
+$ docker-compose up -d
+http://192.168.56.1:15672/
+RABBITMQ_USERNAME: RabbitMQ application username. Default: user
+RABBITMQ_PASSWORD: RabbitMQ application password. Default: bitnami
+
+$ docker run --name rabbitmq bitnami/rabbitmq:latest
+
+python:
+https://pypi.org/project/pika/
+```bash
+import pika
+
+connection = pika.BlockingConnection()
+channel = connection.channel()
+channel.basic_publish(exchange='test', routing_key='test',
+                      body=b'Test message.')
+connection.close()
+```
+
+
+
+https://hub.docker.com/_/rabbitmq?tab=tags
+docker pull rabbitmq:3.8.27
+
+https://github.com/smallnest/gen
+Converts a database into gorm structs and RESTful api
+
+## 20220126
+
+FreeSWITCH权威指南 .pdf
+链接: https://pan.baidu.com/s/1R2R1i-NbRkE4JbWBf3itEw 提取码: wg4h 复制这段内容后打开百度网盘手机App，操作更方便哦
+
+https://github.com/signalwire/freeswitch
+https://github.com/BetterVoice/freeswitch-container
+https://github.com/cdevelop/FreeSWITCH-ASR
+
+## 20220120
+
+https://github.com/SummerSec/ShiroAttack2
+
+https://github.com/doocs/advanced-java
+😮 Core Interview Questions & Answers For Experienced Java(Backend) Developers | 互联网 Java 工程师进阶知识完全扫盲：涵盖高并发、分布式、高可用、微服务、海量数据处理等领域知识
+https://github.com/ityouknow/spring-boot-examples
+
+https://github.com/Elfocrash/.NET-Backend-Developer-Roadmap
+
+https://github.com/KurtBestor/Hitomi-Downloader
+
+Build smaller, faster, and more secure desktop applications with a web frontend.
+https://github.com/tauri-apps/tauri
+
+🛠 [Beta] 面向研发的低代码元编程，代码可视编辑，辅助编码工具
+https://github.com/imcuttle/mometa
+
+📝A simple and elegant markdown editor, available for Linux, macOS and Windows.
+MIT
+https://github.com/marktext/marktext
+
+The Cyber Swiss Army Knife - a web app for encryption, encoding, compression and data analysis
+https://github.com/gchq/CyberChef
+
+## 20220118
+
+基于 Spring Boot 和 Spring Cloud 实现微服务架构
+https://zhuanlan.zhihu.com/p/39659699
+
 ## 20220117
 
 https://wizardforcel.gitbooks.io/owasp-cheat-sheet-zh/content/index.html
@@ -71,8 +158,6 @@ Star 2.6k Watch 74 Fork 684
 简单的 SSH 连接服务器的 Python Web 应用。该项目后端采用 Tornado Web 框架和 Python SSH 库 paramiko，前端是 TypeScript 写的命令行前端组件 Xterm.js 实现。整个项目简单还具有实用价值，可作为 Python Web 的实战项目学习
 https://github.com/huashengdun/webssh
 
-常见的路径规划算法集合。项目包含了 Python 代码实现、运行过程动画以及相关论文
-
 28. PathPlanning 
 Star 3.6k Watch 81 Fork 730
 常见的路径规划算法集合。项目包含了 Python 代码实现、运行过程动画以及相关论文
@@ -111,7 +196,9 @@ https://github.com/iovisor/bpftrace
 https://github.com/CleverRaven/Cataclysm-DDA
 https://cataclysmdda.org/releases/
 
-使用 Docker 容器作为节点，在本地快速运行起 Kubernetes 集群的工具。通过该工具可以快速创建媲美 k8s 原生的本地环境，而且占用资源相对较少启动速度快。多用于本地开发和测试 k8s 原生组件，不能用于线上环境
+使用 Docker 容器作为节点，在本地快速运行起 Kubernetes 集群的工具。
+通过该工具可以快速创建媲美 k8s 原生的本地环境，而且占用资源相对较少启动速度快。
+多用于本地开发和测试 k8s 原生组件，不能用于线上环境
 https://github.com/kubernetes-sigs/kind
 
 专为中文内容展示设计的排版样式。它会让你的中文网站变得好看
@@ -123,7 +210,8 @@ https://github.com/kubernetes-sigs/kind
 移动端支持
 https://github.com/sivan/heti
 
-有代码变动就会自动重启服务的 Go 工具。在开发 Go Web 项目时，每次修改后都需要手动编译、重启服务，这个工具会在文件和目录发生变动后，自动编译并重启服务，大大提高了开发效率
+有代码变动就会自动重启服务的 Go 工具。
+在开发 Go Web 项目时，每次修改后都需要手动编译、重启服务，这个工具会在文件和目录发生变动后，自动编译并重启服务，大大提高了开发效率
 https://github.com/cosmtrek/air
 
 支持多种语言和主题
