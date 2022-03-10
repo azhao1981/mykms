@@ -29,6 +29,10 @@ sudo ./busybox ps -efo user,group,comm,args,pid,ppid,pgid,etime,nice,rgroup,ruse
 
 https://gitlab.com/procps-ng/procps
 
+备份进程
+通过 ls -al /proc/[pid]/exe 查看这两个进程的程序位置，其中[pid]为xmp 和 [atd]两个进程的进程id
+cp /proc/[pid]/exe ./xxx
+
 [Linux应急响应笔记](https://www.freebuf.com/articles/network/248376.html) 
 
 [Linux应急响应笔记（二）|需要应用到实践](https://www.freebuf.com/articles/others-articles/257827.html)

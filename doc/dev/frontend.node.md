@@ -82,7 +82,7 @@ sudo npm install -g npm
 # 安装 yarn，请不要用 apt install yarn
 npm install -g yarn
 # 如果是系统安装，需要 sudo
-sudo npm install -g yarn
+sudo npm install -g yarn    
 
 yarn config set registry https://registry.npm.taobao.org -g
 ```

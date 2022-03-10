@@ -348,6 +348,7 @@ https://github.com/gin-gonic/gin
 
 ```bash
 git clone https://github.com/syndbg/goenv.git ~/.goenv
+git clone git@gitee.com:mirrors_syndbg/goenv.git ~/.goenv
 
 echo 'export GOENV_ROOT="$HOME/.goenv"' >> ~/.bash_profile
 echo 'export PATH="$GOENV_ROOT/bin:$PATH"' >> ~/.bash_profile
@@ -357,6 +358,9 @@ echo 'export GOENV_ROOT="$HOME/.goenv"' >> ~/.bashrc
 echo 'export PATH="$GOENV_ROOT/bin:$PATH"' >> ~/.bashrc
 echo 'eval "$(goenv init -)"' >> ~/.bashrc
 
+echo 'export GOENV_ROOT="$HOME/.goenv"' >> ~/.zshrc
+echo 'export PATH="$GOENV_ROOT/bin:$PATH"' >> ~/.zshrc
+echo 'eval "$(goenv init -)"' >> ~/.zshrc
 
 cd ~/.goenv/plugins/go-build/share/go-build
 
@@ -366,12 +370,12 @@ gsed -i 's/https:\/\/dl.google.com\/go\//https:\/\/studygolang.com\/dl\/golang\/
 git diff
 
 sed -i 's/https:\/\/golang.org\/dl\//https:\/\/studygolang.com\/dl\/golang\//g' 1.13.15
-sed -i 's/https:\/\/golang.org\/dl\//https:\/\/studygolang.com\/dl\/golang\//g' 1.14.7
+sed -i 's/https:\/\/golang.org\/dl\//https:\/\/studygolang.com\/dl\/golang\//g' 1.14.9
 git diff
--> https://golang.org/dl/go1.13.15.linux-amd64.tar.gz
+-> https://golang.org/dl/go1.14.9.linux-amd64.tar.gz
 
 goenv install 1.13.15
-goenv install 1.14.7
+goenv install 1.14.9
 goenv global 1.13.15
 g reset --hard origin/master
 
@@ -395,7 +399,6 @@ subl plugins/go-build/share/go-build/1.10.1
 
 goenv install 1.10.1
 goenv shell 1.10.1
-
 ```
 
 ## [goproxy/镜像代理](https://github.com/goproxy/goproxy.cn)

@@ -222,6 +222,9 @@ https://juejin.im/post/5b8a4536e51d4538c545645c
 https://kubernetes.io/zh/docs/tasks/tools/install-kubectl/
 
 26 剪贴板管理
+
+Win  + V
+Ditto 
 27 vs code支持 ruby
 ruby
 rails

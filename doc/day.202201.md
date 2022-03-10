@@ -1,5 +1,98 @@
 # 202201
 
+## 20220129
+
+以下来自： https://hellogithub.com/periodical/volume/70/
+ 6. [PDFPatcher](https://github.com/wmjordan/PDFPatcher) 
+Star 3.4k Watch 47 Fork 649 中文
+多功能的 PDF 工具箱，可用于修改 PDF 文件信息。支持：
+PDF补丁丁——PDF工具箱，可以编辑书签、剪裁旋转页面、解除限制、提取或合并文档，探查文档结构，提取图片、转成图片等等
+pdfpatcher.cnblogs.com/
+修改、合并 PDF 文档
+自动生成书签
+书签编辑器
+高速无损地导出文件中的图片
+ 10. [gotests](https://github.com/cweill/gotests) 
+Star 3.7k Watch 75 Fork 272
+自动生成 Go 语言测试代码的工具。该项目基于表驱动测试法（TableDrivenTests）自动生成测试代码，表驱动测试法是创建一张数据表格，每一行为输入和预期输出值，然后用这张表格的数据测试代码
+[ go-pry ](https://github.com/d4l3k/go-pry)
+Star 2.8k Watch 35 Fork 66
+Go 语言的交互式 REPL 命令行工具
+
+[ 1.  momo-code-sec-inspector-java ](https://github.com/momosecurity/momo-code-sec-inspector-java)
+Java 静态代码安全审计工具。它能够在编码过程中发现潜在的安全风险，并提供一键修复的功能，可在 IDEA 的插件市场安装
+
+ 17. [maven-mvnd ](https://github.com/apache/maven-mvnd)
+Star 0 Watch 0 Fork 0
+Apache Maven 团队开源的更快的构建工具。因为内嵌了 Maven 所以可以丝滑地从 Maven 切换为 mvnd，而且它相较于 Maven 启动速度更快、使用的内存更少、编译花费的时间更少
+
+ resume 
+https://github.com/visiky/resume
+visiky.github.io/resume?user=visiky
+Star 771 Watch 13 Fork 158 中文
+在线简历生成器。轻松实现在线简历，支持在线预览、编辑和下载 PDF 简历。在线尝试
+
+ 20. [mometa](https://github.com/imcuttle/mometa) 
+Star 1.9k Watch 39 Fork 263 中文
+前端代码可视化编辑器。一款低代码辅助开发的工具，可通过拖拽的方式构建和编辑页面。特性：
+
+🛠 直接作用于源码，支持移动端布局
+🍒 开放物料生态，可定制团队内物料库
+🌟 无缝兼容接入，不破坏已有项目开发模式
+
+21. [shepherd](https://github.com/shipshapecode/shepherd) 
+Star 9.7k Watch 108 Fork 557
+用来引导用户浏览网站的 JavaScript 库
+
+28. django-grappelli 
+Star 3.2k Watch 95 Fork 643
+美化 Django 默认管理后台界面的库
+
+36. one-html-page-challenge 
+Star 440 Watch 16 Fork 154
+单个 HTML 页面的挑战。该项目汇集了满足仅有一个 HTML 文件、小于 1MB、不可接入 API、不能引用库条件下实现的创意网页。在线查看
+https://github.com/Metroxe/one-html-page-challenge
+https://onehtmlpagechallenge.com/
+
+realworld 
+Star 63.5k Watch 1.6k Fork 5.8k
+该项目汇集了不同技术栈的实战项目。这里有采用不同编程语言框架，实现相同功能内容网站的项目代码。例如用 Vue.js+Django 开发包含注册、登录、发布文章、标签、评论等功能的网站，让你通过简单但完整的实战项目，快速上手新的技术栈，消除刚接触某个技术时的手足无措。点击查看
+https://github.com/gothinkster/realworld
+
+ 38. rust-course 
+Star 3.1k Watch 46 Fork 236 中文
+《Rust 语言圣经》涵盖了 Rust 语言从入门到精通的全部知识。该书目前还未完成，正处于积极更新的状态。在线阅读
+https://book.rust.team/
+https://github.com/sunface/rust-course
+
+[代码安全规则集合](https://github.com/Qihoo360/safe-rules)
+Star 141 Watch 6 Fork 36 中文
+由 360 质量工程部开源的《代码安全规则集合》。一份全面详细的 C/C++ 编程规范指南，适用于桌面、服务端以及嵌入式等软件开发
+
+https://github.com/Qihoo360/safe-rules
+
+https://podman.io/
+lxd https://linuxcontainers.org/lxd/introduction/
+https://containerd.io/
+https://buildah.io/
+它是一个提供类似于在 Docker 中运行 `docker build` 的功能的工具。Buildah 经常与 Podman 一起使用，互作补充，例如，Podman 在后台使用 Buildah 功能的子集来实现其构建过程。
+BuildKit
+https://docs.docker.com/develop/develop-images/build_enhancements/
+在较新的 Docker 版本中作为实验性功能提供。与 Docker 一样，它使用守护程序运行。不过，标准 Docker 构建和 BuildKit 之间的主要区别之一是，前者是逐层构建，后者提供并行构建处理
+https://github.com/opencontainers/runc
+
+https://github.com/spring-projects/spring-authorization-server
+
+https://github.com/roottusk/vapi
+vAPI is Vulnerable Adversely Programmed Interface which is Self-Hostable API that mimics OWASP API Top 10 scenarios in the means of Exercises.
+
+https://github.com/berdav/CVE-2021-4034
+https://github.com/azhao1981/CVE-2021-4034
+
+ubuntu@ubuntu:~/CVE-2021-4034-berdav$ ll /usr/bin/pkexec
+-rwsr-xr-x 1 root root 22520 Mar 27  2019 /usr/bin/pkexec*
+
+
 ## 20220127
 
 https://www.jianshu.com/p/dae5bbed39b1
@@ -42,7 +135,6 @@ connection.close()
 Python操作rabbitmq
 https://www.cnblogs.com/yuncong/p/10482376.html
 
-
 https://hub.docker.com/_/rabbitmq?tab=tags
 docker pull rabbitmq:3.8.27
 
@@ -51,12 +143,6 @@ Converts a database into gorm structs and RESTful api
 
 ## 20220126
 
-FreeSWITCH权威指南 .pdf
-链接: https://pan.baidu.com/s/1R2R1i-NbRkE4JbWBf3itEw 提取码: wg4h 复制这段内容后打开百度网盘手机App，操作更方便哦
-
-https://github.com/signalwire/freeswitch
-https://github.com/BetterVoice/freeswitch-container
-https://github.com/cdevelop/FreeSWITCH-ASR
 
 ## 20220120
 
