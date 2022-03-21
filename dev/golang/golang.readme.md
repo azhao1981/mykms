@@ -371,10 +371,11 @@ git diff
 
 sed -i 's/https:\/\/golang.org\/dl\//https:\/\/studygolang.com\/dl\/golang\//g' 1.13.15
 sed -i 's/https:\/\/golang.org\/dl\//https:\/\/studygolang.com\/dl\/golang\//g' 1.14.9
+sed -i 's/https:\/\/go.dev\/dl\//https:\/\/studygolang.com\/dl\/golang\//g' 1.17.8
 git diff
 -> https://golang.org/dl/go1.14.9.linux-amd64.tar.gz
 
-goenv install 1.13.15
+goenv install 1.17.8
 goenv install 1.14.9
 goenv global 1.13.15
 g reset --hard origin/master

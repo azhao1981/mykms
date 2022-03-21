@@ -125,7 +125,6 @@ http://www.expressjs.com.cn/guide/behind-proxies.html
 
 <https://github.com/facebook/nuclide An open IDE for web and native mobile development>
 
-<https://github.com/facebook/osquery>
 
 <https://github.com/facebook/jest Painless JavaScript Unit Testing>
 

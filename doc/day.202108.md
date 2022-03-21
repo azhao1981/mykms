@@ -234,14 +234,7 @@ https://www.esecurityplanet.com/products/casb-security-vendors/
 
 https://blog.runpanther.io/open-source-cloud-security-tools/
 
-https://osquery.readthedocs.io/en/latest/introduction/using-osqueryi/
-https://github.com/osquery/osquery
-```
-osqueryi
-SELECT DISTINCT processes.name, listening_ports.port, processes.pid
-  FROM listening_ports JOIN processes USING (pid)
-  WHERE listening_ports.address = '0.0.0.0';
-```
+
 
 go-audit is an alternative to the auditd daemon that ships with many distros
 https://github.com/slackhq/go-audit

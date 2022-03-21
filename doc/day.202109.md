@@ -146,16 +146,6 @@ star 数 fork 数 最新更新时间 证书
 还在看开源项目的Star？这个指标其实更值得关注！
 https://zhuanlan.zhihu.com/p/386806326
 
-[osquery](https://github.com/osquery/osquery)
-```sql
-SELECT * FROM users;
-SELECT * FROM processes WHERE on_disk = 0;
-SELECT name FROM processes WHERE name like '%chrome%';
-
-SELECT DISTINCT processes.name, listening_ports.port, processes.pid
-  FROM listening_ports JOIN processes USING (pid)
-  WHERE listening_ports.address = '0.0.0.0';
-```
 
 内网渗透测试：域用户和机器用户
 https://www.freebuf.com/articles/network/283767.html

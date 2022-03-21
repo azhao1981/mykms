@@ -20,3 +20,15 @@ STUN（Session Traversal Utilities for NAT，NAT会话穿越应用程序）是�
 
 https://github.com/DoubangoTelecom/sipml5
 https://github.com/collecttix/ctxSip
+
+## log
+Freeswitch log 模块
+https://codeantenna.com/a/dkiVWg7YKL
+
+logfile.conf.xml
+
+https://www.codeleading.com/article/1188757971/
+FreeSWITCH状态日志
+
+eval ${log_dir}
+/usr/local/freeswitch/log

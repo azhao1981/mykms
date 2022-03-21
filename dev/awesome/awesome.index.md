@@ -79,8 +79,7 @@ https://github.com/donnemartin/data-science-ipython-notebooks
 https://github.com/Simple-XX/SimpleKernel
 7、algo：Golang 程序员面试中的问题和解答集合。该项目目前完成了大部分的数据结构和算法部分，准备相关面试的小伙伴可以阅读学习起来了
 https://github.com/hoanhan101/algo
-9、websocket：Go 的 websocket 三方库。看看它和标准库的对比，你就知道为什么它会出现在本期月刊中了
-https://github.com/gorilla/websocket
+
 13、MyBookshelf：免费开源的安卓小说阅读软件，能够自定义订阅小说数据源。支持：
 TODO: 搞一个
 https://github.com/gedoor/MyBookshelf
