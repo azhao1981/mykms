@@ -21,3 +21,7 @@ next(iter(a[i:]), 'fail')
 l = [1]
 l[10] if 10 < len(l) else 'fail'
 ```
+
+
+Python 中更优雅的环境变量设置方案
+https://juejin.cn/post/6844904079496314894

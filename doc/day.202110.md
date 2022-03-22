@@ -215,8 +215,6 @@ https://www.jvt.me/posts/2019/11/28/self-signed-certs-ruby/
 
 ## 20211008
 
-https://github.com/teoseller/osquery-attck
-https://gitee.com/azhao-1981/osquery-attck
 
 [Linux应急响应指南 #7](https://github.com/AI0TSec/blog/issues/7)
 

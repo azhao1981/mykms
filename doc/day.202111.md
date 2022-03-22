@@ -259,8 +259,7 @@ https://github.com/nilaoda/BBDown
 常用 CSS 样式示例集合
 https://github.com/QiShaoXuan/css_tricks
 
-基于 Go 语言实现的在线客服系统，采用 Gin+MySQL+JWT+WebSocket 等技术栈实现
-https://github.com/taoshihan1991/go-fly
+
 
 用来搞定 Go 应用中配置的库。支持多种配置文件类型、监控并重新加载配置文件、远程读取配置系统等
 https://github.com/spf13/viper

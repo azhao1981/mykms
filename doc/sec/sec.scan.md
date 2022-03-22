@@ -249,9 +249,7 @@ http://www.ruanyifeng.com/blog/2011/02/seven_myths_about_https.html
 
 “安全猴”是Netflix三年前开发的一个安全工具，能够对亚马逊云服务的配置进行监控和安全分析，组件功能包括监控各种AWS账号组件，机遇规则的开发和执行活动，在审计规则被触发时通知用户，并存储配置历史信息用作电子取证和审计目的。
 
-二、[OSquery](https://github.com/facebook/osquery)
 
-　　OSquery是Facebook刚刚发布的一个安全工具，为安全专业人士提供了一个可调用底层操作系统功能的系统，例如启动进程、加载内核模块、在SQL数据库表中打开网络连接进行查询和监控等。
 
 三、[Skyline](https://github.com/etsy/skyline)
 

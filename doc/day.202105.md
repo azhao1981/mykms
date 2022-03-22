@@ -366,8 +366,6 @@ https://www.vuxml.org/freebsd/vuln.xml
 
 https://www.vuxml.org/
 VuXML is the Vulnerability and eXposure Markup Language, an XML application for documenting security issues in a software package collection such as the FreeBSD Ports Collection.
-
-https://github.com/osquery/osquery
 https://github.com/toniblyx/my-arsenal-of-aws-security-tools
 
 开发安全的 API 所需要核对的清单
