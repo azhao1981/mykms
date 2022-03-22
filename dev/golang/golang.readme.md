@@ -348,31 +348,27 @@ https://github.com/gin-gonic/gin
 
 ```bash
 git clone https://github.com/syndbg/goenv.git ~/.goenv
-
-echo 'export GOENV_ROOT="$HOME/.goenv"' >> ~/.bash_profile
-echo 'export PATH="$GOENV_ROOT/bin:$PATH"' >> ~/.bash_profile
-echo 'eval "$(goenv init -)"' >> ~/.bash_profile
+git clone git@gitee.com:mirrors_syndbg/goenv.git ~/.goenv
 
 echo 'export GOENV_ROOT="$HOME/.goenv"' >> ~/.bashrc
 echo 'export PATH="$GOENV_ROOT/bin:$PATH"' >> ~/.bashrc
 echo 'eval "$(goenv init -)"' >> ~/.bashrc
 
+# 这时 wsl里的code并不能使用，需要
+echo 'source ~/.bashrc'>> ~/.bash_profile
 
 cd ~/.goenv/plugins/go-build/share/go-build
 
-# 把地址改成 studygolang.com(国内)
-gsed -i 's/https:\/\/storage.googleapis.com\/go\//https:\/\/studygolang.com\/dl\/golang\//g' 1.7.3
-gsed -i 's/https:\/\/dl.google.com\/go\//https:\/\/studygolang.com\/dl\/golang\//g' 1.13.3
-git diff
+# 把地址改成 ustc, 不要再用studygolang.com(国内)
 
-sed -i 's/https:\/\/golang.org\/dl\//https:\/\/studygolang.com\/dl\/golang\//g' 1.13.15
-sed -i 's/https:\/\/golang.org\/dl\//https:\/\/studygolang.com\/dl\/golang\//g' 1.14.7
+https://mirrors.ustc.edu.cn/golang/
+sed -i 's/https:\/\/golang.org\/dl\//https:\/\/mirrors.ustc.edu.cn\/golang\//g' 1.14.15
+sed -i 's/https:\/\/go.dev\/dl\//https:\/\/mirrors.ustc.edu.cn\/golang\//g' 1.17.6
 git diff
--> https://golang.org/dl/go1.13.15.linux-amd64.tar.gz
+-> https://golang.org/dl/go1.14.15.linux-amd64.tar.gz
 
-goenv install 1.13.15
-goenv install 1.14.7
-goenv global 1.13.15
+goenv install 1.14.15
+goenv global 1.14.15
 g reset --hard origin/master
 
 # brew 并不好,还是用手动安装吧
@@ -386,16 +382,6 @@ echo 'eval "$(goenv init -)"' >> ~/.bashrc
 ~/.goenv/completions/goenv.bash
 
 goenv init
-
-cd /usr/local/Cellar/goenv/1.23.3
-
-open https://studygolang.com/dl
-subl plugins/go-build/share/go-build/1.10.1
- https://dl.google.com/go/ -> https://studygolang.com/dl/golang/
-
-goenv install 1.10.1
-goenv shell 1.10.1
-
 ```
 
 ## [goproxy/镜像代理](https://github.com/goproxy/goproxy.cn)
@@ -403,6 +389,7 @@ goenv shell 1.10.1
 ```bash
 go env -w GOPROXY=https://goproxy.cn,direct
 ```
+
 <https://github.com/golang/go/wiki/Modules#are-there-always-on-module-repositories-and-enterprise-proxies>
 
 https://github.com/goproxyio/goproxy

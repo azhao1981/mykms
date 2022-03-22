@@ -1,6 +1,23 @@
 # 202201
 
 ## 20220127
+https://github.com/spring-projects/spring-authorization-server
+https://github.com/nccgroup/nmap-nse-vulnerability-scripts
+
+https://github.com/arthepsy/CVE-2021-4034
+https://github.com/berdav/CVE-2021-4034
+https://github.com/ly4k/PwnKit
+[LINUX POLKIT权限提升漏洞（CVE-2021-4034）](http://blog.nsfocus.net/linux-polkit-cve-2021-4034/)
+
+[【Rootkit 系列研究】Windows平台的高隐匿、高持久化威胁](https://www.freebuf.com/articles/web/320666.html)
+
+PolicyKit-1 0.105-31 - Privilege Escalation
+https://www.exploit-db.com/exploits/50689
+
+CVE-2021-22204 GitLab RCE 之 exiftool 代码执行漏洞深入分析（二）
+https://paper.seebug.org/1817/
+
+
 
 https://www.jianshu.com/p/dae5bbed39b1
 RabbitMQ入门教程（概念，应用场景，安装，使用）
