@@ -520,6 +520,32 @@ docker run -d -p 8080:8080 --name helloworld helloworld:latest
  - <http://career.guru99.com/top-20-go-programming-interview-questions/>
  - <https://github.com/efischer19/golang_ctci>
 
+## apm
+https://www.elastic.co/guide/en/apm/agent/go/current/builtin-modules.html#builtin-modules-apmgin
+https://www.elastic.co/guide/en/apm/agent/go/current/builtin-modules.html
+```golang
+import (
+	"go.elastic.co/apm/module/apmgin/v2"
+)
+
+func main() {
+	engine := gin.New()
+	engine.Use(apmgin.Middleware(engine))
+	...
+}
+
+handler ServerHandler
+web.ServerHandler = 
+```
+
+https://github.com/go-spring/go-spring/blob/67c9dfdd7e2c5bdec75acc8115bb67f9fe8bb7c6/spring/spring-base/log/README.md
+
+https://zhuanlan.zhihu.com/p/79419529
+https://studygolang.com/articles/31415
+
+记录 prometheus 指标
+https://www.yuque.com/xinliangnote/go-gin-api/bg4zwi
+
 ## 其它
 
 一般,没有什么这点
