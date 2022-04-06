@@ -364,10 +364,7 @@ echo 'eval "$(goenv init -)"' >> ~/.zshrc
 
 cd ~/.goenv/plugins/go-build/share/go-build
 
-# 把地址改成 studygolang.com(国内)
-gsed -i 's/https:\/\/storage.googleapis.com\/go\//https:\/\/studygolang.com\/dl\/golang\//g' 1.7.3
-gsed -i 's/https:\/\/dl.google.com\/go\//https:\/\/studygolang.com\/dl\/golang\//g' 1.13.3
-git diff
+# 把地址改成 ustc, 不要再用studygolang.com(国内)
 
 sed -i 's/https:\/\/golang.org\/dl\//https:\/\/studygolang.com\/dl\/golang\//g' 1.13.15
 sed -i 's/https:\/\/golang.org\/dl\//https:\/\/studygolang.com\/dl\/golang\//g' 1.14.9
@@ -407,6 +404,7 @@ goenv shell 1.10.1
 ```bash
 go env -w GOPROXY=https://goproxy.cn,direct
 ```
+
 <https://github.com/golang/go/wiki/Modules#are-there-always-on-module-repositories-and-enterprise-proxies>
 
 https://github.com/goproxyio/goproxy
