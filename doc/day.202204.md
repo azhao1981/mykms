@@ -1,6 +1,7 @@
 
 ## 20220406
-
+https://github.com/Lissy93/personal-security-checklist
+https://github.com/danielmiessler/SecLists
 https://github.com/s0md3v/Smap
 a drop-in replacement for Nmap powered by shodan.io
 
