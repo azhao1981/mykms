@@ -1,8 +1,145 @@
 # 202203
 
+## 20220330
+http://razil.cc/post/2019/04/go_gin_middleware_request_body/
+```golang
+var bodyBytes []byte // 我们需要的body内容
+
+// 从原有Request.Body读取
+bodyBytes, err := ioutil.ReadAll(c.Request.Body)
+if err != nil {
+	return 0, nil, fmt.Errorf("Invalid request body")
+}
+
+// 新建缓冲区并替换原有Request.body
+c.Request.Body = ioutil.NopCloser(bytes.NewBuffer(bodyBytes))
+
+// 当前函数可以使用body内容
+_ := bodyBytes
+``
+## 20220329
+
+https://github.com/iamshuaidi/algo-basic
+https://github.com/yanfeizhang/coder-kung-fu
+
+基于 etcd 实现分布式锁
+https://segmentfault.com/a/1190000021603215
+
+再有人问你分布式锁，这篇文章扔给他
+https://juejin.cn/post/6844903688088059912
+
+https://learn.lianglianglee.com/专栏/分布式中间件实践之路（完）/10 基于 Etcd 的分布式锁实现原理及方案.md
+
+https://learn.lianglianglee.com/
+
+## 20220328
+
+https://boilingfrog.github.io/2021/09/10/etcd中的存储实现/
+https://www.huweihuang.com/kubernetes-notes/etcd/etcdctl-v3.html
+https://github.com/bitnami/bitnami-docker-etcd
+etcd数据迁移实战
+https://blog.csdn.net/IT_DREAM_ER/article/details/108855219
+
+官方文档
+https://github.com/whmzsu/etcd/blob/master/documentation/index.md
+
+！！TTL 不是用来表示过期结束的，而是用来控制租约刷新频率的
+https://skyao.gitbooks.io/learning-etcd3/content/documentation/dev-guide/interacting_v3.html
+
+https://www.bookstack.cn/read/For-learning-Go-Tutorial/spilt.3.src-chapter14-01.0.md
+获取 key 的值，包含更详细的元数据  --- 好像不行，版本不对？
+./etcdctl -o extended get /message Key: /message Created-Index: 1073 Modified-Index: 1073 TTL: 0 Index: 1073
+
+```yml
+etcd:
+    image: bitnami/etcd:3.5.2
+    environment:
+      - ALLOW_NONE_AUTHENTICATION=yes
+    volumes:
+      - etcd_data:/bitnami/etcd
+    ports:
+      - 2379:2379
+      - 2380:2380
+```
+```bash
+docker cp docker-compose_etcd_1:/opt/bitnami/etcd/bin/etcdctl ./
+
+etcdctl set    /path/newkey some-data
+export ETCD_ENDPOINTS=http://192.168.56.1:2379
+
+etcdctl --endpoints=${ETCD_ENDPOINTS} get / --prefix --keys-only
+ETCDCTL_API=3 etcdctl --endpoints=${ETCD_ENDPOINTS} put foo bar
+ETCDCTL_API=3 etcdctl  put foo bar
+
+/ads/scheduler/task/333/694d7fce7bba292f
+xh http://192.168.56.1:2379/v2/keys/ads/scheduler/task/333/694d7fce7bba292f?recursive=false&wait=true&stream=true
+
+
+ETCDCTL_API=3 etcdctl --endpoints=${ETCD_ENDPOINTS} -o extended get "/" --prefix
+
+## ERROR
+authentication handshake failed
+
+root@31e6422c8769:/# etcdctl --endpoints="172.17.0.2:2379" --cacert=/etc/etcd/certs/ca.pem --debug  get foo
+# https://dyrnq.com/install-etcd-by-hand-client-transport-security/
+docker exec -it docker-compose_etcd_1 bash
+etcdctl get foo --prefix --keys-only
+etcdctl get / --prefix --keys-only
+
+etcdctl  put /foo bar
+
+etcdctl --endpoints=${ETCD_ENDPOINTS} put abc "--prefix --keys-only"
+ETCDCTL_API=3 etcdctl --endpoints=$ETCD_ENDPOINTS member list
+```
+
+
+https://etcd.io/docs/v3.3/dev-guide/api_grpc_gateway/
+```bash
+curl -L http://127.0.0.1:2379/version
+
+# https://xujiyou.work/%E4%BA%91%E5%8E%9F%E7%94%9F/Etcd/Metrics.html#%E6%9C%8D%E5%8A%A1%E7%AB%AF%E6%8C%87%E6%A0%87
+./xh   http://172.16.83.104:2379/metrics
+
+# https://www.compose.com/articles/how-to-keep-your-etcd-lean-and-mean/
+ETCDCTL_API=3 etcdctl --endpoints='http://172.16.83.104:2379' endpoint status -w table
+ETCDCTL_API=3 etcdctl --endpoints='http://172.16.83.104:2379' member list -w table
+ETCDCTL_API=3 etcdctl --endpoints='http://172.16.83.104:2379' endpoint status -w table
+ETCDCTL_API=3 etcdctl --endpoints='http://172.16.83.104:2379' get "/ads/scheduler/task/32440"
+
+```
+
+https://www.cnblogs.com/davygeek/p/8524477.html
+ETCD数据空间压缩清理
+
+```bash
+ETCDCTL_API=3  etcdctl --endpoints=http://172.16.83.104:2379 alarm list
+rev=$(ETCDCTL_API=3 etcdctl --endpoints=http://172.16.83.104:2379 endpoint status --write-out="json" | egrep -o '"revision":[0-9]*' | egrep -o '[0-9].*')
+# 压缩掉所有旧版本
+etcdctl --endpoints=http://127.0.0.1:2379 compact $rev
+# 整理多余的空间
+etcdctl --endpoints=http://127.0.0.1:2379 defrag
+# 取消告警信息
+etcdctl --endpoints=http://127.0.0.1:2379 alarm disarm
+
+
+/usr/local/bin/etcd \
+  --auto-compaction-retention=1m \
+  --snapshot-count=5000 \
+  --quota-backend-bytes=8589934592 \
+  --data-dir=/etcd-data --name ${THIS_NAME} \
+  --initial-advertise-peer-urls http://${THIS_IP}:${THIS_2380_PORT} --listen-peer-urls http://0.0.0.0:2380 \
+  --advertise-client-urls http://${THIS_IP}:${THIS_2379_PORT} --listen-client-urls http://0.0.0.0:2379 \
+  --initial-cluster ${CLUSTER} \
+  --initial-cluster-state ${CLUSTER_STATE} --initial-cluster-token ${TOKEN}
+```
+
+Raft 在 etcd 中的实现
+https://blog.betacat.io/post/raft-implementation-in-etcd/
+
 ## 20220321
 https://github.com/bytedance/godlp
 sensitive information protection toolkit
+正式开源！字节安全团队自研敏感信息保护方案 GoDLP
 正式开源！字节安全团队自研敏感信息保护方案 GoDLP
 https://www.toutiao.com/article/7071107679506170368/
 
