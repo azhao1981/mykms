@@ -368,7 +368,7 @@ cd ~/.goenv/plugins/go-build/share/go-build
 
 sed -i 's/https:\/\/golang.org\/dl\//https:\/\/studygolang.com\/dl\/golang\//g' 1.13.15
 sed -i 's/https:\/\/golang.org\/dl\//https:\/\/studygolang.com\/dl\/golang\//g' 1.14.9
-sed -i 's/https:\/\/go.dev\/dl\//https:\/\/studygolang.com\/dl\/golang\//g' 1.17.8
+sed -i 's/https:\/\/go.dev\/dl\//https:\/\/mirrors.ustc.edu.cn\/golang\//g' 1.17.8
 git diff
 -> https://golang.org/dl/go1.14.9.linux-amd64.tar.gz
 
