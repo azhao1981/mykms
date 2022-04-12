@@ -91,6 +91,9 @@ https://github.com/paperless-ngx/paperless-ngx
 Secure Backend Server for Web, Mobile & Flutter Developers 🚀 AKA the 100% open-source Firebase alternative.
 https://github.com/appwrite/appwrite
 ## 20220406 
+## 20220406
+https://github.com/Lissy93/personal-security-checklist
+https://github.com/danielmiessler/SecLists
 https://github.com/s0md3v/Smap
 a drop-in replacement for Nmap powered by shodan.io
 
