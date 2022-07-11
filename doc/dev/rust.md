@@ -102,6 +102,13 @@ cargo build --release --target=x86_64-pc-windows-msvc
 apt install build-essential
 ```
 
+## windows gcc
 
+https://sourceforge.net/projects/mingwbuilds/files/
+https://rust-lang.github.io/rustup/installation/windows.html
+https://github.com/niXman/mingw-builds-binaries/releases
+
+https://stackoverflow.com/questions/47379214/step-by-step-instruction-to-install-rust-and-cargo-for-mingw-with-msys2
+https://users.rust-lang.org/t/installing-rust-on-windows/55001/5
 
 
