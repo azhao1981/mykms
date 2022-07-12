@@ -342,7 +342,6 @@ https://www.commandlinefu.com/commands/browse
 
 ## 20201112
 
-https://dev.to/mayruiz27/design-patterns-for-frontend-developers-2ii3
 
 https://dev.to/frosnerd/writing-my-own-boot-loader-3mld | 系统boot
 

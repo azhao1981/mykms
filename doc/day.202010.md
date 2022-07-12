@@ -372,7 +372,6 @@ https://www.infoq.cn/article/22CIyQBs3S0bHeKVNORP
 https://dev.to/mizadmehr/missed-frontend-vulnerabilities-1-css-is-not-as-safe-as-you-think-3l64
 security
 
-https://dev.to/rfitz/tailwind-react-setup-and-design-patterns-f7o
 
 https://dev.to/nickbulljs/5-techniques-i-use-to-manage-stress-as-a-software-engineer-2o2n
 缓解压力的五种方法

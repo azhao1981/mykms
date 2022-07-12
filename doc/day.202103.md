@@ -256,12 +256,7 @@ https://artem.krylysov.com/blog/2020/07/28/lets-build-a-full-text-search-engine/
 https://xapian.org/
 http://clucene.sourceforge.net/
 
-不是很好，官网自己的搜索都不好用
-https://www.meilisearch.com/
-curl 'https://sandbox-pool-4eqqeri-3bsbgmeayb75w.ovh-fr-2.platformsh.site/indexes/movies/search?q=botman+robin&limit=2' | jq
-$ curl 'https://sandbox-pool-4eqqeri-3bsbgmeayb75w.ovh-fr-2.platformsh.site/indexes/movies/search?q=botman+robin&limit=2'
-{"message":"You must have an authorization token","errorCode":"missing_authorization_header","errorType":"authentication_error","errorLink":"https://docs.meilisearch
-.com/errors#missing_authorization_header"}
+
 
 
 conflenence 替代方案
@@ -468,8 +463,7 @@ https://github.com/myliang/x-spreadsheet
 https://github.com/MrXujiang/h5-Dooring
 14、tui.image-editor：功能齐全的图片编辑器。支持图片剪裁、旋转、涂鸦等功能，实现了 Vue 和 React 封装的组件，便于整合进你的项目
 https://github.com/nhn/tui.image-editor
-19、python-patterns：Python 设计模式和使用场景的集合
-https://github.com/faif/python-patterns
+
 24、Pine：一个免费、轻量、简洁的 macOS Markdown 编辑器。功能：
 
 主题
@@ -490,9 +484,7 @@ https://github.com/go-delve/delve
 https://github.com/rqlite/rqlite
 
 
-8、java-design-patterns：设计模式 Java 的最佳实践，出自开源社区大佬们之手。作为有梦想和追求的 Java 程序员，当然需要会一些设计模式啦。这个项目虽然是英文的但是先看代码和图，尝试理解含义那么英文描述也就能猜得八九不离十了。不要让英语作为你不努力的借口，努力变强吧！在线阅读
-https://github.com/iluwatar/java-design-patterns
-https://java-design-patterns.com/
+
 
 11、Anki-Android：高效学习神器 Anki 安卓客户端。Anki 是一个帮助学习的记忆卡片软件，卡片正面是问题背面是答案，然后根据记忆公式帮你复习和记牢。下载地址 如果下载后不会用的话，本文点赞过 100 我出一份小白教程给大家上手这个神器
 https://github.com/ankidroid/Anki-Android

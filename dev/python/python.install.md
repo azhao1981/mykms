@@ -10,6 +10,7 @@
 curl -L https://gitee.com/azhao-1981/my-fak/raw/master/shell/pyenv.sh | bash
 
 export ver=3.9.5
+export ver=3.4.10
 wget https://npm.taobao.org/mirrors/python/$ver/Python-$ver.tar.xz -P ~/.pyenv/cache/; pyenv install $ver
 pyenv global 3.9.5
 python -m pip install --upgrade pip
@@ -117,6 +118,7 @@ export  PYTHON_BUILD_MIRROR_URL="http://pyenv.qiniudn.com/pythons/"
 export ver=3.9.5
 export ver=3.8.6
 export ver=3.7.9
+
 wget http://mirrors.sohu.com/python/$ver/Python-$ver.tar.xz -P ~/.pyenv/cache/; pyenv install $ver
 pyenv install 3.8.6
 

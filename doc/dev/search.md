@@ -98,6 +98,13 @@ curl "${TYPESENSE_HOST}/collections" \
 https://github.com/valeriansaliou/sonic  MPL-2.0 License rust
 11.8k 389
 
+不是很好，官网自己的搜索都不好用
+https://www.meilisearch.com/
+curl 'https://sandbox-pool-4eqqeri-3bsbgmeayb75w.ovh-fr-2.platformsh.site/indexes/movies/search?q=botman+robin&limit=2' | jq
+$ curl 'https://sandbox-pool-4eqqeri-3bsbgmeayb75w.ovh-fr-2.platformsh.site/indexes/movies/search?q=botman+robin&limit=2'
+{"message":"You must have an authorization token","errorCode":"missing_authorization_header","errorType":"authentication_error","errorLink":"https://docs.meilisearch
+.com/errors#missing_authorization_header"}
+
 [redissearch](https://github.com/RediSearch/RediSearch)
 对维基百科560万个文档（约 5.3GB）进行索引，并对索引的数据集做双单词搜索。
 221s
@@ -123,81 +130,7 @@ https://juejin.cn/post/6963902777441386503
 
  https://tech.marksblogg.com/benchmarks.html
 
-## meilisearch
 
-rust的搜索引擎
-https://github.com/meilisearch/MeiliSearch
-https://gitee.com/azhao-1981/MeiliSearch
-https://www.meilisearch.com/
-https://tech.marksblogg.com/meilisearch-full-text-search.html
-
-扩展：https://tech.marksblogg.com/billion-nyc-taxi-rides-redshift.html
-
-### 优点
- MIT License
-小，7,600 lines of Rust.
-诸如词干提取、停止词、同义词、排序、过滤器和面等功能都可以开箱即用
-The following took 102 seconds to complete. It converted 27,199 documents into JSON at a rate of ~8.6 MB/s and 267 documents/s. The resulting JSON file is 842 MB when decompressed.
-
-Meilisearch can't be distributed
-### 安装
-```bash
-docker pull getmeili/meilisearch:v0.21.0rc4
-docker run -p 7700:7700 getmeili/meilisearch:v0.21.0rc4 ./meilisearch
-
-curl -d '{
-  "uid": "movies",
-  "primaryKey": "id"
-}' \
-http://127.0.0.1:7700/indexes
-
-# 下载 https://www.notion.so/A-movies-dataset-to-test-Meili-1cbf7c9cfa4247249c40edfa22d7ca87#b5ae399b81834705ba5420ac70358a65
-
-# 好像把这些数据一灌进去，进程就挂了,应该是windows docker的问题，在linux docker就没有问题
-
-curl -i -X POST 'http://192.168.56.140:7700/indexes/movies/documents' --header 'content-type: application/json' --data-binary @movies.json
-
-curl 'http://127.0.0.1:7700/indexes/movies/search?q=botman+robin&limit=2' | jq
-
-```
-
-### 安全/鉴权
-
-https://docs.meilisearch.com/reference/features/authentication.html#key-types
-
-如果没有key，就会报
-
-No master key found; The server will accept unidentified requests. If you need some protection in development mode, please export a key: export MEILI_MASTER_KEY=xxx
-
-### cloud
-### SDK
-
-https://github.com/meilisearch/meilisearch-rails
-
-https://github.com/meilisearch/meilisearch-vue
-
-### 同义词
-
-[分享一个基于 Rust 的搜索引擎 MeiliSearch](https://www.v2ex.com/t/744135)
-
-```bash
-# 接下来通过接口配置一些同义词
-curl -d '{
-    "扫黑": [
-        "除黑",
-        "打黑"
-    ],
-    "除黑": [
-        "扫黑",
-        "打黑"
-    ],
-    "打黑": [
-        "除黑",
-        "扫黑"
-    ],
-}' \
-http://127.0.0.1:7700/indexes/wechat/settings/synonyms
-```
 
 ### [lmdb](http://www.lmdb.tech/doc/)
 
@@ -225,3 +158,5 @@ https://github.com/toshi-search/Toshi
 
 https://news.ycombinator.com/item?id=21417859
 Bayard: a full-text search and indexing server written in Rust (github.com/mosuka)
+
+

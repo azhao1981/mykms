@@ -13,6 +13,8 @@ https://github.com/wa-lang/ugo-compiler-book
 100 Go Mistakes and How to Avoid Them
 https://github.com/teivah/100-go-mistakes
 
-https://os.phil-opp.com/zh-CN/freestanding-rust-binary/
 https://os.phil-opp.com/zh-CN/
+https://os.phil-opp.com/zh-CN/freestanding-rust-binary/
+https://os.phil-opp.com/zh-CN/minimal-rust-kernel/
 
+dev\golang\rust.os.md

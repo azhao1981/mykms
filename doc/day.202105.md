@@ -295,7 +295,6 @@ Task.all.map(&:status).uniq
 A Day in the Life of a Ruby Object - Jemma Issroff
 https://www.youtube.com/watch?v=n43O0u77d8o
 
-https://www.stimulusreflexpatterns.com/patterns/
 
 RSA创新沙盒盘点 | CAPE PRIVACY——基于加密机器学习的多方数据协作与隐私保护方案
 http://blog.nsfocus.net/rsa-cape-privacy/

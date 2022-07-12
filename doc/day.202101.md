@@ -290,8 +290,7 @@ https://www.anquanke.com/post/id/230001
 https://github.com/go-delve/delve
 5、delve：一款 Go 语言的调试工具。如果你还在像我一样用 fmt.Println 调试 go 的代码，就试试这个工具吧。万星的开源项目可不是开玩笑的，它上手简单并且支持多种方式调用，助你快速找到 Bug
 
-8、java-design-patterns：设计模式 Java 的最佳实践，出自开源社区大佬们之手。作为有梦想和追求的 Java 程序员，当然需要会一些设计模式啦。这个项目虽然是英文的但是先看代码和图，尝试理解含义那么英文描述也就能猜得八九不离十了。不要让英语作为你不努力的借口，努力变强吧！在线阅读
-https://github.com/iluwatar/java-design-patterns
+
 
 11、Anki-Android：高效学习神器 Anki 安卓客户端。
 Anki 是一个帮助学习的记忆卡片软件，卡片正面是问题背面是答案，然后根据记忆公式帮你复习和记牢。
@@ -568,8 +567,7 @@ https://github.com/myliang/x-spreadsheet
 https://github.com/MrXujiang/h5-Dooring
 14、tui.image-editor：功能齐全的图片编辑器。支持图片剪裁、旋转、涂鸦等功能，实现了 Vue 和 React 封装的组件，便于整合进你的项目
 https://github.com/nhn/tui.image-editor
-19、python-patterns：Python 设计模式和使用场景的集合
-https://github.com/faif/python-patterns
+
 21、15-minute-apps：基于 PyQt 框架写的小型桌面应用程序的集合。想用 Python 写桌面应用的小伙伴，这个项目应该可以帮到你。比如写个扫雷游戏：
 https://github.com/learnpyqt/15-minute-apps
 25、bat：替代 cat 的命令行工具。你还在命令行用 cat 查看文件吗？那你就 out 啦！今天推荐的 bat 它不仅支持语法高亮，还能展示 Git 的改动。macOS 下安装命令：brew install bat 相信你用过 bat 后就不会再想用回 cat 了

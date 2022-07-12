@@ -70,7 +70,7 @@ https://medium.com/baiduxlab/mesatee-open-source-released-a-framework-for-univer
 ## 1219
 
 https://github.com/r0ysue/r0capture
-https://github.com/solutions-architecture-patterns
+
 https://github.com/PeterL1n/BackgroundMattingV2 绿布合成
 https://github.com/tiangolo/fastapi
 新的压缩工具|但好像不成熟,大于一定数据就too large

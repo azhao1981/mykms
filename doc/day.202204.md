@@ -1,5 +1,32 @@
 
+## qemu 
+其实没有比vb好哪里
+https://mudongliang.github.io/2017/09/21/install-ubuntu-in-qemu.html
 
+```bash
+qemu-img create -f qcow2 Ubuntu_22.04-amd64.img 80G
+qemu-system-x86_64 -hda Ubuntu_22.04-amd64.img -boot d -cdrom ubuntu-22.04-desktop-amd64.iso -m 4096 -enable-kvm
+qemu-system-x86_64 -hda Ubuntu_22.04-amd64.img -boot d -cdrom ubuntu-22.04-live-server-amd64.iso -m 4096 
+
+qemu-system-i386 -m 1024
+
+M -enable-kvm -drive file=./ubuntu-desktop.img,index=0,media=disk,format=raw
+
+```
+https://ubuntu.com/server/docs/virtualization-qemu
+qemu-img create -f qcow2 disk.qcow 5G
+Using the disk by adding -drive file=disk.qcow,format=qcow2
+## 20220428
+设计数据密集型应用 - 中文翻译
+https://github.com/Vonng/ddia
+Prowler is an Open Source security tool to perform AWS security best practices assessments, audits, incident response, continuous monitoring, hardening and forensics readiness. It contains more than 200 controls covering CIS, PCI-DSS, ISO27001, GDPR, HIPAA, FFIEC, SOC2, AWS FTR, ENS and custom security frameworks. Enterprise version:
+https://github.com/prowler-cloud/prowler
+🐢 Magical shell history
+https://github.com/ellie/atuin
+A list of cool features of Git and GitHub.
+https://github.com/tiimgreen/github-cheat-sheet
+The fastai book, published as Jupyter Notebooks
+https://github.com/fastai/fastbook
 
 ## 20220412
 https://github.com/a-little-org-called-mario/a-little-game-called-mario
@@ -21,9 +48,7 @@ https://www.minimamente.com/project/magic/
 简历模板。不需要懂 LaTeX 语法就可以用，适合用来做一页纸简历
 https://github.com/billryan/resume
 
-人人都能看懂的设计模式教程。
-https://github.com/kamranahmedse/design-patterns-for-humans
-[中文](https://github.com/guanguans/design-patterns-for-humans-cn)
+
 
 《TensorFlow 深度学习》
 https://github.com/dragen1860/Deep-Learning-with-TensorFlow-book
@@ -73,16 +98,11 @@ https://github.com/puruvj/macos-web
 一份关于数据库的教程。内容涵盖了 MySQL、Redis、ES、MongoDB 从入门到面试等多方面的知识
 https://github.com/dunwu/db-tutorial
 
-图说设计模式
-https://github.com/me115/design_patterns
+
 
 ## 20220409
 https://github.com/wez/wezterm  MIT RUST
 A GPU-accelerated cross-platform terminal emulator and multiplexer written by @wez and implemented in Rust
-
-
-https://github.com/prabhatsharma/zinc
-Zinc Search engine. A lightweight alternative to elasticsearch that requires minimal resources, written in Go.
 
 
 https://github.com/goldbergyoni/javascript-testing-best-practices 

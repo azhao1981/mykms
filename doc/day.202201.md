@@ -414,8 +414,6 @@ https://github.com/withastro/astro
 Window.js is an open-source Javascript runtime for desktop graphics programming.
 https://github.com/windowjs/windowjs
 
-https://github.com/prabhatsharma/zinc
-Zinc Search engine. A lightweight alternative to elasticsearch that requires minimal resources, written in Go.
 
 The all-in-one tool to supercharge your productivity
 https://github.com/alyssaxuu/omni
