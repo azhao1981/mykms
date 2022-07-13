@@ -1,6 +1,6 @@
-
-
-
+Powerful rich text editor framework with a modular architecture, modern integrations, and features like collaborative editing.
+https://github.com/ckeditor/ckeditor5
+https://github.com/ryanmcdermott/clean-code-javascript
 A Virtual Machine Monitor for modern Cloud workloads. Features include CPU, memory and device hotplug, support for running Windows and Linux guests, device offload with vhost-user and a minimal compact footprint. Written in Rust with a strong focus on security.
 https://github.com/cloud-hypervisor/cloud-hypervisor
 
@@ -42,3 +42,4 @@ PocketBase 是一个开箱即用的后端服务。可以作为独立的应用直
 https://github.com/pocketbase/pacocketbase
 
 https://github.com/zee-editor/zee
+cargo install --features system-clipboard zee
