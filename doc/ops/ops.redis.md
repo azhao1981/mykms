@@ -91,3 +91,9 @@ bin/linux/x64/redis-server: bin/linux/x64/redis-server: cannot execute binary fi
 ```
 https://github.com/eugeneware/ffmpeg-static
 
+## telent
+
+telent ip port
+
+很多时候 telnet 完就无法退出了，ctrl+c 有时也无法退出
+后来找到了正确的命令 ctrl+] 然后在telnet 命令行输入 quit 就可以退出了

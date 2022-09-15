@@ -32,3 +32,5 @@ FreeSWITCH状态日志
 
 eval ${log_dir}
 /usr/local/freeswitch/log
+
+## mysql

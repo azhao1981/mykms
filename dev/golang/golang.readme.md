@@ -365,6 +365,8 @@ echo 'eval "$(goenv init -)"' >> ~/.zshrc
 cd ~/.goenv/plugins/go-build/share/go-build
 
 # 把地址改成 ustc, 不要再用studygolang.com(国内)
+https://mirrors.ustc.edu.cn/golang
+https://studygolang.com/dl/golang/go1.18.5.linux-amd64.tar.gz
 
 sed -i 's/https:\/\/golang.org\/dl\//https:\/\/studygolang.com\/dl\/golang\//g' 1.13.15
 sed -i 's/https:\/\/golang.org\/dl\//https:\/\/studygolang.com\/dl\/golang\//g' 1.14.9

@@ -334,12 +334,7 @@ Mellow 是一个基于规则的全局透明代理工具，可以运行在 Window
 
 [V2Ray客户端](https://tlanyan.me/v2ray-clients-download/)
 
-https://u.tools/
 
-[ditto](https://cfhcable.dl.sourceforge.net/project/ditto-cp/Ditto/3.23.124.0/DittoPortable_64bit_3_23_124_0.zip) 
-
-Ditto - 开源免费的 Windows 剪贴板增强工具神器 (方便复制粘贴多条历史记录)
-https://www.iplaysoft.com/ditto.html
 
 ## tor 匿名网络 中继
 

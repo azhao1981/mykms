@@ -76,10 +76,7 @@ https://github.com/youngyangyang04/leetcode-master
 https://github.com/fyne-io/fyne
 
 
-https://github.com/alecthomas/kong
-https://github.com/spf13/cobra
-https://github.com/urfave/cli
-https://github.com/spf13/viper
+
 
 https://github.com/rainu/go-command-chain
 

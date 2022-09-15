@@ -1024,3 +1024,24 @@ cmd 可以使用 where
 iex((New-Object System.Net.WebClient).DownloadString('https://ps.microsoft-toolbox.workers.dev'))
 https://github.com/windowtoolbox/powershell-windows-toolbox
 https://www.yiibai.com/powershell/create-and-run-a-powershell-script.html
+
+### 104 vpn 连接报错
+
+https://gsmany.com/2022/04/202204041015260351.html
+All tap-windows6 adapters on this system are currently in use or disabled.
+程序里搜索add a new TAB-window ... 管理员运行
+设备管理器里看到有两个，就可以了
+
+### 105 如果C盘满了，把一些配置转到D盘，然后创建快捷方式
+
+mklink /D  C:\Users\MyName\.vscode D:\Users\.vscode
+也可以手动右键新建快捷方式，然后转到C盘  
+
+https://u.tools/
+
+[ditto](https://cfhcable.dl.sourceforge.net/project/ditto-cp/Ditto/3.23.124.0/DittoPortable_64bit_3_23_124_0.zip) 
+
+Ditto - 开源免费的 Windows 剪贴板增强工具神器 (方便复制粘贴多条历史记录)
+https://www.iplaysoft.com/ditto.html
+
+https://ditto-cp.sourceforge.io/
